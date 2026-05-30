@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Sorting Patterns",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which sorting algorithm is 'stable' by default?",
+    "option_a": "Quick Sort",
+    "option_b": "Merge Sort",
+    "option_c": "Heap Sort",
+    "option_d": "Selection Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Merge sort preserves the relative order of elements with equal values."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Greedy vs DP",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which of the following problems can be solved optimally using a Greedy approach?",
+    "option_a": "0/1 Knapsack Problem",
+    "option_b": "Fractional Knapsack Problem",
+    "option_c": "Longest Common Subsequence",
+    "option_d": "Matrix Chain Multiplication",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fractional Knapsack can be solved greedily by taking items with the highest value-to-weight ratio first."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Divide and Conquer",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In the Master Theorem, if T(n) = 2T(n/2) + O(n), what is the complexity?",
+    "option_a": "O(n)",
+    "option_b": "O(n log n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This corresponds to the case where the divide-and-conquer work matches the work done at each level, specifically merge sort."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Heap Data Structure",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity to build a Max-Heap from an unsorted array of size n?",
+    "option_a": "O(n log n)",
+    "option_b": "O(n)",
+    "option_c": "O(1)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Although it seems like O(n log n), the mathematical evaluation of build-heap results in linear time complexity O(n)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Backtracking",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which search strategy does Backtracking typically follow?",
+    "option_a": "Breadth-First Search",
+    "option_b": "Depth-First Search",
+    "option_c": "Best-First Search",
+    "option_d": "Random Search",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Backtracking explores paths deeply and retreats (backtracks) when it hits a dead end, which is DFS-like."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Memoization' in Dynamic Programming?",
+    "option_a": "A bottom-up approach",
+    "option_b": "A top-down approach that stores results of expensive function calls",
+    "option_c": "A ways to sort elements",
+    "option_d": "A ways to visualize graph",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Memoization saves computed values in a cache (like a map or array) to avoid redundant calculations in recursion."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Graph Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the time complexity of Dijkstra's algorithm using a simple binary heap?",
+    "option_a": "O(V^2)",
+    "option_b": "O(E log V)",
+    "option_c": "O(V + E)",
+    "option_d": "O(E log E)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "With a priority queue (binary heap), each edge can trigger an update taking O(log V) time."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Complexity Classes",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "The class 'P' in computational complexity refers to problems that can be solved in:",
+    "option_a": "Parallel time",
+    "option_b": "Polynomial time",
+    "option_c": "Probabilistic time",
+    "option_d": "Prime time",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "P stands for Polynomial time solvable on a deterministic Turing machine."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Complexity Classes",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "If a problem is 'NP-Complete', what does it mean?",
+    "option_a": "It cannot be solved",
+    "option_b": "It is in NP and every problem in NP can be reduced to it in polynomial time",
+    "option_c": "It is solvable in constant time",
+    "option_d": "It has no solution",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NP-complete problems are the hardest problems in NP; if any one of them is solved in P, then P = NP."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Strassen's Algorithm",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the time complexity of Strassen's matrix multiplication?",
+    "option_a": "O(n^3)",
+    "option_b": "O(n^2.81)",
+    "option_c": "O(n^2)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Strassen's algorithm reduces the number of multiplications required for 2x2 matrices from 8 to 7, bringing complexity down from O(n^3)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which sorting algorithm uses a divide and conquer approach and is NOT in-place?",
+    "option_a": "Quick Sort",
+    "option_b": "Merge Sort",
+    "option_c": "Selection Sort",
+    "option_d": "Insertion Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Standard merge sort requires O(n) auxiliary space for merging."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Greedy Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In Huffman coding, what type of tree is used to represent the codes?",
+    "option_a": "Binary Search Tree",
+    "option_b": "Binary Tree where characters are leaf nodes",
+    "option_c": "AVL Tree",
+    "option_d": "Heap",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Huffman coding uses a binary tree where frequently occurring characters stay closer to the root for shorter codes."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Amortized Analysis",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the amortized time complexity of an 'append' operation in a dynamic array (like std::vector in C++)?",
+    "option_a": "O(n)",
+    "option_b": "O(1)",
+    "option_c": "O(log n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Although some appends take O(n) due to resizing, the total work for n appends is O(n), so each is O(1) on average."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Graph Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the result of applying Topological Sort on a graph with cycles?",
+    "option_a": "A correctly sorted list",
+    "option_b": "An error; topological sort is only for DAGs (Directed Acyclic Graphs)",
+    "option_c": "A random list",
+    "option_d": "A reversed list",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Topological sorting requires dependencies to be acyclic; cycles create contradictions."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Network Flow",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which algorithm is used to find the maximum flow in a flow network?",
+    "option_a": "Dijkstra's Algorithm",
+    "option_b": "Ford-Fulkerson Algorithm",
+    "option_c": "Kruskal's Algorithm",
+    "option_d": "Bellman-Ford Algorithm",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Ford-Fulkerson method (or Edmonds-Karp implementation) calculates max flow using augmenting paths."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Graph Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which algorithm is used to find all-pairs shortest paths in a weighted graph?",
+    "option_a": "Dijkstra's Algorithm",
+    "option_b": "Bellman-Ford Algorithm",
+    "option_c": "Floyd-Warshall Algorithm",
+    "option_d": "Prim's Algorithm",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Floyd-Warshall is a dynamic programming algorithm with O(V^3) complexity."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Minimum Spanning Tree",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity of Kruskal's algorithm using the Union-Find data structure with path compression?",
+    "option_a": "O(E log V)",
+    "option_b": "O(V^2)",
+    "option_c": "O(E log E)",
+    "option_d": "O(V + E)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The bottleneck is sorting the edges, which takes O(E log E) or O(E log V) time."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Sorting",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which of these sorting algorithms is NOT a comparison-based sort?",
+    "option_a": "Radix Sort",
+    "option_b": "Quick Sort",
+    "option_c": "Merge Sort",
+    "option_d": "Heap Sort",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Radix sort sorts numbers digit by digit and doesn't directly compare elements as wholes."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the time complexity of the Matrix Chain Multiplication problem solved via DP?",
+    "option_a": "O(n^2)",
+    "option_b": "O(n^3)",
+    "option_c": "O(2^n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Calculating the minimum number of scalar multiplications for n matrices takes O(n^3) time."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Complexity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the space complexity of Depth First Search (DFS)?",
+    "option_a": "O(V)",
+    "option_b": "O(E)",
+    "option_c": "O(V^2)",
+    "option_d": "O(1)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "In the worst case, the recursion stack can go as deep as the number of vertices."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which property allows Dijkstra's algorithm to work?",
+    "option_a": "Optimal Substructure",
+    "option_b": "Overlapping Subproblems",
+    "option_c": "Greedy Choice Property",
+    "option_d": "None of the above",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Dijkstra's is a greedy algorithm that assumes locally optimal choices lead to globally optimal shortest paths."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Hashing",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is 'Double Hashing' used for?",
+    "option_a": "Encrypting data twice",
+    "option_b": "Resolving collisions in open-addressing hash tables",
+    "option_c": "Making the hash table larger",
+    "option_d": "Sorting the keys",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It uses a second hash function to calculate the offset for probing."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Tree Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the height of a Red-Black tree with n nodes?",
+    "option_a": "O(n)",
+    "option_b": "O(log n)",
+    "option_c": "O(sqrt(n))",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Red-Black trees are self-balancing binary search trees that guarantee logarithmic height."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Complexity Classes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is TRUE about NP-Hard problems?",
+    "option_a": "They are all in P",
+    "option_b": "They are at least as hard as the hardest problems in NP",
+    "option_c": "They always have a solution in polynomial time",
+    "option_d": "They must be in NP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NP-Hard problems don't necessarily have to be in NP themselves, but every problem in NP reduces to them."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Branch and Bound",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Branch and Bound is commonly used for what type of problems?",
+    "option_a": "Linear search",
+    "option_b": "Combinatorial optimization (e.g., TSP)",
+    "option_c": "Simple sorting",
+    "option_d": "Calculating square roots",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It systematically explores branches of a search space and prunes them using bounds."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Graph Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the time complexity of Breadth First Search (BFS) given adjacent list representation?",
+    "option_a": "O(V)",
+    "option_b": "O(V + E)",
+    "option_c": "O(E^2)",
+    "option_d": "O(V log V)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every vertex and every edge is explored exactly once."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Greedy Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In Huffman Coding, which characters get the shortest bit representation?",
+    "option_a": "Characters encountered first",
+    "option_b": "Most frequent characters",
+    "option_c": "Least frequent characters",
+    "option_d": "Vowels",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Huffman coding is a prefix coding system that assigns shorter codes to higher-frequency symbols."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Complexity",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the complexity of finding the Median of an unsorted array using the 'Median-of-Medians' algorithm?",
+    "option_a": "O(n log n)",
+    "option_b": "O(n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is a deterministic selection algorithm that finds the kth smallest element in linear time."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which algorithm finds the strongly connected components (SCCs) of a directed graph?",
+    "option_a": "Dijkstra's",
+    "option_b": "Tarjan's Algorithm",
+    "option_c": "Prim's",
+    "option_d": "Boruvka's",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tarjan's and Kosaraju's are the two most common algorithms for finding SCCs."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the time complexity of the Longest Common Subsequence (LCS) problem for two strings of length m and n?",
+    "option_a": "O(m+n)",
+    "option_b": "O(mn)",
+    "option_c": "O(2^(m+n))",
+    "option_d": "O(log(m+n))",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The DP table requires filling m * n cells."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Tree Structures",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which tree is strictly balanced such that the height difference between any two sibling subtrees is at most 1?",
+    "option_a": "Binary Search Tree",
+    "option_b": "AVL Tree",
+    "option_c": "B-Tree",
+    "option_d": "Trie",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AVL trees perform rotations during insertion and deletion to maintain this balance."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Binary Heaps",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a max-heap stored in an array, if a node is at index 'i', where is its left child located?",
+    "option_a": "i + 1",
+    "option_b": "2i",
+    "option_c": "2i + 1",
+    "option_d": "i/2",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Assuming 1-based indexing, the left child is at 2i. (For 0-based indexing, it is 2i + 1)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Dynamic Programming",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "The 'Bottom-Up' approach to Dynamic Programming is also known as:",
+    "option_a": "Memoization",
+    "option_b": "Tabulation",
+    "option_c": "Recursion",
+    "option_d": "Greedy strategy",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tabulation systematically fills a table from the smallest subproblems up to the target problem."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Backtracking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In the 8-Queens problem, what does a 'Dead End' represent in the search tree?",
+    "option_a": "Finding a solution",
+    "option_b": "A state where no further queen can be placed without violating rules",
+    "option_c": "Completing the first row",
+    "option_d": "The end of the code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "When a dead end is reached, the algorithm must backtrack to the previous row and try a different column."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Complexity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity of adding an element into a Heap of size n?",
+    "option_a": "O(1)",
+    "option_b": "O(log n)",
+    "option_c": "O(n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The element is added at the end and then 'bubbled up' (heapiy up), which takes time proportional to the height."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which sorting algorithm's average time complexity is O(n + k), where k is the range of input?",
+    "option_a": "Merge Sort",
+    "option_b": "Counting Sort",
+    "option_c": "Quick Sort",
+    "option_d": "Selection Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Counting sort is extremely fast if the range of values is small."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which algorithm should you use if your graph contains negative edge weights but no negative cycles?",
+    "option_a": "Dijkstra's",
+    "option_b": "Bellman-Ford",
+    "option_c": "BFS",
+    "option_d": "Kruskal's",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bellman-Ford handles negative weights and can even detect negative cycles."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Graph Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is an 'Articulating Point' in a graph?",
+    "option_a": "An edge that connects two nodes",
+    "option_b": "A vertex which, if removed, increases the number of connected components",
+    "option_c": "A node with zero degree",
+    "option_d": "A node in a cycle",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Removing an articulation point splits the graph into multiple pieces."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which sorting algorithm is commonly used in practice as it is often faster than other O(n log n) sorting algorithms due to its low constant factors?",
+    "option_a": "Merge Sort",
+    "option_b": "Quick Sort",
+    "option_c": "Selection Sort",
+    "option_d": "Insertion Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Quick Sort is typically very fast and is used as the default sort (often as Introsort) in many libraries."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Space Complexity",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Complexity used by an algorithm in addition to input and output space is called:",
+    "option_a": "Total Space",
+    "option_b": "Auxiliary Space",
+    "option_c": "Working Space",
+    "option_d": "Heap Space",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Auxiliary space is the extra space or temporary space used by an algorithm."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In the 0/1 Knapsack problem, what does '0/1' signify?",
+    "option_a": "The item must be weighted either 0 or 1",
+    "option_b": "An item cannot be split; it must be taken as a whole or left behind",
+    "option_c": "Binary code is used",
+    "option_d": "Only two items exist",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unlike the fractional version, you can't take a piece of an item."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Minimum Spanning Tree",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Prim's algorithm starts from:",
+    "option_a": "The shortest edge in the entire graph",
+    "option_b": "Any starting vertex (root)",
+    "option_c": "The destination vertex",
+    "option_d": "A random edge",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Prim's grows the MST from a single starting node by picking the nearest neighbor."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Complexity",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is the lower bound for comparison-based sorting algorithms?",
+    "option_a": "O(n)",
+    "option_b": "O(n log n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It has been mathematically proven that any comparison sort requires \u03a9(n log n) operations."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Searching",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many comparisons are made in Binary Search in the worst case for an array of size 1024?",
+    "option_a": "10",
+    "option_b": "11",
+    "option_c": "1024",
+    "option_d": "512",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "log2(1024) = 10; including the final check, it's approximately 11 comparisons."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Greedy Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which greedy algorithm is used to find the shortest path from a single source in a graph with non-negative edges?",
+    "option_a": "Bellman-Ford",
+    "option_b": "Dijkstra's",
+    "option_c": "Floyd-Warshall",
+    "option_d": "Johnson's",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dijkstra's is the standard greedy approach for this problem."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Backtracking",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In backtracking, 'Pruning' refers to:",
+    "option_a": "Deleting the code",
+    "option_b": "Removing branches from the search space that are known not to contain a solution",
+    "option_c": "Sorting the input",
+    "option_d": "Adding more nodes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pruning increases efficiency by skipping unnecessary computations."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Complexity",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the time complexity of the most efficient algorithm to check if a number is prime (probabilistic)?",
+    "option_a": "O(n)",
+    "option_b": "O(k log^3 n)",
+    "option_c": "O(sqrt(n))",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Miller-Rabin primality test is very efficient and runs in polynomial time relative to number of bits."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Terms",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A 'Recursive' algorithm is one that:",
+    "option_a": "Uses a loop",
+    "option_b": "Calls itself to solve smaller subproblems",
+    "option_c": "Runs in O(1) time",
+    "option_d": "Does not use a stack",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Recursion involves breaking a problem down until reaching a base case."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Tree Traversal",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which traversal of a Binary Search Tree (BST) visits nodes in ascending order?",
+    "option_a": "Pre-order",
+    "option_b": "In-order",
+    "option_c": "Post-order",
+    "option_d": "Level-order",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In-order traversal (Left, Root, Right) naturally sorts a BST."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 2,
+    "level_topic": "Complexity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If f(n) = O(g(n)) and h(n) = O(i(n)), then f(n) * h(n) is:",
+    "option_a": "O(g(n) + i(n))",
+    "option_b": "O(g(n) * i(n))",
+    "option_c": "O(g(n))",
+    "option_d": "O(1)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Standard property of asymptotic notations: complexities multiply when the operations multiply."
+  }
+]

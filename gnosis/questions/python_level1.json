@@ -1,0 +1,803 @@
+[
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of the following is the correct extension of the Python file?",
+    "option_a": ".python",
+    "option_b": ".pl",
+    "option_c": ".py",
+    "option_d": ".p",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Python source files have the .py extension."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the correct way to create a list in Python?",
+    "option_a": "list = {1, 2, 3}",
+    "option_b": "list = (1, 2, 3)",
+    "option_c": "list = [1, 2, 3]",
+    "option_d": "list = <1, 2, 3>",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Lists are created using square brackets [] in Python."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of the following is used to define a block of code in Python?",
+    "option_a": "Parentheses",
+    "option_b": "Indentation",
+    "option_c": "Brackets",
+    "option_d": "Colons",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Python uses indentation to define code blocks."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which keyword is used to create a function in Python?",
+    "option_a": "function",
+    "option_b": "void",
+    "option_c": "def",
+    "option_d": "fun",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 'def' keyword is used to start a function definition."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What will be the output of `print(type(1 / 2))` in Python 3?",
+    "option_a": "<class 'int'>",
+    "option_b": "<class 'float'>",
+    "option_c": "<class 'double'>",
+    "option_d": "<class 'decimal'>",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In Python 3, division (/) always returns a float."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which data type is immutable in Python?",
+    "option_a": "List",
+    "option_b": "Set",
+    "option_c": "Dictionary",
+    "option_d": "Tuple",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Tuples are immutable sequences, meaning their contents cannot be changed after creation."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the result of `2 ** 3` in Python?",
+    "option_a": "6",
+    "option_b": "8",
+    "option_c": "9",
+    "option_d": "12",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The ** operator is for exponentiation; 2 raised to the power of 3 is 8."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the output of `bool([])` in Python?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "None",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Empty collections (like lists, strings, sets) evaluate to False in a boolean context."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "How do you add a single element to a set in Python?",
+    "option_a": ".append()",
+    "option_b": ".push()",
+    "option_c": ".add()",
+    "option_d": ".insert()",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The .add() method is used to add one element to a set."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Which of these is a valid way to create an empty set?",
+    "option_a": "s = {}",
+    "option_b": "s = set()",
+    "option_c": "s = []",
+    "option_d": "s = set([])",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "{} creates an empty dictionary. set() must be used to create an empty set."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Control Flow",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which statement is used to exit a loop early?",
+    "option_a": "continue",
+    "option_b": "return",
+    "option_c": "break",
+    "option_d": "stop",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 'break' statement terminates the current loop and resumes at the next statement."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Control Flow",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What will `range(5)` generate?",
+    "option_a": "[1, 2, 3, 4, 5]",
+    "option_b": "[0, 1, 2, 3, 4]",
+    "option_c": "[0, 1, 2, 3, 4, 5]",
+    "option_d": "An iterator yielding 0, 1, 2, 3, 4",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "In Python 3, range() returns a range object (an iterator) that produces integers from 0 to n-1."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Control Flow",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these are valid loop structures in Python?",
+    "option_a": "for",
+    "option_b": "while",
+    "option_c": "do-while",
+    "option_d": "foreach",
+    "correct_options": [
+      "A",
+      "B"
+    ],
+    "explanation": "Python only supports 'for' and 'while' loops natively."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Is Python a compiled or interpreted language?",
+    "option_a": "Compiled",
+    "option_b": "Interpreted",
+    "option_c": "Both",
+    "option_d": "Neither",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Python is both compiled (to bytecode) and interpreted (by the VM). However, it is usually categorized as an interpreted language."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics & Data Types",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the output of `[i for i in range(5) if i % 2 == 0]`?",
+    "option_a": "[0, 2, 4]",
+    "option_b": "[1, 3]",
+    "option_c": "[2, 4]",
+    "option_d": "[0, 1, 2, 3, 4]",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is a list comprehension filtering for even numbers from 0 to 4."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Basics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How do you create a comment in Python?",
+    "option_a": "// this is a comment",
+    "option_b": "# this is a comment",
+    "option_c": "/* this is a comment */",
+    "option_d": "-- this is a comment",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Python uses the hash (#) symbol for single line comments."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Variables",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of these is NOT a valid variable name in Python?",
+    "option_a": "_my_var",
+    "option_b": "my_var1",
+    "option_c": "2myvar",
+    "option_d": "MyVar",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Variable names cannot start with a digit."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What is the output of 'hello'.upper()?",
+    "option_a": "Hello",
+    "option_b": "HELLO",
+    "option_c": "hello",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The upper() method returns a string in all uppercase letters."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Data Types",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does `type(3.14)` return?",
+    "option_a": "<class 'int'>",
+    "option_b": "<class 'float'>",
+    "option_c": "<class 'double'>",
+    "option_d": "<class 'str'>",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Real numbers in Python are of type 'float'."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How do you get the length of the string 'python'?",
+    "option_a": "len('python')",
+    "option_b": "count('python')",
+    "option_c": "'python'.length()",
+    "option_d": "length('python')",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The len() function returns the number of items in an object."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Booleans",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the result of `True and False`?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "None",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In boolean logic, 'and' requires both operands to be True for the result to be True."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Operators",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the result of 10 // 3?",
+    "option_a": "3.33",
+    "option_b": "3",
+    "option_c": "1",
+    "option_d": "4",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "// is the floor division operator; it returns the largest integer less than or equal to the result."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Lists",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you add an element 'x' to the end of a list `my_list`?",
+    "option_a": "my_list.add('x')",
+    "option_b": "my_list.append('x')",
+    "option_c": "my_list.insert('x')",
+    "option_d": "my_list += 'x'",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The append() method adds an item to the end of a list."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Dictionaries",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is a way to create a dictionary in Python?",
+    "option_a": "my_dict = {1, 2, 3}",
+    "option_b": "my_dict = [('a', 1), ('b', 2)]",
+    "option_c": "my_dict = {'key': 'value'}",
+    "option_d": "my_dict = (1, 2, 3)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Dictionaries are defined with curly braces and contain key:value pairs."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Functions",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Which keyword is used to define a function in Python?",
+    "option_a": "function",
+    "option_b": "def",
+    "option_c": "fun",
+    "option_d": "define",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Functions are defined using the 'def' keyword."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Control Flow",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What is the output of: if True: print('A') else: print('B')?",
+    "option_a": "A",
+    "option_b": "B",
+    "option_c": "AB",
+    "option_d": "Nothing",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The code block associated with 'if True' will execute."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Control Flow",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which statement is used to skip the rest of the current iteration and move to the next one in a loop?",
+    "option_a": "break",
+    "option_b": "continue",
+    "option_c": "pass",
+    "option_d": "skip",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'continue' statement starts the next cycle of the nearest enclosing loop."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Exceptions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which block allows you to test a block of code for errors?",
+    "option_a": "try",
+    "option_b": "except",
+    "option_c": "finally",
+    "option_d": "error",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The 'try' block lets you test a block of code for errors."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Input/Output",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "How do you read a string from the user in Python?",
+    "option_a": "input()",
+    "option_b": "read()",
+    "option_c": "scanf()",
+    "option_d": "get()",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The input() function reads a line of text from standard input as a string."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the output of 'abc' * 3?",
+    "option_a": "abc3",
+    "option_b": "abcabcabc",
+    "option_c": "Error",
+    "option_d": "3abc",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "When used with a string and an integer, the * operator repeats the string."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Modules",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Which keyword is used to use code from another file (module)?",
+    "option_a": "use",
+    "option_b": "require",
+    "option_c": "import",
+    "option_d": "include",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The import statement is used to bring in code from a module."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Functions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a parameter in a function definition?",
+    "option_a": "A value passed to the function",
+    "option_b": "A variable listed in the function definition that receives a value",
+    "option_c": "The return value of the function",
+    "option_d": "The name of the function",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Parameters are placeholders used to pass data to a function."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the output of '1' + '1'?",
+    "option_a": "2",
+    "option_b": "11",
+    "option_c": "Error",
+    "option_d": "None",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "When used with strings, the + operator concatenates them."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Tuples",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is a key difference between a list and a tuple?",
+    "option_a": "Lists are immutable; tuples are not",
+    "option_b": "Tuples are immutable; lists are not",
+    "option_c": "Lists can only hold integers",
+    "option_d": "Tuples are faster for searching",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tuples cannot be changed after creation (immutable), while lists can (mutable)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Sets",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the output of set([1, 2, 2, 3])?",
+    "option_a": "{1, 2, 2, 3}",
+    "option_b": "{1, 2, 3}",
+    "option_c": "[1, 2, 3]",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A set automatically removes duplicate elements."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Booleans",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does bool(0) return?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "None",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In Python, the integer 0 evaluates to False in a boolean context."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "File Handling",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the 'w' mode stand for in open('file.txt', 'w')?",
+    "option_a": "Wait",
+    "option_b": "Write",
+    "option_c": "Warning",
+    "option_d": "Web",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'w' opens a file for writing, overwriting its existing content."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Control Flow",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of the 'pass' statement?",
+    "option_a": "To end the script",
+    "option_b": "As a placeholder for code that will be written later",
+    "option_c": "To return a value",
+    "option_d": "To skip an error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'pass' is a null operation; nothing happens when it executes."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the output of 'hello'[1:3]?",
+    "option_a": "el",
+    "option_b": "hel",
+    "option_c": "ell",
+    "option_d": "he",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Slicing uses indices from (including) the start to (excluding) the end. Indices 1 and 2 are 'e' and 'l'."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Functions",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'lambda' function?",
+    "option_a": "A function that generates Greek letters",
+    "option_b": "A small anonymous function",
+    "option_c": "A function with many arguments",
+    "option_d": "A recursive function",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A lambda function can take any number of arguments, but can only have one expression."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Lists",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you remove the last item from a list?",
+    "option_a": "list.remove_last()",
+    "option_b": "list.pop()",
+    "option_c": "list.delete(-1)",
+    "option_d": "list.shift()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "pop() removes and returns the item at the given index (default is the last item)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Operators",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the result of 2 ** 3?",
+    "option_a": "6",
+    "option_b": "8",
+    "option_c": "9",
+    "option_d": "5",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "** is the exponentiation operator (2 raised to the power of 3)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Data Types",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the output of bool([])?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "None",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Empty collections (lists, tuples, strings, etc.) evaluate to False."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you reverse a string 's' in Python?",
+    "option_a": "s.reverse()",
+    "option_b": "s[::-1]",
+    "option_c": "reverse(s)",
+    "option_d": "s.flip()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Slice notation [::-1] creates a copy of the string in reverse order."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Variables",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Is Python case-sensitive?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for variables",
+    "option_d": "Only for functions",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Yes, 'var' and 'Var' are different identifiers in Python."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "List Operations",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you find the index of the first occurrence of 'a' in list `L`?",
+    "option_a": "L.find('a')",
+    "option_b": "L.index('a')",
+    "option_c": "L.search('a')",
+    "option_d": "L.where('a')",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The index() method returns the index of the first matched element."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Math",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which module provides mathematical functions like sqrt()?",
+    "option_a": "maths",
+    "option_b": "math",
+    "option_c": "calc",
+    "option_d": "science",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'math' module provides access to many mathematical functions."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Booleans",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the output of `not(not True)`?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "None",
+    "option_d": "Error",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Applying 'not' twice returns the original boolean value."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Loops",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which loop will run 10 times: for i in range(____):?",
+    "option_a": "9",
+    "option_b": "10",
+    "option_c": "11",
+    "option_d": "0, 9",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "range(10) produces 0 through 9, which is 10 iterations."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 1,
+    "level_topic": "Functions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does a function return if there is no return statement?",
+    "option_a": "0",
+    "option_b": "None",
+    "option_c": "False",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If no return is specified, a Python function returns the 'None' object."
+  }
+]

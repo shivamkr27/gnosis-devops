@@ -1,0 +1,19 @@
+# Prometheus ServiceMonitor — scrape all gnosis services
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: gnosis-services
+  namespace: monitoring
+  labels:
+    release: kube-prometheus-stack
+spec:
+  namespaceSelector:
+    matchNames:
+      - gnosis
+  selector:
+    matchLabels:
+      project: gnosis
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 30s

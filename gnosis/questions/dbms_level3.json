@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Indexing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the primary difference between a B-Tree and a B+ Tree index?",
+    "option_a": "B-Trees are only for numbers",
+    "option_b": "B+ Trees store data pointers only in the leaf nodes, creating a linked list for faster range queries, whereas B-Trees store pointers in all nodes",
+    "option_c": "B-Trees are faster for deletes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "B+ trees are the industry standard for database indexing because of their efficient range scanning and predictable height."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Indexing",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is a 'Clustered Index'?",
+    "option_a": "An index for groups of people",
+    "option_b": "An index that defines the physical order of data in the table (a table can have only one)",
+    "option_c": "An index that is encrypted",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The table data itself is stored in the leaf nodes of a clustered index."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Hashing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Extendible Hashing'?",
+    "option_a": "Adding more space manualy",
+    "option_b": "A dynamic hashing technique that uses a directory of pointers to buckets, allowing the file to grow and shrink gracefully",
+    "option_c": "Using a very long hash key",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Extendible hashing avoids the rehashing of the entire database by splitting only one bucket at a time."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Two-Phase Locking' (2PL) protocol?",
+    "option_a": "Locking the table twice",
+    "option_b": "A protocol where a transaction has a Growing phase (acquiring locks) and a Shrinking phase (releasing locks), and it cannot acquire new locks after releasing one",
+    "option_c": "Using two different keys for one row",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "2PL ensures conflict serializability but does not prevent deadlocks."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Strict 2PL' and why is it used?",
+    "option_a": "A 2PL with no shrinkage",
+    "option_b": "A variation where all exclusive (write) locks are held until the transaction commits or aborts to ensure recoverability",
+    "option_c": "A way to delete all locks",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Strict 2PL avoids cascading rollbacks and is used by most commercial databases."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What does 'Thomas' Write Rule' optimization do in timestamp-based concurrency?",
+    "option_a": "Writes everything twice",
+    "option_b": "It allows a write to be ignored if a newer write has already occurred (obsolescence), helping to improve concurrency without violating view serializability",
+    "option_c": "Deletes the logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Thomas' Write Rule allows some non-conflict serializable schedules to be view serializable."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Deadlocks",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In a 'Wait-Die' deadlock prevention scheme, what happens if an older transaction requests a resource held by a younger one?",
+    "option_a": "Older waits",
+    "option_b": "Older dies",
+    "option_c": "Younger dies",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Wait-Die uses timestamps to build a non-circular wait dependency (old waits for young; young dies if requesting old)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Deadlocks",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In a 'Wound-Wait' deadlock prevention scheme, what happens if an older transaction requests a resource held by a younger one?",
+    "option_a": "Older waits",
+    "option_b": "Older 'wounds' (aborts) the younger transaction to get the resource",
+    "option_c": "Older dies",
+    "option_d": "Younger waits",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Wound-Wait is generally more efficient than Wait-Die as it preempts younger transactions."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Recovery",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Shadow Paging'?",
+    "option_a": "Creating a shadow for the database",
+    "option_b": "A recovery technique where the database remains consistent by maintaining dual versions of the page table; updates are written to a 'shadow' version",
+    "option_c": "Deleting the database shadow",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shadow paging avoids the overhead of log-based recovery but can lead to disk fragmentation."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Recovery",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the purpose of 'Checkpoints' in log-based recovery?",
+    "option_a": "To check for bugs",
+    "option_b": "To reduce the time for recovery after a crash by flushing dirty buffers to disk and marking a safe point in the log",
+    "option_c": "To count the number of users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Recovery only needs to process the log from the last checkpoint rather than from the beginning of time."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "SQL Advanced",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is a 'Database Trigger'?",
+    "option_a": "An error that stops the database",
+    "option_b": "A procedural piece of code that automatically executes in response to certain events (INSERT, UPDATE, DELETE) on a particular table",
+    "option_c": "A user manual for the DB",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Triggers are used for complex integrity checks and auditing."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "SQL Advanced",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Stored Procedure'?",
+    "option_a": "A way to store data faster",
+    "option_b": "A prepared SQL code that you can save and reuse, allowing for complex logic and better performance (via pre-compilation)",
+    "option_c": "The bios setup for DB",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Stored procedures reduce network traffic by executing complex logic on the server side."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "SQL Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which SQL Window function provides a unique sequence number for each row within a partition, regardless of ties?",
+    "option_a": "RANK()",
+    "option_b": "DENSE_RANK()",
+    "option_c": "ROW_NUMBER()",
+    "option_d": "PARTITION()",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "ROW_NUMBER() always increments, while RANK() can have gaps if ties occur."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "SQL Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How does 'DENSE_RANK()' differ from 'RANK()'?",
+    "option_a": "Dense rank is for text only",
+    "option_b": "DENSE_RANK() does not leave gaps in the rank sequence after a tie (e.g., 1, 2, 2, 3), whereas RANK() would skip (e.g., 1, 2, 2, 4)",
+    "option_c": "Rank is faster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DENSE_RANK ensures every number is used in a consecutive sequence."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Query Processing",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Query Optimization' in a DBMS engine?",
+    "option_a": "The user writing better code",
+    "option_b": "The component that analyzes a query and chooses the most efficient execution plan (lowest cost) considering indexes and table statistics",
+    "option_c": "Deleting unused tables",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Optimization is the 'brain' of the DBMS, determining whether to use a full table scan or an index."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'MVCC' (Multi-Version Concurrency Control)?",
+    "option_a": "Deleting old versions of the DB",
+    "option_b": "Maintaining multiple versions of data items to allow 'readers' to see a consistent snapshot of the DB without blocking 'writers'",
+    "option_c": "Using multiple databases at once",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MVCC provides high performance for read-heavy workloads (Postgres and InnoDB use it)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Indexing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Index Fan-out'?",
+    "option_a": "The number of fans in the server room",
+    "option_b": "The number of pointers (entries) that can fit in a single index block",
+    "option_c": "The depth of the tree",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Higher fan-out leads to shallower B+ trees and faster lookups."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Heap File' organization?",
+    "option_a": "Sorting everything by price",
+    "option_b": "An unorganized collection of records where data is simply appended to the end of the file",
+    "option_c": "Storing data only in RAM",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Heap files are fast for writes but slow for searches without an index."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'ISAM' (Indexed Sequential Access Method)?",
+    "option_a": "A high-speed internet protocol",
+    "option_b": "A static multi-level index structure where data is stored in sorted order on disk",
+    "option_c": "A way to delete database logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ISAM is efficient for static data but performs poorly when there are many inserts/deletes."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Recovery",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In Log-based recovery, what is 'Deferred Update'?",
+    "option_a": "Updating at the end of the day",
+    "option_b": "Actual database updates are postponed until after the transaction is successfully committed, writing only to the log until then",
+    "option_c": "A way to speed up the disk",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deferred updates eliminate the need for 'Undo' operations during recovery."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Recovery",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In Log-based recovery, what is 'Immediate Update'?",
+    "option_a": "Updating without writing a log",
+    "option_b": "A technique where database updates are immediately reflected on disk even before the transaction commits",
+    "option_c": "Updating only one table",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Immediate updates require both 'Undo' and 'Redo' operations during recovery."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Lock Downgrading' in 2PL?",
+    "option_a": "Removing a password",
+    "option_b": "Transitioning from an exclusive (write) lock to a shared (read) lock in the shrinking phase",
+    "option_c": "Deleting the locks",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Downgrading is allowed during the shrinking phase to improve concurrency."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'SQL Injection'?",
+    "option_a": "Adding data using a syringe",
+    "option_b": "A vulnerability where an attacker can execute arbitrary SQL code by manipulating input untrusted by the application",
+    "option_c": "A way to speed up database queries",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Using 'Prepared Statements' or 'Parameterized Queries' is the primary defense against SQL injection."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Indexing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Height' of a B+ Tree?",
+    "option_a": "The physical size of the disk",
+    "option_b": "The number of levels from the root node to the leaf nodes",
+    "option_c": "The number of users on the site",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Most production B+ trees have a height of 3 or 4, even with millions of records."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Hashing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Linear Hashing'?",
+    "option_a": "Hashing in a straight line",
+    "option_b": "A dynamic hashing method that grows the file by splitting buckets in a predictable, linear order, avoiding a global directory",
+    "option_c": "Hashing only the primary key",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Linear hashing avoids the directory overhead of extendible hashing."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Query Execution",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'Index Scan' vs 'Full Table Scan'?",
+    "option_a": "Index scan only looks at the book cover",
+    "option_b": "Index scan traverses an index tree to find rows; Full Table scan reads every single page of the table from disk",
+    "option_c": "Full table scan is always faster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Index scans are drastically faster for selective queries (e.g., finding 1 user out of 1 million)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Transactions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Log' in log-based recovery?",
+    "option_a": "A piece of wood",
+    "option_b": "A sequential file that records all data-modification operations (and their outcomes) for the purpose of ensuring ACID properties",
+    "option_c": "A list of table names",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The log (or WAL - Write Ahead Log) is the primary tool for database durability."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Lock Starvation'?",
+    "option_a": "The computer is hungry",
+    "option_b": "When a transaction is never granted a lock it needs because other transactions keep getting the lock first (e.g., constant readers blocking a writer)",
+    "option_c": "The database is empty",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lock scheduling must use fairness (like a FIFO queue for locks) to avoid starvation."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Cascading Rollback' problem?",
+    "option_a": "Rolling down a hill",
+    "option_b": "When the rollback of one transaction forces the rollback of many other dependent transactions due to uncommitted data being read",
+    "option_c": "Deleting the database backup",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Avoiding cascading rollbacks is a key goal for practical database isolation."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Database Catalog'?",
+    "option_a": "A magazine for DBs",
+    "option_b": "The part of the metadata that contains info about users, privileges, table structures, and physical storage stats",
+    "option_c": "A list of all users on the internet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The catalog is accessible via 'Information Schema' queries in many SQL systems."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "SQL Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Cursor' in SQL processing?",
+    "option_a": "The mouse on the screen",
+    "option_b": "A database object that allows for row-by-row processing of a result-set",
+    "option_c": "An error code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cursors should be used sparingly as they are generally slower than set-based SQL operations."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Hashing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Hash Collision'?",
+    "option_a": "When the computer crashes during hashing",
+    "option_b": "When two different search keys hash to the same bucket address",
+    "option_c": "Hiding the hash key",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Collisions are inevitable and are handled by techniques like Overflow Chaining or Open Addressing."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'RAID 6' known for?",
+    "option_a": "Speed only",
+    "option_b": "Using dual parity to provide protection against the simultaneous failure of any two drives",
+    "option_c": "Triple mirroring",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RAID 6 is very safe but has high write overhead due to calculating complex syndromes."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "SQL",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the purpose of the 'WITH RECURSIVE' clause in SQL?",
+    "option_a": "To delete files recursively",
+    "option_b": "To perform recursive queries, such as navigating hierarchical data like an organizational chart or family tree",
+    "option_c": "To repeat the same query forever",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Recursive CTEs (Common Table Expressions) are powerful for processing graph-like or hierarchical data structures."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Role-Based Access Control' (RBAC)?",
+    "option_a": "Granting rights to individuals",
+    "option_b": "Defining permissions for roles and then assigning users to those roles, simplifying maintenance",
+    "option_c": "Using a role-play game to secure data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RBAC is the standard for enterprise security management."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the result of 'Thomas Write Rule' regarding serialization?",
+    "option_a": "It makes all schedules conflict serializable",
+    "option_b": "It allows some schedules that are NOT conflict serializable but ARE view serializable",
+    "option_c": "It deletes all writes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By ignoring obsolete writes, it relaxes the strict conflict rules while maintaining logical correctness."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Data Scrubbing' in large storage systems?",
+    "option_a": "Deleting all the data",
+    "option_b": "Background background background background scanning for data corruption and fixing it using parity or ECC",
+    "option_c": "Cleaning the hardware with soap",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Data scrubbing prevents silent errors (bit rot) from accumulating."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Query Optimization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Cost-Based Optimization'?",
+    "option_a": "Making the database cheaper to buy",
+    "option_b": "The strategy where the engine evaluates multiple plans and chooses one with the lowest estimated cost in terms of I/O, CPU, and memory",
+    "option_c": "Paying the developer to write code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cost is estimated using table statistics (row count, selectivity, etc.)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Buffer Pinning'?",
+    "option_a": "Adding a pin to the board",
+    "option_b": "Forcing a page to stay in the buffer pool until a specific operation completes to prevent it from being swapped out",
+    "option_c": "A way to backup the computer",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pinning is required for active data manipulation by the engine."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Snapshot Isolation'?",
+    "option_a": "Taking a picture of the server",
+    "option_b": "An isolation level where each transaction sees a consistent snapshot of the whole database from when it started, usually implemented via MVCC",
+    "option_c": "Hiding the data from users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Snapshot isolation eliminates many anomalies like Dirty Reads and Unrepeatable Reads."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Indexing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In a B+ Tree, what is 'Leaf Level' chaining?",
+    "option_a": "Chaining the leaves to the root",
+    "option_b": "Connecting leaf nodes via pointers to form a doubly linked list for efficient range scans",
+    "option_c": "A way to encrypt data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This allows the engine to satisfy a 'WHERE value BETWEEN x AND y' query by jumping to x and following the links to y."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "SQL",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What happens if a transaction violates a 'CHECK' constraint in SQL?",
+    "option_a": "The computer reboots",
+    "option_b": "The operation fails and the transaction is typically aborted/rolled back",
+    "option_c": "The data is automatically fixed",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Constraints preserve data integrity; violations are rejected."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Record Blocking' in storage?",
+    "option_a": "Blocking a user from a record",
+    "option_b": "Grouping multiple logical records into a single physical block on disk to improve I/O efficiency",
+    "option_c": "Splitting a file into many parts",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Larger blocks use less overhead and fewer IO operations."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Transactions",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What characterizes 'View Serializability'?",
+    "option_a": "A schedule that looks like a serial one",
+    "option_b": "A weaker isolation level than conflict serializability that allows the same final view of the database",
+    "option_c": "A stronger version of serializability that handles obsolete writes correctly",
+    "option_d": "None of the above",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "View serializability is more permissive than conflict serializability but difficult to check efficiently (NP-hard)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Algebra",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which operation in relational algebra is used to find records that exist in R but NOT in S?",
+    "option_a": "Union",
+    "option_b": "Set Difference (-)",
+    "option_c": "Intersection",
+    "option_d": "Projection",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Set difference yields R - S."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Algebra",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the 'Rename' operator (\u03c1) used for in relational algebra?",
+    "option_a": "Changing the name of the database",
+    "option_b": "A way to provide a temporary name for a relation or its attributes during a query (e.g., in a self-join)",
+    "option_c": "Deleting a table name",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Rename allows for unambiguous reference in complex joins."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Write Ahead Logging' (WAL)?",
+    "option_a": "Writing at the beginning of the day",
+    "option_b": "A fundamental rule that a log record describing a change MUST be written to stable storage before the actual change is applied to the database on disk",
+    "option_c": "A security scan of the logs",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "WAL is required to survive system failures reliably."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Can a transaction acquire a 'Shared Lock' if an 'Exclusive Lock' held by someone else exists on the same item?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only on Tuesdays",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Exclusive locks are incompatible with any other locks (shared or exclusive)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Query Optimization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Materialized View'?",
+    "option_a": "An index on a view",
+    "option_b": "A view whose query result is physically stored on disk, and updated when the base tables change, to speed up expensive queries",
+    "option_c": "A view for only prime attributes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Materialized views trade storage and update time for ultra-fast read performance."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Lock Escalation'?",
+    "option_a": "Making the lock harder to break",
+    "option_b": "When the OS converts hundreds of individual row-level locks into a single table-level lock to save memory when a transaction is affecting many rows",
+    "option_c": "A way to backup the computer",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lock escalation saves RAM but significantly reduces concurrency (other users are blocked from the whole table)."
+  }
+]

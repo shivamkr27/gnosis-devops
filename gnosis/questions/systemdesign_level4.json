@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Architecture at Scale",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "When designing a system like 'WhatsApp', which primary challenge does the service face regarding connection management?",
+    "option_a": "High CPU utilization per user",
+    "option_b": "Maintaining millions of concurrent long-lived socket connections (WebSockets) on a single server",
+    "option_c": "Slow database queries for messages",
+    "option_d": "Encryption overhead",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "High-scale chat apps must optimize OS kernel parameters to handle millions of persistent connections."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Big Data Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Lambda Architecture' specifically designed for?",
+    "option_a": "Running serverless functions",
+    "option_b": "Processing massive amounts of data by using both batch-processing and stream-processing methods",
+    "option_c": "Scaling Python applications",
+    "option_d": "Designing UI components",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lambda architecture provides low-latency views of real-time data while ensuring consistency with archival batch data."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How does 'HyperLogLog' (HLL) help in system design for large-scale analytics?",
+    "option_a": "It encrypts massive datasets using logs",
+    "option_b": "It provides a probabilistic way to estimate the number of unique elements (cardinality) in a huge set with minimal memory",
+    "option_c": "It sorts data in logarithmic time",
+    "option_d": "It records all user logins for history",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HLL can estimate millions of unique values using just a few kilobytes of RAM."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Consistent Hashing",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In Consistent Hashing, what is a 'Virtual Node' used for?",
+    "option_a": "A server that doesn't exist",
+    "option_b": "To ensure even distribution of data across physical nodes by mapping multiple hash points to a single actual server",
+    "option_c": "To back up the master node",
+    "option_d": "To simulate network traffic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Virtual nodes prevent data skew when a cluster has servers of different capacities or irregular hash distribution."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Database Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Database Write Skew' in the context of snapshot isolation?",
+    "option_a": "Writing data diagonally in the table",
+    "option_b": "A situation where two transactions read the same data, but update different parts of it, violating a global constraint that wasn't visible to either",
+    "option_c": "Writing too fast for the server",
+    "option_d": "A physical disk failure during a write",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Write skew is an anomaly where isolation levels fail to maintain application-level invariants."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Search Scalability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'Inverted Index' in the context of search engines like Elasticsearch?",
+    "option_a": "An index sorted in reverse alphabetical order",
+    "option_b": "A map of words to their document locations, allowing for ultra-fast full-text search",
+    "option_c": "A list of documents without content",
+    "option_d": "Deleting the original data and keeping the index",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Inverted indexes are the core data structure enabling efficient searching across millions of documents."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Reliability at Scale",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Jitter' in a retry policy?",
+    "option_a": "A bug causing UI flickering",
+    "option_b": "Adding a random delay to retry attempts to prevent many clients from retrying at the exact same moment (Thundering Herd)",
+    "option_c": "The speed of the network cable",
+    "option_d": "A way to speed up the CPU",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Jitter smoothly distributes load on a recovered service by staggering synchronized retry attempts."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Large Scale Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In Google Bigtable, what is a 'Tablet'?",
+    "option_a": "A mobile device for data entry",
+    "option_b": "A contiguous range of rows in a table, which is the unit of distribution and load balancing",
+    "option_c": "A small database",
+    "option_d": "A hardware storage module",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tablets are dynamically split and moved between servers to handle massive scale."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Protocols",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Why do some high-performance systems use 'UDP' instead of 'TCP' for data transfer?",
+    "option_a": "UDP is more reliable",
+    "option_b": "TCP's handshake and congestion control add too much latency for use cases like gaming or real-time streaming",
+    "option_c": "UDP encrypts data automatically",
+    "option_d": "UDP is newer than TCP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "UDP trades delivery guarantees for speed and low overhead."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Architecture Patterns",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'CQRS' (Command Query Responsibility Segregation)?",
+    "option_a": "A way to sort SQL tables",
+    "option_b": "Pattern that uses different models for updating data (commands) and reading data (queries)",
+    "option_c": "Combining all queries into one command",
+    "option_d": "A database backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CQRS allows scaling and optimizing reads independently from writes."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Scaling Search",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'TF-IDF' primarily used for in search algorithms?",
+    "option_a": "Total Factorial Identification",
+    "option_b": "Term Frequency-Inverse Document Frequency: a weighting factor to evaluate how important a word is to a document",
+    "option_c": "A data encryption standard",
+    "option_d": "A protocol for fast file transfer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TF-IDF is used by search engines to rank the relevance of documents to a user query."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Database Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Log Aggregation' vs 'Log Streaming'?",
+    "option_a": "They are the same thing",
+    "option_b": "Aggregation collects logs periodically; Streaming processes and transmits log events in near-real-time as they occur",
+    "option_c": "Aggregation is only for text files",
+    "option_d": "Streaming is slower than Aggregation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Log streaming (e.g., using Kafka) is essential for modern real-time alerting and observability."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Caching",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Leasing' in the context of distributed cache consistent updates?",
+    "option_a": "Renting a server",
+    "option_b": "Granting a node exclusive rights to update a cache key for a specific period to prevent race conditions",
+    "option_c": "Deleting old cache data",
+    "option_d": "A way to buy hardware",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Leases provide a mechanism to coordinate updates without heavy global locking."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Availability at Scale",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'N-1' redundancy in a data center context?",
+    "option_a": "Subtracting one server",
+    "option_b": "Designing infrastructure so that it can continue operating even if its largest component fails",
+    "option_c": "Having one extra backup on a USB",
+    "option_d": "A way to delete data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "N-1 ensures that the failure of any single component won't cause system downtime."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Location Services",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Quadtree' used for in systems like Uber or Yelp?",
+    "option_a": "Managing four databases together",
+    "option_b": "A tree data structure where each node has exactly four children, used for efficient spatial indexing and location-based searches",
+    "option_c": "A way to count users in four regions",
+    "option_d": "An encryption method for maps",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Quadtrees allow for fast retrieval of 'nearby' points (e.g., finding the nearest driver or restaurant)."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Messaging Scalability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In Apache Kafka, what is a 'Partition'?",
+    "option_a": "A wall in the server room",
+    "option_b": "The unit of parallelism; an ordered set of messages within a topic that can be processed by a single consumer in a group",
+    "option_c": "A type of database index",
+    "option_d": "A small part of a message",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Partitions allow Kafka topics to scale horizontally across many brokers."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Database Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Column-oriented' storage (e.g., Apache Parquet, Redshift) best for?",
+    "option_a": "Fast single-row lookups (OLTP)",
+    "option_b": "Analytical queries across large datasets with complex aggregations (OLAP)",
+    "option_c": "Storing user profile pictures",
+    "option_d": "Writing data very fast",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Columnar storage only reads the columns needed for a query, significantly reducing disk I/O for analytics."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Big Data",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What does a 'MapReduce' algorithm actually do?",
+    "option_a": "Draws a map of the database",
+    "option_b": "Processes huge datasets in parallel by splitting work (Map) and then consolidating results (Reduce)",
+    "option_c": "Reduces the size of a map image",
+    "option_d": "Finds a path between two map coordinates",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MapReduce is the foundational paradigm for processing Big Data across large clusters."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Architecture Patterns",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Ambassador' pattern?",
+    "option_a": "A person representing a country",
+    "option_b": "A helper service that acts as a proxy for a primary service, handling external connectivity and logging",
+    "option_c": "A special load balancer",
+    "option_d": "A database synchronization tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Ambassador pattern simplifies network communication by offloading common tasks to a separate helper process."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Security at Scale",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Rate Limiting' vs 'Egress Filtering'?",
+    "option_a": "They are the same thing",
+    "option_b": "Rate Limiting limits incoming requests; Egress Filtering restricts what traffic can 'leave' your network",
+    "option_c": "Egress is only for email",
+    "option_d": "Rate Limiting is for hardware only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Egress filtering is critical for preventing data exfiltration and limiting the impact of compromised servers."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Data Integrity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'BFT' (Byzantine Fault Tolerance)?",
+    "option_a": "A database that never crashes",
+    "option_b": "The ability of a system to reach consensus even if some members give conflicting or false information (malicious behavior)",
+    "option_c": "A very old sorting algorithm",
+    "option_d": "A hardware failure in a cable",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BFT is the core requirement for making decentralized systems like Blockchain reliable."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Scaling Real-time Systems",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "When building a 'Real-time Bidding' system (AdTech), what is the most critical design constraint?",
+    "option_a": "Data durability",
+    "option_b": "Absolute minimum latency (usually <100ms end-to-end)",
+    "option_c": "Total storage size",
+    "option_d": "Encryption depth",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In AdTech, the auction must happen while a webpage is loading, making latency the #1 priority."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Caching",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Negative Caching' helpful for?",
+    "option_a": "Deleting the cache",
+    "option_b": "Reducing load on the database by remembering that a certain key DOES NOT exist",
+    "option_c": "Storing errors in the cache",
+    "option_d": "A cache that runs in reverse",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Negative caching prevents 'Cache Holes' where missing data lookups hit the DB repeatedly."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Database Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'NoSQL Polyglot Persistence'?",
+    "option_a": "Using many databases for the same user",
+    "option_b": "Using different storage technologies for different data models in the same application based on their specific needs",
+    "option_c": "A database that supports multiple languages",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This maximizes efficiency by using Graph DBs for social links, Document DBs for profiles, etc."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Scaling Databases",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In a distributed DB, what is a 'Hot Shard'?",
+    "option_a": "A shard that is on a very hot server",
+    "option_b": "A specific shard that handles significantly more traffic than others, leading to performance bottlenecks",
+    "option_c": "A shard that is recently updated",
+    "option_d": "A very fast shard",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hot shards are often caused by poor shard key design, like sharding by a non-uniformly distributed field."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Networking at Scale",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the role of a 'Transit Gateway' in cloud architecture?",
+    "option_a": "A tunnel for high-speed trains",
+    "option_b": "A hub that connects multiple VPCs and on-premises networks, simplifying connectivity management",
+    "option_c": "A way to send data to users faster",
+    "option_d": "A security firewall",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Transit gateways avoid 'full-mesh' VPC peering, making complex cloud networks manageable."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Reliability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Dead Letter Queue' (DLQ) used for?",
+    "option_a": "Deleted messages",
+    "option_b": "Storing messages that couldn't be processed after multiple attempts, for manual inspection and debugging",
+    "option_c": "A queue for old servers",
+    "option_d": "A type of system crash report",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DLQs prevent failing messages from clogging the main processing pipeline."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Architecture Patterns",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Event Sourcing'?",
+    "option_a": "Finding the source of an event",
+    "option_b": "Persisting the state of an entity as a sequence of immutable state-changing events, rather than just the current state",
+    "option_c": "A log of all system crashes",
+    "option_d": "Tracking user events on a website",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Event sourcing allows you to rebuild the state of an application at any point in time."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Latency at Scale",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Tail Latency' (P99) problem?",
+    "option_a": "The latency of the very first request",
+    "option_b": "The phenomenon where a small percentage of requests (the 'tail') take significantly longer than the average, impacting overall user experience",
+    "option_c": "High latency on mobile devices only",
+    "option_d": "Slow database queries",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a system with many dependencies, P99 latency can dominate the end-user experience."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Database Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Materialized View' in the context of high performance?",
+    "option_a": "A screenshot of the website",
+    "option_b": "A pre-computed, stored result of a query used to improve read performance for expensive aggregations",
+    "option_c": "A list of current users",
+    "option_d": "A way to see the database code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Materialized views trade storage and write time for ultra-fast query responses."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Scaling to Millions",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "When a system reaching millions of users faces 'Data Skew', it means:",
+    "option_a": "The data is corrupted",
+    "option_b": "The distribution of data across shards is uneven, leading to some servers being overwhelmed while others are idle",
+    "option_c": "The data is written in the wrong language",
+    "option_d": "The database is too small",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Handling data skew often requires splitting hot partitions or adding salt to keys."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Protocols",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'HTTP/2' multiplexing?",
+    "option_a": "Sending multiple requests over the same TCP connection simultaneously",
+    "option_b": "Using multiple browsers at once",
+    "option_c": "Sending data to multiple servers",
+    "option_d": "An encryption method",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Multiplexing reduces head-of-line blocking and improves performance compared to HTTP/1.1."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Storage Strategies",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Tiered Storage'?",
+    "option_a": "Storing data in different formats",
+    "option_b": "Moving data between different storage media (e.g., SSD for 'hot' data, HDD for 'cold' data) to balance cost and performance",
+    "option_c": "Storing data in multiple data centers",
+    "option_d": "A type of database indexing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tiered storage (or lifecycle management) optimizes storage costs at scale."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "High Availability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Region-wide failure'?",
+    "option_a": "When a person in a specific country can't login",
+    "option_b": "The loss of all availability zones within a physical geographic area, usually due to a massive disaster",
+    "option_c": "A temporary internet outage",
+    "option_d": "A failure in the system's code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Protecting against region-wide failure requires multi-region active-passive or active-active architectures."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Architecture Patterns",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Strangler Fig' pattern in legacy migration?",
+    "option_a": "A way to grow plants in a data center",
+    "option_b": "Incrementally migrating a legacy system by replacing specific functional modules with new services until the old system is completely replaced",
+    "option_c": "Deleting the entire old system at once",
+    "option_d": "Renaming old variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Strangler Fig pattern reduces risk during the modernization of complex monoliths."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Location Services",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Geo-hashing'?",
+    "option_a": "A way to encrypt GPS coordinates",
+    "option_b": "Representing a geographic area as a short, alphanumeric string, where longer strings represent more precise locations",
+    "option_c": "A type of map drawing",
+    "option_d": "A way to find the user's country",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Geo-hashing allows for efficient range queries in spatial databases."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Big Data",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Kappa Architecture' in data processing?",
+    "option_a": "A simplified version of Lambda Architecture that uses only a single stream-processing engine for all data processing",
+    "option_b": "A database for images",
+    "option_c": "A type of serverless function",
+    "option_d": "Scaling Python code across many servers",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Kappa architecture simplifies maintenance by treating all data as a stream."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Search engine architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In a search system like YouTube, what is 'Indexing Latency'?",
+    "option_a": "The time it takes to search for a video",
+    "option_b": "The time delay between a user uploading a video and it becoming searchable for other users",
+    "option_c": "The speed of the video player",
+    "option_d": "A connection error to the database",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Low indexing latency is essential for providing a 'fresh' user experience in search engines."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Database Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Database Denormalization' trade-off?",
+    "option_a": "Faster writes, slower reads",
+    "option_b": "Faster reads, slower writes and potentially inconsistent data if not managed carefully",
+    "option_c": "Lower storage costs, higher CPU usage",
+    "option_d": "More users, less security",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Denormalization is a common optimization for read-heavy systems at scale."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Infrastructure",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Global Server Load Balancing' (GSLB)?",
+    "option_a": "One load balancer for the entire planet",
+    "option_b": "A DNS-based load balancing technique used to route traffic to the best data center based on physical distance and health",
+    "option_c": "Scaling one server to handle all globally",
+    "option_d": "A way to speed up user logins",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GSLB helps distribute traffic globally across multiple data centers."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Messaging Scalability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Compaction' process in Kafka?",
+    "option_a": "Deleting all old messages",
+    "option_b": "Retention policy that ensures only the last known value for each message key is kept, reclaiming space",
+    "option_c": "Compressing messages into a zip file",
+    "option_d": "Reducing the number of partitions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Topic compaction is useful for state storage where you only care about the most recent state."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Scaling Infrastructure",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Autoscaling' in cloud computing?",
+    "option_a": "When a computer grows physically larger",
+    "option_b": "The dynamic adjustment of computing resources based on real-time traffic and workload demands",
+    "option_c": "Programming a computer to write its own code",
+    "option_d": "A way to automatically pay cloud bills",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Autoscaling ensures you have enough capacity without overpaying for idle resources."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Consistency",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Two-Phase Commit' (2PC) major drawback?",
+    "option_a": "It's too easy to use",
+    "option_b": "It is a blocking protocol that can lead to system-wide stalls if the coordinator fails",
+    "option_c": "It doesn't work with SQL",
+    "option_d": "It makes the database too small",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Modern high-scale systems often use Three-Phase Commit (3PC) or Sagas instead of 2PC."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Availability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In a 'Self-healing' system, what is the role of an orchestrator (like Kubernetes)?",
+    "option_a": "To write code automatically",
+    "option_b": "To detect failed containers and automatically restart or replace them to maintain the desired state",
+    "option_c": "To count the number of files",
+    "option_d": "To optimize database queries",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Self-healing is a key component of highly available modern infrastructures."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Data Consistency",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Distributed Lock' manager used for?",
+    "option_a": "Locking the server room door",
+    "option_b": "Ensuring that only one process or node can perform a specific operation at a time across a distributed cluster",
+    "option_c": "Encrypting the database logs",
+    "option_d": "Making the database read-only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tools like Redis (Redlock) or Zookeeper provide distributed locking capabilities."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Architectural Patterns",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Health Monitoring' vs 'Application Monitoring'?",
+    "option_a": "They are the same",
+    "option_b": "Health checks look at infrastructure status (CPU, RAM); Application checks look at business logic and error rates",
+    "option_c": "Application monitoring is only for UI",
+    "option_d": "Health monitoring is more expensive",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Both are necessary for a complete view of system stability and performance."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Scaling real-time systems",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "When building 'Twitter Search' (relevance-based), what is the primary challenge?",
+    "option_a": "Total storage",
+    "option_b": "Handling a extreme ingestion rate (millions of tweets per minute) while providing sub-second search results",
+    "option_c": "Drawing the user's timeline",
+    "option_d": "Counting the number of likes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Real-time search at scale requires massive parallelization and specialized ingestion pipelines."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Architecture at Scale",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Backplane' in a high-speed networking context?",
+    "option_a": "A backup airplane for the CEO",
+    "option_b": "The internal switching fabric of a router or server rack that connects many high-speed nodes together",
+    "option_c": "The back of the server rack",
+    "option_d": "A type of internet cable",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Backplane throughput is a critical physical limit on the scalability of hardware clusters."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "Latency",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Congestion Collapse' in a network?",
+    "option_a": "When a network is so busy that the overhead of retransmissions and dropped packets causes total throughput to drop to zero",
+    "option_b": "When a server catches fire from too many users",
+    "option_c": "When many users use the same cable",
+    "option_d": "A way to speed up the internet",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "TCP congestion control is designed specifically to prevent this phenomenon."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 4,
+    "level_topic": "High-scale Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In AWS S3, a 'Bucket' is a logical container for objects. Can buckets be nested?",
+    "option_a": "Yes, infinitely",
+    "option_b": "No, buckets are a flat namespace; you use 'prefixes' (folders) to organize them",
+    "option_c": "Yes, but only 3 levels deep",
+    "option_d": "Only on weekends",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "S3 buckets are flat; folders are purely visual organizational concepts using prefixes in the object key."
+  }
+]

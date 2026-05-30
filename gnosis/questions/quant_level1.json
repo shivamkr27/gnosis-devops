@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Numbers",
+    "question_type": "easy",
+    "timer_seconds": 45,
+    "question_text": "What is the cube root of 729?",
+    "option_a": "7",
+    "option_b": "8",
+    "option_c": "9",
+    "option_d": "11",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "9 * 9 * 9 = 729."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Percentages",
+    "question_type": "easy",
+    "timer_seconds": 45,
+    "question_text": "If 20% of a number is 120, then 120% of that number will be:",
+    "option_a": "20",
+    "option_b": "120",
+    "option_c": "480",
+    "option_d": "720",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "20% of X = 120 => X = 600. 120% of 600 = 720."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Profit and Loss",
+    "question_type": "easy",
+    "timer_seconds": 45,
+    "question_text": "A person fetches a book for $500 and sells it for $600. What is the profit percentage?",
+    "option_a": "10%",
+    "option_b": "20%",
+    "option_c": "25%",
+    "option_d": "50%",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Profit = 600 - 500 = 100. Profit% = (100/500)*100 = 20%."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Average",
+    "question_type": "easy",
+    "timer_seconds": 40,
+    "question_text": "Find the average of first five multiples of 3.",
+    "option_a": "3",
+    "option_b": "9",
+    "option_c": "12",
+    "option_d": "15",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multiples: 3, 6, 9, 12, 15. Sum = 45. Average = 45/5 = 9."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Ratio and Proportion",
+    "question_type": "easy",
+    "timer_seconds": 45,
+    "question_text": "Two numbers are in the ratio 3:5. If 9 is subtracted from each, the new ratio is 12:23. The smaller number is:",
+    "option_a": "27",
+    "option_b": "33",
+    "option_c": "49",
+    "option_d": "55",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Let numbers be 3x, 5x. (3x-9)/(5x-9) = 12/23. 69x - 207 = 60x - 108. 9x = 99. x = 11. Smaller number = 3*11 = 33."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Time and Work",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "A can do a piece of work in 10 days and B can do it in 15 days. How many days will they take if they work together?",
+    "option_a": "6",
+    "option_b": "8",
+    "option_c": "9",
+    "option_d": "12",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Resultant = (10*15)/(10+15) = 150/25 = 6 days."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Time, Speed and Distance",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "A train 240 m long passes a pole in 24 seconds. How long will it take to pass a platform 650 m long?",
+    "option_a": "65 seconds",
+    "option_b": "89 seconds",
+    "option_c": "100 seconds",
+    "option_d": "150 seconds",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Speed = Distance / Time = 240 / 24 = 10 m/s. Time to cross platform = (240 + 650) / 10 = 890 / 10 = 89 seconds."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Simple Interest",
+    "question_type": "easy",
+    "timer_seconds": 45,
+    "question_text": "The simple interest on $5000 at 10% per annum for 3 years is:",
+    "option_a": "500",
+    "option_b": "1000",
+    "option_c": "1500",
+    "option_d": "2000",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "SI = (P * R * T) / 100 = (5000 * 10 * 3) / 100 = 1500."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Compound Interest",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Find compound interest on $10000 at 10% per annum for 2 years compounded annually.",
+    "option_a": "2000",
+    "option_b": "2100",
+    "option_c": "2200",
+    "option_d": "2500",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Amount = 10000 * (1 + 10/100)^2 = 10000 * 1.21 = 12100. CI = 12100 - 10000 = 2100."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Numbers",
+    "question_type": "easy",
+    "timer_seconds": 40,
+    "question_text": "Which of the following is a prime number?",
+    "option_a": "33",
+    "option_b": "81",
+    "option_c": "93",
+    "option_d": "97",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "97 is a prime number as it has only two factors, 1 and itself."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Numbers",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "The sum of all even numbers between 1 and 31 is:",
+    "option_a": "16",
+    "option_b": "240",
+    "option_c": "480",
+    "option_d": "512",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Even numbers: 2, 4, ..., 30. This is an AP with n=15. Sum = (n/2)(first + last) = (15/2)(2+30) = 15*16 = 240."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "HCF and LCM",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "The HCF of two numbers is 11 and their LCM is 693. If one of the numbers is 77, find the other company.",
+    "option_a": "7",
+    "option_b": "9",
+    "option_c": "63",
+    "option_d": "99",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Product of numbers = HCF * LCM. 77 * X = 11 * 693 => X = (11 * 693)/77 = 693/7 = 99."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Fractions",
+    "question_type": "easy",
+    "timer_seconds": 40,
+    "question_text": "Which is the greatest among 3/4, 5/6, 7/8, 9/10?",
+    "option_a": "3/4",
+    "option_b": "5/6",
+    "option_c": "7/8",
+    "option_d": "9/10",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "If the difference between numerator and denominator is same, the fraction with larger numbers is greater."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Probability",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "Two dice are thrown simultaneously. What is the probability of getting two numbers whose product is even?",
+    "option_a": "1/2",
+    "option_b": "3/4",
+    "option_c": "3/8",
+    "option_d": "5/16",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Total 36. Product is odd only if both are odd (3*3 = 9 outcomes). Remaining 27 have even product. Prob = 27/36 = 3/4."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Ages",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "Father is four times as old as his son. In 20 years, he will be only twice as old as his son. The father's present age is:",
+    "option_a": "40",
+    "option_b": "60",
+    "option_c": "80",
+    "option_d": "90",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "F = 4S. F+20 = 2(S+20). 4S+20 = 2S+40 => 2S = 20 => S=10. F = 40."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Alligation or Mixture",
+    "question_type": "hard",
+    "timer_seconds": 55,
+    "question_text": "In what ratio must tea at $62/kg be mixed with tea at $72/kg so that the mixture is worth $64.50/kg?",
+    "option_a": "3:1",
+    "option_b": "3:2",
+    "option_c": "4:3",
+    "option_d": "5:3",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Ratio = (72 - 64.5) / (64.5 - 62) = 7.5 / 2.5 = 3/1."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Pipes and Cisterns",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "A pipe can fill a tank in 8 hours and another can empty it in 16 hours. If both are opened, in how many hours will the tank be full?",
+    "option_a": "8",
+    "option_b": "10",
+    "option_c": "15",
+    "option_d": "16",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Net rate = 1/8 - 1/16 = 1/16. So it takes 16 hours."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Profit and Loss",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "A shopkeeper sells an article at a loss of 10%. Had he sold it for $75 more, he would have gained 5%. The cost price of the article is:",
+    "option_a": "500",
+    "option_b": "750",
+    "option_c": "1000",
+    "option_d": "1250",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Difference in % = 5 - (-10) = 15%. 15% of CP = 75. CP = 75/0.15 = 500."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Permutations and Combinations",
+    "question_type": "hard",
+    "timer_seconds": 55,
+    "question_text": "How many 3-digit numbers can be formed from digits 1, 2, 3, 4, 5 if repetition is allowed?",
+    "option_a": "60",
+    "option_b": "120",
+    "option_c": "125",
+    "option_d": "150",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "For each place, we have 5 choices. 5 * 5 * 5 = 125."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Geometric Ability",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "The length of a rectangle is increased by 20% and its breadth is decreased by 20%. What is the area change?",
+    "option_a": "0%",
+    "option_b": "4% increase",
+    "option_c": "4% decrease",
+    "option_d": "2% decrease",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Net change = 20 - 20 - (20*20)/100 = -4%."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Geometric Ability",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "Calculation of the area of a circle with a radius of 7 cm is (use \u03c0 = 22/7):",
+    "option_a": "44 sq cm",
+    "option_b": "154 sq cm",
+    "option_c": "308 sq cm",
+    "option_d": "616 sq cm",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Area = \u03c0r^2 = (22/7) * 7 * 7 = 154."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Stocks and Shares",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Find the annual income from $2500, 8% stock at 125.",
+    "option_a": "200",
+    "option_b": "160",
+    "option_c": "150",
+    "option_d": "250",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Income = (Face Value * Income%) = (2500 * 8) / 100 = 200."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Boats and Streams",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "A boat travels upstream at 6km/h and downstream at 14km/h. Speed of boat in still water is:",
+    "option_a": "8 km/h",
+    "option_b": "10 km/h",
+    "option_c": "12 km/h",
+    "option_d": "20 km/h",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Speed in still water = (Downstream + Upstream) / 2 = (14+6)/2 = 10."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Numbers",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "The difference between a number and its three-fifths is 50. What is the number?",
+    "option_a": "75",
+    "option_b": "100",
+    "option_c": "125",
+    "option_d": "150",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "X - 3X/5 = 50 => 2X/5 = 50 => X = 125."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Percentages",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "A student has to obtain 33% of the total marks to pass. He got 125 marks and failed by 40 marks. The maximum marks are:",
+    "option_a": "300",
+    "option_b": "500",
+    "option_c": "800",
+    "option_d": "1000",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pass marks = 125 + 40 = 165. 33% of X = 165 => X = 165/0.33 = 500."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Surds and Indices",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "The value of (256)^0.16 * (256)^0.09 is:",
+    "option_a": "4",
+    "option_b": "16",
+    "option_c": "64",
+    "option_d": "256.25",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Sum of indices = 0.16 + 0.09 = 0.25. (256)^0.25 = (256)^(1/4) = 4."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Logarithm",
+    "question_type": "hard",
+    "timer_seconds": 55,
+    "question_text": "If log (x/y) + log (y/x) = log (x+y), then:",
+    "option_a": "x + y = 1",
+    "option_b": "x + y = 0",
+    "option_c": "xy = 1",
+    "option_d": "x = y",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "log( (x/y)*(y/x) ) = log(1) = log(x+y). So x+y=1."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Profit and Loss",
+    "question_type": "easy",
+    "timer_seconds": 40,
+    "question_text": "By selling an article for $100, a person gains $15. What is his gain percentage?",
+    "option_a": "15%",
+    "option_b": "12.5%",
+    "option_c": "17.6%",
+    "option_d": "20%",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "CP = 100 - 15 = 85. Gain% = (15/85)*100 \u2248 17.64%."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Ratio and Proportion",
+    "question_type": "easy",
+    "timer_seconds": 35,
+    "question_text": "If A:B = 2:3 and B:C = 4:5, then A:B:C is:",
+    "option_a": "8:12:15",
+    "option_b": "2:4:5",
+    "option_c": "2:3:5",
+    "option_d": "8:10:15",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Multiply first ratio by 4 and second by 3. A:B=8:12, B:C=12:15."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Alligation or Mixture",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "A mixture contains milk and water in ratio 5:1. On adding 5 liters of water, ratio becomes 5:2. The quantity of milk is:",
+    "option_a": "15 liters",
+    "option_b": "25 liters",
+    "option_c": "30 liters",
+    "option_d": "5 liters",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Milk=5x, Water=x. (x+5) part of water is now 2 parts. Since milk remains 5x. x+5 = 2x => x=5. Milk = 5*5=25."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Time and Work",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "A can do a work in 15 days and B in 20 days. They work together for 4 days, then A leaves. In how many days B will finish the remaining work?",
+    "option_a": "10",
+    "option_b": "10(2/3)",
+    "option_c": "8",
+    "option_d": "12",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "1 day's work together = 7/60. 4 days' work = 28/60 = 7/15. Remaining = 8/15. B takes (8/15) / (1/20) = 32/3 = 10(2/3) days."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Average",
+    "question_type": "easy",
+    "timer_seconds": 35,
+    "question_text": "The average weight of 8 men is increased by 1.5 kg when one of them who weighs 65 kg is replaced by a new man. The weight of the new man is:",
+    "option_a": "70 kg",
+    "option_b": "74 kg",
+    "option_c": "76 kg",
+    "option_d": "77 kg",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Total increase = 8 * 1.5 = 12 kg. New weight = 65 + 12 = 77 kg."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Speed, Time and Distance",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "Two trains of length 110m and 90m are running in opposite directions with speeds 36km/h and 54km/h respectively. In what time will they pass each other?",
+    "option_a": "8 seconds",
+    "option_b": "10 seconds",
+    "option_c": "12 seconds",
+    "option_d": "15 seconds",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Relative Speed = 90 km/h = 25 m/s. Total Distance = 200 m. Time = 200 / 25 = 8."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Simple Interest",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "In what time will $64000 yield $4921 interest at 5% per annum compounded half-yearly?",
+    "option_a": "1.5 years",
+    "option_b": "2 years",
+    "option_c": "3 years",
+    "option_d": "4 years",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "64000 * (1 + 2.5/100)^n = 64000 + 4921 = 68921. (41/40)^n = 68921/64000 = (41/40)^3. n=3 half-years = 1.5 yrs."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Numbers",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What is the least number which when divided by 8, 12, 16 leaves remainder 3 in each case?",
+    "option_a": "45",
+    "option_b": "48",
+    "option_c": "51",
+    "option_d": "54",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "LCM of 8, 12, 16 is 48. Number = 48 + 3 = 51."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Calendars",
+    "question_type": "hard",
+    "timer_seconds": 55,
+    "question_text": "The last day of a century cannot be:",
+    "option_a": "Monday",
+    "option_b": "Wednesday",
+    "option_c": "Tuesday",
+    "option_d": "Friday",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Last day of 100th, 200th, 300th, 400th century are Friday, Wednesday, Monday, Sunday. (5, 3, 1, 0). Tuesday is never a last day."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Boats and Streams",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "A man rows downstream 32 km and upstream 14 km, taking 6 hours each time. The velocity of current is:",
+    "option_a": "1.5 km/h",
+    "option_b": "2.5 km/h",
+    "option_c": "3 km/h",
+    "option_d": "1 km/h",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Down speed = 32/6, Up speed = 14/6. Current speed = (32/6 - 14/6)/2 = (18/6)/2 = 3/2 = 1.5."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Geometric Ability",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "A tank is 25 m long, 12 m wide and 6 m deep. The cost of plastering its walls and bottom at 75 paise per sq m is:",
+    "option_a": "450",
+    "option_b": "558",
+    "option_c": "600",
+    "option_d": "744",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Area = (25*12) + 2*(25*6 + 12*6) = 300 + 2*(150 + 72) = 300 + 444 = 744 sq m. Cost = 744 * 0.75 = 558."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Stocks and Shares",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "In order to have an income of $600 from 3% stock at 90, one must invest:",
+    "option_a": "15000",
+    "option_b": "18000",
+    "option_c": "20000",
+    "option_d": "25000",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Income 3 -> investment 90. Income 600 -> investment (90/3)*600 = 18000."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Percentages",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "3.5 can be expressed in terms of percentage as:",
+    "option_a": "0.35%",
+    "option_b": "3.5%",
+    "option_c": "35%",
+    "option_d": "350%",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "3.5 * 100 = 350%."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Ratio and Proportion",
+    "question_type": "easy",
+    "timer_seconds": 35,
+    "question_text": "The fourth proportional to 5, 8, 15 is:",
+    "option_a": "18",
+    "option_b": "21",
+    "option_c": "24",
+    "option_d": "28",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "5/8 = 15/x => 5x = 120 => x = 24."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Profit and Loss",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "A man buys a cycle for $1400 and sells it at a loss of 15%. What is the selling price of the cycle?",
+    "option_a": "$1090",
+    "option_b": "$1160",
+    "option_c": "$1190",
+    "option_d": "$1202",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "SP = 85% of 1400 = 0.85 * 1400 = 1190."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Percentages",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "If A's height is 40% less than that of B, how much percent B's height is more than that of A?",
+    "option_a": "33.33%",
+    "option_b": "40%",
+    "option_c": "60%",
+    "option_d": "66.66%",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "A = 0.6B. B = A/0.6 = 1.666...A. So B is 66.66% more than A."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Numbers",
+    "question_type": "easy",
+    "timer_seconds": 35,
+    "question_text": "What is the smallest three-digit prime number?",
+    "option_a": "101",
+    "option_b": "103",
+    "option_c": "107",
+    "option_d": "109",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "100 is even, 101 is prime."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Average",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "The average of 7 consecutive numbers is 20. The largest of these numbers is:",
+    "option_a": "20",
+    "option_b": "22",
+    "option_c": "23",
+    "option_d": "24",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "If average of 7 consecutive is 20, the middle (4th) number is 20. The sequence is 17, 18, 19, 20, 21, 22, 23."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Time and Work",
+    "question_type": "medium",
+    "timer_seconds": 50,
+    "question_text": "If 15 men can reap a field in 35 days, in how many days will 21 men reap the same field?",
+    "option_a": "25",
+    "option_b": "20",
+    "option_c": "30",
+    "option_d": "22",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "M1D1 = M2D2 => 15 * 35 = 21 * D2 => D2 = (15 * 35) / 21 = 5 * 5 = 25."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Area",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "The area of a square is 225 sq cm. What is its perimeter?",
+    "option_a": "15 cm",
+    "option_b": "30 cm",
+    "option_c": "60 cm",
+    "option_d": "45 cm",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Side = sqrt(225) = 15. Perimeter = 4 * 15 = 60."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Simple Interest",
+    "question_type": "hard",
+    "timer_seconds": 55,
+    "question_text": "A sum of money at simple interest amounts to $815 in 3 years and to $854 in 4 years. The sum is:",
+    "option_a": "$650",
+    "option_b": "$690",
+    "option_c": "$698",
+    "option_d": "$700",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Interest for 1 year = 854 - 815 = 39. Interest for 3 years = 39 * 3 = 117. Principal = 815 - 117 = 698."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "HCF and LCM",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "The LCM of two numbers is 48. The numbers are in the ratio 2:3. The sum of the numbers is:",
+    "option_a": "28",
+    "option_b": "32",
+    "option_c": "40",
+    "option_d": "64",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Let numbers be 2x, 3x. LCM(2x, 3x) = 6x = 48 => x = 8. Numbers are 16, 24. Sum = 40."
+  },
+  {
+    "subject_name": "Quantitative Ability",
+    "level_number": 1,
+    "level_topic": "Ratio and Proportion",
+    "question_type": "easy",
+    "timer_seconds": 35,
+    "question_text": "If 0.75 : x :: 5 : 8, then x is equal to:",
+    "option_a": "1.12",
+    "option_b": "1.2",
+    "option_c": "1.25",
+    "option_d": "1.30",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "0.75/x = 5/8 => 5x = 6.00 => x = 1.2."
+  }
+]

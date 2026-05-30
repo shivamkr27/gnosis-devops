@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Chaos Engineering",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the goal of 'Chaos Engineering' in a CI/CD environment?",
+    "option_a": "To create chaos in the office",
+    "option_b": "To intentionally introduce failures into a system to test its resilience and build confidence in its ability to handle production incidents",
+    "option_c": "To delete the cluster",
+    "option_d": "To write bugs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Chaos engineering (pioneered by Netflix's Chaos Monkey) helps identify weaknesses before they cause real outages."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Advanced Deployment",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Progressive Delivery'?",
+    "option_a": "Deploying slowly",
+    "option_b": "An umbrella term for advanced deployment techniques (Canary, Blue-Green, Feature Flags) combined with automated analysis to reduce risk",
+    "option_c": "Deleting old code",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Progressive delivery uses automated metrics (e.g. error rate) to decide whether to continue a rollout."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Git Hooks",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which Git hook is typically used on the SERVER side to prevent unauthorized pushes?",
+    "option_a": "Pre-commit",
+    "option_b": "Pre-receive",
+    "option_c": "Post-update",
+    "option_d": "Commit-msg",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pre-receive hooks run on the server and can reject a push if it doesn't meet security or policy requirements."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Advanced IaC",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In Terraform, what is the 'State File' used for?",
+    "option_a": "To name the files",
+    "option_b": "A file that maps real-world resources to your configuration, allowing Terraform to track what it has created and detect drift",
+    "option_c": "To delete the server",
+    "option_d": "To store the code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The state file is the 'brain' of Terraform; losing it can make managing infrastructure very difficult."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Zero Trust Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Spiffe/Spire' in a cloud-native pipeline?",
+    "option_a": "A ways to delete pods",
+    "option_b": "A standard and toolset for providing secure, cryptographic identities to workloads (mTLS) across heterogeneous environments",
+    "option_c": "A ways to name a user",
+    "option_d": "A cloud provider",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Spiffe allows services to identify each other securely without relying on static IP addresses or shared secrets."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Supply Chain Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What does 'SLSA' (pronounced 'salsa') stand for in the context of CI/CD?",
+    "option_a": "Secure Level Services Agreement",
+    "option_b": "Supply-chain Levels for Software Artifacts: A security framework to prevent tampering and improve integrity",
+    "option_c": "Software Life Cycle Security Analysis",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SLSA provides a set of standards to ensure that software was built on a trusted system with a verifiable history."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Advanced GitOps",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Comparison' stage in a GitOps control loop?",
+    "option_a": "Comparing two users",
+    "option_b": "Calculating the difference (diff) between the desired state in Git and the actual state currently running in the cluster",
+    "option_c": "Deleting the cluster",
+    "option_d": "Naming the pods",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The operator uses this 'diff' to determine what actions (create, update, delete) are needed to reach the desired state."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Pipeline Optimization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Docker Layer Caching' in a CI environment?",
+    "option_a": "A ways to delete images",
+    "option_b": "Reusing previously built layers of a Docker image to significantly speed up subsequent builds if the dependencies haven't changed",
+    "option_c": "A ways to name the layers",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Layer caching is the single most effective way to reduce build times for containerized applications."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Observability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Synthetic Monitoring'?",
+    "option_a": "Using simulated users (probes) to periodically test critical application paths (like login) to ensure they are functional",
+    "option_b": "Fake monitoring",
+    "option_c": "Deleting the logs",
+    "option_d": "Naming the servers",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Synthetic monitoring acts as an 'early warning system', detecting outages before real users do."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Advanced Git",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Git Reflog' used for?",
+    "option_a": "To name the refs",
+    "option_b": "A mechanism to record when the tips of branches and other references were updated in the local repository, allowing recovery of 'lost' commits",
+    "option_c": "To delete the history",
+    "option_d": "To speed up Git",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If you accidentally delete a branch or perform a bad rebase, reflog is your safety net to find the lost work."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Container Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Distroless' images?",
+    "option_a": "Images without a distro",
+    "option_b": "Minimal container images that contain only the application and its runtime dependencies, excluding shell, package managers, and other OS components to reduce attack surface",
+    "option_c": "Images that are free",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Distroless images are more secure because there are fewer tools for an attacker to use if they break in."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Advanced IaC",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Drift Detection'?",
+    "option_a": "Detecting a boat",
+    "option_b": "The process of identifying when the actual state of infrastructure differs from the state defined in your IaC configuration",
+    "option_c": "Deleting the resources",
+    "option_d": "Naming the servers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GitOps tools and IaC platforms (like Terraform Cloud) can automatically alert or fix drift to maintain consistency."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Governance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Policy as Code'?",
+    "option_a": "Writing rules",
+    "option_b": "Managing and enforcing policies (secure, compliance, cost) through code that can be automatically validated in the pipeline",
+    "option_c": "Deleting the code",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tools like OPA (Open Policy Agent) allow you to define rules (e.g., 'no public buckets') that are checked automatically."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Sidecar Proxy' performance impact in a CI/CD pipeline?",
+    "option_a": "It speeds up the app",
+    "option_b": "Increased overhead in terms of CPU, memory, and small network latency for every request",
+    "option_c": "It deletes the app",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "While sidecars provide observability and security, they add a cost that must be balanced against their benefits."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Site Reliability Engineering",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'Error Budget' in SRE?",
+    "option_a": "How much money we pay for bugs",
+    "option_b": "The amount of unreliability (downtime/errors) that a service is allowed to have before development must stop and reliability work begins",
+    "option_c": "Deleting the errors",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Error budgets align the interests of developers (speed) and operations (stability)."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Chaos Engineering",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Steady State' hypothesis in Chaos Engineering?",
+    "option_a": "A state that never changes",
+    "option_b": "A measurable output of a system that indicates normal behavior, used as a baseline to determine if a chaos experiment has caused a meaningful deviation",
+    "option_c": "Deleting the database",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Defining a steady state is the first step of any chaos experiment to ensure you can detect regression."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Progressive Delivery",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How does 'Flagger' automate Canary releases in a Kubernetes cluster?",
+    "option_a": "By using flags in the CLI",
+    "option_b": "By using a custom controller that manages traffic shifting (via Istio/Linkerd) and analyzes Prometheus metrics to automatically promote or rollback the release",
+    "option_c": "By deleting the pods",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Flagger automates the 'validation' part of progressive delivery, removing the need for manual monitoring during rollouts."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Supply Chain Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Hermetic Builds' (SLSA Level 4)?",
+    "option_a": "Builds that are very fast",
+    "option_b": "Builds that are executed in an environment with no network access, ensuring all dependencies are pinned and provided locally to prevent 'dependency confusion' or tampering",
+    "option_c": "Builds that delete the logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hermeticity is the highest level of build integrity, preventing external environment factors from influencing the build output."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Git Internals",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In the Git object model, what is a 'Tree' object?",
+    "option_a": "A diagram of the code",
+    "option_b": "A simple list of SHA-1 pointers to 'Blob' (file) objects and other 'Tree' objects, representing a directory structure at a specific point in time",
+    "option_c": "A ways to delete history",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Git stores the entire snapshot of the project as a Merkle tree, allowing for efficient storage and comparison."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "mTLS & Identity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Trust Bundle' in the SPIFFE/SPIRE architecture?",
+    "option_a": "A bundle of cash for the team",
+    "option_b": "A collection of CA certificates that a workload uses to verify the identities (SVIDs) of other workloads it communicates with across different trust domains",
+    "option_c": "A ways to name the users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Trust bundles allow for 'federated' identity, where services in different clouds can still trust each other securely."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Artifact Pipeline",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'In-toto' in a secure CI/CD pipeline?",
+    "option_a": "A ways to name the build",
+    "option_b": "A framework to provide end-to-end integrity of the software supply chain by defining 'layouts' and collecting 'links' (evidence) of every step in the process",
+    "option_c": "A ways to delete old builds",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In-toto ensures that the software hasn't been tampered with from the first commit down to the final deployment."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Advanced Helm",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a Helm 'Library Chart'?",
+    "option_a": "A chart for a library",
+    "option_b": "A special type of Helm chart that does not deploy any resources itself but provides reusable templates and logic for other 'Application' charts to use",
+    "option_c": "A ways to delete charts",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Library charts are powerful for maintaining consistency in shared logic across many different microservice charts."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "GitOps Scaling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'GitOps Directory Scaling' challenges in monorepos?",
+    "option_a": "The monorepo gets too big",
+    "option_b": "Excessive API pressure on Git providers and slow reconciliation times as the operator has to scan thousands of directories for changes",
+    "option_c": "The monorepo deletes the history",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Optimizing repository structure and using 'webhook' triggers instead of polling is vital for large-scale GitOps."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Observability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'eBPF-powered' observability in a pipeline?",
+    "option_a": "Watching the logs with a mirror",
+    "option_b": "Using low-level kernel probes (via tools like Falco or Pixie) to get deep, near-zero-overhead insight into system calls and network traffic for every container",
+    "option_c": "Deleting the logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "eBPF provides unparalleled visibility without requiring any changes to the application code itself."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Secure Bootstrapping",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Cattle vs Pets' in the context of GitOps control-plane bootstrap?",
+    "option_a": "Naming the servers after animals",
+    "option_b": "Ensuring the initial GitOps operator and its SSH/API keys are provisioned automatically (e.g. via cloud-init or Terraform) rather than manual setup",
+    "option_c": "Deleting the pets",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "True automation requires that even the 'automator' is itself automated and easily replaceable."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Cloud-Native Secrets",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How do 'External Secrets' operators improve pipeline security?",
+    "option_a": "By storing secrets outside the cloud",
+    "option_b": "By fetching secrets directly from external managers (like AWS Secrets Manager or HashiCorp Vault) and injecting them as K8s Secret objects only when needed",
+    "option_c": "By deleting the secrets manager",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "External Secrets operators remove the need to store any sensitive data (even encrypted) inside the Git repository."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "MLOps",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the primary challenge of 'Data CI/CD' (MLOps) compared to traditional App CI/CD?",
+    "option_a": "The code is longer",
+    "option_b": "Managing versioned 'Data' and 'Models' alongside code, where small changes in training data can lead to massive deviations in production behavior",
+    "option_c": "Deleting the data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tools like DVC (Data Version Control) are needed to bring Git-like versioning to massive datasets."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Platform Engineering",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the goal of an 'Internal Developer Platform' (IDP)?",
+    "option_a": "A ways to host private websites",
+    "option_b": "A self-service layer that allows developers to provision infrastructure, environments, and CI/CD pipelines without needing to be DevOps experts",
+    "option_c": "A ways to delete the developer",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IDPs reduce cognitive load for developers and standardize best practices across the organization."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Pipeline as Code",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Tekton' and how is it 'Cloud Native'?",
+    "option_a": "A new cloud provider",
+    "option_b": "A CI/CD framework where the pipeline components (tasks, pipelines, runs) are themselves Kubernetes Custom Resources (CRDs)",
+    "option_c": "A tool to delete YAML",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tekton allows CI/CD logic to be managed exactly like application code within the Kubernetes lifecycle."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Advanced Deployment",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Service Mesh Federation' in global pipelines?",
+    "option_a": "Merging two companies",
+    "option_b": "Connecting multiple independent service meshes across different clusters/regions to share identity, security, and traffic policies globally",
+    "option_c": "Deleting the mesh",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Federation is critical for global high-availability where one region failing shouldn't break identity trust."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Governance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Continuous Compliance'?",
+    "option_a": "Always following the rules",
+    "option_b": "A practice where every change in the pipeline is automatically audited against regulatory requirements (like HIPAA/GDPR) in real-time, preventing non-compliant code from deploying",
+    "option_c": "Deleting the audits",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Continuous compliance turns 'Audit Season' from a manual nightmare into an automated report."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Reliability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Thundering Herd' in a distributed system recovery?",
+    "option_a": "A bunch of cows",
+    "option_b": "An event where many clients simultaneously retry a request after a failure, overwhelming the server and causing it to fail again",
+    "option_c": "Deleting the connection",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Adding 'Jitter' to retries is the standard defense against thundering herd problems."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Artifact Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'SBOM' (Software Bill of Materials)?",
+    "option_a": "A list of materials to build a server",
+    "option_b": "A formal, machine-readable inventory of all components, libraries, and dependencies included in a software package, providing transparency for security",
+    "option_c": "A ways to delete files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SBOMs are becoming a legal requirement for government software to track upstream supply chain risks."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Infrastructure",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'GitOps for Database' (GitOpsDB)?",
+    "option_a": "Putting the database in Git",
+    "option_b": "Managing database schema migrations and configuration through Git using tools like Liquibase or Bytebase within the CI/CD pipeline",
+    "option_c": "Deleting the database",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GitOpsDB brings the 'source of truth' paradigm to stateful components, ensuring schemas are versioned and reviewed."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Advanced Deployment",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Traffic Pinning' in progressive delivery?",
+    "option_a": "Pinning a server to the wall",
+    "option_b": "Ensuring a specific user consistently sees the same version of an application (A or B) during a canary rollout to avoid session disruption",
+    "option_c": "Deleting the user cookies",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Session affinity (pinning) is vital for user experience when the different versions have meaningful UI or data differences."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Git Internals",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What defines a 'Dangling Object' in Git?",
+    "option_a": "An object that is hanging",
+    "option_b": "An object that exists in the database but is no longer reachable from any branch or tag, usually after a rebase or delete",
+    "option_c": "A ways to name a file",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dangling objects are eventually cleaned up by Git's garbage collection (gc)."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Observability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Cardinality' in the context of metrics/logs?",
+    "option_a": "The number of birds",
+    "option_b": "The number of unique label/value combinations in your metric data; high cardinality (e.g. using User IDs as labels) can crash observability systems",
+    "option_c": "Deleting the tags",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Careful label design is crucial when sending metrics from massive production clusters."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "SRE Practices",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'GameDay' exercises in SRE?",
+    "option_a": "Playing video games",
+    "option_b": "A scheduled event where a team purposely triggers a production-like failure in a controlled environment to practice their incident response skills",
+    "option_c": "Deleting the game",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GameDays build muscle memory for SRE teams, ensuring they can react calmly during real outages."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Deployment Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Multi-Region Cell' architecture?",
+    "option_a": "A jail for servers",
+    "option_b": "Dividing the infrastructure into independent, identical 'Cells' where one cell failing doesn't impact others, enabling massive scalability and reliability",
+    "option_c": "Deleting the regions",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cell-based architecture (used by Amazon/Google) prevents 'blast radius' expansion from a single region outage."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "CI Server Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Poisoned Pipeline Execution' (PPE)?",
+    "option_a": "Putting poison on the cables",
+    "option_b": "An attack where a malicious pull request modifies the pipeline definition (e.g. YAML) to steal secrets or execute code on the runner",
+    "option_c": "Deleting the pipeline",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hardening CI configurations (like preventing PRs from accessing secrets) is vital for repository security."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Advanced GitOps",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'GitOps Engine'?",
+    "option_a": "The motor of a car",
+    "option_b": "A library (used by ArgoCD) that provides the core logic for syncing, resource monitoring, and diffing between Git and Kubernetes",
+    "option_c": "A tool to delete repositories",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The engine provides the heavy-lifting logic that allows GitOps tools to handle thousands of resources reliably."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Reliability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Graceful Degradation'?",
+    "option_a": "Being polite while failing",
+    "option_b": "Designing a system so that if some parts fail, the overall system remains functional (e.g. returning a cached result if the database is down)",
+    "option_c": "Deleting the system",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Graceful degradation ensures that a partial failure doesn't turn into a total blackout for the user."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Metadata",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Release Candidate' (RC) in a pipeline?",
+    "option_a": "A person running for office",
+    "option_b": "A version of the application that is believed to be stable and is undergoing final production-readiness testing before official release",
+    "option_c": "Deleting the version",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RCs allow for late-stage discovery of minor bugs that were missed during earlier testing phases."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "IaC Patterns",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Remote Backend' in Terraform?",
+    "option_a": "A server in the back of the room",
+    "option_b": "Storing the Terraform state file in a centralized, secure location (like S3 or GCS) rather than on the local machine where the CLI is run",
+    "option_c": "A ways to delete files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Remote backends are mandatory for team collaboration to ensure everyone is working with the same infrastructure state."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Security Standards",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'CIS Benchmark' for Kubernetes?",
+    "option_a": "A ways to mark the code",
+    "option_b": "A set of globally recognized best-practice standards for securing Kubernetes clusters (control plane, nodes, and network)",
+    "option_c": "A tool to delete the pods",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Running a 'kube-bench' scan against your cluster is the standard way to check for CIS compliance."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Software Lifecycle",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Deployment vs Release' in elite DevOps teams?",
+    "option_a": "They are the same thing",
+    "option_b": "Deployment is the technical act of moving code to a production environment; Release is the business act of exposing that code to users (using flags)",
+    "option_c": "Deployment is faster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Decoupling deployment from release allows for safer, risk-free testing in true production environments."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Git Tools",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What does `git worktree` do?",
+    "option_a": "Plants a tree in the repo",
+    "option_b": "Allows you to have multiple working directories for a single repository attached to different branches simultaneously",
+    "option_c": "Deletes the Git files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Worktrees are incredibly helpful for developers who need to work on multiple branches without constantly stashing or switching."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Advanced Jenkins",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Jenkins Global Security Configuration' for CSRF?",
+    "option_a": "A password for Jenkins",
+    "option_b": "A protection mechanism that ensures requests made to the Jenkins API are legitimate and not Cross-Site Request Forgery attacks",
+    "option_c": "Deleting the security logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Enabling the 'Crumb' issuer is a mandatory security hardening step for production Jenkins instances."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "Container Runtime",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'OCI Runtime Specification'?",
+    "option_a": "A way to name containers",
+    "option_b": "The industry standard that defines how a container runtime (like runc) should start, stop, and manage a container process given a configuration file",
+    "option_c": "A tool to delete images",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The OCI spec ensures interoperability across different container runtimes and platforms."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 4,
+    "level_topic": "DevOps Transformation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'DORA Metrics'?",
+    "option_a": "Metrics about the explorer",
+    "option_b": "Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Time to Restore Service",
+    "option_c": "A ways to delete old code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DORA metrics are the industry-standard way to measure the performance and maturity of a DevOps organization."
+  }
+]

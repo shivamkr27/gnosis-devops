@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Basic Commands",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command is used to list the contents of a directory in Linux?",
+    "option_a": "dir",
+    "option_b": "ls",
+    "option_c": "list",
+    "option_d": "show",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'ls' command lists all files and directories in the current folder."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Permissions",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In the permission string '-rwxr-xr-x', what does the first 'rwx' represent?",
+    "option_a": "Permissions for the User (Owner)",
+    "option_b": "Permissions for the Group",
+    "option_c": "Permissions for Others",
+    "option_d": "System permissions",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Linux permissions are grouped into three sets: Owner, Group, and Others."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Permissions",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What does the command 'chmod 755 filename' do?",
+    "option_a": "Sets permissions to read-only for everyone",
+    "option_b": "Sets full permissions for owner, and Read+Execute for group and others",
+    "option_c": "Deletes the file",
+    "option_d": "Changes the file owner to user 755",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "7 (4+2+1 = rwx), 5 (4+1 = r-x). So Owner has rwx, others have r-x."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Basic Commands",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to display the current working directory path?",
+    "option_a": "path",
+    "option_b": "cwd",
+    "option_c": "pwd",
+    "option_d": "whereami",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "'pwd' stands for 'Print Working Directory'."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "System Basics",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of the following are common Linux distributors (Distros)?",
+    "option_a": "Ubuntu",
+    "option_b": "CentOS",
+    "option_c": "FreeBSD",
+    "option_d": "Debian",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Ubuntu, CentOS, and Debian are famous Linux distributions. FreeBSD is a Unix-like OS but based on Berkeley Software Distribution, not the Linux kernel."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Navigation",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command is used to change your current directory?",
+    "option_a": "go",
+    "option_b": "cd",
+    "option_c": "move",
+    "option_d": "ch",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'cd' stands for Change Directory."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "To create a new, empty file, you can use the command:",
+    "option_a": "new",
+    "option_b": "create",
+    "option_c": "touch",
+    "option_d": "make",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 'touch' command creates an empty file if it doesn't exist or updates the timestamp if it does."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Directory Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How do you create a new directory named 'my_folder'?",
+    "option_a": "newdir my_folder",
+    "option_b": "mkdir my_folder",
+    "option_c": "cd my_folder",
+    "option_d": "touch my_folder",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'mkdir' stands for Make Directory."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command is used to copy a file?",
+    "option_a": "mv",
+    "option_b": "cp",
+    "option_c": "rm",
+    "option_d": "cat",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'cp' stands for Copy."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command is used to move or rename a file?",
+    "option_a": "cp",
+    "option_b": "mv",
+    "option_c": "rn",
+    "option_d": "rm",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'mv' stands for Move; it is also used for renaming."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "To delete a file in Linux, the command is:",
+    "option_a": "del",
+    "option_b": "erase",
+    "option_c": "rm",
+    "option_d": "trash",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "'rm' stands for Remove."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Reading",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command displays the contents of a file on the screen?",
+    "option_a": "show",
+    "option_b": "read",
+    "option_c": "cat",
+    "option_d": "print",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "'cat' (concatenate) prints the entire file to stdout."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Help",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "To view the manual or help page for a command, use:",
+    "option_a": "help",
+    "option_b": "info",
+    "option_c": "man",
+    "option_d": "guide",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "'man' command displays the reference manual for most Linux commands."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Shell Basics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "The most common default shell in Linux distributions is:",
+    "option_a": "cmd",
+    "option_b": "zsh",
+    "option_c": "bash",
+    "option_d": "ksh",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Bash (Bourne Again SHell) is the standard interactive shell for most distros."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Root User",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the username of the Linux 'Superuser' with full system access?",
+    "option_a": "admin",
+    "option_b": "master",
+    "option_c": "root",
+    "option_d": "system",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 'root' user has unrestricted access to all files and commands."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Basic Commands",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How do you clear the current terminal screen?",
+    "option_a": "clean",
+    "option_b": "clear",
+    "option_c": "wipe",
+    "option_d": "reset",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'clear' command wipes the text from the terminal window."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "System Info",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command tells you the name of the user you are currently logged in as?",
+    "option_a": "me",
+    "option_b": "id",
+    "option_c": "whoami",
+    "option_d": "user",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 'whoami' command prints the effective username."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Navigation",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does '~' (tilde) represent in Linux directory paths?",
+    "option_a": "The root directory",
+    "option_b": "The parent directory",
+    "option_c": "The user's home directory",
+    "option_d": "A hidden folder",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "~ is shorthand for /home/username."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Reading",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command allows you to view a file page by page (scrolling down)?",
+    "option_a": "cat",
+    "option_b": "more",
+    "option_c": "page",
+    "option_d": "view",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'more' (and 'less') are pagers used to view long text files."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Reading",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How can you view just the first 10 lines of a file?",
+    "option_a": "first 10 file",
+    "option_b": "tail file",
+    "option_c": "head file",
+    "option_d": "top file",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "'head' shows the beginning of a file."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Reading",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How can you view just the last 10 lines of a file?",
+    "option_a": "last 10 file",
+    "option_b": "tail file",
+    "option_c": "head file",
+    "option_d": "bottom file",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'tail' shows the end of a file."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Directory Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "To remove an empty directory, use:",
+    "option_a": "del",
+    "option_b": "rm",
+    "option_c": "rmdir",
+    "option_d": "removedir",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "'rmdir' only works on empty directories."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Navigation",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What command moves you up one level in the directory tree?",
+    "option_a": "cd .",
+    "option_b": "cd ..",
+    "option_c": "cd /",
+    "option_d": "cd ~",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'..' represents the parent directory."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "System Basics",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Linux was created by:",
+    "option_a": "Bill Gates",
+    "option_b": "Steve Jobs",
+    "option_c": "Linus Torvalds",
+    "option_d": "Dennis Ritchie",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Linus Torvalds released the first Linux kernel in 1991."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Power Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is commonly used to safely shut down the system?",
+    "option_a": "stop",
+    "option_b": "off",
+    "option_c": "shutdown",
+    "option_d": "kill",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "'shutdown' allows you to notify users and bring the system down cleanly."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Search",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command is used to search for a pattern inside files?",
+    "option_a": "find",
+    "option_b": "search",
+    "option_c": "grep",
+    "option_d": "lookup",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "grep (global regular expression print) is the standard text-searching tool."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Shell Interaction",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What character is used to pipe the output of one command into another?",
+    "option_a": ">",
+    "option_b": "<",
+    "option_c": "|",
+    "option_d": "&",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The pipe character | connects the stdout of command A to the stdin of command B."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Shell Interaction",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What does the '>' operator do?",
+    "option_a": "Appends output to a file",
+    "option_b": "Redirects output to a new file (overwriting existing content)",
+    "option_c": "Compares two numbers",
+    "option_d": "Deletes a file",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ls > files.txt saves the output of ls into files.txt."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "History",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How do you view the list of commands you previously typed?",
+    "option_a": "log",
+    "option_b": "past",
+    "option_c": "history",
+    "option_d": "prev",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 'history' command displays the shell's command history buffer."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Networking",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command is used to check connectivity to another host?",
+    "option_a": "check",
+    "option_b": "ping",
+    "option_c": "net",
+    "option_d": "test",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ping sends ICMP ECHO_REQUEST packets to network hosts."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Text Editors",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In the 'vi' editor, which key do you press to enter 'Insert Mode'?",
+    "option_a": "s",
+    "option_b": "i",
+    "option_c": "x",
+    "option_d": "ESC",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'i' enters insert mode at the current cursor position."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Text Editors",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you quit the 'vi' editor without saving changes?",
+    "option_a": ":q!",
+    "option_b": ":wq",
+    "option_c": ":x",
+    "option_d": "EXIT",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": ":q! forces the editor to quit even if changes were made."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Permissions",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command is used to change file permissions?",
+    "option_a": "chown",
+    "option_b": "chmod",
+    "option_c": "chgrp",
+    "option_d": "permit",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "chmod (change mode) is used to set rwx permissions."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Ownership",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to change the owner of a file?",
+    "option_a": "chmod",
+    "option_b": "chown",
+    "option_c": "usermod",
+    "option_d": "owner",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "chown (change owner) modifies file ownership settings."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Hidden Files",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Files that start with a '.' in Linux are:",
+    "option_a": "System errors",
+    "option_b": "Hidden files",
+    "option_c": "Temporary files",
+    "option_d": "Executables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A leading dot hides files from a standard 'ls' command."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Package Management",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which tool is commonly used to install software on Debian-based systems like Ubuntu?",
+    "option_a": "yum",
+    "option_b": "apt",
+    "option_c": "rpm",
+    "option_d": "brew",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "APT (Advanced Package Tool) handles software installation and updates."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Process Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command shows a live, updating view of system processes?",
+    "option_a": "ps",
+    "option_b": "top",
+    "option_c": "list",
+    "option_d": "cpu",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'top' provides a real-time summary of CPU/Memory usage and active tasks."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Information",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command lists files and includes detailed info like size and permissions?",
+    "option_a": "ls -a",
+    "option_b": "ls -l",
+    "option_c": "ls -h",
+    "option_d": "ls -R",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "-l stands for 'long format' listing."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Redirection",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What does '>>' mean in shell redirection?",
+    "option_a": "Overwrite a file",
+    "option_b": "Append output to the end of a file",
+    "option_c": "Filter out errors",
+    "option_d": "Read from a file",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": ">> adds data to an existing file without deleting previous content."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to display network interface information?",
+    "option_a": "ip config",
+    "option_b": "ifconfig (or ip addr)",
+    "option_c": "netstat",
+    "option_d": "network",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ifconfig is the traditional tool, while 'ip addr' is the modern replacement."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File Type",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "To determine what type of data a file contains, use:",
+    "option_a": "cat",
+    "option_b": "file",
+    "option_c": "type",
+    "option_d": "whatis",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'file' command uses magic numbers to identify file types."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Archives",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command is standard for creating or extracting compressed archive files (.tar.gz)?",
+    "option_a": "zip",
+    "option_b": "tar",
+    "option_c": "rar",
+    "option_d": "gzip",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'tar' (tape archive) is used to bundle files together."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Navigation",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What command takes you directly to your home directory?",
+    "option_a": "cd",
+    "option_b": "cd ~",
+    "option_c": "cd /home",
+    "option_d": "Both A and B",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Typing 'cd' alone defaults to your home directory."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "File System",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the absolute root of the Linux file system represented by?",
+    "option_a": "~",
+    "option_b": "/",
+    "option_c": "..",
+    "option_d": "/root",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The forward slash / is the highest level directory."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Process management",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command lists currently running processes for the current user?",
+    "option_a": "list",
+    "option_b": "ps",
+    "option_c": "top",
+    "option_d": "proc",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ps (process status) gives a snapshot of current tasks."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Wildcards",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "The '*' wildcard character in the shell matches:",
+    "option_a": "A single character",
+    "option_b": "Any number of characters (including zero)",
+    "option_c": "Only numbers",
+    "option_d": "Only hidden files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "rm *.txt deletes all files ending in .txt."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Space",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which command shows the amount of free disk space on the system?",
+    "option_a": "du",
+    "option_b": "df",
+    "option_c": "free",
+    "option_d": "disk",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "df stands for 'disk free'."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Space",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which command shows disk usage of a specific file or directory?",
+    "option_a": "df",
+    "option_b": "du",
+    "option_c": "usage",
+    "option_d": "size",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "du stands for 'disk usage'."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Search",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "To find where a command's executable file is stored, use:",
+    "option_a": "where",
+    "option_b": "which",
+    "option_c": "locate",
+    "option_d": "find",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'which ls' would show /usr/bin/ls."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 1,
+    "level_topic": "Environment",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to display the value of an environment variable?",
+    "option_a": "show",
+    "option_b": "echo",
+    "option_c": "print",
+    "option_d": "val",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "echo $PATH displays the system search path."
+  }
+]

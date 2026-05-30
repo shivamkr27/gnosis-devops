@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Advanced GitOps",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the role of an 'Operator' (e.g. ArgoCD, Flux) in GitOps?",
+    "option_a": "To download code",
+    "option_b": "To continuously monitor the Git repository and ensure the cluster state matches the desired state defined in Git",
+    "option_c": "To delete pods",
+    "option_d": "To write code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GitOps operators like ArgoCD automate the synchronization between Git (the source) and Kubernetes (the target)."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Compliance & Security",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Software Supply Chain Security'?",
+    "option_a": "Building computers",
+    "option_b": "The practice of securing all code, dependencies, and tools used in the software development life cycle",
+    "option_c": "Only for hardware",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Supply chain security involves things like code signing, vulnerability scanning, and SBOM (Software Bill of Materials)."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Advanced Testing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Contract Testing'?",
+    "option_a": "Testing the legal department",
+    "option_b": "Testing the interactions between services to ensure following a shared agreement without needing to spin up the whole system",
+    "option_c": "Deleting the code",
+    "option_d": "Only for frontend",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Contract testing (like Pact) is essential for microservices to ensure that changes in one service don't break others."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Observability",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Three Pillars of Observability'?",
+    "option_a": "CPU, RAM, Disk",
+    "option_b": "Logs, Metrics, Traces",
+    "option_c": "Users, Apps, Servers",
+    "option_d": "Code, Test, Deplay",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Logs (detailed events), Metrics (aggregated numbers), and Traces (request flow) provide a complete view of system health."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Canary Release",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How does a Service Mesh (like Istio) help with Canary deployments?",
+    "option_a": "It deletes old pods",
+    "option_b": "It provides fine-grained traffic routing to send a specific percentage of requests to the new version",
+    "option_c": "It writes the tests",
+    "option_d": "It manages the database",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Service meshes allow you to shift traffic based on headers, weights, or user IDs without changing app code."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Infrastructure",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Mutable' vs 'Immutable' Infrastructure?",
+    "option_a": "Mutable is for users, Immutable is for robots",
+    "option_b": "Mutable infrastructure is updated in-place; Immutable infrastructure is replaced entirely with a new version for every change",
+    "option_c": "There is no difference",
+    "option_d": "Immutable is slow",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Immutable infrastructure (e.g., cattle, not pets) reduces configuration drift and improves reliability."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Deployment Strategies",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Feature Toggling' (Feature Flags)?",
+    "option_a": "A ways to name a branch",
+    "option_b": "A technique to decouple code deployment from feature release, allowing features to be turned on/off dynamically",
+    "option_c": "Deleting old features",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Feature flags allow teams to merge code into the main branch even if it's not finished, hiding it behind a toggle."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Quality Gates",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Quality Gate' in a pipeline?",
+    "option_a": "A literal gate at the office",
+    "option_b": "A threshold (e.g. at least 80% test coverage) that code must meet to proceed through the pipeline",
+    "option_c": "A ways to name a test",
+    "option_d": "A backup server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Quality gates ensure that only code meeting the organization's standards can reach production."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Git Hooks",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Pre-commit' hook used for?",
+    "option_a": "To delete code",
+    "option_b": "To run checks (like linting or formatting) locally before a commit is even created",
+    "option_c": "To push code to remote",
+    "option_d": "To rename a file",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pre-commit hooks catch simple errors early, before they reach the central repository."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Advanced Git",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the purpose of 'Git Submodules'?",
+    "option_a": "To name the files",
+    "option_b": "To keep a Git repository as a subdirectory of another Git repository, maintaining its own history",
+    "option_c": "To delete history",
+    "option_d": "To speed up Git",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Submodules allow you to include external libraries while tracking specific versions."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'DAST'?",
+    "option_a": "Detailed Automated System Tracking",
+    "option_b": "Dynamic Application Security Testing: Testing the application while it is running from the outside (like a hacker)",
+    "option_c": "Data Analysis and Source Testing",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DAST probes running applications to find vulnerabilities like SQL injection or Z-day exploits."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "DevSecOps",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does 'Shield Left' mean in DevSecOps?",
+    "option_a": "Moving security tasks earlier in the software development lifecycle",
+    "option_b": "Buying more shields",
+    "option_c": "Deleting the database",
+    "option_d": "Deploying only on the left side of the data center",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Shifting left means integrating security checks during the design and coding stages, not just at the end."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Pipeline Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Self-Healing' in a CI/CD context?",
+    "option_a": "The computer fixing itself",
+    "option_b": "The ability of the system to automatically detect and correct failures (e.g. restarting a crashed pod) without human intervention",
+    "option_c": "Deleting the server",
+    "option_d": "Naming the pods",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Platforms like Kubernetes provide native self-healing capabilities through control loops."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Artifact Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Semantic Versioning' (SemVer)?",
+    "option_a": "Naming files by their meaning",
+    "option_b": "A versioning scheme (MAJOR.MINOR.PATCH) that conveys meaning about the underlying changes",
+    "option_c": "Deleting old versions",
+    "option_d": "A ways to count lines of code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SemVer helps users understand the impact of upgrading a dependency (e.g. potential breaking changes)."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "GitOps Tools",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which tool uses a 'pull-based' synchronization model for Kubernetes clusters?",
+    "option_a": "Jenkins",
+    "option_b": "ArgoCD",
+    "option_c": "GitLab CI (Standard)",
+    "option_d": "Azure DevOps (Standard)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a pull model, the operator inside the cluster pulls configuration from Git, which is more secure than pushing from an external CI server."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Git Hooks",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes a 'Server-side Git Hook' (e.g. pre-receive)?",
+    "option_a": "It runs on the developer's laptop",
+    "option_b": "It is enforced on the remote Git server and can reject pushes that violate organizational policy (e.g. no secrets or linting errors)",
+    "option_c": "It deletes the repository",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Server-side hooks are the most secure way to enforce standards because they cannot be bypassed by the developer."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Configuration Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the primary difference between 'Helm' and 'Kustomize' for Kubernetes management?",
+    "option_a": "Helm is faster",
+    "option_b": "Helm uses templates (YAML with placeholders); Kustomize uses 'overlays' to modify base YAML files without templates",
+    "option_c": "Kustomize is only for small apps",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Helm is better for packaging complex apps for others, while Kustomize is often preferred for in-house GitOps workflows due to its 'template-less' approach."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Infrastructure",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In GitOps, what is a 'Reconciliation Loop'?",
+    "option_a": "A ways to delete a loop",
+    "option_b": "The continuous process where the operator compares the Git state (desired) to the Cluster state (actual) and applies changes to fix any 'drift'",
+    "option_c": "A ways to rename a cluster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Reconciliation ensures the environment is always self-healing back to the state defined in version control."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How does 'Sealed Secrets' (Bitnami) help in a GitOps workflow?",
+    "option_a": "It encrypts the whole Git repo",
+    "option_b": "It allows you to safely store 'encrypted' secrets in Git which can only be decrypted by the controller running inside your Kubernetes cluster",
+    "option_c": "It deletes secrets after use",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sealed Secrets solves the problem of 'secrets in Git' by ensuring only the cluster has the private key to read them."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Advanced Deployment",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is a 'Shadow Deployment' (Traffic Mirroring)?",
+    "option_a": "A deployment with no light",
+    "option_b": "Sending a copy of real production traffic to a new version of the app without the users seeing the response, allowing for risk-free performance testing",
+    "option_c": "A way to hide code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shadow deployments allow you to see how a new version handles real-world load without any risk to actual users."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Artifact Pipeline",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Artifact Attestation'?",
+    "option_a": "Naming the build",
+    "option_b": "A cryptographically signed statement about where and how an artifact was built, providing verifiable proof of its integrity",
+    "option_c": "A list of build steps",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Attestations (using tools like Cosign) are a core part of Level 3/4 SLSA compliance."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Build Tools",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Kaniko' used for in a Kubernetes-based CI pipeline?",
+    "option_a": "Running tests",
+    "option_b": "Building Docker images from a Dockerfile inside a container or cluster without needing privileged access to the host Docker daemon",
+    "option_c": "Deleting old images",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kaniko is vital for security because it avoids the 'Docker-in-Docker' (DinD) requirement which needs hazardous elevated privileges."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Pipeline Optimization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Incremental Building' in a CI system?",
+    "option_a": "Building the app slowly",
+    "option_b": "A technique where only the parts of the application that have changed since the last build are recompiled, significantly reducing build times",
+    "option_c": "Deleting the app building",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tools like Bazel or Nx specialize in incremental builds for massive monorepos."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Observability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What characterizes 'Distributed Tracing' (e.g. Jaeger)?",
+    "option_a": "Tracing the user's location",
+    "option_b": "Tracking a single request as it flows through multiple microservices, showing exactly where time was spent and where errors occurred",
+    "option_c": "Counting the logs line by line",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tracing is essential for debugging performance bottlenecks in complex cloud-native architectures."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "SRE Metrics",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "How is an 'Error Budget' typically calculated?",
+    "option_a": "Counting bugs in Jira",
+    "option_b": "100% minus the SLO percentage (e.g. a 99.9% availability SLO gives a 0.1% error budget)",
+    "option_c": "Subtracting salary from revenue",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The error budget determines how much 'instability' is allowed before feature work must stop in favor of stability work."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "CI Server",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Jenkins Shared Library'?",
+    "option_a": "A ways to swap code with other companies",
+    "option_b": "A separate Git repository containing Groovy code that can be imported into multiple Jenkinsfiles to avoid code duplication and standardize pipeline logic",
+    "option_c": "A ways to delete old jobs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shared libraries allow platform teams to manage 'Pipeline as Code' at scale across an entire organization."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Automation",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the purpose of 'Gating' in a deployment pipeline?",
+    "option_a": "Closing the office",
+    "option_b": "Using automated checks (e.g. error rate < 1%) or manual approvals to prevent code from automatically progressing to the next environment",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Gating provides safety barriers that prevent broad user impact from failed releases."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Git Strategies",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Trunk-Based Development' compared to 'Gitflow'?",
+    "option_a": "It has more branches",
+    "option_b": "It eliminates long-lived feature branches, favoring short-lived branches and frequent merges to the main 'trunk' to enable continuous integration",
+    "option_c": "It is only for small teams",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Trunk-based development is a prerequisite for reaching elite DevOps performance (DORA metrics)."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Workflow Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Runners' security risk in shared CI environments?",
+    "option_a": "Running too fast",
+    "option_b": "Potential for code from one project to access data or environments of another project if the runner isn't properly isolated (e.g. multi-tenant security)",
+    "option_c": "A ways to see the logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Using ephemeral, isolated runners (like per-job VMs or containers) is the best practice to prevent cross-contamination."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Artifact Registry",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Vulnerability Scanning' at the Registry level?",
+    "option_a": "Watching the registry for new users",
+    "option_b": "Automatically scanning container images for known security vulnerabilities (CVEs) as soon as they are pushed to the registry",
+    "option_c": "Deleting images that have no tags",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Registry-side scanning provides a final safety check before an image can be pulled into production."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Reliability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'Exponential Backoff' strategy for retries?",
+    "option_a": "Pushing the code harder",
+    "option_b": "A technique where the time between retry attempts increases exponentially (e.g. 1s, 2s, 4s...) to avoid overloading a struggling system",
+    "option_c": "Deleting the request",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Exponential backoff is a core principle for building resilient distributed systems that don't cause 'thundering herd' problems."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "SRE Metrics",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does 'MTTR' stand for and why is it important?",
+    "option_a": "Mean Time To Recover: measuring how quickly you can restore service after a failure",
+    "option_b": "Maximum Time To Release",
+    "option_c": "Mean Time To Rename",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "MTTR is a key DORA metric reflecting the team's ability to diagnose and fix production issues efficiently."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "GitHub Actions",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is a 'Composite Action' in GitHub Actions?",
+    "option_a": "A ways to combine files",
+    "option_b": "An action that allows you to combine multiple workflow steps (scripts or other actions) into a single reusable action within one file",
+    "option_c": "A ways to delete actions",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Composite actions are perfect for packaging common multi-step sequences (like setup + build + test) to simplify workflows."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "GitHub Actions",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Reusable Workflows' in GitHub Actions?",
+    "option_a": "Copying and pasting YAML",
+    "option_b": "Calling an entire workflow from another workflow, passing inputs and secrets, which allows for centralizing standard deployment logic across teams",
+    "option_c": "Deleting old workflows",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Reusable workflows are the 'functions' of the GitHub Actions ecosystem, ensuring consistency across many repositories."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Infrastructure",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Configuration Drift' and how do GitOps tools address it?",
+    "option_a": "When a cloud provider moves a server",
+    "option_b": "When the live environment is changed manually (via CLI or UI); GitOps tools detect this diff and automatically revert the change to match the state in Git",
+    "option_c": "A ways to rename files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Self-healing reconciliation is the primary defense against 'sneaky' manual changes that make environments inconsistent."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Testing",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is 'Mutation Testing'?",
+    "option_a": "Changing the user interface",
+    "option_b": "A technique where the testing tool modifies the source code (mutates it) and checks if the existing test suite fails (if it doesn't fail, the test coverage is weak)",
+    "option_c": "Deleting the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Mutation testing evaluates the 'quality' of your tests, not just the 'quantity' (coverage)."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Governance",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Auditability' in a CI/CD environment?",
+    "option_a": "The ability to run the pipeline",
+    "option_b": "The ability to trace every production change back to a specific person, a specific ticket, and a specific commit in version control",
+    "option_c": "A ways to see the user list",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Audit trails are critical for compliance (SOC2) and security forensics."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Software Release",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What characterizes 'A/B Testing' through a pipeline?",
+    "option_a": "Testing two versions of the name",
+    "option_b": "Deploying two different feature variants and using metrics to see which one performs better for business goals (e.g. conversion rate)",
+    "option_c": "Deleting either A or B",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A/B testing allows data-driven decision making about which features are actually valuable to users."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Reliability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Circuit Breaker' pattern?",
+    "option_a": "A fuse in the server room",
+    "option_b": "A mechanism that detects when a service is failing and automatically 'trips' to stop requests to that service, allowing it to recover and preventing a cascade of failures",
+    "option_c": "Deleting the connection",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Circuit breakers protect the overall system health by 'failing fast' when a dependency is down."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "DevOps Practices",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'ChatOps'?",
+    "option_a": "Talking while coding",
+    "option_b": "Interacting with infrastructure and pipelines directly through chat tools (like Slack/Teams) using bots that execute commands and output results for the team to see",
+    "option_c": "Deleting the chat history",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ChatOps brings visibility to operations by making actions and results public and collaborative."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Registry Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Image Signing' (e.g. Notary/Cosign)?",
+    "option_a": "Writing your name on an image",
+    "option_b": "Using cryptographic keys to 'sign' an image, allowing the deployment target to verify that the image hasn't been tampered with since it was built",
+    "option_c": "A ways to delete images",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Signing ensures that you only run the exact code that was produced by your trusted CI pipeline."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Deployment",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Hydration' in the context of GitOps (e.g. directory hydration)?",
+    "option_a": "Drinking water during deployment",
+    "option_b": "The process of taking abstract configurations (templates/overlays) and expanding them into the final, concrete YAML files that the cluster understands",
+    "option_c": "A ways to clean the cluster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hydration is the final step before the 'diff/sync' part of the GitOps loop."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "CI Server",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Lockable Resource' in Jenkins?",
+    "option_a": "A password-protected folder",
+    "option_b": "A feature that prevents multiple pipelines from accessing the same physical or virtual resource (like a specific hardware device or a database) at once",
+    "option_c": "Deleting the resource",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lockable resources prevent race conditions in pipelines that have to share non-scalable external components."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Ingress Controllers' role in a pipeline?",
+    "option_a": "Controlling the gate at the office",
+    "option_b": "Managing external access to services within the cluster, often providing load balancing, SSL termination, and name-based virtual hosting",
+    "option_c": "Deleting the network",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Ingress controllers are the entry point for users into your cluster-hosted applications."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Advanced Testing",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is 'Fuzz Testing' (Fuzzing)?",
+    "option_a": "Testing if the code is fuzzy",
+    "option_b": "An automated testing technique that provides invalid, unexpected, or random data as inputs to a program to find crashes or security holes",
+    "option_c": "Deleting the code errors",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fuzzing is incredibly effective at finding deep bugs and edge cases that manual test cases would miss."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "SRE Concepts",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Toil' in SRE terminology?",
+    "option_a": "Hard work",
+    "option_b": "The kind of work that is manual, repetitive, automatable, tactical, and scales linearly as the system grows",
+    "option_c": "Deleting the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SREs aim to minimize toil (usually to <50% of their time) to focus on engineering and long-term improvements."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Git Tools",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Squash and Merge'?",
+    "option_a": "Combining all commits from a feature branch into a single clean commit before merging into the main branch",
+    "option_b": "Deleting the history",
+    "option_c": "Scaling the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Squashing keeps the main branch history clean and easy to read by hiding the individual 'work-in-progress' commits."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "CI Optimization",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Build Matrix' in CI systems?",
+    "option_a": "A list of developers",
+    "option_b": "A feature that allows running the same job across many different configurations (e.g. different OS, different Node.js versions) simultaneously",
+    "option_c": "A ways to delete a server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Build matrices are essential for testing cross-platform compatibility without writing repetitive YAML."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Security Policy",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Rego' in the context of pipelines?",
+    "option_a": "A programming language for the web",
+    "option_b": "The declarative policy language used by OPA (Open Policy Agent) to define 'Policy as Code' (e.g. 'images must come from our registry')",
+    "option_c": "A tool to delete logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Rego allows you to write fine-grained security policies that can be enforced at the API, container, or network levels."
+  },
+  {
+    "subject_name": "CI/CD & GitOps",
+    "level_number": 3,
+    "level_topic": "Advanced GitOps",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is 'Multi-cluster GitOps'?",
+    "option_a": "Managing many clusters separately",
+    "option_b": "A pattern where a single Git repository defines high-level configurations that are automatically 'fanned out' to many clusters across regions",
+    "option_c": "Deleting all clusters at once",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multi-cluster management is the ultimate goal of GitOps for large, global organizations."
+  }
+]

@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Process Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command-line utility provides a dynamic, real-time view of running processes and system resources?",
+    "option_a": "ps",
+    "option_b": "top (or htop)",
+    "option_c": "kill",
+    "option_d": "listproc",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Top shows CPU usage, memory usage, and the list of active processes, updating automatically."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "SSH",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How can you securely copy a file 'data.txt' from your local machine to a remote server?",
+    "option_a": "ftp data.txt server",
+    "option_b": "scp data.txt user@remote-ip:/path/to/dest",
+    "option_c": "ssh data.txt server",
+    "option_d": "cp data.txt /remote/server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SCP (Secure Copy Protocol) uses SSH for data transfer and provides the same authenticity and confidentiality."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "User Management",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which file stores the user account information (usernames, IDs, shells) in Linux?",
+    "option_a": "/etc/shadow",
+    "option_b": "/etc/passwd",
+    "option_c": "/etc/users",
+    "option_d": "/root/accounts",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "/etc/passwd contains basic user info. /etc/shadow contains encrypted passwords."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Signals",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "Which of these are valid signals that can be sent to a process using the `kill` command?",
+    "option_a": "SIGTERM (15)",
+    "option_b": "SIGKILL (9)",
+    "option_c": "SIGSTOP (19)",
+    "option_d": "SIGEND",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "SIGTERM requests a clean shutdown. SIGKILL forces an immediate exit. SIGSTOP pauses the process."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Remote Access",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the primary benefit of using SSH keys (Private/Public) instead of passwords for login?",
+    "option_a": "Keys are shorter",
+    "option_b": "Significantly higher security (resistant to brute force) and enables automated scripting",
+    "option_c": "Keys are free",
+    "option_d": "Keys make the connection faster",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cryptographic keys are nearly impossible to guess, and public-key authentication is the industry standard for server access."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Kernel",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which command is used to trace system calls and signals of a process?",
+    "option_a": "lsof",
+    "option_b": "strace",
+    "option_c": "gdb",
+    "option_d": "pstree",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "strace is a powerful diagnostic tool for finding why a process hangs or fails."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a bash environment, what does the 'umask' command control?",
+    "option_a": "Maximum memory usage",
+    "option_b": "Default file permissions for newly created files",
+    "option_c": "The user's password mask",
+    "option_d": "Hidden directories",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "umask subtracts its value from the default permissions (usually 666 for files, 777 for dirs)."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Disk Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which utility is used to resize an ext2, ext3, or ext4 filesystem?",
+    "option_a": "fdisk",
+    "option_b": "resize2fs",
+    "option_c": "resizeext",
+    "option_d": "fs-expand",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "resize2fs can enlarge or shrink a filesystem, usually done after expanding a partition/volume."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which command-line tool is used to monitor network traffic in real-time?",
+    "option_a": "netstat",
+    "option_b": "tcpdump",
+    "option_c": "ifconfig",
+    "option_d": "ping",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "tcpdump is a packet sniffer that allows viewing raw network packets."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Filesystem",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Journal' in a filesystem like ext4 used for?",
+    "option_a": "Storing user logs",
+    "option_b": "Improving data recovery speed after a crash by logging changes before applying them",
+    "option_c": "Faster read speeds",
+    "option_d": "Compressing old files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Journaling prevents filesystem corruption by ensuring transactions are either fully completed or discarded."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Kernel",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which tool allows viewing and modifying kernel parameters at runtime?",
+    "option_a": "kernel-setup",
+    "option_b": "sysctl",
+    "option_c": "proc-edit",
+    "option_d": "lsmod",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "sysctl -w net.ipv4.ip_forward=1 is a common use case for enabling routing."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Troubleshooting",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which command lists all open files and the processes that opened them?",
+    "option_a": "filelist",
+    "option_b": "lsof",
+    "option_c": "ps -f",
+    "option_d": "openfiles",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "lsof is invaluable for finding which app is using a locked file or port."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Chroot' (Change Root)?",
+    "option_a": "Changing the root password",
+    "option_b": "An operation that changes the apparent root directory for the current running process and its children",
+    "option_c": "Moving the /root folder",
+    "option_d": "Hacking the root user",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Chroot creates an isolated 'jail' for processes, improving security."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Virtualization",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "Which Linux kernel feature allows isolating system resources like networking and mounts?",
+    "option_a": "Cgroups",
+    "option_b": "Namespaces",
+    "option_c": "KVM",
+    "option_d": "LVM",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Namespaces are the underlying technology behind Docker containers."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Virtualization",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "Which Linux kernel feature is used to limit and monitor the resource usage (CPU, RAM) of processes?",
+    "option_a": "Namespaces",
+    "option_b": "Cgroups",
+    "option_c": "Swapping",
+    "option_d": "Nice value",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Control Groups (cgroups) prevent a single process from crashing the entire system by using all RAM."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Package management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command searches for the package that contains a specific file in a Debian system?",
+    "option_a": "apt-find",
+    "option_b": "dpkg -S",
+    "option_c": "apt-get search",
+    "option_d": "rpm -qf",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "dpkg -S /path/to/file tells you which package installed that file."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Scripting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a shell script, what does 'set -e' do?",
+    "option_a": "Enables echo",
+    "option_b": "Causes the script to exit immediately if any command returns a non-zero exit status",
+    "option_c": "Sets an environment variable",
+    "option_d": "Enters edit mode",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "set -e is a best practice for building robust scripts that don't fail silently."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Scripting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a shell script, what does 'set -x' do?",
+    "option_a": "Deletes the script after run",
+    "option_b": "Prints each command before executing it (debug mode)",
+    "option_c": "Makes the script executable",
+    "option_d": "Sets an exit code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "set -x (XTREACE) is extremely helpful for debugging complex script logic."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Filesystem",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "To check and repair a Linux filesystem, which command is used?",
+    "option_a": "chkdsk",
+    "option_b": "fsck",
+    "option_c": "repair-fs",
+    "option_d": "fixfs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "fsck stands for File System Consistency Check."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Hardware",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to read or set the hardware clock (RTC)?",
+    "option_a": "date",
+    "option_b": "hwclock",
+    "option_c": "rtc",
+    "option_d": "time",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "hwclock interacts directly with the CMOS/BIOS clock on the motherboard."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which command displays the Linux kernel routing table?",
+    "option_a": "route -n",
+    "option_b": "ip route show",
+    "option_c": "netstat -r",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "While 'route' is deprecated, all these commands provide routing info."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the purpose of the 'Swap' space in Linux?",
+    "option_a": "To store fast caches",
+    "option_b": "To provide extra 'virtual' memory by using space on the hard drive when RAM is full",
+    "option_c": "To swap files between users",
+    "option_d": "To backup the OS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Swap prevents out-of-memory crashes by moving inactive pages to disk."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command shows the swap usage summary?",
+    "option_a": "swapinfo",
+    "option_b": "swapon --show",
+    "option_c": "free",
+    "option_d": "Both B and C",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "free gives an overall view, while swapon manages the specific partitions/files."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Performance",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which command displays details about I/O statistics for devices and partitions?",
+    "option_a": "iotop",
+    "option_b": "iostat",
+    "option_c": "diskstats",
+    "option_d": "vmstat",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "iostat is part of the sysstat package and helps find disk bottlenecks."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Troubleshooting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command lists the dynamic dependencies (shared libraries) of a binary executable?",
+    "option_a": "liblist",
+    "option_b": "ldd",
+    "option_c": "depends",
+    "option_d": "objdump",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ldd shows which .so files a program needs to run."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In SELinux, which mode identifies violations but does NOT block them?",
+    "option_a": "Enforcing",
+    "option_b": "Permissive",
+    "option_c": "Disabled",
+    "option_d": "Warning",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Permissive mode is used for troubleshooting to see what SELinux would have blocked."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Shell",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does a 'Here Document' (<<) allow in a shell script?",
+    "option_a": "Reading from another file",
+    "option_b": "Providing multi-line input to a command directly within the script",
+    "option_c": "Sending an email",
+    "option_d": "Running code on another server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Here docs are great for generating configuration files from scripts."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Text Processing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to join lines of two files on a common field?",
+    "option_a": "merge",
+    "option_b": "join",
+    "option_c": "combine",
+    "option_d": "cat",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Like a SQL join, the join command works on sorted text files."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Terms",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does the 'Tux' mascot represent?",
+    "option_a": "Darwin",
+    "option_b": "Linux",
+    "option_c": "GNU",
+    "option_d": "Open Source",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tux the penguin is the official mascot of the Linux kernel."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Filesystem",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'VFS' (Virtual File System) layer?",
+    "option_a": "A ways to run Windows files",
+    "option_b": "A kernel abstraction layer that allows the OS to support multiple different filesystems (ext4, NTFS, NFS) seamlessly",
+    "option_c": "A type of virtual RAM",
+    "option_d": "The /tmp directory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "VFS translates standard system calls (like open/read) into filesystem-specific drivers."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Search",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How do you find all files owned by 'user1' in the entire system?",
+    "option_a": "find / -user user1",
+    "option_b": "ls -R / | grep user1",
+    "option_c": "locate -u user1",
+    "option_d": "whoami user1",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The -user flag in find filters by owner name or UID."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command-line interface is used to manage LVM physical volumes?",
+    "option_a": "pvcreate",
+    "option_b": "vgcreate",
+    "option_c": "lvcreate",
+    "option_d": "pvdisplay",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "PV (Physical Volume) is the first layer of LVM, mapping to actual disks/partitions."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command-line interface is used to create a volume group from physical volumes?",
+    "option_a": "vgcreate",
+    "option_b": "pvcreate",
+    "option_c": "lvcreate",
+    "option_d": "vgdisplay",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A VG (Volume Group) pools multiple Physical Volumes together."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Signals",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which signal is used to reload a configuration file for a background daemon without stopping it?",
+    "option_a": "SIGKILL",
+    "option_b": "SIGHUP",
+    "option_c": "SIGINT",
+    "option_d": "SIGTERM",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SIGHUP (Signal 1) is convention for re-reading config files in apps like Nginx or Apache."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Terms",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the 'Shell'?",
+    "option_a": "Wait command",
+    "option_b": "A command-line interpreter that acts as an interface between the user and the kernel",
+    "option_c": "A type of storage",
+    "option_d": "The physical case of the computer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The shell reads your commands and asks the kernel to run them."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Environment",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Where are global environment variables usually defined for all users?",
+    "option_a": "~/.bashrc",
+    "option_b": "/etc/environment",
+    "option_c": "/etc/profile",
+    "option_d": "Both B and C",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "/etc/environment and /etc/profile set the default system-wide environment."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which file lists the users allowed to run commands as root via 'sudo'?",
+    "option_a": "/etc/sudo",
+    "option_b": "/etc/sudoers",
+    "option_c": "/root/sudo",
+    "option_d": "/etc/passwd",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This file should always be edited using 'visudo' to prevent errors."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Processes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you kill all processes with the same name (e.g. all 'firefox' instances)?",
+    "option_a": "killname firefox",
+    "option_b": "killall firefox",
+    "option_c": "rm firefox",
+    "option_d": "terminate firefox",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "killall (or pkill) searches for processes by name rather than PID."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Hardware",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command tells you the temperature and fan speeds of your components?",
+    "option_a": "temp",
+    "option_b": "sensors",
+    "option_c": "hwinfo",
+    "option_d": "fanstat",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'sensors' command (from lm-sensors) provides hardware monitoring data."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Logging",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command follows the growth of a log file in real-time?",
+    "option_a": "head -f",
+    "option_b": "tail -f",
+    "option_c": "cat -w",
+    "option_d": "watch",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "-f stands for 'follow'; it prints new lines as they are written to the file."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Terms",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is an 'Orphan' process?",
+    "option_a": "A process without a name",
+    "option_b": "A running process whose parent has finished or terminated",
+    "option_c": "A process that cannot be stopped",
+    "option_d": "A process waiting for input",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Orphans are usually adopted by the init process (PID 1)."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command displays the current network socket connections?",
+    "option_a": "netstats",
+    "option_b": "ss",
+    "option_c": "socklist",
+    "option_d": "ip sock",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'ss' (socket statistics) is the faster, modern successor to netstat."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Boot Process",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'initrd' or 'initramfs'?",
+    "option_a": "The main OS files",
+    "option_b": "A temporary root filesystem loaded into memory during boot to provide needed drivers for the real root disk",
+    "option_c": "A backup BIOS",
+    "option_d": "A virus",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It allows the kernel to mount the real / so it can continue booting."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Compression",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which utility is known for the best compression ratio but is slower than gzip?",
+    "option_a": "zip",
+    "option_b": "xz",
+    "option_c": "compress",
+    "option_d": "gzip",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "xz uses the LZMA algorithm; it extracts fast but takes more CPU to compress."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "User management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command allows you to switch to another user account in the current terminal?",
+    "option_a": "switch",
+    "option_b": "su",
+    "option_c": "login",
+    "option_d": "user",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "su (Substitute User) defaults to root if no name is given."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Text Processing",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command is used to translate or delete characters from stdin?",
+    "option_a": "sed",
+    "option_b": "tr",
+    "option_c": "cut",
+    "option_d": "awk",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "tr 'a-z' 'A-Z' converts all lowercase text to uppercase."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Help",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you view a summary of a command's options directly in the CLI?",
+    "option_a": "man command",
+    "option_b": "command --help",
+    "option_c": "info command",
+    "option_d": "describe command",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Most GNU/Linux tools support the --help flag for a quick options list."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Archives",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you list the contents of a .tar.gz file without extracting it?",
+    "option_a": "tar -lvzf file.tar.gz",
+    "option_b": "tar -tvzf file.tar.gz",
+    "option_c": "ls -tar file.tar.gz",
+    "option_d": "cat file.tar.gz",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "-t (list) allows you to see what's inside a tarball before unpacking."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "History",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "To clear your entire command history, use:",
+    "option_a": "history -wipe",
+    "option_b": "history -c",
+    "option_c": "rm history",
+    "option_d": "history -delete",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "-c (clear) wipes the history list from the current shell session."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 4,
+    "level_topic": "Term",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the 'Command Prompt'?",
+    "option_a": "A ways to hack",
+    "option_b": "A sequence of characters indicating the system is ready for input",
+    "option_c": "A manual page",
+    "option_d": "The power button",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The prompt (e.g. user@linux:~$ ) gives context about the current user and path."
+  }
+]

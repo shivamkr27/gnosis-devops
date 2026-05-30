@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "VPC Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'AWS PrivateLink' used for?",
+    "option_a": "To connect two VPCs via peering",
+    "option_b": "To provide private connectivity between VPCs, AWS services, and your on-premises networks without exposing traffic to the public internet",
+    "option_c": "To speed up the internet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PrivateLink uses interface endpoints to securely connect services while keeping traffic on the AWS backbone."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How does 'AWS Direct Connect' (DX) differ from a Standard Site-to-Site VPN?",
+    "option_a": "DX is free",
+    "option_b": "DX provides a dedicated, private physical network connection from your premises to AWS, offering more consistent performance and lower latency than an internet-based VPN",
+    "option_c": "VPN is faster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Direct Connect is ideal for large datasets or high-bandwidth requirements that need guaranteed throughput."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Security (IAM)",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is 'Policy Evaluation Logic' in AWS IAM when multiple policies are attached to a user?",
+    "option_a": "The longest policy wins",
+    "option_b": "By default, all requests are denied. Any explicit 'Deny' always overrides any 'Allow'. An 'Allow' is only granted if there is no explicit 'Deny' and there is an explicit 'Allow'",
+    "option_c": "The last policy added wins",
+    "option_d": "Developers always have access",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Implicit Deny -> Explicit Allow -> Explicit Deny (Deny wins!). Understanding this hierarchy is vital for complex permission troubleshooting."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Database (DynamoDB)",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the primary difference between a 'Global Secondary Index' (GSI) and a 'Local Secondary Index' (LSI)?",
+    "option_a": "GSI is for global users",
+    "option_b": "GSIs can have a partition key and sort key that are different from the base table; LSIs must have the same partition key as the table but a different sort key",
+    "option_c": "LSI is faster",
+    "option_d": "GSIs cannot be created after the table is created",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GSIs are much more flexible and can span the entire table; LSIs are tied to the partition of the base table's partition key."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Database (DynamoDB)",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'DynamoDB Global Tables'?",
+    "option_a": "Tables that everyone can see",
+    "option_b": "A fully managed, multi-region, multi-active database that automatically replicates your DynamoDB tables across your choice of AWS Regions",
+    "option_c": "A ways to name a table",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Global Tables provide low-latency reads and writes to locally available users in different regions."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Content Delivery",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "When would you prefer 'Lambda@Edge' over 'CloudFront Functions'?",
+    "option_a": "For simple header changes",
+    "option_b": "For complex or long-running tasks that require external network calls or large libraries (like image manipulation)",
+    "option_c": "CloudFront Functions is always better",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CloudFront Functions is optimized for sub-millisecond, low-compute tasks; Lambda@Edge is more powerful but slower and more expensive."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "VPC Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'VPC Flow Logs' and what can it tell you?",
+    "option_a": "A logs of the weather",
+    "option_b": "A feature that enables you to capture information about the IP traffic (Accepted or Rejected) going to and from network interfaces in your VPC",
+    "option_c": "A list of users who logged in",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Flow logs are critical for security auditing and debugging why specific traffic is being blocked by Security Groups or NACLs."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Deployment",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is 'CloudFormation StackSets'?",
+    "option_a": "A ways to name a stack",
+    "option_b": "A feature that allows you to create, update, or delete stacks across multiple AWS accounts and regions with a single operation",
+    "option_c": "A tool to delete old stacks",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "StackSets are essential for enterprise-scale infrastructure management across many accounts."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Monitoring",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'CloudWatch Logs Insights'?",
+    "option_a": "A ways to see the logs",
+    "option_b": "A powerful, interactive log analytics service that allows you to query your CloudWatch logs using a specialized purpose-built query language",
+    "option_c": "A ways to delete old logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Insights allows you to aggregate, filter, and analyze log data at scale without needing an ELK stack."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Systems Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'AWS Systems Manager Parameter Store' compared to 'Secrets Manager'?",
+    "option_a": "They are the same",
+    "option_b": "Parameter Store is more cost-effective for general configuration; Secrets Manager is designed for sensitive data with built-in rotation and higher cost",
+    "option_c": "Secrets Manager is for large files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Parameter Store is great for strings and lists; Secrets Manager is better for relational DB keys that change."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Serverless (API Gateway)",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What characterizes 'API Gateway Usage Plans'?",
+    "option_a": "Plans for developers",
+    "option_b": "The ability to define different tiers for API consumers, including rate limiting (throttling) and quota management (e.g. 1000 requests per month)",
+    "option_c": "A ways to name the API",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Usage plans allow you to monetize or control access to your APIs for different client segments."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Computing Models (Lambda)",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Lambda Provisioned Concurrency'?",
+    "option_a": "A ways to run many functions",
+    "option_b": "A feature that keeps a specified number of execution environments warm and ready to respond immediately to function calls, eliminating 'cold starts'",
+    "option_c": "A ways to delete old functions",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Provisioned concurrency is for high-performance applications that cannot tolerate the 1-2 second lag of a container cold start."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Storage (S3)",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'S3 bucket policy' condition `aws:SecureTransport` used for?",
+    "option_a": "To encrypt the data on disk",
+    "option_b": "To enforce that all connections to the S3 bucket must use HTTPS (SSL/TLS)",
+    "option_c": "To name the bucket securely",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This condition is a common security best practice to prevent data-in-transit from being intercepted."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Database (Aurora)",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What defines 'Amazon Aurora Serverless v2'?",
+    "option_a": "It's always running",
+    "option_b": "An on-demand, auto-scaling configuration for Aurora that scales capacity in fine-grained increments (ACUs) to meet the needs of the most demanding applications",
+    "option_c": "It is slower than v1",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "v2 is faster at scaling and more efficient at handling low-load states than the original Aurora Serverless."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "VPC Connectivity",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'VPC Endpoint' in AWS?",
+    "option_a": "A ways to delete a VPC",
+    "option_b": "A private connection between your VPC and supported AWS services without requiring an internet gateway, NAT device, or VPN connection",
+    "option_c": "A ways to name a user",
+    "option_d": "A physical router",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Endpoints (Interface or Gateway) improve security and reduce costs by keeping traffic inside the AWS network."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Identity (IAM)",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'Identity Provider' (IdP) in IAM?",
+    "option_a": "A ways to name a user",
+    "option_b": "An external entity (like Google, OKTA, or Active Directory) that provides identities for your AWS account using standard protocols like SAML 2.0 or OIDC",
+    "option_c": "A backup account",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Federation through an IdP allows for Single Sign-On (SSO) across enterprise applications and AWS."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Global Infrastructure",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is the role of an 'AWS Global Accelerator'?",
+    "option_a": "To speed up the internet globally",
+    "option_b": "A service that uses the AWS global network backbone to improve the availability and performance of your applications for local and global users by providing two static anycast IP addresses",
+    "option_c": "To rename regions",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Global Accelerator optimizes the network path and automatically fails over between regions without DNS propagation delays."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Database (DynamoDB)",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What happens if a DynamoDB table with Provisioned capacity exceeds its RCU or WCU limit?",
+    "option_a": "AWS adds more capacity automatically and charges you",
+    "option_b": "The requests will be 'Throttled', returning a 400 error to the client",
+    "option_c": "The table is deleted",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Throttling requires applications to implement retries with exponential backoff."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Amazon EFS Access Points'?",
+    "option_a": "A physical connection to EFS",
+    "option_b": "Application-specific entry points into an EFS file system that make it easy to manage application access to shared datasets",
+    "option_c": "A ways to name folders",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Access points can enforce specific user IDs and paths, making EFS easier to use in multi-tenant container environments."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Migration",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the purpose of 'AWS Migration Hub'?",
+    "option_a": "A place to see your migrations",
+    "option_b": "A central location to find migration tools and track the progress of migrations across multiple AWS and partner solutions",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Migration Hub provides a single dashboard to manage the complex journey of moving data and apps to AWS."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes an 'AWS KMS Multi-Region Key'?",
+    "option_a": "A key that everyone can use",
+    "option_b": "A set of identical KMS keys that can be replicated across different regions, allowing for seamless encryption/decryption of the same data in those regions",
+    "option_c": "A ways to name the keys",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multi-region keys simplify global data management and disaster recovery architectures."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Computing Models (Lambda)",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'AWS Lambda Layers'?",
+    "option_a": "A ways to wrap the code",
+    "option_b": "A distribution mechanism for libraries, custom runtimes, and other function dependencies that can be shared across multiple Lambda functions",
+    "option_c": "A tool to delete old code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Layers reduce deployment package size and promote code reuse."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Messaging",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'SQS Visibility Timeout'?",
+    "option_a": "The time the queue is hidden",
+    "option_b": "The period of time during which SQS prevents other consumers from receiving and processing a message that has already been picked up by one consumer",
+    "option_c": "The time before a message is deleted",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If the consumer doesn't delete the message before the timeout expires, the message becomes visible again for other consumers."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Serverless (Step Functions)",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'AWS Step Functions'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A serverless orchestration service that lets you combine AWS Lambda functions and other AWS services to build business-critical applications",
+    "option_c": "A ways to count lines of code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Step Functions state machines help you manage complex workflows and retry logic."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Data Analytics",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'AWS Glue'?",
+    "option_a": "A liquid for building servers",
+    "option_b": "A fully managed ETL (extract, transform, and load) service that makes it easy for customers to prepare and load their data for analytics",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Glue includes a data catalog and crawlers to discover metadata from your data sources automatically."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is the purpose of 'Amazon Macie' sensitive data discovery?",
+    "option_a": "To find photos of users",
+    "option_b": "To use machine learning to automatically discover and protect sensitive personal information (PII) like social security numbers or credit card details in S3",
+    "option_c": "To rename files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Macie helps prevent data leaks by flagging sensitive data that might be exposed to the public."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Compute",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'T3 Unlimited' instance in EC2?",
+    "option_a": "An instance with unlimited RAM",
+    "option_b": "An instance that can burst CPU performance above its baseline as long as needed, incurring additional costs if it exhausts its accrued credits",
+    "option_c": "An instance with no storage limits",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unlimited mode allows burstable instances to handle sustained high load without being throttled."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Reliability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the difference between RDS 'Snapshot' and 'Automated Backup'?",
+    "option_a": "Snapshots are only for large databases",
+    "option_b": "Automated backups are enabled by default and deleted when the RDS instance is deleted; Snapshots are user-initiated and persist after the instance is deleted",
+    "option_c": "Snapshots are faster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Snapshots are manual points-in-time; Automated backups cover your recovery window (up to 35 days)."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Resource Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'AWS Resource Groups'?",
+    "option_a": "A group of users",
+    "option_b": "A feature that allows you to organize and manage your AWS resources based on tags (e.g. all resources for App-X in Production)",
+    "option_c": "A tool to delete old resources",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Resource Groups make it easier to view and manage related infrastructure at scale."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Database (Caching)",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the primary difference between Redis and Memcached in Amazon ElastiCache?",
+    "option_a": "Memcached is newer",
+    "option_b": "Redis supports complex data types (lists, sets) and replication/high-availability; Memcached is a simple key-value store optimized for simple caching",
+    "option_c": "Redis is only for small files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Choose Redis for more advanced features like persistence and pub/sub; choose Memcached for massive-scale, simple string caching."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Security (VPC)",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Egress-only Internet Gateway'?",
+    "option_a": "A ways to delete the internet",
+    "option_b": "A VPC component that allows IPv6 traffic from your private subnet to the internet, but prevents the internet from initiating a connection to those instances",
+    "option_c": "A ways to name a router",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is essentially a NAT Gateway equivalent for IPv6 traffic."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Serverless (Cognito)",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What characterizes 'Amazon Cognito User Pools'?",
+    "option_a": "A swimming pool for users",
+    "option_b": "A user directory that provides sign-up and sign-in options for your app users, managing the entire authentication flow",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cognito handles user registration, authentication, and password recovery."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Governance",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'AWS Config Remediation'?",
+    "option_a": "A ways to hide money",
+    "option_b": "The ability of AWS Config to automatically fix (remediate) non-compliant resources using SSM Automation documents",
+    "option_c": "A ways to delete a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Remediation helps you maintain a secure environment without manual intervention."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "CloudFormation",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Change Set' in AWS CloudFormation?",
+    "option_a": "A set of new clothes for the server",
+    "option_b": "A summary of the changes that CloudFormation will make to your stack, allowing you to preview them before executing the update",
+    "option_c": "A ways to rename a stack",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Change sets are a key safety feature to prevent unexpected infrastructure destruction."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Infrastructure",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What defines 'AWS Cloud Map'?",
+    "option_a": "A physical map of data centers",
+    "option_b": "A cloud resource discovery service that lets you name your application resources with custom names, and it automatically updates the location of these dynamically changing resources",
+    "option_c": "A ways to delete images",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cloud Map is a service discovery tool that simplifies managing microservices that scale and move frequently."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Streaming",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Amazon Kinesis Data Streams'?",
+    "option_a": "A ways to stream movies",
+    "option_b": "A serverless real-time data streaming service that can continuously capture gigabytes of data per second from hundreds of thousands of sources",
+    "option_c": "A tool to delete old data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kinesis is the primary tool for handling massive, high-throughput streaming data for real-time analysis."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Amazon S3 Glacier Deep Archive'?",
+    "option_a": "A ways to hide files in a cave",
+    "option_b": "The lowest-cost storage class on AWS, designed for long-term retention of data that is accessed at most once or twice a year, with retrieval times of 12-48 hours",
+    "option_c": "A ways to name old files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deep Archive is much cheaper than tape-based offsite storage for compliance data."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Systems Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'AWS Systems Manager Patch Manager' used for?",
+    "option_a": "To name the servers",
+    "option_b": "An automated tool that helps you simplify your operating system patching process across large fleets of EC2 instances and on-premises servers",
+    "option_c": "A ways to delete old code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Patch Manager uses 'Patch Baselines' to enforce standard security update levels across your infrastructure."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Identity (IAM)",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "Which element in an IAM trust policy defines which principal is allowed to assume a role?",
+    "option_a": "Action",
+    "option_b": "Principal",
+    "option_c": "Resource",
+    "option_d": "Condition",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Principal element specifies the user, account, or service (e.g. lambda.amazonaws.com) that can inherit the role's permissions."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'AWS Site-to-Site VPN'?",
+    "option_a": "A ways to name a website",
+    "option_b": "A secure, encrypted connection between a VPC and your remote network (e.g. corporate data center) over the public internet",
+    "option_c": "A ways to delete a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "VPN is a quick and cost-effective way to establish hybrid connectivity compared to Direct Connect."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Amazon GuardDuty' malware scan?",
+    "option_a": "Scanning for sick users",
+    "option_b": "A feature that automatically initiates agentless malware scans of Amazon EBS volumes when GuardDuty detects suspicious activity indicative of malware",
+    "option_c": "A ways to name a file",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Malware scanning provides deep visibility into compromised instances without affecting their performance."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Database (Serverless)",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'DynamoDB Streams'?",
+    "option_a": "A way to watch movies from a database",
+    "option_b": "An ordered sequence of item-level changes (insert, modify, delete) in a DynamoDB table, which can trigger Lambda functions for real-time processing",
+    "option_c": "A ways to delete old data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Streams are essential for building event-driven, reactive architectures based on data changes."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Messaging",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What happens in SNS 'Fan-out' architecture?",
+    "option_a": "The fans are turned on to cool the servers",
+    "option_b": "A single message published to an SNS topic is automatically delivered to multiple endpoints (e.g. SQS queues, Lambda functions) simultaneously",
+    "option_c": "A ways to delete users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fan-out is a powerful pattern for decoupling multiple disparate systems that all need the same event data."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Application Integration",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Amazon EventBridge'?",
+    "option_a": "A bridge for events at the office",
+    "option_b": "A serverless event bus that makes it easy to connect applications using data from your own apps, SaaS apps, and AWS services",
+    "option_c": "A ways to rename files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "EventBridge is the modern successor to CloudWatch Events, offering better filtering and integration with SaaS partners."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'IAM Permission Boundaries'?",
+    "option_a": "A wall around the user",
+    "option_b": "An advanced feature where you use a managed policy to set the maximum permissions that an identity-based policy can grant to an IAM entity",
+    "option_c": "A ways to delete a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Boundaries are used to delegate permission creation to developers safely by ensuring they can't create 'admin' level users."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Global Infrastructure",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which service helps protect against Layer 7 (application layer) attacks like SQL injection and cross-site scripting?",
+    "option_a": "AWS Shield",
+    "option_b": "AWS WAF",
+    "option_c": "IAM",
+    "option_d": "GuardDuty",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "WAF allows you to inspect web requests and block common patterns used in hacking attempts."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes an 'AWS VPN CloudHub'?",
+    "option_a": "A hub for users to meet",
+    "option_b": "A simple hub-and-spoke model for connecting multiple remote sites using AWS as the central hub, allowing sites to communicate with each other privately",
+    "option_c": "A tool to delete old routers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CloudHub is an economical way to use existing VPN connections for inter-branch communication."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Amazon FSx for Lustre'?",
+    "option_a": "A ways to host pretty websites",
+    "option_b": "A high-performance file system optimized for compute-intensive workloads like machine learning and high-performance computing (HPC)",
+    "option_c": "A tool to delete files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lustre provides massive throughput and sub-millisecond latencies for parallel processing jobs."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What identifies 'Amazon Inspector' Network Reachability scans?",
+    "option_a": "Finding the user's phone number",
+    "option_b": "Agentless scans that analyze your VPC network configuration to find security vulnerabilities like open ports or unintended external access to your instances",
+    "option_c": "A ways to name a router",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Reachability scans help ensure you don't accidentally leave 'RDP' or 'SSH' open to the entire world."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 3,
+    "level_topic": "Governance",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Audit' in CloudTrail?",
+    "option_a": "Counting the users",
+    "option_b": "Continuous, automated auditing of all account activity, providing a verifiable record for security analysis and compliance requirements",
+    "option_c": "A ways to delete old files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CloudTrail is the 'source of truth' for when, who, and where an AWS action was initiated."
+  }
+]

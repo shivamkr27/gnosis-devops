@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics & Big-O",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the time complexity of searching for an element in a balanced binary search tree?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Binary search trees halved the search space at each step, leading to logarithmic time."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics & Big-O",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A Stack follows which principle?",
+    "option_a": "FIFO (First-In, First-Out)",
+    "option_b": "LIFO (Last-In, First-Out)",
+    "option_c": "Random Access",
+    "option_d": "Priority Access",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a stack, the last element pushed is the first one to be popped (like a stack of plates)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics & Big-O",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the Big O time complexity of 'Bubble Sort' in the worst case?",
+    "option_a": "O(n)",
+    "option_b": "O(n^2)",
+    "option_c": "O(log n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bubble sort uses nested loops, resulting in a quadratic time complexity."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics & Big-O",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which data structure is best for implementing a 'First-In, First-Out' (FIFO) system?",
+    "option_a": "Stack",
+    "option_b": "Queue",
+    "option_c": "Hash Map",
+    "option_d": "Binary Tree",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Queues process elements in the order they arrived (like a line for tickets)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics & Big-O",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the space complexity of a recursive function with depth 'n' that uses no extra variables?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Each recursive call adds a frame to the call stack, leading to O(n) space complexity."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics & Big-O",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Linked List'?",
+    "option_a": "A collection of data stored in contiguous memory",
+    "option_b": "A linear data structure where elements are stored in nodes, and each node points to the next node",
+    "option_c": "A list of strings in a file",
+    "option_d": "A way to connect different databases",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Linked lists are dynamic and can easily grow or shrink, but don't support constant-time random access."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics & Big-O",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity of accessing an element at a specific index in an Array?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Arrays support constant-time access via index calculation in memory."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics & Big-O",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these are O(n log n) sorting algorithms?",
+    "option_a": "Merge Sort",
+    "option_b": "Quick Sort (average case)",
+    "option_c": "Bubble Sort",
+    "option_d": "Heap Sort",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Merge sort and Heap sort are always O(n log n); Quick sort is O(n log n) on average."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics & Big-O",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What does 'Big O Notation' describe?",
+    "option_a": "The exact number of seconds a program takes",
+    "option_b": "The upper bound of the growth rate of an algorithm's running time or space requirements as the input size grows",
+    "option_c": "The size of a file in bytes",
+    "option_d": "A way to name variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Big O provides a standardized way to compare the scalability of algorithms."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics & Big-O",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Binary Search'?",
+    "option_a": "Searching every element one by one",
+    "option_b": "An efficient search algorithm that finds an element in a sorted list by repeatedly dividing the search interval in half",
+    "option_c": "Searching only for 0s and 1s",
+    "option_d": "Searching in two different files at once",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Binary search requires the data to be sorted and has O(log n) time complexity."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Arrays",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the index of the first element in most programming languages?",
+    "option_a": "1",
+    "option_b": "0",
+    "option_c": "-1",
+    "option_d": "Depends on the array size",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Most languages (C, Java, Python, JS) use 0-based indexing for arrays."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Linked Lists",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a Singly Linked List, what does the 'next' pointer of the last node point to?",
+    "option_a": "The head node",
+    "option_b": "NULL",
+    "option_c": "Itself",
+    "option_d": "The previous node",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The end of a linear linked list is marked by a null pointer."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Stacks",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which operation is used to add an element to a stack?",
+    "option_a": "Enqueue",
+    "option_b": "Push",
+    "option_c": "Pop",
+    "option_d": "Insert",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Push adds an item, Pop removes an item."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Queues",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which operation is used to remove an element from a queue?",
+    "option_a": "Push",
+    "option_b": "Dequeue",
+    "option_c": "Pop",
+    "option_d": "Poll",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dequeue (or poll in some languages) removes the element from the front of the queue."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Big-O",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of these is the most efficient time complexity?",
+    "option_a": "O(n)",
+    "option_b": "O(1)",
+    "option_c": "O(n log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "O(1) means constant time, which is independent of the input size."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which sorting algorithm repeatedly finds the minimum element and moves it to the front?",
+    "option_a": "Selection Sort",
+    "option_b": "Bubble Sort",
+    "option_c": "Insertion Sort",
+    "option_d": "Quick Sort",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Selection sort divides the list into sorted and unsorted parts and selects the minimum from the unsorted part."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Searching",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the time complexity of 'Linear Search' in an array of size n?",
+    "option_a": "O(1)",
+    "option_b": "O(log n)",
+    "option_c": "O(n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "In the worst case, you might have to check every element once."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Trees",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many children can a node in a Binary Tree have?",
+    "option_a": "Exactly 2",
+    "option_b": "At most 2",
+    "option_c": "Any number",
+    "option_d": "At least 1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A binary tree node can have 0, 1, or 2 children."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the time complexity of getting the length of a string in Java (where length is stored)?",
+    "option_a": "O(n)",
+    "option_b": "O(1)",
+    "option_c": "O(log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If the length is stored as a property, it's a constant time access."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Arrays",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the time complexity of inserting an element at the beginning of an array of size n?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You must shift all existing n elements to the right to make space at index 0."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Recursion",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the base case in a recursive function?",
+    "option_a": "The case that starts the recursion",
+    "option_b": "The condition that stops the recursion from calling itself",
+    "option_c": "The largest input handled",
+    "option_d": "The error case",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Without a base case, the function would call itself indefinitely (infinite recursion), leading to a stack overflow."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Hashing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Collision' in a Hash Map?",
+    "option_a": "When the program crashes",
+    "option_b": "When two different keys produce the same hash value",
+    "option_c": "When the hash map is empty",
+    "option_d": "When keys are deleted",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Collisions must be handled using techniques like chaining or open addressing."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity of the following loop: for(int i=1; i<n; i=i*2)?",
+    "option_a": "O(n)",
+    "option_b": "O(log n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(1)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The variable i doubles in each iteration, so it reaches n in log2(n) steps."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of these is a non-linear data structure?",
+    "option_a": "Array",
+    "option_b": "Graph",
+    "option_c": "Stack",
+    "option_d": "Linked List",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Arrays, stacks, and linked lists are linear; trees and graphs are non-linear."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Queues",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A 'Priority Queue' delivers elements based on:",
+    "option_a": "Arrival time only",
+    "option_b": "Value/Priority associated with elements",
+    "option_c": "Random selection",
+    "option_d": "Alphabetical order",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Elements with higher priority are dequeued before those with lower priority."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the best-case time complexity of 'Insertion Sort'?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(n log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If the array is already sorted, insertion sort only performs n-1 comparisons."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Linked Lists",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A 'Doubly Linked List' contains:",
+    "option_a": "Two head pointers",
+    "option_b": "Pointers to both the next and the previous nodes",
+    "option_c": "Only data, no pointers",
+    "option_d": "Two data fields per node",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This allows traversal in both forward and backward directions."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which structure is typically used for a system 'Call Stack'?",
+    "option_a": "Queue",
+    "option_b": "Stack",
+    "option_c": "Tree",
+    "option_d": "Linked List",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Functions follow LIFO (the most recently called function must finish first)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Arrays",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Dynamic memory allocation in C is done using which function?",
+    "option_a": "new",
+    "option_b": "malloc",
+    "option_c": "create",
+    "option_d": "alloc",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "malloc (memory allocation) allocates a specified number of bytes from the heap."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "Which sorting algorithm is 'Stable' by nature?",
+    "option_a": "Merge Sort",
+    "option_b": "Quick Sort",
+    "option_c": "Heap Sort",
+    "option_d": "Selection Sort",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Stable sorts preserve the relative order of elements with equal keys."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Trees",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Leaf' node in a tree?",
+    "option_a": "The top-most node",
+    "option_b": "A node with no children",
+    "option_c": "A node with exactly one child",
+    "option_d": "The node with the root's value",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Leaf nodes are the 'end' points of the tree branches."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In a 2D array arr[3][4], how many total elements are there?",
+    "option_a": "7",
+    "option_b": "12",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "3 rows * 4 columns = 12 elements."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Hashing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Load Factor' in a hash table?",
+    "option_a": "The time it takes to hash a key",
+    "option_b": "The ratio of the number of elements to the table size",
+    "option_c": "The amount of memory used by pointers",
+    "option_d": "The frequency of collisions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps decide when to resize the table (rehashing)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the time complexity of the following: for(i=0; i<n; i++) for(j=0; j<i; j++)?",
+    "option_a": "O(n)",
+    "option_b": "O(n^2)",
+    "option_c": "O(n log n)",
+    "option_d": "O(1)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This performs 1 + 2 + ... + n-1 operations, which is n(n-1)/2, roughly O(n^2)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Linked Lists",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity to find the middle element of a linked list if the length is known?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Even if the length is known, you must traverse n/2 nodes to reach the middle element in a singly linked list."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Algorithm Types",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Greedy Algorithm' approach?",
+    "option_a": "Checking all possible combinations",
+    "option_b": "Making the locally optimal choice at each step",
+    "option_c": "Solving subproblems only once",
+    "option_d": "Always using recursion",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Greedy algorithms aim for a global optimum by choosing the best immediate option."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Algorithm Types",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Divide and Conquer'?",
+    "option_a": "A strategy that breaks a problem into smaller subproblems, solves them, and combines the results",
+    "option_b": "Deleting the largest element of an array",
+    "option_c": "Using two different programming languages",
+    "option_d": "Sorting using stacks",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Examples include Merge Sort, Quick Sort, and Binary Search."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Stacks",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What happens if you try to Pop from an empty stack?",
+    "option_a": "Overflow",
+    "option_b": "Underflow",
+    "option_c": "Recursion",
+    "option_d": "Nothing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Popping from an empty stack is an underflow error; pushing to a full stack is an overflow."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Queues",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A 'Circular Queue' solves which problem of a linear array-based queue?",
+    "option_a": "Slow search",
+    "option_b": "Wastage of space at the front",
+    "option_c": "Priority handling",
+    "option_d": "Sorting",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a linear queue, once the tail reaches the end, space vacated at the front cannot be reused without shifting."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "If f(n) = 5n + 10, what is its Big-O complexity?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(10)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "We ignore constant factors and lower-order terms in Big-O analysis."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which sorting algorithm is generally the fastest for nearly sorted data?",
+    "option_a": "Heap Sort",
+    "option_b": "Insertion Sort",
+    "option_c": "Selection Sort",
+    "option_d": "Merge Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Insertion sort is O(n) for nearly sorted data, while most O(n log n) sorts still take significant time."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Linked Lists",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many pointers are stored in a node of a Circular Singly Linked List?",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "2",
+    "option_d": "n",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It still only has a 'next' pointer, but the last node points back to the head."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Algorithm Types",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which approach uses a 'Lookup Table' to store solutions to subproblems?",
+    "option_a": "Greedy",
+    "option_b": "Dynamic Programming",
+    "option_c": "Brute Force",
+    "option_d": "Randomized",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Memoization or Tabulation are common techniques in Dynamic Programming."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the time complexity of comparing two strings of length n?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You may need to compare each character one by one."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the Big-O for finding the maximum element in an unsorted array of size n?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You must inspect every element at least once to ensure you've found the true maximum."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Which of these is not a primitive data type?",
+    "option_a": "int",
+    "option_b": "char",
+    "option_c": "Array",
+    "option_d": "float",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Arrays are composite or non-primitive data types built from primitive elements."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Hashing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the advantage of a good hash function?",
+    "option_a": "Makes the map larger",
+    "option_b": "Distributes keys uniformly across the table to minimize collisions",
+    "option_c": "Encrypts the data",
+    "option_d": "Deletes duplicate entries",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Uniform distribution ensures operations stay close to O(1) time."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which sorting algorithm is often implemented recursively using a Pivot?",
+    "option_a": "Merge Sort",
+    "option_b": "Quick Sort",
+    "option_c": "Bubble Sort",
+    "option_d": "Insertion Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Quick sort partitions the array based on a chosen pivot element."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Basics",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Garbage Collection' in memory management?",
+    "option_a": "Deleting the source code",
+    "option_b": "Automatic reclamation of memory that is no longer in use by the program",
+    "option_c": "Clear the recycle bin",
+    "option_d": "Sorting data in the disk",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Languages like Java and Python use GC; C requires manual memory management (free()).."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 1,
+    "level_topic": "Stacks",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is a common application of a Stack?",
+    "option_a": "Printer spooling",
+    "option_b": "Reversing a string",
+    "option_c": "Breadth-First Search",
+    "option_d": "Buffering",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pushing all characters onto a stack and then popping them results in the reversed string."
+  }
+]

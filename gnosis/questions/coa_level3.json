@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "CPU Components",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which component of the CPU is responsible for coordinating the activities of all other components?",
+    "option_a": "ALU (Arithmetic Logic Unit)",
+    "option_b": "Control Unit",
+    "option_c": "Register File",
+    "option_d": "Bus Interface",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Control Unit directs the operation of the processor by providing timing and control signals."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Instruction Sets",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is a defining characteristic of a RISC (Reduced Instruction Set Computer) architecture?",
+    "option_a": "Highly complex instructions that take many cycles",
+    "option_b": "A small set of simple, uniform-length instructions optimized for high-speed execution",
+    "option_c": "No use of pipelining",
+    "option_d": "Direct hardware support for high-level language constructs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RISC focuses on simple instructions that can be executed in a single clock cycle, enabling efficient pipelining."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Microprogramming",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In a Hardwired Control Unit, how are control signals generated?",
+    "option_a": "By executing microcode stored in ROM",
+    "option_b": "By fixed combinational and sequential logic circuits",
+    "option_c": "By the operating system",
+    "option_d": "By a software interpreter",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hardwired control units use physical circuits to generate signals, which is faster but less flexible than microprogrammed control."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "CISC vs RISC",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "Which of the following are generally associated with CISC (Complex Instruction Set Computer) architectures?",
+    "option_a": "Variable length instructions",
+    "option_b": "Rich set of addressing modes",
+    "option_c": "Large number of general-purpose registers",
+    "option_d": "Emphasis on hardware complexity to simplify software",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "CISC (like x86) uses complex instructions and many addressing modes. RISC typically uses more registers to offset its simpler instruction set."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "CPU Arithmetic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which register holds the address of the next instruction to be fetched?",
+    "option_a": "Instruction Register (IR)",
+    "option_b": "Program Counter (PC)",
+    "option_c": "Memory Address Register (MAR)",
+    "option_d": "Accumulator",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The PC keeps track of where the CPU is in its program execution."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Pipelining",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Data Hazard' in a CPU pipeline?",
+    "option_a": "The CPU catching fire",
+    "option_b": "A situation where an instruction depends on the result of a previous instruction that hasn't completed yet",
+    "option_c": "Deleting the wrong file",
+    "option_d": "A power surge",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Data hazards occur when the pipeline must stall or forward data because of dependencies."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Pipelining",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "How does 'Branch Prediction' improve pipeline performance?",
+    "option_a": "By doubling CPU speed",
+    "option_b": "By guessing the outcome of conditional branches to avoid pipeline stalls (flushes)",
+    "option_c": "By increasing memory size",
+    "option_d": "By deleting old code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Effective branch prediction keeps the pipeline full of useful instructions."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Cache Memory",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Direct Mapping' in cache memory?",
+    "option_a": "A ways to name files",
+    "option_b": "A technique where each block of main memory is mapped to exactly one possible cache location",
+    "option_c": "Cache that only stores addresses",
+    "option_d": "A ways to delete cache",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Direct mapping is simple to implement but can lead to high conflict misses."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Cache Memory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What defines 'Set-Associative Mapping'?",
+    "option_a": "Grouping files",
+    "option_b": "Dividing the cache into sets, where each memory block can be placed in any line within its designated set",
+    "option_c": "Only allowing 2 cache lines total",
+    "option_d": "A ways to encrypt cache",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Set-associative is a compromise between direct and fully associative mapping, balancing complexity and performance."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Input/Output",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Programmed I/O'?",
+    "option_a": "I/O that uses AI",
+    "option_b": "A method where the CPU manually checks the status of an I/O device and transfers data, wasting CPU cycles in polling",
+    "option_c": "I/O that only works with Java",
+    "option_d": "Automatic data transfer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Programmed I/O is simple but inefficient as the CPU is tied up waiting for the device."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Input/Output",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How does 'Interrupt-Driven I/O' improve efficiency?",
+    "option_a": "By turning off the screen",
+    "option_b": "By allowing the CPU to perform other tasks until the I/O device signals that it is ready for data transfer",
+    "option_c": "By deleting old tasks",
+    "option_d": "By increasing clock speed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The CPU doesn't need to poll the device; the device 'interrupts' the CPU when ready."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "DMA",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the primary role of a 'DMA Controller'?",
+    "option_a": "Managing internet speed",
+    "option_b": "Managing data transfers between I/O devices and main memory without continuous CPU involvement",
+    "option_c": "Encrypting hard drives",
+    "option_d": "Controlling the monitor",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Direct Memory Access (DMA) frees the CPU for other tasks during large data transfers."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "DMA",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Cycle Stealing' in DMA?",
+    "option_a": "Deleting CPU cycles",
+    "option_b": "A process where the DMA controller takes control of the system bus for one clock cycle to transfer a data word",
+    "option_c": "Clock speed manipulation",
+    "option_d": "A virus",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The DMA controller 'steals' a cycle from the CPU to perform a transfer."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Virtual Memory",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the purpose of the 'TLB' (Translation Lookaside Buffer)?",
+    "option_a": "To cache file names",
+    "option_b": "To act as a high-speed cache for page table entries, speeding up the translation of virtual addresses to physical addresses",
+    "option_c": "To store internet passwords",
+    "option_d": "To encrypt RAM",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The TLB avoids slow lookups in the full page table stored in main memory."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Virtual Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Page Fault'?",
+    "option_a": "A bug in a web page",
+    "option_b": "An interrupt that occurs when a requested page is not currently in physical memory",
+    "option_c": "A ways to delete a page",
+    "option_d": "A printing error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "When a page fault occurs, the OS must fetch the page from disk into RAM."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Instruction Cycle",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What are the four basic stages of the instruction cycle?",
+    "option_a": "Write, Read, Delete, Repeat",
+    "option_b": "Fetch, Decode, Execute, Store",
+    "option_c": "Start, Process, End, Shutdown",
+    "option_d": "Input, Logic, Output, Storage",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "These stages define how any instruction is handled by the CPU."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Bus Systems",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between a synchronous and asynchronous bus?",
+    "option_a": "Color of the wires",
+    "option_b": "Synchronous buses use a common clock signal for all devices; asynchronous uses handshaking protocols",
+    "option_c": "Asynchronous is only for printers",
+    "option_d": "There is no difference",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Synchronous is faster for fixed speeds; asynchronous is more flexible for different device speeds."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "CPU Control",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Micro-operations'?",
+    "option_a": "Small CPU chips",
+    "option_b": "Functional or atomic operations that are performed to execute a microcode instruction",
+    "option_c": "Calculating very small numbers",
+    "option_d": "A ways to delete registers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A single machine instruction is broken down into a sequence of micro-operations."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Interrupts",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Vectored Interrupt'?",
+    "option_a": "An interrupt with a direction",
+    "option_b": "An interrupt where the device provides the memory address (vector) of the service routine to the CPU",
+    "option_c": "A ways to cancel interrupts",
+    "option_d": "A circular interrupt",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Vectored interrupts allow for faster handling as the CPU doesn't have to poll to find the source."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Interrupts",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Interrupt Latency'?",
+    "option_a": "Clock speed",
+    "option_b": "The time elapsed from the arrival of an interrupt signal to the start of the execution of its service routine",
+    "option_c": "The duration of an interrupt",
+    "option_d": "CPU cooling time",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lower latency is critical for real-time systems."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "CPU Registers",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the function of the 'Instruction Register' (IR)?",
+    "option_a": "Counting instructions",
+    "option_b": "Holding the instruction that is currently being decoded or executed",
+    "option_c": "Holding the result of addition",
+    "option_d": "managing memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Once fetched from memory, an instruction must stay in the IR until it is finished."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Memory Addressing",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Indirect Addressing'?",
+    "option_a": "Addressing a friend",
+    "option_b": "An addressing mode where the address field of the instruction contains the memory address where the effective address is stored",
+    "option_c": "Directly using a register",
+    "option_d": "A ways to delete memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Indirect addressing requires two memory accesses to get the data."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Pipelining Hazards",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "How can 'Structural Hazards' in a pipeline be minimized?",
+    "option_a": "Building a better case",
+    "option_b": "By duplicating functional units or using separate caches for data and instructions (Harvard architecture)",
+    "option_c": "By lowering the voltage",
+    "option_d": "By deleting old code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Structural hazards occur when two instructions need the same hardware resource at the same time."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Bus Arbitration",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Daisy Chaining' in bus arbitration?",
+    "option_a": "Planting flowers",
+    "option_b": "A centralized arbitration method where a grant signal is passed sequentially through each device in order of priority",
+    "option_c": "A ways to delete devices",
+    "option_d": "Random device selection",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Daisy chaining is simple but can lead to unfairness if many devices are connected."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Input/Output",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What defines 'Memory-Mapped I/O'?",
+    "option_a": "Mapping the hard drive",
+    "option_b": "A technique where I/O devices are assigned addresses in the same address space as main memory, allowing memory instructions to access I/O",
+    "option_c": "I/O that only uses RAM",
+    "option_d": "A ways to delete BIOS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Memory-mapped I/O simplifies instruction sets but reduces available memory address space."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "CPU Performance",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Amdahl's Law' used for in COA?",
+    "option_a": "Calculating electricity cost",
+    "option_b": "Calculating the theoretical speedup in latency of the execution of a task at fixed workload that can be expected of a system whose resources are improved",
+    "option_c": "A ways to delete users",
+    "option_d": "Measuring weight of components",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It highlights that the speedup is limited by the serial portion of the task."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Multi-core Systems",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Cache Coherency' in a multi-core processor?",
+    "option_a": "Making cache look nice",
+    "option_b": "The uniformity of shared resource data that ends up stored in multiple local caches",
+    "option_c": "Deleting all cache",
+    "option_d": "A clock speed sync",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Protocols like MESI are used to ensure all cores see the same data for a shared memory location."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Instruction Formats",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is an 'Opcode'?",
+    "option_a": "An opening code",
+    "option_b": "The portion of a machine language instruction that specifies the operation to be performed",
+    "option_c": "The name of the CPU",
+    "option_d": "A ways to delete registers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Opcode (Operation Code) tells the CPU whether to add, subtract, load, etc."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "CPU Registers",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the 'Accumulator' register?",
+    "option_a": "A register for counting dust",
+    "option_b": "A register in which intermediate arithmetic and logic results are stored",
+    "option_c": "The main clock",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In many simple processors, the accumulator is the primary work area for calculations."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Memory Organization",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Memory Interleaving'?",
+    "option_a": "Folding memory",
+    "option_b": "Slicing memory into multiple modules so that consecutive addresses are in different modules, allowing parallel access to increase throughput",
+    "option_c": "A ways to delete RAM",
+    "option_d": "Using two keyboards",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Interleaving hides the latency of individual memory chips."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Control Structures",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Microprogramming'?",
+    "option_a": "Programming small apps",
+    "option_b": "The implementation of a control unit by using a small internal memory to store sequences of micro-instructions",
+    "option_c": "Coding in C",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Microprogramming makes it easier to update or add new machine instructions to a CPU."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Digital Logic",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the purpose of a 'Multiplexer' (MUX) in computer architecture?",
+    "option_a": "To multiply numbers",
+    "option_b": "To select one of many input signals and forward it to a single output line",
+    "option_c": "To delete old data",
+    "option_d": "A security gate",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MUXes are essential for choosing which data source (register, ALU, etc.) goes to a specific destination."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "CPU Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Isolated I/O'?",
+    "option_a": "I/O in a box",
+    "option_b": "A technique where I/O devices have a separate address space from main memory, requiring special instructions like IN and OUT",
+    "option_c": "I/O that is broken",
+    "option_d": "A training dashboard",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Isolated I/O leaves more address space for RAM but requires a more complex CPU."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Arithmetic Circuits",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Full Adder' circuit?",
+    "option_a": "Something that adds everything",
+    "option_b": "A logical circuit that performs an addition operation on three one-bit binary numbers (two bits and a carry-in)",
+    "option_c": "A calculator app",
+    "option_d": "A way to delete bits",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Full adders can be chained together to add multi-bit binary numbers."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Pipelining Hazard",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is a 'Control Hazard'?",
+    "option_a": "Loosing the remote",
+    "option_b": "A situation where the pipeline doesn't know which instruction to fetch next due to a branch or jump",
+    "option_c": "A power failure",
+    "option_d": "Too many users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Control hazards (or branch hazards) break the flow of the pipeline."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Parallelism",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Instruction-Level Parallelism' (ILP)?",
+    "option_a": "Using many CPUs",
+    "option_b": "The overlap of individual instruction executions to perform more than one operation at a time within a single CPU core",
+    "option_c": "Running two apps",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ILP is achieved through techniques like pipelining and superscalar execution."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Parallel Processing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In Flynn's Taxonomy, what does 'SIMD' stand for?",
+    "option_a": "Simple Instruction Multi Data",
+    "option_b": "Single Instruction, Multiple Data",
+    "option_c": "Secure Inter-Memory Device",
+    "option_d": "Some Information More Data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SIMD describes architectures like GPUs where the same operation is applied to an array of data simultaneously."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Expert Concepts",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Speculative Execution'?",
+    "option_a": "Buying servers cheap",
+    "option_b": "An optimization where a computer system performs some task that is not yet prompted, to improve performance if the task is eventually needed",
+    "option_c": "A ways to delete code",
+    "option_d": "managing memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Speculative execution helps hide branch latency but can lead to security vulnerabilities like Spectre."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Memory Performance",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Average Memory Access Time' (AMAT) formula?",
+    "option_a": "Size / Speed",
+    "option_b": "Hit Time + (Miss Rate * Miss Penalty)",
+    "option_c": "Clock Speed * 2",
+    "option_d": "Total RAM / 10",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AMAT is the standard metric used to evaluate the efficiency of a cache system."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Cache Replacement",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'LRU' (Least Recently Used) replacement policy?",
+    "option_a": "Deleting random files",
+    "option_b": "Replacing the cache line that has not been accessed for the longest period of time",
+    "option_c": "Replacing the first file always",
+    "option_d": "Keep everything forever",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LRU is a common and effective cache replacement algorithm based on temporal locality."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Cache Write Policies",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What characterizes 'Write-Through' cache policy?",
+    "option_a": "Writing through paper",
+    "option_b": "Information is written to both the cache and the main memory simultaneously",
+    "option_c": "Only writing to RAM",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Write-through is simple and keeps memory consistent but is slower than write-back."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Cache Write Policies",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What characterizes 'Write-Back' cache policy?",
+    "option_a": "Writing backwards",
+    "option_b": "Information is only written to the cache; memory is updated only when the cache line is evicted",
+    "option_c": "A ways to delete files",
+    "option_d": "Calculations on paper",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Write-back is faster as it reduces memory traffic, but requires a 'dirty bit' to track changes."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Advanced I/O",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Cycle Stealing' in the context of I/O?",
+    "option_a": "A bug in the BIOS",
+    "option_b": "The DMA controller pausing the CPU's bus access to perform a data transfer",
+    "option_c": "Deleting clock cycles",
+    "option_d": "A ways to rename devices",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It minimizes CPU interruption during slow I/O operations."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Arithmetic",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Booth's Algorithm' used for?",
+    "option_a": "Connecting booths",
+    "option_b": "A multiplication algorithm that multiplies two signed binary numbers in two's complement notation",
+    "option_c": "Dividing floats",
+    "option_d": "A ways to delete registers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Booth's algorithm is efficient because it reduces the number of additions required for multiplication."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Processor Design",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Control Store' in a microprogrammed CPU?",
+    "option_a": "A local hardware shop",
+    "option_b": "A high-speed memory area where the microinstructions (control words) are stored",
+    "option_c": "The main RAM",
+    "option_d": "A ways to delete data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The control store allows for easy updates to the CPU's machine instruction behaviors."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Data Representation",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In IEEE 754 floating point representation, what is the 'bias' used for?",
+    "option_a": "Ignoring small numbers",
+    "option_b": "To represent both positive and negative exponents without using a separate sign bit for the exponent itself",
+    "option_c": "To delete errors",
+    "option_d": "Increasing precision",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A bias allows the exponents to be treated as unsigned numbers, simplifying comparisons."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Vector Processing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Vector Processor'?",
+    "option_a": "A CPU that likes math",
+    "option_b": "A CPU designed specifically to perform the same operation on large sets of data (vectors) simultaneously",
+    "option_c": "A ways to delete files",
+    "option_d": "An old version of RISC",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Vector processors were the precursors to modern GPU computing architectures."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Memory Organization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Associative Memory' (or Content-Addressable Memory)?",
+    "option_a": "Memory that remembers everything",
+    "option_b": "A type of memory where data is accessed by its content rather than its physical address",
+    "option_c": "A ways to delete RAM",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CAM is extremely fast for searching (like in TLBs) but very expensive compared to standard RAM."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Bus Control",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Bus Master'?",
+    "option_a": "The person driving the bus",
+    "option_b": "A device that is currently in control of the system bus and can initiate data transfers",
+    "option_c": "The CPU always",
+    "option_d": "The power supply",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "While the CPU is usually the bus master, DMA controllers can also become bus masters."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 3,
+    "level_topic": "Performance Metrics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does 'MIPS' stand for in computer performance?",
+    "option_a": "Memory In Primary Storage",
+    "option_b": "Millions of Instructions Per Second",
+    "option_c": "Managing Internal Processing Speed",
+    "option_d": "Max Input Power Supply",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MIPS was a common but often misleading metric of CPU performance."
+  }
+]

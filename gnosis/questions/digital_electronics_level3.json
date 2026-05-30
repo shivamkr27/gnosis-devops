@@ -1,0 +1,803 @@
+[
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interrupts",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which 8085 interrupt has the highest priority?",
+    "option_a": "RST 7.5",
+    "option_b": "TRAP",
+    "option_c": "INTR",
+    "option_d": "RST 5.5",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TRAP is a non-maskable interrupt and has the highest priority in the 8085 system."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing Chips",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the function of the 8255 chip in a microprocessor system?",
+    "option_a": "DMA Controller",
+    "option_b": "Programmable Peripheral Interface (PPI)",
+    "option_c": "Interrupt Controller",
+    "option_d": "RAM expansion",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 8255 provides programmable I/O ports for connecting various peripherals to the processor."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "I/O Mapping",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "In 'Memory Mapped I/O', how is an I/O device accessed?",
+    "option_a": "Using special IN and OUT instructions",
+    "option_b": "As if it were a memory location, using standard data transfer instructions (like MOV, LDA)",
+    "option_c": "By using a special bus",
+    "option_d": "It cannot be accessed directly",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Memory-mapped I/O treats device registers as memory addresses, which simplifies the instruction set but consumes address space."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "8255 Ports",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of the following are the port names in an 8255 PPI?",
+    "option_a": "Port A",
+    "option_b": "Port B",
+    "option_c": "Port C",
+    "option_d": "Port D",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Internal architecture of 8255 contains three 8-bit ports: A, B, and C (Port C can be split into two 4-bit nibbles)."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interrupt Types",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Vectored' interrupt in 8085 terminology?",
+    "option_a": "An interrupt that points to a specific address in memory",
+    "option_b": "An interrupt that can be masked",
+    "option_c": "An interrupt used for graphics",
+    "option_d": "A non-maskable interrupt only",
+    "explanation": "RST 5.5, 6.5, 7.5 and TRAP are vectored because the CPU automatically jumps to a pre-defined vector address."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the function of the 8259 chip?",
+    "option_a": "DMA Controller",
+    "option_b": "Programmable Interrupt Controller (PIC)",
+    "option_c": "Keyboard Controller",
+    "option_d": "Timer/Counter",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 8259 manages multiple interrupt requests and provides them to the CPU in a prioritized manner."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which chip is used for Direct Memory Access (DMA)?",
+    "option_a": "8251",
+    "option_b": "8237",
+    "option_c": "8255",
+    "option_d": "8253",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 8237 DMA controller allows peripherals to transfer data directly to/from memory without CPU intervention."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 8251 chip commonly used for?",
+    "option_a": "Parallel port",
+    "option_b": "USART (Universal Synchronous Asynchronous Receiver Transmitter)",
+    "option_c": "Interrupt management",
+    "option_d": "Video processing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "8251 facilitates serial communication between the microprocessor and peripherals."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The 8253/8254 chip is a:",
+    "option_a": "Programmable Interrupt Controller",
+    "option_b": "Programmable Interval Timer/Counter",
+    "option_c": "DMA Controller",
+    "option_d": "Display Controller",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It contains three independent 16-bit counters for generating delays and measuring frequencies."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "8255 PPI",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In 8255, what is the 'BSR' mode used for?",
+    "option_a": "Binary Status Register",
+    "option_b": "Bit Set/Reset mode for Port C",
+    "option_c": "Byte System Restore",
+    "option_d": "Bus Service Request",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BSR mode allows individual bits of Port C to be set or reset without affecting other bits."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which chip is a Programmable Keyboard and Display Interface?",
+    "option_a": "8255",
+    "option_b": "8279",
+    "option_c": "8251",
+    "option_d": "8237",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 8279 handles matrix keyboards and multiplexed 7-segment displays."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interrupts",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the vector address for the RST 6.5 interrupt?",
+    "option_a": "0024H",
+    "option_b": "0034H",
+    "option_c": "002CH",
+    "option_d": "003CH",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RST 6.5 address = 6.5 * 8 = 52 (decimal) = 34H (hex)."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Instruction Set",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which instruction is used to swap the contents of HL and DE register pairs?",
+    "option_a": "MOV H, D",
+    "option_b": "XCHG",
+    "option_c": "STAX D",
+    "option_d": "SPHL",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "XCHG (Exchange) swaps H with D and L with E."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Flags",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "The Auxiliary Carry flag (AC) is mainly used for which type of arithmetic?",
+    "option_a": "Binary",
+    "option_b": "Signed integer",
+    "option_c": "BCD (Binary Coded Decimal)",
+    "option_d": "Floating point",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The AC flag is used by the DAA instruction to adjust the result of BCD addition."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Control Signals",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the purpose of the READY signal in 8085?",
+    "option_a": "To indicate the processor has finished a task",
+    "option_b": "To synchronize the CPU with slow memory or I/O devices",
+    "option_c": "To start the processor",
+    "option_d": "To reset the flags",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If the READY pin is low, the CPU enters a WAIT state until it becomes high."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Instruction Cycles",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How many T-states are required for the 'LDA 2000H' instruction?",
+    "option_a": "4",
+    "option_b": "10",
+    "option_c": "13",
+    "option_d": "7",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "It involves Opcode Fetch (4), Memory Read (3), Memory Read (3), and another Memory Read (3) to get the data = 13 T-states."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interrupts",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which interrupt is both edge and level sensitive in 8085?",
+    "option_a": "INTR",
+    "option_b": "RST 7.5",
+    "option_c": "TRAP",
+    "option_d": "RST 5.5",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "TRAP is edge-triggered to detect the signal and level-triggered to sustain the interrupt request."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "8255 PPI",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which mode of 8255 is known as 'Strobed I/O Mode'?",
+    "option_a": "Mode 0",
+    "option_b": "Mode 1",
+    "option_c": "Mode 2",
+    "option_d": "BSR Mode",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Mode 1 provides handshaking (strobed) signals for data transfer."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Serial I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In the RIM instruction, which bit indicates the SID pin status?",
+    "option_a": "Bit 0",
+    "option_b": "Bit 4",
+    "option_c": "Bit 7",
+    "option_d": "Bit 6",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 7th bit of the result of a RIM instruction contains the logic level of the SID pin."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Instruction Set",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does the 'PCHL' instruction do?",
+    "option_a": "Copies Program Counter to HL",
+    "option_b": "Copies HL contents to Program Counter",
+    "option_c": "Copies Accumulator to HL",
+    "option_d": "Decrements Program Counter",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PCHL performs a jump to the address stored in the HL register pair."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Addressing Modes",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What addressing mode is used in 'RST 5'?",
+    "option_a": "Direct",
+    "option_b": "Implied / Registered",
+    "option_c": "Immediate",
+    "option_d": "Indexed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The target address is pre-defined and implied by the instruction opcode."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of the 'Instruction Register'?",
+    "option_a": "To store the data being processed",
+    "option_b": "To hold the opcode of the current instruction during decoding",
+    "option_c": "To store memory addresses",
+    "option_d": "To keep track of iterations",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The IR holds the fetched opcode for the instruction decoder."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Logic",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "The 'DAA' instruction works correctly only after which type of operation?",
+    "option_a": "Any logic operation",
+    "option_b": "ADD or ADC operation",
+    "option_c": "SUB or SBB operation",
+    "option_d": "MOV operation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Intel 8085's DAA is designed only for addition; subtraction adjustment requires a different software logic."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Timing Diagrams",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "During which T-state does the CPU start checking the READY pin?",
+    "option_a": "T1",
+    "option_b": "T2",
+    "option_c": "T3",
+    "option_d": "T4",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The CPU samples the READY pin during T2 of each machine cycle."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the maximum number of interrupts an 8259 can handle in a single master configuration?",
+    "option_a": "4",
+    "option_b": "8",
+    "option_c": "15",
+    "option_d": "64",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "One 8259 chip has 8 priority levels (IR0-IR7)."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "When cascading multiple 8259 chips, how many interrupts can be handled using one master and eight slaves?",
+    "option_a": "16",
+    "option_b": "32",
+    "option_c": "64",
+    "option_d": "128",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "There are 8 slaves, each handling 8 interrupts, total 8x8 = 64."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "I/O Ports",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'I/O Mapped I/O' (Isolated I/O)?",
+    "option_a": "Treating I/O as memory",
+    "option_b": "Using separate address space and instructions (IN/OUT) for I/O devices",
+    "option_c": "Mapping I/O to the stack",
+    "option_d": "Using virtual memory for I/O",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Isolated I/O keeps memory and port addresses separate."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The 8251 USART operates in which communication modes?",
+    "option_a": "Only Asynchronous",
+    "option_b": "Only Synchronous",
+    "option_c": "Both Asynchronous and Synchronous",
+    "option_d": "Parallel",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "USART stands for Universal Synchronous Asynchronous Receiver Transmitter."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Control Word",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In the 8255 control word, if Bit 7 is 0, what does it signify?",
+    "option_a": "I/O mode active",
+    "option_b": "BSR (Bit Set/Reset) mode active",
+    "option_c": "Port A is input",
+    "option_d": "Group A is Mode 2",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bit 7 = 1 for I/O mode, Bit 7 = 0 for BSR mode."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Arithmetic",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which flag is NOT affected by the DAD instruction?",
+    "option_a": "CY",
+    "option_b": "Z",
+    "option_c": "S",
+    "option_d": "P",
+    "correct_options": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "The DAD instruction only affects the Carry (CY) flag."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which chip is commonly used to produce a baud rate for serial communication?",
+    "option_a": "8255",
+    "option_b": "8253/8254",
+    "option_c": "8259",
+    "option_d": "8279",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Its counters can be used to generate the high-frequency clock needed for baud rate generators."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Addressing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "The instruction 'MOV M, A' uses which addressing mode?",
+    "option_a": "Register",
+    "option_b": "Register Indirect",
+    "option_c": "Direct",
+    "option_d": "Immediate",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It accesses memory via the address stored in the HL register pair."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Stack",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "After executing 'PUSH PSW', where is the Accumulator stored relative to the Stack Pointer?",
+    "option_a": "At [SP-1]",
+    "option_b": "At [SP-2]",
+    "option_c": "At [SP+1]",
+    "option_d": "At [SP]",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Accumulator is stored at SP-1, and Flags at SP-2. The SP itself ends up at SP-2."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Control Word",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the control word to set all ports (A, B, C) of 8255 to Output mode (Mode 0)?",
+    "option_a": "80H",
+    "option_b": "9BH",
+    "option_c": "00H",
+    "option_d": "FFH",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "80H = 1000 0000 binary. Bit 7=1 (I/O), others 0 (Output/Mode 0)."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "D-A Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is an R-2R ladder used for?",
+    "option_a": "Analog-to-Digital Converter",
+    "option_b": "Digital-to-Analog Converter",
+    "option_c": "Voltage Regulation",
+    "option_d": "Serial Communication",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "R-2R is a common simple architecture for DACs."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "A-D Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which ADC type is generally the fastest?",
+    "option_a": "Successive Approximation",
+    "option_b": "Flash (Parallel) ADC",
+    "option_c": "Dual Slope ADC",
+    "option_d": "Counter type ADC",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Flash ADCs use a bank of comparators to convert in one step."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Successive Approximation ADC (like ADC0804) uses which signal to indicate end of conversion?",
+    "option_a": "START",
+    "option_b": "INTR or EOC",
+    "option_c": "READY",
+    "option_d": "ALE",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "End of Conversion (EOC) signal tells the CPU the digital data is ready."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A 1K x 8 bit RAM chip has how many address lines?",
+    "option_a": "8",
+    "option_b": "10",
+    "option_c": "12",
+    "option_d": "16",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "2^10 = 1024, so 10 address lines are needed."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "DMA",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In a DMA data transfer, who controls the address and data buses?",
+    "option_a": "The CPU",
+    "option_b": "The DMA Controller",
+    "option_c": "The Memory",
+    "option_d": "The User",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The DMA controller becomes the 'bus master' while the CPU is in a HOLD state."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Logic",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the result in the Accumulator after executing 'XRI FFH'?",
+    "option_a": "Accumulator is cleared",
+    "option_b": "Accumulator contents are inverted (1's complement)",
+    "option_c": "Accumulator is set to all 1s",
+    "option_d": "No change",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "XORing with 1s flips every bit."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Bus Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does a 'Tri-state' buffer allow?",
+    "option_a": "Three different voltages",
+    "option_b": "To disconnect a device output from the bus (High-Impedance state)",
+    "option_c": "Storage of 3 bits",
+    "option_d": "Fast switching",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tri-state (0, 1, and Hi-Z) allows multiple devices to share the same bus lines without conflict."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interrupts",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which interrupt signal has the lowest priority among hardware interrupts?",
+    "option_a": "RST 5.5",
+    "option_b": "INTR",
+    "option_c": "RST 7.5",
+    "option_d": "TRAP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "INTR is the lowest priority hardware interrupt in 8085."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Instruction Set",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many states are in the 'Bus Idle' machine cycle?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "variable",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A typical bus idle cycle in 8085 takes 3 T-states."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Architecture",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What is the purpose of the 'Stack'?",
+    "option_a": "Permanent storage of data",
+    "option_b": "LIFO (Last-In-First-Out) temporary storage for return addresses and register values",
+    "option_c": "Storing the OS",
+    "option_d": "Directly communicating with the screen",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The stack resides in RAM and is crucial for handling subroutines and interrupts."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "8085 Pins",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the status of S1 and S0 for 'Memory Read'?",
+    "option_a": "0, 1",
+    "option_b": "1, 0",
+    "option_c": "1, 1",
+    "option_d": "0, 0",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "For Memory Read: S1=1, S0=0."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "The 8259 PIC operates in which mode to automatically rotate priorities among 8 devices?",
+    "option_a": "Fully Nested Mode",
+    "option_b": "Automatic Rotation Mode",
+    "option_c": "Specific Rotation Mode",
+    "option_d": "Special Mask Mode",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Automatic rotation ensures that once a device is served, it gets the lowest priority, preventing starvation."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which chip integrates 256 bytes of RAM, three I/O ports, and a timer?",
+    "option_a": "8255",
+    "option_b": "8155",
+    "option_c": "8279",
+    "option_d": "8251",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 8155 is a commonly used multi-function support chip for 8085."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the function of the 8251's 'C/D' pin?",
+    "option_a": "Chip Disable",
+    "option_b": "Control/Data selection",
+    "option_c": "Clock Divider",
+    "option_d": "Carry Detection",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "C/D pin high selects the Control or Status register; low selects the Data buffer."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Segmentation",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which microprocessor introduced segmented memory addressing to the x86 family?",
+    "option_a": "8085",
+    "option_b": "8086",
+    "option_c": "8088",
+    "option_d": "80286",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 8086 was the first 16-bit x86 processor and used segments (CS, DS, SS, ES) to address 1 MB of memory."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 3,
+    "level_topic": "Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which pin of 8255 is used as a strobe signal in Mode 1 input operations?",
+    "option_a": "STB'",
+    "option_b": "IBF",
+    "option_c": "INTR",
+    "option_d": "ACK'",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "STB' (Strobe Input) is used to load data into the port latch."
+  }
+]

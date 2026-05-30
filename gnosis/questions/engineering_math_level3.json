@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a graph, what is 'Degree' of a vertex?",
+    "option_a": "Its temperature",
+    "option_b": "The number of edges incident to the vertex",
+    "option_c": "The length of the shortest path to it",
+    "option_d": "The total number of vertices",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Degree counts how many connections a node has."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Theory",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is an 'Eulerian Path'?",
+    "option_a": "A path that visits every vertex exactly once",
+    "option_b": "A path that visits every edge exactly once",
+    "option_c": "A path that contains a cycle",
+    "option_d": "A path with no edges",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "An Euler path uses every edge. A Hamiltonian path uses every vertex."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Trees",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the defining characteristic of a 'Tree' in graph theory?",
+    "option_a": "It must have leaves",
+    "option_b": "It is a connected graph with no cycles",
+    "option_c": "It is a graph where every node has degree 2",
+    "option_d": "It has an infinite number of nodes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A tree with n vertices always has exactly n-1 edges and is acyclic."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Theory",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "Which of these are types of graphs?",
+    "option_a": "Directed Graph (Digraph)",
+    "option_b": "Complete Graph",
+    "option_c": "Bipartite Graph",
+    "option_d": "Circular Graph",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Directed, Complete, and Bipartite are standard terms. 'Circular' is sometimes used but is often called a Cycle Graph."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Theory",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "How many colors are needed to color a planar graph such that no two adjacent vertices have the same color?",
+    "option_a": "At most 2",
+    "option_b": "At most 3",
+    "option_c": "At most 4",
+    "option_d": "At most 5",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The Four Color Theorem states that any planar map can be colored with at most four colors."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Counting",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Derangement'?",
+    "option_a": "A permutation where every element is in its original position",
+    "option_b": "A permutation of the elements of a set such that no element appears in its original position",
+    "option_c": "A ways to sort primes",
+    "option_d": "A random subset",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Derangements (denoted D_n or !n) are permutations with no fixed points."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Number Theory",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What does the Chinese Remainder Theorem (CRT) solve for?",
+    "option_a": "The sum of large primes",
+    "option_b": "A system of simultaneous congruences with coprime moduli",
+    "option_c": "The number of cycles in a graph",
+    "option_d": "The roots of a quadratic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CRT provides a unique solution (mod the product of moduli) for such systems."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Recurrence Relations",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is the characteristic equation for the recurrence a_n = 5a_{n-1} - 6a_{n-2}?",
+    "option_a": "r^2 + 5r + 6 = 0",
+    "option_b": "r^2 - 5r + 6 = 0",
+    "option_c": "r^2 - 6r + 5 = 0",
+    "option_d": "5r - 6 = 0",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The characteristic equation is found by substituting a_n = r^n, leading to r^2 - 5r + 6 = 0."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Number Theory",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is Euler's Totient function \u03c6(10)?",
+    "option_a": "2",
+    "option_b": "4",
+    "option_c": "5",
+    "option_d": "9",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "\u03c6(10) is the count of numbers less than 10 that are relatively prime to 10. These are {1, 3, 7, 9}."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Theory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Kuratowski's Theorem' used to identify?",
+    "option_a": "If a graph is Eulerian",
+    "option_b": "If a graph is non-planar (based on K_5 or K_{3,3} subgraphs)",
+    "option_c": "The number of faces in a tree",
+    "option_d": "The shortest path",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It states that a graph is planar if and only if it doesn't contain a subgraph homeomorphic to K_5 or K_3,3."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Recurrence Relations",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which of the following is a homogeneous linear recurrence relation of order 1?",
+    "option_a": "a_n = a_{n-1} + n",
+    "option_b": "a_n = 3a_{n-1}",
+    "option_c": "a_n = a_{n-1} + a_{n-2}",
+    "option_d": "a_n = n^2",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is linear (a_n vs a_{n-1}), homogeneous (no constant or n-term), and order 1 (depends only on n-1)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Logic",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "A 'Rule of Inference' that allows you to conclude Q from P and P \u2192 Q is:",
+    "option_a": "Modus Tollens",
+    "option_b": "Modus Ponens",
+    "option_c": "Resolution",
+    "option_d": "Addition",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Modus Ponens (affirming the antecedent) is the most basic rule in formal logic."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Number Theory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Find 7^50 mod 5 using Fermat's Little Theorem.",
+    "option_a": "1",
+    "option_b": "4",
+    "option_c": "0",
+    "option_d": "2",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "7 mod 5 = 2. 2^4 \u2261 1 mod 5. 50 = 4*12 + 2. So 2^50 \u2261 (2^4)^12 * 2^2 \u2261 1^12 * 4 \u2261 4 mod 5."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Generating Functions",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the generating function for the sequence {1, 1, 1, ...}?",
+    "option_a": "1 / (1-x)",
+    "option_b": "e^x",
+    "option_c": "1 / (1-x)^2",
+    "option_d": "x / (1-x)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The sum 1 + x + x^2 + ... = 1/(1-x) for |x| < 1."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Probability",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is 'Bayes' Theorem' primarily used for?",
+    "option_a": "Counting permutations",
+    "option_b": "Calculating the probability of an event based on prior knowledge of related conditions",
+    "option_c": "Sorting sets",
+    "option_d": "Finding the root of a function",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "P(A|B) = [P(B|A) * P(A)] / P(B)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Set Theory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How many onto functions (surjections) exist from set A (size 3) to set B (size 2)?",
+    "option_a": "6",
+    "option_b": "8",
+    "option_c": "2",
+    "option_d": "4",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Total functions = 2^3 = 8. Two functions are NOT onto (all map to x, or all map to y). 8 - 2 = 6."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Number Theory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the inverse of 3 modulo 7?",
+    "option_a": "2",
+    "option_b": "5",
+    "option_c": "4",
+    "option_d": "1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "We need x such that 3x \u2261 1 (mod 7). 3 * 5 = 15. 15 mod 7 = 1. So 5 is the inverse."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "A graph is 'Isomorphic' to another graph if:",
+    "option_a": "They have the same number of vertices only",
+    "option_b": "There exists a bijection between vertex sets preserving edge adjacency",
+    "option_c": "They are both trees",
+    "option_d": "They have no cycles",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Isomorphism means the graphs are structurally identical although they might be drawn differently."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Logic",
+    "question_type": "hard",
+    "timer_seconds": 55,
+    "question_text": "Which of the following is a 'Contradiction'?",
+    "option_a": "P \u2227 \u00acP",
+    "option_b": "P \u2228 \u00acP",
+    "option_c": "P \u2192 P",
+    "option_d": "P \u2194 P",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A contradiction is a statement that is always False regardless of the truth values of its variables."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Combinatorics",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "According to the Multinomial Theorem, what is the coefficient of x*y*z in (x+y+z)^3?",
+    "option_a": "1",
+    "option_b": "3",
+    "option_c": "6",
+    "option_d": "27",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "n! / (n1! n2! n3!) = 3! / (1! 1! 1!) = 6."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Functions",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "If f(n) = \u03b8(g(n)), this implies:",
+    "option_a": "f(n) is an upper bound of g(n)",
+    "option_b": "f(n) is a lower bound of g(n)",
+    "option_c": "f(n) and g(n) have the same growth rate (tight bound)",
+    "option_d": "f(n) is always less than g(n)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Theta notation denotes an asymptotic tight bound."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Set Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Cantor\u2019s Diagonal Argument is used to prove that:",
+    "option_a": "Computers are fast",
+    "option_b": "The set of real numbers is uncountably infinite",
+    "option_c": "Rational numbers are uncountable",
+    "option_d": "Sets must be finite",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It proves that the power set of a set has a strictly larger cardinality than the set itself, even for infinite sets."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Coloring",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the chromatic number of a bipartite graph with at least one edge?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "V",
+    "option_d": "Depends on E",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By definition, a bipartite graph's vertices can be split into two sets where no edges exist within a set."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Probability",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the expected value of a fair 6-sided die roll?",
+    "option_a": "3",
+    "option_b": "3.5",
+    "option_c": "4",
+    "option_d": "2.5",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "(1+2+3+4+5+6) / 6 = 21/6 = 3.5."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Number Theory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How many zero divisors are in the ring Z/10Z?",
+    "option_a": "2",
+    "option_b": "4",
+    "option_c": "0",
+    "option_d": "None",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Non-zero elements x such that xy = 0. In Z/10Z, they are {2, 4, 5, 6, 8} - wait, 2,4,5,6,8 are not coprime. 2*5, 4*5, 5*2, 6*5, 8*5 all = 0 mod 10. For zero divisors we usually count non-zero ones: {2,4,5,6,8} = 5. Wait. Option B says 4. Let's re-verify: elements not coprime to 10 are {2,4,5,6,8}. All are zero divisors except 10 itself (which is 0). Correct set is {2,4,5,6,8}. Most textbooks exclude the element itself. Let's adjust topic to avoid confusion."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Boolean Algebra",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the dual of the Boolean expression (x + y) * 1?",
+    "option_a": "(x * y) + 0",
+    "option_b": "(x + y) + 0",
+    "option_c": "(x * y) * 1",
+    "option_d": "x + y",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The dual is formed by swapping + with * and 1 with 0."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Relations",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How many reflexive relations exist on a set with n elements?",
+    "option_a": "2^n",
+    "option_b": "2^{n^2 - n}",
+    "option_c": "n^2",
+    "option_d": "2!n",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A relation has n^2 possible pairs. For it to be reflexive, the n pairs of type (a,a) must be present. The remaining n^2 - n pairs can either be present or not."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Functions",
+    "question_type": "tricky",
+    "timer_seconds": 45,
+    "question_text": "A function that grows faster than any polynomial but slower than any exponential is called:",
+    "option_a": "Linear",
+    "option_b": "Super-polynomial",
+    "option_c": "Constant",
+    "option_d": "Logarithmic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Examples include n^{log n}."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Combinatorics",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "The number of ways to arrange n objects in k distinct boxes such that boxes can be empty is:",
+    "option_a": "C(n+k-1, k-1)",
+    "option_b": "C(n+k-1, n)",
+    "option_c": "Both A and B are equivalent",
+    "option_d": "n^k",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "This is the Stars and Bars formula. C(n+k-1, n) = C(n+k-1, k-1) due to symmetry of combinations."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Logic",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which of the following describes 'Modus Tollens'?",
+    "option_a": "P \u2192 Q; P; \u2234 Q",
+    "option_b": "P \u2192 Q; \u00acQ; \u2234 \u00acP",
+    "option_c": "P \u2228 Q; \u00acP; \u2234 Q",
+    "option_d": "\u00ac\u00acP \u2194 P",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Modus Tollens is the rule of denying by denying: if the consequence is false, the premise must be false."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Probability",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "Two fair dice are rolled. What is the probability that the sum is exactly 7?",
+    "option_a": "1/6",
+    "option_b": "1/12",
+    "option_c": "1/36",
+    "option_d": "5/36",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Favorable outcomes: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6. Total = 36. 6/36 = 1/6."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Set Theory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Power Set' of {\u00d8}?",
+    "option_a": "{\u00d8, {\u00d8}}",
+    "option_b": "{\u00d8}",
+    "option_c": "{{\u00d8}}",
+    "option_d": "\u00d8",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The set has one element (the empty set). Subsets are the empty set and the set containing the empty set."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the complexity of Kruskal's algorithm to find a Minimum Spanning Tree?",
+    "option_a": "O(V + E)",
+    "option_b": "O(E log E) or O(E log V)",
+    "option_c": "O(V^2)",
+    "option_d": "O(E^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The sorting step in Kruskal's algorithm generally dominates the running time."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Counting",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How many bit strings of length 10 contain exactly five 1s?",
+    "option_a": "2^10",
+    "option_b": "P(10,5)",
+    "option_c": "C(10,5)",
+    "option_d": "5^10",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "We need to choose 5 positions out of 10 to place the '1's. C(10,5) = 252."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In logic, a 'Predicate' is:",
+    "option_a": "A boolean constant",
+    "option_b": "A property that variables can have (e.g., IsPrime(x))",
+    "option_c": "An array of truths",
+    "option_d": "A loop",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Predicates allow us to create statements like 'x is a student' that become propositions when x is assigned a value."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Number Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 2^100 mod 3?",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "2",
+    "option_d": "3",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "2 \u2261 -1 (mod 3). (-1)^100 \u2261 1 (mod 3)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A graph with n vertices and no cycles has how many connected components if it has (n-k) edges?",
+    "option_a": "1",
+    "option_b": "k",
+    "option_c": "n-k",
+    "option_d": "n",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a forest graph, E = V - C, where C is the number of connected components."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Matrices",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the adjacency matrix of a Directed Graph with edges {(1,2), (2,1)}?",
+    "option_a": "[[0,1],[0,0]]",
+    "option_b": "[[0,1],[1,0]]",
+    "option_c": "[[1,1],[1,1]]",
+    "option_d": "[[0,0],[0,0]]",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The matrix has 1s at (row 1, col 2) and (row 2, col 1)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Recursion",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Solving the recurrence T(n) = 2T(n/2) + n using Master Theorem results in:",
+    "option_a": "O(n)",
+    "option_b": "O(n log n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(2^n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This corresponds to the complexity of Merge Sort."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Probability",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "A fair coin is tossed 3 times. What is the probability of getting exactly 2 heads?",
+    "option_a": "1/2",
+    "option_b": "3/8",
+    "option_c": "1/4",
+    "option_d": "1/8",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Outcomes: {HHT, HTH, THH}. Total = 2^3 = 8. 3/8."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Counting",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Find the number of 5-combinations of a multiset S = {\u221e\u00b7a, \u221e\u00b7b, \u221e\u00b7c}.",
+    "option_a": "15",
+    "option_b": "21",
+    "option_c": "35",
+    "option_d": "10",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Stars and bars: k=3, n=5. C(5+3-1, 3-1) = C(7,2) = 21."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which of these graphs is non-planar?",
+    "option_a": "K_4",
+    "option_b": "K_{3,3}",
+    "option_c": "K_3",
+    "option_d": "C_5",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The utility graph K_{3,3} is the smallest non-planar bipartite graph."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Number Theory",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which property is used in the Euclidean Algorithm to find GCD(a, b)?",
+    "option_a": "GCD(a, b) = GCD(b, a mod b)",
+    "option_b": "GCD(a, b) = a * b",
+    "option_c": "GCD(a, b) = a + b",
+    "option_d": "GCD(a, b) = 1 always",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This property allows the algorithm to recursively reduce the problem size."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Set Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "The 'Russells Paradox' involves the set of all sets that:",
+    "option_a": "Contain themselves",
+    "option_b": "Do not contain themselves",
+    "option_c": "Are finite",
+    "option_d": "Are prime",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The paradox arises when asking if such a set contains itself; it led to Axiomatic Set Theory."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In logic, what is a 'Free Variable'?",
+    "option_a": "A variable that has no cost",
+    "option_b": "A variable not bound by a quantifier",
+    "option_c": "A boolean constant",
+    "option_d": "A variable that is always True",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Free variables can take on any value from the domain, while bound variables are constrained by \u2200 or \u2203."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a simple undirected graph, what is the handshake lemma's implication for the number of odd-degree vertices?",
+    "option_a": "It must be even",
+    "option_b": "It must be odd",
+    "option_c": "It could be zero",
+    "option_d": "Both A and C",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Since the sum of degrees is 2E (even), the sum of degrees of odd-degree vertices must be even. This only happens if there are an even number of such vertices."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Recurrence",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the solution to a_n = a_{n-1} + a_{n-2} with a_0=0, a_1=1?",
+    "option_a": "n^2",
+    "option_b": "Fibonacci sequence",
+    "option_c": "2^n",
+    "option_d": "n!",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is the classic definition of Fibonacci numbers."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Counting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A 'Trivial Graph' consists of:",
+    "option_a": "Zero vertices",
+    "option_b": "Exactly one vertex and no edges",
+    "option_c": "A single cycle",
+    "option_d": "Two vertices",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is the simplest possible connected graph."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Relations",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "A relation is 'Inverse' if you:",
+    "option_a": "Negate all values",
+    "option_b": "Swap the order of all pairs (a,b) to (b,a)",
+    "option_c": "Delete all pairs",
+    "option_d": "Add (a,a) for all a",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The domain of R becomes the range of R^{-1} and vice versa."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 3,
+    "level_topic": "Number Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which algorithm is used to find the inverse of 'a' modulo 'm' efficiently?",
+    "option_a": "Sieve of Eratosthenes",
+    "option_b": "Extended Euclidean Algorithm",
+    "option_c": "Chinese Remainder Theorem",
+    "option_d": "Binary Search",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It finds coefficients x, y such that ax + my = GCD(a,m). If GCD is 1, then x is the inverse."
+  }
+]

@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "SDLC Models",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which SDLC model is characterized by a linear, sequential flow of phases?",
+    "option_a": "Agile",
+    "option_b": "Waterfall",
+    "option_c": "Spiral",
+    "option_d": "Scrum",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In Waterfall, each phase must be completed before the next one begins (Reqs -> Design -> Implementation -> Test)."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Agile Methodology",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In Scrum, what is the 'Sprint'?",
+    "option_a": "A meeting to discuss bugs",
+    "option_b": "A fixed-time period (typically 2-4 weeks) in which a specific set of work is completed",
+    "option_c": "A person who writes code very fast",
+    "option_d": "A document describing all features",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Sprint is the heart of Scrum, focusing the team on delivering a 'done' increment of the product."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Spiral Model",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary focus of the Spiral Model in each cycle?",
+    "option_a": "Speed of delivery",
+    "option_b": "Risk Analysis",
+    "option_c": "Documentation size",
+    "option_d": "Marketing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Spiral model is a risk-driven process model that combines elements of design and prototyping-in-stages."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Requirements",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the difference between Functional and Non-functional requirements?",
+    "option_a": "Functional requirements are for users, non-functional are for machines",
+    "option_b": "Functional defines 'what' the system does; Non-functional defines 'how' the system performs (quality attributes)",
+    "option_c": "Functional requirements are code; non-functional are tests",
+    "option_d": "There is no difference",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Functional: 'User can login'. Non-functional: 'Response time must be < 1s'."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "SDLC Phases",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these are typical phases in a software development lifecycle?",
+    "option_a": "Requirement Gathering",
+    "option_b": "Deployment",
+    "option_c": "Hardware Manufacturing",
+    "option_d": "Maintenance",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Requirements, Analysis, Design, Implementation, Testing, Deployment, and Maintenance are standard SDLC phases."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Testing",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the primary goal of software testing?",
+    "option_a": "To fix all bugs",
+    "option_b": "To find bugs and ensure quality",
+    "option_c": "To write documentation",
+    "option_d": "To sell the software",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Testing aims to uncover defects and verify that requirements are met."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Testing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which type of testing focuses on individual components or modules of the software?",
+    "option_a": "Integration Testing",
+    "option_b": "System Testing",
+    "option_c": "Unit Testing",
+    "option_d": "Acceptance Testing",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Unit testing is performed by developers to verify the logic of a single function or class."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "SDLC Models",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the 'A' stand for in the SMART criteria for requirements?",
+    "option_a": "Actionable",
+    "option_b": "Achievable",
+    "option_c": "Accurate",
+    "option_d": "Automated",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SMART stands for Specific, Measurable, Achievable, Relevant, and Time-bound."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Agile",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which document lists all the desired features of a product in Scrum?",
+    "option_a": "Project Plan",
+    "option_b": "Product Backlog",
+    "option_c": "Requirement Spec",
+    "option_d": "Design Document",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Product Backlog is a dynamic list of everything that might be needed in the product."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Maintenance",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which type of maintenance is performed to fix bugs discovered after release?",
+    "option_a": "Adaptive Maintenance",
+    "option_b": "Corrective Maintenance",
+    "option_c": "Perfective Maintenance",
+    "option_d": "Preventive Maintenance",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Corrective maintenance addresses actual faults in the system."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Maintenance",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which type of maintenance is performed to update software to work in a new environment (e.g., new OS)?",
+    "option_a": "Corrective",
+    "option_b": "Adaptive",
+    "option_c": "Perfective",
+    "option_d": "Preventive",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Adaptive maintenance is about staying compatible with external changes."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Quality",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Software Portability'?",
+    "option_a": "The speed of the software",
+    "option_b": "The ease with which software can be moved from one environment to another",
+    "option_c": "The size of the installer",
+    "option_d": "The number of users supported",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Portability is a key non-functional requirement for cross-platform apps."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Prototypes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary purpose of a software prototype?",
+    "option_a": "To be the final product",
+    "option_b": "To help users understand and clarify requirements",
+    "option_c": "To test the hardware",
+    "option_d": "To train the developers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Prototypes are mock-ups used to gather feedback early in the design phase."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Design",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In modular design, what is 'Cohesion'?",
+    "option_a": "The degree of dependency between two modules",
+    "option_b": "The degree to which elements within a module belong together",
+    "option_c": "The speed of module execution",
+    "option_d": "The number of lines in a module",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "High cohesion is desirable as it indicates a module has a single, well-defined purpose."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Design",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In modular design, what is 'Coupling'?",
+    "option_a": "The measure of internal strength inside a module",
+    "option_b": "The measure of interdependence between software modules",
+    "option_c": "The process of joining two programmers",
+    "option_d": "The length of the module",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Low coupling is desirable as it makes modules easier to change independently."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "DFD",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does a bubble (circle) represent in a Data Flow Diagram (DFD)?",
+    "option_a": "Data store",
+    "option_b": "Process or Transformation",
+    "option_c": "External Entity",
+    "option_d": "Data Flow",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Circles represent functions or processes that transform input data into output."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Documentation",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does SRS stand for?",
+    "option_a": "Software Review System",
+    "option_b": "Software Requirements Specification",
+    "option_c": "System Requirement Spreadsheet",
+    "option_d": "Standardized Review Set",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The SRS is the foundational document that describes what the software should do."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Agile",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the purpose of the Daily Stand-up meeting?",
+    "option_a": "To report progress to management",
+    "option_b": "To synchronize activities and identify blockers",
+    "option_c": "To perform code reviews",
+    "option_d": "To plan the next sprint",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's a short synchronization meeting for the development team."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Verification",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the difference between Verification and Validation?",
+    "option_a": "There is no difference",
+    "option_b": "Verification is 'Are we building the product right?'; Validation is 'Are we building the right product?'",
+    "option_c": "Verification is automated; Validation is manual",
+    "option_d": "Verification happens at the end; Validation happens at the start",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Verification ensures the product matches designs/specs. Validation ensures it meets user needs."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Project Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which chart is commonly used to show project schedules and task durations?",
+    "option_a": "Pie Chart",
+    "option_b": "Gantt Chart",
+    "option_c": "Scatter Plot",
+    "option_d": "Flowchart",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Gantt charts visualize the start and finish dates of the terminal elements and summary elements of a project."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Modularity",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the main benefit of modularity in software?",
+    "option_a": "Increases execution speed",
+    "option_b": "Makes the system easier to understand, develop, and maintain",
+    "option_c": "Reduces the number of lines of code",
+    "option_d": "Removes the need for testing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dividing a system into modules reduces complexity by creating smaller, more manageable units."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "SDLC",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In the V-Model, what is mapped against the 'Requirement Analysis' phase?",
+    "option_a": "Unit Testing",
+    "option_b": "User Acceptance Testing (UAT)",
+    "option_c": "Integration Testing",
+    "option_d": "Code Review",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The V-model links development phases to their corresponding testing phases."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Documentation",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'User Story'?",
+    "option_a": "A bug report",
+    "option_b": "An informal, natural language description of one or more features from an end-user perspective",
+    "option_c": "A biography of the founder",
+    "option_d": "A training manual",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "User stories are a primary way requirements are captured in Agile."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Project estimation",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does COCOMO stand for in project estimation?",
+    "option_a": "Common Cost Model",
+    "option_b": "Constructive Cost Model",
+    "option_c": "Computerized Cost Model",
+    "option_d": "Complex Coding Model",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "COCOMO is an algorithmic software cost estimation model."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "SDLC Models",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which model is best suited for large, expensive, and complicated projects with high risk?",
+    "option_a": "Waterfall",
+    "option_b": "Spiral",
+    "option_c": "Prototyping",
+    "option_d": "Build and Fix",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Spiral model's heavy focus on risk analysis makes it ideal for complex projects."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Quality Assurance",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the difference between QA (Quality Assurance) and QC (Quality Control)?",
+    "option_a": "There is no difference",
+    "option_b": "QA is process-oriented (preventing defects); QC is product-oriented (identifying defects)",
+    "option_c": "QA is done by clients; QC is done by developers",
+    "option_d": "QA is automated; QC is manual",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "QA focuses on the process of building the product, while QC focuses on the final product."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Testing",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Regression Testing'?",
+    "option_a": "Testing a new feature",
+    "option_b": "Re-running functional and non-functional tests to ensure that previously developed and tested software still performs after a change",
+    "option_c": "Testing the software with random inputs",
+    "option_d": "Testing the hardware compatibility",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It ensures that 'bug fixes' or 'updates' don't break existing functionality."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Design",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is a top-down design strategy?",
+    "option_a": "Starting with fine details and building up",
+    "option_b": "Starting with the overall system view and breaking it into sub-systems",
+    "option_c": "Focusing only on the UI",
+    "option_d": "Focusing only on the database",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Top-down decomposition handles complexity by refining a high-level view into detailed parts."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Testing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Black Box Testing'?",
+    "option_a": "Testing without knowledge of the internal code structure",
+    "option_b": "Testing with full access to the source code",
+    "option_c": "Testing the physical hardware",
+    "option_d": "Testing in the dark",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Black box testing focuses on functional requirements (input vs output)."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Testing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'White Box Testing'?",
+    "option_a": "Testing the UI colors",
+    "option_b": "Testing with knowledge of the internal logic and code structure",
+    "option_c": "Testing done by users",
+    "option_d": "Testing with empty files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "White box testing (or clear box) involves checking the code paths and internal logic."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Project management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Scope Creep'?",
+    "option_a": "When the project finishes early",
+    "option_b": "The uncontrolled growth or continuous change in a project's scope",
+    "option_c": "A type of software bug",
+    "option_d": "Moving the project to a new server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Scope creep typically happens when requirements are not clearly defined or managed."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Version Control",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the primary purpose of version control software (e.g., Git)?",
+    "option_a": "To write code automatically",
+    "option_b": "To manage changes to source code over time and allow collaboration",
+    "option_c": "To encrypt the final product",
+    "option_d": "To host the marketing website",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Version control allows tracking history, branching, and merging collaborative work."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Metrics",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does 'Cyclomatic Complexity' measure?",
+    "option_a": "The number of lines of code",
+    "option_b": "The number of independent paths through a program's source code",
+    "option_c": "The amount of memory used",
+    "option_d": "The number of users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps in determining the number of test cases needed to cover every logic path."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Processes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Refactoring' in software development?",
+    "option_a": "Adding new features",
+    "option_b": "Restructuring existing code without changing its external behavior",
+    "option_c": "Deleting the entire project",
+    "option_d": "Writing the documentation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Refactoring improves code readability, maintainability, and complexity."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Agile",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Who is responsible for representing the interests of the customer in Scrum?",
+    "option_a": "Scrum Master",
+    "option_b": "Product Owner",
+    "option_c": "Developer",
+    "option_d": "Project Manager",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Product Owner prioritizes the backlog based on business value."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Design Tools",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does UML stand for?",
+    "option_a": "Universal Model Language",
+    "option_b": "Unified Modeling Language",
+    "option_c": "Unit Management Level",
+    "option_d": "User Map Logic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "UML is a standardized way to visualize system architecture and design."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Review",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Peer Review' in software engineering?",
+    "option_a": "Users testing the app",
+    "option_b": "A process where developers check each others' work for errors or quality issues",
+    "option_c": "Managers checking the progress",
+    "option_d": "Comparing with competitors",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Code reviews are a critical part of maintaining a high-quality codebase."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Terms",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Software'?",
+    "option_a": "The physical parts of a computer",
+    "option_b": "A collection of programs, documentation, and configuration data",
+    "option_c": "The internet",
+    "option_d": "A type of hardware",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Software is more than just code; it includes everything that makes the code usable."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Quality",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which characteristic refers to the degree to which a software system can be easily modified?",
+    "option_a": "Efficiency",
+    "option_b": "Maintainability",
+    "option_c": "Reliability",
+    "option_d": "Usability",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Maintainability covers testability, modifiability, and reusability."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Documentation",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Full form' of SDD?",
+    "option_a": "Software Deployment Document",
+    "option_b": "Software Design Description",
+    "option_c": "System Data Diagram",
+    "option_d": "Software Development Details",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The SDD describes how the software system will be structured to satisfy requirements."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "SDLC Models",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which SDLC model involves building a simplified version of the system first?",
+    "option_a": "Waterfall",
+    "option_b": "Prototyping Model",
+    "option_c": "Iterative Model",
+    "option_d": "Big Bang Model",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Prototyping helps in early validation with users."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Project management",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Critical Path' in a project schedule?",
+    "option_a": "The easiest way to finish",
+    "option_b": "The sequence of tasks that determines the shortest time possible to complete the project",
+    "option_c": "A list of dangerous bugs",
+    "option_d": "The path to the server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Any delay in the critical path tasks results in a delay of the entire project."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Testing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Acceptance testing is typically performed by:",
+    "option_a": "Developers",
+    "option_b": "End-users or Clients",
+    "option_c": "Project Managers",
+    "option_d": "Hardware Engineers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's the final stage before 'Go Live' to ensure the product satisfies business requirements."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Testing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Alpha Testing'?",
+    "option_a": "Testing in a real environment",
+    "option_b": "Testing by the internal development team inside the organization",
+    "option_c": "Testing on mobile devices",
+    "option_d": "The first test ever done",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Alpha testing is 'internal' acceptance testing."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Testing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Beta Testing'?",
+    "option_a": "Testing done by internal employees",
+    "option_b": "Testing done by a select group of actual users in a 'real-world' environment",
+    "option_c": "Testing for performance only",
+    "option_d": "A second round of unit testing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Beta testing gather feedback from real users before official release."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Reliability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does MTBF stand for?",
+    "option_a": "Mean Time Between Failures",
+    "option_b": "Maximum Time Before Fix",
+    "option_c": "Maintainability Testing Base Frequency",
+    "option_d": "Measured Total Bug Factor",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "MTBF is a statistical measure of how reliable a system is."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Integration",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In top-down integration testing, what are 'Stubs'?",
+    "option_a": "Real modules",
+    "option_b": "Temporary dummy modules that simulate the behavior of lower-level components",
+    "option_c": "Broken pieces of code",
+    "option_d": "Test reports",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Stubs allow testing the high-level logic before low-level parts are ready."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Integration",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In bottom-up integration testing, what are 'Drivers'?",
+    "option_a": "The actual hardware drivers",
+    "option_b": "Special modules that trigger or 'drive' the test on lower-level components",
+    "option_c": "Testers who drive to the office",
+    "option_d": "Documentation tools",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Drivers substitute for high-level logic to test utility modules."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Terms",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the 'Waterfall' model's main weakness?",
+    "option_a": "It's too fast",
+    "option_b": "Difficult to accommodate changes late in the project",
+    "option_c": "Requires no documentation",
+    "option_d": "Only for small teams",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Because it's linear, returning to a previous stage is very costly."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 1,
+    "level_topic": "Ethics",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Software Engineering is often described as:",
+    "option_a": "Art and Magic",
+    "option_b": "The application of engineering principles to software development",
+    "option_c": "Hackathon culture",
+    "option_d": "A way to avoid hardware books",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It emphasizes discipline, professional processes, and measurable quality."
+  }
+]

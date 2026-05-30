@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Expert Algorithms & String Theory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'P vs NP'?",
+    "option_a": "A ranking of cloud providers",
+    "option_b": "A major unsolved problem in computer science asking whether every problem whose solution can be quickly verified can also be quickly solved",
+    "option_c": "A comparison between private and public variables",
+    "option_d": "A database synchronization error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "P problems are solvable in polynomial time; NP problems have solutions verifiable in polynomial time."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Expert Algorithms & String Theory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the 'KMP' (Knuth-Morris-Pratt) algorithm for?",
+    "option_a": "Sorting large files",
+    "option_b": "Efficient string matching/searching in O(n + m) time",
+    "option_c": "Compressing text",
+    "option_d": "Database indexing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "KMP avoids redundant comparisons by pre-calculating pattern shifts."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Expert Algorithms & String Theory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'B-Tree' predominantly used for?",
+    "option_a": "UI layout",
+    "option_b": "Disk-based data storage and databases to maintain sorted data and allow efficient search/insert/delete",
+    "option_c": "Binary encryption",
+    "option_d": "Sorting strings in memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "B-trees are optimized for systems that read/write large blocks of data."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Expert Algorithms & String Theory",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is 'Network Flow' (e.g., Ford-Fulkerson)?",
+    "option_a": "Managing internet traffic",
+    "option_b": "Modeling the movement of material through a network to find the maximum possible flow from a source to a sink",
+    "option_c": "A way to join tables",
+    "option_d": "A styling method for charts",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Max-flow problems are vital in logistics, capacity planning, and job assignment."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Expert Algorithms & String Theory",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is 'Bitmask DP'?",
+    "option_a": "Using a mask for security",
+    "option_b": "A dynamic programming technique where integers are used as bitmasks to represent sets, allowing efficient subproblem representation",
+    "option_c": "A bug in the processor",
+    "option_d": "A way to speed up the internet",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bitmask DP is commonly used for problems involving subsets or the Traveling Salesman problem for small 'n'."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Expert Algorithms & String Theory",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What does the 'Master Theorem' provide?",
+    "option_a": "The best code in the world",
+    "option_b": "A closed-form solution for finding the asymptotic time complexity of many divide-and-conquer recurrence relations",
+    "option_c": "The size of a database",
+    "option_d": "A way to name variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps solve recurrences like T(n) = aT(n/b) + f(n)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Expert Algorithms & String Theory",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these problems are classified as NP-Hard?",
+    "option_a": "Traveling Salesman Problem (TSP)",
+    "option_b": "Knapsack Problem (non-approximated)",
+    "option_c": "Graph Coloring",
+    "option_d": "Binary Search",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "TSP, Knapsack, and Graph Coloring are classic NP-hard/complete problems. Binary Search is in P."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Expert Algorithms & String Theory",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Red-Black Tree'?",
+    "option_a": "A tree with red and black fruits",
+    "option_b": "A type of self-balancing binary search tree that uses node colors to ensure the tree remains approximately balanced during operations",
+    "option_c": "A list of strings",
+    "option_d": "A database synchronization error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Red-Black trees are widely used in libraries (e.g., C++ std::map, Java TreeMap) due to their efficient performance."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Expert Algorithms & String Theory",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Traveling Salesman Problem' (TSP)?",
+    "option_a": "A logistics app",
+    "option_b": "Given a list of cities and the distances between each pair, what is the shortest possible route that visits each city exactly once and returns to the origin?",
+    "option_c": "Searching for a person's name",
+    "option_d": "A way to speed up shipping",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TSP is an optimization problem that is computationally expensive for large numbers of cities."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Expert Algorithms & String Theory",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of a 'Skip List'?",
+    "option_a": "To skip certain parts of code",
+    "option_b": "A probabilistic data structure that allows O(log n) search, similar to a balanced tree, but implemented using layers of linked lists",
+    "option_c": "A list of strings in an Excel sheet",
+    "option_d": "A way to optimize memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Skip lists are easier to implement than balanced trees and are used in databases like Redis."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Advanced Graphs",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the time complexity of the Edmonds-Karp algorithm for maximum flow?",
+    "option_a": "O(VE)",
+    "option_b": "O(VE^2)",
+    "option_c": "O(V^3)",
+    "option_d": "O(E log V)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Edmonds-Karp uses BFS to find augmenting paths, ensuring it runs in polynomial time."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "In DP on Trees, what is the 'Centroid' of a tree?",
+    "option_a": "The root of the tree",
+    "option_b": "A node whose removal results in no component having more than n/2 nodes",
+    "option_c": "The node with the most children",
+    "option_d": "A leaf node with the maximum depth",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Centroid decomposition is used in tree-based problems to achieve O(n log n) total complexity."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "String Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "The 'Aho-Corasick' algorithm is primarily used for:",
+    "option_a": "Matching a single pattern against a text",
+    "option_b": "Finding occurrences of multiple patterns simultaneously in a text",
+    "option_c": "Sorting strings alphabetically",
+    "option_d": "Compressing text files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It combines a Trie with failure links to achieve linear time complexity relative to text length."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Data Structures",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Treap'?",
+    "option_a": "A tree with three children",
+    "option_b": "A randomized data structure that maintains both the BST property and the Heap property simultaneously",
+    "option_c": "A list of strings",
+    "option_d": "A way to join tables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Treaps use random priorities to stay balanced with high probability."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Complexity Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does 'NP-Complete' imply for a problem?",
+    "option_a": "It is in P",
+    "option_b": "It is in both NP and NP-Hard",
+    "option_c": "It cannot be verified",
+    "option_d": "It has no solution",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A solution to an NP-complete problem can be used to solve any NP problem in polynomial time."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Advanced Graphs",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is the result of the 'Max-Flow Min-Cut' theorem?",
+    "option_a": "Max flow is equal to the sum of all edge weights",
+    "option_b": "The value of the maximum flow in a network is equal to the capacity of the minimum cut",
+    "option_c": "The minimum flow is equal to 0",
+    "option_d": "The max flow is always even",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This fundamental duality theorem bridges network flow and combinatorial optimization."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Advanced Trees",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": " 'Heavy-Light Decomposition' (HLD) is used to handle:",
+    "option_a": "Graph coloring",
+    "option_b": "Path queries and updates in a tree by decomposing it into linear paths",
+    "option_c": "Searching in a hash map",
+    "option_d": "Minimal spanning forest",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HLD allows operations like path sums or path max to be computed in O(log^2 n)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is the time complexity of the Traveling Salesman Problem using Bitmask DP?",
+    "option_a": "O(n!)",
+    "option_b": "O(n^2 * 2^n)",
+    "option_c": "O(2^n)",
+    "option_d": "O(n^3)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It reduces the factorial complexity to exponential, making it feasible for n up to ~20."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Math in DSA",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Chinese Remainder Theorem' useful for in Competitive Programming?",
+    "option_a": "Sorting numbers",
+    "option_b": "Solving systems of simultaneous congruences with different moduli",
+    "option_c": "Finding the shortest path",
+    "option_d": "String hashing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's a staple in number theory based algorithmic problems."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Geometric Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "A 'Kd-tree' is optimized for which operation?",
+    "option_a": "Sorting numbers",
+    "option_b": "Searching for points in k-dimensional space (Nearest Neighbor search)",
+    "option_c": "Maximum flow",
+    "option_d": "Linear regression",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kd-trees partition space to quickly narrow down the search in multi-dimensional datasets."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Advanced Search",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In A* Search, if the heuristic function h(n) is 'Admissible', what guarantee does it provide?",
+    "option_a": "It will never find a solution",
+    "option_b": "It will always find the optimal (shortest) path",
+    "option_c": "It will use minimal memory",
+    "option_d": "It will be faster than BFS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Admissibility means h(n) never overestimates the true cost to reach the goal."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Complex Structures",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Persistent Segment Tree'?",
+    "option_a": "A tree that is stored on disk forever",
+    "option_b": "A segment tree that allows access to all its previous versions after updates",
+    "option_c": "A segment tree that cannot be modified",
+    "option_d": "A ways to compress segment trees",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By creating new nodes only for changed branches, it achieves O(log n) versioning."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Graph Theory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is an 'Articulation Point' in an undirected graph?",
+    "option_a": "The starting vertex",
+    "option_b": "A vertex whose removal increases the number of connected components",
+    "option_c": "A vertex with the highest degree",
+    "option_d": "A vertex connected to all other vertices",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Articulation points (or cut vertices) are critical for graph connectivity."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "String Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which algorithm computes the 'Longest Palindromic Substring' in O(n) time?",
+    "option_a": "KMP",
+    "option_b": "Manacher's Algorithm",
+    "option_c": "Rabin-Karp",
+    "option_d": "Suffix Array",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Manacher's exploits symmetry to avoid redundant palindrome checks."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Advanced Graphs",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "In Dinic's Algorithm, what is the 'Level Graph' used for?",
+    "option_a": "Sorting edges",
+    "option_b": "Finding shortest paths in the residual network toward the sink to find multiple augmenting paths efficiently",
+    "option_c": "Storing vertex degrees",
+    "option_d": "Balancing the tree",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dinic's uses level graphs to reach the sink through the shortest available routes in each phase."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Game Theory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In the context of the game Nim, what does the 'Nim-Sum' determine?",
+    "option_a": "Total number of stones",
+    "option_b": "Winning strategy (XOR sum of pile sizes)",
+    "option_c": "The number of players",
+    "option_d": "The time limit",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Sprague-Grundy theorem generalizes this to many impartial games."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Cook's Theorem' (or Cook-Levin theorem)?",
+    "option_a": "Sorting happens in n log n",
+    "option_b": "Boolean Satisfiability Problem (SAT) is NP-Complete",
+    "option_c": "P != NP",
+    "option_d": "Binary search is the fastest search",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It was the first problem proven to be NP-complete."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Advanced Data Structures",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "A 'Bloom Filter' provides what type of answer for membership queries?",
+    "option_a": "Always correct",
+    "option_b": "Probabilistic: No false negatives, but potentially false positives",
+    "option_c": "Probabilistic: No false positives, but potentially false negatives",
+    "option_d": "Random guess",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bloom filters are space-efficient but allow for some errors in set membership tests."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Matrix",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is the complexity of 'Strassen's Algorithm' for matrix multiplication?",
+    "option_a": "O(n^3)",
+    "option_b": "O(n^2.807)",
+    "option_c": "O(n^2)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's theoretically faster than the standard O(n^3) algorithm by reducing the number of multiplications needed."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Searching",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "The 'Meeting-in-the-middle' technique is primarily used to:",
+    "option_a": "Sort an array",
+    "option_b": "Reduce the search space from O(2^n) to O(2^(n/2))",
+    "option_c": "Find the middle of a linked list",
+    "option_d": "Connect two servers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's used in problems like Subset Sum or finding paths in a large state space."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What does a 'Sparse Table' allow for in O(1) time after O(n log n) preprocessing?",
+    "option_a": "Element updates",
+    "option_b": "Range Minimum/Maximum Queries (RMQ)",
+    "option_c": "Sorting",
+    "option_d": "Deleting any element",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sparse tables are ideal for static range queries on idempotent functions."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Tree Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In a Tree, the 'Diameter' is:",
+    "option_a": "The number of leaves",
+    "option_b": "The longest path between any two nodes in the tree",
+    "option_c": "The height of the tree",
+    "option_d": "The total number of edges",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It can be found in two DFS/BFS passes."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Hashing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Rolling Hash' commonly used for?",
+    "option_a": "Sorting numbers",
+    "option_b": "Rabin-Karp string matching algorithm",
+    "option_c": "Encryption",
+    "option_d": "Memory management",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It allows computing the hash of a window in O(1) time by sliding it across the text."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "A problem is 'NP-Hard' if:",
+    "option_a": "It is exactly in NP",
+    "option_b": "Every problem in NP can be reduced to it in polynomial time",
+    "option_c": "It is solvable in polynomial time",
+    "option_d": "It has no solution at all",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NP-hard problems include all of NP but might not be in NP themselves (e.g., they might take even longer)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Advanced Structures",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is the complexity of finding the Lowest Common Ancestor (LCA) after preprocessing?",
+    "option_a": "O(n)",
+    "option_b": "O(1) with O(n log n) preprocessing using sparse tables/Euler tour",
+    "option_c": "O(log n) with no preprocessing",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LCA can be reduced to the Range Minimum Query problem."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Graph Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does 'Hall's Marriage Theorem' specify?",
+    "option_a": "Number of edges in a tree",
+    "option_b": "Condition for the existence of a perfect matching in a bipartite graph",
+    "option_c": "Complexity of sorting",
+    "option_d": "How to traverse a graph",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It states that for every subset S of one partition, the size of its neighborhood N(S) must be >= |S|."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "Which technique optimizes certain DP solutions from O(n^3) to O(n^2) (e.g., Matrix Chain Multiplication or Optimal BST)?",
+    "option_a": "Convex Hull Trick",
+    "option_b": "Knuth Optimization",
+    "option_c": "Divide and Conquer Optimization",
+    "option_d": "Memoization",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Knuth optimization applies when the optimal split position satisfies monotonicity."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Advanced Searching",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "The 'Iterative Deepening A*' (IDA*) algorithm is:",
+    "option_a": "A sorting approach",
+    "option_b": "A variation of A* that uses iterative deepening to save memory",
+    "option_c": "A ways to search strings",
+    "option_d": "Only for trees",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It uses the f-cost (g+h) as the limit for depth-first search in each iteration."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Math",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Burnside's Lemma' (or Cauchy-Frobenius Lemma) used for?",
+    "option_a": "Maximum flow",
+    "option_b": "Counting distinct objects under symmetry (P\u00f3lya Enumeration Theorem foundation)",
+    "option_c": "Number theory proofs",
+    "option_d": "Finding primes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It counts the number of orbits of a group action, useful for problems involving rotations/reflections."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the time complexity of the algorithm to find the diameter of a tree using DFS?",
+    "option_a": "O(n)",
+    "option_b": "O(n log n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Two DFS searches are sufficient (start from any node, find farthest node X, then find farthest node from X)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Data Structures",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Link-Cut Tree'?",
+    "option_a": "A tree made of link lists",
+    "option_b": "A dynamic data structure for maintaining a forest of trees and performing path operations (link, cut, path sum)",
+    "option_c": "A forest that cannot be changed",
+    "option_d": "A database schema",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It achieves O(log n) amortized time for dynamic tree operations."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Math",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which algorithm is used for 'Fast Fourier Transform' (FFT) for polynomial multiplication in O(n log n)?",
+    "option_a": "Euclidean Algorithm",
+    "option_b": "Cooley-Tukey Algorithm",
+    "option_c": "Gauss-Jordan Elimination",
+    "option_d": "Binary Search",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's the most common algorithm for computing the discrete Fourier transform."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "In DP, the 'Convex Hull Trick' is used to optimize transitions of the form dp[i] = min(m[j]*x[i] + c[j]) to:",
+    "option_a": "O(n^2)",
+    "option_b": "O(n log n) or O(n)",
+    "option_c": "O(n^3)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It maintains the lower/upper hull of lines to quickly find the minimum/maximum value for a given x."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Searching",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "A 'Perfect Matching' in a graph is a matching that covers:",
+    "option_a": "The maximum number of edges",
+    "option_b": "Every vertex of the graph exactly once",
+    "option_c": "Only the leaves",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It means every vertex is endpoints of exactly one edge in the matching."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Advanced Structures",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "The 'Fenwick Tree' (Binary Indexed Tree) is primarily for:",
+    "option_a": "Sorting strings",
+    "option_b": "Efficient prefix sum updates and queries",
+    "option_c": "Maximum flow",
+    "option_d": "Hash map visualization",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is easier to implement and uses less memory than a Segment Tree."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which problem is the 'p vs np' prize worth?",
+    "option_a": "$100",
+    "option_b": "$1,000,000 from Clay Mathematics Institute",
+    "option_c": "A free laptop",
+    "option_d": "$0 (prestige only)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is one of the seven Millennium Prize Problems."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Data Structures",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Square Root Decomposition'?",
+    "option_a": "Calculating the square root of a list",
+    "option_b": "Dividing an array into blocks of size approximately sqrt(n) to handle range queries in O(sqrt(n))",
+    "option_c": "A way to sort using squares",
+    "option_d": "Calculating square root in constant time",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is a simpler alternative to segment trees for certain range query problems."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Heaps",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which heap allows for O(1) merging of two heaps in the worst case?",
+    "option_a": "Binary Heap",
+    "option_b": "Binomial Heap",
+    "option_c": "Leftist Heap or Skew Heap (amortized)",
+    "option_d": "B-Tree",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Leftist/Skew heaps are mergeable heaps."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the complexity of 'Kruskal's algorithm' using a simple list of edges and O(V^2) cycle checks?",
+    "option_a": "O(E log E)",
+    "option_b": "O(E * V)",
+    "option_c": "O(V^3)",
+    "option_d": "O(E^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Without Union-Find, cycle checking makes the algorithm much slower."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 4,
+    "level_topic": "Searching",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Ternary Search' used for?",
+    "option_a": "Searching in three arrays",
+    "option_b": "Finding the maximum or minimum of a unimodal function",
+    "option_c": "Sorting letters",
+    "option_d": "Replacing binary search in all cases",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It works similarly to binary search but divides the search space into three parts."
+  }
+]

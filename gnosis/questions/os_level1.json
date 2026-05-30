@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "OS Basics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the core part of an Operating System that manages system resources and hardware communication?",
+    "option_a": "Shell",
+    "option_b": "Kernel",
+    "option_c": "GUI",
+    "option_d": "Compiler",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Kernel is the central component of an OS, acting as a bridge between applications and hardware."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "System Calls",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How does a user-level program request a service from the OS kernel?",
+    "option_a": "Function Call",
+    "option_b": "Interrupt",
+    "option_c": "System Call",
+    "option_d": "API request",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "System calls provide the interface between a running program and the operating system."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Process States",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which state does a process enter when it is waiting for an I/O operation to complete?",
+    "option_a": "Running",
+    "option_b": "Ready",
+    "option_c": "Blocked / Waiting",
+    "option_d": "Terminated",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A process that cannot continue until an external event (like I/O) occurs moves to the Blocked state."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Threads",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What resources are typically shared between threads of the same process?",
+    "option_a": "Stack and Registers",
+    "option_b": "Program Counter only",
+    "option_c": "Code, data, and OS resources (like open files)",
+    "option_d": "Nothing is shared",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Threads share the process's global resources but maintain their own execution state (stack, PC, registers)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "OS Types",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which type of OS is designed to respond to events within a fixed, strictly defined time limit?",
+    "option_a": "Batch OS",
+    "option_b": "Real-time OS (RTOS)",
+    "option_c": "Distributed OS",
+    "option_d": "Network OS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RTOS is used in environments where timing is critical, such as aviation or medical systems."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Kernel Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Microkernel'?",
+    "option_a": "A tiny OS for calculators",
+    "option_b": "An architecture that moves as much functionality as possible from the kernel into user space",
+    "option_c": "A kernel that only supports one user",
+    "option_d": "A kernel with no security",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Microkernels (like Mach or QNX) are highly modular and facilitate improved system stability."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "User Mode vs Kernel Mode",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Why do CPU's have 'User Mode' and 'Kernel Mode'?",
+    "option_a": "To make the OS faster",
+    "option_b": "To protect the system from malfunctioning user programs",
+    "option_c": "To allow users to play games",
+    "option_d": "To encrypt files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dual-mode operation prevents user programs from directly accessing hardware or sensitive memory."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Process Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does 'PCB' stand for in an OS?",
+    "option_a": "Process Control Block",
+    "option_b": "Primary Computer Board",
+    "option_c": "Program Command Base",
+    "option_d": "Process Code Bridge",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The PCB contains all the information necessary for the OS to manage a specific process."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Process Management",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Context Switching'?",
+    "option_a": "Switching between keyboard and mouse",
+    "option_b": "The procedure of storing the state of a process so it can be resumed later, and loading the state of another process",
+    "option_c": "Changing the desktop background",
+    "option_d": "Restarting the computer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Context switching allows the CPU to share its time among multiple processes."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Scheduling",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the role of the 'Short-term Scheduler'?",
+    "option_a": "To decide which processes are brought into memory",
+    "option_b": "To select which of the ready processes should be executed next by the CPU",
+    "option_c": "To backup files to the cloud",
+    "option_d": "To manage the printer queue",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The short-term scheduler (or CPU scheduler) makes rapid decisions to maximize CPU utilization."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "System Calls",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which system call is used in Unix-like systems to create a new process?",
+    "option_a": "create()",
+    "option_b": "fork()",
+    "option_c": "make()",
+    "option_d": "new()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The fork() system call creates a duplicate child process of the calling parent process."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Booting",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the first code executed by the computer when it is turned on?",
+    "option_a": "Operating System",
+    "option_b": "BIOS / UEFI",
+    "option_c": "Web Browser",
+    "option_d": "Device Driver",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The BIOS/UEFI performs hardware checks (POST) and then loads the bootloader."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Memory Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'RAM'?",
+    "option_a": "Read All Memory",
+    "option_b": "Random Access Memory",
+    "option_c": "Reliable Access Module",
+    "option_d": "Range Access Manager",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RAM is the physical volatile memory where instructions and data are stored for fast CPU access."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Components",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Device Driver'?",
+    "option_a": "A hardware component for storage",
+    "option_b": "A software program that allows the OS to communicate with specific hardware devices",
+    "option_c": "A tool to defragment the disk",
+    "option_d": "A user who manages the servers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Drivers translate generic OS commands into hardware-specific signals."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Process Communication",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Inter-Process Communication' (IPC)?",
+    "option_a": "Users talking on social media",
+    "option_b": "Mechanisms that allow processes to communicate and synchronize their actions",
+    "option_c": "Sending emails between computers",
+    "option_d": "Shared internet connection",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IPC methods include shared memory and message passing."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Threads",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Multithreaded' application?",
+    "option_a": "An application that runs on multiple computers",
+    "option_b": "An application that can perform multiple tasks simultaneously within a single process",
+    "option_c": "An application that uses a lot of RAM",
+    "option_d": "An application with many code files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multithreading improves responsiveness and resource utilization."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Kernel",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A 'Monolithic Kernel' differs from a Microkernel in that:",
+    "option_a": "It is much smaller",
+    "option_b": "It runs the entire OS code (drivers, filesystem, scheduler) inside the kernel address space",
+    "option_c": "It doesn't support multitasking",
+    "option_d": "It is easier to update",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Monolithic kernels (like Linux) offer high performance but can be less modular than microkernels."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "System Calls",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "The 'exec()' system call in Unix is primarily used for:",
+    "option_a": "Deleting a process",
+    "option_b": "Replacing the current process's memory space and code with a new program",
+    "option_c": "Waiting for a child to finish",
+    "option_d": "Adding more RAM to a process",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "exec() allows a process to start running a different executable."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Process States",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A process moves from 'Ready' to 'Running' state when it is:",
+    "option_a": "Loaded into memory",
+    "option_b": "Selected by the CPU scheduler and dispatched",
+    "option_c": "Finished its task",
+    "option_d": "Created by the parent",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This transition is known as 'Dispatching'."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "OS Basics",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'Multiprogramming'?",
+    "option_a": "Having many programmers working on the OS",
+    "option_b": "Keeping multiple processes in memory at once to increase CPU utilization",
+    "option_c": "Running an app on two monitors",
+    "option_d": "Writing code in multiple languages",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multiprogramming ensures the CPU is never idle if data is available."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "OS Basics",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Timesharing' (Multitasking)?",
+    "option_a": "Dividing the day into work periods",
+    "option_b": "The logic extension of multiprogramming where the CPU switches between processes so rapidly that users can interact with each program",
+    "option_c": "Sharing files across a network",
+    "option_d": "Sharing a computer screen",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Timesharing provides the illusion of concurrent execution for multiple users/apps."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Scheduling",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Burst Time' in process scheduling?",
+    "option_a": "When the CPU catches fire",
+    "option_b": "The total time a process needs to spend executing on the CPU",
+    "option_c": "The time spent waiting for I/O",
+    "option_d": "The time to boot the OS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CPU burst time is the active processing time required by a task."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Interrupts",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is a 'Hardware Interrupt'?",
+    "option_a": "A user pressing a key on the keyboard",
+    "option_b": "A signal sent by a hardware device to the CPU to request immediate attention",
+    "option_c": "A software bug that crashes the system",
+    "option_d": "Unplugging the power",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Handled by the Interrupt Service Routine (ISR), interrupts allow the OS to respond to hardware events asynchronously."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In the storage hierarchy, which of these is the fastest?",
+    "option_a": "Main Memory (RAM)",
+    "option_b": "Registers",
+    "option_c": "Disk",
+    "option_d": "Cache",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Registers are located inside the CPU and are the fastest storage medium."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Virtualization",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Virtual Machine'?",
+    "option_a": "A computer that doesn't physically exist",
+    "option_b": "A software-based emulation of a physical computer that runs its own OS and applications",
+    "option_c": "A remote server",
+    "option_d": "A backup of the computer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "VMs allow multiple isolated environments to run on a single physical host."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Process Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Zombie Process'?",
+    "option_a": "A virus process",
+    "option_b": "A process that has finished execution but still has an entry in the process table because its parent hasn't read its exit status",
+    "option_c": "A process that runs forever",
+    "option_d": "A process that has been deleted",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Zombies are harmless but consume entry space in the process table; they are cleaned up once the parent 'waits' on them."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Process Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is an 'Orphan Process'?",
+    "option_a": "A process without any code",
+    "option_b": "A child process whose parent process has terminated before the child",
+    "option_c": "A process with no output",
+    "option_d": "A process that runs on a different computer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Orphan processes are usually adopted by the 'init' process (PID 1) in Unix."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "File Systems",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the primary role of a 'File System'?",
+    "option_a": "To sort the desktop icons",
+    "option_b": "To control how data is stored and retrieved from a disk",
+    "option_c": "To connect to the internet",
+    "option_d": "To manage the printer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "File systems provide a logical way for users and the OS to store and manage files on physical media."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "User Interface",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does 'GUI' stand for?",
+    "option_a": "General User Index",
+    "option_b": "Graphical User Interface",
+    "option_c": "Group User Integration",
+    "option_d": "Global User ID",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GUI provides visual navigation using icons and windows rather than just text commands."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "User Interface",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'CLI'?",
+    "option_a": "Common Log Index",
+    "option_b": "Command Line Interface",
+    "option_c": "Core Link Integration",
+    "option_d": "Central Logic Item",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CLI allows users to interact with the OS by typing text commands."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "System Calls",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Why are system calls categorized by numbers in the kernel?",
+    "option_a": "To save memory",
+    "option_b": "To use as an index into a table (System Call Table) to find the correct kernel function",
+    "option_c": "To hide the function names from users",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The system call number allows for a fast, centralized way to dispatch requests."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Scheduling",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In Round Robin scheduling, what is the 'Time Quantum'?",
+    "option_a": "The total time the CPU runs",
+    "option_b": "A fixed small unit of time assigned to each process in turn",
+    "option_c": "The time to switch between programs",
+    "option_d": "The time to boot the computer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Time Quantum ensures fair CPU sharing among all ready processes."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Scheduling",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which scheduling algorithm serves processes based on the order they arrived in the ready queue?",
+    "option_a": "Round Robin",
+    "option_b": "FCFS (First-Come, First-Served)",
+    "option_c": "Shortest Job First",
+    "option_d": "Priority Scheduling",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "FCFS is the simplest scheduling algorithm but can lead to long wait times (Convoy Effect)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Fragmentation' in memory management?",
+    "option_a": "Burning the RAM",
+    "option_b": "The development of small, non-contiguous free memory spaces that are difficult to allocate to new processes",
+    "option_c": "Breaking a file into segments",
+    "option_d": "A way to speed up the CPU",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "External fragmentation occurs when the total free memory is enough for a request, but it isn't contiguous."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Paging'?",
+    "option_a": "Dividing a book into pages",
+    "option_b": "A memory management scheme that eliminates the need for contiguous allocation of physical memory by dividing it into fixed-size blocks (frames)",
+    "option_c": "Connecting to the internet",
+    "option_d": "Sorting files by name",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Paging solves the external fragmentation problem by mapping logical pages to physical frames."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Race Condition'?",
+    "option_a": "Testing which computer is faster",
+    "option_b": "A flaw where several processes access and manipulate the same data concurrently, and the final value depends on the order of execution",
+    "option_c": "Winning a contest in code",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sync mechanisms like Mutexes or Semaphores are used to prevent race conditions."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Scheduling",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Starvation' in scheduling?",
+    "option_a": "A process has no input",
+    "option_b": "When a process is perpetually denied access to the CPU because other processes are repeatedly favored",
+    "option_c": "A server with no power",
+    "option_d": "A deleted process",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Priority scheduling can lead to starvation; it's often fixed by 'Aging', which increases a process's priority over time."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "OS Basics",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'Spooling'?",
+    "option_a": "Sorting old files",
+    "option_b": "Storing data temporarily in a buffer (often on disk) to be processed by a slower peripheral device like a printer",
+    "option_c": "Streaming video content",
+    "option_d": "Writing logs for the OS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Spooling allows programs to continue without waiting for slow output devices."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is an 'Access Control List' (ACL)?",
+    "option_a": "A list of users who visited a website",
+    "option_b": "A list of permissions attached to an object (like a file) specifying which users or processes can access it",
+    "option_c": "A keyboard shortcut",
+    "option_d": "A way to install software",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ACLs are fundamental for managing system security and file permissions."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Deadlock",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Deadlock' in an OS?",
+    "option_a": "When the battery dies",
+    "option_b": "A situation where two or more processes are stuck waiting for each other to release resources they need",
+    "option_c": "Deleting a locked file",
+    "option_d": "A server crash",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deadlock results in all involved processes being permanently stalled."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Swapping' in memory management?",
+    "option_a": "Exchanging parts of two computers",
+    "option_b": "Moving a process from main memory to temporary disk storage to free up RAM",
+    "option_c": "Changing the file name",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Swapping allows the OS to handle more processes than it can physically fit in RAM at once."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Mutual Exclusion'?",
+    "option_a": "Only one person using the computer",
+    "option_b": "Requirement that only one process at a time can be in its 'critical section' to access a shared resource",
+    "option_c": "Encrypting data with two keys",
+    "option_d": "A way to exclude users from a group",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Mutual exclusion prevents data corruption by ensuring serialized access to shared data."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Virtual Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Virtual Memory'?",
+    "option_a": "Memory for video games",
+    "option_b": "A technique that allows the execution of processes that may not be completely in memory (gives the illusion of more RAM)",
+    "option_c": "Storing data in the cloud",
+    "option_d": "Fast CPU registers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Virtual memory map logical addresses to physical disk space using demand paging."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Hardware",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'Direct Memory Access' (DMA)?",
+    "option_a": "The CPU accessing RAM directly",
+    "option_b": "A feature allowing hardware devices to transfer data directly to/from main memory without constant CPU involvement",
+    "option_c": "Managing memory by hand",
+    "option_d": "Deleting memory logs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DMA improves system performance by freeing the CPU from simple data move tasks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Process Management",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "In a PCB, what is the 'Program Counter' (PC)?",
+    "option_a": "A count of how many apps are open",
+    "option_b": "The address of the next instruction to be executed by the process",
+    "option_c": "The security ID of the user",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The PC ensures the CPU knows exactly where to continue after an interrupt or switch."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "File systems",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Path' in a filesystem?",
+    "option_a": "A physical wire",
+    "option_b": "The unique sequence of directories required to reach a specific file",
+    "option_c": "The order of code",
+    "option_d": "A way to backup the disk",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Paths can be absolute (starting from root) or relative (starting from current directory)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Process Communication",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Shared Memory' IPC?",
+    "option_a": "Sending data over Wi-Fi",
+    "option_b": "Processes communicating by reading and writing to a region of memory that is accessible to all involved processes",
+    "option_c": "Sharing a USB drive",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shared memory is the fastest form of IPC as it avoids data copying between user and kernel space."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "OS Basics",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "What is 'Response Time' in scheduling?",
+    "option_a": "Total time to finish the job",
+    "option_b": "The time from when a request is submitted until the first response is produced (not final output)",
+    "option_c": "The time spent waiting in the queue",
+    "option_d": "The time it takes to boot the OS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Response time is more important than turnaround time for interactive systems."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Logical Address' space?",
+    "option_a": "The physical location in RAM",
+    "option_b": "The address generated by the CPU during process execution",
+    "option_c": "The address on the hard drive",
+    "option_d": "The IP address",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Logical addresses are mapped to physical addresses by the Memory Management Unit (MMU)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 1,
+    "level_topic": "I/O Management",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Buffering' in I/O management?",
+    "option_a": "Cleaning the screen",
+    "option_b": "Storing data in memory temporarily while it is being transferred between two devices or a device and an application",
+    "option_c": "Slowing down a process",
+    "option_d": "A way to encrypt data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Buffering helps handle speed mismatches between producers and consumers of data."
+  }
+]

@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Digital Logic",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which logic gate returns 1 only if all its inputs are 1?",
+    "option_a": "OR",
+    "option_b": "AND",
+    "option_c": "XOR",
+    "option_d": "NAND",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The AND gate requires every input to be true for the output to be true."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Number Systems",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the decimal equivalent of the binary number 1011?",
+    "option_a": "9",
+    "option_b": "10",
+    "option_c": "11",
+    "option_d": "13",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "1*2^3 + 0*2^2 + 1*2^1 + 1*2^0 = 8 + 0 + 2 + 1 = 11."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Digital Logic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the minimum number of variables required for a Karnaugh Map (K-map) to show 16 cells?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "4",
+    "option_d": "5",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A K-map with 'n' variables has 2^n cells. 2^4 = 16."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Boolean Algebra",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "According to De Morgan's Laws, NOT (A AND B) is equivalent to:",
+    "option_a": "(NOT A) AND (NOT B)",
+    "option_b": "(NOT A) OR (NOT B)",
+    "option_c": "A OR B",
+    "option_d": "NOT (A OR B)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "De Morgan's law states that the negation of a conjunction is the disjunction of the negations."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Universal Gates",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of the following are considered 'Universal Gates'?",
+    "option_a": "AND",
+    "option_b": "NAND",
+    "option_c": "NOR",
+    "option_d": "XOR",
+    "correct_options": [
+      "B",
+      "C"
+    ],
+    "explanation": "NAND and NOR gates are universal because any other logic function can be realized using only those gates."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Basic Computer Organization",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which part of the CPU is responsible for coordinating all activities within the processor?",
+    "option_a": "ALU",
+    "option_b": "Control Unit",
+    "option_c": "Registers",
+    "option_d": "Cache",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Control Unit (CU) directs the flow of data and instructions within the CPU."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Basic Computer Organization",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does ALU stand for?",
+    "option_a": "Arithmetic Logic Unit",
+    "option_b": "Advanced Logical Unit",
+    "option_c": "Array Logic Universal",
+    "option_d": "Application Layer Utility",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "ALU performs arithmetic and logical operations."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Memory Hierarchy",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which memory is the fastest in a computer system?",
+    "option_a": "RAM",
+    "option_b": "Hard Disk",
+    "option_c": "Cache Memory",
+    "option_d": "Registers",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Registers are located inside the CPU and provide the fastest access."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Instruction Cycle",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In which stage of the instruction cycle is the instruction decoded?",
+    "option_a": "Fetch",
+    "option_b": "Decode",
+    "option_c": "Execute",
+    "option_d": "Store",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Decoding determines which operation the instruction is meant to perform."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Number Systems",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the hexadecimal equivalent of binary 1111?",
+    "option_a": "E",
+    "option_b": "F",
+    "option_c": "10",
+    "option_d": "A",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Binary 1111 is 15 in decimal, which is F in hexadecimal."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Number Systems",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How many bits are in one byte?",
+    "option_a": "4",
+    "option_b": "8",
+    "option_c": "16",
+    "option_d": "32",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A byte is a unit of digital information that most commonly consists of eight bits."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Buses",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which bus is used to specify a physical address in memory?",
+    "option_a": "Data Bus",
+    "option_b": "Control Bus",
+    "option_c": "Address Bus",
+    "option_d": "Expansion Bus",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The Address Bus carries the address of the data that the CPU wants to access."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Registers",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which register holds the memory address of the next instruction to be fetched?",
+    "option_a": "MAR",
+    "option_b": "MDR",
+    "option_c": "Program Counter (PC)",
+    "option_d": "Accumulator",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The PC keeps track of the next instruction in memory."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Digital Logic",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which gate is known as an inverter?",
+    "option_a": "OR",
+    "option_b": "AND",
+    "option_c": "NOT",
+    "option_d": "XOR",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The NOT gate flips the input bit."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Memory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "RAM is ________ computer memory.",
+    "option_a": "Volatile",
+    "option_b": "Non-volatile",
+    "option_c": "Secondary",
+    "option_d": "Permanent",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "RAM loses its data when the power is turned off."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Architecture Types",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In Von Neumann architecture, where are instructions and data stored?",
+    "option_a": "Separate memories",
+    "option_b": "Same memory",
+    "option_c": "Registers only",
+    "option_d": "Hard drive only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Von Neumann architecture uses a single storage system for instructions and data."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "I/O Organization",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does DMA stand for?",
+    "option_a": "Data Memory Access",
+    "option_b": "Direct Memory Access",
+    "option_c": "Dual Master Architecture",
+    "option_d": "Direct Module Access",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DMA allows hardware subsystems to access main memory independently of the CPU."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Arithmetic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 2's complement of the binary number 0110?",
+    "option_a": "1001",
+    "option_b": "1010",
+    "option_c": "1100",
+    "option_d": "0111",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "1's complement of 0110 is 1001. Adding 1 gives 1010."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Registers",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which register holds the data being fetched from or stored into memory?",
+    "option_a": "Accumulator",
+    "option_b": "Instruction Register",
+    "option_c": "Memory Data Register (MDR)",
+    "option_d": "Flag Register",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "MDR (or MBR) holds the content of the memory word currently being accessed."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Digital Logic",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How many outputs does a half adder have?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A half adder has two outputs: Sum and Carry."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Control Unit",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which method of generating control signals uses a small memory called control store?",
+    "option_a": "Hardwired control",
+    "option_b": "Microprogrammed control",
+    "option_c": "Software control",
+    "option_d": "Direct control",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Microprogrammed control units store control sequences in a microcode memory."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Memory Units",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "1 Gigabyte (GB) is equivalent to how many Megabytes (MB) in standard binary prefix?",
+    "option_a": "100",
+    "option_b": "1000",
+    "option_c": "1024",
+    "option_d": "512",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "In binary, 1 GB = 1024 MB."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Instruction Set",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "An instruction consists of two main parts: Opcode and ________.",
+    "option_a": "Mnemonic",
+    "option_b": "Operand",
+    "option_c": "Variable",
+    "option_d": "Comment",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Opcode specifies the operation, and Operand specifies the data or its address."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Computer Types",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What type of computers are primarily used for scientific research and weather forecasting?",
+    "option_a": "Mainframes",
+    "option_b": "Microcomputers",
+    "option_c": "Supercomputers",
+    "option_d": "Workstations",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Supercomputers have extremely high calculation speeds."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Basic Gates",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What is the output of XOR gate if both inputs are 1?",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "High impedance",
+    "option_d": "Undefined",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "XOR gate returns 1 only if inputs are different."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Architecture Models",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a main characteristic of RISC architecture?",
+    "option_a": "Complex instructions",
+    "option_b": "Large instruction set",
+    "option_c": "Small, simple instruction set",
+    "option_d": "Variable length instructions",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Reduced Instruction Set Computer (RISC) focuses on simplified instructions for faster execution."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Registers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A CPU flag that indicates a zero result from an arithmetic operation is called:",
+    "option_a": "Carry flag",
+    "option_b": "Sign flag",
+    "option_c": "Zero flag",
+    "option_d": "Overflow flag",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The zero flag is set to 1 if the ALU result is zero."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Memory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Cache memory works on the principle of:",
+    "option_a": "Locality of reference",
+    "option_b": "Parallelism",
+    "option_c": "Virtualization",
+    "option_d": "Random distribution",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Locality of reference refers to the tendency of processors to access same set of memory locations repeatedly."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Floating Point",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "According to IEEE 754 standard, a single-precision float uses how many bits?",
+    "option_a": "16",
+    "option_b": "32",
+    "option_c": "64",
+    "option_d": "80",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Single-precision is 32-bit, double-precision is 64-bit."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Bus Structures",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "The width of the data bus determines the ________ bit size of the processor.",
+    "option_a": "Internal",
+    "option_b": "External",
+    "option_c": "Word",
+    "option_d": "Cache",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Word size is often matched to the data bus width."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Digital logic",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A full adder adds how many bits at a time?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "4",
+    "option_d": "1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A full adder adds two significant bits and an incoming carry bit (total 3)."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which architecture is known for having a bottle neck between CPU and Memory?",
+    "option_a": "Harvard",
+    "option_b": "Von Neumann",
+    "option_c": "Parallel",
+    "option_d": "Distributed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'Von Neumann Bottleneck' occurs because instructions and data share the same bus."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Storage",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of these is an example of primary storage?",
+    "option_a": "USB Drive",
+    "option_b": "Magnetic Tape",
+    "option_c": "RAM",
+    "option_d": "CD-ROM",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "RAM is the main internal memory accessed directly by the CPU."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Logic Implementation",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A Multiplexer (MUX) is also known as a:",
+    "option_a": "Data decoder",
+    "option_b": "Data selector",
+    "option_c": "Data encoder",
+    "option_d": "Data multiplier",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A MUX selects one of many inputs and forwards it to a single output line."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Addressing Modes",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In which addressing mode is the operand specified in the instruction itself?",
+    "option_a": "Direct",
+    "option_b": "Indirect",
+    "option_c": "Immediate",
+    "option_d": "Register",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Immediate addressing includes the actual constant value in the instruction."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Arithmetic",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the result of binary addition 1010 + 0101?",
+    "option_a": "10000",
+    "option_b": "1111",
+    "option_c": "1100",
+    "option_d": "1011",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "1010 (10) + 0101 (5) = 1111 (15)."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Memory Management",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "Virtual memory is a technique used to:",
+    "option_a": "Simulate faster RAM",
+    "option_b": "Allow execution of programs larger than physical memory",
+    "option_c": "Speed up the cache",
+    "option_d": "Create more registers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Virtual memory maps logical addresses to physical disk or RAM locations."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Logic Gates",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of these gates have exactly TWO inputs?",
+    "option_a": "NOT",
+    "option_b": "XOR",
+    "option_c": "Standard AND",
+    "option_d": "Three-input NOR",
+    "correct_options": [
+      "B",
+      "C"
+    ],
+    "explanation": "XOR and standard AND are binary operations (2 inputs). NOT is unary (1 input)."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Execution Unit",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The time taken to fetch, decode and execute an instruction is called:",
+    "option_a": "Cycle time",
+    "option_b": "Instruction time",
+    "option_c": "Access time",
+    "option_d": "Response time",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Instruction time refers to the full lifetime of one instruction in the pipeline."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Registers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "The register that stores the result of ALU operations is the:",
+    "option_a": "Program Counter",
+    "option_b": "Instruction Register",
+    "option_c": "Accumulator",
+    "option_d": "Stack Pointer",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The Accumulator is a general-purpose register for intermediate results."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Buses",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which signals are handled by the Control Bus?",
+    "option_a": "Read/Write signals",
+    "option_b": "Data bits",
+    "option_c": "Memory addresses",
+    "option_d": "File contents",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The Control Bus carries synchronization and operational signals like 'Clock', 'Read', 'Write'."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Pipelining",
+    "question_type": "tricky",
+    "timer_seconds": 45,
+    "question_text": "Pipelining improves CPU performance by:",
+    "option_a": "Increasing clock speed",
+    "option_b": "Decreasing instruction count",
+    "option_c": "Allowing multiple instructions to be in different stages of execution",
+    "option_d": "Reducing memory size",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Pipelining increases throughput by overlapping instruction execution phases."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "CISC stands for:",
+    "option_a": "Complex Instruction Set Computer",
+    "option_b": "Control Instruction System Central",
+    "option_c": "Combined Instruction Software Computer",
+    "option_d": "Central Internet System Connector",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CISC focuses on complex instructions that can perform multiple steps."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Logic Gates",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which gate is known as the 'All or Nothing' gate for its 0 output?",
+    "option_a": "OR",
+    "option_b": "NAND",
+    "option_c": "AND",
+    "option_d": "NOR",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "A NOR gate outputs 1 ONLY if all inputs are 0."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "History",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Who is considered the father of modern computer architecture?",
+    "option_a": "Bill Gates",
+    "option_b": "John von Neumann",
+    "option_c": "Steve Jobs",
+    "option_d": "Alan Turing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Von Neumann architecture is the basis for most modern computers."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Basic Circuits",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A Decoder converts 'n' input lines into ________ output lines.",
+    "option_a": "n^2",
+    "option_b": "2n",
+    "option_c": "2^n",
+    "option_d": "log n",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A decoder has n inputs and 2^n outputs."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Architecture Types",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Harvard architecture differs from Von Neumann by having ________.",
+    "option_a": "More CPUs",
+    "option_b": "Separate data and instruction memories",
+    "option_c": "Larger registers",
+    "option_d": "Wireless memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Harvard architecture allows simultaneous fetching of data and instructions."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Memory Speed",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "The time delay between memory request and data arrival is called:",
+    "option_a": "Cycle time",
+    "option_b": "Latency",
+    "option_c": "Bandwidth",
+    "option_d": "Refresh rate",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Memory latency is the lag time from request to fulfillment."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Boolean Algebra",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "In Boolean algebra, A + 0 is equal to:",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "A",
+    "option_d": "NOT A",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Adding 0 (OR with 0) to a Boolean variable does not change its value."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 1,
+    "level_topic": "Universal Gates",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If you connect both inputs of a NAND gate together, what gate is formed?",
+    "option_a": "AND",
+    "option_b": "OR",
+    "option_c": "NOT",
+    "option_d": "XOR",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "NAND(A, A) results in NOT A."
+  }
+]

@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Distributed Databases",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the primary role of the 'Two-Phase Commit' (2PC) protocol?",
+    "option_a": "To commit the data twice",
+    "option_b": "To ensure atomicity in distributed transactions by having all participating nodes agree to either commit or abort the transaction together",
+    "option_c": "To backup the database to two different clouds",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "2PC involves a coordinator and participants in 'Prepare' and 'Commit' phases."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Distributed Databases",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'CAP Theorem' in distributed systems?",
+    "option_a": "Consistency, Availability, and Partition Tolerance: You can only have two out of three in a distributed database when a network partition occurs",
+    "option_b": "Computers, Applications, and Programs must work together",
+    "option_c": "Cloud, APIs, and Parallelism are the keys to success",
+    "option_d": "None of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CAP theorem highlights the unavoidable trade-offs in distributed data storage design."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "NoSQL",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does 'BASE' property stand for in NoSQL databases?",
+    "option_a": "Basic Atomic Storage Entry",
+    "option_b": "Basically Available, Soft-state, Eventually consistent",
+    "option_c": "Binary Access System Engine",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BASE is a relaxed consistency model used by NoSQL to achieve high availability and scale."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Advanced Indexing",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Bitmap Indexing' primarily used for?",
+    "option_a": "Storing photos in the database",
+    "option_b": "Indexing columns with low cardinality (few unique values, e.g., Gender, Marital Status) for highly efficient bitwise queries",
+    "option_c": "Speeding up primary key lookups",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bitmap indexes are extremely space-efficient and fast for complex search filtering in data warehouses."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Data Warehousing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How does 'OLAP' differ from 'OLTP'?",
+    "option_a": "OLAP is for daily sales (short queries); OLTP is for long-term reports (long queries)",
+    "option_b": "OLTP is for transaction processing (many short writes/reads); OLAP is for analytical processing (complex aggregate queries on historical data)",
+    "option_c": "They are the same",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "OLTP optimizes for operational speed; OLAP optimizes for deep insightful analysis."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Distributed Databases",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Horizontal Fragmentation' (Sharding)?",
+    "option_a": "Splitting a table into many columns",
+    "option_b": "Splitting a table into groups of rows and storing them on different servers based on a shard key",
+    "option_c": "Deleting half of the data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sharding is the most common way to horizontally scale relational databases."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Distributed Databases",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Vertical Fragmentation' in a distributed DBMS?",
+    "option_a": "Splitting the rows of a table",
+    "option_b": "Splitting the columns of a table across different sites, keeping only the primary key in each fragment to allow reconstruction",
+    "option_c": "Putting data in a vertical folder",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Vertical fragmentation can be used to store personally identifiable info on a more secure server."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Modern Architectures",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Vector Database' primarily used for in modern AI applications?",
+    "option_a": "Storing mathematical formulas",
+    "option_b": "Storing and performing similarity search on high-dimensional vectors (embeddings) generated by Large Language Models",
+    "option_c": "Calculating physics vectors",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Vector databases (like Pinecone, Milvus) empower AI with 'long-term memory' via semantic search."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Advanced Recovery",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'ARIES' algorithm in database recovery?",
+    "option_a": "A security scan from the cloud",
+    "option_b": "A sophisticated recovery algorithm based on 'Write-Ahead Logging' that repeats history, undoes uncommitted transactions, and handles multiple crashes during recovery",
+    "option_c": "A way to delete all logs after commit",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ARIES (Algorithm for Recovery and Isolation Exploiting Semantics) is implemented in many industrial databases."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Data Warehousing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes a 'Snowflake Schema' compared to a 'Star Schema'?",
+    "option_a": "It looks like a snow flake",
+    "option_b": "Dimension tables are normalized into multiple related tables, whereas a Star Schema uses single large denormalized dimension tables",
+    "option_c": "There is no difference",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Snowflake schema saves space through normalization but requires more complex joins."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Distributed Databases",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How does 'Three-Phase Commit' (3PC) improve upon Two-Phase Commit?",
+    "option_a": "It adds a third Cloud backup",
+    "option_b": "It eliminates the 'Blocking' problem of 2PC by introducing a 'Pre-commit' phase that allows participants to safely abort if the coordinator fails",
+    "option_c": "It is exactly the same",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "3PC is non-blocking but more expensive in terms of network communication."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Database Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Polyalphabetic Substitution' in the context of database column encryption?",
+    "option_a": "A type of database indexing",
+    "option_b": "An encryption technique that uses multiple substitution alphabets, making frequency analysis attacks much harder for attackers",
+    "option_c": "Using many fonts in SQL",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is a classic cryptographic principle used in secure data storage."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Big Data",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How does 'MapReduce' handle massive data processing in a cluster?",
+    "option_a": "By using a large map of the world",
+    "option_b": "By dividing a large task into smaller units (Map), processing them in parallel on many nodes, and then combining the results (Reduce)",
+    "option_c": "By compressing the data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MapReduce allows for distributed computation on Petabytes of data across thousands of machines."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Graph Databases",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "When would you prefer a 'Graph Database' (like Neo4j) over a Relational database?",
+    "option_a": "For storing simple user lists",
+    "option_b": "When the data has complex, interconnected relationships that are more important than the data points themselves (e.g., social networks, fraud detection)",
+    "option_c": "For storing image files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Graph databases excel at 'relationship traversal' which is expensive in relational SQL (many joins)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Distributed Concurrency",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Distributed Deadlock Detection' via a Global Wait-for Graph?",
+    "option_a": "Asking every user to wait",
+    "option_b": "Maintaining a graph representing all dependencies across all nodes to find and resolve cycles that span multiple machines",
+    "option_c": "Deleting all transactions and starting over",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Global deadlock occurs when T1 on Site A waits for T2, and T2 on Site B waits for T1."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Columnar Databases",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Why are 'Column-oriented' databases (like BigQuery or ClickHouse) much faster for big analytical queries?",
+    "option_a": "They use fewer columns",
+    "option_b": "They read only the columns required for the query from disk, minimizing I/O for large-scale aggregations",
+    "option_c": "They are in the cloud",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Columnar storage is optimized for data warehousing where you might read 10 columns out of 500."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Parallel Databases",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Shared Nothing' architecture in parallel databases?",
+    "option_a": "Computers that don't share data",
+    "option_b": "An architecture where each processor has its own private memory and its own private disk storage, communicating via an interconnection network",
+    "option_c": "Deleting no data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shared nothing is highly scalable and is used by almost all modern web-scale data systems."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Advanced Indexing",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'Inverted Index' used for most commonly?",
+    "option_a": "Sorting data backwards",
+    "option_b": "Full-text search, where it maps words to the documents (or rows) where they appear",
+    "option_c": "Indexing the primary key",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Inverted index (used in Elasticsearch) allows for lightning-fast keyword search across large text corpora."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Distributed Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Consensus Replication' using the 'Raft' or 'Paxos' protocol?",
+    "option_a": "Asking everyone to vote on what to eat",
+    "option_b": "A leader-follower algorithm that ensures a group of distributed servers agree on a sequence of state changes even if some fail",
+    "option_c": "Deleting all copies of the data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Raft/Paxos form the basis of highly available, consistent distributed systems like etcd (used in K8s)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Normalization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is '5th Normal Form' (5NF) / Join-Project Normal Form?",
+    "option_a": "A high level of security",
+    "option_b": "A advanced normalization level that handles join dependencies, where a table cannot be reconstructed from several smaller tables without losing data integrity",
+    "option_c": "A way to backup the database",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "5NF is rare in practice but theoretically important for multi-valued multi-table dependencies."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Spatial Databases",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'R-Tree' primarily used for?",
+    "option_a": "Sorting text",
+    "option_b": "Indexing spatial and geographic data (points, polygons, lines) for proximity queries",
+    "option_c": "Storing family trees",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "R-Trees allow you to find 'all coffee shops within 1km' very quickly."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Blockchain as DB",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Merkle Tree' in distributed ledger technologies?",
+    "option_a": "A type of family tree",
+    "option_b": "A cryptographic hash tree where each leaf node is a hash of a block of data, used for efficient and secure verification of data integrity",
+    "option_c": "A way to grow computer trees",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Merkle trees ensure that if one bit of data changes in 100GB of storage, the root hash will detect it instantly."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Vector Databases",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In Vector Databases, what is 'HNSW' (Hierarchical Navigable Small World)?",
+    "option_a": "A map of the whole world",
+    "option_b": "A state-of-the-art graph-based algorithm for Approximate Nearest Neighbor (ANN) search, providing sub-linear search time in high-dimensional spaces",
+    "option_c": "A way to encrypt passwords",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HNSW is one of the most popular algorithms for implementing fast RAG (Retrieval-Augmented Generation) in AI apps."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Distributed Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Quorum' in distributed consistency models (R+W > N)?",
+    "option_a": "The maximum number of users",
+    "option_b": "A configuration where the number of successful reads (R) and writes (W) plus the total replicas (N) ensure you always read the latest data",
+    "option_c": "A tool to delete logs",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Quorum-based systems allow you to tune for either higher read speed or higher write consistency."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "NoSQL Types",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Document Store' (like MongoDB) database?",
+    "option_a": "A system to store PDF files only",
+    "option_b": "A NoSQL database that stores data in flexible semi-structured JSON or BSON documents, allowing for dynamic schemas",
+    "option_c": "A way to backup MS Word documents",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Document stores are preferred for fast prototyping and hierarchical data that changes often."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Big Data Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Lambda Architecture' in data engineering?",
+    "option_a": "A high-speed networking cable",
+    "option_b": "A design pattern that processes massive amounts of data using both a batch layer (high accuracy) and a speed layer (low latency) for real-time analysis",
+    "option_c": "An encryption standard",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lambda architecture attempts to provide the best of both worlds: robust history and near-real-time insights."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Database Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Database Hardening'?",
+    "option_a": "Freezing the server with liquid nitrogen",
+    "option_b": "A series of actions (like disabling unused features, changing default accounts, and encrypting connections) to reduce the attack surface of the DB instance",
+    "option_c": "Adding more RAM to the computer",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hardening is a critical step before putting a database into production on the internet."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Object Oriented Database",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Object-Relational Impedance Mismatch'?",
+    "option_a": "When the programmer is tired",
+    "option_b": "The conceptual and technical difference between how data is represented in Object-Oriented code (objects) vs Relational Tables",
+    "option_c": "A hardware cable mismatch",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ORM libraries (like Hibernate or Prisma) bridge this gap but can introduce performance issues if not careful."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "NewSQL",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'NewSQL' (e.g., CockroachDB, Google Spanner)?",
+    "option_a": "A newer version of MySQL",
+    "option_b": "Modern scalable databases that provide the ACID guarantees of traditional RDBMS with the horizontal scalability of NoSQL systems",
+    "option_c": "A database that only saves data once",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NewSQL systems are ideally suited for global-scale mission-critical financial applications."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Query Optimization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Cardinality Estimation' in query optimization?",
+    "option_a": "Counting the stars",
+    "option_b": "The process of predicting how many rows will be returned by various parts of a query plan, allowing for accurate cost prediction",
+    "option_c": "A way to delete database logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Poor cardinality estimates (due to outdated statistics) lead to the engine picking extremely slow query plans."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Availability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Multi-Master Replication'?",
+    "option_a": "Using many computers as monitors",
+    "option_b": "A system where data can be both read and written to multiple database nodes simultaneously, with the system handling synchronization",
+    "option_c": "Copying data to a master disk",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multi-master allows for ultra-high write availability but introduces complex conflict resolution (e.g., 'Last Write Wins')."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Erasure Coding' used for in large-scale storage (like HDFS or S3)?",
+    "option_a": "Deleting the code for better performance",
+    "option_b": "A highly efficient way to provide fault tolerance by splitting data into fragments and calculating redundant data chunks, allowing for recovery from multiple drive failures",
+    "option_c": "Hiding passwords",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Erasure coding is more space-efficient than simple replication (3x mirrored) for giant cloud systems."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Integrity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Business Rule' in database constraints?",
+    "option_a": "A law for the economy",
+    "option_b": "A complex constraint that defines specific data logic (e.g., 'Total balance cannot be less than zero') that is often enforced via triggers or stored procedures",
+    "option_c": "A rule for the boss",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DBMS-enforced business rules are more reliable than application-level checks which can be bypassed via other tools."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Data Types",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'JSONB' data type in Postgres?",
+    "option_a": "A JSON file that is blue",
+    "option_b": "A binary representation of JSON that is pre-parsed and can be indexed, making it much faster for querying than plain JSON text",
+    "option_c": "A way to encrypt data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "JSONB bridges the gap between relational and document-oriented databases."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Database Administration",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Database Grooming' (Vacuuming)?",
+    "option_a": "Cleaning the database with soap",
+    "option_b": "The process of reclaiming space from deleted rows and updating statistics to keep the database running efficiently",
+    "option_c": "Replacing the hard drive",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In MVCC systems (like Postgres), 'Vacuuming' is essential to prevent 'bloat' and maintain speed."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Distributed Processing",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Predicate Pushdown' in distributed query engines?",
+    "option_a": "Pushing the button for data",
+    "option_b": "Sending filtering logic (WHERE clauses) as close to the data source as possible to minimize the amount of data transferred over the network",
+    "option_c": "A way to delete database logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Predicate pushdown is critical for performance in systems like Spark or Hadoop."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Row-Level Security' (RLS)?",
+    "option_a": "Locking the whole table",
+    "option_b": "A security feature that restricts which rows a user can see based on their identity or a boolean condition (e.g., 'manager can only see their department')",
+    "option_c": "Encryption for only one row",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RLS allows building multi-tenant applications securely at the database level."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Transactions",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Linearizability' in distributed consistency?",
+    "option_a": "Drawing data in a line",
+    "option_b": "The strongest form of consistency where every operation appears to occur atomically and instantaneously at some point between its start and finish",
+    "option_c": "Deleting data after it is read",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Linearizability provides users with the most intuitive view of a distributed system, as if it were a single machine."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Tiered Storage'?",
+    "option_a": "Buying many hard drives",
+    "option_b": "Moving data automatically between different storage media (e.g., NVMe SSD, SATA SSD, HDD) based on how frequently it is accessed",
+    "option_c": "Using multiple cloud accounts",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tiered storage (or HSM) optimizes for both high speed and low cost for massive datasets."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Concurrency",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Write-Write Conflict' problem?",
+    "option_a": "Writing at night",
+    "option_b": "When two transactions attempt to update the same record at the same time, necessitating a resolution strategy",
+    "option_c": "Using two different pens for code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Write-write conflicts are the hardest part of distributed multi-master synchronization."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Modern Data Architecture",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Data Lakehouse'?",
+    "option_a": "A house for data",
+    "option_b": "A modern architecture that combines the flexible storage of a Data Lake with the management and performance of a Data Warehouse",
+    "option_c": "A floating server on water",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Data lakehouses (like Databricks) allow for both AI/ML exploration and structured reporting in one place."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Distributed Transactions",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Saga Pattern' for long-running transactions?",
+    "option_a": "A very long story about data",
+    "option_b": "A sequence of local transactions where each one updates the DB and publishes an event; if one fails, 'compensating' transactions are run to undo previous steps",
+    "option_c": "Deleting the database and starting over",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sagas are the standard for maintaining 'eventual consistency' in microservices where ACID 2PC is too expensive."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Database Availability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Disaster Recovery' (DR) in database management?",
+    "option_a": "The computer breaking",
+    "option_b": "The technical process of restoring database service after a catastrophic event, usually involving failover to a georeplicated site",
+    "option_c": "A error in the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "D/R recovery time objective (RTO) and recovery point objective (RPO) are key business metrics."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Query Optimization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Join Reordering' in a query optimizer?",
+    "option_a": "Sorting the columns by name",
+    "option_b": "A complex task of finding the sequence of joins (e.g., (A\u2a1dB)\u2a1dC vs A\u2a1d(B\u2a1dC)) that results in the minimum total disk reads",
+    "option_c": "Deleting unused tables from a join",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The difference between join orders can mean the difference between a 1-second query and a 1-hour query."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Search Engines",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'TF-IDF' in the context of full-text search indexing?",
+    "option_a": "A new database brand",
+    "option_b": "Term Frequency-Inverse Document Frequency: A statistical measure used to evaluate how important a word is to a document in a collection or corpus",
+    "option_c": "A way to encrypt data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TF-IDF is used to rank search results by relevance."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Advanced Recovery",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In ARIES recovery, what is the 'Analysis' pass?",
+    "option_a": "Analyzing the user's code",
+    "option_b": "The first phase after a crash that identifies which transactions were active and which pages were 'dirty' (not yet on disk) at the time of failure",
+    "option_c": "Deleting all database logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Analysis pass sets the stage for Redo and Undo phases."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Concurrency Control",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Optimistic Concurrency Control' (OCC)?",
+    "option_a": "Hoping the computer won't crash",
+    "option_b": "Checking for conflicts only at the end (commit) of a transaction rather than locking data up front, assuming conflicts are rare (optimism)",
+    "option_c": "Always using a password",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "OCC is efficient for high-scale systems where most transactions don't touch the same data rows."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Advanced I/O",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Direct I/O' in a DBMS?",
+    "option_a": "I/O that skips the cable",
+    "option_b": "Bypassing the OS kernel's file system cache so the DBMS can manage its own buffer pool entirely, giving it more predictable performance",
+    "option_c": "Using a faster internet port",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Most expert-level databases (like SQL Server or Oracle) use Direct I/O to avoid 'double buffering' memory waste."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Analytics",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Bit-Slicing' in column databases?",
+    "option_a": "Cutting the CPU into parts",
+    "option_b": "A high-performance aggregation technique where data is stored in slices of bits to allow for ultra-fast parallel calculations in the CPU's SIMD registers",
+    "option_c": "A way to hide passwords",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bit-slicing can significantly speed up massive analytical summations."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 4,
+    "level_topic": "Future Trends",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Serverless Database' (e.g., Aurora Serverless, PlanetScale)?",
+    "option_a": "A database for people without servers",
+    "option_b": "A cloud-native database that automatically scales capacity based on real-time application demand, with the user paying only for what they use",
+    "option_c": "A way to use a different cloud for free",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Serverless databases simplify operations for modern reactive applications."
+  }
+]

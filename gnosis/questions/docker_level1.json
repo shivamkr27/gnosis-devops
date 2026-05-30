@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker Basics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command is used to list all running containers in Docker?",
+    "option_a": "docker list",
+    "option_b": "docker ps",
+    "option_c": "docker show",
+    "option_d": "docker containers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'docker ps' command lists running containers. Use 'docker ps -a' to see all containers including stopped ones."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Images vs Containers",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the relationship between a Docker Image and a Docker Container?",
+    "option_a": "Containers are used to create images",
+    "option_b": "A container is a running instance of an image",
+    "option_c": "They are the same thing",
+    "option_d": "Images are used only for cloud deployments",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Images are read-only templates. A container is a runnable instance of an image."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker Hub",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is Docker Hub?",
+    "option_a": "A tool to build images",
+    "option_b": "A public registry for sharing Docker images",
+    "option_c": "The Docker engine installed on your PC",
+    "option_d": "A programming language",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Docker Hub is the world's largest library and community for container images."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which command is used to download an image from Docker Hub?",
+    "option_a": "docker get",
+    "option_b": "docker pull",
+    "option_c": "docker fetch",
+    "option_d": "docker download",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "docker pull [image_name] fetches the image from the registry."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you run a container in 'detached' mode (in the background)?",
+    "option_a": "-b",
+    "option_b": "-d",
+    "option_c": "-bg",
+    "option_d": "--silent",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The -d flag (detach) runs the container and returns the container ID immediately."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which command is used to stop a running container?",
+    "option_a": "docker kill",
+    "option_b": "docker stop",
+    "option_c": "docker halt",
+    "option_d": "docker end",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "docker stop gracefully shuts down a container by sending a SIGTERM signal."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the 'Docker Daemon'?",
+    "option_a": "A virus that infects containers",
+    "option_b": "The background process that manages Docker objects like images and containers",
+    "option_c": "The command line interface",
+    "option_d": "A type of firewall",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Dockerfile",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which instruction specifies the base image to use in a Dockerfile?",
+    "option_a": "START",
+    "option_b": "FROM",
+    "option_c": "BASE",
+    "option_d": "INIT",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A Dockerfile must begin with a FROM instruction specifying the base image."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Dockerfile",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the difference between CMD and RUN in a Dockerfile?",
+    "option_a": "CMD runs during build, RUN runs during container startup",
+    "option_b": "RUN runs during build to create the image, CMD provides a default command when the container starts",
+    "option_c": "They are identical",
+    "option_d": "CMD is for script files only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RUN executes commands and commits the result to the image layer; CMD sets the entry point behavior."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Ports",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In command 'docker run -p 8080:80 nginx', what does '8080' represent?",
+    "option_a": "The port inside the container",
+    "option_b": "The port on the host machine",
+    "option_c": "The process ID",
+    "option_d": "The memory limit",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Port mapping follows the format [host_port]:[container_port]."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to remove a stopped container?",
+    "option_a": "docker delete",
+    "option_b": "docker rm",
+    "option_c": "docker rmi",
+    "option_d": "docker clean",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "docker rm removes containers. docker rmi removes images."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How can you view the console output (stdout) of a background container?",
+    "option_a": "docker show",
+    "option_b": "docker logs",
+    "option_c": "docker output",
+    "option_d": "docker tail",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "docker logs [container_id] displays the logs for a specific container."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Dockerfile",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which Dockerfile instruction sets the working directory for subsequent instructions?",
+    "option_a": "CD",
+    "option_b": "WORKDIR",
+    "option_c": "DIR",
+    "option_d": "FOLDER",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "WORKDIR creates the directory if it doesn't exist and switches to it for RUN, CMD, etc."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command allows you to run a new command inside an already running container?",
+    "option_a": "docker start",
+    "option_b": "docker exec",
+    "option_c": "docker run",
+    "option_d": "docker attachment",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "docker exec is commonly used to open a shell inside a running container (e.g., docker exec -it [id] bash)."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Images",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Tag' in the context of Docker images?",
+    "option_a": "A label for the developer",
+    "option_b": "A version identifier for an image (e.g., nginx:latest)",
+    "option_c": "A price tag",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tags allow you to differentiate versions of the same image."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the primary difference between a Virtual Machine (VM) and a Docker Container?",
+    "option_a": "Containers use their own Guest OS, VMs share the Host kernel",
+    "option_b": "VMs use their own Guest OS, Containers share the Host OS kernel",
+    "option_c": "VMs are faster than containers",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Because they share the host kernel, containers are much more lightweight and start faster than VMs."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Dockerfile",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to build an image from a Dockerfile in the current directory?",
+    "option_a": "docker create .",
+    "option_b": "docker build -t myimage .",
+    "option_c": "docker image make .",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The dot (.) at the end specifies the build context (current directory)."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Variables",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which flag is used to pass an environment variable to a container during 'docker run'?",
+    "option_a": "-env",
+    "option_b": "-e",
+    "option_c": "-v",
+    "option_d": "-var",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Using -e (or --env) allows you to configure applications inside the container at runtime."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Volumes",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What happens to the data inside a container when the container is deleted, if no volumes are used?",
+    "option_a": "The data is saved to Docker Hub",
+    "option_b": "The data is permanently lost",
+    "option_c": "The data is moved to a backup folder",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Containers are ephemeral; data must be stored in volumes for persistence."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Dockerfile",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which instruction is used to copy files from the host machine to the image during build?",
+    "option_a": "IMPORT",
+    "option_b": "COPY",
+    "option_c": "CLONE",
+    "option_d": "MOVE",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "COPY [src] [dest] is the preferred way to add local files to an image."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Ports",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In a Dockerfile, which instruction informs Docker that the container listens on the specified network ports at runtime?",
+    "option_a": "LISTEN",
+    "option_b": "EXPOSE",
+    "option_c": "OPEN",
+    "option_d": "PORT",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "EXPOSE acts as documentation and an instruction for port mapping, but doesn't actually 'open' the port on the host."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How do you see all Docker images stored locally on your machine?",
+    "option_a": "docker show images",
+    "option_b": "docker images",
+    "option_c": "docker ps -i",
+    "option_d": "docker ls",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'docker images' (or 'docker image ls') command lists locally available images."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the difference between 'docker start' and 'docker run'?",
+    "option_a": "There is no difference",
+    "option_b": "docker run creates and starts a NEW container; docker start restarts an EXISTING stopped container",
+    "option_c": "docker start is only for background tasks",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Use 'docker run' the first time; 'docker start' for returning to a previously created container."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to remove a local Docker image?",
+    "option_a": "docker rm",
+    "option_b": "docker rmi",
+    "option_c": "docker image clean",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'rmi' stands for Remove Image."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which flag allows you to keep STDIN open and allocate a pseudo-TTY for interactive tasks?",
+    "option_a": "-i",
+    "option_b": "-it",
+    "option_c": "-y",
+    "option_d": "-ssh",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "-it is standard for interactive terminal sessions (e.g. running a shell)."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Automation",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Docker Compose'?",
+    "option_a": "A tool for making music in containers",
+    "option_b": "A tool for defining and running multi-container Docker applications using a YAML file",
+    "option_c": "The compiler for Docker",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Docker Compose allows you to manage a stack of services (e.g., App + DB) with a single command."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Naming",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which flag is used to give a custom name to a container during 'docker run'?",
+    "option_a": "-n",
+    "option_b": "--name",
+    "option_c": "-id",
+    "option_d": "--label",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If you don't provide a name, Docker assigns a random one (like 'nostalgic_hopper')."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Dockerfile",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the 'ENTRYPOINT' instruction do in a Dockerfile?",
+    "option_a": "It lists the entry doors of the container",
+    "option_b": "It configures the container to run as an executable, making the command hard to override",
+    "option_c": "It specifies the user who runs the container",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ENTRYPOINT is used when you want a container to behave exactly like a specific command."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Registry",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to upload an image to a registry like Docker Hub?",
+    "option_a": "docker upload",
+    "option_b": "docker push",
+    "option_c": "docker commit",
+    "option_d": "docker sync",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You must tag the image correctly with your username before executing 'docker push'."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command displays detailed information (in JSON format) about a Docker object?",
+    "option_a": "docker show",
+    "option_b": "docker inspect",
+    "option_c": "docker detail",
+    "option_d": "docker json",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "docker inspect can be used on containers, images, volumes, and networks."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which component of Docker is responsible for storing and distributing images?",
+    "option_a": "Docker Engine",
+    "option_b": "Docker Registry",
+    "option_c": "Docker Compose",
+    "option_d": "Docker Desktop",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Docker Hub is the most famous example of a Docker Registry."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to remove all unused Docker data (containers, networks, images)?",
+    "option_a": "docker clear",
+    "option_b": "docker system prune",
+    "option_c": "docker cleanup",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'docker system prune' is a powerful way to reclaim disk space."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Resource Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which flag is used to limit the memory usage of a container during 'docker run'?",
+    "option_a": "-ram",
+    "option_b": "-m (or --memory)",
+    "option_c": "-limit",
+    "option_d": "-res",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Restricting resources prevents a single container from crashing the host machine."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Network",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the default network type for a Docker container?",
+    "option_a": "host",
+    "option_b": "bridge",
+    "option_c": "none",
+    "option_d": "overlay",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'bridge' network allows containers to communicate with each other on the same host."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command maps a local directory to a container directory (Volume) during 'docker run'?",
+    "option_a": "-d",
+    "option_b": "-v",
+    "option_c": "-mount",
+    "option_d": "-s",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "-v [host_path]:[container_path] is the shorthand for host-mounted volumes."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Images",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Docker images are built using a series of read-only layers. What happens when a container is started?",
+    "option_a": "A new read-only layer is added",
+    "option_b": "A thin writable layer is added on top",
+    "option_c": "All layers become writable",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This 'Container Layer' stores all changes made during the container's lifetime."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Dockerfile",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the use of '.dockerignore' file?",
+    "option_a": "To tell Docker to ignore errors",
+    "option_b": "To exclude specific files and directories from being sent to the Docker daemon during build",
+    "option_c": "To hide files inside the container",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This speeds up the build process and keeps sensitive files (like .env) out of the image."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "User Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "By default, Docker containers run as which user?",
+    "option_a": "docker",
+    "option_b": "root",
+    "option_c": "admin",
+    "option_d": "guest",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is a security best practice to switch to a non-root user in your Dockerfile using the 'USER' instruction."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command shows the current version of Docker installed?",
+    "option_a": "docker --version",
+    "option_b": "docker -v",
+    "option_c": "docker version",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "All these variations work to display version information."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Docker CLI",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command is used to add a new tag to an existing local image?",
+    "option_a": "docker label",
+    "option_b": "docker tag",
+    "option_c": "docker rename",
+    "option_d": "docker update",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "docker tag [old_name] [new_name] creates a new reference to the same image ID."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Automation",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the standard filename for the Docker Compose configuration file?",
+    "option_a": "docker.yaml",
+    "option_b": "docker-compose.yml",
+    "option_c": "docker-stack.json",
+    "option_d": "config.docker",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "YAML is the standard format for Docker Compose files."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Volumes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which Docker object is the 'recommended' way to persist data in Docker?",
+    "option_a": "Bind Mounts",
+    "option_b": "Volumes",
+    "option_c": "TMPFS",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Volumes are managed by Docker and are more flexible and portable than host-specific bind mounts."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Registry",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which command is used to log in to a Docker registry?",
+    "option_a": "docker auth",
+    "option_b": "docker login",
+    "option_c": "docker connect",
+    "option_d": "docker signin",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You must be logged in to push images to private registries or Docker Hub."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Resources",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which command is used to see real-time resource usage (CPU, RAM, Network) of running containers?",
+    "option_a": "docker top",
+    "option_b": "docker stats",
+    "option_c": "docker monitoring",
+    "option_d": "docker usage",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "docker stats provides a live stream of data similar to 'top' in Linux."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Dockerfile",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the difference between ADD and COPY in a Dockerfile?",
+    "option_a": "There is no difference",
+    "option_b": "ADD can download files from URLs and untar archives automatically; COPY only copies local files",
+    "option_c": "COPY is faster than ADD",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "COPY is generally preferred for simplicity unless the extra features of ADD are specifically required."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Environment",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you view all environment variables inside a running container?",
+    "option_a": "docker variable",
+    "option_b": "docker exec [id] env",
+    "option_c": "docker inspect [id]",
+    "option_d": "Both B and C",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "inspect shows the configured vars, and 'env' runs the command inside the container to show current values."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Lifecycle",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which flag ensures a container is automatically removed when it stops?",
+    "option_a": "-d",
+    "option_b": "--rm",
+    "option_c": "-auto",
+    "option_d": "-clean",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "--rm is very useful for one-off tasks (like running a compiler) to keep your system clean."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Docker is based on which Linux feature for resource isolation?",
+    "option_a": "Firewall",
+    "option_b": "Control Groups (cgroups) and Namespaces",
+    "option_c": "Inodes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "These kernel features provide the separation of processes, networking, and hardware resources."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Registry",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Docker Search' used for?",
+    "option_a": "Searching for files in a container",
+    "option_b": "Searching Docker Hub for images from the command line",
+    "option_c": "Searching for Docker help online",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "docker search [term] displays popular public images matching the query."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 1,
+    "level_topic": "Basics",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does the 'Moby' whale represent?",
+    "option_a": "The Linux kernel",
+    "option_b": "The Docker project logo",
+    "option_c": "A cloud server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The whale is the iconic mascot of Docker."
+  }
+]

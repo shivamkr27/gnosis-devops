@@ -1,0 +1,813 @@
+[
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Which function is used to allocate memory dynamically but does NOT initialize it?",
+    "option_a": "calloc",
+    "option_b": "malloc",
+    "option_c": "realloc",
+    "option_d": "alloc",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "malloc allocates a block of uninitialized memory on the heap."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What does 'calloc' do besides allocating memory?",
+    "option_a": "Frees previous memory",
+    "option_b": "Sets all bits to zero",
+    "option_c": "Checks for errors only",
+    "option_d": "Encrypts the data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "calloc initializes the allocated memory block to zeros."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Which standard library defines malloc and free?",
+    "option_a": "stdio.h",
+    "option_b": "string.h",
+    "option_c": "stdlib.h",
+    "option_d": "conio.h",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Memory management functions are part of the C Standard Library (stdlib.h)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What is the correct return type of malloc?",
+    "option_a": "int*",
+    "option_b": "void*",
+    "option_c": "char*",
+    "option_d": "NULL",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "malloc returns a generic void pointer that can be cast to any type."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "To open a file for writing in C, which mode string is used in 'fopen'?",
+    "option_a": "r",
+    "option_b": "a",
+    "option_c": "w",
+    "option_d": "x",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "'w' stands for write mode (overwrites if file already exists)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What does `fclose(fptr)` return on success?",
+    "option_a": "1",
+    "option_b": "-1",
+    "option_c": "0",
+    "option_d": "NULL",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "fclose returns 0 for success and EOF on error."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Which function reads a single character from a file?",
+    "option_a": "fputc",
+    "option_b": "fgetc",
+    "option_c": "gets",
+    "option_d": "scanf",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "fgetc is used to read a character from the specified file stream."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What is 'EOF' typical integer value?",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "-1",
+    "option_d": "100",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "EOF is usually defined as -1 in stdio.h."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "If malloc fails to allocate memory, it returns:",
+    "option_a": "0",
+    "option_b": "NULL",
+    "option_c": "Garbage",
+    "option_d": "Runtime Exception",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NULL is returned when the heap cannot fulfill the memory request."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between malloc(n) and calloc(1, n)?",
+    "option_a": "Malloc is faster",
+    "option_b": "Calloc initializes to zero",
+    "option_c": "There is no difference",
+    "option_d": "Malloc requires two arguments",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Both allocate the same amount of memory, but calloc initializes it to zero."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What happens if you use 'realloc' with a size of 0?",
+    "option_a": "Allocates 1 byte",
+    "option_b": "Equivalent to free() in legacy C",
+    "option_c": "Does nothing",
+    "option_d": "Double frees memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Calling realloc(ptr, 0) behaves like free(ptr) in many C implementations."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which mode string opens file for reading and writing (append)?",
+    "option_a": "a+",
+    "option_b": "r+",
+    "option_c": "w+",
+    "option_d": "rw",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "'a+' opens for reading and appending to the end of the file."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does `rewind(fptr)` do?",
+    "option_a": "Closes the file",
+    "option_b": "Moves cursor to the start of the file",
+    "option_c": "Deletes file content",
+    "option_d": "Reopens file in write mode",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "rewind() resets the file position indicator to the beginning of the file."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which function is best for writing a structure to a file?",
+    "option_a": "fprintf",
+    "option_b": "fwrite",
+    "option_c": "fputc",
+    "option_d": "fputs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "fwrite outputs block data (binary), ideal for structures."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the return type of `ftell`?",
+    "option_a": "int",
+    "option_b": "long",
+    "option_c": "FILE*",
+    "option_d": "void",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ftell returns the current file position as a long integer."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you free memory allocated for a 2D array built as array of pointers?",
+    "option_a": "free(arr);",
+    "option_b": "Free each row, then the outer pointer",
+    "option_c": "Use free_2d(arr);",
+    "option_d": "It frees itself when function ends",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every malloc call needs its own corresponding free call."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which mode Opens a binary file only for reading?",
+    "option_a": "r",
+    "option_b": "rb",
+    "option_c": "rt",
+    "option_d": "only_read",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'rb' indicates read mode for binary files."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Does `free(NULL)` cause a crash?",
+    "option_a": "Yes",
+    "option_b": "No, it does nothing",
+    "option_c": "Only on Linux",
+    "option_d": "Depends on the data type",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The standard C specification states that free(NULL) has no effect."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "What happens if 'realloc' cannot expand the memory block in place?",
+    "option_a": "It fails and returns NULL",
+    "option_b": "It allocates a new block, copies data, and frees old block",
+    "option_c": "It waits until space is available",
+    "option_d": "It overwrites adjacent memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "realloc finds a new location if the current one cannot be resized, handles copy and free."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "If `fseek(fptr, 0, SEEK_END)` returns 0, what does `ftell(fptr)` give?",
+    "option_a": "0",
+    "option_b": "Total file size in bytes",
+    "option_c": "Pointer to the end",
+    "option_d": "EOF",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "fseek to the end makes the cursor point at the very last position, which is the file size."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Why check the return of realloc using a temporary pointer?",
+    "option_a": "Efficiency",
+    "option_b": "To prevent memory leak if NULL is returned",
+    "option_c": "Syntax requirements",
+    "option_d": "To avoid compiler warnings",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If realloc fails and you assign NULL directly to the original pointer, you lose reference to old memory."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Which function is used for buffered file I/O flushing?",
+    "option_a": "freset",
+    "option_b": "fflush",
+    "option_c": "fclear",
+    "option_d": "fclean",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "fflush forces the writing of buffered output data to the disk."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "A program uses malloc but never calls free. What occurs?",
+    "option_a": "Segmentation fault",
+    "option_b": "Memory leak",
+    "option_c": "Automatic garbage collection",
+    "option_d": "CPU usage spike",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Memory stays allocated until the process dies, reducing available system memory."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "How do you check for end-of-file after reading using `feof`?",
+    "option_a": "Before the read operation",
+    "option_b": "After a read attempt failed",
+    "option_c": "Immediately when opening file",
+    "option_d": "Only for binary files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "feof is only set after a read operation tries to read past the end of file."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "What is the second parameter of `fread`?",
+    "option_a": "File pointer",
+    "option_b": "Size of each element to read",
+    "option_c": "Number of elements",
+    "option_d": "Buffer address",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "fread(buffer, size, count, file_ptr); the 2nd param is size of one record."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Can malloc allocate memory for zero bytes?",
+    "option_a": "Illegal, returns NULL",
+    "option_b": "Implementation defined (NULL or unique pointer)",
+    "option_c": "Infinite loop",
+    "option_d": "Always returns address 0x1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The behavior of malloc(0) depends on the implementation, but it shouldn't crash."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Which error flag should be cleared if you want to retry reading from a file?",
+    "option_a": "EOF",
+    "option_b": "clearerr()",
+    "option_c": "clreof()",
+    "option_d": "resetf()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "clearerr() resets the EOF and error indicators for a stream."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "What happens if you `free` the same pointer twice?",
+    "option_a": "Memory is doubly freed",
+    "option_b": "Undefined behavior (often crash)",
+    "option_c": "Ignore second time",
+    "option_d": "Compiles but doesn't run",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Double freeing leads to memory corruption and undefined behavior."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "Result of `p = malloc(10); p++; free(p);`?",
+    "option_a": "Frees last 9 bytes",
+    "option_b": "Undefined behavior/Runtime crash",
+    "option_c": "Memory leak of 1 byte",
+    "option_d": "Correct code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You must pass the exact address returned by malloc to free; modifying p before free is an error."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "What's wrong with: `FILE *f; f = fopen(\"t.txt\", \"r\"); if (f == EOF)...`?",
+    "option_a": "EOF is not a pointer type",
+    "option_b": "Should check for NULL",
+    "option_c": "Both A and B",
+    "option_d": "Nothing",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "fopen returns NULL on failure; EOF is an integer constant for char reading."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "What value does `fseek(f, -5, SEEK_SET)` lead to?",
+    "option_a": "Start of file",
+    "option_b": "End of file",
+    "option_c": "Undefined behavior / error",
+    "option_d": "Wrap around to end",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "You cannot seek to a negative position relative to the start of the file."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "What happens to data in realloc if the new size is smaller than the old one?",
+    "option_a": "All data is lost",
+    "option_b": "Data is truncated to the new size",
+    "option_c": "Expansion error",
+    "option_d": "Memory leak",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Data within the smaller size is preserved; excess data is discarded."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "Difference between `printf` and `fprintf`?",
+    "option_a": "fprintf is faster",
+    "option_b": "fprintf allows output to any file stream",
+    "option_c": "printf only works for strings",
+    "option_d": "fprintf is for binary only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "printf is a wrapper around fprintf(stdout, ...)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "How do you read a line with spaces from a file safely?",
+    "option_a": "scanf(\"%s\")",
+    "option_b": "fgets",
+    "option_c": "gets",
+    "option_d": "fread",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "fgets() is safe as it limits the number of characters read and handles spaces."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "What is `SEEK_CUR`?",
+    "option_a": "Moves cursor to specific byte",
+    "option_b": "Offset from current cursor position",
+    "option_c": "Clears the cursor",
+    "option_d": "Pointer to the cursor",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SEEK_CUR is used in fseek to move relative to the current file pointer."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "Which segment does malloc interact with?",
+    "option_a": "BSS",
+    "option_b": "Stack",
+    "option_c": "Heap",
+    "option_d": "Text",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 'heap' is the memory pool for dynamic memory requests."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "Manual memory management in C is important because:",
+    "option_a": "C has no garbage collector",
+    "option_b": "It gives fine control over performance",
+    "option_c": "Both A and B",
+    "option_d": "It prevents syntax errors",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "C relies on the programmer to free heap memory, offering maximum efficiency at the cost of safety."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "Why do we use 'void*' for malloc's return?",
+    "option_a": "To waste memory",
+    "option_b": "So it can be cast to any pointer type",
+    "option_c": "Because void is larger than int",
+    "option_d": "To indicate it belongs to the CPU",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "malloc is generic and doesn't know what kind of data you will store."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "What is the primary risk of using 'gets()'?",
+    "option_a": "Slow performance",
+    "option_b": "Buffer overflow",
+    "option_c": "Linker failure",
+    "option_d": "Memory fragmentation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "gets() doesn't check buffer limits, making it highly insecure."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "Binary files vs Text files in C:",
+    "option_a": "Binary stores bytes directly; Text uses character encoding",
+    "option_b": "Text is faster",
+    "option_c": "Binary files are read-only",
+    "option_d": "Text files cannot be dynamic",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Binary files store raw data bits, while text files are processed into readable chars (like handling newlines)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "What is a 'FILE' type in C?",
+    "option_a": "An array of chars",
+    "option_b": "A specific identifier for external disk space",
+    "option_c": "A structure holding stream info",
+    "option_d": "A primitive numeric type",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "FILE is an opaque structure containing buffers, error flags, and current positions for a stream."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "Memory fragmentation is caused by:",
+    "option_a": "Pointers being NULL",
+    "option_b": "Repeated inconsistent malloc/free calls leaving 'holes'",
+    "option_c": "Fast CPU speeds",
+    "option_d": "Using long instead of int",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Allocating and freeing different sizes can leave small unusable gaps in the heap."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "Buffer in file I/O helps by:",
+    "option_a": "Compressing data",
+    "option_b": "Reducing expensive physical disk operations",
+    "option_c": "Formatting the string",
+    "option_d": "Encrypting the file",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Reading/writing in chunks (buffering) is much faster than byte-by-byte disk access."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "Which condition indicates `malloc` was successful?",
+    "option_a": "ptr == NULL",
+    "option_b": "ptr != NULL",
+    "option_c": "ptr == 0",
+    "option_d": "*ptr == 0",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Checking that the returned pointer is not NULL confirms allocation success."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "Which functions provide block-wise dynamic allocation?",
+    "option_a": "malloc",
+    "option_b": "calloc",
+    "option_c": "realloc",
+    "option_d": "memset",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "malloc, calloc, and realloc all request blocks from the heap; memset just modifies existing memory."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "Identify standard file streams in C:",
+    "option_a": "stdin",
+    "option_b": "stdout",
+    "option_c": "stderr",
+    "option_d": "stdlog",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "There are three predefined standard streams: input, output, and error."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "Which modes create a new file if it doesn't already exist?",
+    "option_a": "w",
+    "option_b": "a",
+    "option_c": "r",
+    "option_d": "w+",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Write and Append modes create files. Read mode fails if file is missing."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "What can happen if heap memory is not freed properly?",
+    "option_a": "Memory Leaks",
+    "option_b": "Performance Degradation",
+    "option_c": "Process termination by OS due to memory pressure",
+    "option_d": "Hard drive disk failure",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Inadequate freeing consumes RAM, slows systems, and leads to crashes, but doesn't break hardware."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "Which functions can be used to set a file pointer?",
+    "option_a": "fseek",
+    "option_b": "rewind",
+    "option_c": "ftell",
+    "option_d": "setsession",
+    "correct_options": [
+      "A",
+      "B"
+    ],
+    "explanation": "fseek and rewind change the position; ftell only reports it."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 3,
+    "level_topic": "Dynamic Memory Allocation, File I/O",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "Valid ways to write data to a file:",
+    "option_a": "fprintf(f, \"...\")",
+    "option_b": "fputs(\"...\", f)",
+    "option_c": "fgetc(f)",
+    "option_d": "fwrite(&data, size, count, f)",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "fprintf, fputs, and fwrite are output functions; fgetc is for input."
+  }
+]

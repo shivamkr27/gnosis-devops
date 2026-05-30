@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What does DFA stand for in the context of automata theory?",
+    "option_a": "Digital Frequency Array",
+    "option_b": "Deterministic Finite Automaton",
+    "option_c": "Data Flow Analysis",
+    "option_d": "Distributed File Access",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A DFA is a finite-state machine that accepts or rejects strings of symbols and only has one possible transition for each state and input symbol."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Languages",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of the following describes the power of a Non-deterministic Finite Automaton (NFA) compared to a Deterministic Finite Automaton (DFA)?",
+    "option_a": "NFAs are more powerful and can recognize more languages",
+    "option_b": "DFAs are more powerful",
+    "option_c": "NFAs and DFAs have the same expressive power (recognize the same set of languages)",
+    "option_d": "NFAs can recognize context-free languages",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Any NFA can be converted to an equivalent DFA using the subset construction algorithm, meaning they recognize exactly the same set of regular languages."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Expressions",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "What is the closure of a language L, denoted by L* (Kleene Closure)?",
+    "option_a": "The set of all strings of exactly length 2 in L",
+    "option_b": "The set of all possible strings formed by concatenating zero or more strings from L",
+    "option_c": "The reverse of all strings in L",
+    "option_d": "Only the empty string",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "L* includes the empty string and every possible concatenation of strings from L."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "Which components are part of the formal 5-tuple definition of a DFA?",
+    "option_a": "Set of states (Q)",
+    "option_b": "Alphabet (\u03a3)",
+    "option_c": "Transition function (\u03b4)",
+    "option_d": "Stack (S)",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "A DFA is defined by (Q, \u03a3, \u03b4, q0, F). A stack is used in Pushdown Automata, not Finite Automata."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Languages",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "A language is 'Regular' if and only if it can be represented by:",
+    "option_a": "A Finite Automaton",
+    "option_b": "A Regular Expression",
+    "option_c": "A Regular Grammar",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Regular expressions, regular grammars, and finite automata are all equivalent models for representing regular languages."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the start state of a DFA?",
+    "option_a": "A state where the machine ends",
+    "option_b": "The state where the machine begins processing the input string",
+    "option_c": "Every state in the DFA",
+    "option_d": "The set of all states",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A DFA starts processing at a single designated initial state."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In a DFA, can there be more than one start state?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only if there are 10 states",
+    "option_d": "Only for NFAs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By definition, a DFA has exactly one start state."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What are 'Accepting States'?",
+    "option_a": "States where the machine crashes",
+    "option_b": "States that indicate the input string is recognized by the automaton",
+    "option_c": "Only the start state",
+    "option_d": "States with no transitions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If a DFA ends in an accepting (or final) state, the string is in the language."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A transition in a DFA points from a state and an input symbol to:",
+    "option_a": "Exactly one next state",
+    "option_b": "A set of states",
+    "option_c": "The empty set",
+    "option_d": "An output symbol",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The deterministic nature of a DFA means every transition is uniquely defined."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Alphabet",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "In TOC, what is an 'Alphabet' (\u03a3)?",
+    "option_a": "The English alphabet only",
+    "option_b": "A finite, non-empty set of symbols",
+    "option_c": "A list of numbers",
+    "option_d": "An infinite set of characters",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "An alphabet is the basic building block of strings in formal language theory."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the length of the empty string (\u03b5)?",
+    "option_a": "1",
+    "option_b": "0",
+    "option_c": "Undefined",
+    "option_d": "Infinite",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The empty string contains no symbols, so its length is zero."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Expressions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the regular expression 'a|b' match?",
+    "option_a": "The string 'ab'",
+    "option_b": "Either the string 'a' or the string 'b'",
+    "option_c": "Only the empty string",
+    "option_d": "Any string starting with 'a'",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The pipe symbol | represents the union operator in regular expressions."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Expressions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In regular expressions, what does 'a*' represent?",
+    "option_a": "One or more 'a's",
+    "option_b": "Zero or more 'a's",
+    "option_c": "Exactly one 'a'",
+    "option_d": "Any character except 'a'",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The asterisk * is the Kleene star, representing zero or more occurrences."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Expressions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does 'a+' represent in extended regular expressions?",
+    "option_a": "Zero or more 'a's",
+    "option_b": "One or more 'a's",
+    "option_c": "Exactly two 'a's",
+    "option_d": "Optional 'a'",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The plus symbol + represents the positive closure (one or more)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Languages",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "If L is a regular language, its complement is:",
+    "option_a": "Always regular",
+    "option_b": "Never regular",
+    "option_c": "Context-free but not regular",
+    "option_d": "Recursive but not regular",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Regular languages are closed under complementation."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Languages",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "The union of two regular languages is:",
+    "option_a": "Always regular",
+    "option_b": "Sometimes regular",
+    "option_c": "Always context-free",
+    "option_d": "None of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Regular languages are closed under the union operation."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In an NFA, a single transition can lead to:",
+    "option_a": "Zero or more states",
+    "option_b": "Exactly one state",
+    "option_c": "Only the final state",
+    "option_d": "No states",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Non-determinism allows the machine to be in multiple states simultaneously."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "NFA",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is an \u03b5-transition in an NFA?",
+    "option_a": "A transition that requires input",
+    "option_b": "A transition that occurs without consuming any input symbol",
+    "option_c": "A transition to an error state",
+    "option_d": "A transition that repeats the current state",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "\u03b5-transitions allow the automaton to change state 'automatically'."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "DFA vs NFA",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "To convert an NFA with N states to an equivalent DFA, the resulting DFA can have up to:",
+    "option_a": "N states",
+    "option_b": "N^2 states",
+    "option_c": "2^N states",
+    "option_d": "N! states",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The power set construction can result in an exponential number of states."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Grammars",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A grammar consists of which four components?",
+    "option_a": "Input, Output, State, Tape",
+    "option_b": "Terminals, Non-terminals, Productions, Start symbol",
+    "option_c": "Tokens, Lexemes, Nodes, Edges",
+    "option_d": "Alphabets, Languages, Strings, Symbols",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A grammar is formally defined as G = (V, \u03a3, P, S)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Grammar",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a right-linear grammar, every production is of what form?",
+    "option_a": "A -> wB or A -> w",
+    "option_b": "A -> Bw",
+    "option_c": "AB -> CD",
+    "option_d": "A -> BC",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Right-linear grammars generate regular languages."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Languages",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A language is defined as:",
+    "option_a": "A set of all possible strings",
+    "option_b": "A subset of the set of all strings over an alphabet",
+    "option_c": "A single word",
+    "option_d": "A machine description",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "L \u2286 \u03a3* is the formal definition of a language."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the result of concatenating strings 'abc' and 'def'?",
+    "option_a": "abcdef",
+    "option_b": "abc def",
+    "option_c": "defabc",
+    "option_d": "abc+def",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Concatenation involves placing strings end-to-end."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "If |x| = 3 and |y| = 4, what is |xy|?",
+    "option_a": "7",
+    "option_b": "12",
+    "option_c": "34",
+    "option_d": "Unknown",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The length of concatenated strings is the sum of their individual lengths."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Kleene Star",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "\u03a3* is always:",
+    "option_a": "Finite",
+    "option_b": "Infinite",
+    "option_c": "Empty",
+    "option_d": "A subset of \u03a3",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "For any non-empty alphabet, the set of all possible strings is infinitely large."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Kleene Star",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Does \u03a3* always contain the empty string \u03b5?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only if \u03a3 contains 0",
+    "option_d": "Only if \u03a3 is empty",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "\u03a3* is the set of strings made of 0 or more symbols from \u03a3. 0 symbols means \u03b5."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Dead State' in a DFA?",
+    "option_a": "A final state",
+    "option_b": "A non-final state from which the machine can never reach a final state",
+    "option_c": "The start state",
+    "option_d": "A state with no transitions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dead states (or trap states) are used to handle invalid input sequences."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Pumping Lemma",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "The Pumping Lemma for regular languages is an example of:",
+    "option_a": "A constructive proof",
+    "option_b": "A necessary condition for regularity",
+    "option_c": "A sufficient condition for regularity",
+    "option_d": "A way to build a machine",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If a language is regular, it must satisfy the pumping lemma. Failing it proves non-regularity."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Chomsky Hierarchy",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Regular languages are also known as Type-___ languages in the Chomsky hierarchy.",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "2",
+    "option_d": "3",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Regular grammars are Type-3, the most restricted class."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of these is NOT a formal part of a DFA?",
+    "option_a": "V (Set of variables)",
+    "option_b": "Q (Set of states)",
+    "option_c": "\u03a3 (Alphabet)",
+    "option_d": "F (Final states)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Variables (V) are used in Context-Free Grammars, not Finite Automata."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "DFA vs NFA",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which is more efficient for execution in a real computer program?",
+    "option_a": "NFA",
+    "option_b": "DFA",
+    "option_c": "Both are same",
+    "option_d": "Neither can be executed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DFAs are faster because they don't require tracking multiple states at once."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Expressions",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What does the '.' represent in many regex engines?",
+    "option_a": "End of string",
+    "option_b": "Any single character",
+    "option_c": "Literal dot",
+    "option_d": "Zero characters",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In standard regex, the dot is a wildcard for one character."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Expressions",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the equivalent regular expression for the language containing only 'aa'?",
+    "option_a": "a*",
+    "option_b": "a+",
+    "option_c": "aa",
+    "option_d": "a|a",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Concatenation of 'a' and 'a' gives 'aa'."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Can a DFA have multiple final states?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only if N > 2",
+    "option_d": "Only if it is non-deterministic",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A DFA has a set of final states F \u2286 Q, which can contain any number of states."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "The reverse of the string 'abc' is:",
+    "option_a": "abc",
+    "option_b": "cba",
+    "option_c": "bac",
+    "option_d": "cab",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Reversing string order."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Languages",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is the intersection of two regular languages always regular?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for finite languages",
+    "option_d": "Only for singleton sets",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Regular languages are closed under intersection."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Languages",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is the reverse of a regular language always regular?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Depends on the machine",
+    "option_d": "Only if it is a DFA",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Regular languages are closed under reversal."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does a 'Sink State' refer to?",
+    "option_a": "The starting state",
+    "option_b": "A non-accepting state from which no transition leads to an accepting state",
+    "option_c": "An accepting state",
+    "option_d": "A state with transitions to all other states",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sinks catch strings that can never be accepted."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Expressions",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What string is matched by the regex 'a'?",
+    "option_a": "Empty string",
+    "option_b": "The single character 'a'",
+    "option_c": "Any string containing 'a'",
+    "option_d": "Any string starting with 'a'",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A literal character in regex matches exactly that character."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "A DFA 'Accepts' a string if:",
+    "option_a": "It reads the last character",
+    "option_b": "It ends in a final state after reading the whole string",
+    "option_c": "It has no errors",
+    "option_d": "It moves at least 3 times",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The condition for acceptance is the final state after the input is exhausted."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Expressions",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the equivalent regular expression for the set of all binary strings?",
+    "option_a": "0|1",
+    "option_b": "(0|1)*",
+    "option_c": "1*",
+    "option_d": "(0,1)*",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "\u03a3* where \u03a3={0,1}."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Alphabet",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Can an alphabet \u03a3 be empty?",
+    "option_a": "Yes",
+    "option_b": "No, it must be non-empty",
+    "option_c": "Only if the language is empty",
+    "option_d": "Only for Turing machines",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By definition, an alphabet is a non-empty set of symbols."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "The set of all strings over \u03a3 including \u03b5 is denoted by:",
+    "option_a": "\u03a3+",
+    "option_b": "\u03a3*",
+    "option_c": "\u03a3^n",
+    "option_d": "\u03a3-",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kleene Star operator."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Strings",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "The set of all strings over \u03a3 EXCLUDING \u03b5 is denoted by:",
+    "option_a": "\u03a3*",
+    "option_b": "\u03a3+",
+    "option_c": "\u03b5-\u03a3",
+    "option_d": "\u03a3!",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Positive closure operator \u03a3+ = \u03a3* - {\u03b5}."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Languages",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "A 'Finite Language' is:",
+    "option_a": "Always regular",
+    "option_b": "Never regular",
+    "option_c": "Sometimes regular",
+    "option_d": "Only for DFAs",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "You can always build a regular expression or DFA for a finite set of strings."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Finite Automata",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "If a DFA has N states, what is the maximum number of transitions it can have if the alphabet has S symbols?",
+    "option_a": "N + S",
+    "option_b": "N * S",
+    "option_c": "N^S",
+    "option_d": "S^N",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every state must have exactly one transition for every symbol in the alphabet."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "NFA",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Every DFA is also technically an NFA.",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Only for binary alphabets",
+    "option_d": "Only if it has one final state",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A DFA is a restricted form of an NFA."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "NFA",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In an NFA, if there is no transition for a symbol from a certain state, what happens?",
+    "option_a": "The machine crashes",
+    "option_b": "That branch of computation effectively 'dies' or rejects",
+    "option_c": "The machine stays in the same state",
+    "option_d": "The input is ignored",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Non-deterministic branches only continue if a valid transition exists."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 1,
+    "level_topic": "Regular Expressions",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which operator has the highest precedence in regular expressions?",
+    "option_a": "Union (|)",
+    "option_b": "Concatenation",
+    "option_c": "Kleene Star (*)",
+    "option_d": "They all have the same precedence",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Kleene Star is applied first, then concatenation, then union."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 1,
+    "level_topic": "Topic 50",
+    "question_type": "easy",
+    "timer_seconds": 45,
+    "question_text": "Sample question 50 for Theory of Computation (FLAT) Level 1?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 50 of Theory of Computation (FLAT) Level 1."
+  }
+]

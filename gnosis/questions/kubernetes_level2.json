@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Pod Lifecycle",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is an 'Init Container' in Kubernetes?",
+    "option_a": "The main container that runs the app",
+    "option_b": "A specialized container that runs before app containers in a Pod, often used for setup scripts or waiting for dependencies",
+    "option_c": "A container that starts only when an error occurs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Init containers must complete successfully before app containers can start."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Health Checks",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which probe is used to determine if a container is ready to start accepting traffic?",
+    "option_a": "Liveness Probe",
+    "option_b": "Readiness Probe",
+    "option_c": "Startup Probe",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If a readiness probe fails, the endpoints controller removes the Pod's IP address from the endpoints of all Services that match the Pod."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Health Checks",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What happens if a 'Liveness Probe' fails consistently?",
+    "option_a": "The pod is marked as unhealthy but remains running",
+    "option_b": "The kubelet kills the container, and the container is subjected to its restart policy",
+    "option_c": "The whole node is rebooted",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Liveness probes tell K8s when a container needs to be restarted (e.g. it's in a deadlock)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Headless Service'?",
+    "option_a": "A service with no name",
+    "option_b": "A service where ClusterIP is set to 'None', allowing you to get a list of Pod IPs directly via DNS instead of a single proxy IP",
+    "option_c": "A service that is not exposed to the internet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Headless services are commonly used with StatefulSets for service discovery like in peer-to-peer applications."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the difference between a Role and a ClusterRole in RBAC?",
+    "option_a": "Role is for users, ClusterRole is for robots",
+    "option_b": "Role is limited to a single Namespace; ClusterRole is cluster-scoped and can be used across all namespaces",
+    "option_c": "There is no difference",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Use ClusterRole for resources like Nodes or for common permissions across the entire cluster."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which object connects a 'ServiceAccount' to a 'Role'?",
+    "option_a": "RoleLink",
+    "option_b": "RoleBinding",
+    "option_c": "AccessRule",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RoleBinding grants permissions defined in a role to a user or a group of users."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Scheduling",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What are 'Taints' and 'Tolerations' used for?",
+    "option_a": "To speed up the cluster",
+    "option_b": "To ensure that pods are NOT scheduled onto inappropriate nodes (Taints) unless the pod has a matching Toleration",
+    "option_c": "To delete old pods",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Taints allow a node to repel a set of pods."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Scheduling",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Node Affinity'?",
+    "option_a": "The love between nodes",
+    "option_b": "A set of rules used by the scheduler to determine which nodes are eligible for pod placement based on labels on the nodes",
+    "option_c": "A ways to delete nodes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Affinity is like nodeSelector but more flexible (e.g. soft vs hard requirements)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Resource Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the difference between 'Resources Requests' and 'Resources Limits'?",
+    "option_a": "Requests are for memory, Limits are for CPU",
+    "option_b": "Requests define the MINIMUM resources a pod needs to start; Limits define the MAXIMUM resources a pod can consume",
+    "option_c": "They are the same",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Scheduler uses Requests; Kubelet/Kernel enforces Limits."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Jobs",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Job' object used for in Kubernetes?",
+    "option_a": "Running a background service",
+    "option_b": "Running a task to completion (e.g. batch processing, database migration) and then stopping",
+    "option_c": "Paying the developers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unlike Deployments, Jobs expect their pods to terminate successfully."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Jobs",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you run a task automatically on a schedule (e.g. every midnight)?",
+    "option_a": "Using a Service",
+    "option_b": "Using a CronJob",
+    "option_c": "Using a DaemonSet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CronJobs create Jobs at specified intervals using standard cron syntax."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "DaemonSet",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'DaemonSet'?",
+    "option_a": "A set of manager nodes",
+    "option_b": "A controller that ensures that all (or some) nodes run a copy of a specific Pod (e.g. for logging, monitoring, or networking)",
+    "option_c": "A secret group of pods",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "When a new node is added to the cluster, the DaemonSet automatically adds the pod to it."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Multi-container Pods",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Sidecar' pattern?",
+    "option_a": "A pod that follows another pod",
+    "option_b": "A secondary container in a pod that enhances or extends the functionality of the main application container (e.g. log shipper, proxy)",
+    "option_c": "A backup server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sidecars help separate concerns (e.g. the app doesn't need to know how to ship logs to ELK)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does a 'LoadBalancer' type service do in a cloud environment (AWS/GCP/Azure)?",
+    "option_a": "It calculates the load on the CPU",
+    "option_b": "It automatically provisions an external cloud Load Balancer that routes traffic to your service",
+    "option_c": "It deletes old pods to balance load",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is the easiest way to expose a service to the public internet."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Deployment",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you roll back a deployment 'my-app' to its previous version?",
+    "option_a": "kubectl rollback deployment my-app",
+    "option_b": "kubectl rollout undo deployment my-app",
+    "option_c": "kubectl delete deployment my-app and re-apply",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Undo allows quick recovery if a new image version has bugs."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Config",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What happens if you update a Secret or ConfigMap that is mounted as a VOLUME in a pod?",
+    "option_a": "Nothing, the pod must be restarted",
+    "option_b": "The files inside the pod are eventually updated automatically (usually within a minute)",
+    "option_c": "The pod crashes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pods can react to config changes without restart if the app is designed to watch file changes."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'ServiceAccount'?",
+    "option_a": "An account for the developers",
+    "option_b": "An identity created for processes (pods) to define what they can do via the Kubernetes API",
+    "option_c": "A billing account",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By default, pods use the 'default' service account which has very limited permissions."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Labels",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command allows you to label an existing pod 'nginx' with 'env=prod'?",
+    "option_a": "kubectl add label pod nginx env=prod",
+    "option_b": "kubectl label pod nginx env=prod",
+    "option_c": "kubectl tag pod nginx prod",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Imperatively adding labels is useful for ad-hoc organization."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Health Checks",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Startup Probe' used for?",
+    "option_a": "To speed up the start",
+    "option_b": "To protect slow-starting containers by disabling liveness and readiness checks until the startup probe succeeds",
+    "option_c": "To name the pod",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It avoids premature killing of a container that just takes a long time to initialize."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Resource Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'LimitRange'?",
+    "option_a": "The maximum number of nodes",
+    "option_b": "An object that sets default and min/max resource constraints for individual containers in a namespace",
+    "option_c": "A billing limit",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LimitRanges prevent users from creating gigantic pods or pods with no limits at all."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Resource Management",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'ResourceQuota'?",
+    "option_a": "Limits on a single pod",
+    "option_b": "Constraints that limit aggregate resource consumption (e.g. max total CPU, max total Pods) per Namespace",
+    "option_c": "The cost of the cluster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Quotas are essential in multi-tenant clusters to ensure fair resource distribution between teams."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Commands",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between 'kubectl get' and 'kubectl describe'?",
+    "option_a": "'get' is for users, 'describe' is for robots",
+    "option_b": "'get' lists basic info; 'describe' provides exhaustive details, status conditions, and recent events",
+    "option_c": "There is no difference",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Always check 'describe' if a pod is in CrashLoopBackOff or Pending."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'Ingress' resource?",
+    "option_a": "A type of pod",
+    "option_b": "An API object that manages external access to the services in a cluster, typically HTTP (providing load balancing, SSL termination, and name-based virtual hosting)",
+    "option_c": "A ways to delete services",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Ingress acts as a smart router/gateway for your cluster."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Pod Lifecycle",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does the 'CrashLoopBackOff' status mean?",
+    "option_a": "The pod is fine",
+    "option_b": "The container is crashing repeatedly, and Kubernetes is waiting longer and longer between restart attempts to save resources",
+    "option_c": "The node has lost power",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It indicates an application-level bug or a misconfiguration that causes immediate exit."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Objects",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which object would you use to ensure a pod runs on EVERY node in the cluster?",
+    "option_a": "Deployment",
+    "option_b": "DaemonSet",
+    "option_c": "ReplicaSet",
+    "option_d": "StatefulSet",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DaemonSets are perfect for logging and monitoring agents."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What information does 'Reclaim Policy' in a PersistentVolume define?",
+    "option_a": "How to get a refund",
+    "option_b": "What happens to the volume data when the PVC is deleted (e.g. Retain, Recycle, Delete)",
+    "option_c": "The backup schedule",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Retain means the data stays even if the claim is gone."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'SecurityContext' in a Pod spec used for?",
+    "option_a": "Setting the user password",
+    "option_b": "Defining privilege and access control settings for a Pod or Container (e.g. runAsUser, allowPrivilegeEscalation, capabilities)",
+    "option_c": "Creating a secret",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's vital for hardening the container (e.g. forcing it to run as a non-root user)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Scaling",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'HPA' (Horizontal Pod Autoscaler)?",
+    "option_a": "A tool to scale the cluster nodes",
+    "option_b": "An object that automatically scales the number of Pods in a deployment based on observed CPU utilization or other metrics",
+    "option_c": "A human-powered scaling service",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HPA helps handle traffic spikes by spinning up more replicas automatically."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Events",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to watch Kubernetes events in real-time?",
+    "option_a": "kubectl watch events",
+    "option_b": "kubectl get events --watch",
+    "option_c": "kubectl tail events",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'--watch' (or '-w') follows the stream of events as they happen."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "kubectl",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you port-forward a local port 8080 to a pod 'myapp' on port 80?",
+    "option_a": "kubectl connect 8080:80 pod myapp",
+    "option_b": "kubectl port-forward pod/myapp 8080:80",
+    "option_c": "kubectl tunnel myapp 80",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Port-forwarding is great for accessing internal services without an Ingress."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Volumes",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is an 'emptyDir' volume?",
+    "option_a": "A volume that is deleted when the node reboots",
+    "option_b": "A temporary directory that is created when a Pod is assigned to a Node and exists as long as that Pod is running on that node",
+    "option_c": "A folder in the cloud",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's useful for scratch space or sharing files between containers in the same pod."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Config",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Can you use a ConfigMap as an environment variable in a Pod?",
+    "option_a": "No, only as files",
+    "option_b": "Yes, using the 'valueFrom' and 'configMapKeyRef' fields",
+    "option_c": "Yes, but only for numbers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This allows apps to read configuration from environment variables without being modified."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Diagnostics",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In 'kubectl get pods', what does the 'READY' column '1/2' mean?",
+    "option_a": "One pod out of two is running",
+    "option_b": "The pod contains 2 containers, but only 1 is currently healthy and ready to serve traffic",
+    "option_c": "The pod is 50% finished building",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This usually indicates that a sidecar started but the main app (or vice versa) is failing readiness check."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'AccessMode' RWO stand for?",
+    "option_a": "Read Write Only",
+    "option_b": "ReadWriteOnce",
+    "option_c": "Run Work Objects",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RWO means the volume can be mounted as read-write by a single node."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Architecture",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Kubelet's primary communication channel with the Control Plane?",
+    "option_a": "Talking directly to etcd",
+    "option_b": "Talking to the API Server",
+    "option_c": "Talking to the Scheduler",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kubelet reports status to the API Server and watches it for new Pod assignments."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "CLI",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you check the resource usage (CPU/RAM) of nodes in the cluster?",
+    "option_a": "kubectl top nodes",
+    "option_b": "kubectl stats nodes",
+    "option_c": "kubectl usage nodes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Requires the 'Metrics Server' component to be installed in the cluster."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Status",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does 'Evicted' pod status mean?",
+    "option_a": "The user deleted the pod",
+    "option_b": "The node was running out of resources (e.g. disk or memory), and the kubelet terminated the pod to save the node",
+    "option_c": "The pod finished its job",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Check if your pod requests and limits are set properly."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Deployment",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In a Deployment spec, what is 'strategy: Type: Recreate'?",
+    "option_a": "Gradually updating pods",
+    "option_b": "Terminating all existing Pods before new ones are created (leads to downtime)",
+    "option_c": "Randomly recreating pods",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Useful if your application doesn't support multiple versions running at the same time."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'CNI' (Container Network Interface)?",
+    "option_a": "A type of network cable",
+    "option_b": "A standard and set of tools for configuring network interfaces for containers (e.g. Flannel, Calico, Weave)",
+    "option_c": "A cloud provider network",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CNI plugins provide the actual network connectivity between pods across the cluster."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Resources",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What happens if a container exceeds its MEMORY limit?",
+    "option_a": "It's throttled (slowed down)",
+    "option_b": "It is terminated with an OOMKilled error",
+    "option_c": "It uses the swap",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Memory is a 'hard' resource; once the limit is hit, the process is killed."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Resources",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What happens if a container exceeds its CPU limit?",
+    "option_a": "It is terminated",
+    "option_b": "It is throttled (it gets less CPU time but keeps running)",
+    "option_c": "It steals CPU from other nodes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CPU is a 'compressible' resource; limits are enforced via throttling (CFS quota)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Admission Control' in Kubernetes?",
+    "option_a": "Tickets for the cluster",
+    "option_b": "A piece of code that intercepts requests to the API Server after authentication but before object persistence (e.g. to enforce policies)",
+    "option_c": "A ways to login to the cluster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Common admission controllers include ResourceQuota and LimitRanger."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "kubectl",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you explain the API object of a Service via CLI?",
+    "option_a": "kubectl get service -o yaml",
+    "option_b": "kubectl explain service",
+    "option_c": "kubectl info service",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'explain' is like a man page for Kubernetes resources."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Commands",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between 'kubectl apply' and 'kubectl replace'?",
+    "option_a": "'apply' is slow, 'replace' is fast",
+    "option_b": "'apply' is incremental and merges changes; 'replace' requires a complete object and overwrites everything",
+    "option_c": "There is no difference",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Apply is the standard declarative way of managing infrastructure."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Nodes",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How do you mark a node as 'unschedulable' to prevent new pods from arriving there?",
+    "option_a": "kubectl stop node [name]",
+    "option_b": "kubectl cordon node [name]",
+    "option_c": "kubectl pause node [name]",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cordoning is the first step before performing maintenance on a node."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Nodes",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does the 'drain' command do to a node?",
+    "option_a": "Clears the cache",
+    "option_b": "Cords the node and then safely evicts all existing pods from it so the node can be taken offline",
+    "option_c": "Deletes the node from the cluster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Drain is used to move workloads off a node before shutdown."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Coredns' in a Kubernetes 1.11+ cluster?",
+    "option_a": "A backup storage",
+    "option_b": "A modular, pluggable DNS server that serves as the cluster's internal DNS",
+    "option_c": "A ways to connect to the cloud",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It replaced the older kube-dns component."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Resource Management",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which unit is used to specify CPU resources in Kubernetes?",
+    "option_a": "Hz",
+    "option_b": "Millicores (m), where 1000m = 1 CPU core",
+    "option_c": "Bps",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "For example, 250m means 25% of one CPU core."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the purpose of 'ImagePullSecrets' in a Pod spec?",
+    "option_a": "To name the image",
+    "option_b": "To provide credentials (like username/password) needed to pull an image from a private container registry",
+    "option_c": "To hide the image from other users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Essential for using repositories that require authentication."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 2,
+    "level_topic": "Architecture",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the function of the 'Cloud Controller Manager'?",
+    "option_a": "To backup the cloud",
+    "option_b": "To link your cluster into your cloud provider's API (e.g. to create load balancers or mount cloud drives)",
+    "option_c": "To pay the cloud bill",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It allows Kubernetes to interact with cloud infrastructure in a provider-agnostic way."
+  }
+]

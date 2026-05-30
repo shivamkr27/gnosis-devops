@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Vertical Scaling",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Vertical Scaling'?",
+    "option_a": "Adding more machines to the network",
+    "option_b": "Increasing the capacity (CPU, RAM) of a single existing machine",
+    "option_c": "Moving the server to a higher building",
+    "option_d": "A styling method for charts",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Vertical scaling (scaling up) involves upgrading the hardware of an existing server."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Load Balancing",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the primary role of a 'Load Balancer'?",
+    "option_a": "To speed up the internet",
+    "option_b": "To distribute incoming network or application traffic across multiple servers",
+    "option_c": "To store backup data",
+    "option_d": "To encrypt passwords",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Load balancers prevent any single server from becoming a bottleneck and increase system availability."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Horizontal Scaling",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Horizontal Scaling'?",
+    "option_a": "Adding more machines to your resource pool",
+    "option_b": "Making the machines smaller",
+    "option_c": "Rotating the server 90 degrees",
+    "option_d": "Sharing code horizontally",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Horizontal scaling (scaling out) involves adding more nodes (servers) to the system."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "CDN",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'CDN' (Content Delivery Network)?",
+    "option_a": "A high-speed internet plan",
+    "option_b": "A distributed network of servers that delivers content based on geography",
+    "option_c": "A database for images",
+    "option_d": "A data encryption algorithm",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CDNs reduce latency by caching content closer to the end-user's physical location."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Caching",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the main purpose of 'Caching'?",
+    "option_a": "To store archival data for 10 years",
+    "option_b": "To store data in a fast-access layer (like RAM) for rapid retrieval",
+    "option_c": "To delete temporary files",
+    "option_d": "To manage server hardware",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Caching improves performance by keeping frequently accessed data in fast memory."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "DNS",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does 'DNS' stand for?",
+    "option_a": "Domain Name System",
+    "option_b": "Data Network Service",
+    "option_c": "Digital Name Server",
+    "option_d": "Distributed Node Storage",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "DNS translates human-friendly domain names (like google.com) into IP addresses."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Availability",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does 'High Availability' mean in system design?",
+    "option_a": "The system is always cheap",
+    "option_b": "The system remains operational and accessible for a high percentage of time",
+    "option_c": "The system can store infinite data",
+    "option_d": "The system has many developers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "High availability aims for minimal downtime, often targeted as '99.99%' (four nines)."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Database Basics",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a major advantage of a Relational Database (SQL)?",
+    "option_a": "No schema needed",
+    "option_b": "Strong data consistency and support for complex ACID transactions",
+    "option_c": "Unlimited speed for all operations",
+    "option_d": "Built-in image processing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SQL databases are excellent for structured data where relationships and consistency are critical."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Proxies",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Reverse Proxy'?",
+    "option_a": "A server that retrieves resources on behalf of a client from one or more servers",
+    "option_b": "A server that blocks the internet",
+    "option_c": "A type of database",
+    "option_d": "A way to backup code",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A reverse proxy (like Nginx) sits in front of web servers and handles requests from clients."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Latency",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Latency' in a network?",
+    "option_a": "The amount of data transferred per second",
+    "option_b": "The time it takes for a request to travel from source to destination",
+    "option_c": "The number of users online",
+    "option_d": "The weight of the silver cables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Latency is the delay in communication between systems."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Scalability",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which type of scaling usually requires a Load Balancer?",
+    "option_a": "Vertical Scaling",
+    "option_b": "Horizontal Scaling",
+    "option_c": "Manual Scaling",
+    "option_d": "Internal Scaling",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Horizontal scaling adds more servers, so a Load Balancer is needed to distribute traffic among them."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Statelessness",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a stateless architecture, where is the session data typically stored?",
+    "option_a": "On the local hard drive of the web server",
+    "option_b": "In a centralized store like Redis or a Database",
+    "option_c": "In the RAM of the CPU",
+    "option_d": "Session data is not allowed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Stateless servers don't store client data locally, allowing any server to handle any request by fetching state from a central store."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Fault Tolerance",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Redundancy' in system design?",
+    "option_a": "Deleting extra code",
+    "option_b": "The duplication of critical components to increase reliability",
+    "option_c": "Making the system slower on purpose",
+    "option_d": "Increasing the price of the server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Redundancy ensures that if one component fails, a backup is ready to take its place."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "DNS",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "When you type a URL in a browser, which server gives you the IP address first?",
+    "option_a": "Database Server",
+    "option_b": "DNS Server",
+    "option_c": "Mail Server",
+    "option_d": "File Server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The DNS server resolves the domain name into an IP address so the browser can connect."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Redundancy",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Single Point of Failure' (SPOF)?",
+    "option_a": "A bug in the code",
+    "option_b": "A part of a system that, if it fails, will stop the entire system from working",
+    "option_c": "A slow database query",
+    "option_d": "An expensive server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SPOFs are avoided by introducing redundancy and high availability."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Database Sharding",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Sharding'?",
+    "option_a": "Encrypting a table",
+    "option_b": "Horizontal partitioning of data across multiple database instances",
+    "option_c": "Merging two databases together",
+    "option_d": "Deleting old logs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sharding splits a large database into smaller, faster, more manageable pieces called data shards."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Throughput",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Throughput'?",
+    "option_a": "The time it takes to process a single request",
+    "option_b": "The number of requests a system can handle in a given time period",
+    "option_c": "The total size of the database",
+    "option_d": "The speed of the CPU",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Throughput measures the total volume of work processed."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Communication",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which protocol is most commonly used for communication between a browser and a web server?",
+    "option_a": "FTP",
+    "option_b": "HTTP/HTTPS",
+    "option_c": "SSH",
+    "option_d": "SMTP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HTTP (Hypertext Transfer Protocol) is the foundation of data communication for the World Wide Web."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is an 'IP Address'?",
+    "option_a": "A person's home address",
+    "option_b": "A unique numerical label assigned to each device connected to a computer network",
+    "option_c": "A type of password",
+    "option_d": "A way to count users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IP addresses identify devices on a network, allowing them to communicate."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Load Balancing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Round Robin' load balancing?",
+    "option_a": "Giving all requests to the fastest server",
+    "option_b": "Distributing requests to each server in a fixed, sequential order",
+    "option_c": "Distributing requests randomly",
+    "option_d": "Storing requests in a circle",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Round Robin is one of the simplest load balancing algorithms."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Caching Strategies",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Write-Through' caching?",
+    "option_a": "Data is written to the cache and then immediately to the database",
+    "option_b": "Data is only written to the cache",
+    "option_c": "Data is written to the database first, then the cache is updated later",
+    "option_d": "Data is written to disk twice",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Write-through ensures consistency between the cache and the database but adds latency to write operations."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Availability",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "If a system has 'Five Nines' of availability, what is its target uptime?",
+    "option_a": "99.9%",
+    "option_b": "99.999%",
+    "option_c": "95.555%",
+    "option_d": "90.00000%",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Five nines (99.999%) corresponds to less than 6 minutes of downtime per year."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "NoSQL",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which of these is a popular NoSQL database?",
+    "option_a": "MySQL",
+    "option_b": "PostgreSQL",
+    "option_c": "MongoDB",
+    "option_d": "Oracle DB",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "MongoDB is a document-oriented NoSQL database."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Caching",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Where does Redis typically store its data for high speed?",
+    "option_a": "Hard Disk Drive (HDD)",
+    "option_b": "Solid State Drive (SSD)",
+    "option_c": "Random Access Memory (RAM)",
+    "option_d": "External USB",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Redis is an in-memory data structure store, making it extremely fast."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Monolith'?",
+    "option_a": "A system where all components are tightly coupled in a single program",
+    "option_b": "A system with many small servers",
+    "option_c": "A type of database index",
+    "option_d": "A stone monument",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Monolithic architecture is the traditional unified model for software development."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Protocols",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which port does HTTPS typically use?",
+    "option_a": "80",
+    "option_b": "443",
+    "option_c": "21",
+    "option_d": "22",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HTTP uses port 80; HTTPS (secure) uses port 443."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Consistency",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "What is 'Eventual Consistency'?",
+    "option_a": "Data is consistent immediately",
+    "option_b": "A guarantee that if no new updates are made, eventually all accesses will return the last updated value",
+    "option_c": "Data will never be consistent",
+    "option_d": "Data is consistent once a month",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Eventual consistency is common in distributed NoSQL databases to allow high availability."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Load Balancing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What are 'Sticky Sessions'?",
+    "option_a": "Websites that load slowly",
+    "option_b": "A feature where all requests from a specific client are routed to the same server for a session",
+    "option_c": "Sessions that never log out",
+    "option_d": "A database backup method",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sticky sessions (session affinity) help maintain locally stored session data on a specific server."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "DNS",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'DNS Caching'?",
+    "option_a": "Storing DNS records in the database",
+    "option_b": "Temporarily storing IP addresses locally to avoid frequent DNS lookups",
+    "option_c": "Deleting DNS records",
+    "option_d": "An internet security protocol",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DNS caching at the browser or OS level speeds up web browsing."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Latency",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which of these is most likely to cause high latency?",
+    "option_a": "A high-bandwidth fiber optic cable",
+    "option_b": "Data traveling across long physical distances (e.g., across oceans)",
+    "option_c": "Using a small font on the website",
+    "option_d": "Having too many monitors",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Physical distance and the number of hops between systems increase latency."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Messaging",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Asynchronous' communication?",
+    "option_a": "The sender and receiver must be active at the same time",
+    "option_b": "The sender sends a message and doesn't wait for an immediate response to continue",
+    "option_c": "Communication that only happens on weekends",
+    "option_d": "Using two phones at once",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Asynchronous communication (often using queues) improves system decoupling and responsiveness."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Database Replication",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Master-Slave' (or Primary-Replica) replication?",
+    "option_a": "All servers can read and write data equally",
+    "option_b": "One server handles all writes, and data is copied to other servers (slaves) for reading",
+    "option_c": "Servers take turns being the master",
+    "option_d": "A way to delete data automatically",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This pattern scales read requests but the Master can be a bottleneck for writes."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Health Checks",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Why do Load Balancers perform 'Health Checks'?",
+    "option_a": "To see if the servers have viruses",
+    "option_b": "To ensure traffic is only sent to servers that are active and responding correctly",
+    "option_c": "To count how many files are on the server",
+    "option_d": "To update the operating system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Health checks allow the load balancer to remove unhealthy servers from the pool automatically."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "API",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is an 'API Gateway'?",
+    "option_a": "A physical door in a data center",
+    "option_b": "A server that acts as an entry point for all API requests, handling tasks like routing and security",
+    "option_c": "A list of IP addresses",
+    "option_d": "A type of database table",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "API Gateways simplify client interactions and centralize security and monitoring."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Object Storage' commonly used for?",
+    "option_a": "Executing complex SQL queries",
+    "option_b": "Storing massive amounts of unstructured data like images, videos, and backups",
+    "option_c": "Running a web server",
+    "option_d": "Storing temporary variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Services like AWS S3 are examples of object storage designed for scalability and durability."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Reliability",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Failover'?",
+    "option_a": "When a system fails and stays down",
+    "option_b": "The automatic switching to a redundant or standby computer server or network upon failure",
+    "option_c": "A way to reset a password",
+    "option_d": "Sending the wrong data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Failover is key to maintaining high availability during hardware or software crashes."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Scaling",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which of these is a disadvantage of Vertical Scaling?",
+    "option_a": "It adds network overhead",
+    "option_b": "It has an upper hardware limit and usually causes downtime during upgrades",
+    "option_c": "It requires complex load balancing",
+    "option_d": "It makes the code harder to write",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You can only add so much RAM or CPU to a single machine before hitting a limit."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "CAP Theorem",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "In the CAP Theorem, what do C, A, and P stand for?",
+    "option_a": "Consistency",
+    "option_b": "Availability",
+    "option_c": "Partition Tolerance",
+    "option_d": "Performance",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "CAP Theorem states a distributed system can only guarantee two out of these three."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Consistency",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Strong Consistency'?",
+    "option_a": "Data is consistent eventually",
+    "option_b": "A guarantee that any read request will return the most recent write or an error",
+    "option_c": "Consistency of code style",
+    "option_d": "No data is ever lost",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Strong consistency is hard to achieve in highly distributed systems without sacrificing availability."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Scalability",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Database 'Indexing' is primarily used to:",
+    "option_a": "Speed up data retrieval",
+    "option_b": "Encrypt sensitive columns",
+    "option_c": "Delete duplicate rows",
+    "option_d": "Compressed the database size",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Indexing allows the database engine to find data without searching every row."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Microservices",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary benefit of Microservices over Monoliths?",
+    "option_a": "Lower hardware cost",
+    "option_b": "Independent deployment and scaling of different parts of the system",
+    "option_c": "Simpler debugging",
+    "option_d": "Zero network latency",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Microservices allow teams to work on and scale different features independently."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Reliability",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Replication'?",
+    "option_a": "Adding more lines of code",
+    "option_b": "Keeping copies of data on multiple servers to increase durability and availability",
+    "option_c": "Moving the database to a new cloud provider",
+    "option_d": "Creating mock data for testing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Replication protects against data loss and helps with read scalability."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Capacity Planning",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What is 'Bandwidth'?",
+    "option_a": "The delay in the network",
+    "option_b": "The maximum rate of data transfer across a network path",
+    "option_c": "The width of the server rack",
+    "option_d": "The number of servers in a cluster",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bandwidth identifies how much data can move through a network connection in a given time."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Load Balancing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Weighted Round Robin'?",
+    "option_a": "Servers are selected by their weight in kilograms",
+    "option_b": "Servers are assigned a weight based on capacity, and more power servers receive more requests",
+    "option_c": "A random selection method",
+    "option_d": "Selecting the server that was added last",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This ensures that more powerful servers handle a larger share of the traffic."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Caching",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Cache Invalidation' usually considered?",
+    "option_a": "The easiest part of system design",
+    "option_b": "One of the most difficult challenges in computer science (maintaining data freshness)",
+    "option_c": "A way to add more data to the cache",
+    "option_d": "A database maintenance tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "As the quote goes: 'There are only two hard things in Computer Science: cache invalidation and naming things.'"
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Networking",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Static IP'?",
+    "option_a": "An address that changes every day",
+    "option_b": "An IP address that is permanently assigned to a computer or device",
+    "option_c": "An address for a website that is down",
+    "option_d": "A secret password",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Static IPs are used for servers that need to be reachable at the same address consistently."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Load Balancing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What layer of the OSI model does a 'Layer 7' Load Balancer operate at?",
+    "option_a": "Network Layer (IP)",
+    "option_b": "Transport Layer (TCP)",
+    "option_c": "Application Layer (HTTP/HTTPS)",
+    "option_d": "Physical Layer",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Layer 7 load balancers can make routing decisions based on URL, cookies, or HTTP headers."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Storage",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of these is a fully managed storage service by AWS?",
+    "option_a": "Nginx",
+    "option_b": "Redis",
+    "option_c": "S3 (Simple Storage Service)",
+    "option_d": "PostgreSQL",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "S3 is highly durable object storage widely used in modern architectures."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Consistency",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a distributed system, a 'Heartbeat' is used to:",
+    "option_a": "Play music in the background",
+    "option_b": "Signal to other nodes that a specific node is still alive and operational",
+    "option_c": "Sync timestamps",
+    "option_d": "Count the number of users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Heartbeats are essential for failure detection in distributed clusters."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 1,
+    "level_topic": "Scalability",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the primary benefit of Database Sharding?",
+    "option_a": "It makes SQL queries easier to write",
+    "option_b": "It allows a database to scale horizontally by distributing data across many servers",
+    "option_c": "It reduces the amount of data stored",
+    "option_d": "It replaces the need for indexes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sharding is used when a single database server can no longer handle the load or store the data."
+  }
+]

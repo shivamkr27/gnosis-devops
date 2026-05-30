@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Scheduling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the primary goal of the 'Completely Fair Scheduler' (CFS) used in modern Linux kernels?",
+    "option_a": "To give everyone 1 second of CPU time",
+    "option_b": "To model an 'ideal, multi-tasking CPU' by tracking 'vruntime' (virtual runtime) for each task and always picking the one with the least vruntime",
+    "option_c": "To prioritize background tasks over user tasks",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CFS uses a Red-Black Tree to efficiently manage and select tasks based on their virtual runtime balance."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Real-time Scheduling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In Real-time systems, what characterizes 'Rate Monotonic' (RM) scheduling?",
+    "option_a": "The scheduler changes rates every minute",
+    "option_b": "A static priority policy where tasks with shorter logic periods (higher rates) are assigned higher priorities",
+    "option_c": "The OS decides at random",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RM is optimal for static priority schedules with periodic tasks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Real-time Scheduling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Earliest Deadline First' (EDF) scheduling?",
+    "option_a": "A dynamic priority scheme where priorities are assigned according to the deadline of the current task (closer deadline = higher priority)",
+    "option_b": "Finishing the oldest task first",
+    "option_c": "Deleting tasks that miss their deadline",
+    "option_d": "None of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "EDF is an optimal dynamic scheduling algorithm for both periodic and aperiodic tasks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Virtualization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In virtualization, what is the 'Hypervisor' (VMM)?",
+    "option_a": "A high-speed monitor",
+    "option_b": "The software layer that creates and runs virtual machines, managing the translation of guest OS requests to physical hardware",
+    "option_c": "A tool to backup the computer",
+    "option_d": "A network security tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hypervisors are either Bare-metal (Type 1) or Hosted (Type 2)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Containers",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What are 'Linux Namespaces' and 'Cgroups' in the context of Docker containers?",
+    "option_a": "The file paths for Docker files",
+    "option_b": "Namespaces provide isolation (process view, networking); Cgroups provide resource limitation (CPU, RAM, I/O)",
+    "option_c": "A way to install Docker on Windows",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "These two kernel features are the fundamental building blocks of modern containerization."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How does 'ASLR' (Address Space Layout Randomization) improve OS security?",
+    "option_a": "By changing the password every hour",
+    "option_b": "By randomly arranging the address space positions of key data areas (stack, heap, libraries), making it harder for attackers to predict memory locations for exploits",
+    "option_c": "By encrypting the motherboard",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ASLR is a standard defense against many types of buffer overflow and ROP (Return-Oriented Programming) attacks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Memory",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'NUMA' (Non-Uniform Memory Access)?",
+    "option_a": "A bug in the memory controller",
+    "option_b": "A memory design for multi-processor systems where memory access time depends on the memory's location relative to the processor (local vs remote)",
+    "option_c": "A way to speed up the BIOS",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NUMA-aware operating systems try to keep a process and its data on the same NUMA node for performance."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Distributed Systems",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Location Transparency' in a Distributed Operating System?",
+    "option_a": "Knowing exactly where every server is",
+    "option_b": "The ability of users and applications to access resources (files/processes) without knowledge of their physical location on the network",
+    "option_c": "Making the screen transparent",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Transparency is a key design goal for making a group of computers appear as a single system."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Inter-Process Communication",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Message Queue' in System V IPC?",
+    "option_a": "A list of emails",
+    "option_b": "A linked list of messages stored within the kernel, allowing processes to exchange data even if they are not running at the same time (asynchronous)",
+    "option_c": "A way to send messages to the user",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Message queues provide structured communication with persistence independent of process lifetimes."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Filesystems",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Log-structured File System' (LFS)?",
+    "option_a": "A system that only writes log files",
+    "option_b": "A filesystem that treats the disk as a circular log and only appends new data and metadata to the end, improving write performance significantly",
+    "option_c": "A filesystem with reverse names",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LFS is optimized for workloads with heavy writes and can offer massive benefits for flash-based storage."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Mandatory Access Control' (MAC) compared to DAC?",
+    "option_a": "Users choose who sees their files (DAC) vs the OS enforcing policy regardless of user wishes (MAC)",
+    "option_b": "MAC is for Apple computers only",
+    "option_c": "There is no difference",
+    "option_d": "MAC is a hardware lock",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "MAC (used in SELinux) is more secure because users cannot accidentally (or maliciously) grant access to sensitive data."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Memory",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Superpages' optimization?",
+    "option_a": "A page that covers the whole RAM",
+    "option_b": "The use of extremely large page frames (e.g., 2MB or 1GB) to reduce TLB misses for memory-intensive applications",
+    "option_c": "Pages for high-priority tasks",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Superpages (or Huge Pages) significantly improve performance for databases and large scientific calculations."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Scheduling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Processor Affinity' (CPU Pinning)?",
+    "option_a": "A processor liking a process",
+    "option_b": "The BIOS/OS attempting to keep a process on the same processor core during its lifetime to maximize cache hit rates",
+    "option_c": "Multiple CPUs sharing the same RAM",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Migrating processes between cores constantly destroys cache performance (Cold Cache problem)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "I/O",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Vectored I/O' (Scatter-Gather)?",
+    "option_a": "Using many mice at once",
+    "option_b": "A technique allowing a single system call to read/write multiple data buffers from/to a single stream in one operation",
+    "option_c": "A type of fiber optic signal",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Scatter-gather (e.g., writev in Unix) reduces the number of expensive system calls required for complex data transfers."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Return-Oriented Programming' (ROP) attack?",
+    "option_a": "A bug in computer programming classes",
+    "option_b": "An advanced exploit technique where an attacker pieces together existing snippets of executable code (gadgets) to bypass security like DEP",
+    "option_c": "When a program returns the wrong value",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ROP is Used to bypass 'No-Execute' (NX/DEP) protections by using the program's own code against it."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Distributed Computing",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In distributed systems, what is 'Migration Transparency'?",
+    "option_a": "Seeing the birds fly",
+    "option_b": "The ability to move a running process (or file) from one machine to another without disturbing its operation or the user's perception",
+    "option_c": "When code moves to the cloud",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Migration transparency is essential for dynamic load balancing in large clusters."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Disk Scheduling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How does the 'Deadline' I/O scheduler in Linux work?",
+    "option_a": "It deletes packets that are late",
+    "option_b": "It maintains separate read and write queues with expiration times to prevent individual requests from being starved",
+    "option_c": "It only writes at night",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deadline scheduler prioritizes reads over writes and ensures every request is eventually serviced."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Filesystems",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Copy-on-Write' (COW) file systems (e.g., Btrfs, ZFS)?",
+    "option_a": "Copying data only when you write it",
+    "option_b": "A filesystem architecture where existing data is never overwritten; changes always create a new version of the data elsewhere on disk",
+    "option_c": "A way to duplicate files for free",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "COW filesystems provide instant snapshots, crash resilience, and easy data rollback."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'Evil Maid' attack in the context of disk encryption?",
+    "option_a": "A physical bug in the charger",
+    "option_b": "An attack where someone with physical access to an unattended device installs malware to capture encryption keys (e.g., during boot)",
+    "option_c": "A virus that deletes the BIOS",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Evil Maid attacks target the unencrypted portion of the boot process (or the user directly)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Kernel Implementation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Kernel Panic'?",
+    "option_a": "When the programmer is scared",
+    "option_b": "A safety measure taken by the OS kernel upon detecting a fatal internal error it cannot safely recover from",
+    "option_c": "When the fan is too loud",
+    "option_d": "A blue screen only on Windows",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In Unix/Linux it's a Panic; in Windows, it's a BSOD (Blue Screen of Death)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Synchronization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Lock Elision' using Intel TSX?",
+    "option_a": "Removing all locks from code",
+    "option_b": "A hardware feature that speculatively executes a critical section without acquiring the lock, only rolling back if a conflict occurs",
+    "option_c": "Encrypting the locks",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lock elision using 'Transactional Synchronization Extensions' can greatly speed up multi-threaded code."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Device Management",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Memory-Mapped I/O' (MMIO)?",
+    "option_a": "Drawing the RAM on a map",
+    "option_b": "Assigning specific physical memory addresses to hardware device registers, allowing the CPU to communicate with devices using standard memory instructions",
+    "option_c": "A network for database servers",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MMIO simplifies hardware communication compared to using special I/O instructions (like x86 'IN' and 'OUT')."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Memory",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Translation Lookaside Buffer' (TLB) 'Flush'?",
+    "option_a": "Cleaning the RAM with water",
+    "option_b": "The process of clearing the CPU's address translation cache (e.g., during a context switch to a process with a different address space)",
+    "option_c": "A way to increase memory speed",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Flushing the TLB prevents old translations from the previous process from being used by the new one."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Kernel",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Loadable Kernel Modules' (LKM) in Linux?",
+    "option_a": "Installing apps from the internet",
+    "option_b": "The ability of a kernel to add or remove code (like drivers) at runtime without needing to reboot the system",
+    "option_c": "A way to use more RAM for the OS",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LKMs give monolithic kernels the flexibility and modularity typically associated with microkernels."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Distributed Systems",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Remote Procedure Call' (RPC)?",
+    "option_a": "Calling a friend for code help",
+    "option_b": "A technique that allows a program to execute a subroutine in another address space (commonly on another computer) as if it were a local call",
+    "option_c": "Sending a text to the server",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RPC is the foundation for distributed application communication (e.g., gRPC)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Filesystems",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Deduplication' in storage systems (like ZFS)?",
+    "option_a": "Deleting half of all files",
+    "option_b": "A feature that identifies and eliminates duplicate blocks of data, storing only one copy to save massive disk space",
+    "option_c": "A security scan",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deduplication is highly effective in virtualized environments where many similar OS instances are stored."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Security Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In Unix/Linux, what does the 'SUID' (Set User ID) permission bit do?",
+    "option_a": "Gives the user a new name",
+    "option_b": "Allows a user to run an executable with the permissions of the file's owner (often root) rather than their own permissions",
+    "option_c": "Sets the password to root",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SUID is used for programs like 'passwd' that need extra privilege to update system files, but it's a security risk if bugged."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced I/O",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the primary used of the 'Epoll' or 'Kqueue' system call?",
+    "option_a": "Counting the number of users",
+    "option_b": "Efficiently monitoring thousands of network sockets for I/O readiness, crucial for high-concurrency servers",
+    "option_c": "Deleting the database",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Epoll is the standard for building scalable web servers (like Nginx) on Linux."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "High availability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Hot-Plugging' hardware?",
+    "option_a": "Hardware that is too hot",
+    "option_b": "The ability to add or remove hardware (like disks/NICs) while the system is running without needing to reboot",
+    "option_c": "Replacing hardware every hour",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hot-plugging is vital for servers that cannot afford downtime for maintenance."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Synchronization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Wait-Free' algorithm in multithreading?",
+    "option_a": "An algorithm with no code",
+    "option_b": "An algorithm that guarantees every thread will finish in a finite number of steps, regardless of the speed or stalling of other threads",
+    "option_c": "An algorithm that never waits for input",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Wait-free algorithms are the strongest form of non-blocking synchronization."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Paging",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'TLB Shootdown' problem?",
+    "option_a": "A bug in the CPU",
+    "option_b": "The need to invalidate TLB entries on ALL processors in a multi-core system after changing a page table entry on one processor",
+    "option_c": "Deleting the BIOS logs",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TLB shootdowns require inter-processor interrupts (IPIs) and can be a major performance bottleneck."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Kernel Implementation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Address Space Isolation' (ASI) such as KPTI?",
+    "option_a": "Isolating neighbors in a building",
+    "option_b": "A hardening feature that separates kernel and user memory mapping to prevent 'Spectre' and 'Meltdown' side-channel attacks",
+    "option_c": "A way to hide the IP address",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "KPTI (Kernel Page Table Isolation) reduces vulnerability but adds some context switch overhead."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Role-Based Access Control' (RBAC)?",
+    "option_a": "Giving Everyone admin rights",
+    "option_b": "A security model where access rights are assigned to 'roles' rather than individual users, simplifying permission management",
+    "option_c": "Only allowing users in certain cities",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RBAC is the standard for enterprise environments with many employees."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Cloud Native OS",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Unikernel'?",
+    "option_a": "A tiny OS for a single user",
+    "option_b": "A specialized, minimal software image where the application code is compiled directly with only the necessary OS library functions, running on a hypervisor",
+    "option_c": "A kernel with only one file",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unikernels offer extremely small attack surfaces and ultra-fast boot times for cloud services."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Data Integrity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Fsync()' call used for?",
+    "option_a": "Syncing a phone to a cloud",
+    "option_b": "Forcing the OS to flush all dirty data for a specific file to physical storage safely, ensuring durability in databases",
+    "option_c": "Syncing time across servers",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Without fsync, a database might successfully write to memory but lose data during a power failure if the OS hasn't written to disk yet."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In computer security, what is 'Side-Channel' analysis?",
+    "option_a": "Listening to the radio",
+    "option_b": "Attacking a system by analyzing physical implementation details (like power consumption or timing) rather than exploiting a logical bug",
+    "option_c": "A way to use a different network port",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Side-channel attacks (like Spectre) can leak sensitive data without ever breaking the OS's access controls."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "System V IPC",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How do you identify a specific IPC object (Semaphore/Shared Memory) in a Unix system?",
+    "option_a": "By using its file path",
+    "option_b": "By its unique 'Key' and 'ID' generated via systems calls like ftok() or shmget()",
+    "option_c": "By using the user's password",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IPC keys allow unrelated processes to find and connect to the same shared resource."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced I/O",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Busy-Waiting' (Polling)?",
+    "option_a": "A process staying in a tight loop checking for an event, consuming 100% CPU",
+    "option_b": "A server that is too busy",
+    "option_c": "Waiting for the fan to spin",
+    "option_d": "None of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Polling is wasteful on general systems but sometimes used in specialized low-latency high-performance code."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'ZFS' (Zettabyte File System)?",
+    "option_a": "A filesystem for tiny memory devices",
+    "option_b": "A highly advanced combined filesystem and volume manager that provides massive scalability, built-in RAID (RAID-Z), and data integrity checking",
+    "option_c": "A way to sort files by name",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ZFS is known for its 'self-healing' properties and protection against silent data corruption."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Cloud Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Live Migration' in cloud datacenters?",
+    "option_a": "Moving the physical server while it is on",
+    "option_b": "Moving a running virtual machine from one physical server to another with zero downtime for the applications inside",
+    "option_c": "A social media feature",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Live migration is used for load balancing and maintenance without interrupting user service."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'No-Execute' (NX) bit in CPU paging?",
+    "option_a": "A bit that prevents the CPU from running",
+    "option_b": "A hardware feature that marks certain memory regions (like the stack) as non-executable to prevent malicious code execution",
+    "option_c": "A way to turn off the computer",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NX (also known as DEP on Windows) is a core defense against stack overflow attacks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Kernel architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Nanokernel'?",
+    "option_a": "A kernel for nanotechnology",
+    "option_b": "An extremely small kernel where even hardware interrupts are handled outside the main kernel in a separate thin layer",
+    "option_c": "A kernel with only one line of code",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Nanokernels represent the extreme end of the microkernel design philosophy."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Distributed Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'GlusterFS' or 'Ceph'?",
+    "option_a": "A video game network",
+    "option_b": "Scale-out distributed filesystems designed for cloud computing and large clusters, treating many nodes as a single storage pool",
+    "option_c": "A security scan for files",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "These systems provide block, file, and object storage in a unified, distributed way."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Scheduling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In Windows, what is 'Priority Boosting'?",
+    "option_a": "Buying a faster CPU",
+    "option_b": "Temporarily increasing a thread's priority (e.g., when it completes I/O or is the focus window) to improve responsiveness",
+    "option_c": "Deleting low-priority tasks",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Priority boosting makes the interactive foreground experience feel much smoother."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Synchronization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Reworking-Set' locking?",
+    "option_a": "Changing the locks on the doors",
+    "option_b": "None of the above",
+    "option_c": "Locking the entire working set of pages for a process",
+    "option_d": "A way to use more memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is a distractor; I meant 'Read-Copy-Update' (RCU) - a synchronization mechanism used in the Linux kernel."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Synchronization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'RCU' (Read-Copy-Update) primarily used for in the Linux kernel?",
+    "option_a": "Copying files to backup",
+    "option_b": "A lock-free mechanism for high-performance reading of data that is rarely updated (e.g., routing tables)",
+    "option_c": "Deleting old user data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RCU allows readers to proceed without any locks, making read-heavy tasks horizontally scalable across many CPUs."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced I/O",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Asynchronous I/O' (AIO)?",
+    "option_a": "I/O that skips the cable",
+    "option_b": "A technique allowing a process to request an I/O operation and immediately continue its work, being notified later when the transfer completes",
+    "option_c": "I/O that is always slow",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AIO is essential for modern high-performance IO-bound applications like databases."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Advanced Address Translation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'IOMMU' (Input-Output Memory Management Unit)?",
+    "option_a": "The RAM for the CPU",
+    "option_b": "A hardware device that translates I/O addresses (e.g., from a network card) to physical memory addresses, providing better isolation and security",
+    "option_c": "A way to backup the computer",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IOMMU enables features like 'DMA Remapping' and is crucial for secure virtualization (VT-d, IOMMU)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What does a 'Socket' represent in the OS?",
+    "option_a": "A physical ethernet port",
+    "option_b": "An endpoint of a two-way communication link between two programs running on a network",
+    "option_c": "A place for the fan",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sockets allow apps to interact with the networking stack via standard descriptor APIs."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 4,
+    "level_topic": "Systems",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which property describes an OS that can process its own source code and build its next version?",
+    "option_a": "Secure",
+    "option_b": "Self-hosting",
+    "option_c": "Efficient",
+    "option_d": "Fast",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Self-hosting is a milestone for OS development where the system is mature enough to sustain its own development."
+  }
+]

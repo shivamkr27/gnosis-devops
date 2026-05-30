@@ -1,0 +1,219 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: gnosis_db
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: gnosis
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d gnosis"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: gnosis_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  api-gateway:
+    build: ./api-gateway
+    container_name: gnosis_api_gateway
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./.env
+    environment:
+      - PORT=3000
+      - JWT_SECRET=${JWT_SECRET}
+      - AUTH_SERVICE=http://auth-service:3001
+      - CONTENT_SERVICE=http://content-service:3002
+      - PROGRESS_SERVICE=http://progress-service:3003
+      - XP_SERVICE=http://xp-service:3004
+      - BATTLE_SERVICE=http://battle-service:3005
+      - NOTIFICATION_SERVICE=http://notification-service:3006
+    depends_on:
+      - auth-service
+      - content-service
+      - progress-service
+      - xp-service
+      - battle-service
+      - notification-service
+
+  frontend:
+    build: ./frontend
+    container_name: gnosis_frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - api-gateway
+
+  auth-service:
+    build: ./auth-service
+    container_name: gnosis_auth_service
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    env_file:
+      - ./.env
+    environment:
+      - PORT=3001
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=gnosis
+      - JWT_SECRET=${JWT_SECRET}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_URL=${REDIS_URL}
+      - PROGRESS_SERVICE_URL=http://progress-service:3003
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  content-service:
+    build: ./content-service
+    container_name: gnosis_content_service
+    restart: unless-stopped
+    ports:
+      - "3002:3002"
+    env_file:
+      - ./.env
+    environment:
+      - PORT=3002
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=gnosis
+      - JWT_SECRET=${JWT_SECRET}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_URL=${REDIS_URL}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  progress-service:
+    build: ./progress-service
+    container_name: gnosis_progress_service
+    restart: unless-stopped
+    ports:
+      - "3003:3003"
+    env_file:
+      - ./.env
+    environment:
+      - PORT=3003
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=gnosis
+      - JWT_SECRET=${JWT_SECRET}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_URL=${REDIS_URL}
+      - CONTENT_SERVICE_URL=http://content-service:3002
+      - XP_SERVICE_URL=http://xp-service:3004
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  xp-service:
+    build: ./xp-service
+    container_name: gnosis_xp_service
+    restart: unless-stopped
+    ports:
+      - "3004:3004"
+    env_file:
+      - ./.env
+    environment:
+      - PORT=3004
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=gnosis
+      - JWT_SECRET=${JWT_SECRET}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_URL=${REDIS_URL}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  battle-service:
+    build: ./battle-service
+    container_name: gnosis_battle_service
+    restart: unless-stopped
+    ports:
+      - "3005:3005"
+    env_file:
+      - ./.env
+    environment:
+      - PORT=3005
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=gnosis
+      - JWT_SECRET=${JWT_SECRET}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_URL=${REDIS_URL}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  notification-service:
+    build: ./notification-service
+    container_name: gnosis_notification_service
+    restart: unless-stopped
+    ports:
+      - "3006:3006"
+    env_file:
+      - ./.env
+    environment:
+      - PORT=3006
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=gnosis
+      - JWT_SECRET=${JWT_SECRET}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_URL=${REDIS_URL}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+volumes:
+  postgres_data:

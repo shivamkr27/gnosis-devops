@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Combinatorics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In how many ways can you arrange the letters of the word 'MATH'?",
+    "option_a": "4",
+    "option_b": "12",
+    "option_c": "16",
+    "option_d": "24",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "The number of permutations of n distinct objects is n!. 4! = 4 x 3 x 2 x 1 = 24."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Combinatorics",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the formula for 'Combinations' (selecting r objects from n)?",
+    "option_a": "n! / (n-r)!",
+    "option_b": "n! / [r! * (n-r)!]",
+    "option_c": "n^r",
+    "option_d": "r^n",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Combinations are used when order does not matter. nCr = n! / (r! * (n-r)!)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Predicate Logic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In logic, what does the 'Universal Quantifier' (\u2200) mean?",
+    "option_a": "There exists at least one",
+    "option_b": "For every element in the domain",
+    "option_c": "Exactly one",
+    "option_d": "No element",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "\u2200x P(x) means P(x) is true for all values of x in the universe of discourse."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Combinatorics",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "Which of these are related to the 'Pigeonhole Principle'?",
+    "option_a": "If you have more pigeons than holes, at least one hole must contain more than one pigeon",
+    "option_b": "It is used to prove the existence of a duplicate or overlap",
+    "option_c": "It only works for prime numbers",
+    "option_d": "It is a fundamental theorem in counting",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "The Pigeonhole Principle is a simple but powerful tool in combinatorics for proving overlaps."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Logic",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Contrapositive' of the statement 'If P, then Q'?",
+    "option_a": "If Q, then P",
+    "option_b": "If not P, then not Q",
+    "option_c": "If not Q, then not P",
+    "option_d": "P and not Q",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A statement and its contrapositive are logically equivalent. If P -> Q, then ~Q -> ~P."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Combinatorics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many ways can you arrange 5 people in a circle?",
+    "option_a": "120",
+    "option_b": "24",
+    "option_c": "60",
+    "option_d": "5",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Circular permutations of n objects are (n-1)!. (5-1)! = 4! = 24."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Relations",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which property is NOT required for a relation to be a 'Partial Ordering' (POSET)?",
+    "option_a": "Reflexivity",
+    "option_b": "Symmetry",
+    "option_c": "Antisymmetry",
+    "option_d": "Transitivity",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A POSET must be Reflexive, Antisymmetric, and Transitive. If it were Symmetric instead of Antisymmetric, it would be an Equivalence Relation."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Set Theory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "According to the Principle of Inclusion-Exclusion, |A \u222a B \u222a C| is equal to:",
+    "option_a": "|A| + |B| + |C|",
+    "option_b": "|A| + |B| + |C| - |A\u2229B| - |A\u2229C| - |B\u2229C| + |A\u2229B\u2229C|",
+    "option_c": "|A| + |B| + |C| - |A\u2229B\u2229C|",
+    "option_d": "|A| * |B| * |C|",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "We add individual sizes, subtract double intersections, and add back the triple intersection to avoid over-counting."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the sum of the degrees of all vertices in a graph with 'e' edges?",
+    "option_a": "e",
+    "option_b": "2e",
+    "option_c": "e^2",
+    "option_d": "v+e",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is the Handshaking Lemma. Each edge contributes 2 to the total sum of degrees (one for each endpoint)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Number Theory",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the Greatest Common Divisor (GCD) of 48 and 18?",
+    "option_a": "2",
+    "option_b": "6",
+    "option_c": "9",
+    "option_d": "12",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Factors of 48: 1,2,3,4,6... Factors of 18: 1,2,3,6,9,18. The largest common factor is 6."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Propositional Logic",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which of the following is equivalent to (P \u2227 Q) \u2192 R?",
+    "option_a": "P \u2192 (Q \u2192 R)",
+    "option_b": "(P \u2192 R) \u2227 (Q \u2192 R)",
+    "option_c": "P \u2228 Q \u2228 R",
+    "option_d": "\u00acP \u2227 \u00acQ \u2227 R",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is known as the Exportation Law. If both P and Q are true then R happens, which is the same as saying if P is true, then Q implying R is a true statement."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Tree Structures",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many edges are in a tree with 'n' vertices?",
+    "option_a": "n",
+    "option_b": "n - 1",
+    "option_c": "n + 1",
+    "option_d": "log n",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A tree is a connected acyclic graph, and it always has exactly n-1 edges."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Functions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If f(x) = 2x + 1 and g(x) = x^2, what is f(g(x))?",
+    "option_a": "(2x + 1)^2",
+    "option_b": "2x^2 + 1",
+    "option_c": "2x + x^2",
+    "option_d": "4x^2 + 1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "f(g(x)) means plug g(x) into f. f(x^2) = 2(x^2) + 1."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Combinatorics",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In how many ways can 10 identical candies be distributed among 3 children so each child gets at least one?",
+    "option_a": "45",
+    "option_b": "36",
+    "option_c": "28",
+    "option_d": "120",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Using stars and bars: put 10 items in 3 bins with n>=1. This is equivalent to putting 7 items in 3 bins with n>=0. Formula: C(7+3-1, 3-1) = C(9, 2) = 36."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the truth value of '\u2203x (x^2 < 0)' for the domain of Real numbers?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Depends on x",
+    "option_d": "Undefined",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "For all real numbers, x^2 is always greater than or equal to 0. So no such x exists."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Set Theory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Symmetric Difference' (A \u0394 B) of two sets A and B?",
+    "option_a": "Elements in both A and B",
+    "option_b": "Elements in (A \u222a B) but not in (A \u2229 B)",
+    "option_c": "The empty set",
+    "option_d": "The total number of sets",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It contains elements that are in exactly one of the two sets."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Counting",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "How many bridge hands (13 cards) can be formed from a standard deck of 52 cards?",
+    "option_a": "P(52, 13)",
+    "option_b": "C(52, 13)",
+    "option_c": "52^13",
+    "option_d": "13!",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Order doesn't matter in a bridge hand, so we use combinations."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Number Theory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Least Common Multiple' (LCM) of 12 and 15?",
+    "option_a": "3",
+    "option_b": "30",
+    "option_c": "60",
+    "option_d": "180",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "LCM(a,b) = (a*b) / GCD(a,b). GCD(12,15) = 3. (12*15)/3 = 180/3 = 60."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Recurrence Relations",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "What is the general solution to the recurrence a_n = a_{n-1} + 2 with a_0 = 1?",
+    "option_a": "a_n = 2n + 1",
+    "option_b": "a_n = 2^n",
+    "option_c": "a_n = n^2 + 1",
+    "option_d": "a_n = n + 2",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Every step adds 2. a_1 = 3, a_2 = 5, a_3 = 7. This is an arithmetic progression: 1 + 2n."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Graph Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which of the following describes a 'Bipartite Graph'?",
+    "option_a": "A graph with two cycles",
+    "option_b": "A graph whose vertices can be partitioned into two independent sets",
+    "option_c": "A graph with exactly two nodes",
+    "option_d": "A graph with no edges",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a bipartite graph, edges only connect a vertex from the first set to one in the second set; no edges exist within a set."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Matrices",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If a relation R is represented by a Boolean Matrix M, what does M^2 represent in terms of Boolean multiplication?",
+    "option_a": "The square of each element",
+    "option_b": "The composition of relation R with itself (R \u2218 R)",
+    "option_c": "The inverse relation",
+    "option_d": "The complement relation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Matrix multiplication using OR and AND (boolean multiplication) corresponds directly to relation composition."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Mathematical Induction",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In 'Strong Induction', we assume the property P(k) is true for:",
+    "option_a": "Only k",
+    "option_b": "All values from the base case up to k",
+    "option_c": "Only the base case",
+    "option_d": "Only even values",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Standard induction only assumes P(k) to prove P(k+1); strong induction assumes everything before k is true."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Set Theory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the relationship between the number of elements in a set A (|A|) and its power set (|P(A)|)?",
+    "option_a": "|P(A)| = |A|^2",
+    "option_b": "|P(A)| = 2^|A|",
+    "option_c": "|P(A)| = |A|!",
+    "option_d": "|P(A)| = 2 * |A|",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Since every element can either be 'in' or 'out' of a subset, there are 2 choices for each of the |A| elements."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Logic",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is the following statement valid? \u2200x (P(x) \u2227 Q(x)) \u2194 (\u2200x P(x) \u2227 \u2200x Q(x))",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for finite domains",
+    "option_d": "Depends on the predicates",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Universal quantification distributes over conjunction."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Combinatorics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many ways can you arrange 3 'A's and 2 'B's in a line?",
+    "option_a": "5!",
+    "option_b": "5! / (3! * 2!)",
+    "option_c": "5! / 3!",
+    "option_d": "2^5",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is a permutation of a multiset. 5! total arrangements, but we divide by the factorials of counts of identical items: 10 ways."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Relations",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Warshall's Algorithm' used for?",
+    "option_a": "Finding all-pairs shortest paths",
+    "option_b": "Finding the transitive closure of a relation",
+    "option_c": "Finding Eulerian circuits",
+    "option_d": "Generating truth tables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Warshall's algorithm is an efficient O(n^3) method to find if there's a path between any two nodes in a graph (transitive closure)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "An 'Euler Path' in a graph visits every:",
+    "option_a": "Vertex exactly once",
+    "option_b": "Edge exactly once",
+    "option_c": "Cycle exactly once",
+    "option_d": "Face exactly once",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Euler paths concern edges; Hamiltonian paths concern vertices."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Counting",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the coefficient of x^2 in the expansion of (x + 2)^4?",
+    "option_a": "6",
+    "option_b": "12",
+    "option_c": "24",
+    "option_d": "48",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Using binomial theorem: C(4,2) * x^2 * (2)^2 = 6 * x^2 * 4 = 24x^2."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Permutations",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If you have 10 people in a race, how many ways can the Gold, Silver, and Bronze medals be awarded?",
+    "option_a": "P(10, 3)",
+    "option_b": "C(10, 3)",
+    "option_c": "10^3",
+    "option_d": "3^10",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Since the medals are distinct (Gold != Silver), order matters. P(10,3) = 10 * 9 * 8 = 720."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Set Theory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the complement of (A \u2229 B)?",
+    "option_a": "A' \u222a B'",
+    "option_b": "A' \u2229 B'",
+    "option_c": "A - B",
+    "option_d": "(A \u222a B)'",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is De Morgan's Law for sets: the complement of the intersection is the union of the complements."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Functions",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "A function f: A \u2192 B is 'Bijections' if it has an inverse. This implies f must be:",
+    "option_a": "Neither injective nor surjective",
+    "option_b": "Both injective and surjective",
+    "option_c": "Symmetric and Reflexive",
+    "option_d": "Constant",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Only bijective functions can be undone consistently (inverted)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which rule of inference is this: (P \u2192 Q) \u2227 (Q \u2192 R) \u2234 (P \u2192 R)?",
+    "option_a": "Modus Ponens",
+    "option_b": "Hypothetical Syllogism",
+    "option_c": "Disjunctive Syllogism",
+    "option_d": "Addition",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's the transitive property of logical implication."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Graph Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "A connected planar graph has 6 vertices and 7 edges. How many regions (faces) does it have in its planar embedding?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Using Euler's formula: V - E + R = 2. 6 - 7 + R = 2. -1 + R = 2. R = 3."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Counting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many bits are needed to represent decimal 50?",
+    "option_a": "5",
+    "option_b": "6",
+    "option_c": "7",
+    "option_d": "8",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "2^5 = 32 (too small). 2^6 = 64 (large enough). So 6 bits."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Logic",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the truth value of '\u2200x (x + 1 > x)' for the domain of all integers?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Depends on x",
+    "option_d": "Undefined",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Adding 1 to any integer always produces a larger integer."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Group Theory",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "An 'Abelian Group' is a group that also satisfies the:",
+    "option_a": "Distributive Law",
+    "option_b": "Commutative Law",
+    "option_c": "Associative Law",
+    "option_d": "Cancellation Law",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In an Abelian group, the order of operation doesn't matter (a * b = b * a)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Counting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is P(n, n) equal to?",
+    "option_a": "1",
+    "option_b": "n",
+    "option_c": "n!",
+    "option_d": "n^n",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Arranging n items out of n items is simply calculating n factorial."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Probability",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Two events A and B are 'Independent' if:",
+    "option_a": "P(A \u2229 B) = P(A) + P(B)",
+    "option_b": "P(A \u2229 B) = P(A) * P(B)",
+    "option_c": "P(A) = P(B)",
+    "option_d": "P(A \u222a B) = 1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The probability of both occurring is the product of their individual probabilities."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Set Theory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "If |A| = 10, |B| = 20, and |A \u2229 B| = 5, what is |A \u222a B|?",
+    "option_a": "30",
+    "option_b": "25",
+    "option_c": "15",
+    "option_d": "35",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "|A \u222a B| = 10 + 20 - 5 = 25."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Number Theory",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "If a and b are coprime, what is GCD(a, b)?",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "a * b",
+    "option_d": "a + b",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Coprime numbers, also known as relatively prime, have no common factors except 1."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Logic",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which of the following is equivalent to \u00ac(P \u2192 Q)?",
+    "option_a": "P \u2227 \u00acQ",
+    "option_b": "\u00acP \u2228 Q",
+    "option_c": "Q \u2192 P",
+    "option_d": "\u00acQ \u2192 \u00acP",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "P \u2192 Q is equivalent to \u00acP \u2228 Q. Negating that gives \u00ac(\u00acP \u2228 Q) = P \u2227 \u00acQ."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Counting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many ways can a committee of 4 be chosen from 10 people?",
+    "option_a": "P(10, 4)",
+    "option_b": "C(10, 4)",
+    "option_c": "10^4",
+    "option_d": "4^10",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Committee members are non-distinct roles, so order does not matter. C(10,4) = 210."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the chromatic number (minimum colors for vertex coloring) of a triangle graph (K_3)?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Every vertex is adjacent to every other vertex, so each must have a unique color."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Number Theory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Fermat's Little Theorem states that if p is prime and a is not divisible by p, then:",
+    "option_a": "a^p \u2261 1 (mod p)",
+    "option_b": "a^{p-1} \u2261 1 (mod p)",
+    "option_c": "a^p \u2261 a (mod p^2)",
+    "option_d": "p divides a",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This result is vital in modular arithmetic and cryptography."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Discrete Structures",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In a Boolean Algebra, what is x + (y * z) equal to using the Distributive Law?",
+    "option_a": "(x + y) * (x + z)",
+    "option_b": "x + y + z",
+    "option_c": "x * y + x * z",
+    "option_d": "x",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "In Boolean algebra, addition (OR) distributes over multiplication (AND)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Counting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 5th row of Pascal's Triangle (starting from row 0: {1})?",
+    "option_a": "1 4 6 4 1",
+    "option_b": "1 5 10 10 5 1",
+    "option_c": "1 3 3 1",
+    "option_d": "1 6 15 20 15 6 1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Row n contains coefficients for (a+b)^n. Row 5 is C(5,0)...C(5,5)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Logic",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which of the following is equivalent to (\u00acQ \u2192 \u00acP)?",
+    "option_a": "P \u2192 Q",
+    "option_b": "Q \u2192 P",
+    "option_c": "\u00acP \u2192 \u00acQ",
+    "option_d": "P \u2227 \u00acQ",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A statement is equivalent to its contrapositive."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Relations",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If relation R consists of {(1,2), (2,3)}, its transitive closure is:",
+    "option_a": "{(1,2), (2,3)}",
+    "option_b": "{(1,2), (2,3), (1,3)}",
+    "option_c": "{(1,2), (2,3), (1,1)}",
+    "option_d": "{(2,1), (3,2)}",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Transitive closure adds the 'missing' links that satisfy transitivity."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "A 'Bridges' in a graph is an edge whose removal:",
+    "option_a": "Deletes a vertex",
+    "option_b": "Increases the number of connected components",
+    "option_c": "Creates a cycle",
+    "option_d": "Halves the edges",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bridges are critical edges that connect different parts of a graph."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 2,
+    "level_topic": "Counting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 0! (Zero factorial)?",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "Infinite",
+    "option_d": "Undefined",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By definition, 0! is 1, which represents the one way to arrange zero objects (the empty arrangement)."
+  }
+]

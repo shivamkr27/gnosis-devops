@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Scheduling Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In Shortest Job First (SJF) scheduling, what happens if several processes have the same burst time?",
+    "option_a": "The scheduler picks one at random",
+    "option_b": "FCFS (First-Come, First-Served) is used to break the tie",
+    "option_c": "The scheduler crashes",
+    "option_d": "The process with the highest ID wins",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "FCFS is the standard tie-breaking rule for most scheduling algorithms."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Scheduling Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the 'Convoy Effect' in FCFS scheduling?",
+    "option_a": "When many small processes are stuck behind one long CPU-bound process",
+    "option_b": "A way to speed up the system",
+    "option_c": "Using multiple CPUs for one task",
+    "option_d": "A bug in the scheduling logic",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Convoy effect leads to poor CPU and device utilization as small tasks wait for a massive one to finish."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What are the three requirements to solve the 'Critical Section' problem?",
+    "option_a": "Speed, Memory, Security",
+    "option_b": "Mutual Exclusion, Progress, and Bounded Waiting",
+    "option_c": "CPU, RAM, DISK",
+    "option_d": "Lock, Unlock, Wait",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Mutual Exclusion (only one in CS), Progress (decisions can be made), and Bounded Waiting (no infinite waiting)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "A 'Binary Semaphore' is functionally equivalent to a:",
+    "option_a": "Counting Semaphore",
+    "option_b": "Mutex (Mutual Exclusion lock)",
+    "option_c": "Queue",
+    "option_d": "Database index",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Binary semaphores take values 0 or 1, primarily used for mutual exclusion."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In the 'Dining Philosophers' problem, what is a common cause of deadlock?",
+    "option_a": "They all eat at the same time",
+    "option_b": "Every philosopher picks up the left fork simultaneously and waits forever for the right fork",
+    "option_c": "They run out of food",
+    "option_d": "The forks are broken",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This classic problem demonstrates resource contention and the risk of circular wait."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Deadlock",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which of these is NOT one of the four necessary conditions for Deadlock?",
+    "option_a": "Mutual Exclusion",
+    "option_b": "Hold and Wait",
+    "option_c": "No Preemption",
+    "option_d": "Circular Progress",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "The four conditions (Coffman conditions) are Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Deadlock",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is the primary used of the 'Banker's Algorithm'?",
+    "option_a": "Calculating interest rates",
+    "option_b": "Deadlock avoidance by checking if a resource allocation leads to an 'Unsafe' state",
+    "option_c": "Sorting database records",
+    "option_d": "Managing user bank accounts",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Banker's algorithm ensures that there is at least one sequence (safe sequence) for all processes to finish."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Memory Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Internal Fragmentation'?",
+    "option_a": "Free space between allocated blocks",
+    "option_b": "Wasted space inside a memory block that is larger than requested but allocated as a fixed-size partition",
+    "option_c": "Memory that is physically broken",
+    "option_d": "Deleting files incorrectly",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fixed-size partitions often lead to internal fragmentation."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Memory Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'External Fragmentation'?",
+    "option_a": "Wasted space inside a block",
+    "option_b": "When total free memory is enough for a request but it is divided into small non-contiguous pieces",
+    "option_c": "Using all the RAM",
+    "option_d": "Files stored on a USB drive",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Variable-size partitions generally lead to external fragmentation over time."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Memory Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In paging, what is the role of a 'Page Table'?",
+    "option_a": "To sort the logic of the code",
+    "option_b": "To map logical page numbers to physical frame numbers",
+    "option_c": "To store the contents of a file",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The page table is a data structure used by the virtual memory system to store the mapping."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Virtual Memory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Page Fault'?",
+    "option_a": "A bug in the website code",
+    "option_b": "An interrupt that occurs when a program tries to access a page that is mapped in the virtual address space but not currently in physical memory",
+    "option_c": "A broken hard drive",
+    "option_d": "A user error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The OS must handle the page fault by bringing the page in from disk."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Virtual Memory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Belady's Anomaly'?",
+    "option_a": "A security vulnerability",
+    "option_b": "A phenomenon where increasing the number of page frames results in MORE page faults for certain access patterns using FIFO replacement",
+    "option_c": "A type of database crash",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Belady's anomaly shows that FIFO is not always the best page replacement strategy."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Virtual Memory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which page replacement algorithm replaces the page that will not be used for the longest period of time in the future?",
+    "option_a": "FIFO",
+    "option_b": "LRU",
+    "option_c": "Optimal (MIN) Algorithm",
+    "option_d": "LFU",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The Optimal algorithm yields the lowest possible page fault rate but is impossible to implement without knowing the future."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is a 'Spinlock'?",
+    "option_a": "A lock for a spinning disk",
+    "option_b": "A lock where the waiting process continuously loops (polls) checking if the lock is available",
+    "option_c": "A lock used for mouse clicks",
+    "option_d": "A very fast database index",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Spinlocks are useful for short wait times where the cost of a context switch is higher than spinning."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Deadlock",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Circular Wait' in deadlock conditions?",
+    "option_a": "Waiting in a circle for a coffee",
+    "option_b": "A set of processes {P0, P1, ..., Pn} exists such that P0 is waiting for a resource held by P1, P1 for P2, ..., and Pn for P0",
+    "option_c": "Retrying the same code in a loop",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Circular wait completes the chain of dependencies that creates a deadlock."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Synchronization",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Bounded-Buffer' problem also known as?",
+    "option_a": "Dining Philosophers",
+    "option_b": "Producer-Consumer Problem",
+    "option_c": "Readers-Writers Problem",
+    "option_d": "Banker's Algorithm",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This problem describes a producer putting items into a buffer and a consumer taking them out."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Segmentation'?",
+    "option_a": "Breaking data for encryption",
+    "option_b": "A memory management scheme that supports the user's view of memory as a collection of logical segments (e.g., Code, Stack, Data)",
+    "option_c": "A fixed-size paging method",
+    "option_d": "Sorting logs by size",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Segmentation uses variable-sized blocks corresponding to logical program components."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Virtual Memory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Thrashing'?",
+    "option_a": "Deleting many files at once",
+    "option_b": "A state where the OS spends more time swapping pages in and out of memory than executing actual instructions",
+    "option_c": "A hardware error in the CPU",
+    "option_d": "A very fast processing mode",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Thrashing usually occurs when the total working set of all processes exceeds physical RAM."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Scheduling",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Preemptive' scheduling?",
+    "option_a": "A scheduler that uses only one CPU",
+    "option_b": "When the OS can interrupt a running process and swap it out for another process (e.g., when a higher priority one arrives)",
+    "option_c": "A scheduler that never stops a task",
+    "option_d": "Scheduling without using code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Preemption allows for more responsive systems but adds context switching overhead."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Scheduling",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In 'Priority' scheduling, what is 'Aging' used for?",
+    "option_a": "Calculating the lifetime of a CPU",
+    "option_b": "Gradually increasing the priority of processes that wait in the system for a long time to prevent starvation",
+    "option_c": "Deleting old processes",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Aging ensures that low-priority processes will eventually get to execute."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the 'TLB' (Translation Lookaside Buffer)?",
+    "option_a": "A high-speed cache for page table entries used to speed up logical-to-physical address translation",
+    "option_b": "A backup memory",
+    "option_c": "A buffer for video data",
+    "option_d": "A type of network switch",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "TLB misses significantly slow down memory access; the TLB caches current mappings for the CPU."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Scheduling",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Turnaround Time'?",
+    "option_a": "The time a process spends in the ready queue",
+    "option_b": "The total time from process submission to process completion",
+    "option_c": "The time it takes to switch a process",
+    "option_d": "The time the CPU was idle",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Turnaround time = Waiting Time + CPU Execution Time + I/O Time."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Memory Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In memory allocation, what is the 'First-Fit' strategy?",
+    "option_a": "Finding the smallest free block that fits",
+    "option_b": "Allocating the first free hole that is big enough to hold the process",
+    "option_c": "Allocating the largest free block",
+    "option_d": "Assigning it at random",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "First-fit is generally faster than Best-fit or Worst-fit."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Memory Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In memory allocation, what is the 'Best-Fit' strategy?",
+    "option_a": "Allocating the first hole that fits",
+    "option_b": "Allocating the smallest free hole that is big enough, which might produce tiny leftover fragments",
+    "option_c": "Allocating the largest hole",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Best-fit searches the entire list to find the most 'efficient' block size."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Virtual Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Copy-on-Write' (COW) optimization?",
+    "option_a": "Writing data while copying it",
+    "option_b": "A technique where parent and child processes share memory pages until one of them modifies a page",
+    "option_c": "A security feature for files",
+    "option_d": "Deleting the original after copying",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "COW makes process creation (fork) extremely efficient."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Data Integrity",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Atomic' operation in OS synchronization?",
+    "option_a": "An operation using nuclear power",
+    "option_b": "An operation that completes in its entirety without interruption by any other process",
+    "option_c": "A very small operation",
+    "option_d": "Deleting a file by bits",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Atomic operations (like TestAndSet) are fundamental building blocks for locks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Monitor' in process synchronization?",
+    "option_a": "A physical screen",
+    "option_b": "A high-level language construct that provides a convenient and effective mechanism for process synchronization by encapsulating data and procedures",
+    "option_c": "A software that watches for bugs",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Monitors ensure that only one process at a time can be active within the monitor structure."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Deadlock",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How can you break a 'Circular Wait' to prevent deadlock?",
+    "option_a": "Restarting the computer",
+    "option_b": "Imposing a total ordering of all resource types and requiring processes to request resources in increasing order",
+    "option_c": "Using more RAM",
+    "option_d": "Deleting the processes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Order-based resource requests effectively break the circular wait condition."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In a 32-bit logical address with 4KB page size, how many bits represent the 'Offset'?",
+    "option_a": "8",
+    "option_b": "10",
+    "option_c": "12",
+    "option_d": "20",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "4KB is 2^12 bytes, so 12 bits are needed for the offset."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Memory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Inverted Page Table'?",
+    "option_a": "A table that sorts by frame number instead of page number, significantly reducing table size",
+    "option_b": "A table with reverse code",
+    "option_c": "A page table inside another table",
+    "option_d": "None of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Inverted page tables are used to save memory by having only one entry per physical frame."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Virtual Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Working-Set Model' used for?",
+    "option_a": "Calculating user work hours",
+    "option_b": "Estimating and guaranteeing the minimum required memory (pages) a process needs for a specific time window to avoid thrashing",
+    "option_c": "Managing a group of developers",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The working set is the set of pages a process is actively referencing."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Filesystems",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Direct Allocation' (Contiguous) in filesystems?",
+    "option_a": "Files can be stored anywhere",
+    "option_b": "Each file occupies a set of contiguous blocks on the disk",
+    "option_c": "The OS decides after deletion",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Contiguous allocation is fast for reads but leads to severe disk fragmentation."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Interrupt-Driven' I/O?",
+    "option_a": "The CPU checks the device in a loop",
+    "option_b": "The device notifies the CPU via a signal when it is ready for data transfer, allowing the CPU to work on other tasks in between",
+    "option_c": "The user interrupts the computer",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Interrupt-driven I/O is much more efficient than Polling (Busy-Waiting)."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does a 'Disk Scheduler' aim to minimize?",
+    "option_a": "The size of the files",
+    "option_b": "The total seek time (movement of the disk arm)",
+    "option_c": "The number of users",
+    "option_d": "The power usage",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Disk scheduling algorithms like SSTF or SCAN optimize the physical movement of the disk head."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which disk scheduling algorithm always travels to the end of the disk before reversing direction?",
+    "option_a": "FCFS",
+    "option_b": "SSTF",
+    "option_c": "SCAN (Elevator Algorithm)",
+    "option_d": "C-LOOK",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The SCAN algorithm services requests as it sweeps from one end of the disk to the other."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Kernel",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is the main role of the 'Kernel Mode' bit in the processor's status register?",
+    "option_a": "To allow encrypted code to run",
+    "option_b": "To enable/disable the execution of privileged instructions",
+    "option_c": "To tell the user which OS is running",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The mode bit ensures strict separation between user and system privileges."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Strict Alternation' in synchronization?",
+    "option_a": "Changing code variables",
+    "option_b": "A synchronization method where two processes must alternate their entry into the critical section (Process A, then B, then A...)",
+    "option_c": "A bug in the multithreading logic",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Strict alternation violates the 'Progress' requirement of the Critical Section problem."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Compaction' in memory?",
+    "option_a": "Removing unused code",
+    "option_b": "Moving all occupied memory blocks to one side of memory to create a single large free area",
+    "option_c": "Compressing RAM using a zip tool",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Compaction solves external fragmentation but is computationally expensive."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Scheduling",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Waiting Time' in scheduling?",
+    "option_a": "The time spent being processed",
+    "option_b": "The total time a process spends in the ready queue waiting for its turn on the CPU",
+    "option_c": "The time to switch to another process",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Waiting time = Turnaround Time - Burst Time."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Principle of Least Privilege'?",
+    "option_a": "Giving all users admin access for simplicity",
+    "option_b": "Giving users and processes only the minimum permissions they need to perform their tasks",
+    "option_c": "Allowing No access to the computer",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This principle minimizes the potential damage from compromised or buggy software."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Threading",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between 'User-level' and 'Kernel-level' threads?",
+    "option_a": "User threads reach the CPU faster",
+    "option_b": "User threads are managed by a thread library and the OS is unaware of them; Kernel threads are managed directly by the OS",
+    "option_c": "Kernel threads are for games only",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kernel-level threads allow for true parallelism on multi-core systems even if one thread blocks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "CPU Scheduling",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which scheduler is known as a 'Swapper'?",
+    "option_a": "Short-term Scheduler",
+    "option_b": "Medium-term Scheduler",
+    "option_c": "Long-term Scheduler",
+    "option_d": "IO Scheduler",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The medium-term scheduler swaps processes in and out of main memory to control degrees of multiprogramming."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Filesystems",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is an 'I-node' (Index Node) in Unix-like systems?",
+    "option_a": "A high-speed internet node",
+    "option_b": "A data structure containing information about a file, such as attributes and disk block locations",
+    "option_c": "A list of user names",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "I-nodes are the core structure representing files on most Linux/Unix file systems."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Deadlock",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In the deadlock recovery strategy, what is 'Resource Preemption'?",
+    "option_a": "Deleting the resource",
+    "option_b": "Taking a resource away from a process and giving it to another to break the deadlock",
+    "option_c": "Rebooting the server",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Preemption can be used for recovery but requires a safe way to 'roll back' the victim process."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Virtual Memory",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In a 'Demand Paging' system, what is the 'Valid-Invalid' bit?",
+    "option_a": "Tells the user if they can login",
+    "option_b": "Indicates whether a specific page is currently in RAM (Valid) or on disk (Invalid)",
+    "option_c": "A bit to fix corrupted data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "An access to a page marked 'invalid' triggers a page fault."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Process Communication",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Pipe' in Unix?",
+    "option_a": "A physical part of the computer",
+    "option_b": "A mechanism that allows the output of one process to serve as input for another",
+    "option_c": "A database connection",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pipes are a foundational IPC method in the Unix command-line philosophy."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Virtual Memory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which page replacement algorithm keeps track of how many times each page has been used?",
+    "option_a": "FIFO",
+    "option_b": "LRU",
+    "option_c": "LFU (Least Frequently Used)",
+    "option_d": "Clock",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "LFU is based on the idea that highly active pages will have higher usage counts."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Synchronization",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In the 'Readers-Writers' problem, what is the primary conflict?",
+    "option_a": "Readers cannot read together",
+    "option_b": "A writer requires exclusive access, while multiple readers can coexist",
+    "option_c": "There are too many readers",
+    "option_d": "The file is too large",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Correct synchronization must ensure that no reader is active when a writer is modifying the data."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Scheduling",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In 'Priority' scheduling, a higher numerical priority value usually means:",
+    "option_a": "Lower priority (in many systems)",
+    "option_b": "Always higher priority",
+    "option_c": "The same priority",
+    "option_d": "It doesn't matter",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Convention varies, but in many kernels (like Unix), lower numbers represent higher scheduling priority."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 2,
+    "level_topic": "Hard Drive",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In a hard disk drive, what is 'Latency' (Rotational)?",
+    "option_a": "The time to move the arm to the track",
+    "option_b": "The time it takes for the desired sector to rotate under the read/write head",
+    "option_c": "The speed of the network",
+    "option_d": "The time to boot the computer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Total disk access time = Seek Time + Rotational Latency + Transfer Time."
+  }
+]

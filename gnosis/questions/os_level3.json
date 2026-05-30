@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Paging",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Hierarchical Paging' (Multi-level Paging)?",
+    "option_a": "A system where only one page exists",
+    "option_b": "A paging architecture that uses multiple page tables in a tree structure to handle very large logical address spaces",
+    "option_c": "Paging without a page table",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hierarchical paging prevents the page table itself from becoming too large to fit in memory."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Why is 'Disabling Interrupts' not a suitable synchronization method for multi-processor systems?",
+    "option_a": "It is too slow",
+    "option_b": "It only stops interrupts on the local processor, leaving other processors free to access shared memory",
+    "option_c": "It crashes the bios",
+    "option_d": "Processors cannot be disabled",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Disabling interrupts works on single-core systems but fails to provide mutual exclusion on multi-core hardware."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Memory Management",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is a 'Hashed Page Table' and why is it used?",
+    "option_a": "A table for encryption only",
+    "option_b": "A structure where logical page numbers are hashed to find physical addresses, suitable for 64-bit sparse address spaces",
+    "option_c": "A way to delete pages",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hashed page tables are more efficient than hierarchical ones when dealing with very large, empty address spaces."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Thrashing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In the Working-Set Model, what does the parameter '\u0394' (Delta) represent?",
+    "option_a": "The change in memory speed",
+    "option_b": "The 'Working Set Window', defining the fixed number of most recent page references to consider",
+    "option_c": "The amount of free RAM",
+    "option_d": "The time to switch processes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The working set is calculated based on references made during the last \u0394 time units."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "File Allocation",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Indexed Allocation' in a filesystem?",
+    "option_a": "Storing all files in an index",
+    "option_b": "Allocation where each file has its own index block containing the addresses of all its disk blocks",
+    "option_c": "Contiguous allocation only",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Indexed allocation supports efficient random access without the overhead of contiguous blocks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "File systems",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Multilevel Indexed Allocation'?",
+    "option_a": "Allocation using multiple computers",
+    "option_b": "Using an index block that points to other index blocks, allowing for support of extremely large files",
+    "option_c": "A way to encrypt files using levels",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Unix inode structure uses direct blocks, single indirect, double indirect, and triple indirect pointers."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "RAID",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which RAID level provides both 'Mirroring' (Redundancy) and 'Striping' (Performance)?",
+    "option_a": "RAID 0",
+    "option_b": "RAID 1",
+    "option_c": "RAID 10 (1+0)",
+    "option_d": "RAID 5",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "RAID 10 is a nested RAID level that stripes data across mirrored pairs of disks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "RAID",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'RAID 5'?",
+    "option_a": "Mirroring only",
+    "option_b": "Striping with distributed parity, allowing for recovery if one drive fails",
+    "option_c": "Double mirroring",
+    "option_d": "No security",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RAID 5 offers a balance between performance and storage efficiency for fault tolerance."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Free Space Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How does 'Free Space Management' using a 'Bit Map' work?",
+    "option_a": "Mapping bits of a file to memory",
+    "option_b": "A vector of bits where each bit represents a disk block (0=allocated, 1=free)",
+    "option_c": "A way to draw the disk on screen",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bit maps are simple and efficient for finding contiguous free space blocks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Disk Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the purpose of the 'Bad Block' management in a drive controller?",
+    "option_a": "To delete files that are bad",
+    "option_b": "To mark physically damaged sectors and remap them to spare sectors on the disk",
+    "option_c": "To encrypt bad files",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bad block remapping (sector sparing) preserves the integrity of the storage media."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "I/O Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Double Buffering'?",
+    "option_a": "Buying two buffers",
+    "option_b": "Using two buffers to allow the producer to fill one while the consumer empties the other simultaneously",
+    "option_c": "Twice the speed of buffering",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Double buffering decouples I/O tasks and processing, increasing overall throughput."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Protection",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'Access Matrix' in OS security?",
+    "option_a": "A movie about computers",
+    "option_b": "A conceptual model representiong rights, where rows are domains (users) and columns are objects (files)",
+    "option_c": "A password list",
+    "option_d": "A way to sort files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The access matrix defines who is allowed to do what to which object."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Context Switching",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which of these is NOT typically part of the state saved during a 'Context Switch'?",
+    "option_a": "CPU Register contents",
+    "option_b": "Program Counter",
+    "option_c": "Main Memory contents (RAM)",
+    "option_d": "Process State (Running, Ready, etc.)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The main memory contents stay in place; only processor registers and execution state are swapped."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Memory",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Paging with Segmentation'?",
+    "option_a": "Using both pages and segments",
+    "option_b": "Dividing each segment into multiple pages, combining the logical view of segmentation with physical benefits of paging",
+    "option_c": "Encrypting segments into pages",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This hybrid approach gives programmers segments while the hardware manages physical memory in frames."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'C-SCAN' disk scheduling?",
+    "option_a": "Circular SCAN - it services requests in one direction and immediately returns to the beginning without servicing on the return trip",
+    "option_b": "A faster version of SCAN",
+    "option_c": "Scanning only the corners",
+    "option_d": "None of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "C-SCAN provides more uniform waiting times than traditional SCAN."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Threading",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In the 'Many-to-One' threading model, what is the biggest drawback?",
+    "option_a": "Users cannot use many threads",
+    "option_b": "If one thread blocks (e.g., waiting for I/O), the entire process and all other threads in it are also blocked",
+    "option_c": "It uses too much memory",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Many-to-one is fast (user-level) but lacks the parallelism needed for multi-core systems."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the purpose of the 'Swap()' instruction for synchronization?",
+    "option_a": "To swap two processes",
+    "option_b": "An atomic hardware instruction that exchanges the values of two memory locations, useful for implementing locks",
+    "option_c": "To move files",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Atomic instructions like 'Swap' and 'TestAndSet' are essential for reliable mutual exclusion."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Paging",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Effective Access Time' (EAT) formula considering TLB?",
+    "option_a": "EAT = Speed of RAM",
+    "option_b": "EAT = (Hit Ratio * Access Time) + (Miss Ratio * (TLB + 2 * Access Time))",
+    "option_c": "EAT = Time to find data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "EAT accounts for both fast TLB hits and the penalty of multi-step page table lookups on misses."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Deadlock",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How does the OS typically handle deadlocks in consumer operating systems (like Windows/Linux)?",
+    "option_a": "Using Banker's algorithm for every request",
+    "option_b": "The 'Ostrich Algorithm' - ignore the problem and assume it rarely happens (reboot if needed)",
+    "option_c": "Always preventing Circular Wait",
+    "option_d": "Deleting blocked processes immediately",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Full deadlock detection/avoidance is often too expensive for general-purpose workstations."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "I/O Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Disk Arm' movement in SSTF (Shortest Seek Time First) scheduling?",
+    "option_a": "Arm stays in place",
+    "option_b": "The arm moves to the request closest to its current position, which minimizes seek time but can cause starvation",
+    "option_c": "The arm moves to the beginning",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SSTF is greedy and can ignore far-away requests indefinitely."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Memory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Reentrant Code'?",
+    "option_a": "Code that enters the memory twice",
+    "option_b": "Non-self-modifying code that can be shared by multiple processes simultaneously without risk of data corruption",
+    "option_c": "Code that never finishes",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Reentrant code is essential for multi-user/multi-threaded shared libraries."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Password Salt'?",
+    "option_a": "Physical salt for the keyboard",
+    "option_b": "A random string added to passwords before hashing to protect against Rainbow Table attacks",
+    "option_c": "The name of the encryption key",
+    "option_d": "A way to hide files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Salting ensures that even identical passwords have unique hash values."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Filesystems",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Journaling' in a filesystem (like ext4 or NTFS)?",
+    "option_a": "Writing a diary for the user",
+    "option_b": "A technique where changes are first recorded in a 'log' (journal) before being written to the main filesystem, ensuring consistency after a crash",
+    "option_c": "Printing a list of all files",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Journaling prevents filesystem corruption during unexpected power losses."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In the 'wait()' semaphore operation, what actually happens to the semaphore variable 'S'?",
+    "option_a": "It is increased",
+    "option_b": "If S > 0, it is decremented; otherwise, the process blocks",
+    "option_c": "It is deleted",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "wait() (or P) attempts to acquire a resource."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In the 'signal()' semaphore operation, what happens to 'S'?",
+    "option_a": "It is decreased",
+    "option_b": "It is incremented, and if any processes were blocked waiting for S, one is woken up",
+    "option_c": "The computer reboots",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "signal() (or V) releases a resource."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Paging",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Dirty Bit' (Modified Bit) used for in paging?",
+    "option_a": "To clean the RAM",
+    "option_b": "A bit that indicates if a page in RAM has been modified, meaning it must be written to disk before being replaced",
+    "option_c": "A bit for encryption",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dirty bits avoid unnecessary disk writes for pages that haven't changed."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Thrashing",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "How does 'Page Fault Frequency' (PFF) help prevent thrashing?",
+    "option_a": "By deleting all pages",
+    "option_b": "By monitoring the rate of faults and adjusting the number of frames allocated to a process (increasing if fault rate is too high)",
+    "option_c": "A way to increase CPU speed",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PFF aims to keep the fault rate within an acceptable upper and lower bound."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Memory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Physical Address' vs 'Logical Address'?",
+    "option_a": "Physical is on disk, Logical is in RAM",
+    "option_b": "Logical is generated by CPU; Physical is the actual location in memory hardware",
+    "option_c": "There is no difference",
+    "option_d": "Logical is for users, Physical is for routers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The MMU (Memory Management Unit) handles the mapping between these two spaces at runtime."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Filesystems",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Hard Link' in Unix?",
+    "option_a": "A physical wire to the file",
+    "option_b": "A directory entry that points directly to the file's index node (inode)",
+    "option_c": "A shortcut to a file",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deleting a hard link doesn't delete the data until the final link is removed."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Filesystems",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Soft Link' (Symbolic Link)?",
+    "option_a": "A broken hard link",
+    "option_b": "A special type of file that contains the path to another file or directory",
+    "option_c": "The OS deciding where to put files",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Symbolic links are like Windows shortcuts; they break if the original file is moved."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Disk Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Low-level Formatting'?",
+    "option_a": "Deleting the BIOS",
+    "option_b": "The physical division of a disk into sectors that the controller can read and write",
+    "option_c": "Formatting a disk using basic code",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Low-level formatting is done at the factory and prepares the magnetic surface for data blocks."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Disk Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Boot Block'?",
+    "option_a": "A brick on the keyboard during boot",
+    "option_b": "A dedicated section of the disk that contains the code for loading the OS kernel into memory",
+    "option_c": "A list of users who cannot boot",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The boot block is the final stage of the handoff from BIOS to OS."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What happens in a 'Counting Semaphore' if its value is negative?",
+    "option_a": "The computer explodes",
+    "option_b": "The absolute value indicates how many processes are currently blocked waiting for that semaphore",
+    "option_c": "It is invalid",
+    "option_d": "It means the computer is fast",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Wait/Signal logic manages the 'queue' aspect of semaphores using the variable's magnitude."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Paging",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Page Table Fragmentation'?",
+    "option_a": "Pages being slow",
+    "option_b": "Memory wasted when the page table consumes more space than strictly necessary (e.g., for sparse segments)",
+    "option_c": "When the CPU cache is full",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sparse address spaces can lead to massive empty page tables if Multi-level paging is not used."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Paging",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In paging, what is 'Hit Ratio'?",
+    "option_a": "Number of users on the site",
+    "option_b": "The percentage of time that a logical address translation is found in the TLB",
+    "option_c": "How fast the disk spins",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Higher hit ratios mean faster effective memory access as the slow page table is rarely consulted."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Capability List' in OS protection?",
+    "option_a": "A list of computer features",
+    "option_b": "A distributed security model where each domain (user/process) holds a list of objects and the operations allowed on them",
+    "option_c": "A list of software versions",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Capability lists are like 'keys' held by users, providing more localized security than ACLs."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Context Switching",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary 'overhead' of multitasking?",
+    "option_a": "Buying more monitors",
+    "option_b": "The total time spent in context switches where no useful work is performed by the CPU",
+    "option_c": "The electricity cost",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "High switch rates can consume a significant portion of CPU capacity."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Kernel",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Layered' OS architecture?",
+    "option_a": "A cake-style OS",
+    "option_b": "An OS organized into level, where each layer uses services only from the layer below it",
+    "option_c": "A way to install apps",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Layering facilitates modularity and testing by isolating system components."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Disk",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Disk Interleaving'?",
+    "option_a": "Adding labels to disks",
+    "option_b": "Storing consecutive sectors in non-contiguous physical locations to account for disk controller processing time",
+    "option_c": "Scanning two disks at once",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Interleaving prevents the read head from missing the next sector while the previous one is being processed."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Trap' in OS contexts?",
+    "option_a": "A trap for hackers",
+    "option_b": "A software-generated interrupt caused by an error (like division by zero) or a specific request (system call)",
+    "option_c": "A bug in the hardware",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Traps are synchronous events triggered by code execution."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Scheduling",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Fair Share' scheduling?",
+    "option_a": "Everyone gets the same code",
+    "option_b": "A scheduling policy that considers which user owns a process, ensuring that even if one user has many processes, they don't hog the whole CPU",
+    "option_c": "Removing users from the system",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fair share scheduling prevents a single user's batch of tasks from starving other users."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Synchronization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Deadlock Prevention'?",
+    "option_a": "Handling after it happens",
+    "option_b": "Setting system constraints to ensure that at least one of the four necessary conditions for deadlock can NEVER occur",
+    "option_c": "Allowing deadlock but fixing it fast",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Prevention is more restrictive but safer than detection/recovery."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Deadlock",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How can you prevent the 'Hold and Wait' condition?",
+    "option_a": "Processes must request all required resources at once before starting",
+    "option_b": "Processes can only wait for 1 minute",
+    "option_c": "A way to use more RAM",
+    "option_d": "None of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "By requesting everything at once, a process never holds a subset while waiting for the rest."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Memory",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In paging, what is 'Internal Fragmentation' cost?",
+    "option_a": "Total size of the page",
+    "option_b": "On average, half of the last page allocated to a process is wasted",
+    "option_c": "None of the above",
+    "option_d": "Fixed cost of the page table",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "While paging solves external fragmentation, it inevitably wastes a bit on the tail end of allocations."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Paging",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the benefit of a 'Smaller' page size?",
+    "option_a": "Faster disk reads",
+    "option_b": "Reduced internal fragmentation",
+    "option_c": "Smaller page table",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Smaller pages fit process memory needs more tightly but increase page table management overhead."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Paging",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the benefit of a 'Larger' page size?",
+    "option_a": "No external fragmentation",
+    "option_b": "Smaller page table and more efficient I/O for large file reads",
+    "option_c": "Perfect memory use",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Larger pages mean fewer entries in the page table and faster disk-to-memory block transfers."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Trap Door' (Backdoor) in security?",
+    "option_a": "A hardware door in the server room",
+    "option_b": "A secret entry point into a program that bypasses normal security authentication",
+    "option_c": "A bug in the BIOS",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Backdoors are often left by developers for debugging but are massive security risks if found by attackers."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Sandboxing' in OS security?",
+    "option_a": "Playing with sand",
+    "option_b": "Running an application in a tightly restricted environment where it can only access specific resources",
+    "option_c": "Deleting suspicious files",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sandboxing (used in browsers and mobile OSs) protects the host system from malicious apps."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Distributed Shared Memory' (DSM)?",
+    "option_a": "Memory for different computers",
+    "option_b": "A conceptual model where multiple computers on a network act as if they are using a single, shared RAM space",
+    "option_c": "Sharing a CPU with a neighbor",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DSM simplifies programming for clusters but requires complex coherence protocols."
+  },
+  {
+    "subject_name": "Operating Systems (OS)",
+    "level_number": 3,
+    "level_topic": "I/O",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "What is 'Kernel I/O Subsystem'?",
+    "option_a": "A hardware part for I/O",
+    "option_b": "The part of the OS that provides services like I/O scheduling, buffering, caching, and spooling to manage generic device access",
+    "option_c": "A driver for the mouse",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This subsystem abstracts hardware details, providing a uniform 'everything-is-a-file' interface."
+  }
+]

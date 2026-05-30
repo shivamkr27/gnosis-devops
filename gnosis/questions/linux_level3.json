@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Shell Scripting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Shebang' line at the top of a bash script?",
+    "option_a": "#!/bin/bash",
+    "option_b": "// start bash",
+    "option_c": "<-- bash -->",
+    "option_d": "@use bash",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The shebang tells the OS which interpreter to use to execute the script."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Variables",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In a bash script, which variable holds the exit status of the most recently executed command?",
+    "option_a": "$0",
+    "option_b": "$#",
+    "option_c": "$?",
+    "option_d": "$$",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "$? returns 0 if the previous command was successful, and a non-zero value otherwise."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Cron Jobs",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Cron Job'?",
+    "option_a": "A high-priority process",
+    "option_b": "A scheduled task that runs automatically at specified intervals",
+    "option_c": "A way to compile code",
+    "option_d": "A virus that slows down the clock",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Crontab is the utility used to schedule periodic tasks in Linux."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Scripting Logic",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "Which of the following are valid conditional operators in a bash `if` statement?",
+    "option_a": "-eq (equal)",
+    "option_b": "-ne (not equal)",
+    "option_c": "-f (file exists)",
+    "option_d": "=== (strict equal)",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Bash uses flags like -eq for numbers and -f for file checks. === is a JavaScript operator."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Variables",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does the code `NAME='User'; echo \"Hello $NAME\"` output?",
+    "option_a": "Hello $NAME",
+    "option_b": "Hello User",
+    "option_c": "Hello NAME",
+    "option_d": "Nothing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Double quotes allow variable expansion in bash."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Scripting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a bash script, how do you capture the output of a command into a variable?",
+    "option_a": "VAR = command",
+    "option_b": "VAR=$(command)",
+    "option_c": "VAR={command}",
+    "option_d": "VAR:command",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The $() syntax is called command substitution."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Scripting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which loop structure is used to iterate over a list of items in bash?",
+    "option_a": "while",
+    "option_b": "for",
+    "option_c": "until",
+    "option_d": "loop",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A 'for' loop is standard for iterating over arrays or command outputs."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Permissions",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does the 'Sticky Bit' on a directory do?",
+    "option_a": "Prevents anyone from deleting the directory",
+    "option_b": "Only the file owner, directory owner, or root can delete or rename files in that directory",
+    "option_c": "Makes all files inside read-only",
+    "option_d": "Fast-tracks file access",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The sticky bit is commonly set on /tmp to prevent users from deleting each other's files."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Disk Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does LVM stand for in Linux storage?",
+    "option_a": "Linux Volume Manager",
+    "option_b": "Logical Volume Manager",
+    "option_c": "Linked Volume Map",
+    "option_d": "Low Volume Mode",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LVM allows for flexible resizing of partitions and spanning across multiple disks."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Boot Process",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which bootloader is most commonly used in modern Linux distributions?",
+    "option_a": "LILO",
+    "option_b": "GRUB",
+    "option_c": "SYSLINUX",
+    "option_d": "BIOS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GRUB (Grand Unified Bootloader) allows selecting OS and kernel versions at boot."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which file map hostnames to IP addresses locally before checking DNS?",
+    "option_a": "/etc/dns",
+    "option_b": "/etc/hosts",
+    "option_c": "/var/net/hosts",
+    "option_d": "/root/network",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "/etc/hosts provides local override for name resolution."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Kernel",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command is used to insert a module into the Linux kernel?",
+    "option_a": "modload",
+    "option_b": "insmod",
+    "option_c": "kernload",
+    "option_d": "addmod",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "insmod inserts a .ko file into the running kernel."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Kernel",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command is preferred for loading kernel modules as it handles dependencies automatically?",
+    "option_a": "lsmod",
+    "option_b": "modprobe",
+    "option_c": "insmod",
+    "option_d": "rmmod",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "modprobe looks at module dependency files to load everything required."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Process priority",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to start a process with a specific 'niceness' value?",
+    "option_a": "nice",
+    "option_b": "renice",
+    "option_c": "priority",
+    "option_d": "setprio",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Niceness values range from -20 (highest priority) to 19 (lowest priority)."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Process priority",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to change the priority of an already running process?",
+    "option_a": "nice",
+    "option_b": "renice",
+    "option_c": "chprio",
+    "option_d": "top",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "renice allows you to adjust the priority via PID."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Logging",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which tool is the modern systemd replacement for viewing system logs?",
+    "option_a": "logview",
+    "option_b": "journalctl",
+    "option_c": "syslog-cat",
+    "option_d": "system-logs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "journalctl queries the systemd journal database."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Archiving",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which flag is used with 'tar' to compress the archive using gzip?",
+    "option_a": "-c",
+    "option_b": "-z",
+    "option_c": "-j",
+    "option_d": "-v",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "-z invokes gzip; -j invokes bzip2; -J invokes xz."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Inodes",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does an 'Inode' store in a Linux filesystem?",
+    "option_a": "The filename and path",
+    "option_b": "Metadata about a file like size, owner, and timestamps",
+    "option_c": "The actual text data inside the file",
+    "option_d": "The user's password",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "An Inode stores everything about a file EXCEPT its name and the data itself."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Processes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Zombi' process?",
+    "option_a": "A process that steals CPU",
+    "option_b": "A process that has completed execution but still has an entry in the process table",
+    "option_c": "A virus that infects other processes",
+    "option_d": "A process that runs forever",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Zombies occur when a parent hasn't yet 'reaped' the exit status of its child."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Signals",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which signal is sent when you press Ctrl+C in the terminal?",
+    "option_a": "SIGQUIT",
+    "option_b": "SIGINT",
+    "option_c": "SIGSTOP",
+    "option_d": "SIGKILL",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SIGINT (Signal Interrupt) cleanly tells a process to stop."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Signals",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which signal is sent when you press Ctrl+Z in the terminal?",
+    "option_a": "SIGINT",
+    "option_b": "SIGTSTP",
+    "option_c": "SIGQUIT",
+    "option_d": "SIGKILL",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SIGTSTP (Terminal Stop) pauses the process and sends it to the background."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Filesystem",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which directory contains device files like /dev/sda?",
+    "option_a": "/etc",
+    "option_b": "/dev",
+    "option_c": "/sys",
+    "option_d": "/proc",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "/dev is the 'devices' directory representing hardware as files."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Filesystem",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which virtual filesystem provides information about running processes?",
+    "option_a": "/bin",
+    "option_b": "/proc",
+    "option_c": "/tmp",
+    "option_d": "/var",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "/proc is a pseudo-filesystem that allows viewing kernel and process data."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which framework provides Mandatory Access Control (MAC) in Linux?",
+    "option_a": "FirewallD",
+    "option_b": "SELinux",
+    "option_c": "AppArmor",
+    "option_d": "Both B and C",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "SELinux and AppArmor reinforce security by restricting what programs can do."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Shell",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does the 'export' command do?",
+    "option_a": "Saves a file to a USB drive",
+    "option_b": "Makes a shell variable available to child processes",
+    "option_c": "Installs a new package",
+    "option_d": "Sends an email",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Without export, a variable is only available in the current shell session."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Shell",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does the '$0' variable represent in a script?",
+    "option_a": "The first argument",
+    "option_b": "The name of the script itself",
+    "option_c": "The number of arguments",
+    "option_d": "The process ID",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "$1, $2, etc., are positional parameters; $0 is the script path/name."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Shell",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does '$#' represent in a bash script?",
+    "option_a": "The value of the first argument",
+    "option_b": "The total number of arguments passed to the script",
+    "option_c": "A comment",
+    "option_d": "The root password",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "$# allows scripts to check if the user provided enough input."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Remote Access",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to copy files securely between hosts using SSH?",
+    "option_a": "cp",
+    "option_b": "scp",
+    "option_c": "ftp",
+    "option_d": "ssh-copy",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "scp (secure copy) uses the SSH protocol for encryption."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which file specifies the DNS nameservers for a Linux system?",
+    "option_a": "/etc/dns.conf",
+    "option_b": "/etc/resolv.conf",
+    "option_c": "/etc/network/dns",
+    "option_d": "/root/dns",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "resolv.conf typically contains 'nameserver' lines with IP addresses."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Disk Info",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "Which command displays the Universally Unique Identifier (UUID) of disk partitions?",
+    "option_a": "uuid",
+    "option_b": "blkid",
+    "option_c": "diskid",
+    "option_d": "fdisk -l",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "blkid (block ID) helps in identifying disks for /etc/fstab."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "System Config",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which file is responsible for mounting filesystems automatically during boot?",
+    "option_a": "/etc/mount.conf",
+    "option_b": "/etc/fstab",
+    "option_c": "/etc/boot/mounts",
+    "option_d": "/proc/mounts",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "fstab stands for 'File System Table'."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Process Monitoring",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the function of the 'nohup' command?",
+    "option_a": "Clears all processes",
+    "option_b": "Allows a command to continue running even after the user logs out",
+    "option_c": "Hides the process from 'top'",
+    "option_d": "Speeds up the command",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "nohup ignores the SIGHUP (Hangup) signal sent when a terminal closes."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Terms",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the 'Kernel' in Linux?",
+    "option_a": "The desktop environment",
+    "option_b": "The core part of the OS that manages hardware and system resources",
+    "option_c": "A type of shell",
+    "option_d": "A collection of apps",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The kernel is the bridge between software and hardware."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "User management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which file contains the encrypted passwords for Linux users?",
+    "option_a": "/etc/passwd",
+    "option_b": "/etc/shadow",
+    "option_c": "/etc/secure",
+    "option_d": "/root/pass",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "/etc/shadow is only readable by root for security."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Environment",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command lists all currently defined shell and environment variables?",
+    "option_a": "list",
+    "option_b": "env",
+    "option_c": "printenv (or set)",
+    "option_d": "vars",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "printenv shows environment variables, while 'set' shows all variables."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Search",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In 'grep', which flag is used for a case-insensitive search?",
+    "option_a": "-v",
+    "option_b": "-i",
+    "option_c": "-c",
+    "option_d": "-l",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "-i ignores case; -v inverts matching; -c counts matches."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Text Processing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does the 'awk' command primarily focus on?",
+    "option_a": "Compressing files",
+    "option_b": "Pattern scanning and processing language for structured text files (like CSVs)",
+    "option_c": "Setting user passwords",
+    "option_d": "Building the kernel",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AWK is a powerful scripting language for field-based text manipulation."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "File Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you delete a non-empty directory including all its contents?",
+    "option_a": "delete dir",
+    "option_b": "rm -f dir",
+    "option_c": "rm -rf dir",
+    "option_d": "rmdir -force dir",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "r (recursive) and f (force) are needed to remove nested directories."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to download files from the internet via CLI?",
+    "option_a": "get",
+    "option_b": "wget",
+    "option_c": "download",
+    "option_d": "fetch",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "wget (or 'curl') are standard command-line download tools."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Searching",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "How do you search for files modified in the last 24 hours?",
+    "option_a": "find . -mtime -1",
+    "option_b": "ls -t",
+    "option_c": "grep recent",
+    "option_d": "locate -recent",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "-mtime (modification time) accepts days; -mmin accepts minutes."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "User Groups",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which file stores the group information for the local system?",
+    "option_a": "/etc/passwd",
+    "option_b": "/etc/group",
+    "option_c": "/home/groups",
+    "option_d": "/root/group",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It lists group name, GID, and members."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Shell",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the PID of the kernel itself?",
+    "option_a": "1",
+    "option_b": "0",
+    "option_c": "99",
+    "option_d": "No PID",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'swapper' or 'idle' process is PID 0."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Text Readers",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the main advantage of 'less' over 'more'?",
+    "option_a": "It uses less memory",
+    "option_b": "It allows backward scrolling in a file",
+    "option_c": "It is colorful",
+    "option_d": "It can edit files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'less' doesn't have to read the entire file before starting, making it faster for large files."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Aliases",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you remove an alias?",
+    "option_a": "alias -r",
+    "option_b": "unalias",
+    "option_c": "rmalias",
+    "option_d": "clear alias",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "unalias alias_name removes it from the current session."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Information",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which command is used to get information about the PCI devices in a system?",
+    "option_a": "pcilist",
+    "option_b": "lspci",
+    "option_c": "showpci",
+    "option_d": "cardinfo",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "lspci lists all PCI controllers and attached devices (GPU, NIC, etc.)."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Information",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which command is used to get information about USB devices?",
+    "option_a": "usblist",
+    "option_b": "lsusb",
+    "option_c": "showusb",
+    "option_d": "businfo",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "lsusb shows internal and external USB buses and connected hardware."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Text Processing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command counts the number of lines, words, and characters in a file?",
+    "option_a": "count",
+    "option_b": "wc",
+    "option_c": "stats",
+    "option_d": "num",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "wc stands for 'Word Count'."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Help",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "How do you view help for a shell built-in command like 'cd' or 'alias'?",
+    "option_a": "man cd",
+    "option_b": "help cd",
+    "option_c": "guide cd",
+    "option_d": "built-in cd",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shell built-ins have their own 'help' system separate from manual pages."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Archiving",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to create a .gz file from a single text file?",
+    "option_a": "zip",
+    "option_b": "gzip",
+    "option_c": "tar",
+    "option_d": "compress",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "gzip replaces the original file with a compressed .gz version."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 3,
+    "level_topic": "Text Processing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command removes duplicate adjacent lines from a sorted file?",
+    "option_a": "dedupe",
+    "option_b": "unique",
+    "option_c": "uniq",
+    "option_d": "single",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "'uniq' only works on sorted input to find repeating lines."
+  }
+]

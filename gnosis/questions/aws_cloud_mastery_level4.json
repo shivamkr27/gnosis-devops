@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Advanced VPC Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How does 'AWS Transit Gateway' handle VPC Peering limits at scale?",
+    "option_a": "It increases the number of peering connections allowed",
+    "option_b": "It acts as a network transit hub, using a hub-and-spoke model to simplify connectivity and scale to thousands of VPCs without a full-mesh peering requirement",
+    "option_c": "It deletes the VPC peering limits",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Transit Gateway reduces operational complexity by centralizing routing logic and cross-account connectivity."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "VPC Performance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Enhanced Networking' on EC2 instances?",
+    "option_a": "Buying a faster cable",
+    "option_b": "Using SR-IOV (Single Root I/O Virtualization) to provide higher I/O performance and lower CPU utilization compared to traditional virtualized network interfaces",
+    "option_c": "Naming the network 'Enhanced'",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Enhanced networking is critical for high-throughput, low-latency applications like financial modeling or big data processing."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Database (DynamoDB)",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the primary benefit of 'DynamoDB Transactions'?",
+    "option_a": "They make the database free",
+    "option_b": "They provide atomicity, consistency, isolation, and durability (ACID) across multiple items within or across tables in a single AWS account and region",
+    "option_c": "They are faster than standard writes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Transactions are essential for all-or-nothing operations like financial transfers or inventory management."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Database (Aurora)",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How does 'Amazon Aurora Global Database' handle disaster recovery?",
+    "option_a": "By using standard MySQL replication",
+    "option_b": "By using storage-level fast replication to up to 5 secondary regions with typical latency of less than 1 second, enabling regional failover in minutes",
+    "option_c": "By backup up to S3",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Global Database is designed for globally distributed applications and stringent RPO/RTO requirements."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Storage (S3)",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Amazon S3 Batch Operations' used for?",
+    "option_a": "To name the files in a batch",
+    "option_b": "To efficiently manage billions of objects at scale, performing actions like copying, restoring, or tagging across large sets of data in a single operation",
+    "option_c": "A ways to delete old files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Batch Operations eliminates the need to write custom scripts to process massive S3 datasets."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Security (KMS)",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'AWS KMS Key Grants' compared to 'Key Policies'?",
+    "option_a": "Grants are for groups, Policies are for users",
+    "option_b": "Key Policies are the primary mechanism for access control; Grants are a programmatic way to provide temporary, granular access to a key without modifying the key policy",
+    "option_c": "Policies are for internal use, Grants are for external",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Grants are often used by AWS services (like EBS) to use your CMK on your behalf to encrypt volumes."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Computing Models (Lambda)",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'AWS Lambda@Edge' lifecycle hooks?",
+    "option_a": "The function is called when the user logs in",
+    "option_b": "Functions can be triggered at four distinct points: Viewer Request, Origin Request, Origin Response, and Viewer Response",
+    "option_c": "The function is called when the server restarts",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Understanding these hooks is vital for implementing advanced edge logic like dynamic SEO or custom routing."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Governance (SCPs)",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which SCP condition is used to enforce that resources can only be created in specific AWS regions?",
+    "option_a": "aws:SourceIp",
+    "option_b": "aws:RequestedRegion",
+    "option_c": "aws:PrincipalOrgID",
+    "option_d": "aws:CurrentTime",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This condition is fundamental for data residency compliance and preventing 'shadow' infrastructure in unauthorized regions."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "CloudFormation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'AWS CloudFormation Macro'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A feature that allows you to perform custom processing on templates (e.g. iterating over lists or including external data) using a Lambda function",
+    "option_c": "A tool to delete old templates",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Macros allow for powerful template transformations and extending the native capabilities of CloudFormation."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "mTLS & Identity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the purpose of 'AWS Private CA'?",
+    "option_a": "To buy SSL certificates for the web",
+    "option_b": "A managed private certificate authority service that helps you securely manage the lifecycle of private certificates for your internal resources (e.g. mTLS between services)",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Private CA is essential for Zero Trust architectures where every internal connection must be encrypted and authenticated."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Hybrid Cloud",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'AWS Outposts' local gateways?",
+    "option_a": "A ways to name a router",
+    "option_b": "A logical router that enables communication between your Outpost resources and your local, on-premises network with very low latency",
+    "option_c": "A tool to delete physical cables",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Local gateways are the core component that allows Outposts to integrate with existing on-premises infrastructure seamlessly."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Big Data (EMR)",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Amazon EMR Serverless'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A serverless deployment option for EMR that makes it easy to run big data frameworks like Apache Spark and Hive without managing clusters or nodes",
+    "option_c": "A tool to delete old clusters",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "EMR Serverless handles the scaling and provisioning automatically, allowing you to pay only for the compute you use."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Security (WAF)",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Rate-based Rule' in AWS WAF using a 'Custom Key'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A rule that counts the rate of specific requests based on custom identifiers (like a cookie value or Header instead of just IP) and blocks them if they exceed a limit",
+    "option_c": "A ways to delete code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Rate-based rules with custom keys are powerful for preventing brute-force or scraping attacks that rotate IPs."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In the 'Security' pillar of the Well-Architected Framework, what is 'Detachment of Personnel'?",
+    "option_a": "Firing the employees",
+    "option_b": "The principle of removing humans from data and direct access to production systems, relying on automated pipelines and immutable infrastructure instead",
+    "option_c": "A ways to move servers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Removing human access reduces the risk of accidental misconfiguration or malicious insider threats."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Advanced Route 53",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Route 53 Multi-value Answer' routing?",
+    "option_a": "Routing to the cheapest server",
+    "option_b": "A routing policy that allows Route 53 to return multiple healthy IP addresses in response to a single DNS query, providing a simple form of load balancing",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multi-value routing improves reliability by allowing the client's browser to try a different IP if the first one fails."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Database (DynamoDB)",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'DynamoDB Adaptive Capacity'?",
+    "option_a": "A ways to name a table",
+    "option_b": "A feature that automatically reallocates throughput capacity in response to unbalanced workloads (hot partitions), preventing throttling for well-behaved partitions",
+    "option_c": "A way to delete old data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Adaptive capacity is a key reason why DynamoDB can handle massive, uneven load without constant manual tuning."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Governance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'AWS Control Tower Guardrail'?",
+    "option_a": "A physical fence at the office",
+    "option_b": "A high-level rule (preventive or detective) that provides ongoing governance for your multi-account environment, such as 'Disallow public read to S3 buckets'",
+    "option_c": "A ways to name a user",
+    "option_d": "A tool to delete accounts",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Guardrails are implemented using SCPs and AWS Config rules to enforce compliance across the whole organization."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'AWS Site-to-Site VPN Accelerated' connection?",
+    "option_a": "Buying a faster cable",
+    "option_b": "A feature that uses AWS Global Accelerator to route your VPN traffic over the AWS global network rather than the public internet for the first leg of the journey",
+    "option_c": "A ways to name a router",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Accelerated VPN significantly reduces latency and improves reliability for remote site connectivity."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'AWS Network Firewall'?",
+    "option_a": "A wall made of routers",
+    "option_b": "A managed service that provides high-availability network security (Layer 3-7) to protect your VPCs, including features like stateful inspection, intrusion prevention (IPS), and web filtering",
+    "option_c": "A tool to delete old code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Network Firewall replaces complex, self-managed firewall appliances with a native cloud service."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Compute",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'EC2 Spot Fleet'?",
+    "option_a": "A bunch of fast cars",
+    "option_b": "A service that manages the launching and maintaining of a specified target capacity of Spot instances (and optionally On-Demand) across multiple instance types and AZs",
+    "option_c": "A tool to delete servers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Spot Fleets are an extremely cost-effective way to run large-scale compute workloads like data processing or rendering."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the role of 'AWS DataSync' in large-scale migrations?",
+    "option_a": "To name the files",
+    "option_b": "A managed data transfer service that simplifies, automates, and accelerates moving and replicating data between on-premises storage and AWS storage services (S3, EFS, FSx)",
+    "option_c": "A tool to delete old files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DataSync can handle massive data sets much faster than standard open-source tools like rsync."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Microservices",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What defines 'AWS App Mesh'?",
+    "option_a": "A mesh for the office windows",
+    "option_b": "A service mesh that provides application-level networking to make it easy for your services to communicate with each other across multiple types of compute infrastructure",
+    "option_c": "A tool to delete old code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "App Mesh provides consistent visibility, high availability, and network traffic control for every microservice in your stack."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'AWS CloudHSM'?",
+    "option_a": "A ways to hide money",
+    "option_b": "A cloud-based hardware security module (HSM) that enables you to easily generate and use your own encryption keys in AWS using FIPS 140-2 Level 3 validated hardware",
+    "option_c": "A tool to delete old keys",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CloudHSM is required for customers who need physical control over their keys for regulatory compliance."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Database (CosmosDB alternative)",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Amazon Keyspaces'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A scalable, highly available, and managed Apache Cassandra-compatible database service",
+    "option_c": "A tool to delete old tables",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Keyspaces allows you to run your Cassandra workloads on AWS using the same Cassandra Query Language (CQL) code."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Machine Learning",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Amazon SageMaker Ground Truth'?",
+    "option_a": "A ways to find the truth",
+    "option_b": "A fully managed data labeling service that makes it easy to build highly accurate training datasets for machine learning",
+    "option_c": "A tool to delete old models",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Ground Truth uses a combination of human workers and machine learning to produce high-quality labels at scale."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Computing Models",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Amazon EC2 Auto Scaling' Predictive Scaling?",
+    "option_a": "Guessing the next user",
+    "option_b": "A feature that uses machine learning to analyze historical traffic patterns and proactively schedule changes in the number of EC2 instances in anticipation of future demand",
+    "option_c": "A tool to delete old servers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Predictive scaling ensures the capacity is already there when the users arrive, rather than reacting after the fact."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What defines 'Amazon S3 Replication Time Control' (RTC)?",
+    "option_a": "A ways to stop time",
+    "option_b": "A feature that provides an SLA-backed guarantee to replicate 99.99% of your new S3 objects within 15 minutes of upload",
+    "option_c": "A tool to delete old versions",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RTC is vital for business-critical applications that require predictable data durability and replication."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'AWS Transit Gateway Multicast'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A feature that enables you to deliver a single stream of information to many recipients simultaneously in the cloud, which was traditionally hard to do in VPCs",
+    "option_c": "A tool to delete routers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multicast is used for specific workloads like financial ticker data or video streaming."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'AWS Directory Service' AD Connector?",
+    "option_a": "A ways to connect a computer",
+    "option_b": "A proxy service that enables you to use your existing on-premises Active Directory identities with AWS applications without requiring complex synchronization",
+    "option_c": "A tool to delete old users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AD Connector is a simple way to bring SSO and IAM federation to your corporate environment."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In the 'Reliability' pillar of the Well-Architected Framework, what is 'Design for Failure'?",
+    "option_a": "Trying to fail",
+    "option_b": "The practice of assuming that every individual component will eventually fail and designing the system to handle those failures without losing service",
+    "option_c": "A ways to delete old code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Design for failure leads to architectures using Multi-AZ, retries, and decoupled messaging."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Database",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Amazon Aurora Clone'?",
+    "option_a": "A ways to clone a user",
+    "option_b": "A feature that allows you to create a new, independent copy of an Aurora database cluster very quickly, using a copy-on-write mechanism that only consumes storage for changes",
+    "option_c": "A tool to delete old tables",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cloning is perfect for spinning up test or analytics environments from production data without any performance impact or cost overhead."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Advanced Deployment",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'AWS CloudFormation Custom Resources'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A mechanism that allows you to write custom provisioning logic (using Lambda) to manage resources that are NOT natively supported by CloudFormation",
+    "option_c": "A tool to delete old stacks",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Custom resources allow you to manage third-party APIs or complex configurations as part of your stack lifecycle."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Migration",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What defines 'AWS Migration Evaluator' (formerly TSO Logic)?",
+    "option_a": "A ways to name a migration",
+    "option_b": "A free service to create a data-driven business case for AWS migration, providing clear visibility into your current estate and projected AWS costs",
+    "option_c": "A tool to delete old servers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Migration Evaluator helps leadership teams make informed financial decisions about moving to the cloud."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Developer Tools",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'AWS Cloud9'?",
+    "option_a": "A ways to name a cloud",
+    "option_b": "A cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser",
+    "option_c": "A tool to delete old code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cloud9 comes pre-packaged with essential tools for building serverless applications on AWS."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Advanced Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'AWS Client VPN'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A fully managed, client-based VPN service that enables you to securely access your AWS resources and your on-premises network from anywhere",
+    "option_c": "A tool to delete old routers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Client VPN uses OpenVPN and integrates with SAML for secure, flexible remote worker access."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Big Data",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Amazon Redshift RA3' instances?",
+    "option_a": "A ways to name a cluster",
+    "option_b": "Instances that allow you to scale and pay for compute and storage independently, using S3 for a managed storage layer",
+    "option_c": "A tool to delete old data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RA3 instances solve the problem of having to add more compute just because you need more disk space."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Infrastructure",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What defines 'AWS Resource Access Manager' (RAM)?",
+    "option_a": "A ways to hide money",
+    "option_b": "A service that enables you to easily and securely share your AWS resources (like Transit Gateways or Subnets) with any AWS account or within your AWS Organization",
+    "option_c": "A tool to delete old resources",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RAM eliminates the need for complex cross-account roles when sharing foundational networking components."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Amazon FSx for OpenZFS'?",
+    "option_a": "A ways to host pretty websites",
+    "option_b": "A fully managed, highly reliable, and scalable file storage that is built on the open-source OpenZFS file system, providing NFS-compatible shared storage",
+    "option_c": "A tool to delete old files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "FSx for OpenZFS is ideal for moving on-premises ZFS workloads to AWS with minimal changes."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Compute",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'EC2 Nitro System'?",
+    "option_a": "A ways to speed up servers with gas",
+    "option_b": "A collection of purpose-built hardware and a lightweight hypervisor that offloads virtualization functions to dedicated hardware, maximizing performance for guests",
+    "option_c": "A tool to delete old servers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Nitro system is the core innovation that allows AWS to offer bare-metal-like performance on virtual machines."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Governance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What defines 'AWS Security Hub'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A cloud security posture management (CSPM) service that performs security best practice checks, aggregates alerts, and enables automated remediation",
+    "option_c": "A tool to delete old alerts",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Security Hub provides a comprehensive view of your security state across all your AWS accounts."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Expert Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "How can you implement a 'Cell-based architecture' to increase the fault tolerance of a massive scale application?",
+    "option_a": "By using smaller batteries for servers",
+    "option_b": "By partitioning the application into smaller, independent, and isolated 'cells' that do not share state, limiting the blast radius of any failure",
+    "option_c": "By using a larger database",
+    "option_d": "By increasing the timeout of load balancers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cell-based architectures are used by hyper-scale applications to ensure that a failure in one cell doesn't affect users in others."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Advanced Networking",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "When using AWS Transit Gateway, how is 'Inter-Region Peering' traffic charged?",
+    "option_a": "It is free",
+    "option_b": "Standard data transfer charges apply based on the amount of data sent between regions",
+    "option_c": "By the number of packets only",
+    "option_d": "It is included in the S3 price",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Data transfer between Transit Gateways in different regions follows standard AWS inter-region data transfer rates."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Security & Governance",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the primary benefit of 'Attribute-Based Access Control' (ABAC) in IAM?",
+    "option_a": "It uses passwords instead of keys",
+    "option_b": "It allows for dynamic scaling of permissions based on tags, reducing the need for unique policies for every user and resource",
+    "option_c": "It is faster than standard IAM",
+    "option_d": "It encrypts the IAM console",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ABAC uses tags (attributes) to make authorization decisions, making it easier to manage permissions as teams grow."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Storage Performance",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "Which EBS volume type is designed for mission-critical, high-performance workloads with low latency and sustained IOPS?",
+    "option_a": "General Purpose (gp3)",
+    "option_b": "Provisioned IOPS (io2 Block Express)",
+    "option_c": "Cold HDD (sc1)",
+    "option_d": "Throughput Optimized HDD (st1)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "io2 Block Express is the highest performing block storage in the cloud, offering up to 256,000 IOPS per volume."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Disaster Recovery",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In a 'Warm Standby' DR strategy, what is the state of the DR environment?",
+    "option_a": "Turned off completely",
+    "option_b": "A scaled-down but functional version of the production environment always running in a different region",
+    "option_c": "Just a small server to receive heartbeats",
+    "option_d": "Exactly the same size as production",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Warm standby reduces recovery time compared to Pilot Light by having minimum resources already running."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Database Scalability",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Amazon Aurora Global Write Forwarding'?",
+    "option_a": "A ways to skip region checks",
+    "option_b": "A feature that allows read replicas in secondary regions to forward write requests to the primary region, simplifying application logic",
+    "option_c": "A tool to delete secondary databases",
+    "option_d": "A ways to naming databases",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Write forwarding makes it easier to build globally distributed applications that need to write back to a central DB."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Expert Security",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "How does 'AWS Nitro Enclaves' provide a secure compute environment?",
+    "option_a": "By using a stronger firewall",
+    "option_b": "By creating isolated compute environments that have no persistent storage, no interactive access, and only a secure local channel to the parent instance",
+    "option_c": "By encrypting the CPU",
+    "option_d": "By running servers in a bunker",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Nitro Enclaves allow you to process highly sensitive data in a cryptographically isolated and secure environment."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Advanced Analytics",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Amazon Redshift RA3' instance type's key innovation?",
+    "option_a": "Faster RAM",
+    "option_b": "Decoupling of compute and storage, allowing you to scale each independently",
+    "option_c": "Free storage for 1 month",
+    "option_d": "A smaller CPU",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RA3 instances use high-speed cache and S3-backed storage to allow massive scaling without scaling compute unnecessarily."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Global Infrastructure",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "How do 'AWS Outposts' interact with the local data center's internet connection?",
+    "option_a": "They don't; they use satellite",
+    "option_b": "They use a local gateway (LGW) to route traffic directly to the on-premises network or local internet",
+    "option_c": "They must route all traffic back to the AWS Region first",
+    "option_d": "They use dial-up",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Local gateways provide low-latency connectivity to local workloads and the internet without leaving the data center."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 4,
+    "level_topic": "Serverless Tuning",
+    "question_type": "expert",
+    "timer_seconds": 30,
+    "question_text": "What is 'Lambda Provisioned Concurrency' designed to solve?",
+    "option_a": "High costs",
+    "option_b": "Cold start latency for applications requiring consistent low latency",
+    "option_c": "Max function size",
+    "option_d": "Encryption bugs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Provisioned concurrency keeps a specified number of execution environments warm and ready to respond."
+  }
+]

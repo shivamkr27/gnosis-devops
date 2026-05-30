@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 1",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 1 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 1 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 2",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 2 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 2 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 3",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 3 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 3 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 4",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 4 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 4 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 5",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 5 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 5 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 6",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 6 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 6 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 7",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 7 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 7 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 8",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 8 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 8 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 9",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 9 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 9 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 10",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 10 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 10 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 11",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 11 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 11 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 12",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 12 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 12 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 13",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 13 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 13 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 14",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 14 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 14 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 15",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 15 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 15 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 16",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 16 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 16 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 17",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 17 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 17 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 18",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 18 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 18 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 19",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 19 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 19 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 20",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 20 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 20 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 21",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 21 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 21 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 22",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 22 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 22 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 23",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 23 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 23 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 24",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 24 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 24 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 25",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 25 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 25 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 26",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 26 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 26 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 27",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 27 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 27 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 28",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 28 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 28 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 29",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 29 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 29 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 30",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 30 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 30 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 31",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 31 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 31 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 32",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 32 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 32 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 33",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 33 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 33 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 34",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 34 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 34 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 35",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 35 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 35 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 36",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 36 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 36 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 37",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 37 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 37 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 38",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 38 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 38 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 39",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 39 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 39 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 40",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 40 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 40 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 41",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 41 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 41 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 42",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 42 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 42 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 43",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 43 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 43 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 44",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 44 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 44 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 45",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 45 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 45 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 46",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 46 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 46 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 47",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 47 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 47 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 48",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 48 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 48 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 49",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 49 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 49 of Object Oriented Design (OOAD) Level 2."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 2,
+    "level_topic": "Topic 50",
+    "question_type": "medium",
+    "timer_seconds": 60,
+    "question_text": "Sample question 50 for Object Oriented Design (OOAD) Level 2?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 50 of Object Oriented Design (OOAD) Level 2."
+  }
+]

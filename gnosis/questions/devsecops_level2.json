@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Security Scanning",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does SAST analyze to find vulnerabilities?",
+    "option_a": "The running application",
+    "option_b": "The static source code, before compilation",
+    "option_c": "Network traffic",
+    "option_d": "User logs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Static Application Security Testing (SAST) scans the code itself for vulnerabilities like hardcoded secrets or poor design."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Security Scanning",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does DAST analyze to find vulnerabilities?",
+    "option_a": "The source code",
+    "option_b": " The running application, by simulating attacks",
+    "option_c": "The developer's laptop",
+    "option_d": "Only the documentation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dynamic Application Security Testing (DAST) interacts with the app while it's active to find runtime security issues."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Dependency Security",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'SCA' in the context of DevSecOps?",
+    "option_a": "Secure Code Analysis",
+    "option_b": "Software Composition Analysis: Identifying vulnerabilities in third-party libraries and dependencies",
+    "option_c": "Social Communication Audit",
+    "option_d": "System Control Access",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SCA helps manage the risk of using open-source components that might have known security flaws."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Identity Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the principle of 'Least Privilege' mean?",
+    "option_a": "Giving everyone full access to everything",
+    "option_b": "Giving users and services ONLY the minimum permissions they need to perform their job",
+    "option_c": "Developing with the cheapest tools",
+    "option_d": "Deleting all users frequently",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Least privilege reduces the 'blast radius' if a specific account is compromised."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Identity Management",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is RBAC?",
+    "option_a": "Remote Backup and Coding",
+    "option_b": "Role-Based Access Control: Managing permissions based on the roles within an organization",
+    "option_c": "Randomly Based Access Control",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RBAC simplifies security management by grouping permissions into roles rather than assigning them to individual users."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Container Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Why should you use 'minimal' base images for Docker containers?",
+    "option_a": "To make them look smaller on screen",
+    "option_b": "To reduce the 'attack surface' by excluding unnecessary tools like shells and package managers",
+    "option_c": "To save money on internet bandwidth only",
+    "option_d": "Because they are faster to download only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fewer installed packages means fewer vulnerabilities and fewer tools for an attacker to use."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Secrets Management",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "How should database passwords be handled in a CI/CD pipeline?",
+    "option_a": "Stored as plain text in the repo",
+    "option_b": "Injected at runtime as encrypted environment variables or from a dedicated Secret Management service",
+    "option_c": "Hardcoded in the Dockerfile",
+    "option_d": "Shared in the team Slack channel",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tools like HashiCorp Vault, AWS Secrets Manager, or GitHub Secrets keep sensitive data secure while allowing automation."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Compliance",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'GDPR'?",
+    "option_a": "General Data Protection Regulation: A regulation on data protection and privacy in the EU",
+    "option_b": "Global Data Pattern Recognition",
+    "option_c": "A programming language",
+    "option_d": "A ways to name servers",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Compliance involves ensuring your systems meet legal standards for protecting user data."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Compliance",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'SOC 2'?",
+    "option_a": "A brand of security camera",
+    "option_b": "A compliance standard for service organizations, focusing on security, availability, and privacy",
+    "option_c": "The second version of the cluster",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SOC 2 audits verify that an organization has strong internal security controls."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Common Attacks",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is a 'DDoS' attack?",
+    "option_a": "Deleting the Data of Users",
+    "option_b": "Distributed Denial of Service: Overwhelming a target system with traffic from many sources to make it unavailable",
+    "option_c": "Directly Downloading Software",
+    "option_d": "A ways to hack a password",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DDoS attacks use many computers (botnets) to flood a network or server, causing an outage."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Encryption",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'TLS' (Transport Layer Security) used for?",
+    "option_a": "To speed up the network",
+    "option_b": "To provide secure, encrypted communication between a client and a server (e.g. HTTPS)",
+    "option_c": "To rename the internet",
+    "option_d": "To delete old messages",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TLS ensures that data being sent over the network cannot be intercepted or modified by others."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Auditing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Audit Logging'?",
+    "option_a": "Logging the weight of the server",
+    "option_b": "Recording a chronological history of who did what and when in a system",
+    "option_c": "Deleting old files",
+    "option_d": "Naming the pods",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Logs are essential for investigating security incidents and proving compliance."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Security Incident",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is an 'Incident Response Plan'?",
+    "option_a": "A plan to write code faster",
+    "option_b": "A set of procedures for detecting, responding to, and recovering from security incidents",
+    "option_c": "A ways to delete users",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Having a plan ensures that the organization can act quickly and effectively when an attack occurs."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Authorization",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does ABAC stand for?",
+    "option_a": "Always Be Accessing Code",
+    "option_b": "Attribute-Based Access Control: Granting access based on attributes of the user, resource, and environment",
+    "option_c": "Automated Backup and Control",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ABAC is more flexible than RBAC, allowing for complex rules (e.g. 'can only access data during office hours')."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Network Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'DMZ' (Demilitarized Zone) in networking?",
+    "option_a": "A place where there is no internet",
+    "option_b": "A physical or logical subnetwork that contains and exposes an organization's external-facing services to an untrusted network",
+    "option_c": "A ways to delete servers",
+    "option_d": "Naming the nodes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DMZ adds an extra layer of security to an organization's LAN; an external attacker only has access to equipment in the DMZ."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Git Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of 'GPG Signing' your Git commits?",
+    "option_a": "To make the commit messages look professional",
+    "option_b": "To verify that the commit actually came from you and hasn't been altered",
+    "option_c": "To encrypt the source code in Git",
+    "option_d": "To speed up the Git push process",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Signing commits prevents 'identity spoofing' where an attacker pretends to be a trusted developer."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Git Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How can 'Pre-commit hooks' improve security in a DevSecOps pipeline?",
+    "option_a": "By deleting the code before it is committed",
+    "option_b": "By automatically running security checks (like secret scanning or linting) locally before the code is even committed to Git",
+    "option_c": "By asking for the developer's password more often",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hooks catch issues early (Shift Left), preventing sensitive data from ever reaching the central repository."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Vulnerability Management",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'False Positive' in the context of security scanning?",
+    "option_a": "A bug that is actually a feature",
+    "option_b": "When a scanner incorrectly identifies a piece of code as dynamic when it is static",
+    "option_c": "When a scanner reports a security vulnerability that does not actually exist or is not exploitable",
+    "option_d": "none of the above",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "False positives can lead to 'alert fatigue' and waste developer time; tuning scanners is essential."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Vulnerability Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does 'CVSS' stand for in vulnerability assessment?",
+    "option_a": "Common Vulnerability Scoring System",
+    "option_b": "Central View Security Solution",
+    "option_c": "Code Verification Safety Standard",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CVSS provides a numerical score (0-10) to reflect the severity of a vulnerability."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "IaC Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'IaC Scanning'?",
+    "option_a": "Scanning the computer for viruses",
+    "option_b": "Analyzing configuration files (like Terraform or CloudFormation) for security misconfigurations before they are deployed",
+    "option_c": "Checking the internet speed",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IaC scanning prevents deploying insecure infrastructure, such as S3 buckets with public read access."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Container Security",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is 'Image Layering' in the context of security scanning?",
+    "option_a": "Drawing pictures of the server",
+    "option_b": "The process where a scanner inspects each layer of a Docker image for vulnerabilities, rather than just the final state",
+    "option_c": "Naming the folders in order",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Security issues can be hidden in intermediate layers even if they are 'cleaned up' in the final layer."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Application Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What characterizes 'Fuzz Testing' (Fuzzing)?",
+    "option_a": "Writing blurry code",
+    "option_b": "Providing large amounts of random, malformed, or unexpected data to an application to see if it crashes or behaves unexpectedly",
+    "option_c": "Deleting old logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fuzzing is excellent for finding memory leaks, crashes, and unhandled edge cases."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Web Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'CSRF' (Cross-Site Request Forgery)?",
+    "option_a": "A ways to hack a password",
+    "option_b": "An attack that tricks a logged-in user into performing an action they did not intend to do on a different website",
+    "option_c": "Deleting the database",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CSRF exploits the trust a site has in a user's browser (usually via cookies)."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Web Security",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "How does an 'Anti-CSRF Token' protect an application?",
+    "option_a": "It encrypts the whole website",
+    "option_b": "It is a unique, secret, and unpredictable value generated by the server and required in every state-changing request from the client",
+    "option_c": "It is a ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Because an attacker cannot predict the token, they cannot forge a valid request on behalf of the user."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Web Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Same Origin Policy' (SOP)?",
+    "option_a": "A policy that says all users must be the same",
+    "option_b": "A critical browser security mechanism that restricts how a document or script loaded from one origin can interact with a resource from another origin",
+    "option_c": "A ways to name a server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SOP is a foundational security property that prevents scripts on one site from reading sensitive data on another site."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Web Security",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is 'CSP' (Content Security Policy)?",
+    "option_a": "A protocol for streaming video",
+    "option_b": "An added layer of security that helps detect and mitigate certain types of attacks, including XSS and data injection, by declaring which origins are trusted",
+    "option_c": "A ways to delete old images",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CSP is implemented via HTTP headers and can block inline scripts or unauthorized domains from loading resources."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Modern Auth",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Why should you NOT store sensitive user data (like passwords) inside a 'JWT' (JSON Web Token) payload?",
+    "option_a": "JWTs are too small",
+    "option_b": "The payload is standard base64 encoded, and anyone with the token can easily read the contents (unless it is explicitly encrypted)",
+    "option_c": "JWTs delete themselves",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Standard JWTs provide 'Integrity' (via signature) but NOT 'Confidentiality' for the payload content."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "API Security",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Rate Limiting' used for in API security?",
+    "option_a": "To slow down the developers",
+    "option_b": "To limit the number of requests a user can make in a given timeframe, protecting against brute-force and DoS attacks",
+    "option_c": "To rename the API",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Rate limiting ensures systems aren't overwhelmed and prevents automated tools from scraping data too quickly."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Network Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What characterizes a 'Man-in-the-Middle' (MitM) attack?",
+    "option_a": "A ways to catch two people talking",
+    "option_b": "An attack where the attacker secretly relays and possibly alters the communications between two parties who believe they are directly communicating",
+    "option_c": "A ways to delete a server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Encryption (TLS) and certificate validation are the primary defenses against MitM attacks."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Security Principles",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Secure by Default'?",
+    "option_a": "A ways to name a user",
+    "option_b": "The concept that software should be secure out-of-the-box, without requiring users to change settings to protect themselves",
+    "option_c": "A ways to delete old code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Examples include passwords being forced to change on first login or closing all ports by default on a firewall."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Data Privacy",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Data Masking'?",
+    "option_a": "Putting a mask on the server",
+    "option_b": "A method of creating a structurally similar but inauthentic version of an organization's data (e.g. for testing) to protect PII",
+    "option_c": "Deleting the data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Masking allows developers to work with realistic data without seeing actual customer secrets."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Monitoring",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is a 'SIEM' tool?",
+    "option_a": "Software for writing code",
+    "option_b": "Security Information and Event Management: A solution that aggregates and analyzes log data from across an entire organization to identify threats",
+    "option_c": "A tool to delete logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SIEMs (like Splunk or ELK) help security teams see the 'big picture' by connecting dots across multiple systems."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Threat Modeling",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the 'S' in the STRIDE threat modeling framework stand for?",
+    "option_a": "Secrecy",
+    "option_b": "Spoofing",
+    "option_c": "Simple",
+    "option_d": "Source",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Spoofing is an attempt to gain access to a system by using a false identity."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Security Culture",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Security Debt'?",
+    "option_a": "Money owed to a security company",
+    "option_b": "The accumulation of known vulnerabilities and weak security designs that have not been addressed in favor of feature delivery",
+    "option_c": "A ways to delete code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Ignoring security issues creates 'debt' that becomes increasingly expensive and dangerous to fix later."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Cloud Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In the 'Shared Responsibility Model', who is typically responsible for 'Security OF the Cloud'?",
+    "option_a": "The Customer",
+    "option_b": "The Cloud Service Provider (e.g. AWS, GCP)",
+    "option_c": "The Internet Provider",
+    "option_d": "The Developer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The provider handles physical security and hardware; the customer handles data, OS, and app security."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Zero Trust",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the core idea of 'Zero Trust' architecture?",
+    "option_a": "Trusting no one, even users inside the corporate network",
+    "option_b": "Trusting only the boss",
+    "option_c": "Trusting only the server",
+    "option_d": "A ways to delete a user",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Zero Trust means every request must be authenticated and authorized, regardless of where it originates."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Web Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Directory Traversal' (or Path Traversal)?",
+    "option_a": "A ways to find files in a folder",
+    "option_b": "A vulnerability that allows an attacker to read arbitrary files on the server that is running an application",
+    "option_c": "Deleting the folders",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Attackers use `../` patterns to move out of the intended folder and access sensitive OS files like `/etc/passwd`."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Network Security",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What which port is commonly used for 'SSH'?",
+    "option_a": "80",
+    "option_b": "22",
+    "option_c": "443",
+    "option_d": "21",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Secure Shell (SSH) is used for secure remote administration of systems."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Network Security",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What which port is commonly used for 'HTTPS'?",
+    "option_a": "80",
+    "option_b": "443",
+    "option_c": "8080",
+    "option_d": "22",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HTTPS traffic is encrypted and typically served on port 443."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Web Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is an 'Open Redirect' vulnerability?",
+    "option_a": "A ways to name a user",
+    "option_b": "When a web application accepts a user-controlled input that specifies a link to an external site, and uses that in a redirection",
+    "option_c": "Deleting the URL",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Attackers use open redirects to make a link appear to go to a trusted site, when it actually goes to a phishing site."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Application Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What characterize 'Business Logic' vulnerabilities?",
+    "option_a": "Bugs in the code that make it slow",
+    "option_b": "Flaws in the design and implementation of an application that allow an attacker to elicit unintended behavior (e.g. buying a $1000 item for $1)",
+    "option_c": "Deleting the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Business logic flaws are hard for automated scanners to find and usually require manual penetration testing."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Identity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Account Lockout' policy?",
+    "option_a": "A policy that deletes the account",
+    "option_b": "A security feature that temporarily disables a user account after a pre-defined number of failed login attempts",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lockout policies prevent brute-force attacks from trying thousands of passwords on a single account."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Auditing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'File Integrity Monitoring' (FIM)?",
+    "option_a": "Checking if the file is pretty",
+    "option_b": "A process that alerts when changes are made to critical system files or configurations",
+    "option_c": "A tool to delete old files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "FIM is a core security control to detect tampered systems after a breach."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Cryptography",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Perfect Forward Secrecy' (PFS)?",
+    "option_a": "Deleting the past",
+    "option_b": "A security property of key agreement protocols that ensures that a session key will not be compromised even if the long-term private key is stolen later",
+    "option_c": "A ways to name a key",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PFS ensures that past encrypted communications cannot be decrypted even if the server key is later compromised."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Container Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Distroless' image?",
+    "option_a": "An image with no name",
+    "option_b": "A container image that contains ONLY the application and its runtime dependencies, and nothing else (no shell, no package manager)",
+    "option_c": "A image that is free to use",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Distroless images are the current 'Gold Standard' for secure container deployments."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Vulnerability Assessment",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Exploitability'?",
+    "option_a": "A ways to sell a vulnerability",
+    "option_b": "The measure of how easily a particular security vulnerability can be used by an attacker to gain unauthorized access or cause damage",
+    "option_c": "A ways to delete code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "High severity but zero exploitability (e.g. no network path) may lower the priority of a fix."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Security Testing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What characterizes 'Gray Box' testing?",
+    "option_a": "Testing only the colors of the app",
+    "option_b": "Security testing where the evaluator has limited knowledge of the system (e.g. they have an account but not source code access)",
+    "option_c": "A ways to delete logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Gray box testing simulates an authenticated user attempting to escalate privileges."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Compliance",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is an 'ISMS'?",
+    "option_a": "Internal Security Management Software",
+    "option_b": "Information Security Management System: A systematic approach to managing sensitive company information",
+    "option_c": "Internet Safety Monitoring Service",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ISO/IEC 27001 is a leading international standard for an ISMS."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Malware",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Rootkit'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A collection of computer software designed to enable access to a computer or an area of its software that is not otherwise allowed, while masking its existence",
+    "option_c": "A tool to delete old files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Rootkits are very dangerous as they can hide from standard anti-virus and operating system tools."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 2,
+    "level_topic": "Identity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Credential Stuffing'?",
+    "option_a": "Eating the passwords",
+    "option_b": "A type of attack where a large number of spilled credentials (username/password pairs) are automatically tried against a website",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This attack relies on the fact that many users reuse the same password across multiple sites."
+  }
+]

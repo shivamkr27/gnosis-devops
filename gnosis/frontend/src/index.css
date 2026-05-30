@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased;
+  }
+}
+
+.jaali-bg {
+  background-image: radial-gradient(#1E2044 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-color: #F9F7F2;
+  opacity: 0.95;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-soft hover:-translate-y-1 hover:border-b-4 hover:border-b-secondary;
+}

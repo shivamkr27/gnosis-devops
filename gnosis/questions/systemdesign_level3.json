@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Distributed Consensus",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the primary purpose of 'Paxos' or 'Raft' algorithms?",
+    "option_a": "To compress data for storage",
+    "option_b": "To achieve consensus among a group of unreliable servers in a distributed system",
+    "option_c": "To encrypt user passwords",
+    "option_d": "To optimize CSS rendering",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "These algorithms ensure that a cluster of nodes agrees on a single value even if some nodes fail."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Time & Ordering",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What are 'Vector Clocks' used for in distributed databases?",
+    "option_a": "To measure the speed of the hardware",
+    "option_b": "To detect and resolve causality and version conflicts between data updates in an eventually consistent system",
+    "option_c": "To sync the time on the servers' BIOS",
+    "option_d": "To schedule cron jobs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Vector clocks help systems like DynamoDB identify when two updates happened concurrently (conflicts)."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Geo-replication",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Active-Active' Geo-replication?",
+    "option_a": "All users go to a single central data center",
+    "option_b": "Data is served and accepted for writes in multiple geographic regions simultaneously",
+    "option_c": "Servers taking turns to process data weekly",
+    "option_d": "A way to delete data in two countries at once",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Active-active setups provide lowest latency and highest availability but are extremely complex to sync."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Database Architecture",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'LSM Tree' (Log-Structured Merge-tree)?",
+    "option_a": "A tree in the data center garden",
+    "option_b": "A data structure optimized for write-heavy workloads by buffering writes in memory and flushing them to disk sequentially",
+    "option_c": "A way to sort SQL tables",
+    "option_d": "A physical storage rack",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LSM trees are used by Cassandra, LevelDB, and RocksDB to handle massive write volumes."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Reliability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In the Circuit Breaker pattern, what does the 'Half-Open' state represent?",
+    "option_a": "The service is completely down",
+    "option_b": "The system allows a limited number of requests to pass through to test if the failing service has recovered",
+    "option_c": "The system is working perfectly",
+    "option_d": "The database is being backed up",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Half-open allows the system to gracefully transition back to a normal state if the downstream service is healthy."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Database Sharding",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "Why is 'Consistent Hashing' preferred over 'Modulo Hashing' (key % n) for distributed caching?",
+    "option_a": "Consistent hashing is easier to write",
+    "option_b": "Consistent hashing minimizes data reshuffle (rehashing) when nodes are added or removed",
+    "option_c": "Modulo hashing only works for integers",
+    "option_d": "Consistent hashing uses less memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "With modulo hashing, adding one node moves almost all keys; with consistent hashing, only 1/n keys move."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Availability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Split-Brain' problem in a cluster?",
+    "option_a": "When the CPU cache fails",
+    "option_b": "When two or more sets of nodes lose connectivity but continue to operate as if they are the sole master, leading to data corruption",
+    "option_c": "When a developer forgets to save code",
+    "option_d": "When the system has too many users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Consensus protocols like Raft prevent split-brain by requiring a majority quorum for any updates."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Data Consistency",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Quorum Read' (R) and 'Quorum Write' (W) configuration?",
+    "option_a": "R + W = N where N is the number of replicas",
+    "option_b": "R + W > N ensures strong consistency in a distributed system",
+    "option_c": "R and W must always be 1",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By ensuring R+W > N, you guarantee that the read set and write set always overlap by at least one node."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Microservices",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Service Mesh' (e.g., Istio, Linkerd)?",
+    "option_a": "An upgraded internet cable",
+    "option_b": "A dedicated infrastructure layer for handling service-to-service communication, including security, traffic control, and observability",
+    "option_c": "A database for microservices",
+    "option_d": "A type of UI component",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Service meshes use sidecar proxies to manage network complexity transparently from the application code."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "API Design",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Idempotency' in API design?",
+    "option_a": "Getting a different result every time you call an API",
+    "option_b": "The property where making the same request multiple times has the same effect as making it once",
+    "option_c": "The speed of the API",
+    "option_d": "Reducing the API payload size",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Idempotency is crucial for safe retries in case of network failures."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Bloom Filters",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is a 'Bloom Filter' primarily used for?",
+    "option_a": "Cleaning air in a server room",
+    "option_b": "Highly efficient probabilistic check if an element is in a set (it can have false positives, but never false negatives)",
+    "option_c": "Sorting massive datasets on disk",
+    "option_d": "Encryption of database keys",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bloom filters save expensive disk lookups by proving an element is NOT present."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Database Architecture",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Write Amplification' problem in SSDs and databases?",
+    "option_a": "The increase in font size of logs",
+    "option_b": "The phenomenon where the amount of data physically written to the storage media is a multiple of the data logical written by the application",
+    "option_c": "Higher volumes during writes",
+    "option_d": "Database crashes during writes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Write amplification reduces drive lifespan and decreases performance."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "High Availability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Chaos Engineering' (e.g., Netflix Chaos Monkey)?",
+    "option_a": "When the code is very messy",
+    "option_b": "The practice of intentionally injecting failures into a production system to test and improve its resilience",
+    "option_c": "A random hacking attack",
+    "option_d": "Deleting files randomly by mistake",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Chaos engineering helps find hidden weaknesses in complex distributed systems."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'BGP' (Border Gateway Protocol) hijacking?",
+    "option_a": "Stealing a server physically",
+    "option_b": "Maliciously changing the routing table of the internet to redirect traffic to the wrong destination",
+    "option_c": "A way to speed up DNS",
+    "option_d": "Bypassing a firewall",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BGP is the protocol that manages how packets are routed across the global internet."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Caching",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Cache Stampede' (Thundering Herd) problem?",
+    "option_a": "When the cache server catches fire",
+    "option_b": "When a popular cache key expires and massive numbers of concurrent requests hit the backend DB at once",
+    "option_c": "Adding too many keys to the cache",
+    "option_d": "Using two caches together",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This can crash the database; it's solved by locking or probabilistic early re-computation."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Database Architecture",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is a 'B-Tree' versus 'B+ Tree' in database indexing?",
+    "option_a": "B+ trees store data in all nodes, B-trees only in leaves",
+    "option_b": "B+ trees store actual data/pointers only in leaf nodes, which are linked together for faster range scans",
+    "option_c": "B-trees are for NoSQL, B+ are for SQL",
+    "option_d": "They are identical structures",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "B+ trees are standard for database indexes because they optimize disk I/O and range queries."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Scalability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Database Denormalization' common for in high-scale systems?",
+    "option_a": "Reducing the disk space used",
+    "option_b": "Improving read performance by eliminating complex JOINS through data duplication",
+    "option_c": "Making the database schema harder to read",
+    "option_d": "Ensuring data is only in one place",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "At scale, joins (especially across distributed nodes) are prohibitively expensive."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Communication",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Server-Sent Events' (SSE)?",
+    "option_a": "Servers sending emails to users",
+    "option_b": "A standard allowing servers to push real-time data updates to web pages over HTTP",
+    "option_c": "A type of database trigger",
+    "option_d": "A crash report",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SSE is simpler than WebSockets for one-way (Server to Client) real-time updates."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Cloud Architecture",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'Elastic IP'?",
+    "option_a": "An address that stretches across the network",
+    "option_b": "A static IP address designed for dynamic cloud computing that can be quickly remapped to another instance during failure",
+    "option_c": "An IP for a VPN only",
+    "option_d": "A temporary IP that lasts 5 minutes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Elastic IPs allow you to maintain a consistent DNS endpoint while hardware underneath changes."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Erasure Coding' in storage systems?",
+    "option_a": "Encrypting data with a key",
+    "option_b": "A method of data protection in which data is broken into fragments, expanded and encoded with redundant data pieces for high durability",
+    "option_c": "Deleting data after 30 days",
+    "option_d": "A way to hide files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Erasure coding (used in S3) provides higher durability than simple RAID replication with less storage overhead."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Microservices",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Saga' pattern for distributed transactions?",
+    "option_a": "A long story about the server",
+    "option_b": "Managing a transaction across multiple services by using a sequence of local transactions and compensation actions if one fails",
+    "option_c": "Using a single massive SQL transaction for all services",
+    "option_d": "A way to merge all databases into one",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sagas avoid long-lived distributed locks and improve system scalability."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Zero Trust' architecture?",
+    "option_a": "Assuming no user is active",
+    "option_b": "An IT security model that requires strict identity verification for every person and device trying to access resources, regardless of location",
+    "option_c": "Don't trust the code you wrote",
+    "option_d": "Trusting only users in the physical office",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Zero Trust ensures that being 'inside the network' does not automatically grant access to assets."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Database Architecture",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is the 'PACELC' theorem an extension of?",
+    "option_a": "CAP theorem",
+    "option_b": "ACID properties",
+    "option_c": "Moore's law",
+    "option_d": "BASE properties",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "PACELC clarifies the tradeoff between Latency (L) and Consistency (C) when the system is running normally (E - else)."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Caching",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Global Cache' in system design?",
+    "option_a": "The browser cache on every user device",
+    "option_b": "A centralized cache used by all application nodes (e.g., Redis cluster) to ensure data consistency",
+    "option_c": "A cache that stores the entire internet",
+    "option_d": "Caching only global variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Global cache avoids duplicate cache entries in local node caches."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Infrastructure",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Infrastructure as Code' (IaC)?",
+    "option_a": "Writing code inside the data center",
+    "option_b": "Managing and provisioning infrastructure through machine-readable definition files (e.g., Terraform) rather than manual processes",
+    "option_c": "Drawing server diagrams in code",
+    "option_d": "Using Python to restart a server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IaC ensures consistent, repeatable, and version-controlled infrastructure deployment."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Load Balancing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Anycast' routing?",
+    "option_a": "Sending a message to everyone",
+    "option_b": "A network addressing and routing method where a single IP address is shared by multiple geographic locations, routing traffic to the nearest one",
+    "option_c": "Sending packets in a random direction",
+    "option_d": "A way to broadcast TV on the internet",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Anycast is commonly used by CDNs and DNS providers to minimize global latency."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Data Integrity",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Merkle Tree' used for in systems like Git or Blockchain?",
+    "option_a": "Storing names of tree species",
+    "option_b": "Efficiently verifying that data has not been tampered with and syncing differences across nodes",
+    "option_c": "Sorting code files",
+    "option_d": "A way to draw the system diagram",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Merkle trees use hashes to efficiently detect changes in large datasets."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Streaming",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Log Aggregation'?",
+    "option_a": "Merging multiple math logs",
+    "option_b": "The process of collecting, centralizing, and indexing logs from various servers in a distributed system (e.g., Fluentd, Splunk)",
+    "option_c": "Deleting logs every 5 minutes",
+    "option_d": "Sharing logs on social media",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Log aggregation is vital for debugging and monitoring distributed microservices."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Database Architecture",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Polyglot Persistence'?",
+    "option_a": "Using only one database for everything",
+    "option_b": "Using different data storage technologies for different parts of an application (e.g., SQL for profiles, Redis for cache, Neo4j for social)",
+    "option_c": "A database written in many languages",
+    "option_d": "Storing files in multiple languages",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Not all data is fit for a single model; polyglot persistence uses the best tool for each specific job."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Scalability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Database Federation'?",
+    "option_a": "Merging all databases in a country",
+    "option_b": "Splitting a database into multiple physical servers by functional area (e.g., users table on one DB, products on another)",
+    "option_c": "Encrypting the database name",
+    "option_d": "A way to count database rows",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Federation is an early step in database scaling before moving to more complex sharding."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Availability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is an 'Availability Zone' (AZ)?",
+    "option_a": "The area where internet is free",
+    "option_b": "A distinct location within a cloud region designed to be isolated from failures in other AZs (separate power, cooling, network)",
+    "option_c": "One server room",
+    "option_d": "A time zone for the database",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deploying across multiple AZs protects your system from data center-level disasters."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Protocols",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'QUIC' protocol (HTTP/3)?",
+    "option_a": "A faster way to write code",
+    "option_b": "A new transport layer protocol built on top of UDP to reduce latency and improve connection migration over traditional TCP",
+    "option_c": "A way to compress images",
+    "option_d": "A database query language",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "QUIC reduces the number of round trips needed for establishing secure connections."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Consistency",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In Raft consensus, how often are 'Heartbeats' sent by the Leader?",
+    "option_a": "Every minute",
+    "option_b": "Continuously to prevent followers from starting a new election",
+    "option_c": "Only when data changes",
+    "option_d": "Every hour",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Heartbeats maintain the Leader's authority; if they stop, the followers assume the Leader died and elect a new one."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Single Sign-On' (SSO) architecture?",
+    "option_a": "Allowing only one user to login at a time",
+    "option_b": "An authentication scheme that allows a user to log in with a single ID to any of several related, independent software systems",
+    "option_c": "A password that expires after one use",
+    "option_d": "A very long password",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SSO improves user experience and security by centralizing session management."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Infrastructure",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Canary Deployment'?",
+    "option_a": "Deploying code in a birdcage",
+    "option_b": "A rollout strategy where a new version of software is first released to a small, specific subset of users before rolling it out to everyone",
+    "option_c": "Deleting old code before new code arrives",
+    "option_d": "Testing code on a fake server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Canary deployments act as an early warning system for bugs in new releases."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Caching",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Negative Cache'?",
+    "option_a": "A cache that doesn't work",
+    "option_b": "Caching the 'absence' of an item (e.g., 404 Not Found) to prevent repeated expensive lookups for data that doesn't exist",
+    "option_c": "Deleting items from the cache",
+    "option_d": "A cache for large files only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Negative caching prevents 'Cache Holes' that could allow a user to flood the backend with invalid requests."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Tiered Storage'?",
+    "option_a": "Storing data in different levels of the building",
+    "option_b": "Assigning data to different storage media (e.g., RAM vs SSD vs HDD) based on cost, performance, and access frequency",
+    "option_c": "Backup on paper",
+    "option_d": "Using only one type of drive",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tiered storage helps balance cost and performance by moving 'cold' data to cheaper, slower media."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Scalability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Thundering Herd' in general computing?",
+    "option_a": "Too many servers in one room",
+    "option_b": "When a large number of processes/threads are awakened by an event but only one can handle it, wasting CPU resources",
+    "option_c": "A stampede of users on a website",
+    "option_d": "Deleting many files at once",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Thundering herd can lead to severe system slowdowns and contention."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Head-of-Line' (HOL) blocking in TCP?",
+    "option_a": "When the lead developer stops working",
+    "option_b": "A performance limitation where a single lost or delayed packet stops all subsequent packets from being processed by the application",
+    "option_c": "Blocking the first person in line",
+    "option_d": "A security firewall feature",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HOL blocking is a major reason why HTTP/3 moved to a UDP-based transport (QUIC)."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Maintenance",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Blue-Green' deployment?",
+    "option_a": "Mixing two versions of code in the same server",
+    "option_b": "Running two identical production environments (Blue and Green). Traffic is switched to the new version (Green) after it passes tests.",
+    "option_c": "Using a blue background for the website",
+    "option_d": "A way to categorize bugs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Blue-Green deployment allows near-zero downtime and instant rollback capabilities."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Database Architecture",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Sharding Key' selection criteria?",
+    "option_a": "Picking a random string",
+    "option_b": "Picking a key that ensures even distribution of data (avoiding hot spots) and minimizes cross-shard queries",
+    "option_c": "Using the auto-incrementing ID for everything",
+    "option_d": "The shortest column name",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shard key selection is the most critical decision when implementing database sharding."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Protocols",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Protocol Buffers' (Protobuf)?",
+    "option_a": "A way to buffer YouTube videos",
+    "option_b": "A language-neutral, platform-neutral, extensible mechanism for serializing structured data (developed by Google)",
+    "option_c": "An internet speed booster",
+    "option_d": "A type of firewall",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Protobuf is smaller, faster, and simpler than XML or JSON for service communication."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Consistency",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Two-Phase Commit' (2PC) protocol?",
+    "option_a": "Comming twice during the day",
+    "option_b": "A distributed algorithm that coordinates all processes in a distributed transaction on whether to commit or rollback",
+    "option_c": "A way to update Two databases at once without a coordinator",
+    "option_d": "A type of code update",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "2PC provides strong consistency but can become a bottleneck because it requires locking."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Streaming",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In stream processing, what is 'At-least-once' delivery?",
+    "option_a": "Messages might never be delivered",
+    "option_b": "A guarantee that messages will be delivered one or more times, ensuring no data loss but allowing duplicates",
+    "option_c": "Messages are delivered exactly one time",
+    "option_d": "Messages are delivered to everyone",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "At-least-once is a common tradeoff for performance and reliability in systems like Kafka."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Availability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Failover Cluster'?",
+    "option_a": "A group of servers that fail together",
+    "option_b": "A set of independent computers that work together to increase the availability of services and applications",
+    "option_c": "A very large data center",
+    "option_d": "A type of load balancer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Clusters provide a safety net; if one node fails, the service is picked up by another node in the cluster."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Scaling",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Cold Start' in Serverless (FaaS)?",
+    "option_a": "A server room in winter",
+    "option_b": "The latency experienced when a function is triggered after being idle, as the cloud provider must spin up a new container",
+    "option_c": "A computer that won't turn on",
+    "option_d": "Buying a new computer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cold starts are a significant performance consideration for serverless architectures."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'WAF' (Web Application Firewall)?",
+    "option_a": "A physical wall around the data center",
+    "option_b": "A firewall that monitors, filters, and blocks HTTP traffic to and from a web application, protecting against attacks like SQL injection and XSS",
+    "option_c": "A tool to compress web pages",
+    "option_d": "A way to speed up user logins",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "WAFs operate at Layer 7 and provide deep packet inspection for web requests."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Communication",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which method is commonly used for 'Message Acknowledgment' in queues?",
+    "option_a": "Sending a thank you email",
+    "option_b": "The consumer notifying the queue that a message has been successfully handled, so the queue can safely delete it",
+    "option_c": "Writing a log entry",
+    "option_d": "Deleting the message immediately after sending",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Acknowledgments (ACKs) ensure reliable delivery in message-oriented middleware."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Database Architecture",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Tombstone' in NoSQL databases like Cassandra?",
+    "option_a": "The end of a database",
+    "option_b": "A marker used to signal that a piece of data has been deleted, ensuring the deletion propagates to all replicas",
+    "option_c": "A physical server name",
+    "option_d": "An old version of the software",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tombstones prevent deleted data from 'reappearing' if a node goes down and comes back up with an old copy."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 3,
+    "level_topic": "Scaling",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Database Read Replicas' lag?",
+    "option_a": "When the database is too fast",
+    "option_b": "The time delay between a write to the primary (Master) and when it becomes available on the replicas (Slaves)",
+    "option_c": "A connection error to the database",
+    "option_d": "The time it takes to delete data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Replication lag is a critical metric for systems that rely on read replicas for scaling."
+  }
+]

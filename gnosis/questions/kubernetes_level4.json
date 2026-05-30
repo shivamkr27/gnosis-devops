@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Garbage Collection' mechanism in Kubelet responsible for?",
+    "option_a": "Cleaning the user interface",
+    "option_b": "Removing unused containers and images on a node to reclaim disk space (based on usage thresholds)",
+    "option_c": "Deleting old YAML files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kubelet monitors DiskPressure and kicks off GC to prevent the node from crashing due to disk exhaustion."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "API Server",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'DRY-RUN' in the Kubernetes API (server-side)?",
+    "option_a": "Deleting pods without electricity",
+    "option_b": "An API call that goes through the full validation and admission control chain but does not persist the object to etcd",
+    "option_c": "A ways to speed up the API",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Server-side dry-run is more accurate than client-side because it includes mutation and validation logic from admission controllers."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Pod-to-Pod Communication' across nodes in a standard overlay network?",
+    "option_a": "Direct IP connection",
+    "option_b": "Encapsulation (e.g. VXLAN or Geneve) where the pod packet is wrapped in a host-to-host packet",
+    "option_c": "Talking over the API server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Overlay networks use tunneling to allow pods with private IPs to communicate over a physical network layer."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Storage Drivers",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In the 'CSI' architecture, what is the 'Attacher/Detacher' component responsible for?",
+    "option_a": "Naming the volume",
+    "option_b": "Integrating with the Cloud Provider API to 'attach' a physical disk to a specific node instance",
+    "option_c": "Formatting the disk",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Attachment is a control-plane operation, while 'mount' (handled by Kubelet) is a node-level operation."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Security Hardening",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes a 'Rootless Pod' configuration?",
+    "option_a": "A pod with no root password",
+    "option_b": "A pod running with 'runAsNonRoot: true' and 'allowPrivilegeEscalation: false' in its SecurityContext",
+    "option_c": "A pod that cannot use the internet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hardening SecurityContext is a best practice to prevent container breakout exploits."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced Scheduling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Pod Preemption'?",
+    "option_a": "Buying pods in advance",
+    "option_b": "The process where the scheduler evicts lower-priority pods to make room on a node for a higher-priority pod that is currently unschedulable",
+    "option_c": "Deleting pods after use",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Preemption ensures high-priority workloads aren't blocked by less critical ones in a busy cluster."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Control Plane Governance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which algorithm is used by the 'Kube-controller-manager' to manage leader election for its internal controllers?",
+    "option_a": "Raft",
+    "option_b": "Lease-based coordination (using the Lease API object)",
+    "option_c": "Gossip",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Leases allow one manager node to be the active 'leader' and perform write operations to the cluster state."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Linux Kernel Integration",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'OOM Score Adj' value and how does Kubernetes use it?",
+    "option_a": "A ways to name the RAM",
+    "option_b": "A kernel setting that Kubernetes sets differently for different QoS classes (Guaranteed, Burstable, BestEffort) to control which pods get killed first during memory pressure",
+    "option_c": "A ways to delete memory",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BestEffort pods (no requests/limits) are assigned a high OOM score and are the first candidates for eviction."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'MTU Reflection' in the context of overlay networks?",
+    "option_a": "A ways to see the network",
+    "option_b": "The need to account for encapsulation headers (e.g. 50 bytes for VXLAN) by reducing the Pod interface MTU compared to the host MTU to prevent fragmentation",
+    "option_c": "A ways to speed up the network",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Incorrect MTU settings can lead to mysterious packet drops in cross-node communication."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Architecture Stack",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which component is responsible for turning a PodSpec into a set of 'OCI Runtime Specification' files for the container runtime?",
+    "option_a": "API Server",
+    "option_b": "Kubelet",
+    "option_c": "Scheduler",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kubelet translates the abstract K8s pod definition into the concrete runtime configuration understood by containerd or runc."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "System Auditing",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is Kubernetes 'Audit Logging'?",
+    "option_a": "Logging the code",
+    "option_b": "A security feature that provides a chronological record of calls made to the Kubernetes API, including who made it, when, and from where",
+    "option_c": "Logging the user chat",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Audit logs are critical for compliance and forensic investigation after a security incident."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Storage Internals",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Propagated Mount' vs 'Slave Mount' in Kubernetes volumes?",
+    "option_a": "Naming the folder",
+    "option_b": "Settings that control how mount events on the host are synchronized with the container's mount namespace",
+    "option_c": "A ways to delete volumes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Mount propagation is needed for advanced scenarios like running a storage driver as a container."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Extreme Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterize 'Kube-hardening' with User Namespaces?",
+    "option_a": "Giving names to users",
+    "option_b": "A beta feature that maps container users to a different set of UIDs on the host, ensuring container 'root' is actually a nobody on the node",
+    "option_c": "Deleting the users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "User Namespace support is one of the strongest isolation features added to K8s in recent years."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Modern Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'eBPF-powered' networking (e.g. Cilium)?",
+    "option_a": "Fast fiber optics",
+    "option_b": "Replacing standard iptables-based routing with high-performance kernel-space programs that handle load-balancing and security filtering",
+    "option_c": "A ways to delete IPs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "eBPF provides near-native performance and better scalability than the traditional iptables/ipvs chain."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Deep Diagnostics",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How do you inspect the 'etcd' database directly for debugging? (DANGEROUS)",
+    "option_a": "cat /var/lib/etcd",
+    "option_b": "By using the 'etcdctl' CLI tool with the cluster's certificates and a 'member list' command",
+    "option_c": "It is not possible",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Direct etcd access is a fallback of last resort for cluster recovery."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Modern Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Wasm' (WebAssembly) in the context of Kubernetes?",
+    "option_a": "A ways to name the web",
+    "option_b": "An alternative lightweight container runtime format that can run in K8s (using Krustlet or runwasi) for edge computing and high-density workloads",
+    "option_c": "A tool to delete pods",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Wasm modules start faster and use less memory than traditional OCI containers."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Standards",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'CNCF'?",
+    "option_a": "Cloud Network Control Foundation",
+    "option_b": "Cloud Native Computing Foundation: The Linux Foundation sub-project that hosts Kubernetes and manages its ecosystem standards",
+    "option_c": "Only Cloud Network",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The CNCF is the neutral governing body for Kubernetes and many related projects (Prometheus, Envoy)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Security Intrusion",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Sidecar Injection' vulnerability?",
+    "option_a": "Injecting code into the sidecar",
+    "option_b": "An exploit where a malicious user creates a pod that tricks an admission controller into injecting a sidecar with excessive privileges",
+    "option_c": "Hiding the sidecar",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Properly securing admission webhooks is critical for cluster integrity."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Internal Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which system call is used by Kubelet to enforce the 'Filesystem' isolation of a container?",
+    "option_a": "chroot",
+    "option_b": "pivot_root or chroot (depending on runtime)",
+    "option_c": "mount",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Modern runtimes prefer 'pivot_root' because it provides stronger jail isolation than 'chroot'."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Management Scalability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'API Server Paging'?",
+    "option_a": "Calling the API server on a pager",
+    "option_b": "A ways to retrieve long lists of objects from the API (e.g. 100,000 pods) in smaller 'chunks' to avoid overloading the API server memory",
+    "option_c": "A ways to delete objects",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Paging is essential for cluster management tools that work with massive numbers of resources."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Kube-proxy IPVS' mode performance?",
+    "option_a": "Lower latency than Iptables",
+    "option_b": "Faster route lookup (O(1) vs O(n)) for clusters with thousands of services",
+    "option_c": "Better load balancing algorithms",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "IPVS is the recommended proxy mode for large-scale production clusters."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Performance Optimization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Topology Awareness' in the context of Service networking?",
+    "option_a": "Knowing where the pods are",
+    "option_b": "Enforce traffic to stay within the same zone or region to reduce latency and save on cross-zone network costs",
+    "option_c": "A ways to delete zones",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Topology awareness (Topology Keys) is vital for cost and performance management in multi-zone clusters."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Internal API",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Status' sub-resource in the Kubernetes API?",
+    "option_a": "The current time",
+    "option_b": "A dedicated part of an object's API that can only be written to by controllers, not by users (using standard PUT)",
+    "option_c": "A ways to delete the status",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The status sub-resource separation prevents users from 'faking' the health or progress of an object."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Architecture Performance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Apiserver Watch' pressure?",
+    "option_a": "The time spent looking at the API",
+    "option_b": "The continuous CPU/Memory overhead on the API server for maintaining open streaming connections to all controllers and agents in the cluster",
+    "option_c": "The time to backup the cluster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Efficient watch management is the key to scaling Kubernetes to 5,000+ nodes."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Resource Isolation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which Control Group (cgroup) setting is used by Kubernetes to implement CPU 'Requests' (not limits)?",
+    "option_a": "cpu.cfs_quota_us",
+    "option_b": "cpu.shares",
+    "option_c": "cpu.max",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CPU shares provide a relative weight that guarantees a process gets its share of CPU time if the node is busy."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Control Plane Governance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Self-SubjectReview' API used for?",
+    "option_a": "Reviewing your own work",
+    "option_b": "Allowing a user or service account to ask the API server what its own permissions are (e.g. 'Can I list pods?')",
+    "option_c": "A ways to delete your own account",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This API allows CLI tools and apps to perform 'pre-flight' permission checks before attempting actions."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced Volumes",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which CSI capability allows for taking persistent backups of volumes within the cluster?",
+    "option_a": "VolumeCopy",
+    "option_b": "VolumeSnapshot",
+    "option_c": "VolumeBackup",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "VolumeSnapshots allow you to create a point-in-time copy of your volume's data using the cloud's native snapshotting feature."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Pod Scheduling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What does a pod 'Finalizer' do to the deletion lifecycle?",
+    "option_a": "Deletes the pod faster",
+    "option_b": "Prevents the object from being removed from etcd until certain 'cleanup' conditions are met by controllers",
+    "option_c": "Renames the pod",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Finalizers are used to ensure that external resources (like a cloud load balancer) are cleaned up before the K8s object is gone."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Diagnostics Log",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How can you view the 'internal' state of a running Controller Manager via HTTP? (if enabled)",
+    "option_a": "Looking at /logs",
+    "option_b": "Looking at the /debug/pprof or /metrics endpoints on the controller manager node",
+    "option_c": "It is not possible via HTTP",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pprof allows for deep profiling of the Go runtime to identify bottlenecks in the controller logic."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Cloud-Native Trend",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Kube-virt'?",
+    "option_a": "A virtual cluster",
+    "option_b": "An extension for Kubernetes that allows it to manage Vitual Machines (VMs) alongside containers as first-class objects",
+    "option_c": "A ways to delete VMs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kube-virt allows teams to migrate legacy VM workloads into their Kubernetes infrastructure."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "API Aggregation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'Aggregation Layer' in the Kubernetes API?",
+    "option_a": "A way to combine multiple YAML files",
+    "option_b": "A feature that allows the Kubernetes API server to be extended with custom APIs that are not part of core Kubernetes, by routing requests to an Extension API Server",
+    "option_c": "A tool to merge database records",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "API Aggregation allows for building complex custom controllers that feel like native K8s resources (e.g. Metrics Server)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced Operators",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the primary difference between a 'Controller' and an 'Operator' in Kubernetes?",
+    "option_a": "Operators have a physical remote",
+    "option_b": "A Controller manages generic resources (Pods, Deployments), while an Operator is a controller that encapsulates domain-specific knowledge to manage a complex application (e.g. a Database)",
+    "option_c": "Controllers are faster than Operators",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Operators use CRDs and custom logic to automate tasks like database backups, upgrades, and failover."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Security Admission",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'ValidatingAdmissionWebhook' used for?",
+    "option_a": "To check if the user has a valid password",
+    "option_b": "An HTTP callback that receives a request to create/update a resource and returns a 'Yes/No' decision based on custom organizational policies (e.g. 'Must have labels')",
+    "option_c": "To encrypt the API traffic",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Validating webhooks allow you to enforce strict security and compliance rules that K8s doesn't support natively."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Mutating Admission",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'MutatingAdmissionWebhook'?",
+    "option_a": "A webhook that changes the user's name",
+    "option_b": "A callback that can modify an object's YAML definition (e.g. injecting an Istio sidecar or setting default CPU limits) before it is persisted to etcd",
+    "option_c": "A webhook that deletes objects randomly",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Mutating webhooks are the mechanism behind automatic sidecar injection in service meshes like Istio."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Observability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Prometheus Adapter' used for in Kubernetes autoscaling?",
+    "option_a": "To draw charts in the dashboard",
+    "option_b": "To translate custom Prometheus metrics into the Kubernetes Custom Metrics API, allowing HPA to scale based on business metrics like HTTP 500 rates",
+    "option_c": "To backup Prometheus data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Custom metrics allow for more intelligent scaling than simple CPU/Memory usage thresholds."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Cluster API",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Cluster API' (CAPI) project?",
+    "option_a": "A way to see the cluster health",
+    "option_b": "A sub-project that uses Kubernetes-style APIs (CRDs) to manage the lifecycle (create, update, delete) of the Kubernetes clusters themselves",
+    "option_c": "A tool to merge multiple clusters",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cluster API brings 'Infrastructure as Code' directly into the K8s paradigm, allowing one 'Management Cluster' to manage many 'Workload Clusters'."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced Storage",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'CSI Volume Clone' in Kubernetes?",
+    "option_a": "Copying the YAML file of a volume",
+    "option_b": "A feature that allows creating a new PersistentVolume populated with the data from an existing PersistentVolume, using the storage backend's native cloning ability",
+    "option_c": "A backup of the registry",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cloning is extremely fast and space-efficient on modern storage backends like AWS EBS or NetApp."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Multi-tenancy",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Hierarchical Namespaces' (HNC) in Kubernetes?",
+    "option_a": "Naming folders in a hierarchy",
+    "option_b": "An extension that allows namespaces to have parents and children, enabling propagate of policies (RBAC, NetworkPolicy) down the tree",
+    "option_c": "A way to hide namespaces",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HNC simplifies multi-tenant management by allowing large organizations to manage permissions hierarchically."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'IP Address Management' (IPAM) in a CNI plugin?",
+    "option_a": "A list of IP addresses",
+    "option_b": "The component or sub-plugin responsible for assigning and keeping track of IP addresses for Pods and Nodes within the cluster",
+    "option_c": "A tool to block IPs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IPAM prevents IP conflicts and ensures efficient distribution of the cluster's CIDR blocks."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Kernel Tuning",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Sysctl' tuning in a Pod definition?",
+    "option_a": "A way to see the system logs",
+    "option_b": "A mechanism to set low-level Linux kernel parameters (like net.ipv4.ip_local_port_range) specifically for the Pod's network or IPC namespace",
+    "option_c": "A tool to delete the cache",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sysctls allow performance-critical applications (like high-load web servers) to tune the kernel for their specific needs."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'RuntimeClass' used for in Kubernetes?",
+    "option_a": "Choosing the programming language",
+    "option_b": "A resource that allows users to select different container runtimes (e.g. runc vs Kata Containers) for different pods based on security or performance needs",
+    "option_c": "A way to group pods by speed",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RuntimeClass enables multi-layer security, where sensitive apps run in VMs (Kata) while others run in standard containers (runc)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Service Mesh",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Control Plane' in a Service Mesh (like Istio)?",
+    "option_a": "The team that manages the server",
+    "option_b": "A centralized set of components that manage and configure the fleet of sidecar proxies (data plane) to enforce traffic policy, security, and observability",
+    "option_c": "A tool to draw the network map",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The control plane (Istiod) provides the intelligence, while the data plane (Envoy) handles the actual traffic packets."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced Scheduling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Descheduler' in a Kubernetes ecosystem?",
+    "option_a": "A tool to delete the scheduler",
+    "option_b": "An optional component that evicts pods that violate cluster constraints after they have been scheduled (e.g. node over-utilization or node taints added later)",
+    "option_c": "A way to slow down the pods",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Descheduler helps keep the cluster balanced over time as conditions change."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "API Server",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Watch Bookmark' in the Kubernetes API?",
+    "option_a": "A way to save your favorite pods",
+    "option_b": "An optimization that reduces API server load by sending periodic 'bookmark' events to watch clients, allowing them to resume watches after disconnection more efficiently",
+    "option_c": "A tool to audit the API",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Watch Bookmarks are critical for scaling clusters with many hundreds of controllers."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Storage Performance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Volume Binding Mode: WaitForFirstConsumer'?",
+    "option_a": "Waiting for the user to buy the volume",
+    "option_b": "A setting that delays the provisioning and binding of a PersistentVolume until a Pod that uses it is actually scheduled to a node",
+    "option_c": "A way to speed up the disk",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This solves the problem where a volume is created in Zone A, but the Pod is scheduled in Zone B (topology mismatch)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "High Availability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'etcd Learner' node?",
+    "option_a": "A server for beginners",
+    "option_b": "A non-voting etcd node used to catch up with the cluster state before officially joining as a voting member, preventing cluster instability during scaling",
+    "option_c": "A way to monitor etcd",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Learner nodes protect the quorum by ensuring new members have the data before they contribute to consensus voting."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Node Performance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Kubelet Pod Overhead'?",
+    "option_a": "The time Kubelet takes to start",
+    "option_b": "A feature allowing the cluster to account for the resources used by the container runtime and sandbox (e.g. the VM in Kata) that are not part of the pod itself",
+    "option_c": "A way to count pod labels",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pod Overhead ensures that the scheduler doesn't overcommit nodes by forgetting about the 'hidden' resource costs of sandboxing."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "CRI Deep Dive",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Streaming Server' in the Container Runtime Interface (CRI)?",
+    "option_a": "A way to watch movies in a pod",
+    "option_b": "The mechanism that allows Kubelet to proxy 'exec', 'attach', and 'port-forward' requests directly to the container runtime via a separate secure port",
+    "option_c": "A tool to stream logs to the cloud",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The streaming server handles data-heavy interactive commands to avoid bogging down the main CRI control channel."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Advanced RBAC",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'ClusterRole Aggregation'?",
+    "option_a": "Combining all users into one role",
+    "option_b": "A way to create a 'Super' ClusterRole that automatically inherits permissions from other ClusterRoles based on label selectors",
+    "option_c": "A ways to delete roles",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Aggregation allows for 'plugin' permissions, where installing a new operator can automatically add its permissions to an existing admin role."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 4,
+    "level_topic": "Fleet Management",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Kubefed' (Federation v2)?",
+    "option_a": "A way to feed the pods",
+    "option_b": "A project to manage resources across multiple Kubernetes clusters from a single control point, providing global availability and disaster recovery",
+    "option_c": "A ways to delete clusters",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Federation enables the concept of 'Meta-Clusters' that span regions or even different cloud providers."
+  }
+]

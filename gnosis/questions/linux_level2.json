@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Redirection",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between '>' and '>>' in Linux redirection?",
+    "option_a": "> overwrites the file, while >> appends to the file",
+    "option_b": ">> overwrites the file, while > appends",
+    "option_c": "> is for errors, >> is for data",
+    "option_d": "There is no difference",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Single bracket wipes existing content; double bracket adds to the end of the file."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Pipes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the pipe operator `|` do?",
+    "option_a": "It deletes two files at once",
+    "option_b": "It takes the output of the first command and passes it as input to the second command",
+    "option_c": "It creates a backup",
+    "option_d": "It hides the output from the screen",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Piping is a core Unix philosophy: building complex tools by chaining simple ones together."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Search Tools",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command is used to search for a specific text pattern inside files?",
+    "option_a": "search",
+    "option_b": "find",
+    "option_c": "grep",
+    "option_d": "awk",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "grep (Global Regular Expression Print) searches through files for lines that match a given pattern."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Search Tools",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these are valid ways to search for a file named 'config.json' in the current directory?",
+    "option_a": "find . -name 'config.json'",
+    "option_b": "locate config.json",
+    "option_c": "grep config.json",
+    "option_d": "ls -R | grep config.json",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "find and locate search for filenames. Grep searches inside file content. Chaining ls and grep is a manual way to find files."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Standard Streams",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "How do you redirect only the error messages (stderr) of a command to a file?",
+    "option_a": "command > error.log",
+    "option_b": "command 2> error.log",
+    "option_c": "command E> error.log",
+    "option_d": "command | error.log",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In Linux, fd 1 is stdout and fd 2 is stderr. Using 2> targets the error stream specifically."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Processes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to terminate a process by its PID?",
+    "option_a": "stop",
+    "option_b": "kill",
+    "option_c": "exit",
+    "option_d": "end",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'kill' command sends a signal (defaults to SIGTERM) to a process."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Processes",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the signal number for 'SIGKILL', which forced-stops a process?",
+    "option_a": "1",
+    "option_b": "15",
+    "option_c": "9",
+    "option_d": "0",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "kill -9 sends SIGKILL, which cannot be ignored or handled by the process."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Permissions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the command 'chown root:admins file.txt' do?",
+    "option_a": "Changes the file owner to admins and group to root",
+    "option_b": "Changes the file owner to root and group to admins",
+    "option_c": "Changes permissions for root",
+    "option_d": "Deletes the file",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The colon separates the user and the group in the chown command."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Links",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command creates a symbolic link to a file?",
+    "option_a": "link file linkname",
+    "option_b": "ln file linkname",
+    "option_c": "ln -s file linkname",
+    "option_d": "cp -l file linkname",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The -s flag specifies a symbolic (soft) link."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to securely log into a remote Linux server?",
+    "option_a": "telnet",
+    "option_b": "ftp",
+    "option_c": "ssh",
+    "option_d": "login",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "SSH (Secure Shell) provides encrypted communication for remote access."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Wildcards",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In a shell, which character matches exactly one character?",
+    "option_a": "*",
+    "option_b": "?",
+    "option_c": ".",
+    "option_d": "!",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'?' is the single-character wildcard; '*' matches any number of characters."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "User Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which file contains the list of local users and their basic info?",
+    "option_a": "/etc/users",
+    "option_b": "/home/passwd",
+    "option_c": "/etc/passwd",
+    "option_d": "/root/users",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "/etc/passwd contains UID, GID, home directory, and default shell."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Scheduling",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which system service is responsible for running scheduled tasks?",
+    "option_a": "syslog",
+    "option_b": "cron",
+    "option_c": "init",
+    "option_d": "bash",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'cron' daemon executes commands at specified intervals defined in 'crontabs'."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "System Monitoring",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command shows information about CPU architecture and kernel version?",
+    "option_a": "sysinfo",
+    "option_b": "uname -a",
+    "option_c": "kernel",
+    "option_d": "osinfo",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "uname -a provides a full system summary."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Shell Variables",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you set an environment variable named 'MY_VAR' that is accessible to sub-processes?",
+    "option_a": "MY_VAR=value",
+    "option_b": "set MY_VAR value",
+    "option_c": "export MY_VAR=value",
+    "option_d": "env MY_VAR=value",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "'export' turns a shell variable into an environment variable."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Process management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command allows you to see the process hierarchy in a tree format?",
+    "option_a": "ps -tree",
+    "option_b": "pstree",
+    "option_c": "top",
+    "option_d": "tree",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "pstree shows parents and children processes visually."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which command shows active network connections and listening ports?",
+    "option_a": "ifconfig",
+    "option_b": "netstat",
+    "option_c": "ping",
+    "option_d": "traceroute",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "netstat (or its replacement 'ss') is used for network troubleshooting."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Terms",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In Linux, everything is a:",
+    "option_a": "Process",
+    "option_b": "File",
+    "option_c": "Directory",
+    "option_d": "Shell",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'everything is a file' philosophy includes hardware devices, sockets, and pipes."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Aliases",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you create a shortcut 'll' that runs 'ls -l'?",
+    "option_a": "alias ll='ls -l'",
+    "option_b": "shortcut ll='ls -l'",
+    "option_c": "map ll='ls -l'",
+    "option_d": "ll := 'ls -l'",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "'alias' creates temporary command shortcuts in the current shell session."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Disk Management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to format a partition with the ext4 filesystem?",
+    "option_a": "fdisk",
+    "option_b": "mkfs.ext4",
+    "option_c": "format",
+    "option_d": "mount",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "mkfs (make filesystem) creates common Linux partition formats."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Searching",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which command find files larger than 100MB in the home directory?",
+    "option_a": "find ~ -size +100M",
+    "option_b": "ls -lh ~",
+    "option_c": "grep 100MB ~",
+    "option_d": "locate 100M",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The find command allows filtering by various metadata like size or type."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Environment",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which file is executed when a bash shell starts for an interactive user?",
+    "option_a": ".bash_config",
+    "option_b": ".profile",
+    "option_c": ".bashrc",
+    "option_d": ".bash_history",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": ".bashrc contains shell configurations, aliases, and functions."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Standard IO",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "To hide the output of a command completely, you can redirect it to:",
+    "option_a": "/dev/zero",
+    "option_b": "/dev/null",
+    "option_c": "/tmp/null",
+    "option_d": "/etc/shadow",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "/dev/null is the 'black hole' of the file system; output sent there is discarded."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Text Processing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which command is used to extract specific columns from a text file?",
+    "option_a": "grep",
+    "option_b": "sed",
+    "option_c": "cut",
+    "option_d": "tr",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 'cut' command extracts sections from each line of a file."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Text Processing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which stream editor is commonly used for basic text substitution (find and replace) via the CLI?",
+    "option_a": "grep",
+    "option_b": "vim",
+    "option_c": "sed",
+    "option_d": "awk",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "sed (stream editor) is used to perform basic transformations on an input stream."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Permissions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does a '+' at the end of a permission string (e.g. -rwxrwxr--) indicate?",
+    "option_a": "An error",
+    "option_b": "An Access Control List (ACL) is attached to the file",
+    "option_c": "The file is a directory",
+    "option_d": "The file is extra large",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ACLs allow more granular permissions than the standard owner-group-other model."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Kernel",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command displays the message buffer of the kernel (boot messages, hardware issues)?",
+    "option_a": "log",
+    "option_b": "dmesg",
+    "option_c": "syslog",
+    "option_d": "bootlog",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "dmesg helps in diagnosing drivers and hardware detection issues."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command shows the path taken by packets to a network host?",
+    "option_a": "ping",
+    "option_b": "route",
+    "option_c": "traceroute",
+    "option_d": "path",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "traceroute lists all the intermediate routers between your computer and the destination."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "User Groups",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to add a user to a group?",
+    "option_a": "useradd",
+    "option_b": "usermod",
+    "option_c": "groupadd",
+    "option_d": "groupmod",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "usermod -aG groupname username is the standard way to modify user group memberships."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Permissions",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'setuid' (SUID) bit used for?",
+    "option_a": "Setting a password",
+    "option_b": "Allowing a user to execute a file with the permissions of the file owner",
+    "option_c": "Hiding a file",
+    "option_d": "Running a file in the background",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SUID is often used on commands like 'passwd' so users can update root-protected files."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Package management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which package manager is used on Red Hat based systems like Fedora or RHEL?",
+    "option_a": "apt",
+    "option_b": "yum (or dnf)",
+    "option_c": "brew",
+    "option_d": "pacman",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "dnf is the modern successor to the yum package manager."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Searching",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command updates the database used by the 'locate' command?",
+    "option_a": "update",
+    "option_b": "dbupdate",
+    "option_c": "updatedb",
+    "option_d": "findupdate",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "locate is fast because it uses a database, which needs periodically updated via updatedb."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Logs",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In which directory are most system log files stored?",
+    "option_a": "/etc/logs",
+    "option_b": "/home/logs",
+    "option_c": "/var/log",
+    "option_d": "/root/log",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "/var/log contains logs for the kernel, auth, web servers, and more."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Environment",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which variable contains the directories that the shell searches for executable commands?",
+    "option_a": "$HOME",
+    "option_b": "$USER",
+    "option_c": "$PATH",
+    "option_d": "$SHELL",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "PATH is a colon-separated list of directories."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Boot Process",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "What is the first process launched by the Linux kernel with PID 1?",
+    "option_a": "bash",
+    "option_b": "init (or systemd)",
+    "option_c": "kthreadd",
+    "option_d": "login",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PID 1 is the parent of all other non-kernel processes."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Drives",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to attach a storage device to a specific directory?",
+    "option_a": "attach",
+    "option_b": "mount",
+    "option_c": "link",
+    "option_d": "map",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Mounting makes the contents of a drive accessible at a point in the file tree."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Help",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command provides a brief description of what a command does in one line?",
+    "option_a": "describe",
+    "option_b": "whatis",
+    "option_c": "intro",
+    "option_d": "help",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "whatis searches the manual page descriptions for keywords."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "History",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "To repeat the very last command typed, you can use:",
+    "option_a": "!!",
+    "option_b": "!last",
+    "option_c": "..",
+    "option_d": "rep",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "!! is an 'event designator' that translates to the previous command line."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Processes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you run a command in the background?",
+    "option_a": "&& at the end",
+    "option_b": "& at the end",
+    "option_c": "run-bg",
+    "option_d": "detach",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "sleep 10 & runs the sleep process without blocking the terminal."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Permissions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the numeric equivalent of 'r--r--r--'?",
+    "option_a": "777",
+    "option_b": "444",
+    "option_c": "Read All",
+    "option_d": "666",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "r=4, w=2, x=1. 4+0+0 = 4."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Permissions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the numeric equivalent of 'rwx------'?",
+    "option_a": "777",
+    "option_b": "700",
+    "option_c": "Full owner",
+    "option_d": "100",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "4+2+1=7 for owner, 0 for group/others."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Compression",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you extract a .zip file in Linux?",
+    "option_a": "zip -e",
+    "option_b": "unzip",
+    "option_c": "tar -xvz",
+    "option_d": "gunzip",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The unzip utility is standard on most distributions."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Information",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command tells you how long the system has been running?",
+    "option_a": "time",
+    "option_b": "uptime",
+    "option_c": "runstats",
+    "option_d": "clock",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "uptime shows current time, duration since boot, and load average."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Processes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command brings a background process to the foreground?",
+    "option_a": "bg",
+    "option_b": "fg",
+    "option_c": "front",
+    "option_d": "call",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "fg (foreground) restores a stopped or backgrounded task."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Redirection",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "What does '2>&1' do?",
+    "option_a": "Redirects errors to stdout",
+    "option_b": "Redirects data to errors",
+    "option_c": "Hides all errors",
+    "option_d": "Duplicates a file",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "It sends the stderr stream (fd 2) to the same location as the stdout stream (fd 1)."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "System info",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command shows the hostname of the system?",
+    "option_a": "host",
+    "option_b": "hostname",
+    "option_c": "name",
+    "option_d": "domain",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "hostname prints or sets the system's network name."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Text Processing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to sort the lines of a text file alphabetically?",
+    "option_a": "abc",
+    "option_b": "sort",
+    "option_c": "order",
+    "option_d": "organize",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'sort' command re-orders lines of text."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Text Processing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command displays the lines of a file in reverse order?",
+    "option_a": "rev",
+    "option_b": "tac",
+    "option_c": "cat -r",
+    "option_d": "back",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "tac is 'cat' spelled backwards and prints lines from last to first."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "System Info",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command shows how memory is being used (RAM, swap)?",
+    "option_a": "mem",
+    "option_b": "free",
+    "option_c": "raminfo",
+    "option_d": "usage",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'free' command provides a table of physical and swap memory."
+  },
+  {
+    "subject_name": "Linux",
+    "level_number": 2,
+    "level_topic": "Search",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "To find all directories (not files) named 'tmp' in root, use:",
+    "option_a": "find / -name tmp -type d",
+    "option_b": "find / -name tmp -file f",
+    "option_c": "locate tmp",
+    "option_d": "ls -d /tmp",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "-type d filters results to only include directories."
+  }
+]

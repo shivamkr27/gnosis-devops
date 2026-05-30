@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "K8s Architecture",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What is the smallest deployable unit in Kubernetes?",
+    "option_a": "Container",
+    "option_b": "Pod",
+    "option_c": "Service",
+    "option_d": "Namespace",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A Pod is the smallest and simplest unit in the Kubernetes object model that you create or deploy."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "kubectl",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which command is used to see the status of all pods in the current namespace?",
+    "option_a": "kubectl get pods",
+    "option_b": "kubectl show pods",
+    "option_c": "kubectl list pods",
+    "option_d": "kubectl status pods",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "'kubectl get pods' lists pods and shows their current state (Running, Pending, etc.)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Control Plane",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which component acts as the 'brain' of the cluster and stores all cluster data?",
+    "option_a": "Kubelet",
+    "option_b": "etcd",
+    "option_c": "Kube-scheduler",
+    "option_d": "Kube-proxy",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "etcd is a consistent and highly-available key value store used as Kubernetes' backing store for all cluster data."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which component is responsible for deciding which node a pod should run on?",
+    "option_a": "API Server",
+    "option_b": "etcd",
+    "option_c": "Kube-scheduler",
+    "option_d": "Controller Manager",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The scheduler considers resource requirements, hardware constraints, and other policies to select the optimal node."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Nodes",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the agent that runs on every node in the cluster and ensures containers are running in a pod?",
+    "option_a": "Kube-proxy",
+    "option_b": "Kubelet",
+    "option_c": "Docker Engine",
+    "option_d": "Containerd",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kubelet takes a set of PodSpecs and ensures that the containers described in those PodSpecs are running and healthy."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which component manages network rules on nodes and performs connection forwarding?",
+    "option_a": "Kubelet",
+    "option_b": "Kube-proxy",
+    "option_c": "CoreDNS",
+    "option_d": "Ingress Controller",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kube-proxy maintains network rules on nodes. These rules allow network communication to your Pods from inside or outside of your cluster."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Objects",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is used to group resources logically within a cluster?",
+    "option_a": "Pods",
+    "option_b": "Namespaces",
+    "option_c": "Tags",
+    "option_d": "Labels",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Namespaces are intended for use in environments with many users spread across multiple teams or projects."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "YAML",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which field in a Kubernetes YAML manifest specifies the version of the Kubernetes API you're using?",
+    "option_a": "version",
+    "option_b": "apiVersion",
+    "option_c": "kind",
+    "option_d": "metadata",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "apiVersion defines which version of the k8s API to use to create the object."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "YAML",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In a Kubernetes YAML, what field identifies the specific object type (e.g., Pod, Service)?",
+    "option_a": "type",
+    "option_b": "kind",
+    "option_c": "object",
+    "option_d": "apiVersion",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'kind' field specifies the type of resource being defined."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "kubectl",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to apply a configuration from a file to a resource?",
+    "option_a": "kubectl run -f filename.yaml",
+    "option_b": "kubectl create -f filename.yaml",
+    "option_c": "kubectl apply -f filename.yaml",
+    "option_d": "Both B and C",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "'create' is imperative, while 'apply' is declarative (recommended)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Pods",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Can a single Pod contain multiple containers?",
+    "option_a": "No, one container per pod",
+    "option_b": "Yes, they share the same network and storage",
+    "option_c": "Yes, but they must use different IPs",
+    "option_d": "Yes, but only in expert mode",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multi-container pods (like sidecars) share the same network namespace (localhost) and can share volumes."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Deployments",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary purpose of a Deployment object?",
+    "option_a": "To create a secret",
+    "option_b": "To provide declarative updates for Pods and ReplicaSets (e.g. scaling, rollouts)",
+    "option_c": "To manage the storage",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deployments represent the desired state and the controller works to make the actual state match it."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "kubectl",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command displays detailed information and events for a specific Pod named 'myapp'?",
+    "option_a": "kubectl show pod myapp",
+    "option_b": "kubectl describe pod myapp",
+    "option_c": "kubectl get pod myapp --detail",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'describe' is the go-to tool for debugging why a pod failed to start."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Services",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the default type of a Kubernetes Service?",
+    "option_a": "NodePort",
+    "option_b": "LoadBalancer",
+    "option_c": "ClusterIP",
+    "option_d": "ExternalName",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "ClusterIP exposes the service on a cluster-internal IP, making it reachable only from within the cluster."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Metadata",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What are key-value pairs attached to objects, such as pods, used for identification and selection?",
+    "option_a": "Annotations",
+    "option_b": "Labels",
+    "option_c": "Metadata",
+    "option_d": "Selectors",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Labels are used to organize and to select subsets of objects."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "kubectl",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the command to delete a namespace named 'dev-env'?",
+    "option_a": "kubectl rm namespace dev-env",
+    "option_b": "kubectl delete namespace dev-env",
+    "option_c": "kubectl destroy namespace dev-env",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deleting a namespace deletes all resources inside it."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does 'Desirable State' mean in Kubernetes?",
+    "option_a": "The fastest the cluster can run",
+    "option_b": "The configuration requested by the user (e.g. run 3 replicas), which the cluster works to maintain continuously",
+    "option_c": "The state when all pods are deleted",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kubernetes controllers continuously compare actual state vs desired state and perform corrective actions."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Scaling",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If you want to scale a deployment 'web-app' to 5 replicas immediately via CLI, what command do you use?",
+    "option_a": "kubectl scale deployment web-app --replicas=5",
+    "option_b": "kubectl update deployment web-app --size=5",
+    "option_c": "kubectl grow web-app 5",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is an imperative command to change the number of running pods."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "kubectl",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you view the logs of a container in a pod named 'backend'?",
+    "option_a": "kubectl show logs backend",
+    "option_b": "kubectl logs backend",
+    "option_c": "kubectl cat backend.log",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Logs are essential for investigating application failures."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Containers",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What information does the 'Selector' in a Service provide?",
+    "option_a": "The type of IP to use",
+    "option_b": "A way to identify which Pods the service should direct traffic to (based on their Labels)",
+    "option_c": "The name of the service",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Services use selectors to match the labels of the target pods."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Control Plane",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which component manages the lifecycle of various controllers in the cluster?",
+    "option_a": "API Server",
+    "option_b": "Kube-controller-manager",
+    "option_c": "Cloud-controller-manager",
+    "option_d": "etcd",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It runs control loops that watch the state of the shared cluster state (via the apiserver)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Nodes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In Kubernetes, what is a 'Node'?",
+    "option_a": "A single container",
+    "option_b": "A worker machine (physical or virtual) that runs containers",
+    "option_c": "The central server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A cluster usually consists of multiple nodes to provide high availability."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary way to interact with a Kubernetes cluster?",
+    "option_a": "Editing files on the host machine",
+    "option_b": "Sending REST requests to the Kube-apiserver (usually via kubectl)",
+    "option_c": "Talking to the Kubelet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The API server is the front end for the Kubernetes control plane."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "ReplicaSet",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the main responsibility of a ReplicaSet?",
+    "option_a": "To load balance traffic",
+    "option_b": "To ensure that a specified number of pod replicas are running at any given time",
+    "option_c": "To monitor node health",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ReplicaSets are often managed by Deployments rather than being used directly."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "kubectl",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command allows you to open an interactive shell inside a running pod?",
+    "option_a": "kubectl shell podname",
+    "option_b": "kubectl exec -it podname -- /bin/bash",
+    "option_c": "kubectl run podname bash",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is very common for manual debugging within a container."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Objects",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What are 'Annotations' used for in Kubernetes?",
+    "option_a": "To select pods",
+    "option_b": "To attach non-identifying metadata (e.g. build info, contact details) to objects",
+    "option_c": "To define storage limits",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Annotations cannot be used to select objects with selectors."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What happens if a node fails in a healthy Kubernetes cluster?",
+    "option_a": "The whole cluster stops",
+    "option_b": "The control plane detects the failure and reschedules the affected pods to other healthy nodes",
+    "option_c": "The user must manually move the pods",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Resilience is a core feature of Kubernetes."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "kubectl",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to get all resources (pods, services, etc.) in all namespaces?",
+    "option_a": "kubectl get all",
+    "option_b": "kubectl get all --all-namespaces",
+    "option_c": "kubectl list all -A",
+    "option_d": "Both A and B (depending on scope)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'--all-namespaces' (or '-A') is used to see the global state."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "YAML",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Under which section in a YAML do you find the object's Name and Labels?",
+    "option_a": "spec",
+    "option_b": "metadata",
+    "option_c": "status",
+    "option_d": "apiVersion",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Metadata identifies the object uniquely."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Status",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does a Pod status of 'Pending' usually mean?",
+    "option_a": "The pod has crashed",
+    "option_b": "The pod is successfully scheduled but some containers have not started yet (e.g. image pulling)",
+    "option_c": "The pod is deleted",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Check Events in 'kubectl describe pod' to see why it remains pending."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Services",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which Service type exposes the service on each Node's IP at a static port?",
+    "option_a": "ClusterIP",
+    "option_b": "NodePort",
+    "option_c": "ExternalName",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NodePort makes services accessible from outside the cluster using [NodeIP]:[NodePort]."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "kubectl",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which command tells you which version of Kubernetes client and server you are using?",
+    "option_a": "kubectl info",
+    "option_b": "kubectl version",
+    "option_c": "kubectl about",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's important to keep the client and server versions compatible."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Storage",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'PersistentVolume' (PV)?",
+    "option_a": "A temporary folder",
+    "option_b": "A piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes",
+    "option_c": "RAM inside a pod",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PVs allow data to persist even after the pod is deleted."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'PersistentVolumeClaim' (PVC)?",
+    "option_a": "A backup of a volume",
+    "option_b": "A request for storage by a user (pod), similar to how a pod consumes node resources",
+    "option_c": "The price of the storage",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PVCs 'bind' to suitable PVs to provide storage to the pod."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Containers",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "By default, what happens to a container if its main process crashes?",
+    "option_a": "The pod is deleted",
+    "option_b": "Kubelet restarts the container (based on restartPolicy)",
+    "option_c": "The whole node reboots",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The default restartPolicy is 'Always'."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Config",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'ConfigMap'?",
+    "option_a": "A map of the server location",
+    "option_b": "An API object used to store non-confidential data in key-value pairs (e.g. settings, config files)",
+    "option_c": "A secret password",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ConfigMaps allow you to decouple environment-specific configuration from container images."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Secrets",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which object should be used to store a database password safely?",
+    "option_a": "ConfigMap",
+    "option_b": "Secret",
+    "option_c": "Registry",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Secrets are encoded in base64 (by default) and intended for sensitive information."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Deployment",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In a Deployment, what is 'Rolling Update' strategy?",
+    "option_a": "Deleting all old pods first, then starting new ones",
+    "option_b": "Gradually replacing old Pods with new ones, ensuring a minimum number of pods remain available during the process",
+    "option_c": "Updating pods randomly",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Rolling updates prevent downtime for your application during deployment."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Who is responsible for maintaining the High Availability of the Kubernetes Control Plane?",
+    "option_a": "The developer",
+    "option_b": "The cluster administrator (or the Cloud provider in managed services like GKE/EKS)",
+    "option_c": "The Kubelet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A production cluster should have multiple manager nodes."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Namespaces",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the name of the default namespace when no other is specified?",
+    "option_a": "system",
+    "option_b": "default",
+    "option_c": "main",
+    "option_d": "k8s-core",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Resources without a namespace are created in 'default'."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "kubectl",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to see all pods in the 'kube-system' namespace?",
+    "option_a": "kubectl get pods system",
+    "option_b": "kubectl get pods -n kube-system",
+    "option_c": "kubectl search pods kube-system",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The '-n' flag is used to target a specific namespace."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Labels",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Can multiple pods have the same Label?",
+    "option_a": "No, labels must be unique for each pod",
+    "option_b": "Yes, grouping them allows you to target them as a single group through services or selectors",
+    "option_c": "Only if they are in different nodes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Labels are the primary mechanism for grouping and selecting pods."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Minikube'?",
+    "option_a": "A tool for making small pods",
+    "option_b": "A tool that runs a single-node Kubernetes cluster inside a VM on your local machine for learning and development",
+    "option_c": "The smallest version of cloud",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Minikube is perfect for beginners and local testing."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which add-on is responsible for providing cluster-wide DNS resolution for services?",
+    "option_a": "Kube-dns / CoreDNS",
+    "option_b": "Kube-proxy",
+    "option_c": "Ingress",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CoreDNS allows pods to resolve service names (e.g. 'db-service') to their ClusterIP."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "CLI",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to check the API resources available in your cluster?",
+    "option_a": "kubectl show resources",
+    "option_b": "kubectl api-resources",
+    "option_c": "kubectl get list",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This shows the Names, Short-names, and API groups for all resource types."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Nodes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you view all nodes in your cluster?",
+    "option_a": "kubectl get computers",
+    "option_b": "kubectl get nodes",
+    "option_c": "kubectl status nodes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This shows node names, roles, and status (Ready/NotReady)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "StatefulSet",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "When would you prefer a 'StatefulSet' over a 'Deployment'?",
+    "option_a": "For stateless web apps",
+    "option_b": "For applications that require stable network identifiers, persistent storage, and ordered deployment (like Databases)",
+    "option_c": "For one-off jobs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "StatefulSets provide unique IDs (e.g. mysql-0, mysql-1) that persist across restarts."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the 'Container Runtime'?",
+    "option_a": "The time a container runs",
+    "option_b": "The software (like Docker, Containerd, or CRI-O) responsible for actually running the containers",
+    "option_c": "A script for the kubelet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kubernetes supports several container runtimes through the Container Runtime Interface (CRI)."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Labels",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which character is typically used as a label selector for 'and' operations in kubectl (e.g. app=myapp AND env=prod)?",
+    "option_a": ";",
+    "option_b": ",",
+    "option_c": "+",
+    "option_d": "&",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Example: kubectl get pods -l app=myapp,env=prod."
+  },
+  {
+    "subject_name": "Kubernetes (K8s)",
+    "level_number": 1,
+    "level_topic": "Introduction",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the common shorthand for Kubernetes?",
+    "option_a": "Kube",
+    "option_b": "K8s",
+    "option_c": "Kuber",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "8 represents the characters between 'K' and 's'."
+  }
+]

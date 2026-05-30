@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Architecture",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What is the bit-width of the 8085 microprocessor?",
+    "option_a": "4-bit",
+    "option_b": "8-bit",
+    "option_c": "16-bit",
+    "option_d": "32-bit",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Intel 8085 is an 8-bit general-purpose microprocessor."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Registers",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which register in the 8085 is also known as the 'Accumulator'?",
+    "option_a": "Register B",
+    "option_b": "Register C",
+    "option_c": "Register A",
+    "option_d": "Register L",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Register A is the accumulator where most arithmetic and logical operations store their results."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Flags",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In the 8085 flag register, which flag is set if the result of an operation is zero?",
+    "option_a": "S (Sign)",
+    "option_b": "Z (Zero)",
+    "option_c": "P (Parity)",
+    "option_d": "CY (Carry)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Zero flag bit is 1 if the ALU result is zero, and 0 otherwise."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Pins",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "Which of these are the control signals produced by the 8085?",
+    "option_a": "RD (Read)",
+    "option_b": "WR (Write)",
+    "option_c": "ALE (Address Latch Enable)",
+    "option_d": "CLK OUT",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "RD, WR, and ALE are key control signals for memory and I/O access."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The 8085 has how many 16-bit registers?",
+    "option_a": "0",
+    "option_b": "2 (PC and SP)",
+    "option_c": "6 (B, C, D, E, H, L)",
+    "option_d": "1 (Accumulator)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "While it's an 8-bit processor, the Program Counter (PC) and Stack Pointer (SP) are 16 bits long to address 64KB of memory."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Architecture",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the total addressable memory space of the 8085?",
+    "option_a": "16 KB",
+    "option_b": "64 KB",
+    "option_c": "1 MB",
+    "option_d": "4 GB",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "With a 16-bit address bus, 2^16 = 65,536 bytes (64 KB) can be addressed."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Pins",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the function of the ALE pin in 8085?",
+    "option_a": "To clear the accumulator",
+    "option_b": "To de-multiplex the address/data bus (AD0-AD7)",
+    "option_c": "To signal an interrupt",
+    "option_d": "To provide a clock signal",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ALE (Address Latch Enable) is used to capture the lower 8 bits of the address from the multiplexed AD bus."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Architecture",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which of these is the non-maskable interrupt in 8085?",
+    "option_a": "INTR",
+    "option_b": "RST 7.5",
+    "option_c": "TRAP",
+    "option_d": "RST 5.5",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "TRAP is the highest priority non-maskable interrupt in the 8085."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Registers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How many 8-bit general purpose registers are there in the 8085 (excluding A)?",
+    "option_a": "4",
+    "option_b": "6",
+    "option_c": "8",
+    "option_d": "10",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 6 general-purpose registers are B, C, D, E, H, and L."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Pins",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which pin is used to enter into a Wait state?",
+    "option_a": "READY",
+    "option_b": "HOLD",
+    "option_c": "HLDA",
+    "option_d": "INTR",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The READY pin is used to synchronize the microprocessor with slower peripherals by adding wait states."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Instruction Set",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What does the 'MVI' instruction stand for?",
+    "option_a": "Move Value Indirect",
+    "option_b": "Move Immediate",
+    "option_c": "Move Variable Integer",
+    "option_d": "Multiplication Value",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MVI A, 32H moves the 8-bit value 32H directly into the Accumulator."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Signals",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If IO/M is high and RD is low, what operation is being performed?",
+    "option_a": "Memory Read",
+    "option_b": "I/O Read",
+    "option_c": "Memory Write",
+    "option_d": "I/O Write",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IO/M' high selects I/O; RD' low selects Read."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Architecture",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which register is automatically incremented or decremented whenever the stack is used?",
+    "option_a": "Program Counter",
+    "option_b": "Stack Pointer",
+    "option_c": "H-L Register Pair",
+    "option_d": "Accumulator",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Stack Pointer (SP) tracks the top of the stack in memory."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the typical supply voltage for an 8085 microprocessor?",
+    "option_a": "3.3 V",
+    "option_b": "+5 V",
+    "option_c": "12 V",
+    "option_d": "1.8 V",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The standard Intel 8085 operates on a single +5V DC power supply."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Pins",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What are the multiplexed lines in 8085?",
+    "option_a": "AD0-AD7",
+    "option_b": "A8-A15",
+    "option_c": "D0-D7",
+    "option_d": "ALE and WR",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "AD0-AD7 are used for both the lower 8 bits of the address and the 8 bits of data."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Flags",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which flag is affected by the auxiliary carry from bit 3 to bit 4?",
+    "option_a": "CY",
+    "option_b": "AC",
+    "option_c": "Z",
+    "option_d": "S",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Auxiliary Carry (AC) flag is used internally for BCD arithmetic instructions like DAA."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How many bits is the Program Counter (PC) in 8085?",
+    "option_a": "8 bits",
+    "option_b": "16 bits",
+    "option_c": "20 bits",
+    "option_d": "32 bits",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The PC is 16 bits to store the address of the next instruction in memory."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "DMA",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which pin is used by a DMA controller to request control of the bus?",
+    "option_a": "INTR",
+    "option_b": "HOLD",
+    "option_c": "READY",
+    "option_d": "RESET IN",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A master peripheral like a DMA controller places a high signal on the HOLD pin."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Interrupts",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the vector address for the TRAP interrupt?",
+    "option_a": "0024H",
+    "option_b": "0034H",
+    "option_c": "003CH",
+    "option_d": "002CH",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "TRAP (RST 4.5) has a vector address of 0024H."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Registers",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Which register pair is commonly used as a memory pointer?",
+    "option_a": "BC",
+    "option_b": "DE",
+    "option_c": "HL",
+    "option_d": "AF",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The HL register pair holds the 16-bit address for 'M' (Memory) operand operations."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Instruction Set",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Instruction 'STA 2000H' performs which action?",
+    "option_a": "Stores the content of Accumulator at address 2000H",
+    "option_b": "Loads the Accumulator with content of 2000H",
+    "option_c": "Adds 2000H to Accumulator",
+    "option_d": "Jumps to 2000H",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "STA stands for Store Accumulator Direct."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "T-States",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How many T-states are required for an Opcode Fetch machine cycle in a standard 8085 instruction?",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "6",
+    "option_d": "10",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The opcode fetch cycle typically takes 4 T-states (T1, T2, T3, T4)."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Serial I/O",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which pins are used for serial data transmission in 8085?",
+    "option_a": "RD and WR",
+    "option_b": "SID and SOD",
+    "option_c": "AD0 and AD1",
+    "option_d": "INTR and INTA",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SID (Serial Input Data) and SOD (Serial Output Data) are dedicated pins for simple serial communication."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Machine Cycles",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does a 'Machine Cycle' represent?",
+    "option_a": "The time required to fetch and execute one instruction",
+    "option_b": "The time required to complete one operation of accessing memory or I/O",
+    "option_c": "The speed of the clock",
+    "option_d": "One clock pulse",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "An instruction is composed of one or more machine cycles."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Timing",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In a 3 MHz 8085, what is the duration of one T-state?",
+    "option_a": "0.33 microseconds",
+    "option_b": "0.5 microseconds",
+    "option_c": "1 microsecond",
+    "option_d": "3 microseconds",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "T = 1/f = 1 / (3 * 10^6) approx 333 nanoseconds or 0.33 microseconds."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Which part of the microprocessor performs computations?",
+    "option_a": "Control Unit",
+    "option_b": "ALU",
+    "option_c": "Register Array",
+    "option_d": "Instruction Decoder",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Arithmetic Logic Unit (ALU) performs all math and logic operations."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Pins",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How many pins does a standard 8085 DIP package have?",
+    "option_a": "20",
+    "option_b": "40",
+    "option_c": "64",
+    "option_d": "80",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Intel 8085 is a 40-pin Dual In-line Package (DIP) chip."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Interrupts",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which interrupt is level-triggered only in 8085?",
+    "option_a": "RST 7.5",
+    "option_b": "INTR",
+    "option_c": "TRAP",
+    "option_d": "RST 6.5",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "INTR is a maskable, level-triggered interrupt."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Instruction Set",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The instruction 'HLT' in 8085 signifies:",
+    "option_a": "Halt the processor execution",
+    "option_b": "High level trigger",
+    "option_c": "Handle logical truth",
+    "option_d": "Hold lightning fast transfers",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "HLT stops the CPU until an interrupt or reset occurs."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Assembly",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which assembly pseudo-code directive is used to define the starting address of a program?",
+    "option_a": "START",
+    "option_b": "ORG (Origin)",
+    "option_c": "EQU",
+    "option_d": "DB",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ORG 2000H tells the assembler to place the subsequent code starting at memory address 2000H."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "8085 Pins",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the status of IO/M, S1, and S0 for the 'Opcode Fetch' cycle?",
+    "option_a": "0, 1, 1",
+    "option_b": "1, 1, 1",
+    "option_c": "0, 0, 1",
+    "option_d": "0, 1, 0",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "For Opcode Fetch: IO/M=0 (Memory), S1=1, S0=1."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Endianness",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Is 8085 Little-Endian or Big-Endian in its multibyte memory storage?",
+    "option_a": "Big-Endian",
+    "option_b": "Little-Endian",
+    "option_c": "Middle-Endian",
+    "option_d": "Doesn't use bytes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 8085 stores the lower byte at the lower address and the higher byte at the higher address."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Bus System",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Which bus is unidirectional in 8085?",
+    "option_a": "Data Bus",
+    "option_b": "Address Bus",
+    "option_c": "Control Bus",
+    "option_d": "System Bus",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The address bus only flows from the CPU to external memory/IO."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Arithmetic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which instruction is used for BCD adjustment of a result after addition?",
+    "option_a": "ANA",
+    "option_b": "DAA",
+    "option_c": "CMA",
+    "option_d": "RAR",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DAA (Decimal Adjust Accumulator) converts the binary result in the accumulator to BCD format."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Instruction Cycle",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "The sequence 'Fetch, Decode, Execute' is called:",
+    "option_a": "Machine Cycle",
+    "option_b": "Instruction Cycle",
+    "option_c": "T-State",
+    "option_d": "Clock Pulse",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is the complete process of processing a single instruction."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Where is the result of an 'ADD B' instruction stored?",
+    "option_a": "Register B",
+    "option_b": "Accumulator",
+    "option_c": "Stack",
+    "option_d": "Memory Pointed by HL",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Register A (Accumulator) is the default destination for arithmetic operations."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which instruction complements (inverts) the bits of the Accumulator?",
+    "option_a": "CMA",
+    "option_b": "CMC",
+    "option_c": "ANA",
+    "option_d": "ORI",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CMA (Complement Accumulator) performs a 1's complement of the data in A."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Address Space",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "The 8085 can address how many I/O ports?",
+    "option_a": "64",
+    "option_b": "256",
+    "option_c": "1024",
+    "option_d": "65536",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "With an 8-bit port address bus (A0-A7 used for I/O), it can access 2^8 = 256 ports."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Pins",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What happens when RESET IN' is low?",
+    "option_a": "Program starts from 0000H",
+    "option_b": "PC is cleared to 0000H",
+    "option_c": "Interrupts are disabled",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Reseting the processor initializes the PC and various internal states."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Machine cycles",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the status of RD and WR signals during the 'Bus Idle' state?",
+    "option_a": "Both Low",
+    "option_b": "Both High",
+    "option_c": "RD Low, WR High",
+    "option_d": "RD High, WR Low",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Since these are active-low signals, they stay high when inactive."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Instruction Set",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Which instruction is used to move data between two registers?",
+    "option_a": "MOV Rd, Rs",
+    "option_b": "MVI R, data",
+    "option_c": "LXI Rp, d16",
+    "option_d": "LDA addr",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "MOV B, C copies the content of register C to register B."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Registers",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "The Flag register in 8085 is an 8-bit register, but how many bits are actually used?",
+    "option_a": "4",
+    "option_b": "5",
+    "option_c": "8",
+    "option_d": "3",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The five flags are S, Z, AC, P, and CY."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Hardware",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of the 'Clock Generator'?",
+    "option_a": "To keep track of actual time",
+    "option_b": "To provide the master timing signal for all internal operations",
+    "option_c": "To count the number of instructions",
+    "option_d": "To manage interrupts",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "An external crystal oscillator is connected to X1 and X2 pins."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Signals",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The 'Wait State' is added during which T-state?",
+    "option_a": "Between T1 and T2",
+    "option_b": "Between T2 and T3",
+    "option_c": "After T4",
+    "option_d": "Before T1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is introduced between T2 and T3 to allow slow memory/I/O components to catch up."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Does 8085 support floating point arithmetic natively?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Depends on the version",
+    "option_d": "Only for addition",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "8085 only supports integer operations; floating point must be implemented in software."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Instructions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Instruction 'JMP 2500H' is how many bytes long?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Jump instructions are 3-byte instructions (1 for opcode, 2 for address)."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Interrupts",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which interrupt has the lowest priority in 8085?",
+    "option_a": "TRAP",
+    "option_b": "INTR",
+    "option_c": "RST 5.5",
+    "option_d": "RST 0",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TRAP is highest; INTR is the lowest priority interrupt."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Memory Pointer",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In 'MOV A, M', what does 'M' represent?",
+    "option_a": "Main memory",
+    "option_b": "Contents of the memory location pointed to by HL register pair",
+    "option_c": "Multiple registers",
+    "option_d": "Middle bit",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "M is a virtual register that references memory address [HL]."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Bus",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Is the 8085 a RISC or CISC processor?",
+    "option_a": "RISC",
+    "option_b": "CISC",
+    "option_c": "Neither",
+    "option_d": "Both",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "8085 is a Complex Instruction Set Computer (CISC)."
+  },
+  {
+    "subject_name": "Microprocessors",
+    "level_number": 1,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Instruction 'XRA A' does what to the accumulator?",
+    "option_a": "XORs A with A, clearing the accumulator",
+    "option_b": "Adds A to A",
+    "option_c": "Swaps high and low nibbles",
+    "option_d": "Shifts A left",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Any value XOR'd with itself is 0, so XRA A is an efficient way to clear Register A and the carry flag."
+  }
+]

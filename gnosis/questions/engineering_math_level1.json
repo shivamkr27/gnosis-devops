@@ -1,0 +1,805 @@
+[
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Set Theory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In set theory, what does the 'Intersection' (A \u2229 B) of two sets A and B represent?",
+    "option_a": "All elements in A and all elements in B",
+    "option_b": "Only the elements that are present in both A and B",
+    "option_c": "Elements in A that are not in B",
+    "option_d": "The total number of sets",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Intersection contains common elements. Union (\u222a) contains all unique elements from both."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Propositional Logic",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the truth value of the conjunction (P \u2227 Q) if P is True and Q is False?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Undefined",
+    "option_d": "Depends on the operator",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A conjunction (AND) is only True if both components are True."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Logic Gates",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the negation of the statement: 'Every student is hardworking'?",
+    "option_a": "No student is hardworking",
+    "option_b": "There exists at least one student who is not hardworking",
+    "option_c": "All students are lazy",
+    "option_d": "Some students are hardworking",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The negation of 'For all P, Q' is 'There exists P, such that not Q'."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Set Operations",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "If Set A has 3 elements, how many elements are in its Power Set, P(A)?",
+    "option_a": "3",
+    "option_b": "6",
+    "option_c": "8",
+    "option_d": "9",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The number of elements in a power set is 2^n, where n is the number of elements in the set. 2^3 = 8."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Set Theory",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of the following are valid set operations?",
+    "option_a": "Union",
+    "option_b": "Difference",
+    "option_c": "Complement",
+    "option_d": "Product (Cartesian)",
+    "correct_options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "All these are fundamental operations that combine or modify sets."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Set Theory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the 'Complement' of a set A relative to a Universal set U?",
+    "option_a": "All elements in A",
+    "option_b": "All elements in U that are not in A",
+    "option_c": "The empty set",
+    "option_d": "The Universal set itself",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The complement (A') consists of everything in the universe except the contents of A."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Binary Arithmetic",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the equivalent of the boolean expression (P \u2228 P)?",
+    "option_a": "P",
+    "option_b": "True",
+    "option_c": "False",
+    "option_d": "Not P",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is known as the Idempotent Law in boolean algebra."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Relations",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A relation R on a set A is 'Reflexive' if:",
+    "option_a": "For every a in A, (a, a) is in R",
+    "option_b": "If (a, b) is in R, then (b, a) is in R",
+    "option_c": "If (a, b) and (b, c) are in R, then (a, c) is in R",
+    "option_d": "The relation is empty",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Reflexivity means every element is related to itself."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Propositional Logic",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the truth value of 'P \u2192 Q' (P implies Q) if P is False?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Undefined",
+    "option_d": "Depends on Q",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A conditional statement is only False if the premise P is True and the conclusion Q is False. If the premise is False, the statement is vacuously True."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Set Theory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "The 'Empty Set' (\u00d8) is a subset of:",
+    "option_a": "Only itself",
+    "option_b": "Every set",
+    "option_c": "No set",
+    "option_d": "Only the Universal set",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The empty set is a subset of every set by definition."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Combinatorics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many ways can we choose 2 colors from a set of 5 distinct colors (Order does not matter)?",
+    "option_a": "5",
+    "option_b": "10",
+    "option_c": "20",
+    "option_d": "25",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Using the combination formula C(5,2) = 5! / (2! * 3!) = (5 * 4) / 2 = 10."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Functions",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A function is 'Injective' (One-to-One) if:",
+    "option_a": "Every element in the range has a pre-image",
+    "option_b": "Different elements in the domain map to different elements in the codomain",
+    "option_c": "It is its own inverse",
+    "option_d": "The domain is empty",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If f(a) = f(b) implies a = b, the function is injective."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In a simple graph, what is the maximum number of edges between two nodes?",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "2",
+    "option_d": "Infinite",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A simple graph does not allow loops or multiple edges between the same pair of vertices."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which of the following is the 'Contrapositive' of 'If P then Q'?",
+    "option_a": "If not P then not Q",
+    "option_b": "If Q then P",
+    "option_c": "If not Q then not P",
+    "option_d": "If Q then not P",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The contrapositive of 'P \u2192 Q' is '\u00acQ \u2192 \u00acP', and it is logically equivalent to the original statement."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Set Theory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the size (Cardinality) of the set {1, 2, 2, 3, 3, 3}?",
+    "option_a": "6",
+    "option_b": "3",
+    "option_c": "1",
+    "option_d": "0",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sets do not contain duplicate elements. The set is actually {1, 2, 3}, so its cardinality is 3."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Number Theory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the value of 15 mod 4?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "15 divided by 4 is 3 with a remainder of 3. So 15 mod 4 = 3."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Propositional Logic",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "The biconditional statement (P \u2194 Q) is True when:",
+    "option_a": "P is True and Q is False",
+    "option_b": "P and Q have the same truth values",
+    "option_c": "P is False and Q is True",
+    "option_d": "At least one is True",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A biconditional (IFF) is True if both P and Q are True, or both are False."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Cartesian Product",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "If A = {1, 2} and B = {x, y, z}, how many elements are in A \u00d7 B?",
+    "option_a": "5",
+    "option_b": "6",
+    "option_c": "8",
+    "option_d": "9",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "|A \u00d7 B| = |A| * |B| = 2 * 3 = 6."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Functions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A function that is both injective and surjective is called a:",
+    "option_a": "Floor Function",
+    "option_b": "Bijective Function",
+    "option_c": "Recursive Function",
+    "option_d": "Identity Function",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A bijection is a perfect one-to-one correspondence between sets."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Lattices",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "A 'Hasse Diagram' is a graphical representation of:",
+    "option_a": "A graph coloring",
+    "option_b": "A partially ordered set (POSET)",
+    "option_c": "Logical predicates",
+    "option_d": "Bitwise operations",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hasse diagrams show the hierarchy of elements in a POSET without drawing redundant edges for reflexivity or transitivity."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Binary Operations",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the truth value of the 'XOR' (Exclusive OR) operation if both inputs are True?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Undefined",
+    "option_d": "Depends on the system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "XOR is only True if exactly one of the inputs is True. If both are True, XOR is False."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which law states that \u00ac(P \u2228 Q) is equivalent to (\u00acP \u2227 \u00acQ)?",
+    "option_a": "Commutative Law",
+    "option_b": "De Morgan's Law",
+    "option_c": "Distributive Law",
+    "option_d": "Identity Law",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "De Morgan's laws describe how to distribute a negation across logical operators."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Lattices",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In a POSET, if every pair of elements has a least upper bound and a greatest lower bound, it is called a:",
+    "option_a": "Tree",
+    "option_b": "Lattice",
+    "option_c": "Clique",
+    "option_d": "Loop",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A lattice is a special type of POSET that satisfies these join and meet properties."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Recurrence Relations",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What are the first three terms of the sequence defined by a_n = 2*a_{n-1} + 1 with a_0 = 1?",
+    "option_a": "1, 2, 3",
+    "option_b": "1, 3, 7",
+    "option_c": "1, 2, 4",
+    "option_d": "0, 1, 2",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "a_0=1. a_1 = 2(1)+1 = 3. a_2 = 2(3)+1 = 7."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Mathematical Induction",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In mathematical induction, the first step is to prove:",
+    "option_a": "The inductive step",
+    "option_b": "The base case",
+    "option_c": "The contrapositive",
+    "option_d": "The universal quantification",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The base case proves the statement for the smallest possible value of n (usually n=0 or n=1)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Set Theory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "If A \u2286 B and B \u2286 A, then:",
+    "option_a": "A is empty",
+    "option_b": "A = B",
+    "option_c": "A is a proper subset of B",
+    "option_d": "A \u2229 B is empty",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is the definition of set equality."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Functions",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the value of the ceiling function \u2308 -2.3 \u2309?",
+    "option_a": "-2",
+    "option_b": "-3",
+    "option_c": "2",
+    "option_d": "3",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The ceiling function returns the smallest integer greater than or equal to the input. -2 is greater than -2.3."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Graph Theory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the 'Degree' of a vertex in an undirected graph?",
+    "option_a": "The number of edges incident to it",
+    "option_b": "The number of nodes in the graph",
+    "option_c": "The length of the shortest path",
+    "option_d": "The weight of the vertex",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The degree is the count of how many edges connect to that specific vertex."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Probability",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "If an event A has a probability P(A) = 0.3, what is the probability of the complement of A (not A)?",
+    "option_a": "0.3",
+    "option_b": "0.7",
+    "option_c": "0",
+    "option_d": "1.0",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "P(A') = 1 - P(A) = 1 - 0.3 = 0.7."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Counting",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "According to the Pigeonhole Principle, if you have 10 pigeons and 9 holes, at least one hole must contain:",
+    "option_a": "Exactly 1 pigeon",
+    "option_b": "At least 2 pigeons",
+    "option_c": "No pigeons",
+    "option_d": "10 pigeons",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By the principle, if n > k, at least one hole must contain more than one object."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of the following is a 'Tautology'?",
+    "option_a": "P \u2227 \u00acP",
+    "option_b": "P \u2228 \u00acP",
+    "option_c": "P \u2192 \u00acP",
+    "option_d": "P \u2194 \u00acP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A tautology is a statement that is True in all possible situations. 'P or not P' is always True."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A graph with no cycles is called a/an:",
+    "option_a": "Clique",
+    "option_b": "Acyclic Graph (Tree if connected)",
+    "option_c": "Bipartite Graph",
+    "option_d": "Complete Graph",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Graphs without cycles are forest graphs, or trees if they are connected."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Number Theory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Two numbers are 'Relatively Prime' (Coprime) if their Greatest Common Divisor (GCD) is:",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "Their product",
+    "option_d": "Greater than 10",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Two numbers share no common factors other than 1."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Set Theory",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the result of A \u222a \u00d8 (Union of a set with the empty set)?",
+    "option_a": "\u00d8",
+    "option_b": "A",
+    "option_c": "U (Universal Set)",
+    "option_d": "{\u00d8}",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Adding nothing to a set leaves it unchanged."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Counting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many binary strings of length 4 exist?",
+    "option_a": "4",
+    "option_b": "8",
+    "option_c": "16",
+    "option_d": "32",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Each bit has 2 choices. So 2 * 2 * 2 * 2 = 2^4 = 16."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Relations",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A relation is an 'Equivalence Relation' if it is:",
+    "option_a": "Reflexive only",
+    "option_b": "Reflexive, Symmetric, and Transitive",
+    "option_c": "Irreflexive and Antisymmetric",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "These three properties allow a relation to partition a set into equivalence classes."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Logic",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In predicate logic, the symbol '\u2203' represents:",
+    "option_a": "For all",
+    "option_b": "There exists",
+    "option_c": "Does not exist",
+    "option_d": "Therefore",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is the existential quantifier, used to indicate that at least one member of a domain satisfies a property."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Graph Theory",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "A graph where every pair of distinct vertices is connected by an edge is called a:",
+    "option_a": "Isolated Graph",
+    "option_b": "Complete Graph",
+    "option_c": "Cyclic Graph",
+    "option_d": "Planar Graph",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Complete graphs, denoted K_n, have the maximum possible number of edges."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Set Theory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is A - B (Set difference)?",
+    "option_a": "Elements in B not in A",
+    "option_b": "Elements in A not in B",
+    "option_c": "Elements in neither A nor B",
+    "option_d": "Elements common to both",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A - B removes anything that belongs to B from set A."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Propositional Logic",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which of the following describes 'Modus Ponens'?",
+    "option_a": "P \u2192 Q; not Q; therefore not P",
+    "option_b": "P \u2192 Q; P; therefore Q",
+    "option_c": "P or Q; not P; therefore Q",
+    "option_d": "P; Q; therefore P and Q",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Modus Ponens is a fundamental rule of inference: if a conditional statement and its premise are true, the conclusion is also true."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Graph Theory",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the degree of a 'Leaf' node in a tree?",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "2",
+    "option_d": "Infinite",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a tree graph, leaf nodes are vertices with exactly one connection."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Combinatorics",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In how many ways can 3 people be seated in a row of 3 chairs?",
+    "option_a": "3",
+    "option_b": "6",
+    "option_c": "9",
+    "option_d": "27",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is 3! (3 factorial) = 3 * 2 * 1 = 6."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Discrete Math",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which boolean constant is represented by '1' in digital circuits?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Maybe",
+    "option_d": "Null",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "1 typically signals High or True, while 0 signals Low or False."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Functions",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the floor of -4.7?",
+    "option_a": "-4",
+    "option_b": "-5",
+    "option_c": "4",
+    "option_d": "5",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Floor is the greatest integer less than or equal to the input. -5 is less than -4.7."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The statement \u00ac(P \u2227 Q) is True if:",
+    "option_a": "P is True and Q is True",
+    "option_b": "At least one of P or Q is False",
+    "option_c": "Both must be False",
+    "option_d": "P is True and Q is False only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By De Morgan's Law, \u00ac(P \u2227 Q) is (\u00acP \u2228 \u00acQ). It is True if \u00acP is True OR \u00acQ is True (i.e., P is False or Q is False)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Counting",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How many bit strings of length 8 start and end with '1'?",
+    "option_a": "8",
+    "option_b": "64",
+    "option_c": "128",
+    "option_d": "256",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The first and last bit are fixed (1). The remaining 6 bits can be either 0 or 1. So 2^6 = 64."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Graph Theory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A graph with no vertices and no edges is called:",
+    "option_a": "Simple graph",
+    "option_b": "Trivial graph",
+    "option_c": "Null graph (or empty set if truly nothing)",
+    "option_d": "Isolated graph",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A null graph typically refers to a graph with no edges, but an empty graph refers to one with no vertices."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the truth value of P \u2295 P (XOR)?",
+    "option_a": "Always True",
+    "option_b": "Always False",
+    "option_c": "Depends on P",
+    "option_d": "P",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Any value XORed with itself is False (0)."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Number Theory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If a \u2261 b (mod m), it means:",
+    "option_a": "a is equal to b",
+    "option_b": "m divides (a - b)",
+    "option_c": "a + b = m",
+    "option_d": "m is a multiple of a",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is the definition of modular congruence. a and b leave the same remainder when divided by m."
+  },
+  {
+    "subject_name": "Discrete Mathematics",
+    "level_number": 1,
+    "level_topic": "Set Theory",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "The 'Universal Set' contains:",
+    "option_a": "Only positive integers",
+    "option_b": "Every set in a specific context",
+    "option_c": "Only the empty set",
+    "option_d": "Infinite sets only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "All sets under consideration in a given problem are subsets of the Universal Set."
+  }
+]

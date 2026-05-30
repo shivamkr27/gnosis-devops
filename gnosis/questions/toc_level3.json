@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machines",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary feature of a Turing Machine that makes it a model for general-purpose computation?",
+    "option_a": "It has an infinite stack",
+    "option_b": "It has an infinite tape that can be read from and written to, and the head can move in both directions",
+    "option_c": "It uses binary code",
+    "option_d": "It can work without electricity",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The ability to read/write and move bidirectional on an infinite tape allows a Turing machine to simulate any algorithmic logic."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Computability",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "The Church-Turing Thesis states that:",
+    "option_a": "Turing machines are faster than any human",
+    "option_b": "Everything 'effectively calculable' (algorithmic) can be computed by a Turing Machine",
+    "option_c": "Computers will never reach human intelligence",
+    "option_d": "All languages are regular",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This thesis identifies our intuitive concept of 'algorithm' with the formal model of the Turing machine."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machine Variants",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "Does a Multi-tape Turing Machine have more computational power (can recognize more languages) than a Single-tape Turing Machine?",
+    "option_a": "Yes",
+    "option_b": "No, they are equivalent in power",
+    "option_c": "Only if it has more than 10 tapes",
+    "option_d": "Only for non-deterministic problems",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A multi-tape TM can be simulated by a single-tape TM with a quadratic slowdown, but they both recognize the same class of languages (Recursively Enumerable)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Language Classes",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "Which of the following are true about Recursive (Decidable) languages?",
+    "option_a": "There exists a Turing machine that halts for every input",
+    "option_b": "They are a subset of Recursively Enumerable languages",
+    "option_c": "Their complement is also recursive",
+    "option_d": "They can only be recognized by Finite Automata",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Decidable languages always halt. They are a proper subset of RE languages. RE languages that are not recursive (like the Halting problem) do not have recursive complements."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machine Components",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A Universal Turing Machine (UTM) is a Turing machine that can:",
+    "option_a": "Connect to the internet",
+    "option_b": "Simulate any other Turing machine given its description and input",
+    "option_c": "Fix itself if it breaks",
+    "option_d": "Run on any hardware",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A UTM is the theoretical foundation of the programmable computer."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Unrestricted Grammars",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Unrestricted grammars (Type-0) correspond to which class of languages?",
+    "option_a": "Regular",
+    "option_b": "Context-Free",
+    "option_c": "Recursively Enumerable",
+    "option_d": "Context-Sensitive",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Type-0 grammars are the most general and can represent any language recognizable by a Turing machine."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Recursively Enumerable",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "A language L is Recursively Enumerable (RE) if:",
+    "option_a": "A Turing machine halts and accepts all strings in L",
+    "option_b": "A Turing machine halts for strings not in L",
+    "option_c": "A Turing machine may loop forever for strings not in L",
+    "option_d": "Both A and C",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "For RE languages, the machine is only guaranteed to halt and accept if the string is in the language."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Decidability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "The 'Halting Problem' is:",
+    "option_a": "Decidable",
+    "option_b": "Undecidable but Recursively Enumerable",
+    "option_c": "Not even Recursively Enumerable",
+    "option_d": "Regular",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "We can build a TM that halts if another TM halts (RE), but we cannot build one that always gives a Yes/No answer for any TM-input pair (Undecidable)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machines",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Tape Alphabet' (\u0393) of a Turing Machine?",
+    "option_a": "The same as the input alphabet \u03a3",
+    "option_b": "A set of symbols that includes \u03a3 and the blank symbol B",
+    "option_c": "Only 0 and 1",
+    "option_d": "The set of all possible states",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The tape alphabet includes characters the machine uses during computation that aren't part of the initial input."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Linear Bounded Automata",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Linear Bounded Automata (LBA) recognize which class of languages?",
+    "option_a": "Regular",
+    "option_b": "Context-Free",
+    "option_c": "Context-Sensitive",
+    "option_d": "Recursively Enumerable",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "LBAs are Turing machines with a finite tape limited to the size of the input."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Decidability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Rice's Theorem states that:",
+    "option_a": "All languages are regular",
+    "option_b": "Any non-trivial property of the languages recognized by Turing machines is undecidable",
+    "option_c": "NP = P",
+    "option_d": "Context-free languages are closed under intersection",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Rice's Theorem is a powerful tool for proving undecidability of properties like emptiness, totality, etc."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machines",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Is non-determinism more powerful than determinism for Turing Machines?",
+    "option_a": "Yes",
+    "option_b": "No, NTMs and DTMs are equivalent in power",
+    "option_c": "Only for exponential time problems",
+    "option_d": "Only if N is prime",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A deterministic TM can simulate a non-deterministic one, though it might take significantly more time."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Enumerators",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "An 'Enumerator' is a variant of a Turing Machine that:",
+    "option_a": "Calculates sums",
+    "option_b": "Prints out all the strings in a language L one by one",
+    "option_c": "Counts the number of states",
+    "option_d": "Deletes the tape",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If a language can be enumerated by an Enumerator, it is Recursively Enumerable."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Chomsky Hierarchy",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Recursively Enumerable languages are Type-___ in the Chomsky hierarchy.",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "2",
+    "option_d": "3",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Type-0 grammars are unrestricted grammars."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Closure Properties",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "The class of Recursive (Decidable) languages is closed under which operation?",
+    "option_a": "Union",
+    "option_b": "Intersection",
+    "option_c": "Complement",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Decidable languages exhibit strong closure properties, unlike RE languages (not closed under complement)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Closure Properties",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which of these is NOT a closure property of Recursively Enumerable languages?",
+    "option_a": "Union",
+    "option_b": "Intersection",
+    "option_c": "Complement",
+    "option_d": "Concatenation",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "If RE was closed under complement, then every RE language would be Decidable (which is false)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Diagonalization",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "Which technique was used by Alan Turing to prove the undecidability of the Halting Problem?",
+    "option_a": "Mathematical Induction",
+    "option_b": "Cantor's Diagonalization",
+    "option_c": "Pumping Lemma",
+    "option_d": "Breadth-First Search",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Diagonalization is a method for showing that two sets have different cardinalities or that certain functions cannot exist."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Post's Correspondence Problem",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Post's Correspondence Problem (PCP) is:",
+    "option_a": "A sorting problem",
+    "option_b": "An undecidable problem regarding string matches in two lists",
+    "option_c": "A regular language",
+    "option_d": "Solved in linear time",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PCP is frequently used to prove other problems (like ambiguity of CFGs) are undecidable via reduction."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machines",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Can a Turing Machine head move beyond the initial input on the tape?",
+    "option_a": "Yes, the tape is infinite (usually extending to the right)",
+    "option_b": "No, it must stay within the input bounds",
+    "option_c": "Only if it is context-free",
+    "option_d": "Only for binary strings",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The extra 'workspace' on the tape is what gives TMs their power over LBAs."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Decidability",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A problem is 'Decidable' if:",
+    "option_a": "It can be solved by a human",
+    "option_b": "There exists an algorithm that terminates with an answer for all inputs",
+    "option_c": "It can be written as a CFG",
+    "option_d": "It has no solution",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Decidability means there's a computational procedure that always finishes."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Language Complexity",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is the language L = { (M, w) | M is a TM and M halts on input w } Recursively Enumerable?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for finite w",
+    "option_d": "Only if M has < 10 states",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is the Halting Language. We can simulate M on w and accept if it halts. If it loops, we loop."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Reductions",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "If A reduces to B and B is decidable, then:",
+    "option_a": "A is undecidable",
+    "option_b": "A is decidable",
+    "option_c": "A is recursively enumerable",
+    "option_d": "Nothing can be said",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Reductions allow us to transfer properties between problems. If we can solve B, we can solve A."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Reductions",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "If A reduces to B and A is undecidable, then:",
+    "option_a": "B is undecidable",
+    "option_b": "B is decidable",
+    "option_c": "B is regular",
+    "option_d": "Nothing can be said",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If B were decidable, A would be too (contradiction)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machines",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Does every Turing Machine have a reachable final state?",
+    "option_a": "Yes",
+    "option_b": "No, it might calculate forever (loop)",
+    "option_c": "Only for even inputs",
+    "option_d": "Only for regular languages",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A TM can loop indefinitely and never reach an accept/reject state."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Context-Sensitive Languages",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Context-Sensitive languages are Type-___ in the Chomsky hierarchy.",
+    "option_a": "0",
+    "option_b": "1",
+    "option_c": "2",
+    "option_d": "3",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Type-1 grammars have productions \u03b1 -> \u03b2 where |\u03b1| <= |\u03b2|."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Recursive Languages",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "If L and its complement L' are both RE, then L is:",
+    "option_a": "Undecidable",
+    "option_b": "Decidable (Recursive)",
+    "option_c": "Context-free",
+    "option_d": "Empty",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is a fundamental theorem: a language is decidable if and only if both it and its complement are semi-decidable (RE)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machines",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A Turing machine that can move the head Left, Right, or Stay putting (S) is equivalent to a standard TM.",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Only for finite languages",
+    "option_d": "Only if \u03a3 is {0,1}",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Staying in place can be simulated by moving Right and then immediately moving Left."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Computability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "The set of all possible Turing machines is:",
+    "option_a": "Finite",
+    "option_b": "Countably Infinite",
+    "option_c": "Uncountably Infinite",
+    "option_d": "Empty",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every TM can be described as a finite string, and the set of all finite strings over a finite alphabet is countable."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Computability",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "The set of all possible languages over \u03a3 is:",
+    "option_a": "Finite",
+    "option_b": "Countably Infinite",
+    "option_c": "Uncountably Infinite",
+    "option_d": "None of the above",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The set of all languages is the Power Set of \u03a3*, and the power set of a countably infinite set is uncountably infinite."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Computability",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "Are there more languages than there are Turing machines?",
+    "option_a": "Yes, infinitely many more",
+    "option_b": "No, they are the same amount",
+    "option_c": "No, there are more TMs",
+    "option_d": "Only for large alphabets",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Because languages are uncountable and TMs are countable, most languages cannot be recognized by any TM (Non-RE languages)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Decision Problems",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Is the 'Emptiness Problem' for regular languages decidable?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for DFAs",
+    "option_d": "Only if \u03a3 is small",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "We can check if any final state is reachable from the start state in the DFA graph."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Decision Problems",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Is the 'Emptiness Problem' for context-free languages decidable?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Not for NPDAs",
+    "option_d": "Only for finite sets",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "We can check if the start symbol of the CFG can derive any string of terminals."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Decision Problems",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is the 'Emptiness Problem' for Recursively Enumerable languages decidable?",
+    "option_a": "Yes",
+    "option_b": "No, it's undecidable",
+    "option_c": "Only for TMs with < 5 states",
+    "option_d": "Only for deterministic TMs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Rice's Theorem proves this is undecidable since 'being empty' is a non-trivial property of RE languages."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Decision Problems",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Is the 'Equivalence Problem' (L1 = L2) decidable for Regular languages?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only if L1 is finite",
+    "option_d": "Only if \u03a3 has 1 symbol",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "We can construct the symmetric difference (L1 \u2229 L2') \u222a (L1' \u2229 L2) and check if it is empty."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Decision Problems",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Is the 'Equivalence Problem' (L1 = L2) decidable for Context-Free languages?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for deterministic CFLs",
+    "option_d": "Only if we use Greibach Normal Form",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Comparison of two arbitrary CFGs is undecidable."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machines",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A 'Configuration' of a Turing Machine consists of:",
+    "option_a": "Current state, tape contents, and head position",
+    "option_b": "Only the state",
+    "option_c": "The code of the software",
+    "option_d": "The power supply status",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A configuration (or ID) completely describes the instantaneous state of the machine."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Reductions",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the specific type of reduction used in decidability proofs?",
+    "option_a": "Exponential time reduction",
+    "option_b": "Mapping reduction (m-reduction)",
+    "option_c": "Greedy reduction",
+    "option_d": "Recursive descent",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Mapping reduction transforms an instance of problem A to an instance of problem B such that answers are preserved."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machine Variants",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A TM can have an infinite alphabet.",
+    "option_a": "True",
+    "option_b": "False, the alphabet must be finite",
+    "option_c": "Only for quantum TMs",
+    "option_d": "Only if the tape is finite",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Formal definitions require the set of tape symbols to be finite."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Finite Automata",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Turing machines can simulate Pushdown Automata.",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Only if the stack is small",
+    "option_d": "Only for deterministic PDAs",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A TM can easily simulate a stack on its tape."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machines",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is standardly used as the 'Reject' state behavior in a TM?",
+    "option_a": "Moving the head Left",
+    "option_b": "Halting and indicating failure",
+    "option_c": "Looping forever",
+    "option_d": "Resetting the machine",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A decider must halt in either q_accept or q_reject."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Turing Machines",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Can a Turing machine write a blank symbol B on its tape?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only if the head is at the end",
+    "option_d": "Only for multi-tape TMs",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A TM can effectively 'erase' parts of its tape by writing the blank symbol."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Decidability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Is the language { (M) | M is a TM and M accepts infinitely many strings } decidable?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for finite TMs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By Rice's Theorem, this is an undecidable property."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 3,
+    "level_topic": "Decidability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Is it possible to build an IDE that checks for 'Infinite Loops' and always gives the right answer?",
+    "option_a": "Yes, current compilers do this",
+    "option_b": "No, because the Halting Problem is undecidable",
+    "option_c": "Only for Java programs",
+    "option_d": "Only for programs with < 100 lines",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Determining if a program will loop forever for all cases is mathematically impossible for a general-purpose computer."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 3,
+    "level_topic": "Topic 44",
+    "question_type": "hard",
+    "timer_seconds": 75,
+    "question_text": "Sample question 44 for Theory of Computation (FLAT) Level 3?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 44 of Theory of Computation (FLAT) Level 3."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 3,
+    "level_topic": "Topic 45",
+    "question_type": "hard",
+    "timer_seconds": 75,
+    "question_text": "Sample question 45 for Theory of Computation (FLAT) Level 3?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 45 of Theory of Computation (FLAT) Level 3."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 3,
+    "level_topic": "Topic 46",
+    "question_type": "hard",
+    "timer_seconds": 75,
+    "question_text": "Sample question 46 for Theory of Computation (FLAT) Level 3?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 46 of Theory of Computation (FLAT) Level 3."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 3,
+    "level_topic": "Topic 47",
+    "question_type": "hard",
+    "timer_seconds": 75,
+    "question_text": "Sample question 47 for Theory of Computation (FLAT) Level 3?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 47 of Theory of Computation (FLAT) Level 3."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 3,
+    "level_topic": "Topic 48",
+    "question_type": "hard",
+    "timer_seconds": 75,
+    "question_text": "Sample question 48 for Theory of Computation (FLAT) Level 3?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 48 of Theory of Computation (FLAT) Level 3."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 3,
+    "level_topic": "Topic 49",
+    "question_type": "hard",
+    "timer_seconds": 75,
+    "question_text": "Sample question 49 for Theory of Computation (FLAT) Level 3?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 49 of Theory of Computation (FLAT) Level 3."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 3,
+    "level_topic": "Topic 50",
+    "question_type": "hard",
+    "timer_seconds": 75,
+    "question_text": "Sample question 50 for Theory of Computation (FLAT) Level 3?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 50 of Theory of Computation (FLAT) Level 3."
+  }
+]

@@ -1,0 +1,11 @@
+.copilot/
+.env
+api-gateway/.env
+auth-service/.env
+battle-service/.env
+content-service/.env
+notification-service/.env
+progress-service/.env
+xp-service/.env
+!frontend/.env
+frontend-docker-build.log

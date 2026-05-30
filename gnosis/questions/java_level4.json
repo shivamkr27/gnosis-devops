@@ -1,0 +1,813 @@
+[
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which interface must be implemented to create a thread in Java?",
+    "option_a": "Thread",
+    "option_b": "Runnable",
+    "option_c": "Process",
+    "option_d": "Executive",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'Runnable' interface with the run() method is the standard way to define a task for execution by a thread."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does a Lambda expression allow in Java 8?",
+    "option_a": "Creation of new classes",
+    "option_b": "Writing anonymous functions in a concise way",
+    "option_c": "Speeding up network calls",
+    "option_d": "Deleting objects manually",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lambdas provide a clear and concise way to represent one method interface using an expression."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which class was introduced in Java 8 to handle null values more effectively?",
+    "option_a": "NullPointerHandler",
+    "option_b": "Nullable",
+    "option_c": "Optional",
+    "option_d": "Maybe",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Optional is a container object used to contain not-null objects, helping to avoid NullPointerExceptions."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which method is used to start the execution of a thread?",
+    "option_a": "run()",
+    "option_b": "execute()",
+    "option_c": "start()",
+    "option_d": "launch()",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Calling start() creates a new thread of execution and then calls the run() method in that new thread."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which package contains the New I/O (NIO.2) classes in Java?",
+    "option_a": "java.io",
+    "option_b": "java.nio",
+    "option_c": "java.nio.file",
+    "option_d": "java.file",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "java.nio.file introduced the Path and Files classes for more robust file handling."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the result of '10 / 0' in a Java thread?",
+    "option_a": "Infinity",
+    "option_b": "0",
+    "option_c": "ArithmeticException",
+    "option_d": "Compiler error",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Division by zero for integral types throws ArithmeticException at runtime."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which Stream operation is used to transform elements?",
+    "option_a": "filter()",
+    "option_b": "map()",
+    "option_c": "reduce()",
+    "option_d": "collect()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'map' operation applies a function to each element of the stream and returns a new stream of the results."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the keyword used to prevent multiple threads from accessing a method simultaneously?",
+    "option_a": "volatile",
+    "option_b": "atomic",
+    "option_c": "synchronized",
+    "option_d": "locked",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Synchronized creates a critical section that only one thread can enter at a time for a given object or class."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which functional interface matches a method that takes one argument and returns a boolean?",
+    "option_a": "Consumer",
+    "option_b": "Supplier",
+    "option_c": "Predicate",
+    "option_d": "Function",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Predicate<T> represents a boolean-valued function of one argument."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which method in the Files class can be used to write a string to a file?",
+    "option_a": "write()",
+    "option_b": "output()",
+    "option_c": "writeString()",
+    "option_d": "save()",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Files.writeString() (introduced later in Java 11) or Files.write() are common for simple write operations."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the difference between 'synchronized' on a method and 'synchronized' on a block?",
+    "option_a": "No difference",
+    "option_b": "Block synchronization can target a specific object and is more granular",
+    "option_c": "Method synchronization is always faster",
+    "option_d": "Block synchronization cannot be used with static objects",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Synchronized blocks allow locking only the necessary lines of code using any object as a lock reference, improving concurrency."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What does the 'volatile' keyword ensure in multithreading?",
+    "option_a": "Exclusivity (one thread at a time)",
+    "option_b": "Atomicity of complex operations",
+    "option_c": "Visibility of changes to other threads",
+    "option_d": "Prevents deadlocks",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Volatile ensures that value changes made by one thread are immediately visible to others by reading/writing directly to main memory."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Functional Interface'?",
+    "option_a": "An interface used in functional programming",
+    "option_b": "An interface with exactly one abstract method",
+    "option_c": "An interface with only default methods",
+    "option_d": "A class that behaves like a function",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Functional interfaces (can have multiple default/static methods) are the target types for lambda expressions."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which Stream method is used to remove duplicates from a stream?",
+    "option_a": "unique()",
+    "option_b": "distinct()",
+    "option_c": "noDuplicates()",
+    "option_d": "filter(Objects::nonNull)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'distinct()' operation uses equals() to filter out duplicate elements in a stream."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the difference between 'Path' and 'File' in NIO.2?",
+    "option_a": "Path is for relative paths only",
+    "option_b": "File is older; Path is an enhanced representation of the file system location",
+    "option_c": "Path can handle network drives; File cannot",
+    "option_d": "There is no functional difference",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Path (Interface) is more versatile and works with the Files utility class. File (Class) is the legacy I/O representation."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Deadlock'?",
+    "option_a": "A thread that has completed execution",
+    "option_b": "A situation where two or more threads are blocked forever, waiting for each other",
+    "option_c": "An error when calling stop() on a thread",
+    "option_d": "Memory leak caused by threads",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deadlock occurs when Thread A holds Lock 1 and wants Lock 2, while Thread B holds Lock 2 and wants Lock 1."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which terminal operation returns a single value from a Stream reduction?",
+    "option_a": "transform()",
+    "option_b": "collect()",
+    "option_c": "reduce()",
+    "option_d": "map()",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 'reduce' operation takes multiple elements and combines them into one result (like sum or concatenation)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which interface represents a task that can return a value and throw an exception?",
+    "option_a": "Runnable",
+    "option_b": "Callable",
+    "option_c": "Future",
+    "option_d": "Thread",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unlike Runnable.run() (void), Callable.call() returns a generic value of type T and can throw checked exceptions."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "multi_correct",
+    "timer_seconds": 20,
+    "question_text": "Which of these are intermediate operations in Java Streams?",
+    "option_a": "filter",
+    "option_b": "map",
+    "option_c": "count",
+    "option_d": "sorted",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Intermediate operations are lazy and return a new stream. 'count' is a terminal operation that triggers processing."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "multi_correct",
+    "timer_seconds": 20,
+    "question_text": "Which methods are used for inter-thread communication?",
+    "option_a": "wait()",
+    "option_b": "notify()",
+    "option_c": "notifyAll()",
+    "option_d": "sleep()",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "wait, notify, and notifyAll must be called from a synchronized context to communicate state changes between threads. sleep just pauses the current thread."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between 'Stream.parallel()' and 'Stream.sequential()'?",
+    "option_a": "Parallel uses multiple threads; Sequential uses a single thread",
+    "option_b": "Parallel is for files; Sequential is for lists",
+    "option_c": "Parallel always preserves order; Sequential does not",
+    "option_d": "There is no difference in execution",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Parallel streams divide tasks between cores using the ForkJoinPool; however, they require thread-safe logic and have overhead."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is 'Lock Contention'?",
+    "option_a": "When a thread cannot acquire a lock because another thread holds it",
+    "option_b": "When two threads release locks at the same time",
+    "option_c": "When a lock is deleted by the GC",
+    "option_d": "When a thread holds too many locks",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Contention indicates that threads are waiting for resources, which can degrade application performance."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "How does 'Optional.flatMap' differ from 'Optional.map'?",
+    "option_a": "map returns a nested Optional; flatMap 'flattens' the nested result",
+    "option_b": "flatMap is for collections; map is for objects",
+    "option_c": "map is faster",
+    "option_d": "flatMap is only available in Java 11+",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If the mapping function already returns an Optional, map would produce Optional<Optional<T>>. flatMap returns Optional<T>."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which class provides atomic operations for integers without using synchronized blocks?",
+    "option_a": "VolatileInteger",
+    "option_b": "AtomicInteger",
+    "option_c": "LockedInteger",
+    "option_d": "ThreadSafeInt",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AtomicInteger uses low-level 'Compare-and-Swap' (CAS) instructions to safely update values from multiple threads."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is 'Thread Local' storage?",
+    "option_a": "Memory shared by all threads in a package",
+    "option_b": "Variables that are unique to each thread that accesses them",
+    "option_c": "Variable stored in the local registry",
+    "option_d": "A cache for thread performance",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ThreadLocal class allows you to store data that is local to the current thread (useful for context like UserID or DB connection)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which method in Path can be used to combine two path segments?",
+    "option_a": "join()",
+    "option_b": "resolve()",
+    "option_c": "append()",
+    "option_d": "merge()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'path.resolve(other)' is the standard way to concatenate paths in a platform-independent manner."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What does 'CompletableFuture' provide?",
+    "option_a": "A thread that never stops",
+    "option_b": "Asynchronous programming with a callback/continuation model",
+    "option_c": "Faster file compression",
+    "option_d": "Automatic retry for failed transactions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CompletableFuture (Java 8) allows for complex async pipelines with methods like thenApply, thenAccept, and handle."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which concept describes the memory visibility issues in Java multithreading?",
+    "option_a": "Happen-Before relationship",
+    "option_b": "Wait-Notify protocol",
+    "option_c": "Lock-Free design",
+    "option_d": "Stack Trace consistency",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The 'happen-before' rule in JMM (Java Memory Model) guarantees that memory writes by one specific statement are visible to another specific statement."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of these are thread-safe ways to iterate over a list?",
+    "option_a": "Using synchronizedList and a manual synchronized block on the list",
+    "option_b": "Using CopyOnWriteArrayList",
+    "option_c": "Using a standard ArrayList and for-each loop in multiple threads",
+    "option_d": "Using ConcurrentLinkedQueue",
+    "correct_options": [
+      "A",
+      "B"
+    ],
+    "explanation": "Standard ArrayList iteration is NOT thread-safe. synchronizedList requires manual synchronization for iteration, while CopyOnWriteArrayList is safe by design (snapshot)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "What can trigger a thread to wake up from 'wait()'?",
+    "option_a": "Calling notify() on the same object",
+    "option_b": "Calling notifyAll() on the same object",
+    "option_c": "The thread is interrupted",
+    "option_d": "The wait time expires (if specified)",
+    "correct_options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Threads wake up when notified, interrupted, or when the timer exceeds. They must re-acquire the lock before continuing."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Can a lambda expression access non-final variables in its outer scope?",
+    "option_a": "Yes, always",
+    "option_b": "No, variables must be final or 'effectively final'",
+    "option_c": "Only if they are static",
+    "option_d": "Only if they are primatives",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "To ensure thread safety and predictability, variables accessed in lambda must not be modified after assignment."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the output of 'Stream.of(1, 2, 3).map(n -> n * 2);' if no terminal operation follows?",
+    "option_a": "2, 4, 6",
+    "option_b": "Nothing (Processing is lazy)",
+    "option_c": "Runtime error",
+    "option_d": "Reference to the Stream object",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Intermediate operations are not executed until a terminal operation (like collect or forEach) is called."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What happens if you call 'run()' instead of 'start()' on a Thread object?",
+    "option_a": "A new thread is started",
+    "option_b": "The run() method executes in the CURRENT thread",
+    "option_c": "Compiler error",
+    "option_d": "The JVM crashes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Calling run() is just a normal method call. To initiate a true concurrent task, start() must be used."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Can 'Optional.of(null)' be used to represent a missing value?",
+    "option_a": "Yes",
+    "option_b": "No, it throws NullPointerException",
+    "option_c": "Only if stored in a variable",
+    "option_d": "Yes, if cast to Optional<Void>",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Use 'Optional.empty()' for missing values or 'Optional.ofNullable()' if the value might be null. .of() forbids null."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Daemon Thread' in Java?",
+    "option_a": "A very fast thread",
+    "option_b": "A background thread that does not prevent the JVM from exiting",
+    "option_c": "A thread with high priority",
+    "option_d": "A thread that runs on the OS kernel only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Garbage collection is a classic example of a daemon thread. If all non-daemon threads finish, the JVM stops even if daemons are running."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Which Stream method should you use for debugging intermediate steps?",
+    "option_a": "debug()",
+    "option_b": "peek()",
+    "option_c": "log()",
+    "option_d": "inspect()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "peek() allows you to perform an action (like printing) for each element as it flows past without altering the stream."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the consequence of catching 'InterruptedException' and then ignoring it?",
+    "option_a": "Nothing if code finishes",
+    "option_b": "The 'interrupted' status is cleared, and parent callers won't know the thread was stopped",
+    "option_c": "The thread restarts automatically",
+    "option_d": "Compiler warning",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Best practice is to re-interrupt the thread or throw a runtime exception so the cancellation signal propagates."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "In NIO.2, what is the 'WatchService' used for?",
+    "option_a": "Monitoring thread health",
+    "option_b": "Monitoring file system changes (Create/Modify/Delete events)",
+    "option_c": "Timed execution of tasks",
+    "option_d": "Debugging network I/O",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "WatchService allows you to subscribe to a directory and get notified of changes without polling."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of these are valid method references?",
+    "option_a": "System.out::println",
+    "option_b": "String::toUpperCase",
+    "option_c": "Integer::new",
+    "option_d": "ArrayList.add",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Method references use the '::' syntax for static methods, instance methods, or constructors. D is missing the syntax."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which factors can lead to 'Thread Starvation'?",
+    "option_a": "A thread with very low priority never gets CPU time",
+    "option_b": "Synchronized blocks that take too long to execute",
+    "option_c": "Infinite loops in high-priority threads",
+    "option_d": "Calling join() on a finished thread",
+    "correct_options": [
+      "A",
+      "C"
+    ],
+    "explanation": "Starvation occurs when a thread is constantly denied access to shared resources or CPU time."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is the primary motivation for 'Concurrency'?",
+    "option_a": "To make code simpler to read",
+    "option_b": "To use system resources better (CPU overlap with I/O)",
+    "option_c": "To replace functional programming",
+    "option_d": "To force the JVM to use more memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Concurrency allows a program to deal with multiple things at once, improving responsiveness and throughput."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What does a 'Stream' in Java ideally represent?",
+    "option_a": "A fixed data structure",
+    "option_b": "A sequence of elements supporting functional-style operations",
+    "option_c": "A list of strings",
+    "option_d": "A physical file on disk",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Streams provide a high-level abstraction for processing data without storing it."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is 'Immutability' and why is it good for concurrent programming?",
+    "option_a": "Objects that cannot be changed; they are inherently thread-safe",
+    "option_b": "Objects that can only be shared",
+    "option_c": "Objects that are stored in the stack only",
+    "option_d": "It allows deleting objects instantly",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If state cannot change, there can be no data races or consistency issues between threads."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of 'ExecutorService'?",
+    "option_a": "To kill unresponsive threads",
+    "option_b": "To manage a pool of threads and schedule tasks",
+    "option_c": "To compile java files faster",
+    "option_d": "To synchronize all methods in a class",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Executors decouple task submission from task execution, managing thread recycling and queuing."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is 'Pipelines' in the context of Streams?",
+    "option_a": "The connection between the CPU and RAM",
+    "option_b": "The sequence of zero or more intermediate operations followed by a terminal operation",
+    "option_c": "The speed of the network",
+    "option_d": "A way to read files in parts",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pipeline allows for fluent, readable chain of operations on data."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Why do we use 'Method References' over 'Lambdas'?",
+    "option_a": "They are significantly faster",
+    "option_b": "They improve readability when you are just calling an existing method",
+    "option_c": "Lambdas are being deprecated",
+    "option_d": "Method references avoid type erasure",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If a lambda just passes its argument directly to an existing method (like 's -> System.out.println(s)'), the method reference ('System.out::println') is cleaner."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of 'Collectors' in the Stream API?",
+    "option_a": "To delete unused data",
+    "option_b": "To accumulate stream elements into a final structure (like a List or Map)",
+    "option_c": "To find bugs in the stream",
+    "option_d": "To sort the elements alphabetically",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'collect' terminal operation uses objects that implement the Collector interface to gather results."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is 'Non-blocking I/O' (NIO)?",
+    "option_a": "I/O that doesn't use the disk",
+    "option_b": "Operations that allow a thread to do other work while waiting for completion",
+    "option_c": "A way to write files that cannot be edited",
+    "option_d": "I/O that uses double the bandwidth",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NIO allows single threads to handle multiple connections by not 'blocking' (parking) the thread during wait states."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is 'Race Condition'?",
+    "option_a": "Competition between developers to finish code",
+    "option_b": "When the final outcome of code depends on the timing/interleaving of thread execution",
+    "option_c": "Speeding up a loop using threads",
+    "option_d": "A bug in the network card",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Race conditions result in unpredictable and inconsistent data."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 4,
+    "level_topic": "Multithreading, Java 8 Features (Lambda, Streams, Optional), File I/O (NIO.2)",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Which class is the modern replacement for 'File' for creating directories or deleting files?",
+    "option_a": "DirectoryManager",
+    "option_b": "Files",
+    "option_c": "NioOperations",
+    "option_d": "SystemIO",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'java.nio.file.Files' utility class contains static methods for all common file system tasks."
+  }
+]

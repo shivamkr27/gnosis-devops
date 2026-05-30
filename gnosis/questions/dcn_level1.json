@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "OSI Model",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which OSI layer is responsible for routing and logical addressing?",
+    "option_a": "Data Link Layer",
+    "option_b": "Network Layer",
+    "option_c": "Transport Layer",
+    "option_d": "Physical Layer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Network Layer (Layer 3) handles IP addressing and routing packets between different networks."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "OSI & TCP/IP",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the primary difference between the OSI model and the TCP/IP model regarding layers?",
+    "option_a": "OSI has 4 layers, TCP/IP has 7",
+    "option_b": "OSI has 7 layers, TCP/IP has 4 (or 5 standard)",
+    "option_c": "OSI is practical, TCP/IP is theoretical",
+    "option_d": "There is no difference in the number of layers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The OSI model is a 7-layer theoretical framework, while the practical TCP/IP model is generally interpreted as 4 or 5 layers."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "IPv4 Subnetting",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Calculate the number of usable hosts in a /27 subnet.",
+    "option_a": "32",
+    "option_b": "30",
+    "option_c": "14",
+    "option_d": "62",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A /27 subnet has 32 addresses total. 30 are usable (32 - 2 for Network and Broadcast)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "IP Addressing",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the size of an IPv4 address?",
+    "option_a": "16 bits",
+    "option_b": "32 bits",
+    "option_c": "64 bits",
+    "option_d": "128 bits",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IPv4 addresses are 32-bit binary numbers, typically expressed in dotted-decimal format."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "IP Addressing",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the size of an IPv6 address?",
+    "option_a": "32 bits",
+    "option_b": "64 bits",
+    "option_c": "128 bits",
+    "option_d": "256 bits",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "IPv6 uses 128-bit addresses to provide a much larger address space than IPv4."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "OSI Model",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which layer is responsible for end-to-end communication, flow control, and error recovery?",
+    "option_a": "Network Layer",
+    "option_b": "Transport Layer",
+    "option_c": "Session Layer",
+    "option_d": "Data Link Layer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Transport Layer (Layer 4) ensures reliable data transfer between the source and destination hosts."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Protocols",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which protocol is used to translate a domain name into an IP address?",
+    "option_a": "HTTP",
+    "option_b": "FTP",
+    "option_c": "DNS",
+    "option_d": "ARP",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "DNS (Domain Name System) is the phonebook of the internet."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Hardware",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "A 'Repeater' operates at which layer of the OSI model?",
+    "option_a": "Physical Layer",
+    "option_b": "Data Link Layer",
+    "option_c": "Network Layer",
+    "option_d": "Transport Layer",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A repeater is a physical layer device used to regenerate and amplify signals."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Addressing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the length of a MAC address?",
+    "option_a": "32 bits",
+    "option_b": "48 bits",
+    "option_c": "64 bits",
+    "option_d": "128 bits",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A MAC address is a 48-bit (6-byte) unique identifier assigned to a network interface controller."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "OSI Model",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which layer handles encryption, compression, and translation of data?",
+    "option_a": "Application Layer",
+    "option_b": "Presentation Layer",
+    "option_c": "Session Layer",
+    "option_d": "Data Link Layer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Presentation Layer (Layer 6) transforms data into the format that the application layer can accept."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Protocols",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does ARP stand for?",
+    "option_a": "Address Resolution Protocol",
+    "option_b": "Advanced Routing Protocol",
+    "option_c": "Access Remote Port",
+    "option_d": "Application Relay Port",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "ARP is used to map an IP address to a physical MAC address on a local area network."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Topology",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In which network topology are all nodes connected to a central hub?",
+    "option_a": "Bus",
+    "option_b": "Star",
+    "option_c": "Mesh",
+    "option_d": "Ring",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a Star topology, all devices are connected to a central switch or hub."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Hardware",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the main difference between a Hub and a Switch?",
+    "option_a": "Hubs are faster than Switches",
+    "option_b": "A Switch is intelligent and sends data to a specific destination port; a Hub broadcasts to everyone",
+    "option_c": "Hubs use IP addresses; Switches use MAC addresses",
+    "option_d": "Switches are Physical layer devices",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Switches work at Layer 2 and use MAC addresses to forward data selectively, reducing collisions."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Transmission Modes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In which mode can data be transmitted in both directions simultaneously?",
+    "option_a": "Simplex",
+    "option_b": "Half-Duplex",
+    "option_c": "Full-Duplex",
+    "option_d": "Quarter-Duplex",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Full-duplex allows simultaneous two-way communication (like a phone call)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Errors",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a CRC used for in networking?",
+    "option_a": "Routing packets",
+    "option_b": "Detecting errors in data transmission",
+    "option_c": "Encrypting data",
+    "option_d": "Compresing files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CRC (Cyclic Redundancy Check) is an error-detecting code used to verify the integrity of data."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "IP Addressing",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which IP address class is intended for small networks with few hosts?",
+    "option_a": "Class A",
+    "option_b": "Class B",
+    "option_c": "Class C",
+    "option_d": "Class D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Class C uses a /24 default mask, supporting up to 254 hosts per network."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "IP Addressing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the range of Class A IP addresses?",
+    "option_a": "1.0.0.0 to 126.255.255.255",
+    "option_b": "128.0.0.0 to 191.255.255.255",
+    "option_c": "192.0.0.0 to 223.255.255.255",
+    "option_d": "224.0.0.0 to 239.255.255.255",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Class A addresses have a leading bit of 0, ranging from 1 to 126 (127 is reserved for loopback)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Protocols",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the function of the DHCP protocol?",
+    "option_a": "To provide domain names",
+    "option_b": "To automatically assign dynamic IP addresses to devices on a network",
+    "option_c": "To host web pages",
+    "option_d": "To manage emails",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dynamic Host Configuration Protocol (DHCP) automates the IP assignment process."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Hardware",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which device connects two different networks using different protocols or architectures?",
+    "option_a": "Hub",
+    "option_b": "Switch",
+    "option_c": "Gateway",
+    "option_d": "Repeater",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A gateway acts as a node connecting two networks that use different protocols."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "OSI Model",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "At which layer do 'Frames' exist?",
+    "option_a": "Physical Layer",
+    "option_b": "Data Link Layer",
+    "option_c": "Network Layer",
+    "option_d": "Transport Layer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Data Link Layer (Layer 2) organizes bits into frames."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "TCP/UDP",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which of these is a 'Connectionless' protocol?",
+    "option_a": "TCP",
+    "option_b": "UDP",
+    "option_c": "HTTP",
+    "option_d": "FTP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "UDP (User Datagram Protocol) does not perform a handshake or maintain a connection state."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "TCP/UDP",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which protocol uses a 'Three-way Handshake' to establish a connection?",
+    "option_a": "UDP",
+    "option_b": "TCP",
+    "option_c": "IP",
+    "option_d": "ICMP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TCP establishes a connection using SYN, SYN-ACK, and ACK messages."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Transmission Media",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which cable type is most immune to electromagnetic interference (EMI)?",
+    "option_a": "Coaxial Cable",
+    "option_b": "Unshielded Twisted Pair (UTP)",
+    "option_c": "Fiber Optic Cable",
+    "option_d": "Shielded Twisted Pair (STP)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Fiber optics use light pulses, making them immune to EMI."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Data Link Layer",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the primary function of the 'LLC' sublayer in the Data Link Layer?",
+    "option_a": "Handling MAC addresses",
+    "option_b": "Providing flow control and multiplexing protocols across the link",
+    "option_c": "Physical signal timing",
+    "option_d": "Routing data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Logical Link Control (LLC) sublayer interacts with the Network layer."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Subnetting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the default subnet mask for a Class B network?",
+    "option_a": "255.0.0.0",
+    "option_b": "255.255.0.0",
+    "option_c": "255.255.255.0",
+    "option_d": "255.255.255.255",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A Class B network has a 16-bit network portion (/16)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Protocols",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is ICMP used for?",
+    "option_a": "File transfer",
+    "option_b": "Network error reporting and diagnostic (e.g., Ping)",
+    "option_c": "Email delivery",
+    "option_d": "IP to MAC resolution",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ICMP (Internet Control Message Protocol) is used by network devices to send error messages and operational information."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "OSI Layer",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Encapsulation' in networking?",
+    "option_a": "Breaking data into tiny pieces",
+    "option_b": "The process of adding headers (and sometimes trailers) to data as it moves down the OSI layers",
+    "option_c": "Encrypting a file",
+    "option_d": "Deleting used packets",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Each layer adds its own control information to the data passed from the layer above."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Errors",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What happens if a 'Checksum' fails at the receiving end?",
+    "option_a": "The data is automatically fixed",
+    "option_b": "The packet/frame is discarded",
+    "option_c": "The system ignores the error",
+    "option_d": "The user is notified immediately",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Network protocols discard corrupted packets to maintain data integrity."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Media Access",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does CSMA/CD stand for?",
+    "option_a": "Carrier Sense Multiple Access with Collision Detection",
+    "option_b": "Controlled Signal Multiple Access with Collision Detection",
+    "option_c": "Common Server Media Access with Coding Detection",
+    "option_d": "Carrier Source Mobile Access",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CSMA/CD is used in wired Ethernet to manage how nodes share the communication medium."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Standard Ports",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which port number is assigned to the HTTP protocol?",
+    "option_a": "21",
+    "option_b": "22",
+    "option_c": "80",
+    "option_d": "443",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Standard (unencrypted) web traffic uses port 80."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Standard Ports",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which port number is assigned to SSH?",
+    "option_a": "20",
+    "option_b": "22",
+    "option_c": "25",
+    "option_d": "53",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Secure Shell (SSH) uses port 22 by default."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Addressing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the 'Loopback' address for IPv4?",
+    "option_a": "0.0.0.0",
+    "option_b": "127.0.0.1",
+    "option_c": "192.168.1.1",
+    "option_d": "10.0.0.1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "127.0.0.1 refers to the local machine (localhost)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Hardware",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A 'Router' operates at which layer of the OSI model?",
+    "option_a": "Layer 1",
+    "option_b": "Layer 2",
+    "option_c": "Layer 3",
+    "option_d": "Layer 4",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Routers use IP addresses (Layer 3) to forward packets between different networks."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Protocols",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the primary used of SMTP?",
+    "option_a": "File transfer",
+    "option_b": "Sending Emails",
+    "option_c": "Managing databases",
+    "option_d": "Network time sync",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Simple Mail Transfer Protocol (SMTP) is used to send email messages."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "TCP/UDP",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the size of the TCP header (minimum)?",
+    "option_a": "8 bytes",
+    "option_b": "16 bytes",
+    "option_c": "20 bytes",
+    "option_d": "32 bytes",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The standard TCP header without options is 20 bytes long."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "TCP/UDP",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the size of the UDP header?",
+    "option_a": "8 bytes",
+    "option_b": "20 bytes",
+    "option_c": "32 bytes",
+    "option_d": "Variable",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A UDP header is fixed at 8 bytes (Source Port, Destination Port, Length, Checksum)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Network Layer",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Packet Fragmentation'?",
+    "option_a": "Breaking data into smaller pieces so it can pass through a link with a smaller MTU",
+    "option_b": "Deleting corrupted packets",
+    "option_c": "Duplicating packets for safety",
+    "option_d": "Encrypting individual bits",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If a packet is larger than the Maximum Transmission Unit (MTU), it must be fragmented."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Physical Media",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the maximum segment length for a standard 100BASE-T Ethernet cable?",
+    "option_a": "10 meters",
+    "option_b": "100 meters",
+    "option_c": "500 meters",
+    "option_d": "1000 meters",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Standard twisted-pair Ethernet cables are limited to 100 meters per segment."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "ALOHA",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the maximum efficiency of 'Pure ALOHA'?",
+    "option_a": "18.4%",
+    "option_b": "36.8%",
+    "option_c": "50%",
+    "option_d": "100%",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Pure ALOHA has a peak throughput of approximately 18.4% due to collisions."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "ALOHA",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the maximum efficiency of 'Slotted ALOHA'?",
+    "option_a": "18.4%",
+    "option_b": "36.8%",
+    "option_c": "73.6%",
+    "option_d": "100%",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Slotted ALOHA doubles the efficiency of Pure ALOHA by synchronizing transmissions."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Topology",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which topology requires a 'Multipoint' connection?",
+    "option_a": "Mesh",
+    "option_b": "Star",
+    "option_c": "Bus",
+    "option_d": "Ring",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "In a Bus topology, one long cable acts as a backbone to link all the devices in a network."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Hardware",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which network device operates at the Physical layer and simply repeats signals to all outgoing ports?",
+    "option_a": "Router",
+    "option_b": "Switch",
+    "option_c": "Hub",
+    "option_d": "Modem",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A hub creates a single collision domain and is generally considered obsolete."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Addressing",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which address is used to identify a specific process running on a host computer?",
+    "option_a": "IP Address",
+    "option_b": "MAC Address",
+    "option_c": "Port Number",
+    "option_d": "URL",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Port numbers identify specific services or applications on a device."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Transmission Media",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What type of connector is most commonly used for UTP Ethernet cables?",
+    "option_a": "RJ-11",
+    "option_b": "RJ-45",
+    "option_c": "BNC",
+    "option_d": "USB-C",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The RJ-45 (Registered Jack 45) is the 8-pin connector used for Ethernet networking."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Protocols",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the primary used of FTP?",
+    "option_a": "Loading web pages",
+    "option_b": "Transferring files between a client and server",
+    "option_c": "Syncing time",
+    "option_d": "Streaming video",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "File Transfer Protocol (FTP) is designed for transferring files over a network."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "OSI Layer",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Session' in the Session Layer?",
+    "option_a": "A user's login time",
+    "option_b": "A logical connection between two applications that allows for dialogue control and synchronization",
+    "option_c": "A database query",
+    "option_d": "One internet packet",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Session Layer (Layer 5) manages the establishment, maintenance, and termination of conversations."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Error Correction",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Hamming Code' commonly used for?",
+    "option_a": "Encryption",
+    "option_b": "Error detection and correction (ECC)",
+    "option_c": "Routing",
+    "option_d": "Compression",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hamming code can detect up to two-bit errors and correct one-bit errors."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Transmission",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Baseband' transmission?",
+    "option_a": "Using the entire frequency of the cable to send only one signal at a time",
+    "option_b": "Using many frequencies together",
+    "option_c": "Wireless transmission",
+    "option_d": "Satellite communication",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Digital signals in Ethernet use baseband transmission."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Hardware",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "What does a 'Modem' actually do?",
+    "option_a": "Stores files",
+    "option_b": "Modulates/Demodulates signals between digital and analog formats",
+    "option_c": "Routes IP packets",
+    "option_d": "Repeats electrical signals",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A modem allows digital devices to communicate over analog lines (like phone or cable)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 1,
+    "level_topic": "Addressing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many bits are in a 'Port Number'?",
+    "option_a": "8 bits",
+    "option_b": "16 bits",
+    "option_c": "32 bits",
+    "option_d": "48 bits",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Port numbers range from 0 to 65535, which is the range of a 16-bit integer."
+  }
+]

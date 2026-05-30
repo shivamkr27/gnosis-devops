@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Big O Notation",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the time complexity of Binary Search in the worst case?",
+    "option_a": "O(n)",
+    "option_b": "O(log n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(1)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Binary Search divides the search space in half at each step, leading to logarithmic time complexity."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Complexity Analysis",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of the following growth rates is the slowest?",
+    "option_a": "O(n log n)",
+    "option_b": "O(n^2)",
+    "option_c": "O(2^n)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Logarithmic growth is slower than linear, polynomial, or exponential growth."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What is the best-case time complexity of Bubble Sort when the array is already sorted?",
+    "option_a": "O(n^2)",
+    "option_b": "O(n log n)",
+    "option_c": "O(n)",
+    "option_d": "O(1)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "If an optimized version of Bubble Sort is used, it can detect a sorted array in a single pass."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Searching",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which searching algorithm requires the data to be sorted?",
+    "option_a": "Linear Search",
+    "option_b": "Binary Search",
+    "option_c": "Hash Search",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Binary Search relies on the order of elements to eliminate half of the search space."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Recursion",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What is the primary risk of a recursive function without a proper base case?",
+    "option_a": "Infinite loop",
+    "option_b": "Stack overflow",
+    "option_c": "Memory leak",
+    "option_d": "Compilation error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Each recursive call consumes stack space; without a base case, the stack eventually overflows."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Divide and Conquer",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these algorithms uses the Divide and Conquer strategy?",
+    "option_a": "Selection Sort",
+    "option_b": "Merge Sort",
+    "option_c": "Insertion Sort",
+    "option_d": "Bubble Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Merge sort divides the array into halves, sorts them, and then merges them back."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Space Complexity",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the space complexity of an algorithm that uses an auxiliary array of the same size as the input?",
+    "option_a": "O(1)",
+    "option_b": "O(log n)",
+    "option_c": "O(n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "If the space used scales linearly with the input size, the space complexity is O(n)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Greedy Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is a characteristic of Greedy algorithms?",
+    "option_a": "Always finds the globally optimal solution",
+    "option_b": "Makes the locally optimal choice at each step",
+    "option_c": "Explore all possible paths",
+    "option_d": "Uses backtracking",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Greedy algorithms make immediate choices that look best at the moment, hoping to reach a global optimum."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Big O Notation",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does O(1) represent?",
+    "option_a": "Linear time",
+    "option_b": "Logarithmic time",
+    "option_c": "Constant time",
+    "option_d": "Quadratic time",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Constant time means the execution time does not depend on the input size."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which sorting algorithm is known for its worst-case performance of O(n^2) but is very fast on average?",
+    "option_a": "Merge Sort",
+    "option_b": "Heap Sort",
+    "option_c": "Quick Sort",
+    "option_d": "Counting Sort",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Quick sort's worst case is O(n^2) (e.g., when the pivot is the smallest or largest element), but its average case is O(n log n)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "In Selection Sort, how many swaps are performed in the worst case for an array of size n?",
+    "option_a": "O(n^2)",
+    "option_b": "O(n)",
+    "option_c": "O(n log n)",
+    "option_d": "O(1)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Selection sort performs at most n-1 swaps, even if it does O(n^2) comparisons."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Complexity",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the time complexity of the following code? `for(int i=1; i<n; i*=2) { ... }`",
+    "option_a": "O(n)",
+    "option_b": "O(log n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(sqrt(n))",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A loop index that multiplies/divides by a constant factor results in logarithmic complexity."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Dynamic Programming",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What are the two main properties that a problem must have to be solved using Dynamic Programming?",
+    "option_a": "Greedy choice and optimal substructure",
+    "option_b": "Overlapping subproblems and optimal substructure",
+    "option_c": "Large input and small output",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DP requires dividing the problem into subproblems that repeat (overlapping) and can be combined to solve the larger problem (optimal substructure)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Searching",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the average time complexity of searching in a Hash Table?",
+    "option_a": "O(1)",
+    "option_b": "O(log n)",
+    "option_c": "O(n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "With a good hash function and minimal collisions, hash table lookups take constant time on average."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Big O Notation",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you represent 'linearithmic' complexity?",
+    "option_a": "O(n)",
+    "option_b": "O(log n)",
+    "option_c": "O(n log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "O(n log n) is known as linearithmic time complexity."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which sorting algorithm maintains the relative order of equal elements?",
+    "option_a": "Heap Sort",
+    "option_b": "Merge Sort",
+    "option_c": "Quick Sort",
+    "option_d": "Selection Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A stable sorting algorithm like Merge Sort preserves the original order of items with identical keys."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Complexity Analysis",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the time complexity of building a heap from an unsorted array of size n?",
+    "option_a": "O(n log n)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "While inserting one element is log n, building the entire heap from scratch using the bottom-up approach is O(n)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Greedy Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Prim's and Kruskal's algorithms are used to find which of the following?",
+    "option_a": "Shortest path in a graph",
+    "option_b": "Minimum Spanning Tree (MST)",
+    "option_c": "Maximum flow in a network",
+    "option_d": "Biconnected components",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Both utilize greedy strategies to connect all vertices of a graph with the minimum total edge weight."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Graph Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which algorithm is commonly used for level-order traversal of a tree?",
+    "option_a": "Depth First Search (DFS)",
+    "option_b": "Breadth First Search (BFS)",
+    "option_c": "Dijkstra's Algorithm",
+    "option_d": "Binary Search",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BFS explores nodes layer by layer using a queue, making it perfect for finding the shortest path in an unweighted graph."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Big O Notation",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the time complexity of accessing an element at a given index in an array?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Arrays provide direct memory access to elements via indices, which takes constant time."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Data Structures",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In a singly linked list, what is the time complexity of inserting an element at the beginning?",
+    "option_a": "O(log n)",
+    "option_b": "O(1)",
+    "option_c": "O(n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You only need to update the new node's pointer and the head pointer, which takes constant time."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Data Structures",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the worst-case time complexity for searching an element in a binary search tree (BST)?",
+    "option_a": "O(log n)",
+    "option_b": "O(n)",
+    "option_c": "O(1)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If the BST is skewed (like a linked list), searching takes O(n) because you may have to traverse every node."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Master Theorem",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Using Master Theorem, what is the complexity of T(n) = 2T(n/2) + n?",
+    "option_a": "O(n)",
+    "option_b": "O(n log n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This corresponds to Case 2 of the Master Theorem (a=2, b=2, f(n)=n^1), resulting in O(n log n), the same as Merge Sort."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Recursion",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is a typical example of a problem solved efficiently via Tail Recursion?",
+    "option_a": "Matrix Multiplication",
+    "option_b": "Factorial",
+    "option_c": "Binary Search",
+    "option_d": "Traveling Salesman Problem",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Tail recursion allows the compiler to optimize calls to avoid creating new stack frames."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Dijkstra's algorithm may fail or produce incorrect results if the graph contains:",
+    "option_a": "Cycles",
+    "option_b": "Negative edge weights",
+    "option_c": "Disconnected components",
+    "option_d": "Weighted edges",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dijkstra's assumes that once a node is visited, its shortest distance is found; negative edges can invalidate this greedy approach."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Divide and Conquer",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity to find the maximum element in an unsorted array of size n using Divide and Conquer?",
+    "option_a": "O(log n)",
+    "option_b": "O(n)",
+    "option_c": "O(n log n)",
+    "option_d": "O(1)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You must still check every element at least once, so it is O(n)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Asymptotic Notation",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does Omega (\u03a9) notation describe?",
+    "option_a": "Average case complexity",
+    "option_b": "Lower bound performance",
+    "option_c": "Upper bound performance",
+    "option_d": "The fastest the code can possibly run on any input",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "\u03a9(g(n)) provides a simplified lower bound for the growth rate of a function."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Asymptotic Notation",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does Theta (\u0398) notation describe?",
+    "option_a": "A tight bound (both upper and lower)",
+    "option_b": "Only the worst case",
+    "option_c": "The space complexity only",
+    "option_d": "The number of loops",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "\u0398(g(n)) means the function is bounded both above and below by g(n) for large n."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Complexity Analysis",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity of Strassen's matrix multiplication algorithm?",
+    "option_a": "O(n^3)",
+    "option_b": "O(n^2.81)",
+    "option_c": "O(n^2)",
+    "option_d": "O(2^n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Strassen's reduces the number of recursive multiplications from 8 to 7, improving complexity from O(n^3) to approx O(n^2.81)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Which sorting algorithm is often used when the range of input values (k) is not significantly larger than the number of elements (n)?",
+    "option_a": "Heap Sort",
+    "option_b": "Counting Sort",
+    "option_c": "Quick Sort",
+    "option_d": "Merge Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Counting sort is a non-comparison based sort with O(n + k) complexity."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the worst-case time complexity of Insertion Sort?",
+    "option_a": "O(n)",
+    "option_b": "O(n^2)",
+    "option_c": "O(n log n)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Worst case happens when the array is sorted in reverse order."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Data Structures",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A queue follows which rule for element processing?",
+    "option_a": "LIFO (Last-In First-Out)",
+    "option_b": "FIFO (First-In First-Out)",
+    "option_c": "Random Access",
+    "option_d": "Highest Priority First",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a queue, elements are added at the back and removed from the front."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Data Structures",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A stack follows which rule for element processing?",
+    "option_a": "FIFO",
+    "option_b": "LIFO",
+    "option_c": "Linear Access",
+    "option_d": "Circular Access",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The last element pushed onto a stack is the first one to be popped off."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Backtracking",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which of these is a classic problem solved using Backtracking?",
+    "option_a": "Fibonacci Numbers",
+    "option_b": "N-Queens Problem",
+    "option_c": "Finding the max in an array",
+    "option_d": "Linear Search",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Backtracking is an algorithmic-technique for solving problems recursively by trying to build a solution incrementally while removing those that fail."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Space Complexity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the space complexity of an iterative Factorial algorithm?",
+    "option_a": "O(n)",
+    "option_b": "O(1)",
+    "option_c": "O(log n)",
+    "option_d": "O(2^n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Iteration only uses a constant amount of extra space for variables, unlike recursion which uses stack space."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Space Complexity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the space complexity of a recursive Factorial algorithm (without tail optimization)?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The recursion stack grows linearly with n."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Data Structures",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which data structure is most suitable for implementing the 'Undo' feature in applications?",
+    "option_a": "Queue",
+    "option_b": "Stack",
+    "option_c": "Array",
+    "option_d": "Linked List",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The LIFO nature of a stack allows reversing the last action easily."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Hash Tables",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Collision' in a Hash Table?",
+    "option_a": "When the program crashes",
+    "option_b": "When two different keys produce the same hash index",
+    "option_c": "When the table is full",
+    "option_d": "When keys are deleted",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Methods like Chaining or Open Addressing are used to resolve these collisions."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Graph Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a graph, which traversal discovers all nodes reachable from a starting node by exploring neighbors first?",
+    "option_a": "DFS",
+    "option_b": "BFS",
+    "option_c": "Topological Sort",
+    "option_d": "Binary Search",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BFS uses a Queue to explore adjacent nodes before moving deeper."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Graph Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which data structure is primarily used by Depth First Search (DFS)?",
+    "option_a": "Queue",
+    "option_b": "Stack",
+    "option_c": "Hash Table",
+    "option_d": "Heap",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DFS can be implemented using an explicit stack or implicitly via the call stack (recursion)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Big O Notation",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "If f(n) = 3n^2 + 10n + 5, what is its Big O complexity?",
+    "option_a": "O(n)",
+    "option_b": "O(n^2)",
+    "option_c": "O(1)",
+    "option_d": "O(n^3)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In Big O, we ignore constant factors and focus on the highest-order term."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Master Theorem",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "Can Master Theorem be used to solve T(n) = 2T(n/2) + n log n?",
+    "option_a": "Yes, directly",
+    "option_b": "No, it doesn't fit the standard cases",
+    "option_c": "Yes, using the extended version",
+    "option_d": "Only for n=2",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Standard Master Theorem doesn't cover f(n) = n log n, but an extension (Case 2 generalized) shows it is O(n log^2 n)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Greedy Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In the Fractional Knapsack problem, which greedy strategy is correct?",
+    "option_a": "Sort items by weight",
+    "option_b": "Sort items by high value only",
+    "option_c": "Sort items by value/weight ratio",
+    "option_d": "No greedy strategy works",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Taking the item with highest 'density' (value per unit weight) leads to the optimal result for the fractional version."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which sorting algorithm is known for being performant on small data sets and is used in hybrid algorithms like Timsort?",
+    "option_a": "Quick Sort",
+    "option_b": "Insertion Sort",
+    "option_c": "Bubble Sort",
+    "option_d": "Selection Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Insertion sort is efficient for very small lists (n < 20) or nearly sorted lists."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Terms",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does it mean if an algorithm is 'In-place'?",
+    "option_a": "It uses no memory at all",
+    "option_b": "It requires only a small, constant amount of extra memory regardless of input size (O(1) extra space)",
+    "option_c": "It runs very fast",
+    "option_d": "It doesn't move elements",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Quick Sort and Heap Sort are in-place; Merge Sort is typically not."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Testing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "The 'Average Case' of an algorithm refers to performance on:",
+    "option_a": "The best possible data",
+    "option_b": "The worst possible data",
+    "option_c": "A random or typical distribution of possible inputs",
+    "option_d": "Small data sets only",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Average case analysis often involves complex probability but is more realistic for real-world use."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Data Structures",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which of these allows O(1) time complexity for both Insertion and Deletion at both ends?",
+    "option_a": "Singly Linked List",
+    "option_b": "Doubly Linked List",
+    "option_c": "Sorted Array",
+    "option_d": "Binary Search Tree",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "With pointers to both head and tail, doubly linked lists handle extremes instantly."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Recursion",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity to solve the Tower of Hanoi problem for n disks?",
+    "option_a": "O(n)",
+    "option_b": "O(2^n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The number of moves required is 2^n - 1, making it exponential."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Asymptotic Notation",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is O(n!) faster or slower than O(2^n)?",
+    "option_a": "Faster",
+    "option_b": "Slower",
+    "option_c": "Same speed",
+    "option_d": "Not comparable",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Factorial growth O(n!) is extremely fast and much worse than exponential growth O(2^n)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 1,
+    "level_topic": "Graph Algorithms",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "An 'Edge' in a graph connects two:",
+    "option_a": "Processes",
+    "option_b": "Vertices (or Nodes)",
+    "option_c": "Stacks",
+    "option_d": "Lists",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Vertices represent objects, and Edges represent relationships between them."
+  }
+]

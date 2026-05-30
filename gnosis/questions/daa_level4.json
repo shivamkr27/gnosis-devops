@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "P vs NP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the primary open question in computational complexity theory?",
+    "option_a": "Does P = NP?",
+    "option_b": "Is 1+1=2?",
+    "option_c": "Are all algorithms O(n)?",
+    "option_d": "Can we solve TSP in O(n)?",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The P vs NP problem asks whether every problem whose solution can be quickly verified by a computer can also be quickly solved by a computer."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Reductions",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "If Problem A is reducible to Problem B in polynomial time, what can we say about their relative difficulty?",
+    "option_a": "A is at most as hard as B",
+    "option_b": "B is at most as hard as A",
+    "option_c": "A and B are equally hard",
+    "option_d": "A is harder than B",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Reduction `A \u2264p B` means that if we can solve B efficiently, we can also solve A efficiently by converting A to B."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Advanced Data Structures",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Fibonacci Heap' primarily used for to optimize certain graph algorithms?",
+    "option_a": "Sorting numbers",
+    "option_b": "Dijkstra's and Prim's algorithm (improving decrease-key operation to O(1) amortized)",
+    "option_c": "String matching",
+    "option_d": "Dynamic programming",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fibonacci heaps offer better amortized performance for many priority queue operations than binary or binomial heaps."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "NP-Hard Problems",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which of these is a classic NP-Hard optimization problem?",
+    "option_a": "Shortest Path (Source to Destination)",
+    "option_b": "Minimum Spanning Tree",
+    "option_c": "Travelling Salesperson Problem (TSP)",
+    "option_d": "Sorting an array",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "TSP involves finding the shortest cycle that visits every node once; it's a fundamental problem in optimization and complexity."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Quantum Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which quantum algorithm is used for factoring large integers efficiently?",
+    "option_a": "Grover's Algorithm",
+    "option_b": "Shor's Algorithm",
+    "option_c": "Deutsch-Jozsa Algorithm",
+    "option_d": "QuickSort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shor's algorithm can factor integers in polynomial time on a quantum computer, threatening RSA encryption."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Approximation Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the approximation ratio of the standard greedy algorithm for the Vertex Cover problem?",
+    "option_a": "1.5",
+    "option_b": "2",
+    "option_c": "log n",
+    "option_d": "n",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The simple 2-approximation algorithm for vertex cover picks an edge and includes both endpoints in the cover."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Network Flow",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the time complexity of the Edmonds-Karp algorithm?",
+    "option_a": "O(VE)",
+    "option_b": "O(VE^2)",
+    "option_c": "O(V^2E)",
+    "option_d": "O(E log V)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Edmonds-Karp uses BFS to find augmenting paths, ensuring termination even for irrational capacities and achieving O(VE^2)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Parametrized Complexity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Fixed-Parameter Tractability' (FPT)?",
+    "option_a": "A ways to delete parameters",
+    "option_b": "A class of problems that can be solved in a running time where the exponent doesn't depend on the parameter k",
+    "option_c": "Constant time for any k",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "FPT problems can be solved in O(f(k) * n^c) time, where k is a small parameter (like tree width)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Advanced String Matching",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which algorithm is capable of finding ALL occurrences of a set of patterns in a text simultaneously?",
+    "option_a": "KMP",
+    "option_b": "Aho-Corasick",
+    "option_c": "Rabin-Karp",
+    "option_d": "Boyer-Moore",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Aho-Corasick builds an automaton from the patterns, allowing for efficient multi-pattern matching."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Parallel Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Brent's Theorem' used for?",
+    "option_a": "Complexity of sorting",
+    "option_b": "Relating the number of processors to the time required for a parallel computation",
+    "option_c": "Naming the nodes",
+    "option_d": "Deleting threads",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Brent's theorem provides an upper bound on the time to simulate a parallel algorithm with p processors."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Distributed Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What does the 'FLP Impossibility' result state?",
+    "option_a": "Consensus is impossible in asynchronous systems if even one process fails",
+    "option_b": "All nodes must agree",
+    "option_c": "Internet is slow",
+    "option_d": "Messages are always lost",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Named after Fischer, Lynch, and Paterson, this is a cornerstone result in distributed systems theory."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Computational Geometry",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the complexity of constructing a Voronoi Diagram of n points in 2D?",
+    "option_a": "O(n^2)",
+    "option_b": "O(n log n)",
+    "option_c": "O(n)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fortune's Algorithm (sweep-line) constructs Voronoi diagrams in O(n log n) time."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Lower Bounds",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the lower bound of comparison-based sorting algorithms in terms of number of comparisons?",
+    "option_a": "\u03a9(n)",
+    "option_b": "\u03a9(n log n)",
+    "option_c": "\u03a9(n^2)",
+    "option_d": "\u03a9(1)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By decision tree theory, any comparison-based sort must make at least log(n!) comparisons, which is \u03a9(n log n)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Dynamic Programming",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Knuth's Optimization' in DP used for?",
+    "option_a": "Sorting strings",
+    "option_b": "Reducing the complexity of certain O(n^3) DP problems (like Optimal BST) to O(n^2)",
+    "option_c": "Naming variables",
+    "option_d": "Deleting subproblems",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If the optimal split point for a range [i, j] lies between the optimal split points of [i, j-1] and [i+1, j], we can narrow the search range."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Theory of Computation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which class contains problems that can be solved in polynomial time by a quantum computer?",
+    "option_a": "P",
+    "option_b": "NP",
+    "option_c": "BQP",
+    "option_d": "PSPACE",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "BQP (Bounded-error Quantum Polynomial time) is the class of decision problems solvable by a quantum computer."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Computational Complexity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "A problem is in the 'PSPACE' class if it can be solved by a Turing machine using:",
+    "option_a": "Polynomial time",
+    "option_b": "Polynomial amount of memory space regardless of time",
+    "option_c": "Constant space only",
+    "option_d": "Exponential time and exponential space",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PSPACE is the set of all decision problems that can be solved by a Turing machine using a polynomial amount of space."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Computational Complexity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Ladner's Theorem' concern?",
+    "option_a": "Proof that P = NP",
+    "option_b": "If P \u2260 NP, then there exist problems in NP that are neither in P nor NP-complete (NP-Intermediate)",
+    "option_c": "Complexity of sorting",
+    "option_d": "Halting problem solution",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It shows that if P != NP, the world is more complex than just P and NP-Complete."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Randomized Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Monte Carlo' algorithm?",
+    "option_a": "Always correct, random time",
+    "option_b": "Fast, but has a non-zero probability of giving an incorrect answer",
+    "option_c": "Used for encryption",
+    "option_d": "A type of sorting",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Monte Carlo algorithms are useful when a small error probability is acceptable for a big speedup."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Advanced Data Structures",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which property defines a 'Van Emde Boas tree'?",
+    "option_a": "It sorts in O(n log n)",
+    "option_b": "It supports search, insert, and delete in O(log log U) where U is the universe size",
+    "option_c": "It is a type of hash table",
+    "option_d": "It uses exponential space",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "vEB trees are extremely fast for small, fixed integers."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Network Flow",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the time complexity of Dinic's algorithm for finding maximum flow?",
+    "option_a": "O(VE^2)",
+    "option_b": "O(V^2E)",
+    "option_c": "O(VE)",
+    "option_d": "O(E sqrt(V))",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dinic's uses 'level graphs' and 'blocking flows' to achieve better performance than Edmonds-Karp."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "External Memory Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In the External Memory model, what is the bottleneck for algorithm performance?",
+    "option_a": "CPU instructions",
+    "option_b": "Number of Block I/O operations (accessing disk)",
+    "option_c": "Network latency",
+    "option_d": "Amount of RAM",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Since disk access is orders of magnitude slower than RAM, minimizing I/O is the goal."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Geometric Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which algorithm finds the 'Minimum Enclosing Circle' of n points in expected O(n) time?",
+    "option_a": "Graham Scan",
+    "option_b": "Welzl's Algorithm",
+    "option_c": "Gift Wrapping",
+    "option_d": "Binary Search",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Welzl's is a randomized recursive algorithm with linear expected time."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Approximation Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'PTAS' (Polynomial-Time Approximation Scheme)?",
+    "option_a": "A ways to sort primes",
+    "option_b": "An algorithm that, for any \u03b5 > 0, returns a solution within a factor (1 + \u03b5) of optimal in polynomial time",
+    "option_c": "A constant time algorithm",
+    "option_d": "A randomized approach to SAT",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The runtime may be exponential in 1/\u03b5 but must be polynomial in n."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Online Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In online algorithms, 'Competitive Ratio' compares the online algorithm's performance to:",
+    "option_a": "The best possible offline algorithm (with full knowledge of the future)",
+    "option_b": "A random guesser",
+    "option_c": "Its own best-case",
+    "option_d": "The speed of light",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "It measures how much we 'lose' by not knowing future inputs."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Graph Theory",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the complexity of finding the 'Max Clique' in a general graph?",
+    "option_a": "Polynomial",
+    "option_b": "NP-Hard",
+    "option_c": "O(1)",
+    "option_d": "Constant",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Finding the largest set of pairwise adjacent vertices is a classic NP-hard problem."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Linear Programming",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "The 'Ellipsoid Method' was significant because it was the first algorithm to prove that Linear Programming is in:",
+    "option_a": "NP",
+    "option_b": "P (Polynomial time)",
+    "option_c": "EXP",
+    "option_d": "L",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Developed by Khachiyan, it proved that LP is solvable in polynomial time (unlike Simplex's worst case)."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Cryptography",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which hard algorithmic problem provides the security foundation for ElGamal and Diffie-Hellman?",
+    "option_a": "Integer Factorization",
+    "option_b": "Discrete Logarithm Problem",
+    "option_c": "Traveling Salesman",
+    "option_d": "Sorting large sets",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Finding 'x' given 'g^x mod p' is computationally difficult on current hardware."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Bit Manipulation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Population Count' (popcount) operation?",
+    "option_a": "Counting users in a database",
+    "option_b": "Counting the number of set bits (1s) in a binary representation",
+    "option_c": "Multiplying by powers of 2",
+    "option_d": "Dividing the array in half",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Many CPUs have a hardware instruction for this; otherwise, algorithms like Hamming Weight are used."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Streaming Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Misra-Gries' algorithm used for in data streams?",
+    "option_a": "Compressing the stream",
+    "option_b": "Finding 'Heavy Hitters' (Frequent elements)",
+    "option_c": "Encrypting the stream",
+    "option_d": "Sorting the stream",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It finds elements that appear more than n/k times using k counters."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Advanced Complexity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In complexity theory, what does 'BPP' stand for?",
+    "option_a": "Below Polynomial Performance",
+    "option_b": "Bounded-error Probabilistic Polynomial time",
+    "option_c": "Binary Parallel Processing",
+    "option_d": "Basic Prime Path",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The class of problems solvable by a randomized Turing machine with error probability at most 1/3."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Probabilistic Theory",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What do 'Chernoff Bounds' provide for randomized algorithms?",
+    "option_a": "Exact results",
+    "option_b": "Exponentially decreasing bounds on tail distributions of sums of independent random variables",
+    "option_c": "A ways to sort data",
+    "option_d": "Memory limits",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "They prove that randomized algorithms with independent trials practically never deviate far from their average case."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Graph Theory",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which algorithm solves the 'All-Pairs Shortest Paths' for a graph with NO negative edges in O(V^2 log V + VE)?",
+    "option_a": "Floyd-Warshall",
+    "option_b": "Johnson's Algorithm",
+    "option_c": "Repeated Dijkstra's with Fibonacci Heaps",
+    "option_d": "Bellman-Ford",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Johnson's algorithm uses this repeated Dijkstra approach after an initial reweighting step."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Theory of Computation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "The 'Polynomial Hierarchy' (PH) is a hierarchy of complexity classes that collapses if:",
+    "option_a": "P = NP",
+    "option_b": "P = L",
+    "option_c": "V^2 = E",
+    "option_d": "Recursion limit is reached",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If P = NP, the entire hierarchy collapses to P."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Approximation",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Christofides' Algorithm' used for?",
+    "option_a": "Factoring numbers",
+    "option_b": "Finding a 3/2-approximation for the Metric Traveling Salesman Problem",
+    "option_c": "Sorting strings",
+    "option_d": "Drawing graphs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's one of the most famous approximation algorithms for TSP, using MST and matching."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Dynamic Programming",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Convex Hull Trick' in DP optimization?",
+    "option_a": "Drawing hulls in code",
+    "option_b": "A technique to optimize DP transitions of the form dp[i] = min(m[j]*x[i] + b[j]) using geometric properties",
+    "option_c": "Deleting subproblems",
+    "option_d": "Recursive sorting",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It reduces O(n^2) DP to O(n log n) or O(n) by maintaining a set of lines and finding the extreme point."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Cache Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Cache-Oblivious' algorithm?",
+    "option_a": "One that uses no cache",
+    "option_b": "An algorithm designed to perform well on hierarchies of caches without knowing the specific cache sizes or line lengths",
+    "option_c": "Deleting the cache manually",
+    "option_d": "A very slow algorithm",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "They typically use divide-and-conquer to fit problems into cache at every level of the hierarchy automatically."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Advanced Data Structures",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What distinguishes a 'Persistent Data Structure'?",
+    "option_a": "It never deletes data from disk",
+    "option_b": "It preserves the previous version of itself when it is modified",
+    "option_c": "It uses only immutable variables",
+    "option_d": "It is saved in a database automatically",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Functional programming languages rely heavily on persistent data structures."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Niche Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Skip List' complexity for search, insert, and delete?",
+    "option_a": "O(n)",
+    "option_b": "O(log n) average",
+    "option_c": "O(1)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Skip lists are probabilistic data structures that are simpler to implement than balanced trees but offer similar expected performance."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Niche Algorithms",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "In the context of 'Self-Organizing Lists', what does the 'Move-To-Front' heuristic do?",
+    "option_a": "Moves the largest item to the front",
+    "option_b": "Moves the requested item to the front of the list",
+    "option_c": "Deletes the last item",
+    "option_d": "Sorts the list",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is highly effective when access patterns show high temporal locality."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Geometric",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "The 'Sweep-Line' algorithm for line segment intersection has what complexity?",
+    "option_a": "O(n^2)",
+    "option_b": "O((n+k) log n) where k is the number of intersections",
+    "option_c": "O(n)",
+    "option_d": "O(1)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bentley-Ottmann algorithm is much faster than checking all pairs if intersections are sparse."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "The 'Decision Problem' version of TSP is in which class?",
+    "option_a": "P",
+    "option_b": "NP-Complete",
+    "option_c": "L",
+    "option_d": "BPP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Given a graph and a budget K, deciding if a tour exists with cost <= K is NP-complete."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Network Flow",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which algorithm handles the 'Minimum Cost Maximum Flow' problem?",
+    "option_a": "Dijkstra's with potentials (Successive Shortest Path)",
+    "option_b": "Standard BFS",
+    "option_c": "Merge Sort",
+    "option_d": "Binary Search",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "It finds augmenting paths of minimum cost using algorithms like Bellman-Ford or Dijkstra with node potentials."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Sorting",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Introsort' primarily used for in system libraries (like C++ std::sort)?",
+    "option_a": "Sorting integers specifically",
+    "option_b": "A hybrid sort that starts with QuickSort and switches to HeapSort if recursion depth exceeds a limit",
+    "option_c": "Deleting duplicates",
+    "option_d": "A ways to sort strings",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It combines the average-case speed of QuickSort with the worst-case guarantee of HeapSort."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Recursion",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the complexity of the Ackermann function A(m, n)?",
+    "option_a": "Polynomial",
+    "option_b": "Exponential",
+    "option_c": "Non-primitive recursive (grows faster than any fixed power of 2)",
+    "option_d": "Constant",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "It is a famous example of a computable function that is not primitive recursive."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In complexity theory, 'P CP' (Probabilistically Checkable Proofs) theorem relates to:",
+    "option_a": "Parallel computing",
+    "option_b": "The hardness of approximating certain optimization problems",
+    "option_c": "Cryptographic hashing",
+    "option_d": "Network flow",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The PCP theorem is a profound result showing that some NP-hard problems are hard to approximate even within a small constant."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Memory Management",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Garbage Collection' overhead in algorithmic analysis?",
+    "option_a": "The time spent taking out trash",
+    "option_b": "The amortized cost of memory deallocation that can interrupt application threads",
+    "option_c": "Deleting the source code",
+    "option_d": "Memory leaks in C++",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Modern GCs aim to minimize 'Stop-the-world' pauses."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Terms",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "A 'Reduction' from A to B is 'Polynomial' if:",
+    "option_a": "The transformation takes polynomial time",
+    "option_b": "B is faster than A",
+    "option_c": "A is O(1)",
+    "option_d": "It uses a for loop",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A polynomial reduction ensures that an efficient solution for B implies an efficient solution for A."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Matrix",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which algorithm is the currently fastest known for general matrix multiplication (theoretically)?",
+    "option_a": "Standard (n^3)",
+    "option_b": "Strassen's",
+    "option_c": "Coppersmith-Winograd (or improved variants)",
+    "option_d": "Held-Karp",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "It has a complexity of approximately O(n^2.37), though it is not used in practice due to gargantuan constant factors."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Randomized",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Min-Wise Hashing' (MinHash) used for?",
+    "option_a": "Sorting numbers",
+    "option_b": "Estimating the Jaccard similarity between two large sets efficiently",
+    "option_c": "Password encryption",
+    "option_d": "Matrix inversion",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Commonly used in web search to detect 'near-duplicate' documents."
+  },
+  {
+    "subject_name": "Algorithms (DAA)",
+    "level_number": 4,
+    "level_topic": "Search",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which property is REQUIRED for an A* search heuristic h(n) to be 'Admissible'?",
+    "option_a": "h(n) must be O(1)",
+    "option_b": "h(n) must never overestimate the actual cost to reach the goal",
+    "option_c": "h(n) must be calculated using BFS",
+    "option_d": "h(n) must be prime",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Admissibility guarantees that A* will find the optimal solution."
+  }
+]

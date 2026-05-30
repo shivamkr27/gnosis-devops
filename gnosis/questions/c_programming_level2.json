@@ -1,0 +1,816 @@
+[
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does the '*' operator do when used before a pointer variable?",
+    "option_a": "Declares a pointer",
+    "option_b": "Dereferences the pointer",
+    "option_c": "Calculates the address",
+    "option_d": "Multiplies the pointer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The dereference operator '*' accesses the value stored at the address held by the pointer."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "If 'ptr' is of type 'int*', what is the increment size of 'ptr++'?",
+    "option_a": "1 byte",
+    "option_b": "2 bytes",
+    "option_c": "sizeof(int) bytes",
+    "option_d": "4 bytes always",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Pointer arithmetic is scaled by the size of the underlying data type."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How do you access the first element of an array 'arr' using pointers?",
+    "option_a": "*arr",
+    "option_b": "&arr",
+    "option_c": "arr[1]",
+    "option_d": "ptr(arr)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The array name decays to a pointer to its first element; dereferencing it yields arr[0]."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which symbol is used for the address-of operator?",
+    "option_a": "*",
+    "option_b": "#",
+    "option_c": "&",
+    "option_d": "@",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The '&' operator retrieves the memory address of a variable."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "A 'NULL' pointer usually points to which address?",
+    "option_a": "1",
+    "option_b": "random",
+    "option_c": "0",
+    "option_d": "stack start",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "NULL is a macro representing a pointer that does not point to any valid memory location (often 0)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the correct syntax to declare a pointer to a function returning void?",
+    "option_a": "void ptr();",
+    "option_b": "void (*ptr)();",
+    "option_c": "void *ptr();",
+    "option_d": "void &ptr();",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The parenthesis around *ptr are necessary to distinguish it from a function returning a void pointer."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "If `int arr[5];`, is `arr` an lvalue?",
+    "option_a": "Yes",
+    "option_b": "No, it's a constant pointer",
+    "option_c": "Only in C++",
+    "option_d": "Depends on scope",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Array names are non-modifiable lvalues (essentially constant pointers to their first element)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the equivalent of `ptr[i]` in pointer notation?",
+    "option_a": "ptr + i",
+    "option_b": "*(ptr + i)",
+    "option_c": "&ptr + i",
+    "option_d": "(*ptr) + i",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Array subscripting is defined as dereferencing the sum of the pointer and the offset."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which pointer type can point to any data type?",
+    "option_a": "int*",
+    "option_b": "generic*",
+    "option_c": "void*",
+    "option_d": "char*",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A void pointer (void*) is a generic pointer type that can hold any object address."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is output of `int a=10; int *p=&a; printf(\"%d\", ++*p);`?",
+    "option_a": "10",
+    "option_b": "11",
+    "option_c": "Address of a",
+    "option_d": "Pointer error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "++*p increments the value pointed to by p (i.e., a becomes 11) and then prints it."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Given `int arr[3] = {10, 20, 30}; int *p = arr;`, what is `*p + 1`?",
+    "option_a": "20",
+    "option_b": "11",
+    "option_c": "30",
+    "option_d": "Garbage",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "*p is 10. 10 + 1 = 11. (Note: *(p+1) would be 20)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What does `void (*f)(int)` declare?",
+    "option_a": "A function returning a pointer",
+    "option_b": "A pointer to a function taking an int and returning void",
+    "option_c": "An array of void pointers",
+    "option_d": "A function taking a pointer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is standard syntax for declaring a function pointer with one argument."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Can a pointer be assigned to another pointer of a different type without a cast?",
+    "option_a": "Yes, always",
+    "option_b": "Only in older C versions",
+    "option_c": "No, it requires an explicit cast (except void*)",
+    "option_d": "Yes, if they are the same size",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "C is strictly typed for pointers; void* is the only type that allows implicit conversion usually."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is a 'dangling pointer'?",
+    "option_a": "A pointer that is not initialized",
+    "option_b": "A pointer pointing to a deallocated memory block",
+    "option_c": "A pointer to a NULL address",
+    "option_d": "A pointer that points to itself",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dangling pointers point to memory that has been freed or is no longer valid."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "If `int arr[] = {1, 2, 3};`, what is `&arr[0]` equivalent to?",
+    "option_a": "arr",
+    "option_b": "*arr",
+    "option_c": "&&arr",
+    "option_d": "arr+1",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The address of the first element is the same as the base address of the array."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the size of a pointer on a 64-bit system?",
+    "option_a": "4 bytes",
+    "option_b": "2 bytes",
+    "option_c": "8 bytes",
+    "option_d": "Depends on data type",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "On a 64-bit architecture, pointers are 8 bytes to address the full memory space."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "How do you pass a pointer to a function to change the original variable's value?",
+    "option_a": "By value",
+    "option_b": "By reference (using pointers)",
+    "option_c": "By constant",
+    "option_d": "By copying",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Passing a pointer (address) allows the function to access and modify the original memory."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What does `int **ptr` represent?",
+    "option_a": "A pointer to a pointer to an integer",
+    "option_b": "An array of pointers",
+    "option_c": "A pointer to a 2D array",
+    "option_d": "Multiplication of two pointers",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is a double pointer, used for pointer-to-pointer indirection."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which of these is legal pointer arithmetic in C?",
+    "option_a": "p1 + p2 (adding two pointers)",
+    "option_b": "p1 * p2 (multiplying two pointers)",
+    "option_c": "p1 - p2 (subtracting two pointers of same type)",
+    "option_d": "p1 / 5",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Subtracting pointers of the same type gives the number of elements between them; other operations are illegal."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the result of `*(arr + i)` where `arr` is an array and `i` is an index?",
+    "option_a": "Base address of arr",
+    "option_b": "arr[i]",
+    "option_c": "Address of arr[i]",
+    "option_d": "Invalid expression",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is the pointer equivalent of the array subscript notation arr[i]."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is a 'wild pointer'?",
+    "option_a": "A pointer that points to complex data",
+    "option_b": "An uninitialized pointer",
+    "option_c": "A pointer to the heap",
+    "option_d": "A pointer used in recursions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Wild pointers are uninitialized pointers that point to arbitrary memory locations."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "If `int arr[2][3];`, what is the type of `arr[0]`?",
+    "option_a": "int",
+    "option_b": "int*",
+    "option_c": "int (*)[3]",
+    "option_d": "int**",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a 2D array, arr[0] is interpreted as a 1D array of 3 integers, which decays to int*."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "How do you declare a pointer to an array of 5 integers?",
+    "option_a": "int *ptr[5];",
+    "option_b": "int (*ptr)[5];",
+    "option_c": "int ptr[5]*;",
+    "option_d": "int *[5]ptr;",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Parenthesis are required to make it a pointer to an array, otherwise it's an array of pointers."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What does `const int *p` mean?",
+    "option_a": "p is a constant pointer",
+    "option_b": "p points to a constant integer",
+    "option_c": "p is a pointer to a volatile int",
+    "option_d": "p can never be NULL",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The value being pointed to cannot be changed via p, but p itself can point elsewhere."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which function is used to free dynamically allocated ptr, making it NULL?",
+    "option_a": "free(ptr);",
+    "option_b": "delete ptr;",
+    "option_c": "free(ptr); ptr = NULL;",
+    "option_d": "ptr = 0;",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "free() deallocates memory, but doesn't clear the pointer; it's best practice to manually NULL it."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is output of `char *s = \"Hello\"; printf(\"%c\", *s+1);`?",
+    "option_a": "e",
+    "option_b": "I",
+    "option_c": "H",
+    "option_d": "f",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "*s is 'H' (72). 72 + 1 = 73, which is 'I' in ASCII."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Pointer to a function can be passed as an argument to another function?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Only for recursive functions",
+    "option_d": "Only if using typedef",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Function pointers are used as arguments to implement 'callback' functions."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is output: `int x = 10; void *p = &x; printf(\"%d\", *p);`?",
+    "option_a": "10",
+    "option_b": "Memory address",
+    "option_c": "Compilation Error",
+    "option_d": "Garbage",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "You cannot dereference a void pointer; it must be cast to a specific type first."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Result of `int *p; p = p + 1;`?",
+    "option_a": "Address increases by 1",
+    "option_b": "Address increases by 4 (on standard systems)",
+    "option_c": "Undefined behavior",
+    "option_d": "Compilation error",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "p is uninitialized; performing arithmetic on a wild pointer is undefined behavior."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is `*(*(&arr))` if `arr` is an array name?",
+    "option_a": "arr[0]",
+    "option_b": "arr[1]",
+    "option_c": "Address of arr",
+    "option_d": "Pointer to arr",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "&arr is pointer to array, *(&arr) is array name, *(*(&arr)) is the first element arr[0]."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Can we subtract an integer from a pointer?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for void pointers",
+    "option_d": "Only for char pointers",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Pointer subtraction (moving backward in memory) is perfectly valid."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Given `int arr[5];`, why is `arr = arr + 1;` invalid?",
+    "option_a": "Index out of bounds",
+    "option_b": "Array name is a constant pointer",
+    "option_c": "Pointers cannot be added to constants",
+    "option_d": "Missing asterisk",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You cannot reassign an array name; it is a fixed address."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Which expression accesses the 3rd element of array `a`?",
+    "option_a": "*(a+2)",
+    "option_b": "2[a]",
+    "option_c": "a[2]",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "In C, a[2], *(a+2), and 2[a] are all valid and equivalent ways to access the third element."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is `sizeof` an array vs `sizeof` its decayed pointer?",
+    "option_a": "Same",
+    "option_b": "Array size is larger",
+    "option_c": "Pointer size is larger",
+    "option_d": "Infinite loop",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "sizeof(array) is total memory; sizeof(pointer) is just the address size (4-8 bytes)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "If `ptr` points to `arr[2]`, what does `*(ptr - 1)` fetch?",
+    "option_a": "arr[1]",
+    "option_b": "arr[3]",
+    "option_c": "arr[2]",
+    "option_d": "Garbage",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Pointer subtraction by 1 moves it back by one element (arr[2] -> arr[1])."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What results from `ptr1 - ptr2` if they are in different arrays?",
+    "option_a": "Number of bytes between them",
+    "option_b": "Undefined behavior",
+    "option_c": "Total memory size",
+    "option_d": "Linker error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pointer subtraction is only defined for pointers within the same contiguous memory block (array)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Pointers enable which of these programming paradigms in C?",
+    "option_a": "Dynamic memory allocation",
+    "option_b": "Efficient data structure handling",
+    "option_c": "Call by reference",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Pointers are fundamental for memory management, speed, and function flexibility in C."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "When a pointer is incremented, its value increases by:",
+    "option_a": "1 always",
+    "option_b": "The size of the pointed-to object",
+    "option_c": "The size of the pointer itself",
+    "option_d": "Depends on the CPU",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pointer arithmetic is scaled by the size (in bytes) of the data type it references."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "The array name acts as:",
+    "option_a": "A pointer to the whole array",
+    "option_b": "A pointer to its first element",
+    "option_c": "A constant data value",
+    "option_d": "A function",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In most contexts, the array name 'decays' to a pointer to the 0th element."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Which of these is used to invoke a function via its pointer?",
+    "option_a": "f_ptr();",
+    "option_b": "(*f_ptr)();",
+    "option_c": "Both A and B",
+    "option_d": "f_ptr->();",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Either the explicit dereference or the direct name invocation works for function pointers."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Dereferencing which pointer type leads to evaluation error?",
+    "option_a": "char*",
+    "option_b": "void*",
+    "option_c": "int*",
+    "option_d": "float*",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Void pointers don't have associated size, so they cannot be dereferenced directly."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "The memory address stored in the pointer is typically:",
+    "option_a": "Virtual address",
+    "option_b": "Physical address",
+    "option_c": "Logical register",
+    "option_d": "Relative offset",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Modern C programs work with virtual addresses provided by the operating system."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Initialization `int *p = NULL;` is recommended because:",
+    "option_a": "It clears the memory",
+    "option_b": "It prevents hard-to-debug wild pointer crashes",
+    "option_c": "It sets the size to zero",
+    "option_d": "It calls the garbage collector",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Initializing pointers to NULL makes it easy to check if they are currently valid."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Accessing `arr[i]` is faster than `*(arr+i)`?",
+    "option_a": "True",
+    "option_b": "False, they are identical to the compiler",
+    "option_c": "True, only for small arrays",
+    "option_d": "Depends on optimization",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "To a C compiler, arr[i] is just a syntactic sugar for *(arr + i)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of these are valid operations on pointers?",
+    "option_a": "Addition of two pointers",
+    "option_b": "Subtraction of an integer from a pointer",
+    "option_c": "Comparison with NULL",
+    "option_d": "Comparison of two pointers to the same array",
+    "correct_options": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Subtracting int, checking for NULL, and comparing related pointers are all valid."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "What happens when you use an array name 'arr' in a function call `func(arr)`?",
+    "option_a": "Passed by value (entire array copied)",
+    "option_b": "Passed by address (pointer to 1st element)",
+    "option_c": "Information about array size is lost",
+    "option_d": "Pointer decay occurs",
+    "correct_options": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Arrays decay to pointers during function calls; size info must be passed separately."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of these correctly declare a pointer?",
+    "option_a": "int *ptr;",
+    "option_b": "int* ptr;",
+    "option_c": "int * ptr;",
+    "option_d": "void* ptr;",
+    "correct_options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "C is flexible with whitespace between 'int', '*', and the variable name."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Characteristics of double pointers (int **p):",
+    "option_a": "Stores address of another pointer",
+    "option_b": "Required to modify pointer values in functions",
+    "option_c": "Can represent dynamic 2D structures",
+    "option_d": "Twice as large as normal pointers",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Double pointers store addresses of other pointers; their size is the same as single pointers."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of these can prevent pointer-related crashes?",
+    "option_a": "Null check before dereferencing",
+    "option_b": "Setting pointer to NULL after free()",
+    "option_c": "Always using void*",
+    "option_d": "Initializing pointers during declaration",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Robust checks, clearing after free, and proper initialization are key practices."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 2,
+    "level_topic": "Pointer Arithmetic, Array-Pointer duality, Function Pointers",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Identify valid array/pointer notation equivalences:",
+    "option_a": "arr[1][2] == *(*(arr+1)+2)",
+    "option_b": "&arr[0] == arr",
+    "option_c": "arr[0] == *arr",
+    "option_d": "arr+1 == &arr[1]",
+    "correct_options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "These are all standard C equivalences for multi-dimensional and 1D arrays."
+  }
+]

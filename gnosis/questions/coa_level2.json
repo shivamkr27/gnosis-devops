@@ -1,0 +1,803 @@
+[
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Memory Hierarchy",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which level of memory hierarchy is the fastest and closest to the CPU core?",
+    "option_a": "Main Memory (RAM)",
+    "option_b": "L1 Cache",
+    "option_c": "Registers",
+    "option_d": "L2 Cache",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Registers are located inside the CPU and provide almost instantaneous access compared to other memory types."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Pipelining",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In CPU pipelining, what is the goal of overlapping instruction execution?",
+    "option_a": "To reduce the clock cycle time",
+    "option_b": "To increase instruction throughput (instructions per second)",
+    "option_c": "To simplify the control unit",
+    "option_d": "To eliminate the need for a clock",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pipelining doesn't speed up a single instruction (latency) but increases the number of instructions finished per second (throughput)."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Main Memory",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does RAM stand for, and what is its primary characteristic?",
+    "option_a": "Read-Always Memory; Persistent",
+    "option_b": "Random Access Memory; Volatile",
+    "option_c": "Rapid Access Module; Volatile",
+    "option_d": "Real-time Array Management; Persistent",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RAM is Random Access Memory, meaning any byte can be accessed directly. It is volatile, losing data when power is removed."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Cache Memory",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of the following are types of locality that caches exploit?",
+    "option_a": "Temporal Locality",
+    "option_b": "Spatial Locality",
+    "option_c": "Logical Locality",
+    "option_d": "Physical Locality",
+    "correct_options": [
+      "A",
+      "B"
+    ],
+    "explanation": "Temporal locality means recently accessed data is likely to be accessed again soon. Spatial locality means nearby data is likely to be accessed soon."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Pipelining Hazards",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "A situation where the next instruction cannot execute because of a dependency on a previous instruction's data is called:",
+    "option_a": "Control Hazard",
+    "option_b": "Structural Hazard",
+    "option_c": "Data Hazard",
+    "option_d": "Memory Leak",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Data hazards occur when instructions that exhibit data dependence overlap in execution."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Instruction Formats",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "An instruction with zero addresses is commonly found in which type of architecture?",
+    "option_a": "Stack-based architecture",
+    "option_b": "Register-based architecture",
+    "option_c": "Accumulator architecture",
+    "option_d": "Memory-to-memory architecture",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Stack architectures use implicit operands from the top of the stack."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "I/O Interface",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which I/O technique allows a device to transfer data directly to memory without constant CPU intervention?",
+    "option_a": "Programmed I/O",
+    "option_b": "Interrupt-initiated I/O",
+    "option_c": "Direct Memory Access (DMA)",
+    "option_d": "Polling",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "DMA controllers handle the data transfer, freeing the CPU for other tasks."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Addressing Modes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In auto-increment addressing mode, when is the register incremented?",
+    "option_a": "Before fetching the operand",
+    "option_b": "After fetching the operand",
+    "option_c": "During instruction fetch",
+    "option_d": "Only on branch instructions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The effective address is the register's current value, which is then incremented for the next use."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Cache Mapping",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which cache mapping technique allows a block of main memory to be loaded into any line of the cache?",
+    "option_a": "Direct mapping",
+    "option_b": "Fully associative mapping",
+    "option_c": "Set-associative mapping",
+    "option_d": "Sector mapping",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fully associative mapping provides the most flexibility but requires complex hardware for searching."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Secondary Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The time required to move the read/write head of a disk drive to the specified track is called:",
+    "option_a": "Rotational latency",
+    "option_b": "Transfer time",
+    "option_c": "Seek time",
+    "option_d": "Access time",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Seek time is a major component of disk access time."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Pipelining",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A 'stall' in a pipeline is often called a ________.",
+    "option_a": "Bubble",
+    "option_b": "Leak",
+    "option_c": "Wait state",
+    "option_d": "Jump",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A bubble is an empty slot in the pipeline that performs no useful work."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Registers",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which register holds the current instruction being executed?",
+    "option_a": "Program Counter",
+    "option_b": "Memory Buffer Register",
+    "option_c": "Instruction Register (IR)",
+    "option_d": "Stack Pointer",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The IR stores the opcode and operands of the instruction currently being processed."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Micro-operations",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "The sequence of control signals required to execute a single micro-operation is determined by the:",
+    "option_a": "ALU",
+    "option_b": "Control Unit",
+    "option_c": "Register File",
+    "option_d": "Memory Bus",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Control Unit generates the gating signals for registers and ALU functions."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Number Systems",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which representation is most commonly used for signed integers in modern computers?",
+    "option_a": "Sign-magnitude",
+    "option_b": "1's complement",
+    "option_c": "2's complement",
+    "option_d": "Excess-3",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "2's complement simplifies arithmetic hardware and avoids the problem of 'positive' and 'negative' zero."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Memory Hierarchy",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "As we move down the memory hierarchy (from registers to disk), which of the following is true?",
+    "option_a": "Speed increases, Cost per bit increases",
+    "option_b": "Speed decreases, Cost per bit decreases",
+    "option_c": "Capacity decreases, Speed increases",
+    "option_d": "Capacity increases, Speed increases",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lower levels are larger, slower, and cheaper."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Interrupts",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "An interrupt that can be delayed or ignored by the CPU is called a:",
+    "option_a": "Vectored interrupt",
+    "option_b": "Non-maskable interrupt (NMI)",
+    "option_c": "Maskable interrupt",
+    "option_d": "Software interrupt",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Maskable interrupts can be disabled using a flag in the status register."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Bus Arbitration",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which bus arbitration method uses a centralized controller to grant access in a specific priority order?",
+    "option_a": "Daisy chaining",
+    "option_b": "Polling",
+    "option_c": "Independent requesting",
+    "option_d": "Time-slice",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "In daisy chaining, the grant signal passes through devices in a serial chain."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Floating Point",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "In IEEE 754 single precision, how many bits are used for the exponent?",
+    "option_a": "1",
+    "option_b": "8",
+    "option_c": "11",
+    "option_d": "23",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "1 bit sign, 8 bits exponent, 23 bits fraction (mantissa)."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Data Path",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The path through which data flows within a processor is called:",
+    "option_a": "Control path",
+    "option_b": "Data path",
+    "option_c": "Memory path",
+    "option_d": "Execution path",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Data path includes ALU, registers, and interconnecting buses."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Instruction Set",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the primary advantage of CISC over RISC in early computing?",
+    "option_a": "Fewer transistors required",
+    "option_b": "Lower power consumption",
+    "option_c": "Smaller program size (memory efficiency)",
+    "option_d": "Faster clock speeds",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "CISC instructions are dense, requiring less memory to store complex programs."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which memory type must be periodically 'refreshed' to retain data?",
+    "option_a": "SRAM",
+    "option_b": "DRAM",
+    "option_c": "ROM",
+    "option_d": "EPROM",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dynamic RAM (DRAM) uses capacitors that leak charge, necessitating a refresh cycle."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Control Logic",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Hardwired control units are generally ________ than microprogrammed ones.",
+    "option_a": "Faster but less flexible",
+    "option_b": "Slower but more flexible",
+    "option_c": "Easier to design",
+    "option_d": "Cheaper for complex systems",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Hardwired units use combinational logic which is fast but difficult to modify."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Addressing",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Relative addressing mode calculates the effective address by adding an offset to the:",
+    "option_a": "Stack Pointer",
+    "option_b": "Program Counter (PC)",
+    "option_c": "Base Register",
+    "option_d": "Instruction Register",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PC-relative addressing is common for branch instructions."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Arithmetic",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which algorithm is commonly used for fast multiplication of signed integers?",
+    "option_a": "Restoring division",
+    "option_b": "Non-restoring division",
+    "option_c": "Booth's Algorithm",
+    "option_d": "Wallace Tree",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Booth's algorithm handles signed integers efficiently using bit-shifting and additions/subtractions."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Parallelism",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A computer system with multiple processors sharing a single common memory is called a:",
+    "option_a": "Multicomputer",
+    "option_b": "Multiprocessor (Symmetric)",
+    "option_c": "Distributed system",
+    "option_d": "Vector processor",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SMP (Symmetric Multi-Processing) involves multiple CPUs sharing main RAM."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "I/O",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "The CPU checking a status bit of an I/O device in a loop is known as:",
+    "option_a": "Interrupting",
+    "option_b": "Polling",
+    "option_c": "Vectoring",
+    "option_d": "Handshaking",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Polling is a simple but inefficient way to manage I/O as it wastes CPU cycles."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Cache Write Policy",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In a write-through cache policy, when is the main memory updated?",
+    "option_a": "Only when a block is replaced",
+    "option_b": "Every time a write occurs in the cache",
+    "option_c": "Periodically by a background task",
+    "option_d": "When the CPU is idle",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Write-through ensures consistency but can be slower due to memory access on every write."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Digital Logic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the function of a Flip-Flop?",
+    "option_a": "Arithmetic addition",
+    "option_b": "Binary data storage (1 bit)",
+    "option_c": "Decoding instructions",
+    "option_d": "Voltage regulation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Flip-flops are the basic units of sequential logic used for memory."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Interrupts",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "The starting address of an Interrupt Service Routine (ISR) is often stored in a:",
+    "option_a": "Stack",
+    "option_b": "Queue",
+    "option_c": "Interrupt Vector Table",
+    "option_d": "Cache line",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The vector table contains pointers to handlers for different interrupt levels."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Bus",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What determines the maximum amount of addressable memory in a system?",
+    "option_a": "The width of the data bus",
+    "option_b": "The width of the address bus",
+    "option_c": "The size of the cache",
+    "option_d": "The clock frequency",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "An 'n' bit address bus can access 2^n unique memory locations."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Pipeline Efficiency",
+    "question_type": "tricky",
+    "timer_seconds": 45,
+    "question_text": "Speedup in an ideal 'k' stage pipeline compared to non-pipelined execution is:",
+    "option_a": "k",
+    "option_b": "1/k",
+    "option_c": "k^2",
+    "option_d": "log k",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Under ideal conditions (no hazards), the speedup is equal to the number of stages."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Addressing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which addressing mode requires two memory accesses to fetch an operand?",
+    "option_a": "Direct",
+    "option_b": "Indirect",
+    "option_c": "Index",
+    "option_d": "Relocatable",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In indirect mode, the first access gets the address of the operand, and the second gets the operand itself."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A circuit that selects one of many data sources and sends it to one output is a:",
+    "option_a": "Demultiplexer",
+    "option_b": "Multiplexer",
+    "option_c": "Encoder",
+    "option_d": "Register",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multiplexers are 'many-to-one' switches."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Instructions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Mnemonics are used in which type of language?",
+    "option_a": "Machine code",
+    "option_b": "Assembly language",
+    "option_c": "High-level language",
+    "option_d": "Natural language",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Assembly uses mnemonics like MOV, ADD, JMP to represent binary opcodes."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Memory Performance",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'hit ratio' in cache memory?",
+    "option_a": "Successful accesses / Total accesses",
+    "option_b": "Failed accesses / Total accesses",
+    "option_c": "Total bits / Cache size",
+    "option_d": "Data bus width / Address bus width",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Hit ratio measures the effectiveness of the cache in fulfilling requests."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A standard BCD (Binary Coded Decimal) uses how many bits for each decimal digit?",
+    "option_a": "2",
+    "option_b": "4",
+    "option_c": "8",
+    "option_d": "10",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BCD encodes each digit 0-9 into a 4-bit binary nibble."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Registers",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the 'Status Register' (PSW) typically contain?",
+    "option_a": "Instruction opcodes",
+    "option_b": "Memory data",
+    "option_c": "Condition code flags",
+    "option_d": "User passwords",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Condition codes like Zero, Carry, Negative, and Overflow are stored here."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "I/O",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "Which of these is NOT a valid I/O communication technique?",
+    "option_a": "Memory-mapped I/O",
+    "option_b": "Isolated I/O",
+    "option_c": "Pipelined I/O",
+    "option_d": "Direct Memory Access",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Pipelining is an internal CPU feature, not a standard external I/O communication method."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The capacity of a memory chip is expressed as '2K x 8'. How many bits can it store?",
+    "option_a": "16",
+    "option_b": "2048",
+    "option_c": "16384",
+    "option_d": "8192",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "2048 words * 8 bits/word = 16,384 bits."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Arithmetic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Overflow in 2's complement addition occurs if:",
+    "option_a": "The carry into the MSB is different from carry out of the MSB",
+    "option_b": "The result is zero",
+    "option_c": "Both inputs are positive",
+    "option_d": "The sign bit is 1",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is a standard logical check for overflow in signed binary math."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Stack",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "The 'Stack Pointer' register (SP) is used to track the address of the:",
+    "option_a": "Main program",
+    "option_b": "Next free memory slot",
+    "option_c": "Top of the stack",
+    "option_d": "Base of the memory",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The SP points to the most recently pushed item on the stack."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Bus",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A 'Dual-Core' processor is an example of:",
+    "option_a": "SISD",
+    "option_b": "SIMD",
+    "option_c": "MIMD",
+    "option_d": "MISD",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Multiple Instruction streams, Multiple Data streams (parallel processing)."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Logic",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which flip-flop is known for its ability to toggle the state?",
+    "option_a": "D flip-flop",
+    "option_b": "T flip-flop",
+    "option_c": "RS flip-flop",
+    "option_d": "Latch",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "T stands for 'Toggle'."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Memory",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In paging, memory is divided into fixed-size blocks called:",
+    "option_a": "Segments",
+    "option_b": "Pages and Frames",
+    "option_c": "Sectors",
+    "option_d": "Lines",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Logical memory uses pages; physical memory uses frames."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Universal Gates",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many NAND gates are required to implement an OR gate?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "4",
+    "option_d": "1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "De Morgan's law: A OR B = NOT( (NOT A) AND (NOT B) )."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Addressing Modes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which addressing mode uses the value in a register as the address of the operand?",
+    "option_a": "Direct",
+    "option_b": "Register Indirect",
+    "option_c": "Immediate",
+    "option_d": "Relative",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Register indirect uses a register as a pointer to memory."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Stack Organization",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The register that points to the top of the stack is called:",
+    "option_a": "Base Pointer",
+    "option_b": "Stack Pointer (SP)",
+    "option_c": "Index Register",
+    "option_d": "Program Counter",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The SP is automatically adjusted during PUSH and POP operations."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Pipelining",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary benefit of instruction pipelining?",
+    "option_a": "Lower power consumption",
+    "option_b": "Increased instruction throughput",
+    "option_c": "Reduced clock frequency",
+    "option_d": "Smaller CPU size",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pipelining allows multiple instructions to be in different stages of execution simultaneously."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Mapping",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which cache mapping is the most flexible but also the most complex?",
+    "option_a": "Direct Mapping",
+    "option_b": "Fully Associative Mapping",
+    "option_c": "Set Associative Mapping",
+    "option_d": "Linear Mapping",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fully associative allows any memory block to be placed in any cache line."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 2,
+    "level_topic": "Virtual Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the main purpose of virtual memory?",
+    "option_a": "To speed up the CPU",
+    "option_b": "To allow programs larger than physical memory to run",
+    "option_c": "To protect against viruses",
+    "option_d": "To share files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Virtual memory creates an illusion of a very large memory space by using disk storage."
+  }
+]

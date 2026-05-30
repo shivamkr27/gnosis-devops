@@ -1,0 +1,810 @@
+[
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which interface is the root of the Collections hierarchy?",
+    "option_a": "Collection",
+    "option_b": "List",
+    "option_c": "Map",
+    "option_d": "Set",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The 'Collection' interface is the root interface in the collections hierarchy, though Map is often considered part of the framework but doesn't inherit from Collection."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which collection allows duplicate elements?",
+    "option_a": "Set",
+    "option_b": "List",
+    "option_c": "SortedSet",
+    "option_d": "Map (Keys)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lists (like ArrayList, LinkedList) are ordered collections that allow duplicate elements."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which collection does not allow duplicate elements?",
+    "option_a": "ArrayList",
+    "option_b": "LinkedList",
+    "option_c": "Stack",
+    "option_d": "HashSet",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Sets (like HashSet, TreeSet) do not allow duplicate elements based on equals() and hashCode()."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which class implements the Map interface and maintains insertion order?",
+    "option_a": "HashMap",
+    "option_b": "TreeMap",
+    "option_c": "LinkedHashMap",
+    "option_d": "Hashtable",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "LinkedHashMap uses a doubly-linked list running through all its entries to maintain predictable iteration order (usually insertion order)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does the diamond operator '<>' do in Generics?",
+    "option_a": "Declares a new type",
+    "option_b": "Allows compiler to infer type arguments from the context",
+    "option_c": "Generates random types",
+    "option_d": "Deletes generic information",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Introduced in Java 7, '<>' allows you to omit type arguments during instantiation if they can be inferred."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which method is used to add an element to an ArrayList?",
+    "option_a": "insert()",
+    "option_b": "add()",
+    "option_c": "put()",
+    "option_d": "append()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'add()' method is used across most Collection implementations to add elements."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which interface should be used for a collection of unique keys mapped to values?",
+    "option_a": "List",
+    "option_b": "Queue",
+    "option_c": "Map",
+    "option_d": "Set",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Map interface models the mathematical function of a domain-to-range mapping (key-value pairs)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which method is used to retrieve an element from a specific index in a List?",
+    "option_a": "fetch()",
+    "option_b": "get()",
+    "option_c": "read()",
+    "option_d": "element()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'get(int index)' method allows indexed access to List elements."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the default initial capacity of an ArrayList in Java?",
+    "option_a": "0",
+    "option_b": "10",
+    "option_c": "16",
+    "option_d": "32",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By default, an ArrayList is created with an internal capacity of 10 elements."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which interface represents a First-In-First-Out (FIFO) data structure?",
+    "option_a": "Stack",
+    "option_b": "Queue",
+    "option_c": "Map",
+    "option_d": "SortedSet",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Queue is designed for holding elements prior to processing in a FIFO manner."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the difference between ArrayList and LinkedList?",
+    "option_a": "ArrayList is faster for insertions in the middle",
+    "option_b": "LinkedList is faster for random access",
+    "option_c": "ArrayList is backed by an array, LinkedList by a doubly-linked list",
+    "option_d": "LinkedList uses less memory",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "ArrayList uses a dynamic array (faster search); LinkedList uses pointers (faster middle insertion)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which method do you use to remove all elements from a collection?",
+    "option_a": "removeAll()",
+    "option_b": "clear()",
+    "option_c": "delete()",
+    "option_d": "reset()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'clear()' removes all elements. 'removeAll()' takes another collection as a parameter."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the main advantage of using Generics in Java?",
+    "option_a": "Faster execution at runtime",
+    "option_b": "Compile-time type safety and elimination of explicit casting",
+    "option_c": "Automatic memory management",
+    "option_d": "Smaller bytecode size",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Generics catch type errors during compilation rather than failing at runtime with ClassCastException."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which Map implementation allows null keys and null values?",
+    "option_a": "Hashtable",
+    "option_b": "TreeMap",
+    "option_c": "HashMap",
+    "option_d": "ConcurrentHashMap",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "HashMap allows one null key and multiple null values. Hashtable and ConcurrentHashMap do not allow nulls."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What happens if you use a primitive type (like int) directly in a Generic collection?",
+    "option_a": "It works perfectly",
+    "option_b": "Compiler error; only Reference types are allowed",
+    "option_c": "JVM converts it to binary",
+    "option_d": "It is stored as a String",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Generics only support Reference types (Objects). Auto-boxing allows us to use 'int' in an 'ArrayList<Integer>', but not 'ArrayList<int>'."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which Iterator method is safe to use for removing elements while iterating?",
+    "option_a": "List.remove()",
+    "option_b": "Collection.remove()",
+    "option_c": "Iterator.remove()",
+    "option_d": "System.arraycopy()",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Calling collection.remove() while iterating leads to ConcurrentModificationException. The Iterator's own remove() method is safe."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which Set implementation keeps elements in their natural sorted order?",
+    "option_a": "HashSet",
+    "option_b": "LinkedHashSet",
+    "option_c": "TreeSet",
+    "option_d": "BitSet",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "TreeSet is backed by a TreeMap (Red-Black tree) and keeps elements sorted (using Comparable or Comparator)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the purpose of 'Collections.unmodifiableList()'? ",
+    "option_a": "To sort a list",
+    "option_b": "To create a read-only wrapper around a list",
+    "option_c": "To encrypt a list",
+    "option_d": "To make a list thread-safe",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It returns a view of the list where add/remove operations throw UnsupportedOperationException."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "multi_correct",
+    "timer_seconds": 20,
+    "question_text": "Which of these classes implement the List interface?",
+    "option_a": "ArrayList",
+    "option_b": "Vector",
+    "option_c": "HashSet",
+    "option_d": "Stack",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "ArrayList, Vector, and Stack are all part of the List hierarchy. HashSet is a Set."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "multi_correct",
+    "timer_seconds": 20,
+    "question_text": "Which of these are legacy collections (pre-Java 2)?",
+    "option_a": "Hashtable",
+    "option_b": "Vector",
+    "option_c": "HashMap",
+    "option_d": "ArrayList",
+    "correct_options": [
+      "A",
+      "B"
+    ],
+    "explanation": "Hashtable and Vector were part of JDK 1.0 and were later retrofitted to implement the Collections framework."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is 'Type Erasure' in Java Generics?",
+    "option_a": "Manual removal of generic types by the developer",
+    "option_b": "The process where the compiler removes all type parameters and replaces them with their bounds or Object",
+    "option_c": "A runtime feature that prevents type casting",
+    "option_d": "A bug in older JVM versions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Generics are implemented via erasure to maintain backward compatibility with non-generic code. Runtime code has no knowledge of the specific type."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between Comparable and Comparator?",
+    "option_a": "Comparable provides internal sorting; Comparator provides external sorting",
+    "option_b": "Comparable is in java.util; Comparator is in java.lang",
+    "option_c": "Comparable uses compareTo(); Comparator uses compare()",
+    "option_d": "Both A and C",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Comparable defines natural order inside the class; Comparator creates separate sorting logic (useful for multiple sort criteria or sorting classes you don't own)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Wildcard' with 'Lower Bound' in Generics?",
+    "option_a": "<? extends T>",
+    "option_b": "<? super T>",
+    "option_c": "<T extends Class>",
+    "option_d": "<T super Class>",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'super' keyword establishes a lower bound (T or any superclass of T)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "In a HashMap, if two different objects have the same hashCode but are not equal, how are they stored?",
+    "option_a": "The second object replaces the first",
+    "option_b": "They are stored in the same bucket using a linked list or tree (Collision)",
+    "option_c": "An exception is thrown",
+    "option_d": "The hashCode is recalculated until it is unique",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is hash collision. HashMap handles this by chaining (linked list) or treeification (Red-Black tree) within the bucket."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between 'fail-fast' and 'fail-safe' iterators?",
+    "option_a": "Fail-fast throws Exception on concurrent change; Fail-safe works on a copy",
+    "option_b": "Fail-safe is faster than fail-fast",
+    "option_c": "ArrayList uses fail-safe",
+    "option_d": "CopyOnWriteArrayList uses fail-fast",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Fail-fast (standard collections) throws ConcurrentModificationException. Fail-safe (concurrent collections) avoids this by iterating over a snapshot."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which collection would you choose for highly efficient search/retrieval when keys are unique and order doesn't matter?",
+    "option_a": "LinkedList",
+    "option_b": "HashMap",
+    "option_c": "TreeSet",
+    "option_d": "PriorityQueue",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HashMap provides O(1) average time complexity for basic operations like get() and put()."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What does 'PECS' stand for in Generics?",
+    "option_a": "Parameter Entry, Class Search",
+    "option_b": "Producer Extends, Consumer Super",
+    "option_c": "Public Entry, Constant Static",
+    "option_d": "Parent Extends, Child Super",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Use 'extends' when you want to read from a generic collection (Producer); use 'super' when you want to write into it (Consumer)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is 'Load Factor' in HashMap?",
+    "option_a": "Number of items currently in the map",
+    "option_b": "Measure that decides when to increase the capacity (resize) of the hash map",
+    "option_c": "Maximum size of a single bucket",
+    "option_d": "Time taken to calculate hash code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The default is 0.75. When 75% of the buckets are filled, the map's capacity is doubled."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of these are thread-safe collections?",
+    "option_a": "Hashtable",
+    "option_b": "ConcurrentHashMap",
+    "option_c": "HashMap",
+    "option_d": "CopyOnWriteArrayList",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Hashtable (legacy), ConcurrentHashMap (optimized), and CopyOnWriteArrayList (snapshot-based) are all thread-safe."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which methods are essential for objects used as keys in a HashMap?",
+    "option_a": "equals()",
+    "option_b": "toString()",
+    "option_c": "hashCode()",
+    "option_d": "clone()",
+    "correct_options": [
+      "A",
+      "C"
+    ],
+    "explanation": "HashMap relies on hashCode() for bucket placement and equals() for finding the exact match within a bucket."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Can you add an Integer to a 'List<Object>'?",
+    "option_a": "Yes, Object is a superclass of Integer",
+    "option_b": "No, only Object instances can be added",
+    "option_c": "Compile error",
+    "option_d": "Only if cast to Object manually",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A List<Object> can hold any object type. Covariance doesn't apply to adding items here; polymorphism does."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the output of 'List<String> list = new ArrayList<Object>();'?",
+    "option_a": "Compile error",
+    "option_b": "Valid code",
+    "option_c": "Runtime error",
+    "option_d": "Warning about raw types",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Generics are NOT covariant. Even though String is an Object, List<String> is NOT a List<Object>."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "If a PriorityQueue is created without a Comparator, what happens if you add non-Comparable objects?",
+    "option_a": "They are stored but not sorted",
+    "option_b": "Throws ClassCastException at runtime",
+    "option_c": "Compile error",
+    "option_d": "Default hash sorting is used",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PriorityQueue needs to compare elements to maintain order. If no comparator is provided, elements must implement Comparable."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Which collection performs best for frequently adding/removing elements from BOTH ends?",
+    "option_a": "ArrayList",
+    "option_b": "ArrayDeque",
+    "option_c": "LinkedList",
+    "option_d": "PriorityQueue",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ArrayDeque is generally more efficient than LinkedList for stack/queue operations as it avoids node allocation overhead."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Can a class implement both Comparable and have multiple Comparators?",
+    "option_a": "No, only one sorting strategy allowed",
+    "option_b": "Yes, natural order via Comparable and custom orders via Comparators",
+    "option_c": "Only if one is static",
+    "option_d": "Comparable is deprecated",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You can provide a 'natural' sort (e.g., ID) inside the class, and offer various Comparator instances (e.g., by Name, by Date) for other use cases."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What happens when 'List<?> genericList = new ArrayList<String>(); genericList.add('test');' is compiled?",
+    "option_a": "Works fine",
+    "option_b": "Compile time error",
+    "option_c": "Warning",
+    "option_d": "ClassCastException at runtime",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You cannot add anything (except null) to a collection with a wildcard (?) because the compiler cannot guarantee the specific type of the list."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Which interface is used to traverse a collection in both directions?",
+    "option_a": "Iterator",
+    "option_b": "ListIterator",
+    "option_c": "Enumerate",
+    "option_d": "Stream",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ListIterator extends Iterator and adds hasPrevious() and previous() for bi-directional traversal (available only for Lists)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity of 'ArrayList.remove(0)'?",
+    "option_a": "O(1)",
+    "option_b": "O(log n)",
+    "option_c": "O(n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Since all subsequent elements must be shifted one position to the left, it takes linear time."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which statements about HashSet are true?",
+    "option_a": "It uses HashMap internally to store elements",
+    "option_b": "It maintains the order of elements",
+    "option_c": "It allows a single null element",
+    "option_d": "Performance is independent of number of buckets",
+    "correct_options": [
+      "A",
+      "C"
+    ],
+    "explanation": "HashSet is a wrapper around HashMap (the element is the key, a dummy object is the value). It is un-ordered."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of these are valid generic method signatures?",
+    "option_a": "public <T> T show(T t)",
+    "option_b": "public T show(T t)",
+    "option_c": "public <K, V> void display(K k, V v)",
+    "option_d": "public <?> void display(? x)",
+    "correct_options": [
+      "A",
+      "C"
+    ],
+    "explanation": "Generic type parameters must be declared before the return type. Wildcards cannot be used in method type parameter declarations."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What does a 'Generic Class' definition like 'MyClass<T>' mean?",
+    "option_a": "The class can only be used with type 'T'",
+    "option_b": "The class can be parameterized with different types during instantiation",
+    "option_c": "T is a special keyword for Threading",
+    "option_d": "The class is synchronized automatically",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Generic classes create a flexible template that works with any object type while maintaining type safety."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Which principle is key to a good HashMap implementation?",
+    "option_a": "A hashCode method that distributes keys uniformly across buckets",
+    "option_b": "An equals method that always returns true",
+    "option_c": "Using a very small load factor to save memory",
+    "option_d": "Avoiding null values",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Uniform distribution minimizes collisions, keeping the average access time close to O(1)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is 'Iteration' in the context of Collections?",
+    "option_a": "Redefining a collection recursively",
+    "option_b": "Accessing elements of a collection one by one",
+    "option_c": "Converting a collection to an array",
+    "option_d": "Deleting every second element",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Iteration allows for processing each member of a collection sequentially."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What represents the 'contract' for sorting in Java?",
+    "option_a": "The equals() and hashCode() rule",
+    "option_b": "The Comparable and Comparator interfaces",
+    "option_c": "The for-each loop",
+    "option_d": "The static sorting script",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "These interfaces provide the standardization for comparing and ordering objects."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Why do we use 'Wrapper Classes' (like Integer) with Generics?",
+    "option_a": "Native types are slow",
+    "option_b": "Generics require object references, and wrappers turn primitives into objects",
+    "option_c": "Wrappers use less memory than primitives",
+    "option_d": "Wrappers are easier to type",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Since Generics operate with Object-based logic (erasure to Object), they cannot handle native memory blocks (primitives)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Utility Class' used for common operations on Collections?",
+    "option_a": "CollectionHelper",
+    "option_b": "Collections",
+    "option_c": "ArrayListUtils",
+    "option_d": "Stream",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'java.util.Collections' class provides static methods like sort(), reverse(), shuffle(), and synchronizedList()."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is the importance of Immutable objects as keys in a Map?",
+    "option_a": "They ensure the hashCode stays consistent throughout the life of the map",
+    "option_b": "They prevent the value from being modified",
+    "option_c": "They use less heap space",
+    "option_d": "JVM can optimize their lookup frequency",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If a key's state changes, its hashCode might change, making the element 'lost' in the wrong bucket."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "In Java 8, how were HashMaps improved?",
+    "option_a": "They became thread-safe by default",
+    "option_b": "Buckets with many collisions convert from linked lists to Red-Black trees to maintain performance",
+    "option_c": "They no longer require hashCode",
+    "option_d": "They became faster than ArrayList",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This improvement changed worst-case performance from O(n) to O(log n)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Which interface represents an ordered collection that supports LIFO?",
+    "option_a": "Queue",
+    "option_b": "Deque",
+    "option_c": "Set",
+    "option_d": "Map",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deque (Double Ended Queue) supports both FIFO and LIFO (Stack-like behavior)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 3,
+    "level_topic": "Collections Framework (List, Set, Map, Queue), Generics",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is the benefit of 'Bounded Wildcards' like <T extends Number>?",
+    "option_a": "It allows use of any object",
+    "option_b": "It restricts the types allowed, ensuring we can use methods of the bound (e.g., doubleValue())",
+    "option_c": "It makes the code harder to read",
+    "option_d": "It deletes the type information at runtime",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bounding gives the compiler insurance that the generic type will at least have the behavior of the designated parent."
+  }
+]

@@ -1,0 +1,805 @@
+[
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees, Heaps & Hashing",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In a 'Max-Heap', where is the largest element always located?",
+    "option_a": "At a leaf node",
+    "option_b": "At the root node",
+    "option_c": "In the middle",
+    "option_d": "It can be anywhere",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A max-heap maintains the property that the parent is always greater than or equal to its children."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees, Heaps & Hashing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Hash Collision'?",
+    "option_a": "When a hash function crashes",
+    "option_b": "When two different keys produce the same hash value (index)",
+    "option_c": "When two databases merge",
+    "option_d": "A bug in memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Collisions are handled using techniques like Chaining or Open Addressing."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees, Heaps & Hashing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which binary tree traversal visits the root node last?",
+    "option_a": "Pre-order",
+    "option_b": "In-order",
+    "option_c": "Post-order",
+    "option_d": "Level-order",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Post-order visits Left, then Right, then Root."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees, Heaps & Hashing",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity of 'Inserting' an element into a Heap of size 'n'?",
+    "option_a": "O(1)",
+    "option_b": "O(log n)",
+    "option_c": "O(n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "An insertion involves adding the element at the end and then 'bubbling up' to restore the heap property, which takes O(log n)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees, Heaps & Hashing",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is an 'Adjacency List' in graphs?",
+    "option_a": "A list of people in a town",
+    "option_b": "A collection of unordered lists used to represent a finite graph, where each list describes the set of neighbors of a vertex",
+    "option_c": "A matrix of bits",
+    "option_d": "A way to sort numbers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Adjacency lists are space-efficient for sparse graphs compared to adjacency matrices."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees, Heaps & Hashing",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between recursion and iteration?",
+    "option_a": "Recursion calls itself; iteration uses loops",
+    "option_b": "Iteration is always faster",
+    "option_c": "Recursion uses more memory on the call stack",
+    "option_d": "They are identical in memory usage",
+    "correct_options": [
+      "A",
+      "C"
+    ],
+    "explanation": "Recursion can be more elegant but risks stack overflow errors for deep calls."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees, Heaps & Hashing",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these are tree traversal methods?",
+    "option_a": "Breadth-First Search (BFS)",
+    "option_b": "Depth-First Search (DFS)",
+    "option_c": "In-order Traversal",
+    "option_d": "Bubble Traversal",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "BFS and DFS are general graph traversal strategies applied to trees."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees, Heaps & Hashing",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is the primary benefit of a 'Hash Map'?",
+    "option_a": "It sorts data perfectly",
+    "option_b": "It provides O(1) average time complexity for insertion, deletion, and search by key",
+    "option_c": "It uses very little memory",
+    "option_d": "It handles strings better than arrays",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hash maps use hashing to map keys to bucket indices for fast access."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees, Heaps & Hashing",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Self-Balancing Binary Search Tree' (e.g., AVL tree)?",
+    "option_a": "A tree that sorts itself automatically",
+    "option_b": "A BST that automatically keeps its height as small as possible upon insertions and deletions",
+    "option_c": "A tree with no children",
+    "option_d": "A tree stored in a database",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Balancing ensures that the time complexity remains O(log n) for operations."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees, Heaps & Hashing",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "How does 'Quick Sort' work?",
+    "option_a": "By merging two sorted lists",
+    "option_b": "By picking an element as a 'pivot' and partitioning the given array around it",
+    "option_c": "By moving the largest element to the end in each pass",
+    "option_d": "By counting the occurrences of each element",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Quick sort is a divide-and-conquer algorithm with an efficient average-case time complexity."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Binary Search Trees",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity of finding the minimum element in a Binary Search Tree?",
+    "option_a": "O(1)",
+    "option_b": "O(log n)",
+    "option_c": "O(h), where h is the height of the tree",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "You start at the root and move left until you reach a node with no left child. In a balanced tree, this is O(log n), but in general, it's O(Height)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Heaps",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A Min-Heap is usually implemented using which data structure for better space efficiency?",
+    "option_a": "Linked List",
+    "option_b": "Array",
+    "option_c": "Hash Map",
+    "option_d": "Stack",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Complete binary trees (like heaps) can be compactly represented in an array where children are at indices 2i+1 and 2i+2."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Hashing",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Quadratic Probing' in hashing?",
+    "option_a": "A technique to calculate the square of the hash",
+    "option_b": "An open addressing method to resolve collisions by seeking the next slot using a quadratic function",
+    "option_c": "A way to delete four items at once",
+    "option_d": "A recursive hash function",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps reduce 'primary clustering' seen in linear probing."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Graphs",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which graph traversal uses a 'Queue'?",
+    "option_a": "DFS (Depth-First Search)",
+    "option_b": "BFS (Breadth-First Search)",
+    "option_c": "Pre-order",
+    "option_d": "In-order",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BFS explores neighbors level-by-level, requiring a FIFO structure (Queue)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the worst-case time complexity of Quick Sort?",
+    "option_a": "O(n log n)",
+    "option_b": "O(n^2)",
+    "option_c": "O(n)",
+    "option_d": "O(2^n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The worst case occurs when the pivot is consistently the smallest or largest element (e.g., already sorted array without randomization)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Linked Lists",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "How do you detect a cycle in a linked list efficiently?",
+    "option_a": "Store all nodes in a list and check for duplicates",
+    "option_b": "Floyd's Cycle-Finding Algorithm (Slow and Fast pointers)",
+    "option_c": "Reverse the list and see if it changes",
+    "option_d": "Recursively visit every node and increment a counter",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The fast pointer will eventually catch the slow pointer if a cycle exists (O(n) time, O(1) space)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Stacks",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is used for expression evaluation (e.g., Postfix)?",
+    "option_a": "Queue",
+    "option_b": "Stack",
+    "option_c": "Heap",
+    "option_d": "Tree",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Operators and operands are pushed onto the stack, and evaluation occurs when operators are encountered."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Memoization' in Dynamic Programming?",
+    "option_a": "A sorting technique",
+    "option_b": "Storing the results of expensive function calls and returning the cached result when the same inputs occur again",
+    "option_c": "Deleting unnecessary memory",
+    "option_d": "A way to name functions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Memoization is the 'top-down' approach to Dynamic Programming."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Hashing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity of searching in a Hash Table with Chaining in the worst case?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Worst case is when all n keys hash to the same bucket, turning it into a linked list search."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Graphs",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity of Dijkstra's algorithm using an adjacency list and a priority queue (Binary Heap)?",
+    "option_a": "O(V^2)",
+    "option_b": "O(E log V)",
+    "option_c": "O(V + E)",
+    "option_d": "O(E^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "E log V comes from extracting the minimum and updating distances in the heap."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Complexity",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does O(n!) signify?",
+    "option_a": "Factorial growth",
+    "option_b": "Polynomial growth",
+    "option_c": "Logarithmic growth",
+    "option_d": "Linear growth",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "It's extremely inefficient and common in problems like the Traveling Salesperson (brute force)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Searching",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the prerequisite for using Binary Search?",
+    "option_a": "The data must be in a linked list",
+    "option_b": "The data must be sorted",
+    "option_c": "The data must be all integers",
+    "option_d": "The data must be in a tree",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Binary search relies on jumping to the middle and knowing which direction to go, which requires sorted order."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Algorithm Types",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "The 'Knapsack Problem' is typically solved using which approach for optimal results?",
+    "option_a": "Greedy (always works)",
+    "option_b": "Dynamic Programming",
+    "option_c": "Linear Search",
+    "option_d": "Selection Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "For the 0/1 Knapsack, Greedy doesn't always provide the global optimum; DP is required."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which binary tree is where every node has either zero or two children?",
+    "option_a": "Complete Binary Tree",
+    "option_b": "Full Binary Tree",
+    "option_c": "Perfect Binary Tree",
+    "option_d": "Degenerate Tree",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a Full Binary Tree, no node has exactly one child."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Heaps",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which sorting algorithm essentially builds a heap and repeatedly extracts the root?",
+    "option_a": "Merge Sort",
+    "option_b": "Heap Sort",
+    "option_c": "Quick Sort",
+    "option_d": "Shell Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Heap sort utilizes the max-heap (to sort in ascending order) or min-heap property."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Graphs",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity of BFS on a graph with V vertices and E edges?",
+    "option_a": "O(V)",
+    "option_b": "O(V + E)",
+    "option_c": "O(V^2)",
+    "option_d": "O(E log V)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every vertex and every edge is visited usually once."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Linked Lists",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which pointer manipulation is sufficient to delete a node in a Singly Linked List (given access to the previous node)?",
+    "option_a": "prev->next = current->next",
+    "option_b": "prev = current",
+    "option_c": "current->next = prev",
+    "option_d": "delete head",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Bypassing the current node by linking the previous node to the next one removes it from the list."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Recursion",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What occurs in 'Tail Recursion'?",
+    "option_a": "The recursive call is the very first action",
+    "option_b": "The recursive call is the very last action of the function",
+    "option_c": "The function returns a pointer",
+    "option_d": "The base case is missing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tail recursion can be optimized by compilers into a loop to save stack space (TCO)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the amortized complexity of 'push' in a dynamic array (vector)?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "While resizing takes O(n), it happens rarely enough that the average time per push is constant."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which sorting algorithm has a O(n + k) time complexity (where k is the range of values)?",
+    "option_a": "Radix Sort",
+    "option_b": "Counting Sort",
+    "option_c": "Bucket Sort",
+    "option_d": "Quick Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Counting sort is non-comparison based and efficient for small ranges of integers."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If an algorithm's complexity is O(2^n), it is considered:",
+    "option_a": "Logarithmic",
+    "option_b": "Exponential",
+    "option_c": "Polynomial",
+    "option_d": "Quadratic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Exponential growth is very fast and usually indicates an intractable problem for large n."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Basics",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "A 'Circular Linked List' has what special property?",
+    "option_a": "The head points to null",
+    "option_b": "The last node points back to the head",
+    "option_c": "It has no data",
+    "option_d": "It can only go backwards",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "There are no NULL pointers in a standard circular linked list."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How many external nodes (leaves) does a binary tree with I internal nodes have (in a full binary tree)?",
+    "option_a": "I",
+    "option_b": "I + 1",
+    "option_c": "2I",
+    "option_d": "I / 2",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is a property of strictly binary trees."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Searching",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In a sorted array, what index will 'Binary Search' check first for array [1, 3, 5, 7, 9, 11]?",
+    "option_a": "0",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "5",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "(0 + 5) / 2 = 2 (index 2 contains value 5) - or index 3 depending on implementation. Usually floor(low+high/2) gives 2."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which sorting algorithm is most efficient for sorting large amounts of data in external storage (Disk)?",
+    "option_a": "Quick Sort",
+    "option_b": "Merge Sort",
+    "option_c": "Bubble Sort",
+    "option_d": "Insertion Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "External Merge Sort uses a divide and conquer strategy that minimizes disk reads/writes."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Strings",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'String Interning'?",
+    "option_a": "Translating strings to binary",
+    "option_b": "Storing only one copy of each distinct string value",
+    "option_c": "A ways to compress strings",
+    "option_d": "Converting strings to numbers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Interning is used in Java and Python to save space and speed up comparisons."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Recursion",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Backtracking'?",
+    "option_a": "A search algorithm that explores all paths",
+    "option_b": "A refined brute force that builds a solution step by step and 'backs up' if a partial solution cannot be completed",
+    "option_c": "Moving backward in an array",
+    "option_d": "A sorting strategy",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Examples include N-Queens, Sudoku solving, and depth-first search variations."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity of building a heap from an array of n elements?",
+    "option_a": "O(n log n)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Using the 'heapify' method from the bottom-up, it results in O(n) although it looks like n log n."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What happens if an algorithm has no base case in recursion?",
+    "option_a": "It finishes quickly",
+    "option_b": "Stack Overflow",
+    "option_c": "Out of Memory on Heap",
+    "option_d": "Compilation Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Infinite recursion exhausts the call stack space."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Hashing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In Hashing, what is a 'Perfect Hash Function'?",
+    "option_a": "A function with no hash",
+    "option_b": "A function that generates no collisions for a static set of keys",
+    "option_c": "A function using random numbers",
+    "option_d": "The identity function",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It maps each key into a unique slot."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the time complexity of finding an element in a Hash Map (average case)?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "With a good hash function and distribution, access is constant time on average."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Basics",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Which of these is a LIFO data structure?",
+    "option_a": "Queue",
+    "option_b": "Stack",
+    "option_c": "List",
+    "option_d": "Graph",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Last-In First-Out: used by stacks."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Trees",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Height' of a leaf node?",
+    "option_a": "1",
+    "option_b": "0",
+    "option_c": "n",
+    "option_d": "Depends on the root",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Height is the number of edges to the deepest descendant; for a leaf, that is 0."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Searching",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In interpolation search, compared to binary search, the probe position:",
+    "option_a": "Is always in the middle",
+    "option_b": "Estimates the position based on the value being searched and the range",
+    "option_c": "Is random",
+    "option_d": "Is always the first index",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Interpolation search works best for uniformly distributed data, similar to how we look for a word in a dictionary."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which sorting algorithm is known for partition and pivot?",
+    "option_a": "Merge Sort",
+    "option_b": "Quick Sort",
+    "option_c": "Selection Sort",
+    "option_d": "Bubble Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Quick sort is defined by its partitioning step."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Graphs",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "An 'Acyclic' graph is one that contains:",
+    "option_a": "No vertices",
+    "option_b": "No cycles",
+    "option_c": "Only cycles",
+    "option_d": "Infinite paths",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Trees are a classic example of connected acyclic graphs."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Complexity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is better than O(n)?",
+    "option_a": "O(n^2)",
+    "option_b": "O(log n)",
+    "option_c": "O(2^n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Logarithmic growth is significantly slower (more efficient) than linear growth."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Linked Lists",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How many pointers must be changed to reverse the direction of one link in a singly linked list?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "0",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You typically track 'prev', 'current', and 'next' nodes (shifting links)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Basics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "An 'Abstract Data Type' (ADT) defines:",
+    "option_a": "The hardware used",
+    "option_b": "What operations can be performed, but not how they are implemented",
+    "option_c": "String manipulation only",
+    "option_d": "The specific bits in memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ADTs like 'Stack' or 'List' define behavior; data structures provide implementation."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 2,
+    "level_topic": "Hashing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Rehashing'?",
+    "option_a": "Deleting the map",
+    "option_b": "Creating a larger hash table and re-inserting all existing elements when the load factor exceeds a threshold",
+    "option_c": "Encrypting keys twice",
+    "option_d": "Replacing the hash function with a simpler one",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Rehashing keeps the table sparse enough for O(1) performance."
+  }
+]

@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate Concepts",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which keyword is used to handle exceptions in Python?",
+    "option_a": "catch",
+    "option_b": "except",
+    "option_c": "error",
+    "option_d": "throws",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Python uses 'try...except' blocks for exception handling."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate Concepts",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does `*args` represent in a function definition?",
+    "option_a": "A dictionary of keyword arguments",
+    "option_b": "A tuple of variable positional arguments",
+    "option_c": "A list of required arguments",
+    "option_d": "A pointer to an array",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "*args allows a function to accept any number of positional arguments which are gathered into a tuple."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate Concepts",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you correctly open a file for reading and ensure it closes automatically?",
+    "option_a": "open('file.txt', 'r')",
+    "option_b": "with open('file.txt', 'r') as f:",
+    "option_c": "f = open('file.txt'); read(f)",
+    "option_d": "read_file('file.txt')",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'with' statement (context manager) ensures the file is closed automatically after the block."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate Concepts",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is a 'lambda' function in Python?",
+    "option_a": "A recursive function",
+    "option_b": "An anonymous, one-line function",
+    "option_c": "A function that returns multiple values",
+    "option_d": "A high-order generator",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lambda expressions allow you to create small, one-off, anonymous functions."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate Concepts",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the output of `[i for i in range(10) if i > 5][0]`?",
+    "option_a": "0",
+    "option_b": "5",
+    "option_c": "6",
+    "option_d": "IndexError",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The list comprehension produces [6, 7, 8, 9]. The element at index 0 is 6."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate Concepts",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What will `print(list(set([1, 2, 2, 3])))` output?",
+    "option_a": "[1, 2, 2, 3]",
+    "option_b": "[1, 2, 3]",
+    "option_c": "[1, 3]",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Converting a list to a set removes duplicates. Converting back to a list gives the unique elements."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate Concepts",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these methods are used to add items to a list?",
+    "option_a": ".append()",
+    "option_b": ".extend()",
+    "option_c": ".insert()",
+    "option_d": ".add()",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": ".append adds one item, .extend adds an iterable, .insert adds at a specific index. .add is for sets."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate Concepts",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Global Interpreter Lock' (GIL) in Python?",
+    "option_a": "A tool to lock variables",
+    "option_b": "A mechanism that allows only one thread to execute bytecode at a time",
+    "option_c": "A memory management system",
+    "option_d": "An encryption standard",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The GIL is a mutex that prevents multiple native threads from executing Python bytecodes at once."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate Concepts",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In a dictionary, how do you get all the keys?",
+    "option_a": "d.all_keys()",
+    "option_b": "d.keys()",
+    "option_c": "d.get_keys()",
+    "option_d": "keys(d)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The keys() method returns a view object that displays a list of all the keys in the dictionary."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate Concepts",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is 'slicing' in Python?",
+    "option_a": "Deleting elements",
+    "option_b": "Accessing a range of elements from a sequence",
+    "option_c": "Splitting a string by space",
+    "option_d": "A way to sort data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Slicing uses the [start:stop:step] syntax to extract portions of sequences like lists or strings."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "OOP",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which method is the constructor in a Python class?",
+    "option_a": "__init__",
+    "option_b": "__new__",
+    "option_c": "constructor",
+    "option_d": "main",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The __init__ method is called when an object is created from a class and allows it to initialize the attributes."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "OOP",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the 'self' parameter in a class method represent?",
+    "option_a": "The class itself",
+    "option_b": "The instance of the class",
+    "option_c": "A global variable",
+    "option_d": "The first attribute",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'self' represents the instance of the object itself, allowing access to its attributes and methods."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "OOP",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "How do you denote a private attribute in a Python class by convention?",
+    "option_a": "private my_attr",
+    "option_b": "__my_attr",
+    "option_c": "_my_attr",
+    "option_d": "my_attr!",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Attributes with a double underscore prefix are subject to name mangling to hinder external access."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the `zip()` function do?",
+    "option_a": "Compresses a file",
+    "option_b": "Iterates over multiple iterables in parallel, yielding tuples",
+    "option_c": "Combines strings with a delimiter",
+    "option_d": "Fast-forwards a loop",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "zip() is a built-in function that takes iterables and aggregates them into an iterator of tuples."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'List Comprehension'?",
+    "option_a": "A way to understand lists better",
+    "option_b": "A concise way to create lists using a single line of code",
+    "option_c": "A list that contains other lists",
+    "option_d": "Checking if an element is in a list",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "List comprehensions provide a short syntax for creating a new list based on existing sequences."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Dictionaries",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What happens if you try to access a dictionary key that doesn't exist using `d[key]`?",
+    "option_a": "Returns None",
+    "option_b": "Raises a KeyError",
+    "option_c": "Creates the key automatically",
+    "option_d": "Returns 0",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Direct access with brackets raises an error if the key is missing; use d.get(key) to avoid this."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Error Handling",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of the 'finally' block?",
+    "option_a": "To catch all errors",
+    "option_b": "To execute code regardless of whether an exception was raised or not",
+    "option_c": "To end the program",
+    "option_d": "To skip the error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The finally block is often used for cleanup actions, like closing files."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "OOP",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Inheritance' in OOP?",
+    "option_a": "Saving data to a database",
+    "option_b": "Creating a new class based on an existing class",
+    "option_c": "Hiding internal data",
+    "option_d": "Sharing variables between functions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Inheritance allows a child class to inherit attributes and methods from a parent class."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Modules",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does `import math as m` do?",
+    "option_a": "Imports only part of the math module",
+    "option_b": "Imports the math module and gives it the alias 'm'",
+    "option_c": "Imports a module named 'm'",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'as' keyword is used to create an alias for a module to make it easier or shorter to reference."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Strings",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does ' '.join(['a', 'b', 'c']) return?",
+    "option_a": "['a', 'b', 'c']",
+    "option_b": "'abc'",
+    "option_c": "'a b c'",
+    "option_d": "Error",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The join() method takes all items in an iterable and joins them into one string using the delimiter (' ')."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Lists",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "How do you deep copy a list `L`?",
+    "option_a": "L.copy()",
+    "option_b": "list(L)",
+    "option_c": "import copy; copy.deepcopy(L)",
+    "option_d": "L[:]",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "deepcopy() handles nested objects, ensuring the entire structure is copied independently."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Functions",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What are `*args` and `**kwargs` used for in function definitions?",
+    "option_a": "Required arguments",
+    "option_b": "Optional keyword and positional arguments",
+    "option_c": "To pass a variable number of positional or keyword arguments",
+    "option_d": "Naming constants",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "They allow a function to accept any number of extra arguments."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Iterators",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Generator' in Python?",
+    "option_a": "A function that creates electric power",
+    "option_b": "A function that returns an iterator which yields values one by one using 'yield'",
+    "option_c": "A ways to name files",
+    "option_d": "A massive list",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Generators are memory-efficient because they produce values on the fly rather than storing them in a list."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the `map()` function do?",
+    "option_a": "Shows a map of the script",
+    "option_b": "Applies a given function to each item of an iterable",
+    "option_c": "Finds a value in a list",
+    "option_d": "Sorts a dictionary",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "map(function, iterable) returns an iterator that applies the function to each element."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does `filter()` do?",
+    "option_a": "Deletes files",
+    "option_b": "Constructs an iterator from elements of an iterable for which a function returns true",
+    "option_c": "Cleans the console",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "filter(function, iterable) extracts elements that satisfy the condition."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Decorators",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Decorator' in Python?",
+    "option_a": "A person who designs UIs",
+    "option_b": "A function that takes another function and extends its behavior without explicitly modifying it",
+    "option_c": "A ways to name variables",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Decorators use the @ notation to wrap a function with additional logic."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "OOP",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Polymorphism'?",
+    "option_a": "Having many forms; the ability for different classes to be treated as instances of the same class through the same interface",
+    "option_b": "Hiding data",
+    "option_c": "Deleting objects",
+    "option_d": "A math library",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Polymorphism allows methods to behave differently based on the object calling them."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "File Handling",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Why is it better to use a 'with' statement when opening a file?",
+    "option_a": "It's faster",
+    "option_b": "It automatically closes the file even if an exception occurs",
+    "option_c": "It encrypts the file",
+    "option_d": "It finds the file faster",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The context manager protocol ensures resources are released properly."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Strings",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is an 'f-string'?",
+    "option_a": "A funny string",
+    "option_b": "Formatted string literal; a way to embed expressions inside string literals",
+    "option_c": "A fixed string",
+    "option_d": "A function for strings",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "f-strings (f'...') are the most efficient and readable way to format strings in modern Python."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "OOP",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does `super()` do in a class?",
+    "option_a": "Creates a super object",
+    "option_b": "Returns a proxy object that delegates method calls to a parent or sibling class",
+    "option_c": "Deletes the class",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "super() is commonly used in __init__ to call the parent's constructor."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Data Types",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the result of `id(a) == id(b)` if `a = [1]` and `b = [1]`?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "None",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "a and b are two different objects in memory, despite having the same values."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Libraries",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which library is standard for regular expressions?",
+    "option_a": "regexp",
+    "option_b": "re",
+    "option_c": "regex",
+    "option_d": "standard_re",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 're' module provides support for regular expressions."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Libraries",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which library is used to work with JSON in Python?",
+    "option_a": "json_lib",
+    "option_b": "json",
+    "option_c": "jsontool",
+    "option_d": "none",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'json' module provides methods for parsing and creating JSON."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Iterators",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does `enumerate()` do?",
+    "option_a": "Counts elements",
+    "option_b": "Adds a counter to an iterable and returns it as an enumerate object",
+    "option_c": "Deletes every second item",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's perfect for getting both the index and the value in a loop: for i, val in enumerate(list)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Sets",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which operation finds elements common to two sets?",
+    "option_a": "union",
+    "option_b": "intersection",
+    "option_c": "difference",
+    "option_d": "symmetric_difference",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The intersection() method or & operator returns a set of shared elements."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "OOP",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Class Method' (@classmethod)?",
+    "option_a": "A method that deleted the class",
+    "option_b": "A method that is bound to the class and not the instance, taking 'cls' as the first argument",
+    "option_c": "A method for private use",
+    "option_d": "A training tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Class methods can access and modify class state that applies across all instances."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "OOP",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Static Method' (@staticmethod)?",
+    "option_a": "A method for static files",
+    "option_b": "A method that doesn't receive an implicit first argument (neither self nor cls)",
+    "option_c": "A slow method",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Static methods behave like plain functions but belong to the class's namespace."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Data Types",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the output of `bool('False')`?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "None",
+    "option_d": "Error",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Any non-empty string evaluates to True, even the string 'False'."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Error Handling",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you manually trigger an exception in Python?",
+    "option_a": "throw Error",
+    "option_b": "raise Error",
+    "option_c": "catch Error",
+    "option_d": "trigger Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'raise' keyword is used to raise a specific exception."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Libraries",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which module allows for multi-threading in Python?",
+    "option_a": "threads",
+    "option_b": "threading",
+    "option_c": "parallel",
+    "option_d": "multi",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The threading module provides higher-level threading interfaces."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Unpacking' in Python?",
+    "option_a": "Opening a box",
+    "option_b": "Extracting values from an iterable into multiple variables, e.g., a, b = (1, 2)",
+    "option_c": "Deleting memory",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unpacking is a efficient way to assign variables from lists or tuples."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Control Flow",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What will `else` after a `for` loop do?",
+    "option_a": "Runs if the loop finishes normally (no break)",
+    "option_b": "Runs if the loop is broken",
+    "option_c": "Runs every iteration",
+    "option_d": "Error",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The else block in a loop executes only if the loop was not terminated by a break statement."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Libraries",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which library helps in dealing with HTTP requests?",
+    "option_a": "http",
+    "option_b": "requests",
+    "option_c": "net",
+    "option_d": "url",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'requests' is the most popular third-party library for making HTTP calls (though 'urllib' is in the stdlib)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Pickling'?",
+    "option_a": "Processing vegetables",
+    "option_b": "Serializing and de-serializing Python objects into a byte stream",
+    "option_c": "Cleaning code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The pickle module is used for saving complex Python objects to disk."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Intermediate",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which function converts a string to all lowercase?",
+    "option_a": "s.lowercase()",
+    "option_b": "s.lower()",
+    "option_c": "lower(s)",
+    "option_d": "s.low()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The lower() string method returns a lowercased copy of the string."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Dictionaries",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you merge two dictionaries `d1` and `d2` in Python 3.9+?",
+    "option_a": "d1.add(d2)",
+    "option_b": "d1 | d2",
+    "option_c": "d1 + d2",
+    "option_d": "merge(d1, d2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Python 3.9 introduced the union operator (|) for dictionaries."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Strings",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does 'apple'.replace('p', 'b') return?",
+    "option_a": "abble",
+    "option_b": "apele",
+    "option_c": "apple",
+    "option_d": "Error",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "replace(old, new) replaces occurrences of the old substring with the new one."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Standard Library",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which library helps you deal with terminal arguments?",
+    "option_a": "args",
+    "option_b": "sys",
+    "option_c": "os",
+    "option_d": "terminal",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "sys.argv contains the command-line arguments passed to a Python script."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Math",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the output of `round(3.5)`?",
+    "option_a": "3",
+    "option_b": "4",
+    "option_c": "3.5",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In Python 3, round(3.5) rounds to the nearest even number if exactly in between, which is 4."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 2,
+    "level_topic": "Loops",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you count from 0 to 10 in steps of 2?",
+    "option_a": "range(0, 11, 2)",
+    "option_b": "range(2, 10)",
+    "option_c": "range(0, 10, 1)",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "range(start, stop, step) generates numbers from start to stop-1 with the given step."
+  }
+]

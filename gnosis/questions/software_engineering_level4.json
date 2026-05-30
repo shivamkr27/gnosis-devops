@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Software Metrics",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What does 'Cyclomatic Complexity' measure in a program?",
+    "option_a": "The number of lines of code",
+    "option_b": "The number of independent paths through the source code (logical complexity)",
+    "option_c": "The number of cycles in the hardware clock",
+    "option_d": "The total file size in kilobytes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "High cyclomatic complexity indicates the code is hard to test and maintain due to many branches and decision points."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "SOLID Principles",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In the SOLID acronym, what does the 'L' stand for, and what does it prescribe?",
+    "option_a": "Logical Consistency; Programs should be logical",
+    "option_b": "Liskov Substitution Principle; Objects of a superclass should be replaceable with objects of its subclasses without breaking the application",
+    "option_c": "Layered Architecture; Apps should have at least 3 layers",
+    "option_d": "Loop Invariants; Loops must be well-defined",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Liskov Substitution ensures that inheritance is used correctly such that subclasses are truly 'is-a' types of their parents."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Software Maintenance",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which type of maintenance is performed to keep a system up-to-date with a changing environment (e.g., a new OS update)?",
+    "option_a": "Corrective Maintenance",
+    "option_b": "Adaptive Maintenance",
+    "option_c": "Perfective Maintenance",
+    "option_d": "Preventive Maintenance",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Adaptive maintenance is about modifying the software to work in a new or changed environment."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Clean Code",
+    "question_type": "multi_correct",
+    "timer_seconds": 45,
+    "question_text": "Which of these are SOLID design principles?",
+    "option_a": "Single Responsibility Principle",
+    "option_b": "Open-Closed Principle",
+    "option_c": "Interface Segregation Principle",
+    "option_d": "Least Privilege Principle",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "SOLID stands for Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Software Quality",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Cohesion' in software design?",
+    "option_a": "The degree to which different modules depend on each other",
+    "option_b": "The degree to which the elements inside a module belong together",
+    "option_c": "The speed of the network",
+    "option_d": "A physical property of magnets",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "High cohesion means a module does one thing and does it well. Low coupling is usually paired with high cohesion for good design."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Software Design",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Coupling' in software design, and what is the ideal state?",
+    "option_a": "The internal strength of a module; Ideal is high coupling",
+    "option_b": "The measure of interdependence between modules; Ideal is low coupling",
+    "option_c": "The number of users; Ideal is many users",
+    "option_d": "The file size; Ideal is small files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Low coupling makes modules independent, making the system easier to maintain and change."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Architectural Patterns",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is the 'Service Mesh' pattern primarily used for in microservices?",
+    "option_a": "Storing data as a mesh",
+    "option_b": "Managing service-to-service communication, often using a sidecar proxy to handle reliability, security, and observability",
+    "option_c": "A type of firewall",
+    "option_d": "Increasing CPU speed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Istio and Linkerd are common implementations of the service mesh pattern."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Halstead complexity' based on?",
+    "option_a": "Decision points",
+    "option_b": "The number of operators and operands in the source code",
+    "option_c": "The amount of comments",
+    "option_d": "Execution time",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Halstead metrics attempt to measure software's volume, difficulty, and effort."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Project Estimation",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "In Function Point analysis, which of these is NOT a parameter considered?",
+    "option_a": "External Inputs",
+    "option_b": "Internal Logical Files",
+    "option_c": "Lines of Code (LOC)",
+    "option_d": "External Interface Files",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Function Points focus on the functional size, independent of the programming language or LOC."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Process Maturity",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "At which CMM level does an organization focus on continuous process improvement through both incremental and innovative technological changes?",
+    "option_a": "Level 3: Defined",
+    "option_b": "Level 4: Managed",
+    "option_c": "Level 5: Optimizing",
+    "option_d": "Level 2: Repeatable",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Level 5 organizations collect and analyze data to drive continuous improvement."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Hexagonal Architecture' (Ports and Adapters)?",
+    "option_a": "A building with 6 sides",
+    "option_b": "An architecture that separates the core business logic from external dependencies (DB, UI, APIs) using interfaces (ports) and implementations (adapters)",
+    "option_c": "A system with exactly 6 layers",
+    "option_d": "A way to draw flowcharts",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It allows the application to be tested in isolation and swap out technologies easily."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Reliability",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What does MTTR stand for in reliability engineering?",
+    "option_a": "Maximum Time To Repair",
+    "option_b": "Mean Time To Recover (or Repair)",
+    "option_c": "Median Task Time Record",
+    "option_d": "Minutes To Total Resolution",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MTTR is a key metric for how quickly a system can be restored after a failure."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Reliability",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "How is Availability (A) mathematically calculated?",
+    "option_a": "MTBF / (MTBF + MTTR)",
+    "option_b": "MTTR / MTBF",
+    "option_c": "MTBF - MTTR",
+    "option_d": "MTBF + MTTR",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Availability represents the proportion of time a system is functional."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Configuration Management",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Change Control' in SCM?",
+    "option_a": "Changing the color of the UI",
+    "option_b": "The process of formally submitting, evaluating, approving, and coordinating changes to a baseline configuration",
+    "option_c": "Deleting the project history",
+    "option_d": "Forcing users to update",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Change control prevents 'scope creep' and ensures that changes don't introduce regressions."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Validation",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What does a 'Clean Room' software engineering approach emphasize?",
+    "option_a": "Developing code in a sterile laboratory",
+    "option_b": "Mathematical verification and statistical quality control to achieve zero-defect software",
+    "option_c": "Deleting the database",
+    "option_d": "Writing code without using libraries",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It relies on formal methods and discourages unit testing by the developer, focusing instead on correctness proofs."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Metrics",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is the 'Fan-In' of a module?",
+    "option_a": "The number of lines of code",
+    "option_b": "The number of modules that call (control flows into) the given module",
+    "option_c": "The number of internal variables",
+    "option_d": "The speed of the cooling system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "High fan-in suggests high reuse but also that the module might be a central point of failure."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Metrics",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is the 'Fan-Out' of a module?",
+    "option_a": "The number of users who like the module",
+    "option_b": "The number of modules called by (control flows out from) the given module",
+    "option_c": "The number of lines in a print function",
+    "option_d": "A type of design pattern",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "High fan-out can indicate that a module is too complex and depends on too many other components."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Formal Methods",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Model Checking'?",
+    "option_a": "Checking a fashion model's portfolio",
+    "option_b": "An automated technique for verifying that a finite-state model of a system satisfies a formal specification (often using temporal logic)",
+    "option_c": "Testing a database schema",
+    "option_d": "Drawing UML diagrams",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Model checking is used extensively in hardware and safety-critical software verification."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Event Sourcing'?",
+    "option_a": "A way to find events to attend",
+    "option_b": "Storing the state of a system as a sequence of immutable events rather than just the current state",
+    "option_c": "Using JavaScript event listeners for everything",
+    "option_d": "Deleting log files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This allows for complete audit trails and replaying history to restore state."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Testing",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Mutation Testing' designed to evaluate?",
+    "option_a": "Potential virus spread",
+    "option_b": "The effectiveness of the test suite (by injecting small faults into the code and seeing if tests catch them)",
+    "option_c": "The hardware durability",
+    "option_d": "The speed of the compiler",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If a code change (mutation) survives, it means the tests didn't cover that specific logic/path."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "SRE",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "In Site Reliability Engineering (SRE), what is an 'Error Budget'?",
+    "option_a": "Money to pay for bugs",
+    "option_b": "The maximum amount of time a technical system is allowed to be down, used to balance innovation speed with stability",
+    "option_c": "The number of bugs a developer can make",
+    "option_d": "The cost of testing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If the budget is exhausted, releases must stop until stability is restored."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Project Estimation",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the COCOMO model primarily used for?",
+    "option_a": "Measuring network speed",
+    "option_b": "Software cost and effort estimation based on the size of the project (KLOC)",
+    "option_c": "Testing security",
+    "option_d": "Drawing DFDs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "COCOMO stands for COnstructive COst MOdel."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'CQRS' (Command Query Responsibility Segregation)?",
+    "option_a": "A way to write SQL",
+    "option_b": "A pattern that separates the data model for updates (commands) from the model for reads (queries)",
+    "option_c": "A type of firewall",
+    "option_d": "A bug tracking tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CQRS is often used in high-performance systems and paired with Event Sourcing."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Formal Methods",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What does 'Z notation' use as its primary mathematical foundation?",
+    "option_a": "Boolean algebra only",
+    "option_b": "Zermelo-Fraenkel set theory and first-order predicate logic",
+    "option_c": "Calculus",
+    "option_d": "Geometry",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Z is a formal specification language used to describe and model computing systems."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Quality",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Six Sigma' goal in terms of defects per million opportunities (DPMO)?",
+    "option_a": "100",
+    "option_b": "3.4",
+    "option_c": "0",
+    "option_d": "1000",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Six Sigma aim for near-perfect quality by reducing process variation."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Design Principles",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Law of Demeter' (Principle of Least Knowledge)?",
+    "option_a": "All users are the same",
+    "option_b": "A design heuristic where an object should only talk to its 'friends' (immediate neighbors) and never reaching through them ('talk to strangers')",
+    "option_c": "Code must be open source",
+    "option_d": "Complexity doubles every two years",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps in achieving loose coupling and encapsulation."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Legacy Systems",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Software Rejuvenation' in the context of long-running systems?",
+    "option_a": "Hiring young developers",
+    "option_b": "Proactively restarting a system or its components to clean up resource leaks (memory, sockets) before failure occurs",
+    "option_c": "Rewriting the system in Java",
+    "option_d": "Deleting the old database",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's a preventive measure to improve availability in systems known to have 'software aging'."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is the 'Sidecar' pattern in microservices?",
+    "option_a": "A motorcycle feature",
+    "option_b": "Deploying a helper container (the sidecar) alongside the main application container to handle cross-cutting concerns like logging or networking",
+    "option_c": "Running a backup server in another city",
+    "option_d": "A UI theme",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The sidecar extends the main container's capabilities without modifying it."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Process Models",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Agile Unified Process' (AUP)?",
+    "option_a": "Agile but slow",
+    "option_b": "A simplified version of IBM's Rational Unified Process (RUP) that incorporates Agile values (Focus on modeling, implementation, and test)",
+    "option_c": "A type of database join",
+    "option_d": "Coding without documentation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AUP keeps the RUP structure but simplifies the complexity and overhead."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Shared Nothing' architecture?",
+    "option_a": "Removing the internet",
+    "option_b": "A distributed computing architecture where each node is independent, self-sufficient, and shares no central disk or memory",
+    "option_c": "A system where users don't share data",
+    "option_d": "Deleting the database",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is highly scalable as there are no single points of contention."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Reliability",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Software Aging'?",
+    "option_a": "The hardware getting old",
+    "option_b": "The progressive accumulation of errors (like memory leaks or fragmentation) in a system that eventually leads to performance degradation or failure",
+    "option_c": "Developers getting old",
+    "option_d": "Obsolete documentation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Software rejuvenation is used to combat software aging."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Maintenance",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Preventive Maintenance'?",
+    "option_a": "Fixing bugs after they crash the server",
+    "option_b": "Activity aimed at detecting and correcting latent faults in the software before they become effective faults",
+    "option_c": "Updating colors",
+    "option_d": "Buying a firewall",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's about anticipating future problems and fixing them now (e.g., refactoring or updating libraries)."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Expert Systems",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "In the context of 'AI Engineering', what is 'Data Drift'?",
+    "option_a": "Moving data to a new server",
+    "option_b": "The phenomenon where the distribution of input data changes over time, potentially impacting a model's prediction accuracy",
+    "option_c": "Losing data",
+    "option_d": "Slow database queries",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Monitoring for drift is a critical part of the MLOps lifecycle."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Expert Systems",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Model Inversion Attack' in ML Security?",
+    "option_a": "Flipping the weight of neural nets",
+    "option_b": "An attack where an adversary uses model outputs to infer information about the sensitive training data",
+    "option_c": "Deleting the model",
+    "option_d": "Making the model slow",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Providing privacy guarantees (like Differential Privacy) can help mitigate this."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Design",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Fluent Interface' in API design?",
+    "option_a": "An interface that speaks many languages",
+    "option_b": "An API designed to be highly readable through method chaining (e.g., obj.doThis().thenThat())",
+    "option_c": "A fast UI",
+    "option_d": "A type of network port",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It aims to make the code read like a sentence."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Testing",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Fuzz Testing' (Fuzzing)?",
+    "option_a": "Testing for extra white space",
+    "option_b": "An automated testing technique that involves providing invalid, unexpected, or random data as inputs to a computer program",
+    "option_c": "Testing the team's loyalty",
+    "option_d": "A round of unit testing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fuzzing is often used to find security vulnerabilities and memory leaks."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Requirements",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Win-Win' Requirements Negotiation?",
+    "option_a": "Winning against the client",
+    "option_b": "A collaborative approach (like Boehm's Spiral) where stakeholders identify their 'win conditions' and negotiate towards a mutually beneficial set of requirements",
+    "option_c": "Ignoring the budget",
+    "option_d": "Getting double the work for double the price",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It focuses on reconciling conflicting stakeholder goals early."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Semantic Versioning' (SemVer)?",
+    "option_a": "Dictionary ordering of code",
+    "option_b": "A versioning scheme (MAJOR.MINOR.PATCH) where version numbers convey meaning about the underlying changes",
+    "option_c": "Adding comments to versions",
+    "option_d": "Giving versions names like 'Apple' or 'Banana'",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MAJOR changes indicate breaking changes; MINOR for new features; PATCH for backwards-compatible bug fixes."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Design Patterns",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "Which design pattern is used to separate an abstraction from its implementation so that the two can vary independently?",
+    "option_a": "Adapter",
+    "option_b": "Bridge",
+    "option_c": "Composite",
+    "option_d": "Decorator",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bridge is structural, focusing on composition over inheritance."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Design Patterns",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "Which design pattern allows you to compose objects into tree structures to represent part-whole hierarchies?",
+    "option_a": "Flyweight",
+    "option_b": "Composite",
+    "option_c": "Proxy",
+    "option_d": "Facade",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Composite pattern lets clients treat individual objects and compositions of objects uniformly."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Metrics",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Bang Metric'?",
+    "option_a": "A measure of how loud the code is",
+    "option_b": "A function-oriented size metric developed by DeMarco to measure the deliverable 'bang' of a system based on its specification",
+    "option_c": "The speed of the CPU",
+    "option_d": "A way to count bugs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It counts data primitives, state transitions, etc., from a system specification."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Validation",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is the 'Basis Set' in path testing?",
+    "option_a": "A set of elementary school books",
+    "option_b": "The set of linearly independent paths through a program (determined by cyclomatic complexity)",
+    "option_c": "A list of users",
+    "option_d": "The database connection string",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Achieving 100% basis path coverage ensures that every statement and branch has been executed at least once."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Testing",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'All-Pairs Testing'?",
+    "option_a": "Testing two developers at once",
+    "option_b": "A combinatorial testing method that ensures all possible discrete pairs of input parameters are tested at least once",
+    "option_c": "Testing the front and back end simultaneously",
+    "option_d": "Testing even-numbered bugs only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It significantly reduces the number of test cases while still catching most interaction bugs."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Terms",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Brooks' Law' regarding project management?",
+    "option_a": "Always hire more people",
+    "option_b": "Adding manpower to a late software project makes it later",
+    "option_c": "Documentation must be 100 pages long",
+    "option_d": "The fastest coder wins",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Due to communication overhead and ramp-up time for new members."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "SDLC",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What does a 'Death March' project refer to in software engineering management?",
+    "option_a": "A project for a cemetery",
+    "option_b": "A project whose schedule or scope is significantly beyond what is achievable, leading to burnout and guaranteed failure",
+    "option_c": "A project that was canceled early",
+    "option_d": "A training session on security",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Coined by Edward Yourdon, it describes high-pressure environments with unrealistic expectations."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Documentation",
+    "question_type": "expert",
+    "timer_seconds": 40,
+    "question_text": "What is 'ADR' in software documentation?",
+    "option_a": "Automatic Data Recovery",
+    "option_b": "Architecture Decision Record",
+    "option_c": "Advanced Deployment Report",
+    "option_d": "Authorized Developer Registry",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ADRs capture the 'why' behind an architectural choice, providing context for future maintainers."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Least Privilege' in secure coding design?",
+    "option_a": "Paying developers a low salary",
+    "option_b": "Granting an entity only the minimum levels of access necessary to perform its functions",
+    "option_c": "Using free open source software",
+    "option_d": "Hiding the code from users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It minimizes the potential damage from a compromised component."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Design Principles",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the 'YAGNI' principle?",
+    "option_a": "You Always Get New Items",
+    "option_b": "You Ain't Gonna Need It (don't add functionality until it's actually required)",
+    "option_c": "Your App Gets No Interest",
+    "option_d": "Yet Another Great Network interface",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It discourages over-engineering and premature optimization."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Processes",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Scrum of Scrums' designated for?",
+    "option_a": "A very large meeting room",
+    "option_b": "Scaling Agile development by coordinating multiple Scrum teams working on the same product",
+    "option_c": "Deleting the Scrum Master role",
+    "option_d": "Testing the Scrum process itself",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps in managing dependencies across disparate but related teams."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 4,
+    "level_topic": "Quality",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Statistical Software Quality Assurance'?",
+    "option_a": "Calculating the average number of bugs",
+    "option_b": "Using statistical methods to analyze defects and identify the 'Vital Few' causes (Pareto analysis)",
+    "option_c": "Counting users every day",
+    "option_d": "Measuring CPU cycles",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 80/20 rule states that 80% of defects can be traced to 20% of causes."
+  }
+]

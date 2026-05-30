@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "OOP & Advanced Structures",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "How do you specify inheritance in Python classes?",
+    "option_a": "Class Child : Parent",
+    "option_b": "Class Child(Parent):",
+    "option_c": "Class Child extends Parent:",
+    "option_d": "Class Child implements Parent:",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Inheritance is specified by putting the parent class in parentheses after the child class name."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "OOP & Advanced Structures",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the purpose of the `__init__` method in a Python class?",
+    "option_a": "To destroy the object",
+    "option_b": "To initialize the object's attributes",
+    "option_c": "To define a private method",
+    "option_d": "To make the class abstract",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "__init__ is the constructor method in Python, called when an object is created from a class."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "OOP & Advanced Structures",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which keyword is used to create a generator in Python?",
+    "option_a": "return",
+    "option_b": "generate",
+    "option_c": "yield",
+    "option_d": "produce",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 'yield' statement is used in a function to make it a generator, allowing it to produce values over time."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "OOP & Advanced Structures",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What does a 'decorator' do in Python?",
+    "option_a": "Changes the visual appearance of code",
+    "option_b": "Adds styling to strings",
+    "option_c": "Wraps another function to modify its behavior without changing it",
+    "option_d": "Reduces memory usage of classes",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Decorators are a tool for wrapping a function (or class) to extend or modify its behavior."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "OOP & Advanced Structures",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is 'super()' used for in Python?",
+    "option_a": "To call a static method",
+    "option_b": "To access the parent class's methods or constructor",
+    "option_c": "To create a global variable",
+    "option_d": "To accelerate execution speed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "super() returns a temporary object of the superclass, allowing you to call its methods."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "OOP & Advanced Structures",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between a list and a generator expression?",
+    "option_a": "List is faster for small data",
+    "option_b": "List is mutable, generator is not",
+    "option_c": "List evaluates immediately; generator evaluates lazily (one at a time)",
+    "option_d": "There is no difference",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Generators save memory by yielding items only when requested (lazy evaluation)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "OOP & Advanced Structures",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these are special 'dunder' methods in Python?",
+    "option_a": "__str__",
+    "option_b": "__len__",
+    "option_c": "__add__",
+    "option_d": "__main__",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "__str__, __len__, and __add__ are methods used to implement built-in behaviors. __main__ is a module name constant."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "OOP & Advanced Structures",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is 'Multiple Inheritance' in Python?",
+    "option_a": "A class inheriting from multiple levels of parents",
+    "option_b": "A class inheriting from more than one base class",
+    "option_c": "Multiple classes inheriting from one parent",
+    "option_d": "Inheriting methods only, not attributes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Python allows a single class to inherit from multiple parent classes."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "OOP & Advanced Structures",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "How do you define a class-level variable in Python?",
+    "option_a": "Inside __init__",
+    "option_b": "Using self.variable",
+    "option_c": "Directly inside the class body but outside any method",
+    "option_d": "In a separate config file",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Variables defined directly in the class are shared by all instances of the class."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "OOP & Advanced Structures",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of `@staticmethod`?",
+    "option_a": "To make a method private",
+    "option_b": "To define a method that belongs to the class, not the instance, and doesn't take 'self' or 'cls'",
+    "option_c": "To stop a method from being overridden",
+    "option_d": "To ensure thread safety",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Static methods are utility methods that don't need access to instance or class-level state."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does 'MRO' stand for in Python?",
+    "option_a": "Method Resolution Order",
+    "option_b": "Main Research Operation",
+    "option_c": "Memory Recovery Object",
+    "option_d": "Module Root Option",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "MRO is the order in which Python looks for a method in a hierarchy of classes."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Context Managers",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which methods are required to make a class a 'Context Manager'?",
+    "option_a": "__open__ and __close__",
+    "option_b": "__enter__ and __exit__",
+    "option_c": "__start__ and __stop__",
+    "option_d": "__begin__ and __end__",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "These methods are part of the context management protocol used by the 'with' statement."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Metaclass'?",
+    "option_a": "A class with many methods",
+    "option_b": "A class that defines the behavior of other classes; a 'class of a class'",
+    "option_c": "A ways to name files",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In Python, classes themselves are objects, and they are instances of a metaclass (like 'type')."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Concurrency",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'GIL'?",
+    "option_a": "Global Internal Link",
+    "option_b": "Global Interpreter Lock; a mechanism that ensures only one thread executes Python bytecode at a time",
+    "option_c": "A ways to delete registers",
+    "option_d": "A graphics library",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The GIL is a major bottleneck for CPU-bound multi-threaded Python programs."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Asynchronous Programming",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which library is used for high-level asynchronous I/O in Python?",
+    "option_a": "asyncio",
+    "option_b": "parallelio",
+    "option_c": "netio",
+    "option_d": "standardio",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "asyncio uses async/await syntax to write concurrent code using coroutines."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Closure' in Python?",
+    "option_a": "Closing a file",
+    "option_b": "A function object that remembers values in enclosing scopes even if they are no longer in memory",
+    "option_c": "The end of a script",
+    "option_d": "A ways to name variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Closures allow for data encapsulation and are often used in decorator implementation."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Performance",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does the `__slots__` attribute do in a class?",
+    "option_a": "Creates slots for time",
+    "option_b": "Explicitly declares data members and prevents the creation of __dict__ and __weakref__, saving memory",
+    "option_c": "A ways to name a user",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Using slots can significantly reduce memory usage for objects with many instances."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Standard Library",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which module allows for high-performance container data types like 'deque' and 'namedtuple'?",
+    "option_a": "containers",
+    "option_b": "collections",
+    "option_c": "types",
+    "option_d": "structures",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'collections' module implements specialized container datatypes."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced Functions",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Currying'?",
+    "option_a": "Cooking",
+    "option_b": "Transforming a function that takes multiple arguments into a chain of functions that each take a single argument",
+    "option_c": "A ways to delete files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Currying allows for partial application of functions."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced Decorators",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is `functools.wraps` used for?",
+    "option_a": "Wrapping a gift",
+    "option_b": "Updating a wrapper function to look like the original function (preserving metadata)",
+    "option_c": "Deleting the wrapper",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It copies __name__, __doc__, etc. from the original function to the decorator's inner function."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Inspect",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which module allows you to inspect live objects (get source code, etc.)?",
+    "option_a": "check",
+    "option_b": "inspect",
+    "option_c": "look",
+    "option_d": "debug",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'inspect' module provides several useful functions to help get information about live objects."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced IO",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the result of `b'hello'`?",
+    "option_a": "A string",
+    "option_b": "A bytes object",
+    "option_c": "A binary file",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'b' prefix creates a sequence of bytes rather than a Unicode string."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Memory",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How does Python primarily manage memory?",
+    "option_a": "Manual management",
+    "option_b": "Reference counting and a cycle-detecting garbage collector",
+    "option_c": "A ways to delete info",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Python automatically frees memory using counts of references to objects."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Monkey Patching'?",
+    "option_a": "Programming for monkeys",
+    "option_b": "Dynamic replacement of attributes or methods at runtime",
+    "option_c": "A ways to delete files",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Monkey patching is a way to extend or modify existing code without changing the source."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Data Science",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which library is use for high-performance numerical computing?",
+    "option_a": "numbers",
+    "option_b": "numpy",
+    "option_c": "scipy",
+    "option_d": "mathpro",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NumPy adds support for large, multi-dimensional arrays and matrices."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Data Science",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which library provides high-performance data structures like DataFrame?",
+    "option_a": "data",
+    "option_b": "pandas",
+    "option_c": "numpy",
+    "option_d": "math",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pandas is built for data manipulation and analysis."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Testing",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which is the built-in library for unit testing in Python?",
+    "option_a": "pytest",
+    "option_b": "unittest",
+    "option_c": "testcase",
+    "option_d": "none",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'unittest' (inspired by JUnit) is the standard library testing framework."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Libraries",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which library is standard for date and time manipulations?",
+    "option_a": "dates",
+    "option_b": "datetime",
+    "option_c": "timebox",
+    "option_d": "calendar",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The datetime module provides classes for manipulating dates and times."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does `is` operator compare?",
+    "option_a": "Values of objects",
+    "option_b": "Identity (memory address) of objects",
+    "option_c": "Types of objects",
+    "option_d": "Names of objects",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'a is b' returns True if a and b point to the exact same object."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Decorators",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Can a class be used as a decorator?",
+    "option_a": "Yes, by implementing __call__",
+    "option_b": "No",
+    "option_c": "Only for methods",
+    "option_d": "Only for static functions",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "A class with a __call__ method can be used to decorate functions."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Dynamic Typing'?",
+    "option_a": "A ways to type faster",
+    "option_b": "A feature where the type of a variable is determined at runtime, not compile time",
+    "option_c": "A ways to delete information",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Variables in Python don't have a fixed type; the objects they point to do."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What happens if you try to modify a tuple?",
+    "option_a": "It modified silently",
+    "option_b": "It raises a TypeError",
+    "option_c": "It creates a new list",
+    "option_d": "Error during compilation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tuples are immutable; any attempt to change them results in a runtime error."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Desiccant' in Python descriptors?",
+    "option_a": "A ways to dry code",
+    "option_b": "None of these; Descriptors are objects that define __get__, __set__, or __delete__",
+    "option_c": "A ways to delete info",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Descriptors allow for custom attribute access logic (like @property)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Standard Library",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which module allows you to interact with the Operating System?",
+    "option_a": "system",
+    "option_b": "os",
+    "option_c": "kernel",
+    "option_d": "win32",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'os' module provides functions for interacting with the OS (file paths, env vars, etc.)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Standard Library",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which library is used to handle command-line arguments properly?",
+    "option_a": "args",
+    "option_b": "argparse",
+    "option_c": "sys",
+    "option_d": "cmd",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "argparse is the recommended way to parse command-line arguments in Python."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Weak Reference'?",
+    "option_a": "A reference that is slow",
+    "option_b": "A reference that does not prevent the referenced object from being garbage collected",
+    "option_c": "A ways to name a user",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'weakref' module allows for creating weak references to objects."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Duck Typing'?",
+    "option_a": "Typing with ducks",
+    "option_b": "If it walks like a duck and quacks like a duck, it's a duck (behavior over explicit type)",
+    "option_c": "A ways to delete info",
+    "option_d": "A training tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Python checks if an object has the required methods at runtime, regardless of its class."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Iterators",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does `itertools.cycle()` do?",
+    "option_a": "Sorts a list",
+    "option_b": "Takes an iterable and repeats it indefinitely",
+    "option_c": "Deletes old loops",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "cycle('ABC') yields A B C A B C ... forever."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the purpose of `__init_subclass__`?",
+    "option_a": "To initialize the main class",
+    "option_b": "A method that is called whenever a class is subclassed, allowing for class customization without metaclasses",
+    "option_c": "To delete sub-classes",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It provides a simpler way to interact with subclass creation than full metaclasses."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Memory Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'gc' module used for?",
+    "option_a": "Graphics color",
+    "option_b": "Interface to the cycle-detecting garbage collector",
+    "option_c": "Google Cloud integration",
+    "option_d": "A ways to rename files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It allows you to enable/disable GC or manually trigger a collection."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What are 'Coroutines'?",
+    "option_a": "Routines that run in pairs",
+    "option_b": "Generalizations of subroutines that can be paused and resumed (using await)",
+    "option_c": "A ways to delete info",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Coroutines are the foundation of Python's async features."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does 'AST' stand for in Python internals?",
+    "option_a": "Abstract Syntax Tree",
+    "option_b": "Advanced Script Tool",
+    "option_c": "Asynchronous System Task",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "AST is a tree representation of the abstract syntactic structure of source code."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Standard Library",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which library allows you to copy files and directories?",
+    "option_a": "files",
+    "option_b": "shutil",
+    "option_c": "copy",
+    "option_d": "os_utils",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "shutil (Shell Utilities) offers high-level file operations."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does `locals()` return?",
+    "option_a": "Names of local people",
+    "option_b": "A dictionary representing the current local symbol table",
+    "option_c": "A list of global variables",
+    "option_d": "management access",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It shows all variables currently defined in the local scope."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does `globals()` return?",
+    "option_a": "A dictionary representing the current global symbol table",
+    "option_b": "A list of all users",
+    "option_c": "Global time",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "It provides a way to interact with variables defined at the module level."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the `@property` decorator used for?",
+    "option_a": "Selling a house",
+    "option_b": "Defining a method as a 'getter' that can be accessed like an attribute",
+    "option_c": "Hiding a class",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's the Pythonic way to implement getters and setters."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Bytecode",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which module allows you to disassemble Python bytecode?",
+    "option_a": "asm",
+    "option_b": "dis",
+    "option_c": "code",
+    "option_d": "byte",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'dis' module supports the disassembly of Python bytecode into a human-readable format."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Bytecode",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What type of instruction set does the Python Virtual Machine use?",
+    "option_a": "Register-based",
+    "option_b": "Stack-based",
+    "option_c": "Memory-based",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CPython uses a stack-based virtual machine to execute its bytecode."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'CFFI'?",
+    "option_a": "Cool Fast File Interface",
+    "option_b": "C Foreign Function Interface; a way to call C code from Python",
+    "option_c": "A ways to delete info",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CFFI is often used to interface with external C libraries efficiently."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 3,
+    "level_topic": "Advanced",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Pickle Bombs' in cybersecurity?",
+    "option_a": "Eating pickles",
+    "option_b": "Maliciously crafted pickle data that executes arbitrary code during de-serialization",
+    "option_c": "Deleting a database",
+    "option_d": "A backup error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Never unpickle data from an untrusted source because is it insecure."
+  }
+]

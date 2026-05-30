@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "TCP Congestion Control",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the primary function of the 'Slow Start' phase in TCP Congestion Control?",
+    "option_a": "To delay the connection setup",
+    "option_b": "To exponentially increase the congestion window (cwnd) until a threshold (ssthresh) is reached",
+    "option_c": "To reduce the speed of the sender during errors",
+    "option_d": "To wait for a slow receiver",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Slow start quickly discovers the available bandwidth by doubling the cwnd every RTT."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "TCP Congestion Control",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In TCP, what does 'Fast Retransmit' do?",
+    "option_a": "It retransmits a segment after receiving 3 duplicate ACKs, without waiting for the retransmission timer to expire",
+    "option_b": "It doubles the transmission speed",
+    "option_c": "It sends packets even if the receiver is not ready",
+    "option_d": "It deletes the congestion window",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Fast retransmit speeds up loss recovery by inferring a lost packet from out-of-order ACKs."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "IPv6",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which of these is NOT present in an IPv6 header compared to an IPv4 header?",
+    "option_a": "Source Address",
+    "option_b": "Header Checksum",
+    "option_c": "Payload Length",
+    "option_d": "Hop Limit",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IPv6 removed the header checksum to improve routing performance (Layer 2 and 4 already handle error checking)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Routing Protocols",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "OSPF (Open Shortest Path First) uses which algorithm for route calculation?",
+    "option_a": "Bellman-Ford",
+    "option_b": "Dijkstra",
+    "option_c": "RIP",
+    "option_d": "Dual",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "OSPF is a Link State protocol that uses the Shortest Path First (SPF/Dijkstra) algorithm."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Network Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the difference between 'Transport Mode' and 'Tunnel Mode' in IPSec?",
+    "option_a": "Transport mode is for VPNs, Tunnel mode is for local networks",
+    "option_b": "Transport mode encrypts only the payload; Tunnel mode encrypts the entire IP packet including the original header",
+    "option_c": "Tunnel mode is faster than Transport mode",
+    "option_d": "There is no difference",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tunnel mode is typically used for site-to-site VPNs because it hides the original source/destination IPs."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Application Layer",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Persistent HTTP' with pipelining?",
+    "option_a": "Keeping a connection open and sending multiple requests without waiting for individual responses",
+    "option_b": "Opening many connections at once",
+    "option_c": "Reusing the same IP twice",
+    "option_d": "Compressing the HTTP header",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Pipelining allows multiple HTTP requests to be sent on a single TCP connection without waiting for ACKs between them."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Network Security",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "In SSL/TLS, what is the role of 'Handshake Protocol'?",
+    "option_a": "To transfer the encrypted data",
+    "option_b": "To negotiate encryption algorithms and share keys before data transmission begins",
+    "option_c": "To close the connection safely",
+    "option_d": "To check for viruses in the data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The TLS handshake establishes a secure session using asymmetric cryptography (like RSA or Diffie-Hellman)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Quality of Service",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Jitter' in a network stream?",
+    "option_a": "Excessive packet loss",
+    "option_b": "Variation in the delay of received packets, which can cause poor quality in real-time voice and video",
+    "option_c": "The speed of the network",
+    "option_d": "A physical bug in the router",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "High jitter requires a 'jitter buffer' at the receiver to smooth out packet playback."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Subnetting",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is 'VLSM' (Variable Length Subnet Masking)?",
+    "option_a": "Using the same mask for all subnets in a network",
+    "option_b": "A technique that allows subnets to have different masks, enabling efficient use of the IP address space",
+    "option_c": "Changing the IP address every hour",
+    "option_d": "A way to hide subnets",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "VLSM allows you to allocate addresses based on the specific number of hosts needed in each subnet."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Congestion Control",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is the 'Random Early Detection' (RED) algorithm used for in routers?",
+    "option_a": "Detecting hardware failures",
+    "option_b": "Congestion avoidance by periodically dropping packets before the queue becomes completely full, signaling senders to slow down",
+    "option_c": "Finding the fastest route",
+    "option_d": "Randomly selecting a port",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RED prevents 'Global Synchronization' of TCP flows and manages queue size proactively."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "IPv6",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does a 'Neighbor Discovery Protocol' (NDP) do in IPv6?",
+    "option_a": "Finds neighbors in a physical building",
+    "option_b": "Performs functions similar to ARP (address resolution) and ICMP Router Discovery",
+    "option_c": "Encrypts data for neighbors",
+    "option_d": "Calculates the distance between nodes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NDP is the replacement for ARP and ICMP redirected messages in the IPv6 world."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Routing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In RIP (Routing Information Protocol), what is the 'Infinity' metric defined as?",
+    "option_a": "Unlimited",
+    "option_b": "15 hops",
+    "option_c": "255 hops",
+    "option_d": "10 hops",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RIP uses hop count as a metric; a value of 16 means the destination is unreachable."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Network Layer",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Split Horizon' rule in distance-vector routing?",
+    "option_a": "Dividing the network into two halves",
+    "option_b": "A method to prevent loops by not sending routing information back out of the interface it was received on",
+    "option_c": "Splitting a packet into two",
+    "option_d": "Routing data in two directions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Split Horizon is a critical loop-prevention mechanism for protocols like RIP."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Application Layer",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'DNS Recursive Resolver'?",
+    "option_a": "A server that tells you 'I don't know, ask someone else'",
+    "option_b": "A server that does all the work of finding the IP address by querying and following the DNS hierarchy on behalf of the client",
+    "option_c": "A server that only stores local names",
+    "option_d": "A type of firewall",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The resolver acts as the middleman between the user's computer and the global DNS servers."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Network Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Perfect Forward Secrecy' (PFS)?",
+    "option_a": "Future-proofing the network kabels",
+    "option_b": "A property of key-agreement protocols that ensures session keys are not compromised even if the private key of the server is stolen later",
+    "option_c": "Passwords that never expire",
+    "option_d": "A way to encrypt files forever",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PFS (usually using Diffie-Hellman) ensures that past traffic cannot be decrypted even if keys are leaked today."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "NAT",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'PAT' (Port Address Translation) also known as?",
+    "option_a": "Static NAT",
+    "option_b": "NAT Overload",
+    "option_c": "Dynamic NAT",
+    "option_d": "Proxy NAT",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "PAT allows multiple devices on a local network to share a single public IP by using unique port numbers for each connection."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Protocols",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Maximum Segment Size' (MSS) negotiation in TCP?",
+    "option_a": "The maximum size of a file that can be sent",
+    "option_b": "The maximum amount of data in a TCP segment that a host can receive, negotiated during the handshake",
+    "option_c": "The speed of the network",
+    "option_d": "The number of users on a port",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MSS helps avoid IP fragmentation by matching segment size to the network's MTU."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'Intrusion Prevention System' (IPS) compared to an IDS?",
+    "option_a": "IPS only watches; IDS stops attacks",
+    "option_b": "IPS actively stops detected attacks in real-time; IDS only monitors and alerts on suspicious activity",
+    "option_c": "IPS is for software only",
+    "option_d": "There is no difference",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Modern firewalls often integrate IPS functionality to drop malicious packets automatically."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "OSI Layers",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "Which OSI layer is responsible for defining the mechanic, electrical, and procedural interface between the DTE and DCE?",
+    "option_a": "Physical Layer",
+    "option_b": "Data Link Layer",
+    "option_c": "Network Layer",
+    "option_d": "Application Layer",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Layer 1 defines all hardware-level specifications."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Networking Layer",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which BGP message is used to advertise or withdraw routes to remote peers?",
+    "option_a": "Open",
+    "option_b": "Update",
+    "option_c": "Keepalive",
+    "option_d": "Notification",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The BGP Update message is the core mechanism for distributing routing changes across the internet."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "TCP Flow Control",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In TCP, what is the 'Window Scaling' option used for?",
+    "option_a": "To decrease the window size for safety",
+    "option_b": "To allow for receive window sizes larger than 64KB for high-bandwidth/high-latency links (Long Fat Pipes)",
+    "option_c": "To scale the website's window globally",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Standard 16-bit window field is too small for modern fast networks; scaling allows for windows up to 1GB."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Protocols",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'DHCP Relay Agent' used for?",
+    "option_a": "To speed up internet speed",
+    "option_b": "To forward DHCP requests between clients and servers when they are on different IP subnets",
+    "option_c": "To assign a static IP to everyone",
+    "option_d": "To encrypt DHCP traffic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Broadcast DHCP requests can't cross routers without a relay agent."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Network Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Stateful Firewall'?",
+    "option_a": "A firewall that only works in one country",
+    "option_b": "A firewall that keeps track of the state of active connections and makes decisions based on established communication flows",
+    "option_c": "A firewall that reboots every hour",
+    "option_d": "A firewall for text files only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Stateful firewalls are more secure than simple packet filters as they understand context (e.g., denying an unsolicited packet)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "SNMP",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'MIB' in SNMP?",
+    "option_a": "Message Infrastructure Block",
+    "option_b": "Management Information Base",
+    "option_c": "Multi-Interface Bridge",
+    "option_d": "Maintenance Inspection Board",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The MIB is a database of objects that can be monitored or managed in a network device."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "TCP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Head-of-Line' (HOL) blocking at the TCP level?",
+    "option_a": "Blocking the first person in the line",
+    "option_b": "When a single lost packet causes all subsequent received packets to be buffered, delaying delivery to the application until the missing one is retransmitted",
+    "option_c": "A security policy in firewalls",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TCP ensures in-order delivery; this property creates a bottleneck if a packet is lost in a multi-stream connection."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Routing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Route Summarization' (Supernetting)?",
+    "option_a": "Combining all IP addresses into one",
+    "option_b": "Consolidating multiple smaller route entries into a single advertisement to reduce the size of routing tables",
+    "option_c": "Simplifying the code for routing",
+    "option_d": "Deleting unused routes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Supernetting prevents routing tables from becoming unmanageably large."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Protocols",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'TFTP' and how does it differ from FTP?",
+    "option_a": "TFTP is for Text only",
+    "option_b": "TFTP uses UDP and has no login/authentication, designed for simple bootloading or config transfers",
+    "option_c": "TFTP is faster than regular FTP but more secure",
+    "option_d": "TFTP requires a dedicated physical cable",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Trivial File Transfer Protocol (TFTP) is extremely simple and suitable for devices with low memory."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Switching",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Cut-through' switching?",
+    "option_a": "Deleting half the data for speed",
+    "option_b": "Forwarding a frame immediately after reading the destination MAC address, without waiting for the whole frame",
+    "option_c": "Stopping the switch manually",
+    "option_d": "A type of firewall bypass",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cut-through is minimal latency but doesn't check for errors (FCS)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Quality of Service",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In DiffServ (Differentiated Services), what is 'DSCP'?",
+    "option_a": "Data Stream Center Point",
+    "option_b": "Differentiated Services Code Point",
+    "option_c": "Digital Segment Communication Port",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The DSCP field in the IP header is used to mark packets for specific priority treatment in a network."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "What does 'MTU' stand for?",
+    "option_a": "Maximum Transmission Unit",
+    "option_b": "Main Transfer Utility",
+    "option_c": "Minimum Tier Unit",
+    "option_d": "Master Traffic Universal",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The MTU is the largest size packet or frame that can be sent in a single network transaction."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Protocols",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the primary used of 'NTP' (Network Time Protocol)?",
+    "option_a": "To measure internet speed",
+    "option_b": "To synchronize the clocks of computers on a network to a common reference time",
+    "option_c": "To set timers in a database",
+    "option_d": "To schedule social media posts",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NTP ensures consistent time stamps for logs, transactions, and security protocols."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "VLANs",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'VLAN Trunking' (IEEE 802.1Q)?",
+    "option_a": "Buying more cables for VLANs",
+    "option_b": "The method of carrying multiple VLANs over a single physical link by adding meta-information (tags)",
+    "option_c": "A way to merge two VLANs into one",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Trunking allows switches to share multiple VLANs across a single cable."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Routing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Routing Loop'?",
+    "option_a": "A high-speed server loop",
+    "option_b": "When a failure or incorrect config causes a packet to be continuously forwarded between routers without reaching its destination",
+    "option_c": "Repeating the same code in a router",
+    "option_d": "A way to speed up routing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Routing loops waste bandwidth and can crash a network."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Transmission",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Anycast' address in IPv6?",
+    "option_a": "An address for a single interface",
+    "option_b": "An address assigned to multiple interfaces, where packets are delivered to the 'nearest' one",
+    "option_c": "Sending data to everyone",
+    "option_d": "A random address",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Anycast is useful for load balancing and DNS infrastructure."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Protocols",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does ICMP 'Source Quench' request from the sender?",
+    "option_a": "To stop sending forever",
+    "option_b": "To slow down its rate of transmission because of network congestion (deprecated)",
+    "option_c": "To send more data",
+    "option_d": "To encrypt the data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Source Quench was an early form of congestion control, though mostly ignored in modern TCP."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Network Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'AH' (Authentication Header) in IPSec?",
+    "option_a": "A header that provides data confidentiality",
+    "option_b": "A header that provides connectionless integrity and data origin authentication, but NO encryption",
+    "option_c": "A way to hide IP addresses",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AH proves the data hasn't been tampered with but doesn't hide the content (unlike ESP)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Network Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'ESP' (Encapsulating Security Payload) in IPSec?",
+    "option_a": "A header for low-speed networks",
+    "option_b": "Provides confidentiality (encryption), integrity, and authentication of packets",
+    "option_c": "Hiding the MAC address",
+    "option_d": "Redirecting internet traffic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ESP is the primary protocol for building encrypted VPN tunnels."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Switching",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Virtual Circuit switching' vs 'Datagram switching'?",
+    "option_a": "One uses cables, the other doesn't",
+    "option_b": "Virtual circuits maintain state for a connection path; Datagrams are treated independently with no prior path setup",
+    "option_c": "Virtual circuit is always wireless",
+    "option_d": "Datagram is only for email",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The internet (IP) is a datagram network; traditional telephone networks use virtual circuits."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Network Modeling",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Network Diameter'?",
+    "option_a": "The thickness of the cable",
+    "option_b": "The maximum shortest path (number of hops) between any two nodes in a network",
+    "option_c": "The cost of the network to build",
+    "option_d": "The total number of users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lower diameter networks generally have lower latency."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Reliability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Bypass Mode' in a hardware firewall?",
+    "option_a": "Turning off the security",
+    "option_b": "A feature that allows traffic to flow even if the appliance hardware or software fails, ensuring it doesn't become a single point of failure",
+    "option_c": "A way to hack the firewall",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bypass mode prioritizes connectivity over security during a hardware failure."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Addressing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In IPv6, the first '64' bits of an address are usually:",
+    "option_a": "The Host ID",
+    "option_b": "The Network Prefix (Subnet)",
+    "option_c": "Reserved for future use",
+    "option_d": "Random bits",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IPv6 addresses are typically split into a 64-bit network prefix and a 64-bit interface identifier."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Routing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Poison Reverse' in distance-vector routing?",
+    "option_a": "A security attack on neighbors",
+    "option_b": "Setting the distance to a failed route to infinity when telling the neighbor you learned it from",
+    "option_c": "Reversing the direction of packets",
+    "option_d": "A way to speed up IP resolution",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Poison Reverse, combined with Split Horizon, helps eliminate routing loops quickly."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Protocols",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which ICMP type code is used for 'Destination Unreachable - Port Unreachable'?",
+    "option_a": "Type 3, Code 0",
+    "option_b": "Type 3, Code 3",
+    "option_c": "Type 11, Code 0",
+    "option_d": "Type 8, Code 8",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ICMP Type 3 is Destination Unreachable; Code 3 specifically indicates the target port is closed."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Tunneling' in networking?",
+    "option_a": "Digging for cables",
+    "option_b": "Encapsulating one network protocol inside another (e.g., IPv6 inside IPv4)",
+    "option_c": "A faster way to send data",
+    "option_d": "Direct peer-to-peer connection",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tunneling is used for VPNs and transitioning between incompatible network technologies."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Protocols",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Self-Signed Certificate' primary risk?",
+    "option_a": "It uses weak encryption",
+    "option_b": "It provides no proof of identity and is vulnerable to Man-in-the-Middle attacks",
+    "option_c": "It costs too much",
+    "option_d": "It doesn't work on mobile",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Anyone can create a self-signed cert; the security of SSL relies on trusted Certificate Authorities (CAs)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Congestion Control",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does ECN (Explicit Congestion Notification) allow a router to do?",
+    "option_a": "Drop more packets",
+    "option_b": "Mark a bit in the IP header to signal congestion to the sender without actually dropping the packet",
+    "option_c": "Encrypt the packet header",
+    "option_d": "Redirect packets to a faster link",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ECN helps reduce latency by informing senders of congestion early, avoiding destructive packet loss."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "TCP",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Nagel's Algorithm' used for in TCP?",
+    "option_a": "Speeding up video streams",
+    "option_b": "Reducing the number of small packets by delaying transmission until a full MTU can be sent",
+    "option_c": "Encrypting the server logs",
+    "option_d": "Managing user login sessions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Nagle's algorithm improves efficiency for high-latency connections but can hurt real-time applications like gaming (where it is often disabled)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'IP spoofing'?",
+    "option_a": "Changing the user's internet provider",
+    "option_b": "Modifying the source IP address in a packet's header to pretend it came from a trusted machine",
+    "option_c": "A way to get free internet",
+    "option_d": "A physical bug in cables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IP spoofing is a common technique used in DDoS and man-in-the-middle attacks."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Architecture",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'SDN' (Software Defined Networking)?",
+    "option_a": "Using software to draw network diagrams",
+    "option_b": "Decoupling the network's control logic (Control Plane) from the underlying hardware that forwards traffic (Data Plane)",
+    "option_c": "A network that only has virtual machines",
+    "option_d": "A way to install software over the net",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SDN allows networks to be programmed and managed centrally with a global view of the topology."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 3,
+    "level_topic": "Broadcasting",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the IPv6 'All-Nodes' multicast address for a local link?",
+    "option_a": "FF02::1",
+    "option_b": "FF02::2",
+    "option_c": "FF01::1",
+    "option_d": "::1",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "FF02::1 is the IPv6 equivalent of a broadcast to all nodes on the immediate segment."
+  }
+]

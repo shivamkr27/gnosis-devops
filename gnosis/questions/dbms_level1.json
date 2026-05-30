@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "ER Modeling",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In an ER diagram, what shape represents an 'Entity'?",
+    "option_a": "Ellipse",
+    "option_b": "Rectangle",
+    "option_c": "Diamond",
+    "option_d": "Triangle",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In Entity-Relationship modeling, rectangles represent entities, ellipses represent attributes, and diamonds represent relationships."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Basics",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which SQL keyword is used to remove duplicate rows from the result set?",
+    "option_a": "UNIQUE",
+    "option_b": "DIFFERENT",
+    "option_c": "DISTINCT",
+    "option_d": "FILTER",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The DISTINCT keyword is used to return only unique values in a SELECT statement."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "ER Modeling",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What type of relationship exists between 'Students' and 'Courses' in a typical university system?",
+    "option_a": "One-to-One",
+    "option_b": "One-to-Many",
+    "option_c": "Many-to-Many",
+    "option_d": "Many-to-One",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A student can enroll in many courses, and a course can have many students, making it a many-to-many relationship."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Joins",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which JOIN returns all records from the left table and the matched records from the right table?",
+    "option_a": "INNER JOIN",
+    "option_b": "RIGHT JOIN",
+    "option_c": "LEFT JOIN",
+    "option_d": "FULL OUTER JOIN",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "A LEFT JOIN (or LEFT OUTER JOIN) returns all rows from the left table, even if there are no matches in the right table."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Commands",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these are DDL (Data Definition Language) commands?",
+    "option_a": "CREATE",
+    "option_b": "DROP",
+    "option_c": "SELECT",
+    "option_d": "ALTER",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "CREATE, DROP, and ALTER are DDL commands because they define/modify the structure. SELECT is a DQL (Data Query Language) command."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Keys",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which key uniquely identifies a record in a table and cannot contain NULL values?",
+    "option_a": "Foreign Key",
+    "option_b": "Primary Key",
+    "option_c": "Composite Key",
+    "option_d": "Candidate Key",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Primary Key is a unique identifier that enforces entity integrity."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "DBMS Basics",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the primary advantage of a DBMS over a traditional file system?",
+    "option_a": "Reduces data redundancy",
+    "option_b": "Allows manual data entry",
+    "option_c": "Uses more disk space",
+    "option_d": "Does not require a schema",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "DBMS centralizes data, minimizing duplication and inconsistency."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "ER Modeling",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In an ER diagram, how is a 'Derived Attribute' represented?",
+    "option_a": "Solid Ellipse",
+    "option_b": "Dashed Ellipse",
+    "option_c": "Double Ellipse",
+    "option_d": "Triangle",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Derived attributes (like 'Age' calculated from 'DOB') are shown with dashed ellipses."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Relational Model",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is a 'Tuple' in a relational database?",
+    "option_a": "A column",
+    "option_b": "A row (record)",
+    "option_c": "A table name",
+    "option_d": "A data type",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A tuple represents a single instance of an entity in a relation."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Keys",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which key is used to establish a relationship between two tables?",
+    "option_a": "Primary Key",
+    "option_b": "Foreign Key",
+    "option_c": "Candidate Key",
+    "option_d": "Super Key",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A Foreign Key in one table points to the Primary Key of another table."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Commands",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which SQL command is used to change existing data in a table?",
+    "option_a": "MODIFY",
+    "option_b": "UPDATE",
+    "option_c": "CHANGE",
+    "option_d": "ALTER",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The UPDATE command modifies values within existing rows."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Basics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In SQL, which operator is used for pattern matching using wildcards?",
+    "option_a": "EQUALS",
+    "option_b": "LIKE",
+    "option_c": "MATCH",
+    "option_d": "BETWEEN",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The LIKE operator is used in a WHERE clause to search for a specified pattern in a column."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Integrity",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does 'Referential Integrity' ensure?",
+    "option_a": "That a table has a primary key",
+    "option_b": "That values in a foreign key column must match values in the referenced primary key column",
+    "option_c": "That data is encrypted",
+    "option_d": "That only users can see the data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Referential integrity maintains consistent relationships between tables."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "ER Modeling",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Weak Entity'?",
+    "option_a": "An entity with few attributes",
+    "option_b": "An entity that cannot be uniquely identified by its own attributes alone and depends on a strong entity",
+    "option_c": "An entity that is not and primary key",
+    "option_d": "A table with no rows",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Weak entities are identified by using the primary key of an identifying owner entity."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Basics",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which SQL clause is used to filter the results of an aggregate function?",
+    "option_a": "WHERE",
+    "option_b": "HAVING",
+    "option_c": "FILTER",
+    "option_d": "GROUP BY",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HAVING is applied after the GROUP BY clause to filter groups."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the 'Three-Schema Architecture' primarily used for?",
+    "option_a": "To speed up queries",
+    "option_b": "To achieve data independence",
+    "option_c": "To provide three copies of the database",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It separates the physical view from the logical and external views, protecting apps from storage changes."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Keys",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Candidate Key'?",
+    "option_a": "A key that is not yet used",
+    "option_b": "Any set of attributes that can uniquely identify a tuple in a relation",
+    "option_c": "The key that the user likes best",
+    "option_d": "A key that only has numbers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Candidate keys are minimal superkeys that are eligible to become the Primary Key."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "ER Modeling",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In ER modeling, what is a 'Multivalued Attribute'?",
+    "option_a": "An attribute with many names",
+    "option_b": "An attribute that can have more than one value for a single entity (e.g., Phone Numbers)",
+    "option_c": "A primary key",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multivalued attributes are represented by double ellipses in ER diagrams."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Commands",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which SQL command is used to remove all records from a table without deleting the table structure?",
+    "option_a": "DELETE",
+    "option_b": "TRUNCATE",
+    "option_c": "REMOVE",
+    "option_d": "DROP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TRUNCATE is a DDL operation that removes all data but keeps the schema."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Relational Algebra",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which relational algebra operator is used to select specific columns (attributes) from a relation?",
+    "option_a": "Selection (\u03c3)",
+    "option_b": "Projection (\u03c0)",
+    "option_c": "Join (\u2a1d)",
+    "option_d": "Union (\u222a)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Projection focuses on columns, while Selection focuses on rows (tuples)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Normalization",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the main goal of database normalization?",
+    "option_a": "To make the database bigger",
+    "option_b": "To eliminate data redundancy and anomalies (Insert, Update, Delete)",
+    "option_c": "To encrypt the data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Normalization organizes data into multiple related tables for efficiency."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Commands",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which of these is a TCL (Transaction Control Language) command?",
+    "option_a": "SELECT",
+    "option_b": "GRANT",
+    "option_c": "COMMIT",
+    "option_d": "DELETE",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "COMMIT and ROLLBACK are used to manage changes perfectly made by DML statements."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Relational Model",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "In a relational model, the number of columns in a table is called its:",
+    "option_a": "Cardinality",
+    "option_b": "Degree",
+    "option_c": "Dimension",
+    "option_d": "Domain",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The degree is the count of attributes. Cardinality is the count of tuples (rows)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Basics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the SQL 'CASCADE' constraint do during a DELETE operation?",
+    "option_a": "Stops the deletion",
+    "option_b": "Automatically deletes related offspring records in child tables",
+    "option_c": "Asks for confirmation",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ON DELETE CASCADE maintains referential integrity by cleaning up dependent records."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Types",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which data model uses a parent-child structure like a tree?",
+    "option_a": "Relational Model",
+    "option_b": "Hierarchical Model",
+    "option_c": "Network Model",
+    "option_d": "Object-Oriented Model",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The legacy hierarchical model organizes data in a strict tree hierarchy."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Aggregate Functions",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which function is used to calculate the total number of records in a table?",
+    "option_a": "SUM()",
+    "option_b": "COUNT()",
+    "option_c": "TOTAL()",
+    "option_d": "AVG()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "COUNT(*) returns the number of rows that match specified criteria."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Basics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In SQL, what is the default sort order for ORDER BY?",
+    "option_a": "Descending (DESC)",
+    "option_b": "Ascending (ASC)",
+    "option_c": "Random",
+    "option_d": "By primary key",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Values are sorted from lowest to highest by default."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Nulls",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does 'NULL' represent in a database?",
+    "option_a": "Zero",
+    "option_b": "An empty string",
+    "option_c": "Unknown or missing data",
+    "option_d": "A space character",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "NULL is a marker, not a value. It indicates the absence of data."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Keys",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Super Key'?",
+    "option_a": "A key with special powers",
+    "option_b": "Any set of one or more attributes that can uniquely identify tuples in a relation",
+    "option_c": "The primary key only",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every candidate key is a super key, but not every super key is a candidate key (some are redundant)."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Basics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which SQL operator is used to check for a range of values?",
+    "option_a": "IN",
+    "option_b": "BETWEEN",
+    "option_c": "RANGE",
+    "option_d": "LIKE",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BETWEEN is inclusive of the start and end values."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "ER Modeling",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "In an ER diagram, how is a 'Total Participation' constraint represented?",
+    "option_a": "Single line",
+    "option_b": "Double line",
+    "option_c": "Dashed line",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Double lines between an entity and a relationship indicate that every entity instance must participate."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which level of the 3-Schema architecture describes how data is actually stored on the hardware?",
+    "option_a": "External level",
+    "option_b": "Conceptual level",
+    "option_c": "Internal (Physical) level",
+    "option_d": "User level",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The internal level deals with byte layouts, blocks, and indexes on disk."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Basics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which SQL keyword is used to sort the result-set?",
+    "option_a": "SORT BY",
+    "option_b": "ARRANGE BY",
+    "option_c": "ORDER BY",
+    "option_d": "GROUP BY",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "ORDER BY allows sorting by one or more columns."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Keys",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is an 'Alternate Key'?",
+    "option_a": "A key that changes daily",
+    "option_b": "Any candidate key that was NOT chosen as the primary key",
+    "option_c": "A foreign key",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Alternate keys are valid unique identifiers that are not the main primary key."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Relational Algebra",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which operation in relational algebra combines two relations into a single relation containing all possible combinations of tuples?",
+    "option_a": "Union",
+    "option_b": "Intersection",
+    "option_c": "Cartesian Product (X)",
+    "option_d": "Join",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The Cartesian Product results in a table with row_count1 * row_count2 tuples."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Joins",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Self Join'?",
+    "option_a": "Joining two different databases",
+    "option_b": "A regular join where a table is joined with itself to compare rows within the same table",
+    "option_c": "Automatic join by the OS",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Self joins often use table aliases to differentiate the 'left' and 'right' instances of the same table."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Views",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Database View'?",
+    "option_a": "The physical screen showing data",
+    "option_b": "A virtual table based on the result-set of an SQL statement, which doesn't store data itself",
+    "option_c": "A copy of the whole table",
+    "option_d": "A user's login history",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Views provide security and simplify complex queries by abstracting the underlying tables."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Commands",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to add a new column to an existing table?",
+    "option_a": "ADD COLUMN",
+    "option_b": "ALTER TABLE ... ADD",
+    "option_c": "UPDATE TABLE ... NEW",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ALTER TABLE is the DDL command for structural changes."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Normalization",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A table is in 1st Normal Form (1NF) if:",
+    "option_a": "It has no primary key",
+    "option_b": "All its attributes contain only atomic (indivisible) values",
+    "option_c": "It is sorted",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "1NF requires no multivalued or composite attributes."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Integrity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does 'Entity Integrity' rule state?",
+    "option_a": "No data can be deleted",
+    "option_b": "Primary key attributes cannot be NULL",
+    "option_c": "Everything must be a number",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Since PK identifies a row, it must have a value."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "ER Modeling",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which relationship mapping has 'many' on both sides?",
+    "option_a": "1:1",
+    "option_b": "1:N",
+    "option_c": "M:N",
+    "option_d": "N:1",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Many-to-Many relationships usually require an associative (bridge) table in implementation."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Commands",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which SQL command is used to add new rows into a table?",
+    "option_a": "ADD RECORD",
+    "option_b": "INSERT INTO",
+    "option_c": "CREATE",
+    "option_d": "UPDATE",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "INSERT INTO is one of the core DML commands."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "DBMS Basics",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Physical Data Independence'?",
+    "option_a": "Deleting the hard drive",
+    "option_b": "The ability to change the physical storage structure without needing to change the conceptual schema",
+    "option_c": "Changing the programming language",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This allows the DBA to improve performance (e.g., adding an index) without breaking existing apps."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Relational Algebra",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which relational algebra operation is equivalent to a 'Cartesian Product followed by a selection'?",
+    "option_a": "Intersection",
+    "option_b": "Join",
+    "option_c": "Union",
+    "option_d": "Difference",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A join uses a condition to filter the cross product of two relations."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "DBMS Basics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Who is the person responsible for the overall management of a database system?",
+    "option_a": "Software Engineer",
+    "option_b": "Database Administrator (DBA)",
+    "option_c": "System Analyst",
+    "option_d": "Project Manager",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The DBA handles installation, configuration, security, and performance tuning."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Patterns",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which wildcard character represents 'any sequence of characters' in SQL LIKE?",
+    "option_a": "_ (underscore)",
+    "option_b": "% (percent sign)",
+    "option_c": "* (asterisk)",
+    "option_d": "# (hash)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Underscore represents a single character; percent represents zero or more characters."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Metadata' in a database?",
+    "option_a": "The data that is encrypted",
+    "option_b": "Data about data, stored in the Data Dictionary (Schema definitions, constraints, etc.)",
+    "option_c": "Old data that is archived",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Metadata governs how the actual data is understood and managed by the system."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "Relational Algebra",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which Relational Algebra operation is NOT part of the 'Fundamental' set?",
+    "option_a": "Selection",
+    "option_b": "Projection",
+    "option_c": "Join",
+    "option_d": "Union",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Join can be expressed using fundamental operations like Cartesian product and Selection."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Basics",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which SQL aggregate function finds the highest value in a column?",
+    "option_a": "TOP()",
+    "option_b": "MAX()",
+    "option_c": "HIGH()",
+    "option_d": "GREATEST()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MAX() returns the maximum value ignoring NULLs."
+  },
+  {
+    "subject_name": "DBMS",
+    "level_number": 1,
+    "level_topic": "SQL Basics",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does 'SQL' stand for?",
+    "option_a": "System Query Logic",
+    "option_b": "Structured Query Language",
+    "option_c": "Simple Queue Layout",
+    "option_d": "Shared Query Level",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SQL is the standard language for relational database interaction."
+  }
+]

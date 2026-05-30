@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Security Basics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the primary goal of DevSecOps?",
+    "option_a": "To replace developers with security experts",
+    "option_b": "To integrate security practices early and throughout the DevOps lifecycle",
+    "option_c": "To stop all releases until they are perfect",
+    "option_d": "To delete old servers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DevSecOps emphasizes that security is a shared responsibility integrated into the entire development pipeline."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Shift Left",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does 'Shift Left' mean in security?",
+    "option_a": "Moving security to the end of the project",
+    "option_b": "Moving security testing earlier into the development stage",
+    "option_c": "Buying more security software",
+    "option_d": "Deleting the code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shifting left means addressing security issues as soon as possible, often during coding or design."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "CIA Triad",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In the CIA Triad, what does 'C' stand for?",
+    "option_a": "Configuration",
+    "option_b": "Confidentiality",
+    "option_c": "Completeness",
+    "option_d": "Cost",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Confidentiality ensures that information is accessible only to those authorized to have access."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "CIA Triad",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In the CIA Triad, what does 'A' stand for?",
+    "option_a": "Authorization",
+    "option_b": "Availability",
+    "option_c": "Automation",
+    "option_d": "Audit",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Availability ensures that systems and data are available when needed by authorized users."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Vulnerabilities",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Zero-Day' vulnerability?",
+    "option_a": "A vulnerability found in zero days",
+    "option_b": "A vulnerability that is known only to the attacker, with zero days of protection available for the user",
+    "option_c": "A vulnerability that is zero bytes in size",
+    "option_d": "A ways to name a user",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A Zero-Day is a security flaw that is exploited before the vendor has a patch available."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Authentication",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does MFA stand for?",
+    "option_a": "Managed File Access",
+    "option_b": "Multi-Factor Authentication",
+    "option_c": "Master File Archive",
+    "option_d": "Main Frame Account",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MFA requires more than one piece of evidence (like a password and a code) to verify identity."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Encryption",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the process of converting readable text into scrambled data called?",
+    "option_a": "Hashing",
+    "option_b": "Encryption",
+    "option_c": "Encoding",
+    "option_d": "Compression",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Encryption protects data by making it unreadable without the correct decryption key."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Secrets Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of these should NEVER be stored in a public Git repository?",
+    "option_a": "API Keys and Passwords",
+    "option_b": "Documentation",
+    "option_c": "Source Code",
+    "option_d": "Icons",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Secrets must be managed securely using tools like Vault or environment variables, never hardcoded in Git."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Common Attacks",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Phishing'?",
+    "option_a": "A ways to catch fish",
+    "option_b": "A fraudulent attempt to obtain sensitive information by masquerading as a trustworthy entity in electronic communication",
+    "option_c": "Deleting the database",
+    "option_d": "Naming the files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Phishing often uses emails or websites to trick users into giving away credentials."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Security Testing",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Penetration Testing'?",
+    "option_a": "Fixing the code",
+    "option_b": "An authorized simulated cyberattack on a computer system to evaluate its security",
+    "option_c": "Deleting the code",
+    "option_d": "Writing the code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Penetration tests (Ethical Hacking) identify weaknesses that real attackers could exploit."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Social Engineering",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the primary target of Social Engineering?",
+    "option_a": "Servers",
+    "option_b": "Human psychology",
+    "option_c": "Firewalls",
+    "option_d": "Databases",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Social engineering uses manipulation to trick people into revealing secrets or granting access."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Malware",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Ransomware'?",
+    "option_a": "Malware that speeds up the computer",
+    "option_b": "Malware that encrypts files and demands payment for the decryption key",
+    "option_c": "A ways to delete files",
+    "option_d": "Naming the pods",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Ransomware is a major threat that can lock organizations out of their critical data."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Network Security",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is a 'Firewall'?",
+    "option_a": "A wall on fire",
+    "option_b": "A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules",
+    "option_c": "A ways to delete servers",
+    "option_d": "A tool to name users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Firewalls act as a barrier between trusted internal networks and untrusted external ones (like the internet)."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Software Updates",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Why is it important to apply security 'patches' regularly?",
+    "option_a": "To make the software look better",
+    "option_b": "To fix known vulnerabilities that attackers could use",
+    "option_c": "To delete old data",
+    "option_d": "To change the colors",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unpatched systems are one of the most common ways for attackers to gain entry."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Authorization",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the difference between Authentication and Authorization?",
+    "option_a": "There is no difference",
+    "option_b": "Authentication is proving WHO you are; Authorization is determining WHAT you are allowed to do",
+    "option_c": "Authentication is for robots, Authorization is for humans",
+    "option_d": "Authorization is for robots, Authentication is for humans",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You first authenticate (login) and then the system authorizes your requests based on your roles."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "CIA Triad",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In the CIA Triad, what does 'Integrity' stand for?",
+    "option_a": "Maintaining the accuracy and consistency of data over its entire life cycle",
+    "option_b": "Proving identity",
+    "option_c": "Keeping secrets",
+    "option_d": "Deleting the database",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Integrity ensures that data is not modified by unauthorized parties."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Security Principles",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the 'Principle of Least Privilege' (PoLP)?",
+    "option_a": "Sharing all passwords with everyone",
+    "option_b": "Giving users only the minimum access necessary to perform their job functions",
+    "option_c": "Deleting all users",
+    "option_d": "Giving everyone admin access for speed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Least privilege reduces the 'blast radius' if an account is compromised."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Security Principles",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does 'Defense in Depth' mean?",
+    "option_a": "Digging a deep hole around the server",
+    "option_b": "Using multiple layers of security controls to protect data and systems",
+    "option_c": "Deleting the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If one layer fails (e.g. firewall), other layers (e.g. encryption) still protect the data."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Hashing",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a primary characteristic of a 'Cryptographic Hash' function?",
+    "option_a": "It is reversible",
+    "option_b": "It is a one-way function - you cannot easily recreate the input from the output",
+    "option_c": "It makes the file larger",
+    "option_d": "It deletes the data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hashes are used for verifying data integrity and storing passwords securely."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Passwords",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'Salting' in the context of password storage?",
+    "option_a": "Adding salt to the server",
+    "option_b": "Adding a unique, random string of characters to a password before hashing it",
+    "option_c": "Deleting old passwords",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Salting prevents attackers from using 'Rainbow Tables' to crack many passwords at once."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Web Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does 'OWASP' stand for?",
+    "option_a": "Open Web Application Security Project",
+    "option_b": "Online World Application Security Protocol",
+    "option_c": "Official Web App Safety Plan",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "OWASP is a non-profit foundation that works to improve software security."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Web Security",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'SQL Injection'?",
+    "option_a": "A ways to speed up databases",
+    "option_b": "An attack where malicious SQL statements are inserted into an entry field for execution",
+    "option_c": "Deleting the database",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SQLi can allow attackers to view, modify, or delete sensitive data in a database."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Web Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Cross-Site Scripting' (XSS)?",
+    "option_a": "A ways to name a website",
+    "option_b": "An attack where malicious scripts are injected into otherwise benign and trusted websites",
+    "option_c": "Deleting the website",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "XSS allows attackers to execute scripts in a victim's browser, potentially stealing cookies or session tokens."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Transport Security",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does the 'S' in HTTPS stand for?",
+    "option_a": "Stable",
+    "option_b": "Secure",
+    "option_c": "Simple",
+    "option_d": "Speed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HTTPS provides encrypted communication and secure identification of a network web server."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Compliance",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which regulation focuses on protecting patient health information (PII)?",
+    "option_a": "GDPR",
+    "option_b": "HIPAA",
+    "option_c": "PCI-DSS",
+    "option_d": "SOX",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HIPAA (Health Insurance Portability and Accountability Act) is a US law providing data privacy and security provisions for safeguarding medical information."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Compliance",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which regulation focuses on data privacy for citizens of the European Union?",
+    "option_a": "HIPAA",
+    "option_b": "GDPR",
+    "option_c": "COPPA",
+    "option_d": "PCI-DSS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GDPR (General Data Protection Regulation) is a legal framework that sets guidelines for the collection and processing of personal information."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Monitoring",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Why is 'Logging' important for security?",
+    "option_a": "To name the files",
+    "option_b": "To provide a trail of activities that can be audited after an incident occurs",
+    "option_c": "To speed up the computer",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Logs are the 'black box' for security forensics, showing what happened during an attack."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Identity",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Brute Force' attack?",
+    "option_a": "An attack using physical force on servers",
+    "option_b": "A trial-and-error method used to decode encrypted data such as passwords through exhaustive effort",
+    "option_c": "Deleting the database",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Brute force attacks try every possible password combination until one works."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Network Security",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is a 'VPN' used for?",
+    "option_a": "Virtual Private Network: creating a secure, encrypted tunnel over a public network",
+    "option_b": "Very Public Network",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "VPNs allow users to securely access private network resources from remote locations."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Threat Actors",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is an 'Insider Threat'?",
+    "option_a": "A hacker from another country",
+    "option_b": "A security risk that originates from within the organization (e.g. an employee or contractor)",
+    "option_c": "A bug in the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Insider threats can be malicious or simply accidental, such as a user clicking a bad link."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Security Testing",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is a 'Bug Bounty' program?",
+    "option_a": "A ways to catch actual bugs (insects)",
+    "option_b": "A deal offered by many websites and software developers by which individuals can receive recognition and compensation for reporting bugs",
+    "option_c": "Deleting the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bug bounties encourage 'ethical hackers' to find and report vulnerabilities responsibly."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Principles",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does 'Security through Obscurity' mean, and is it recommended?",
+    "option_a": "Relying on secrecy (like hiding the URL) as a primary security measure; it is NOT recommended as a sole security strategy",
+    "option_b": "Making the code very complex; it is recommended",
+    "option_c": "Deleting the logs; it is recommended",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Hiding something doesn't make it secure once it's found. Real security relies on robust controls like encryption."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Malware",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is a 'Computer Worm'?",
+    "option_a": "A ways to name a user",
+    "option_b": "A standalone malware computer program that replicates itself in order to spread to other computers",
+    "option_c": "A tool to delete files",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unlike a virus, a worm doesn't need to attach itself to an existing program to spread."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Malware",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Trojan Horse' in computing?",
+    "option_a": "A fast computer",
+    "option_b": "Malware that misleads users of its true intent by appearing as useful software",
+    "option_c": "A ways to name a file",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The term comes from the Greek story of the wooden horse used to invade Troy."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Encryption",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'Encryption at Rest'?",
+    "option_a": "Encrypting data while it is stored on a disk or database",
+    "option_b": "Encrypting data while the computer is off",
+    "option_c": "Deleting old data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Encryption at rest protects data if the physical hardware is stolen or accessed improperly."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Access Control",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'RBAC'?",
+    "option_a": "Room Based Access Control",
+    "option_b": "Role-Based Access Control: granting permissions based on a user's role in the organization",
+    "option_c": "Robot Based Archive Center",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RBAC simplifies user management by grouping permissions by job function."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Web Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Social Engineering'?",
+    "option_a": "Building social networks",
+    "option_b": "Psychological manipulation of people into performing actions or divulging confidential information",
+    "option_c": "Deleting the database",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Social engineering targets the 'human' element, often considered the weakest link in security."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Compliance",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which regulation focuses on the security of credit card transactions?",
+    "option_a": "HIPAA",
+    "option_b": "GDPR",
+    "option_c": "PCI-DSS",
+    "option_d": "SOX",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "PCI-DSS (Payment Card Industry Data Security Standard) is required for any company that handles credit card information."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Security Testing",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does 'Sourcing' vs 'Sinking' mean in code analysis?",
+    "option_a": "Naming variables",
+    "option_b": "Tracing data from its 'source' (user input) to its 'sink' (where it is used, like a database query or web page)",
+    "option_c": "Deleting the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tracing source-to-sink is how SAST tools find vulnerabilities like SQLi or XSS."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Principles",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Honey Pot' in network security?",
+    "option_a": "A ways to catch bees",
+    "option_b": "A decoy system intended to attract and distract attackers, allowing security teams to study their methods",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Honeypots provide valuable threat intelligence by observing real-world attack patterns."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Identity",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What characterizes 'Biometric' authentication?",
+    "option_a": "Using a password",
+    "option_b": "Using unique biological characteristics like fingerprints, iris scans, or facial recognition to verify identity",
+    "option_c": "Using a physical key",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Biometrics identify users based on 'something they are'."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Threat Actors",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'White Hat' hacker?",
+    "option_a": "A ways to name a user",
+    "option_b": "An ethical security specialist who uses their skills to find and fix vulnerabilities, often working with organizations",
+    "option_c": "A hacker who steals money",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "White hats help defend systems; Black hats attack them."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Malware",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'Spyware'?",
+    "option_a": "Malware that deletes files",
+    "option_b": "Software that enables a user to obtain covert information about another's computer activities by transmitting data covertly from their hard drive",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Spyware is often used for identity theft or corporate espionage."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Network Security",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is an 'Intrusion Detection System' (IDS)?",
+    "option_a": "A ways to delete users",
+    "option_b": "A device or software application that monitors a network or systems for malicious activity or policy violations",
+    "option_c": "A tool to name servers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unlike a firewall, an IDS primary job is to alert you to suspicious activity rather than just blocking it."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Storage",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Why are 'Backups' critical for security?",
+    "option_a": "To make more copies of code",
+    "option_b": "To allow for data recovery in case of a ransomware attack or accidental loss",
+    "option_c": "To delete old data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Offline, immutable backups are the best defense against data-destroying malware."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Governance",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is an 'Acceptable Use Policy' (AUP)?",
+    "option_a": "A list of users",
+    "option_b": "A set of rules applied by the owner, creator or administrator of a network, website, or service, that restrict the ways in which the network, website or system may be used",
+    "option_c": "A software for writing code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AUPs define what behaviors are allowed on an organization's systems."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Identity",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'SSO'?",
+    "option_a": "Single Sign-On: allowing a user to log in with a single ID and password to any of several related, but independent, software systems",
+    "option_b": "Service Software Only",
+    "option_c": "System Security Officer",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "SSO improves user experience and centralizes identity management."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Web Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'URL Redirection' abuse?",
+    "option_a": "Renaming a website",
+    "option_b": "A vulnerability that redirects users to a malicious website without their knowledge",
+    "option_c": "Deleting the URL",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Attackers use 'open redirects' to trick users into trusting a link that actually goes to a phishing site."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Security Testing",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'Vulnerability Management'?",
+    "option_a": "Ignoring bugs",
+    "option_b": "The practice of identifying, classifying, prioritizing, remediating, and mitigating software vulnerabilities",
+    "option_c": "Deleting the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is a continuous process of staying ahead of potential threats."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 1,
+    "level_topic": "Identity",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Why should users avoid using the same password for multiple accounts?",
+    "option_a": "It's too easy to remember",
+    "option_b": "If one account is compromised, the attacker can use that password to access all other accounts",
+    "option_c": "It's illegal",
+    "option_d": "It slow down the computer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Password managers are recommended to generate and store unique passwords for every site."
+  }
+]

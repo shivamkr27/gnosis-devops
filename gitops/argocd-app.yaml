@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gnosis
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/shivamkr27/gnosis-devops
+    targetRevision: main
+    path: gitops/k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: gnosis
+  syncPolicy:
+    automated:
+      prune: true       # Delete removed resources
+      selfHeal: true    # Auto-fix drift
+    syncOptions:
+      - CreateNamespace=true
+      - ApplyOutOfSyncOnly=true

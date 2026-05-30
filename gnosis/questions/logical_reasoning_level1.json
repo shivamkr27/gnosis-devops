@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "easy",
+    "timer_seconds": 40,
+    "question_text": "Find the next number in the series: 2, 6, 12, 20, 30, ?",
+    "option_a": "40",
+    "option_b": "42",
+    "option_c": "44",
+    "option_d": "46",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Pattern: +4, +6, +8, +10. The next gap is +12. 30 + 12 = 42."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?",
+    "option_a": "7",
+    "option_b": "10",
+    "option_c": "12",
+    "option_d": "13",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is a simple alternating addition and subtraction series. In the first pattern, 3 is added; in the second, 2 is subtracted."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Look at this series: 36, 34, 30, 28, 24, ... What number should come next?",
+    "option_a": "20",
+    "option_b": "22",
+    "option_c": "23",
+    "option_d": "26",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is an alternating subtraction series. First, 2 is subtracted, then 4, then 2, and so on."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Look at this series: 2, 1, (1/2), (1/4), ... What number should come next?",
+    "option_a": "(1/3)",
+    "option_b": "(1/8)",
+    "option_c": "(2/8)",
+    "option_d": "(1/16)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is a simple division series; each number is one-half of the previous number."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Look at this series: 80, 10, 70, 15, 60, ... What number should come next?",
+    "option_a": "20",
+    "option_b": "25",
+    "option_c": "30",
+    "option_d": "50",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is an alternating addition and subtraction series. In the first pattern, 10 is subtracted from each number to arrive at the next. In the second pattern, 5 is added to each number to arrive at the next."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Look at this series: 544, 509, 474, 439, ... What number should come next?",
+    "option_a": "404",
+    "option_b": "414",
+    "option_c": "420",
+    "option_d": "445",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is a simple subtraction series; each number is 35 less than the previous number."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Analogies",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "CUP : LIP :: BIRD : ?",
+    "option_a": "GRASS",
+    "option_b": "FOREST",
+    "option_c": "BEAK",
+    "option_d": "BUSH",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "You drink out of a cup with your lips. A bird picks up food with its beak."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Analogies",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Flow : River :: Stagnant : ?",
+    "option_a": "Rain",
+    "option_b": "Stream",
+    "option_c": "Pool",
+    "option_d": "Canal",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Water of a river flows; water of a pool is stagnant."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Analogies",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Paw : Cat :: Hoof : ?",
+    "option_a": "Lamb",
+    "option_b": "Horse",
+    "option_c": "Elephant",
+    "option_d": "Tiger",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cat has paws and horse has hooves."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Blood Relations",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "Pointing to a photograph of a boy, Suresh said, 'He is the son of the only son of my mother.' How is Suresh related to that boy?",
+    "option_a": "Brother",
+    "option_b": "Uncle",
+    "option_c": "Cousin",
+    "option_d": "Father",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "The boy in the photograph is the son of Suresh's mother's only son (who is Suresh himself). So, Suresh is the boy's father."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Blood Relations",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "A's mother is sister of B and daughter of C. D is daughter of B and sister of E. How is C related to E?",
+    "option_a": "Father",
+    "option_b": "Grandfather",
+    "option_c": "Grandmother",
+    "option_d": "Either B or C",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "C is the parent of B, and B is the parent of E. So C is the grandparent of E. Since the gender of C is not specified, C could be the Grandfather or Grandmother."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Coding-Decoding",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "If in a certain language, MADRAS is coded as NBESBT, how is BOMBAY coded in that code?",
+    "option_a": "CPNCBX",
+    "option_b": "CPNCBZ",
+    "option_c": "CPOCBZ",
+    "option_d": "CQOCBZ",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Each letter in the word is replaced by the next letter in the English alphabet."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Coding-Decoding",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "In a certain code, TRIPLE is written as SQHOKD. How is EXOTIC written in that code?",
+    "option_a": "DWNSHB",
+    "option_b": "DWNTHB",
+    "option_c": "DVOVHD",
+    "option_d": "DVNTSH",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Each letter in the word is moved one step backward in the English alphabet."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Look at this series: J14, L16, __, P20, R22, ... What number should fill the blank?",
+    "option_a": "S24",
+    "option_b": "N18",
+    "option_c": "M18",
+    "option_d": "T24",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The letters follow J, L, N, P, R (skipping one). The numbers are 14, 16, 18, 20, 22."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Find the missing number: 3, 5, 9, 17, 33, ?",
+    "option_a": "44",
+    "option_b": "65",
+    "option_c": "64",
+    "option_d": "49",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The difference doubles each time: +2, +4, +8, +16. Next is +32. 33 + 32 = 65."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Seating Arrangement",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "Five people A, B, C, D, and E are sitting in a row. A is to the right of B, E is to the left of B but to the right of C. A is to the left of D. Who is second from the left?",
+    "option_a": "A",
+    "option_b": "B",
+    "option_c": "E",
+    "option_d": "C",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The order is C, E, B, A, D. E is second from the left."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Seating Arrangement",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "Six friends P, Q, R, S, T, and U are sitting in a circle facing the center. R is between P and Q. U is between T and S. S is to the immediate left of P. Who is between R and T?",
+    "option_a": "P",
+    "option_b": "S",
+    "option_c": "Q",
+    "option_d": "U",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Placing them in the circle: P, S, U, T, Q, R. Between R and T is Q."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Direction Sense",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "A man walks 5 km toward south and then turns to the right. After walking 3 km he turns to the left and walks 5 km. Now in which direction is he from the starting place?",
+    "option_a": "West",
+    "option_b": "South",
+    "option_c": "South-West",
+    "option_d": "North-East",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "He moves South, then West, then South again. He is South-West from the start."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Direction Sense",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "Rahul put his timepiece on the table in such a way that at 6 P.M. hour hand points to North. In which direction the minute hand will point at 9.15 P.M.?",
+    "option_a": "South",
+    "option_b": "East",
+    "option_c": "North",
+    "option_d": "West",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "At 6 P.M., the hour hand points down (6). If down is North, then right (3) is West. At 9.15 P.M., the minute hand points to 3, so it points West."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Syllogism",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "Statements: All bags are pockets. All pockets are shops. Conclusions: (I) All bags are shops. (II) All shops are bags.",
+    "option_a": "Only I follows",
+    "option_b": "Only II follows",
+    "option_c": "Neither I nor II follows",
+    "option_d": "Both I and II follow",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If all A are B and all B are C, then all A are C. But all C are not necessarily A."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Syllogism",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "Statements: Some actors are singers. All the singers are dancers. Conclusions: (I) Some actors are dancers. (II) No singer is actor.",
+    "option_a": "Only I follows",
+    "option_b": "Only II follows",
+    "option_c": "Neither I nor II follows",
+    "option_d": "Both I and II follow",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Some actors are singers, and all singers are dancers. So the part of actors that are singers must also be dancers."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Venn Diagrams",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "Which of the following diagrams indicates the best relation between Travelers, Train and Bus?",
+    "option_a": "Three overlapping circles",
+    "option_b": "One big circle containing two separate small circles",
+    "option_c": "One circle partially overlapping two separate circles",
+    "option_d": "Three separate circles",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Travelers can use train, bus, or neither (other means). Train and Bus are separate modes of transport."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Venn Diagrams",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "Which of the following diagrams indicates the best relation between Women, Mothers and Engineers?",
+    "option_a": "One circle containing another, and a third overlapping both",
+    "option_b": "Three overlapping circles",
+    "option_c": "One big circle containing two overlapping small circles",
+    "option_d": "Three separate circles",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "All mothers are women. Some women and some mothers can be engineers."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Alphabet Test",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "If the alphabet is written in reverse order, which letter will be the 7th to the left of the 10th letter from your right?",
+    "option_a": "C",
+    "option_b": "Q",
+    "option_c": "P",
+    "option_d": "R",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "10th from right is J. 7th to the left of J in the original alphabet is Q (17th letter)."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Number Test",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "How many 5s are there in the following sequence which are immediately followed by 3 but not immediately preceded by 7? 8 9 5 3 2 5 3 8 5 5 6 8 7 3 3 5 7 7 5 3 6",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The 5s meeting the criteria are at positions 3, 6, and 20."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Clocks",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "At what angle the hands of a clock are inclined at 15 minutes past 5?",
+    "option_a": "58.5 degrees",
+    "option_b": "64 degrees",
+    "option_c": "67.5 degrees",
+    "option_d": "72.5 degrees",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Angle = |30H - 5.5M|. Angle = |30*5 - 5.5*15| = |150 - 82.5| = 67.5."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Calendar",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "If 1st January 2008 was Tuesday, then what day of the week lies on 1st January 2009?",
+    "option_a": "Monday",
+    "option_b": "Wednesday",
+    "option_c": "Thursday",
+    "option_d": "Sunday",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "2008 is a leap year, so there are 2 odd days. Tuesday + 2 = Thursday."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Calendar",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "On what dates of April, 2001 did Wednesday fall?",
+    "option_a": "1st, 8th, 15th, 22nd, 29th",
+    "option_b": "2nd, 9th, 16th, 23rd, 30th",
+    "option_c": "3rd, 10th, 17th, 24th",
+    "option_d": "4th, 11th, 18th, 25th",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "By calculation, April 1, 2001 is Sunday. So Wednesday is April 4."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Logical Sequence of Words",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Arrange the words given below in a meaningful sequence. 1. Poverty 2. Population 3. Death 4. Unemployment 5. Disease",
+    "option_a": "2, 3, 4, 1, 5",
+    "option_b": "3, 4, 2, 5, 1",
+    "option_c": "2, 4, 1, 5, 3",
+    "option_d": "1, 2, 3, 4, 5",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Logical sequence: Increase in population lead to unemployment, unemployment leads to poverty, poverty leads to diseases, and diseases cause death."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Data Sufficiency",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "How is J related to K? (I) J is the brother of L. (II) L's sister is K.",
+    "option_a": "Statement I alone is sufficient",
+    "option_b": "Statement II alone is sufficient",
+    "option_c": "Both statements I and II together are sufficient",
+    "option_d": "Statements I and II together are NOT sufficient",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "From I, J is male. From II, K is female and sister of L. Both together show J is brother of K."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Data Sufficiency",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "What is the rank of P from top? (I) P is 10th from the bottom. (II) There are 40 students in the class.",
+    "option_a": "Statement I alone is sufficient",
+    "option_b": "Statement II alone is sufficient",
+    "option_c": "Both statements I and II together are sufficient",
+    "option_d": "Statements I and II together are NOT sufficient",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Rank from top = (Total students - Rank from bottom) + 1. Both pieces are needed."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Binary Logic",
+    "question_type": "hard",
+    "timer_seconds": 55,
+    "question_text": "Three persons P, Q, and R say: P: 'I am a truth-teller'. Q: 'P is a liar'. R: 'Q is a liar'. Exactly one of them is a truth-teller. Who is it?",
+    "option_a": "P",
+    "option_b": "Q",
+    "option_c": "R",
+    "option_d": "None",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If Q is the truth-teller, then P is a liar and R is a liar (since Q is not a liar). This fits the condition."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Puzzles",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "In a family gathered for dinner, there are two fathers, two mothers, three sons and one daughter. What is the minimum number of people present?",
+    "option_a": "4",
+    "option_b": "5",
+    "option_c": "6",
+    "option_d": "8",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Minimum 5: Grandfather, Grandmother, Father, Mother, and Son. Wait, that doesn't fit 3 sons. Try Grandfather, Grandmother, Father (son of GF), and 2 sons of Father. That makes 2 fathers, 1 mother, 3 sons. Add Mother of 2 sons. That's 5 people."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Arithmetic Reasoning",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "A shepherd had 17 sheep. All but nine died. How many was he left with?",
+    "option_a": "8",
+    "option_b": "9",
+    "option_c": "17",
+    "option_d": "Nil",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The phrase 'all but nine died' means nine survived."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Arithmetic Reasoning",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "A bird shooter was asked how many birds he had in the bag. He replied that there were all sparrows but six, all pigeons but six, and all ducks but six. How many birds had he in all?",
+    "option_a": "9",
+    "option_b": "18",
+    "option_c": "27",
+    "option_d": "36",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Let Total = T. Sparrow = T-6, Pigeons = T-6, Ducks = T-6. T = (T-6) + (T-6) + (T-6) => T = 3T-18 => 2T=18 => T=9."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Coding-Decoding",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "If 'water' is called 'food', 'food' is called 'tree', 'tree' is called 'sky', 'sky' is called 'wall', on which of the following grows a fruit?",
+    "option_a": "Water",
+    "option_b": "Food",
+    "option_c": "Sky",
+    "option_d": "Tree",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Fruits grow on a 'tree', and 'tree' is called 'sky'."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Analogies",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Venerate : Worship :: Extol : ?",
+    "option_a": "Glorify",
+    "option_b": "Homage",
+    "option_c": "Compliment",
+    "option_d": "Recommend",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "These are synonyms of praise or honor."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Analogies",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Odometer is to mileage as compass is to:",
+    "option_a": "Speed",
+    "option_b": "Hiking",
+    "option_c": "Needle",
+    "option_d": "Direction",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Odometer measures mileage; compass measures direction."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Analogies",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Marathon is to race as hibernation is to:",
+    "option_a": "Winter",
+    "option_b": "Bear",
+    "option_c": "Dream",
+    "option_d": "Sleep",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "A marathon is a long race; hibernation is a long sleep."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Look at this series: 1.5, 2.3, 3.1, 3.9, ... What number should come next?",
+    "option_a": "4.2",
+    "option_b": "4.4",
+    "option_c": "4.7",
+    "option_d": "5.1",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Simple addition series: +0.8 to each number."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Look at this series: 14, 28, 20, 40, 32, 64, ... What number should come next?",
+    "option_a": "52",
+    "option_b": "56",
+    "option_c": "96",
+    "option_d": "128",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Alternating multiplication and subtraction: *2, -8, *2, -8."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Odd Man Out",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Pick the odd one out.",
+    "option_a": "Curd",
+    "option_b": "Butter",
+    "option_c": "Oil",
+    "option_d": "Cheese",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Oil is not a dairy product."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Odd Man Out",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Pick the odd one out.",
+    "option_a": "Rose",
+    "option_b": "Lotus",
+    "option_c": "Marigold",
+    "option_d": "Mango",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Mango is a fruit; others are flowers."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "Look at this series: 2, 4, 12, 48, 240, ... What number should come next?",
+    "option_a": "480",
+    "option_b": "960",
+    "option_c": "1440",
+    "option_d": "2400",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Pattern: *2, *3, *4, *5. Next is *6. 240 * 6 = 1440."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Seating Arrangement",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Six people L, M, N, O, P, Q are standing in a circle. N is between L and M. P is between M and Q. O is to the right of L. Who is between L and O?",
+    "option_a": "Q",
+    "option_b": "P",
+    "option_c": "N",
+    "option_d": "None",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Sequence: L, N, M, P, Q, O. Between L and O is nobody in one direction, but Q is on the other side? No, O is right of L, so Q must be between O and P."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Blood Relations",
+    "question_type": "hard",
+    "timer_seconds": 55,
+    "question_text": "A is the father of B and C. B is the son of A but C is not the son of A. What is C's relation to A?",
+    "option_a": "Daughter",
+    "option_b": "Niece",
+    "option_c": "Nephew",
+    "option_d": "Uncle",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If C is not the son but A is the father, C must be the daughter."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Clocks",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How many times do the hands of a clock coincide in a day?",
+    "option_a": "20",
+    "option_b": "21",
+    "option_c": "22",
+    "option_d": "24",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The hands coincide 11 times every 12 hours."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Series",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Find the missing number in the series: 4, 9, 25, 49, 121, ?",
+    "option_a": "144",
+    "option_b": "169",
+    "option_c": "196",
+    "option_d": "225",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "These are squares of prime numbers: 2^2, 3^2, 5^2, 7^2, 11^2. Next is 13^2 = 169."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Direction Sense",
+    "question_type": "medium",
+    "timer_seconds": 45,
+    "question_text": "One morning after sunrise, Suresh was standing facing a pole. The shadow of the pole fell exactly to his right. To which direction was he facing?",
+    "option_a": "East",
+    "option_b": "West",
+    "option_c": "South",
+    "option_d": "North",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "In the morning, the shadow is to the West. If West is to his right, he is facing South."
+  },
+  {
+    "subject_name": "Logical Reasoning",
+    "level_number": 1,
+    "level_topic": "Topic 50",
+    "question_type": "easy",
+    "timer_seconds": 45,
+    "question_text": "Sample question 50 for Logical Reasoning Level 1?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 50 of Logical Reasoning Level 1."
+  }
+]

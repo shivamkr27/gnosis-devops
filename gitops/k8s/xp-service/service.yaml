@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: xp-service
+  namespace: gnosis
+  labels:
+    app: xp-service
+spec:
+  type: ClusterIP
+  selector:
+    app: xp-service
+  ports:
+    - port: 3004
+      targetPort: 3004
+      protocol: TCP

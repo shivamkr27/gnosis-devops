@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "CAP Theorem",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "According to the CAP Theorem, which two properties do most distributed NoSQL databases like Cassandra prioritize during a network partition?",
+    "option_a": "Consistency and Availability",
+    "option_b": "Availability and Partition Tolerance",
+    "option_c": "Consistency and Partition Tolerance",
+    "option_d": "Performance and Scalability",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In the event of a partition (P), a system must choose between Availability (A) or strict Consistency (C)."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Consistent Hashing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the primary problem solved by 'Consistent Hashing' in a distributed system?",
+    "option_a": "Encrypting data across multiple servers",
+    "option_b": "Minimizing data movement when nodes are added or removed from a cluster",
+    "option_c": "Speeding up the CPU speed",
+    "option_d": "Cleaning up the hard drive",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Consistent hashing ensures that only a small fraction of keys need to be remapped when the number of slots changes."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Message Queues",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the role of a 'Message Queue' like RabbitMQ or Kafka?",
+    "option_a": "To store only the final output of the code",
+    "option_b": "To enable asynchronous communication between services by decoupling the producer and consumer",
+    "option_c": "To manage the server's user login",
+    "option_d": "To increase the system's internet speed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Queues allow systems to handle spikes in traffic and process tasks in the background."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Cache Eviction",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does the 'LRU' cache eviction policy stand for?",
+    "option_a": "Longest Running Unit",
+    "option_b": "Least Recently Used",
+    "option_c": "Low Resource Unit",
+    "option_d": "Last Reliable Update",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LRU removes the item that hasn't been accessed for the longest time when the cache is full."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "NoSQL vs SQL",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which database type is generally preferred for data with many-to-many relationships and a rigid schema?",
+    "option_a": "KeyValue Store",
+    "option_b": "Document Database",
+    "option_c": "Relational Database (SQL)",
+    "option_d": "Graph Database",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "SQL databases excel at managing relationships and maintaining data integrity via joins."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "CDN Architecture",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is an 'Edge Server' in a Content Delivery Network (CDN)?",
+    "option_a": "A server located at the center of the world",
+    "option_b": "A server located at the 'edge' of a network, physically close to users to serve cached content",
+    "option_c": "A server that backups data once a month",
+    "option_d": "A physical wall in the data center",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Edge servers minimize request travel distance (latency) for users."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Database Replication",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Multi-Master' replication?",
+    "option_a": "One master server and many slave servers",
+    "option_b": "Multiple servers that can handle both read and write requests and sync with each other",
+    "option_c": "A server that doesn't share data",
+    "option_d": "Using a secondary database as a backup only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multi-master replication increases write scalability but introduces complex conflict resolution issues."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Consistency Models",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In a distributed system, what is 'Read-Your-Writes' consistency?",
+    "option_a": "A user can read their own updates immediately after writing them",
+    "option_b": "Users can only read what others have written",
+    "option_c": "The system reads random data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This ensures a user sees their own changes even if the total system is eventually consistent."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Rate Limiting",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which algorithm is commonly used for 'Rate Limiting'?",
+    "option_a": "Bubble Sort",
+    "option_b": "Token Bucket",
+    "option_c": "Binary Search",
+    "option_d": "Round Robin",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Token Bucket algorithm allows for bursts of traffic while maintaining a steady average rate."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Service Discovery",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of 'Service Discovery' in a microservices environment?",
+    "option_a": "To find a job",
+    "option_b": "To automatically detect the network location (IP/Port) of services in a dynamic cluster",
+    "option_c": "To delete unused code",
+    "option_d": "To encrypt network traffic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tools like Consul, Etcd, or Zookeeper help services find each other in a cloud environment."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Zookeeper",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Apache Zookeeper is often used as a:",
+    "option_a": "Web Server",
+    "option_b": "Distributed Configuration and Coordination Service",
+    "option_c": "Database for storing gigabytes of text",
+    "option_d": "Streaming video platform",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Zookeeper manages centralized config, leader election, and group membership for distributed systems."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Availability",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Hot Standby'?",
+    "option_a": "A server that is turned off but ready to be used",
+    "option_b": "A secondary server that is running and kept fully synchronized with the primary, ready for immediate failover",
+    "option_c": "A backup on a USB drive",
+    "option_d": "A very hot server room",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hot standby minimizes failover time with nearly zero interruption."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Proxies",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Forward Proxy' used for?",
+    "option_a": "Protecting a group of servers from the internet",
+    "option_b": "Protecting a group of clients (users) as they access the internet",
+    "option_c": "Scaling a database",
+    "option_d": "Storing images",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Forward proxies act on behalf of the client, often for security, privacy, or content filtering."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Database Indexing",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the trade-off for adding many indexes to a database table?",
+    "option_a": "Reads become slower",
+    "option_b": "Writes become slower and more storage is consumed",
+    "option_c": "The database becomes smaller",
+    "option_d": "The system uses less CPU",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every index must be updated whenever a row is inserted, updated, or deleted."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "API Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does 'JWT' stand for in web security and API design?",
+    "option_a": "Java Web Token",
+    "option_b": "JSON Web Token",
+    "option_c": "Joint Web Task",
+    "option_d": "Just Web Tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "JWT is an open standard for securely transmitting information between parties as a JSON object."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Consistency",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Quorum' in a distributed database system?",
+    "option_a": "The maximum number of users",
+    "option_b": "The minimum number of nodes that must agree to a read or write operation to be considered successful",
+    "option_c": "The speed of the database",
+    "option_d": "A type of SQL query",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Quorum ensures data consistency by requiring a majority of nodes to respond."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Caching",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Cache Miss'?",
+    "option_a": "When the cache is too small",
+    "option_b": "When the requested data is not found in the cache and must be fetched from the slower primary store",
+    "option_c": "When the cache is deleted",
+    "option_d": "When the wrong data is stored",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cache misses increase latency because they require a backend data fetch."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Load Balancing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'IP Hashing' in load balancing?",
+    "option_a": "Changing the user's IP",
+    "option_b": "Determining which server handles a request by taking the hash of the client's IP address",
+    "option_c": "A way to encrypt IPs",
+    "option_d": "A database partitioning technique",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IP hashing helps in achieving session persistence by routing the same client IP to the same server."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "CAP Theorem",
+    "question_type": "tricky",
+    "timer_seconds": 35,
+    "question_text": "Can a single system guarantee all three: Consistency, Availability, and Partition Tolerance simultaneously?",
+    "option_a": "Yes, with enough Geld (money)",
+    "option_b": "No, it is technically impossible in a distributed system",
+    "option_c": "Yes, if the servers are all in the same building",
+    "option_d": "No, unless you use SQL",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The CAP theorem states that you can only provide two of the three guarantees at once."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Logging",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does 'ELK stack' stand for?",
+    "option_a": "Elasticsearch, Logstash, Kibana",
+    "option_b": "Easy Log Keeper",
+    "option_c": "Encryption Layer Kernel",
+    "option_d": "Elastic Link Kernel",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The ELK stack is a popular log aggregation and visualization toolset."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Latency",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Fan-out' in messaging systems?",
+    "option_a": "Decreasing the number of servers",
+    "option_b": "Delivering a single message to multiple consumers at the same time",
+    "option_c": "The cooling system of a server",
+    "option_d": "A way to sort data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fan-out is common in pub/sub architectures."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Microservices",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is the 'Circuit Breaker' pattern?",
+    "option_a": "A physical switch in the server room",
+    "option_b": "A pattern used to detect failures and prevent cascading failures by stopping calls to a failing service",
+    "option_c": "A way to speed up network traffic",
+    "option_d": "A database optimization tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Circuit breakers protect the system from getting overwhelmed by failing downstream dependencies."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Messaging",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a 'Pub/Sub' model, what do the components represent?",
+    "option_a": "Public and Sub-public",
+    "option_b": "Publisher and Subscriber",
+    "option_c": "Processor and Server",
+    "option_d": "Printer and Scanner",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The publisher sends messages without knowing who will receive them; subscribers sign up to receive specific topics."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Database",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Write-Ahead Logging' (WAL)?",
+    "option_a": "Writing logs after the data is committed",
+    "option_b": "A technique where data changes are first recorded in a persistent log before being applied to the actual database",
+    "option_c": "Logging only successful queries",
+    "option_d": "Deleting logs every hour",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "WAL is used to ensure atomic commits and data durability in case of a crash."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'RAID'?",
+    "option_a": "A bug in the system",
+    "option_b": "Redundant Array of Independent Disks, used for data redundancy and/or performance",
+    "option_c": "A type of network router",
+    "option_d": "An internet security protocol",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RAID combines multiple disks to prevent data loss if one disk fails."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Load Balancing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Least Connections' load balancing?",
+    "option_a": "Avoiding servers with high latency",
+    "option_b": "Sending a request to the server that currently has the fewest active sessions",
+    "option_c": "Sending a request to the oldest server",
+    "option_d": "Using a random server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This method is useful when servers have different capacities or processing requirements."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Scalability",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Back-pressure' in a distributed system?",
+    "option_a": "The wind speed in the server room",
+    "option_b": "The resistance or force exerted against the flow of data when a consumer cannot keep up with a producer",
+    "option_c": "A type of database indexing",
+    "option_d": "A way to push updates to users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Back-pressure prevents the consumer from being overwhelmed and potentially crashing."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Caching",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Write-Back' (or Write-Behind) caching?",
+    "option_a": "Data is written to the cache and then immediately to the DB",
+    "option_b": "Data is written solely to the cache, and the database is updated asynchronously after some delay",
+    "option_c": "Deleting the cache before a write",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This provides high write performance but carries the risk of data loss if the cache fails before the DB is updated."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Database Consistency",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does 'ACID' stand for in relational databases?",
+    "option_a": "Atomicity, Consistency, Isolation, Durability",
+    "option_b": "Accuracy, Core, Internal, Data",
+    "option_c": "Access, Control, Internal, Database",
+    "option_d": "All-in-one Consistency, Integrity, Durability",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "ACID properties ensure reliable processing of database transactions."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Partitioning",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Vertical Partitioning' of a database?",
+    "option_a": "Splitting rows across multiple servers",
+    "option_b": "Splitting tables by dividing columns into separate tables to reduce I/O",
+    "option_c": "Deleting columns that aren't used",
+    "option_d": "Sorting data by size",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is often used to move infrequently accessed columns to separate storage."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "High Availability",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Cold Standby'?",
+    "option_a": "A running server that acts as a backup",
+    "option_b": "A server that is available but turned off, needing time to start up and sync during a failover",
+    "option_c": "A server in a very cold room",
+    "option_d": "A backup on paper",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cold standby is cheaper but significantly increases recovery time (RTO)."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Security",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Throughput' vs 'Latency' tradeoff?",
+    "option_a": "There is no tradeoff",
+    "option_b": "Optimizing for handling many requests (Throughput) may increase the time per request (Latency)",
+    "option_c": "Decreasing latency always increases throughput",
+    "option_d": "Throughput and latency are the same thing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Designing a system often involves balancing these two depending on user needs."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "NoSQL",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is a 'Wide-column Store' database?",
+    "option_a": "A database that only stores strings",
+    "option_b": "A NoSQL type that uses a column-oriented data structure (e.g., Cassandra, HBase)",
+    "option_c": "A SQL table with many columns",
+    "option_d": "A physical storage method",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Wide-column stores offer high performance and a highly scalable architecture."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Reliability",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'SLA' (Service Level Agreement)?",
+    "option_a": "A type of code comment",
+    "option_b": "A contract between a service provider and client that defines the level of service and uptime expected",
+    "option_c": "A software library",
+    "option_d": "A type of hardware",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SLAs provide a baseline for availability guarantees."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Protocols",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of these is a binary communication protocol often used for efficiency in microservices?",
+    "option_a": "JSON",
+    "option_b": "XML",
+    "option_c": "gRPC (using Protocol Buffers)",
+    "option_d": "HTML",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "gRPC is more efficient than REST/JSON for inter-service communication because it uses a binary format."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Data Consistency",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In distributed systems, what is the 'Gossip Protocol'?",
+    "option_a": "Servers sharing rumors about the users",
+    "option_b": "A peer-to-peer communication protocol where nodes share information about neighbors to reach cluster-wide consensus",
+    "option_c": "A way to delete database logs",
+    "option_d": "A high-speed internet protocol",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Gossip protocols are used for failure detection and state dissemination in large clusters like Cassandra."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Scaling",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Stateless' scaling?",
+    "option_a": "Scaling by adding more hard drives",
+    "option_b": "Scaling application servers that do not store client context locally, making them easily replaceable",
+    "option_c": "Scaling without using code",
+    "option_d": "Using only one server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Stateless servers are key to efficient horizontal scaling."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Database Sharding",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Hot Spot' in database sharding?",
+    "option_a": "A high-speed internet area",
+    "option_b": "A specific shard that receives a disproportionately large amount of traffic or data, causing a performance bottleneck",
+    "option_c": "A server that is too hot",
+    "option_d": "A popular database feature",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hot spots usually occur due to poor choice of a shard key (e.g., sharding by date for a trending event)."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Distributed File System' (DFS)?",
+    "option_a": "A way to store files on one computer",
+    "option_b": "A file system that allows many machines to access and share files as if they were local",
+    "option_c": "A file that is shared on social media",
+    "option_d": "A database tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Examples include HDFS (Hadoop) and S3, which provide scalable and durable storage."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Proxy Patterns",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is a 'Sidecar' pattern in microservices?",
+    "option_a": "A passenger on a motorcycle",
+    "option_b": "Attaching a helper component to a service to handle infrastructure concerns like logging, monitoring, or networking",
+    "option_c": "A second server that does the same thing as the first",
+    "option_d": "A way to scale databases",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sidecars are commonly used in service meshes like Istio."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Monitoring",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Heartbeat' monitoring primarily used for?",
+    "option_a": "To check the developer's pulse",
+    "option_b": "To detect if a node or service in a cluster has failed",
+    "option_c": "To count the number of visitors",
+    "option_d": "To optimize database queries",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If the heartbeat stops, the system can initiate failover."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Availability",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'N+1' redundancy?",
+    "option_a": "Having one more component than theoretically required to handle the load",
+    "option_b": "Having double the servers",
+    "option_c": "Adding one user at a time",
+    "option_d": "A type of math problem",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "N+1 ensures that if one server fails, the remaining N can still handle the entire traffic."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'VIP' (Virtual IP) in load balancing?",
+    "option_a": "A Very Important Person's IP",
+    "option_b": "An IP address that is not tied to a specific physical server, allowing it to move to a backup server during failover",
+    "option_c": "An encrypted IP address",
+    "option_d": "A private local IP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "VIPs are crucial for floating load balancers or highly available database clusters."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Protocols",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Which of these provides real-time, bi-directional communication between client and server?",
+    "option_a": "HTTP GET",
+    "option_b": "WebSockets",
+    "option_c": "REST API",
+    "option_d": "FTP",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "WebSockets maintain a persistent connection for low-latency full-duplex communication."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Load Balancing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Layer 4' load balancer?",
+    "option_a": "A load balancer that understands cookies",
+    "option_b": "A load balancer that operates based on TCP/UDP ports and IP addresses",
+    "option_c": "A load balancer for image processing only",
+    "option_d": "A random routing tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Layer 4 load balancers are faster but less intelligent than Layer 7 ones."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Scaling",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Throttling' in system design?",
+    "option_a": "Stopping the server completely",
+    "option_b": "Intentional slowing down of a service or user request to prevent system overload",
+    "option_c": "A way to speed up the database",
+    "option_d": "Deleting old files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Throttling protects system resources during traffic spikes or DDoS attacks."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Cache Invalidation",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Purge' strategy in CDN caching?",
+    "option_a": "Removing all servers",
+    "option_b": "Manually forcing the removal of cached content before its TTL expires",
+    "option_c": "Automatically deleting logs",
+    "option_d": "Encrypting the cache",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Purging is necessary when content changes upstream and users must see the update immediately."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Database Architecture",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Denormalization' in database design?",
+    "option_a": "Creating more table relationships",
+    "option_b": "Introducing redundant data into a database to improve read performance by avoiding joins",
+    "option_c": "Cleaning up the data schema",
+    "option_d": "Converting NoSQL to SQL",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Denormalization trades storage space and write complexity for significantly faster read queries."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Microservices",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Saga' pattern in microservices?",
+    "option_a": "A long story about the server",
+    "option_b": "A pattern for managing distributed transactions by breaking them into a series of local transactions with compensations",
+    "option_c": "A way to merge all code into one file",
+    "option_d": "A database backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sagas provide a way to maintain data consistency across multiple independent services."
+  },
+  {
+    "subject_name": "System Design",
+    "level_number": 2,
+    "level_topic": "Messaging",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Dead Letter Queue' (DLQ)?",
+    "option_a": "A queue for letters that weren't mailed",
+    "option_b": "A secondary queue where messages that cannot be processed successfully are sent for debugging",
+    "option_c": "A deleted database",
+    "option_d": "A type of server crash",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DLQs prevent messages from cycling indefinitely and allow developers to investigate failures."
+  }
+]

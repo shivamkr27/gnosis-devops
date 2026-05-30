@@ -1,0 +1,811 @@
+[
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the extension of a Java bytecode file?",
+    "option_a": ".java",
+    "option_b": ".class",
+    "option_c": ".exe",
+    "option_d": ".jar",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Java source code (.java) is compiled into bytecode (.class) which runs on the JVM."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which component is responsible for running the Java program?",
+    "option_a": "JDK",
+    "option_b": "JRE",
+    "option_c": "JVM",
+    "option_d": "JIT",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The Java Virtual Machine (JVM) is the engine that provides the runtime environment to drive the Java Code."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of these is used to compile Java code?",
+    "option_a": "java",
+    "option_b": "javac",
+    "option_c": "javadoc",
+    "option_d": "javap",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'javac' command is the Java compiler included in the JDK."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the process of converting a primitive type to a Wrapper object automatically called?",
+    "option_a": "Autoboxing",
+    "option_b": "Unboxing",
+    "option_c": "Typecasting",
+    "option_d": "Binding",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Autoboxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which of these is NOT a wrapper class?",
+    "option_a": "Integer",
+    "option_b": "Byte",
+    "option_c": "String",
+    "option_d": "Character",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "String is a regular class in java.lang, not a wrapper for a primitive type."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "JDK stands for:",
+    "option_a": "Java Data Kit",
+    "option_b": "Java Definition Kit",
+    "option_c": "Java Development Kit",
+    "option_d": "Java Design Kit",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "JDK is the full development environment that includes JRE and development tools."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which area in JVM memory stores class-level data and static variables?",
+    "option_a": "Stack",
+    "option_b": "Heap",
+    "option_c": "Method Area",
+    "option_d": "PC Register",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The Method Area (or Metaspace in newer versions) stores per-class structures such as the runtime constant pool and static fields."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "JRE includes which of the following?",
+    "option_a": "JVM + Library classes",
+    "option_b": "JVM + Compiler",
+    "option_c": "Compiler + Debugger",
+    "option_d": "Only JVM",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Java Runtime Environment (JRE) consists of the JVM and the core class libraries needed to run Java apps."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does a '.class' file contain?",
+    "option_a": "Machine code",
+    "option_b": "Source code",
+    "option_c": "Bytecode",
+    "option_d": "Assembly code",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The compiler transforms readable Java code into platform-independent bytecode."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which primitive type corresponds to the 'Character' wrapper class?",
+    "option_a": "char",
+    "option_b": "string",
+    "option_c": "byte",
+    "option_d": "short",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The 'char' primitive is wrapped by the 'Character' class."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the role of the JIT compiler?",
+    "option_a": "To translate source code to bytecode",
+    "option_b": "To optimize bytecode into machine code at runtime",
+    "option_c": "To manage memory allocation",
+    "option_d": "To debug the code line by line",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Just-In-Time (JIT) compiler improves performance by compiling frequently executed bytecode sequences into native machine code."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which memory area in JVM is used for dynamic allocation of objects?",
+    "option_a": "Stack",
+    "option_b": "Method Area",
+    "option_c": "Heap",
+    "option_d": "Native Method Stack",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "All Java objects are allocated on the heap, and governed by Garbage Collection."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the output of: `Integer a = 127; Integer b = 127; System.out.println(a == b);`?",
+    "option_a": "true",
+    "option_b": "false",
+    "option_c": "Compilation error",
+    "option_d": "Runtime error",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Java caches Integer objects for values between -128 and 127."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What will happen if we compare `Integer a = 200; Integer b = 200; System.out.println(a == b);`?",
+    "option_a": "true",
+    "option_b": "false",
+    "option_c": "true if using .equals()",
+    "option_d": "false if using .equals()",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Values outside the -128 to 127 range are not cached, so '==' compares different object references."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which component of the JVM loads '.class' files into the Method Area?",
+    "option_a": "Execution Engine",
+    "option_b": "Class Loader",
+    "option_c": "Garbage Collector",
+    "option_d": "Native interface",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Class Loader subsystem loads, links, and initializes the class files."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is 'Bytecode' exactly?",
+    "option_a": "CPU dependent code",
+    "option_b": "An intermediate representation of code for the JVM",
+    "option_c": "Optimized assembly language",
+    "option_d": "The same as binary machine code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bytecode is a highly optimized set of instructions designed to be executed by the Java Virtual Machine."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Which of these wrapper classes is NOT final?",
+    "option_a": "Integer",
+    "option_b": "Boolean",
+    "option_c": "Double",
+    "option_d": "None of the above (All are final)",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "All primitive wrapper classes in Java are declared as 'final' and cannot be inherited."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "What is the purpose of JVM Stack?",
+    "option_a": "To store global objects",
+    "option_b": "To store method execution frames and local variables",
+    "option_c": "To store class level information",
+    "option_d": "To store runtime code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Each thread has a private JVM stack, created at the same time as the thread, storing frames."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "The command `java MyClass` starts which process?",
+    "option_a": "The compiler",
+    "option_b": "The JVM and Execution Engine",
+    "option_c": "The JAR packager",
+    "option_d": "The documentation generator",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'java' command launches the JVM and starts executing the main method of the specified class."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which memory area is NOT shared among all threads in a JVM process?",
+    "option_a": "Heap",
+    "option_b": "Method Area",
+    "option_c": "JVM Stack",
+    "option_d": "Shared Library Area",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "JVM Stacks and PC Registers are per-thread, while Heap and Method Area are shared."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between 'JDK' and 'JRE'?",
+    "option_a": "JDK is for running, JRE is for building",
+    "option_b": "JDK = JRE + Development tools (javac, debugger, etc.)",
+    "option_c": "JRE = JDK + JVM",
+    "option_d": "There is no functional difference",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "JDK is the super-set used by developers, whereas JRE is a minimum requirement to execute programs."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which JVM sub-component is responsible for interpreting bytecode?",
+    "option_a": "JIT Compiler",
+    "option_b": "Interpreter",
+    "option_c": "Profiler",
+    "option_d": "Garbage Collector",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Interpreter reads bytecode instructions one by one and executes them."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What does a PC Register store for a thread?",
+    "option_a": "The address of the next instruction to execute",
+    "option_b": "The value of local variables",
+    "option_c": "The reference to the main thread",
+    "option_d": "Memory limit details",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The Program Counter (PC) register contains the address of the Java Virtual Machine instruction currently being executed."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which of these wrapper classes does NOT extend the 'Number' class?",
+    "option_a": "Float",
+    "option_b": "Long",
+    "option_c": "Boolean",
+    "option_d": "Short",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Boolean and Character wrapper classes do not extend Number; they extend Object directly."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "How many bits are used to represent a Bytecode instruction?",
+    "option_a": "4 bits",
+    "option_b": "8 bits (1 byte)",
+    "option_c": "16 bits",
+    "option_d": "32 bits",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "As the name suggest, each opcode in Java bytecode is exactly one byte long."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the result of `Integer val = null; int p = val;`?",
+    "option_a": "p becomes 0",
+    "option_b": "p becomes null",
+    "option_c": "NullPointerException at runtime",
+    "option_d": "Compilation Error",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Unboxing a null wrapper object into a primitive results in a NullPointerException."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Which JVM sub-component is responsible for allocating memory for objects?",
+    "option_a": "Stack Manager",
+    "option_b": "Garbage Collector",
+    "option_c": "Memory Management Subsystem",
+    "option_d": "Interpreter",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The Execution Engine uses its memory management system to allocate space in the heap."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "Can we change the default size of the heap memory in JVM?",
+    "option_a": "No, it is fixed by the OS",
+    "option_b": "Yes, using -Xms and -Xmx arguments",
+    "option_c": "Yes, but only via Java code",
+    "option_d": "Only in Java EE",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "-Xms sets initial heap size, -Xmx sets maximum heap size."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Which of these correctly compares two 'Double' wrapper objects for equality?",
+    "option_a": "d1 == d2",
+    "option_b": "d1.equals(d2)",
+    "option_c": "d1.compareTo(d2) == 0",
+    "option_d": "B and C both",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "'==' compares references; .equals() and .compareTo() compare the actual values."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the size of the 'Boolean' wrapper object in memory?",
+    "option_a": "1 bit",
+    "option_b": "1 byte",
+    "option_c": "Varies by JVM implementation (typically 12-16 bytes)",
+    "option_d": "4 bytes",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Primitive boolean size is small, but a Wrapper Object has object overhead (header, etc.)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Does Java Bytecode run natively on the operating system?",
+    "option_a": "Yes, if converted by a special loader",
+    "option_b": "No, it requires a JVM instance to translate it",
+    "option_c": "Yes, starting from Java 9",
+    "option_d": "Only on Linux",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bytecode is virtual machine code; it is translated to native instructions by the JVM at runtime."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What happens if you run `java MyProgram.java` (Java 11+)?",
+    "option_a": "Compilation Error (needs .class)",
+    "option_b": "It compiles and executes in memory without creating a .class file",
+    "option_c": "It only checks for syntax",
+    "option_d": "It opens as a text file",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "JEP 330 allows running single-file source code programs directly without manual compilation step."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Which of these is stored in the 'Metaspace' (Java 8+)?",
+    "option_a": "Local variables",
+    "option_b": "Method Bytecode and Class metadata",
+    "option_c": "Instance objects",
+    "option_d": "Temporary strings",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Metaspace replaced the Permanent Generation (PermGen) and uses native memory to store class metadata."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "If you use a custom ClassLoader, which part of the JVM Architecture are you interacting with?",
+    "option_a": "Execution Engine",
+    "option_b": "Class Loader Subsystem",
+    "option_c": "Runtime Data Areas",
+    "option_d": "Native Method Library",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's part of the loading process where you can define how classes are find and loaded."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "The JVM is platform-independent?",
+    "option_a": "True",
+    "option_b": "False, JVM is platform-dependent",
+    "option_c": "Depends on the vendor (Oracle vs IBM)",
+    "option_d": "True only for JRE",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Java (the language) is independent, but the JVM itself must be built specifically for each OS (Windows, Mac, Linux)."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the output: `Object obj = 10; System.out.println(obj.getClass().getName());`?",
+    "option_a": "int",
+    "option_b": "java.lang.Integer",
+    "option_c": "java.lang.Object",
+    "option_d": "Compilation Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The primitive '10' is autoboxed into an 'Integer' object."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Bytecode's magic number (first 4 bytes of .class file) is:",
+    "option_a": "JAVA",
+    "option_b": "CAFEBABE",
+    "option_c": "DEADBEEF",
+    "option_d": "BABECAFE",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "All Java .class files start with the hex sequence 0xCAFEBABE."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "Which of these is NOT part of the Runtime Data Areas?",
+    "option_a": "Heap",
+    "option_b": "Method Area",
+    "option_c": "JIT Compiler",
+    "option_d": "PC Register",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The JIT compiler is part of the Execution Engine, not the Data Areas."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Wrapper classes are immutable?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only Integer is immutable",
+    "option_d": "Depends on the Java version",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Like String, all primitive wrapper classes are immutable; once created, their values cannot be changed."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What does 'Write Once, Run Anywhere' actually mean in Java?",
+    "option_a": "Compiled machine code runs on all CPUs",
+    "option_b": "Bytecode can be verified and executed by any platform-specific JVM",
+    "option_c": "Source code is translated to C++",
+    "option_d": "Java doesn't need an OS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The portability is achieved by using Bytecode which the JVM interprets or compiles to native code."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "The primary goal of Bytecode verification is:",
+    "option_a": "Performance",
+    "option_b": "Security and Integrity of code",
+    "option_c": "Compression",
+    "option_d": "Code formatting",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Verifier checks that bytecode doesn't violate access constraints or pointer rules before execution."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What happens in JVM memory when a method finishes running?",
+    "option_a": "The stack frame for that method is popped/discarded",
+    "option_b": "Heap is cleared fully",
+    "option_c": "Static variables are deleted",
+    "option_d": "The whole thread is terminated",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Local variables used in the method (stored in the frame) are automatically removed when the frame is popped off the stack."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Why use wrapper classes instead of primitives sometimes?",
+    "option_a": "To use in Generic collections (like ArrayList)",
+    "option_b": "To allow null values",
+    "option_c": "To use utility methods like Integer.parseInt()",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Collections require objects, and wrappers provide nullability and useful static methods."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "The dynamic nature of Java is supported by which JVM feature?",
+    "option_a": "Dynamic Loading of classes",
+    "option_b": "Static compile time check",
+    "option_c": "Fixed stack size",
+    "option_d": "Native compiler",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Classes are loaded on demand (when first referenced), not all at once at startup."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "Autoboxing was introduced in which Java version?",
+    "option_a": "Java 1.2",
+    "option_b": "Java 5",
+    "option_c": "Java 8",
+    "option_d": "Java 11",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "J2SE 5.0 introduced autoboxing, unboxing, generics, and enums."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of these are parts of the JDK but NOT the JRE?",
+    "option_a": "javac (compiler)",
+    "option_b": "jar (archiver)",
+    "option_c": "java (launcher)",
+    "option_d": "jlink",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "JRE only contains tools for execution; dev tools like javac and jar are JDK exclusive."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Select the per-thread memory areas in JVM:",
+    "option_a": "JVM Stack",
+    "option_b": "Native Method Stack",
+    "option_c": "PC Register",
+    "option_d": "Method Area",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Stacks and registers are thread-private. Method area and Heap are common."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Properties of Wrapper objects:",
+    "option_a": "They are immutable",
+    "option_b": "Stored in the stack only",
+    "option_c": "Stored in the heap",
+    "option_d": "Subject to garbage collection",
+    "correct_options": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "As they are objects, they live on the heap and follow object life cycles."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Which of these are valid numeric Wrapper classes?",
+    "option_a": "Float",
+    "option_b": "AtomicInteger",
+    "option_c": "Double",
+    "option_d": "Numeric",
+    "correct_options": [
+      "A",
+      "C"
+    ],
+    "explanation": "Numeric is not a class; AtomicInteger is for concurrency, not a simple primitive wrapper."
+  },
+  {
+    "subject_name": "Java Development",
+    "level_number": 1,
+    "level_topic": "JVM Architecture, Bytecode, Wrapper Classes",
+    "question_type": "multi_correct",
+    "timer_seconds": 30,
+    "question_text": "Parts of the Execution Engine in JVM include:",
+    "option_a": "Interpreter",
+    "option_b": "JIT Compiler",
+    "option_c": "Symbolic Linker",
+    "option_d": "Garbage Collector",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Interpretation, Optimization, and Memory Cleanup are core execution tasks."
+  }
+]

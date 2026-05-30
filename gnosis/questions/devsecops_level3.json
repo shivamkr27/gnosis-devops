@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Security in Pipelines",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In a DevSecOps pipeline, what is a 'Security Gate'?",
+    "option_a": "A literal gate",
+    "option_b": "An automated check (e.g. no High vulnerabilities allowed) that stops the pipeline if failed",
+    "option_c": "A ways to delete pods",
+    "option_d": "Naming the servers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Security gates ensure that insecure code never reaches production."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Vulnerability Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'CVE'?",
+    "option_a": "Common Visibility Entry",
+    "option_b": "Common Vulnerabilities and Exposures: A list of publicly disclosed cybersecurity vulnerabilities",
+    "option_c": "Critical Vulnerability Engine",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CVE IDs (e.g. CVE-2021-44228) are used to uniquely identify and track specific security flaws."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Cloud Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Shared Responsibility Model' in cloud computing?",
+    "option_a": "The cloud provider is responsible for everything",
+    "option_b": "Security 'of' the cloud is the provider's responsibility; security 'in' the cloud is the customer's responsibility",
+    "option_c": "The customer is responsible for everything",
+    "option_d": "Nobody is responsible",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Customers must still secure their data, apps, and OS even when using a managed cloud platform."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Identity & Access",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Identity Federation'?",
+    "option_a": "A ways to delete users",
+    "option_b": "Sharing identity information across multiple trust domains (e.g. logging into an app using a Google account)",
+    "option_c": "Naming the users",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Federation (using protocols like SAML or OIDC) simplifies access management across different systems."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Application Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'OWASP Top 10'?",
+    "option_a": "Top 10 developers",
+    "option_b": "A standard awareness document for developers and web application security, listing the most critical web security risks",
+    "option_c": "A list of 10 hackers",
+    "option_d": "A ways to delete code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "OWASP Top 10 includes risks like SQL Injection, Broken Access Control, and SSRF."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Infrastructure Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Golden Image' in the context of server deployment?",
+    "option_a": "An image made of gold",
+    "option_b": "A pre-configured, hardened, and tested server template used for deploying all new instances",
+    "option_c": "A ways to name a server",
+    "option_d": "A ways to delete a server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Using golden images ensures consistency and security across the entire infrastructure fleet."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Network Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'mTLS' (Mutual TLS)?",
+    "option_a": "A ways to speed up the internet",
+    "option_b": "A protocol where BOTH the client and server present certificates to verify each other's identity",
+    "option_c": "A ways to delete messages",
+    "option_d": "Naming the servers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "mTLS is commonly used in service meshes (like Istio) to provide zero-trust security between microservices."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Security Governance",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Threat Modeling'?",
+    "option_a": "A ways to predict the weather",
+    "option_b": "A proactive process for identifying, quantifying, and addressing potential security threats to an application or system",
+    "option_c": "Deleting the code",
+    "option_d": "Naming the pods",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Threat modeling (e.g. using the STRIDE model) helps teams design more secure systems from the start."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Encryption",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What characterizes 'Asymmetric Encryption' (Public Key Cryptography)?",
+    "option_a": "Using the same key for encryption and decryption",
+    "option_b": "Using a pair of keys (Public and Private); data encrypted with the public key can only be decrypted by the private key",
+    "option_c": "A ways to speed up encryption",
+    "option_d": "Deleting the keys",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Asymmetric encryption (e.g. RSA) allows for secure communication without needing to share a secret key beforehand."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Security Auditing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'SSID' vulnerability in the context of cloud IAM?",
+    "option_a": "A ways to name a user",
+    "option_b": "A vulnerability in cross-account role assumption (Confused Deputy problem in AWS)",
+    "option_c": "A wireless network flaw",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Securing cross-account resource access is a complex but vital part of cloud security."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Logging & Monitoring",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is 'SIEM' (Security Information and Event Management)?",
+    "option_a": "A ways to speed up the logs",
+    "option_b": "A system that collects, correlates, and analyzes logs from many sources to detect security threats in real-time",
+    "option_c": "A tool to delete servers",
+    "option_d": "Naming the pods",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SIEM tools (like Splunk or ELK with security) help teams find needles in the haystack of log data."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "DevSecOps Culture",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the purpose of 'Security Champions' in a DevSecOps model?",
+    "option_a": "To win security competitions",
+    "option_b": "To act as security advocates within development teams, bridging the gap between developers and the security department",
+    "option_c": "To delete old code",
+    "option_d": "Naming the files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Security champions help scale security expertise by empowering developers to handle everyday security tasks."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Modern Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Zero Trust' architecture?",
+    "option_a": "Trusting everyone in the building",
+    "option_b": "Never trust, always verify: Assuming that the network is already compromised and requiring verification for every request",
+    "option_c": "Deleting the network",
+    "option_d": "Naming the users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Zero Trust moves security from the perimeter (firewalls) to the individual resource and identity."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Advanced Malware",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is an 'APT' (Advanced Persistent Threat)?",
+    "option_a": "A very fast virus",
+    "option_b": "A prolonged and targeted cyberattack where intruders gain access to a network and remain undetected for a long time",
+    "option_c": "Deleting the database",
+    "option_d": "Naming the pods",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "APTs are often state-sponsored or highly organized groups looking for long-term data theft."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Secret Hardening",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Secret Rotation'?",
+    "option_a": "Turning the server around",
+    "option_b": "The practice of periodically changing passwords and API keys to limit the amount of time an attacker can use a stolen secret",
+    "option_c": "Deleting the secrets",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Automation is key to frequent secret rotation without breaking applications."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Supply Chain Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'SBOM' (Software Bill of Materials)?",
+    "option_a": "A list of developers on a project",
+    "option_b": "A formal, structured record of all components, libraries, and dependencies used in building a piece of software",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SBOMs are essential for tracking which applications are affected when a new vulnerability (like Log4Shell) is discovered in a common library."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Supply Chain Security",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What does the 'SLSA' (Supply-chain Levels for Software Artifacts) framework aim to prevent?",
+    "option_a": "Slow build times",
+    "option_b": "Tampering with software artifacts throughout the build and deployment process by providing a set of incremental security levels",
+    "option_c": "Deleting old code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SLSA focuses on provenance and integrity of the build pipeline itself (e.g. preventing unauthenticated code from being injected)."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Policy as Code",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Rego' in the context of security policy?",
+    "option_a": "A ways to name a user",
+    "option_b": "A query language used by Open Policy Agent (OPA) to write fine-grained, declarative policies for authorization",
+    "option_c": "A tool to delete old servers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Rego allows you to express complex rules like 'Users can only delete pods in their own namespace if they have the developer role'."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Container Orchestration",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How do 'Kubernetes NetworkPolicies' differ from standard Cloud Security Groups?",
+    "option_a": "NetworkPolicies are only for external traffic",
+    "option_b": "NetworkPolicies allow you to control traffic at the IP address or port level for pod-to-pod communication within the cluster",
+    "option_c": "Security groups are faster",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NetworkPolicies implement the 'micro-segmentation' layer inside a Kubernetes cluster to enforce least privilege for networking."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Runtime Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the purpose of 'Falco' in a DevSecOps environment?",
+    "option_a": "To speed up deployment",
+    "option_b": "An open-source runtime security tool that detects anomalous activity (like a shell being spawned in a container) by monitoring system calls",
+    "option_c": "A ways to name a server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Falco provides real-time alerting for malicious behavior that occurs after a container has already been deployed."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Web Security",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What characterizes 'SSRF' (Server-Side Request Forgery)?",
+    "option_a": "A ways to delete a server",
+    "option_b": "A vulnerability that allows an attacker to induce the server-side application to make HTTP requests to an arbitrary domain of the attacker's choosing",
+    "option_c": "A tool to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SSRF is often used to attack internal services that are not directly exposed to the internet, such as a cloud metadata service (169.254.169.254)."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Secret Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Dynamic Secret' in HashiCorp Vault?",
+    "option_a": "A secret that changes colors",
+    "option_b": "A secret generated on-demand that is unique to a client and has a specific lease duration, being automatically revoked when the lease expires",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dynamic secrets minimize the risk of leaked credentials because they don't exist until requested and are short-lived."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Cryptography",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is 'Homomorphic Encryption'?",
+    "option_a": "Encrypting the same thing twice",
+    "option_b": "An encryption scheme that allows computations to be performed on ciphertext, generating an encrypted result which, when decrypted, matches the result of the operations performed on the plain text",
+    "option_c": "A ways to delete old keys",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This allows for data processing by third parties without them ever seeing the underlying plain text data."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Incident Response",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Immutable Infrastructure' from a security perspective?",
+    "option_a": "It cannot be hacked",
+    "option_b": "The practice of replacing old servers with new ones (from a fresh image) for every change, ensuring that unauthorized changes made by attackers are wiped out regularly",
+    "option_c": "Servers that have no storage",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Immutable infrastructure prevents 'configuration drift' and makes it harder for an attacker to maintain persistence on a machine."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Identity & Access",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is 'OIDC' (OpenID Connect)?",
+    "option_a": "A protocol for connecting printers",
+    "option_b": "An identity layer on top of the OAuth 2.0 protocol that allows clients to verify the identity of the end-user based on the authentication performed by an Authorization Server",
+    "option_c": "A ways to delete old users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "While OAuth is for authorization (access), OIDC is for authentication (identity)."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Platform Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'Admission Controller' in Kubernetes?",
+    "option_a": "A ways to name a user",
+    "option_b": "A piece of code that intercepts requests to the Kubernetes API server prior to persistence of the object, potentially validating or mutating the request based on security policy",
+    "option_c": "A tool to delete old nodes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Admission controllers (like PodSecurityPolicy successor or OPA Gatekeeper) are the ultimate gatekeepers for cluster security."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Information Disclosure",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the risk of excessive 'Verbosity' in production error messages?",
+    "option_a": "It makes the logs too big",
+    "option_b": "It can reveal sensitive internal system details (like stack traces or DB structure) that help an attacker craft a more targeted exploit",
+    "option_c": "It's illegal",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Production apps should return generic error messages to users while logging detailed errors internally."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Cloud Governance",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'CSPM' (Cloud Security Posture Management)?",
+    "option_a": "A ways to name a cloud",
+    "option_b": "Automated tools that continuously monitor cloud environments for security misconfigurations and compliance violations (e.g. open S3 buckets)",
+    "option_c": "A tool to delete old clusters",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CSPMs help prevent 'accidental' exposure caused by complex cloud permission systems."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Identity Escalation",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is a 'Confused Deputy' attack?",
+    "option_a": "Tricking a manager",
+    "option_b": "A security issue where an entity that doesn't have permission to perform an action can coerce a more privileged entity (the deputy) to perform the action for it",
+    "option_c": "A ways to delete a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In AWS, the 'ExternalID' condition is used to prevent the confused deputy problem in cross-account service access."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Supply Chain Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Dependency Confusion' (or Namespace Confusion)?",
+    "option_a": "Forgetting the name of a library",
+    "option_b": "An attack where a malicious package with the same name as an internal private package is published to a public repository (e.g. npm), tricking package managers into downloading the malicious version",
+    "option_c": "Deleting the dependencies",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This attack relies on how build tools prioritize public registries over private ones if not configured correctly."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Application Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Insecure Deserialization'?",
+    "option_a": "Deleting the data",
+    "option_b": "When an application untrusted data and uses it to recreate an object, allowing an attacker to inject malicious code (RCE) or escalate privileges",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deserialization vulnerabilities are extremely dangerous and common in languages like Java, .NET, and Python."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Web Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Clickjacking' (UI Redressing)?",
+    "option_a": "Stealing a mouse",
+    "option_b": "An attack that tricks a user into clicking something different from what the user perceives they are clicking, often using hidden layers or iframes",
+    "option_c": "A ways to delete code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'X-Frame-Options' header and 'CSP frame-ancestors' are used to prevent clickjacking by restricting where a page can be iframed."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Monitoring",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Log Injection'?",
+    "option_a": "Writing more logs",
+    "option_b": "An attack where invalid or malicious data is inserted into logs to mislead investigators or corrupt log processing systems",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Attackers can use log injection to hide their tracks or exploit vulnerabilities in log analysis software (like Log4Shell)."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Governance",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Supply Chain Attack'?",
+    "option_a": "Hacking the trucks",
+    "option_b": "A cyberattack that targets less secure elements in the software development and distribution supply chain (e.g. build systems, updates, dependencies) to infect the final product",
+    "option_c": "Deleting the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The SolarWinds and Kaseya attacks are famous examples where a trusted update was used to distribute malware."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Advanced Malware",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "What characterizes 'Polymorphic' malware?",
+    "option_a": "Malware that can delete itself",
+    "option_b": "Malware that constantly changes its identifiable features (e.g. its own code or encryption keys) to evade detection by signature-based anti-virus",
+    "option_c": "A ways to name a file",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Polymorphism makes malware very difficult to block using traditional static analysis tools."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Incident Management",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Forensic Data Capture'?",
+    "option_a": "Writing down what happened",
+    "option_b": "The act of preserving and collecting data (like RAM dumps or disk images) in a way that is admissible in court and ensures it hasn't been tampered with",
+    "option_c": "A ways to delete logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Proper forensics is vital for identifying the root cause of an attack and holding attackers accountable."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Platform Security",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What characterizes 'KMS' (Key Management Service) envelope encryption?",
+    "option_a": "Putting the keys in a paper envelope",
+    "option_b": "Using a master key (CMK) to encrypt data-encryption keys (DEKs) which are then used to encrypt the actual data",
+    "option_c": "Deleting old keys",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Envelope encryption allows you to encrypt large amounts of data without sending the actual data to the KMS service."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Application Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'SSTI' (Server-Side Template Injection)?",
+    "option_a": "A ways to name a user",
+    "option_b": "When an attacker is able to use native template syntax to inject a malicious payload into a template, which is then executed on the server",
+    "option_c": "A tool to delete old templates",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SSTI can lead to full remote code execution on the server by leveraging the template engine's power."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Web Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Insecure Direct Object References' (IDOR)?",
+    "option_a": "A bug in the object orientation",
+    "option_b": "A type of access control vulnerability where an application uses user-supplied input to access objects directly (e.g. changing the `id` in the URL to see someone else's profile)",
+    "option_c": "Deleting the objects",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The fix for IDOR is checking authorization for every requested object, never trusting the ID provided by the user."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Data Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'DLP' (Data Loss Prevention)?",
+    "option_a": "A ways to name a user",
+    "option_b": "A set of tools and processes used to ensure that sensitive data is not lost, misused, or accessed by unauthorized users, particularly identifying data that might leave the corporate network",
+    "option_c": "A tool to delete logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DLP tools scan outgoing traffic (email, web, USB) for patterns like credit card numbers or internal watermarks."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Network Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'Evil Twin' attack?",
+    "option_a": "Tricking your sibling",
+    "option_b": "A fraudulent Wi-Fi access point that appears to be a legitimate one offered on the premises, but is set up to eavesdrop on wireless communications",
+    "option_c": "Deleting the router",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Evil twin attacks are a form of Man-in-the-Middle attack often found in public places like coffee shops."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Audit and Compliance",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Non-repudiation'?",
+    "option_a": "A ways to delete a user",
+    "option_b": "The assurance that someone cannot deny the validity of something (e.g. a signed transaction or log entry)",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Digital signatures are the primary mechanism for ensuring non-repudiation in electronic transactions."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Credential Security",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "What is 'Token Binding'?",
+    "option_a": "Tying the computer with a rope",
+    "option_b": "A security property that cryptographically binds a session token to the underlying TLS connection, preventing 'token theft' from being useful on another machine",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If an attacker steals a bound token, they cannot use it because they don't have the private key associated with the original client's connection."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Software Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Dynamic Analysis Security Testing' (DAST) on APIs?",
+    "option_a": "Reading the API code",
+    "option_b": "Interacting with the running API by sending it various payloads (including malicious ones) to observe its response and identify runtime flaws",
+    "option_c": "A tool to delete the API",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DAST for APIs often requires a 'swaggar' or 'openapi' definition to know what endpoints to fuzz."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Cloud Native Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Micro-segmentation' in a cloud network?",
+    "option_a": "Using smaller subnets",
+    "option_b": "A security technique that enables granular security policies to be assigned to individual workloads (pods/instances) to limit lateral movement within a data center",
+    "option_c": "A ways to name a server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Micro-segmentation is a core part of a zero-trust network strategy."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Modern Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Runtime Application Self-Protection' (RASP)?",
+    "option_a": "A ways to speed up the code",
+    "option_b": "Security technology that is built into an application (or its runtime) that can control application execution and detect and block real-time attacks",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RASP can see the 'context' of an attack from inside the app, allowing for very low false-positive rates compared to a WAF."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Governance",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is an 'Airdrop' attack in a secure environment?",
+    "option_a": "Dropping servers from a plane",
+    "option_b": "A wireless attack where a malicious actor sends unauthorized files or data to a device via local wireless sharing protocols (like AirDrop or Nearby Share)",
+    "option_c": "A ways to name a file",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Physical hardware proximity is a common vector for social engineering or malware injection in high-security zones."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Web Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Side-Channel' attacks?",
+    "option_a": "Attacking the side of the building",
+    "option_b": "An attack based on information gained from the implementation of a computer system, rather than weaknesses in the implemented algorithm itself (e.g. timing, power consumption, or electromagnetic leaks)",
+    "option_c": "A ways to name a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Spectre and Meltdown are famous examples of side-channel attacks targeting CPU performance optimizations."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Cloud Native",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Container Escape'?",
+    "option_a": "When a container finishes its job",
+    "option_b": "A vulnerability that allows an attacker to break out of the container's isolation and gain access to the underlying host or other containers",
+    "option_c": "A ways to name a pod",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Running containers as non-root and using Seccomp/AppArmor are key ways to prevent container escapes."
+  },
+  {
+    "subject_name": "DevSecOps",
+    "level_number": 3,
+    "level_topic": "Auditing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'SOC' (Security Operations Center)?",
+    "option_a": "A ways to name a user",
+    "option_b": "A centralized unit that deals with security issues on an organizational and technical level, containing people, processes, and technology",
+    "option_c": "A tool to delete old servers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A SOC provides 24/7 monitoring and response to security threats."
+  }
+]

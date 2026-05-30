@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Undecidability",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the 'Halting Problem'?",
+    "option_a": "The problem of determining if a computer is fast enough",
+    "option_b": "The problem of determining whether a given Turing machine will eventually stop (halt) on a given input",
+    "option_c": "The problem of finding the exit in a maze",
+    "option_d": "A bug in the Windows operating system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Alan Turing proved that no general algorithm exists that can solve the Halting Problem for all possible program-input pairs."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity Classes",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "A problem is in the 'NP' (Non-deterministic Polynomial time) class if:",
+    "option_a": "It can be solved in polynomial time by a standard computer",
+    "option_b": "A proposed solution can be verified in polynomial time by a deterministic Turing Machine",
+    "option_c": "It cannot be solved by any computer",
+    "option_d": "It takes exponential time to verify",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Problems in NP might be hard to solve, but the answer is easy to check if it's provided to you."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity Classes",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is meant by an 'NP-Complete' problem?",
+    "option_a": "A problem that is in NP and every other problem in NP can be reduced to it in polynomial time",
+    "option_b": "A problem that has been completely solved",
+    "option_c": "A problem that is neither in P nor in NP",
+    "option_d": "A problem with only two possible answers",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "NP-Complete problems are the 'hardest' problems in NP. If any NP-Complete problem is found to be in P, then P = NP."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Undecidability",
+    "question_type": "multi_correct",
+    "timer_seconds": 45,
+    "question_text": "Which of the following problems are known to be Undecidable?",
+    "option_a": "The Halting Problem",
+    "option_b": "Post Correspondence Problem (PCP)",
+    "option_c": "Determining if a CFG is ambiguous",
+    "option_d": "Determining if a DFA accepts an empty string",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Determining if a DFA accepts empty is decidable (easy check). The others are mathematically proven to be undecidable."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity Classes",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "If P = NP were proven true, what would be the impact on modern cryptography (like RSA)?",
+    "option_a": "It would become even more secure",
+    "option_b": "It would likely be broken, as finding factors of large numbers would be efficiently solvable",
+    "option_c": "It would have no impact",
+    "option_d": "Computers would become slower",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Many cryptographic systems rely on the assumption that certain problems (like factoring) are hard to solve but easy to verify (P != NP)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity Hierarchy",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which of the following describes the correctly established inclusion hierarchy?",
+    "option_a": "P \u2286 NP \u2286 PSPACE \u2286 EXPTIME",
+    "option_b": "NP \u2286 P \u2286 PSPACE",
+    "option_c": "PSPACE \u2286 NP \u2286 P",
+    "option_d": "EXPTIME \u2286 PSPACE \u2286 P",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "This is the standard hierarchy of time and space complexity classes."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "NP-Completeness",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "Which was the first problem proven to be NP-Complete (Cook-Levin Theorem)?",
+    "option_a": "Traveling Salesperson Problem",
+    "option_b": "Boolean Satisfiability Problem (SAT)",
+    "option_c": "Vertex Cover",
+    "option_d": "Knapsack Problem",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Stephen Cook and Leonid Levin independently proved that SAT is NP-complete by showing every NP problem reduces to it."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Reduction",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "To prove that a new problem B is NP-Complete, you must show:",
+    "option_a": "B is in NP",
+    "option_b": "A known NP-Complete problem A reduces to B in polynomial time",
+    "option_c": "B is decidable",
+    "option_d": "Both A and B",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "NP-completeness requires both membership in NP and NP-hardness."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "PSPACE",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the relationship between PSPACE and NPSPACE (Savitch's Theorem)?",
+    "option_a": "PSPACE is strictly smaller than NPSPACE",
+    "option_b": "PSPACE = NPSPACE",
+    "option_c": "NPSPACE is strictly smaller than PSPACE",
+    "option_d": "They are unrelated",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Savitch's Theorem states that any non-deterministic space complexity class can be simulated by a deterministic one with at most a quadratic increase in space."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity Classes",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "The class 'co-NP' consists of problems whose:",
+    "option_a": "Compliment is in NP",
+    "option_b": "Compliment is in P",
+    "option_c": "Solutions are verified in exponential time",
+    "option_d": "Machines have 2 tapes",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If a problem is in co-NP, then a 'No' instance can be verified efficiently given a certificate."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Cook-Levin Theorem",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What does a 'Polynomial Time Reduction' imply about the complexity of the two problems?",
+    "option_a": "The target problem is at least as hard as the source problem",
+    "option_b": "The source problem is harder",
+    "option_c": "They are both in P",
+    "option_d": "They are both undecidable",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If A <=p B, and we can solve B fast, we can solve A fast. Thus, B is an upper bound on A's difficulty."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "NP-Hard",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "An 'NP-Hard' problem is:",
+    "option_a": "Always in NP",
+    "option_b": "At least as hard as the hardest problems in NP, but not necessarily in NP itself",
+    "option_c": "A problem with no known solution",
+    "option_d": "A regular language",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NP-hard problems include all NP-complete problems and even harder problems (like the Halting problem)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Time Complexity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A Turing machine that always halts in O(N^k) steps for some constant k is a member of:",
+    "option_a": "Class P",
+    "option_b": "Class NP",
+    "option_c": "Class EXPTIME",
+    "option_d": "Class PSPACE",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Polynomial time (P) is the class of 'efficiently' solvable problems."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "NP-Examples",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is a classic NP-Complete problem?",
+    "option_a": "Shortest Path (Dijkstra)",
+    "option_b": "Traveling Salesperson Problem (TSP)",
+    "option_c": "Sorting a list",
+    "option_d": "Matrix Multiplication",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TSP (the decision version) is one of Karp's 21 NP-complete problems."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Decidability",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "Is the 'Validity Problem' for first-order logic (checking if a formula is true in all models) decidable?",
+    "option_a": "Yes",
+    "option_b": "No, it is semi-decidable (RE)",
+    "option_c": "No, it's not even RE",
+    "option_d": "Only for propositional logic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Church and Turing independently proved that FO logic is undecidable via reduction from the Halting problem."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Rice's Theorem",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "According to Rice's Theorem, which of these properties of RE languages is decidable?",
+    "option_a": "L starts with 'a'",
+    "option_b": "L is empty",
+    "option_c": "L contains all strings",
+    "option_d": "None of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "All listed properties are non-trivial properties of the recognized language, hence undecidable."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "L vs NL",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "The complexity class 'L' (Logarithmic Space) corresponds to:",
+    "option_a": "Problems solvable using a stack",
+    "option_b": "Problems solvable in O(log n) read-write space on a Turing machine",
+    "option_c": "Problems solvable in O(n log n) time",
+    "option_d": "Regular languages only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Log-space is a very restricted class, often used to define reductions."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is a likely member of P?",
+    "option_a": "Sudoku (N x N)",
+    "option_b": "Finding the GCD of two numbers",
+    "option_c": "Hamming Circuit",
+    "option_d": "Graph Coloring",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GCD (Euclidean algorithm) is extremely efficient."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Reductions",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "If P = NP, then every NP-Complete problem is:",
+    "option_a": "Undecidable",
+    "option_b": "Solvable in polynomial time",
+    "option_c": "Exponential",
+    "option_d": "Regular",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This would mean the entire NP class collapses into P."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Time Hierarchy",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "The 'Time Hierarchy Theorem' proves that:",
+    "option_a": "Computers get faster over time",
+    "option_b": "More time allows a Turing machine to solve strictly more problems",
+    "option_c": "P = NP",
+    "option_d": "NP = PSPACE",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Specifically, it shows that for any 'reasonable' time function t(n), there are problems solvable in slightly more time that aren't solvable in t(n) time."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Oracle Machines",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "An 'Oracle Turing Machine' is a TM that:",
+    "option_a": "Predicts the future",
+    "option_b": "Can solve a specific decision problem (the oracle) in a single step",
+    "option_c": "Has infinite states",
+    "option_d": "Uses quantum superposition",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Oracles are used to study relative computability and hierarchy structures."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "SAT",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which variant of SAT is in P?",
+    "option_a": "3-SAT",
+    "option_b": "2-SAT",
+    "option_c": "MAX-SAT",
+    "option_d": "All SAT problems are in P",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "2-SAT is solvable in linear time using graph-based algorithms."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "SAT",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "3-SAT is proven to be NP-Complete.",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Only for clauses > 100",
+    "option_d": "Only if P = NP",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "SAT reduces to 3-SAT in polynomial time."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Approximation",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is an 'Approximation Algorithm' for an NP-Hard problem?",
+    "option_a": "An algorithm that guesses the answer",
+    "option_b": "An algorithm that finds a solution within a guaranteed factor of the optimum in polynomial time",
+    "option_c": "A slow but exact algorithm",
+    "option_d": "A regular expression",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Approximation is a practical way to deal with NP-hard optimization problems."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the complexity of Integer Factoring?",
+    "option_a": "Known to be in P",
+    "option_b": "Known to be NP-Complete",
+    "option_c": "In NP, but not known if P or NP-Complete (NP-Intermediate candidates)",
+    "option_d": "Not in NP",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Factoring is 'suspected' to be outside P on classical computers, which is the basis of RSA security."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Is P closed under complement?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Unknown",
+    "option_d": "Only for finite sets",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "If an algorithm solves a problem in polynomial time, just flip the 'Accept' and 'Reject' answers to solve the complement."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is NP closed under complement?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Unknown (Equivalent to NP vs co-NP question)",
+    "option_d": "Only for regular languages",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Whether NP = co-NP is a major open problem in computer science."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "P vs NP",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Has it been proven that P != NP?",
+    "option_a": "Yes",
+    "option_b": "No, it is an open millennium prize problem",
+    "option_c": "Yes, in 2021",
+    "option_d": "It depends on the programming language",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This remains the most famous unsolved problem in computer science."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Karp's Reductions",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Richard Karp's 1972 paper was famous for:",
+    "option_a": "Inventing the Turing machine",
+    "option_b": "Proving 21 major problems are NP-Complete",
+    "option_c": "Designing the first compiler",
+    "option_d": "Solving the Halting problem",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This paper established the importance of NP-Completeness in real-world algorithms."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "PSPACE",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Playing games like Chess or Go on an N x N board is generally:",
+    "option_a": "In P",
+    "option_b": "In NP",
+    "option_c": "PSPACE-Complete or EXPTIME-Complete",
+    "option_d": "Regular",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The massive state space of board games typically leads to very high complexity classes."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Decidability",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Is the 'Tautology Problem' in propositional logic (is a formula always true) decidable?",
+    "option_a": "Yes, but likely hard (co-NP-Complete)",
+    "option_b": "No",
+    "option_c": "In linear time",
+    "option_d": "Only for horn clauses",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "We can build a truth table, but it grows exponentially."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Undecidability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "The 'Busy Beaver' function is:",
+    "option_a": "A measure of CPU efficiency",
+    "option_b": "A non-computable function describing the max steps a TM can take before halting",
+    "option_c": "Used in game development",
+    "option_d": "A regular grammar",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Busy Beaver grows faster than any computable function (recursive hierarchy)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Does P = NP imply that encryption is impossible?",
+    "option_a": "No, but it makes it much harder to design and many current methods would fail",
+    "option_b": "Yes, completely",
+    "option_c": "No, it makes encryption stronger",
+    "option_d": "It only affects hashing",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Encryption relies on certain one-way mathematical properties that might vanish if P = NP."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Space Complexity",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does 'PSPACE' stand for?",
+    "option_a": "Polynomial Space",
+    "option_b": "Power Space",
+    "option_c": "Partial Space",
+    "option_d": "Parallel Space",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "PSPACE is the set of problems solvable using a polynomial amount of memory (space)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is PSPACE closed under complement?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Unknown",
+    "option_d": "Only if P = NP",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "PSPACE = co-PSPACE (follows from Savitch's theorem)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Reductions",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "A 'Self-Reduction' property of NP-Complete problems means:",
+    "option_a": "They can reduce to themselves",
+    "option_b": "If you can solve the decision version, you can efficiently construct the actual solution",
+    "option_c": "They are recursive",
+    "option_d": "They have small certificates",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "For example, if you can check IF a path exists, you can find the path by checking if removing an edge still leaves a path."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 4,
+    "level_topic": "Complexity",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which class is the most likely to represent 'Intractable' but solvable problems?",
+    "option_a": "P",
+    "option_b": "NP-Complete (assuming P != NP)",
+    "option_c": "Regular",
+    "option_d": "Undecidable",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NP-complete problems likely require super-polynomial (e.g. exponential) time."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 38",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 38 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 38 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 39",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 39 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 39 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 40",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 40 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 40 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 41",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 41 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 41 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 42",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 42 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 42 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 43",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 43 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 43 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 44",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 44 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 44 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 45",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 45 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 45 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 46",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 46 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Explanation for question 46 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 47",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 47 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 47 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 48",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 48 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Explanation for question 48 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 49",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 49 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Explanation for question 49 of Theory of Computation (FLAT) Level 4."
+  },
+  {
+    "subject_name": "Theory of Computation (FLAT)",
+    "level_number": 4,
+    "level_topic": "Topic 50",
+    "question_type": "tricky",
+    "timer_seconds": 90,
+    "question_text": "Sample question 50 for Theory of Computation (FLAT) Level 4?",
+    "option_a": "Option A",
+    "option_b": "Option B",
+    "option_c": "Option C",
+    "option_d": "Option D",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Explanation for question 50 of Theory of Computation (FLAT) Level 4."
+  }
+]

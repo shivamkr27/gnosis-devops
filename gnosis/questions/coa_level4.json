@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "I/O Organization",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the primary purpose of DMA (Direct Memory Access)?",
+    "option_a": "To allow the CPU to access memory faster",
+    "option_b": "To allow I/O devices to transfer data directly to/from memory without constant CPU involvement",
+    "option_c": "To increase the size of the hard drive",
+    "option_d": "To encrypt data in transit",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DMA offloads data transfer tasks from the CPU, significantly improving system performance during large data moves."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Cache Mapping",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "In a 'Fully Associative' cache mapping, where can a main memory block be placed?",
+    "option_a": "Only in one specific cache line determined by its index",
+    "option_b": "In any available cache line",
+    "option_c": "Only in even-numbered cache lines",
+    "option_d": "In a specific set of cache lines",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Fully associative mapping is flexible but requires complex hardware to search all lines simultaneously for a hit."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Cache Mapping",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which cache mapping technique suffers from 'Conflict Misses' because multiple memory blocks map to the same single cache line?",
+    "option_a": "Direct Mapping",
+    "option_b": "Fully Associative",
+    "option_c": "Set Associative",
+    "option_d": "LRU Mapping",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Direct mapping uses a simple 'memory_addr % num_cache_lines' formula, which is fast but leads to thrashing if multiple frequently used blocks map to the same index."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Interrupts",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Vectored Interrupt'?",
+    "option_a": "An interrupt that is ignored by the CPU",
+    "option_b": "An interrupt where the device provides the CPU with the address (vector) of its service routine",
+    "option_c": "An interrupt caused by a math error",
+    "option_d": "An interrupt that happens every clock cycle",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Vectored interrupts allow for faster response because the CPU doesn't have to poll all devices to find the source."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "I/O Techniques",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "Which of the following are valid methods of I/O communication between a CPU and a peripheral?",
+    "option_a": "Programmed I/O (Polling)",
+    "option_b": "Interrupt-driven I/O",
+    "option_c": "Direct Memory Access (DMA)",
+    "option_d": "Pipelined I/O",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Programmed, Interrupt-driven, and DMA are the three standard I/O communication techiques. Pipelining is a CPU-internal instruction processing technique."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Superscalar Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the primary mechanism that allows a 'Superscalar' processor to execute multiple instructions per clock cycle?",
+    "option_a": "A faster clock",
+    "option_b": "Multiple independent execution units (ALUs, FPUs) and hardware that can issue multiple instructions simultaneously",
+    "option_c": "Deleting old instructions",
+    "option_d": "A larger motherboard",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Superscalar processors use multiple pipelines to achieve instruction-level parallelism."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "VLIW Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What defines a 'VLIW' (Very Long Instruction Word) architecture?",
+    "option_a": "Instructions that are very long to read",
+    "option_b": "A design where the compiler is responsible for grouping independent instructions into a single large instruction word to be executed in parallel",
+    "option_c": "A ways to delete registers",
+    "option_d": "A CPU with many fans",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unlike superscalar, VLIW relies on the compiler, not the hardware, to find parallelism."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Memory Consistency",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is the 'Sequential Consistency' model in multiprocessor systems?",
+    "option_a": "Counting numbers in order",
+    "option_b": "A property that ensures the result of any execution is the same as if the operations of all processors were executed in some sequential order",
+    "option_c": "Deleting old memory",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sequential consistency is the most intuitive but often the most restrictive memory model for performance."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Cache Coherence",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "How does a 'Snooping Protocol' maintain cache coherence?",
+    "option_a": "By watching the user",
+    "option_b": "By having every cache controller monitor (snoop) the bus for memory transactions related to cache blocks it holds",
+    "option_c": "By deleting all cache daily",
+    "option_d": "By using 2 buses",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Snooping is common in small-scale multiprocessors where a shared bus is available."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Cache Coherence",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What characterizes a 'Directory-Based' cache coherence protocol?",
+    "option_a": "Storing files in folders",
+    "option_b": "Maintaining a central directory that tracks which caches have copies of each memory block",
+    "option_c": "naming variables",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Directory-based protocols scale better than snooping as they don't require broadcast on a bus."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Interconnection Networks",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Crossbar Switch' in a multiprocessor system?",
+    "option_a": "A literal switch in the hardware",
+    "option_b": "A non-blocking interconnection network that provides a direct path between every processor and every memory module",
+    "option_c": "A ways to delete data",
+    "option_d": "An internet router",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Crossbar switches provide the highest bandwidth but are very complex to scale."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Interconnection Networks",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What defines a 'Hypercube' interconnection topology?",
+    "option_a": "A 4D cube",
+    "option_b": "A network where N nodes are connected such that each node has log2(N) neighbors, providing low diameter for communication",
+    "option_c": "A cloud server",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Hypercubes provide a good balance between the number of links and the distance between nodes."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Instruction Scheduling",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Tomasulo's Algorithm' used for?",
+    "option_a": "Sorting numbers",
+    "option_b": "A hardware algorithm for dynamic instruction scheduling that allows out-of-order execution by using reservation stations",
+    "option_c": "A ways to delete records",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tomasulo's algorithm effectively handles data dependencies and increases pipeline throughput."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Advanced Pipelining",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Register Renaming' designed to prevent?",
+    "option_a": "Naming variables 'x'",
+    "option_b": "False dependencies (WAW and WAR hazards) caused by using a limited number of architectural registers",
+    "option_c": "Deleting registers",
+    "option_d": "A slow clock",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By mapping architectural registers to a larger pool of physical registers, the CPU can execute more instructions in parallel."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Memory Hierarchy",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'NUMA' (Non-Uniform Memory Access) architecture?",
+    "option_a": "Memory that is random",
+    "option_b": "A multiprocessor architecture where memory access time depends on the memory location relative to the processor",
+    "option_c": "A ways to delete RAM",
+    "option_d": "An old version of cache",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NUMA allows for large-scale multiprocessing by providing local memory to every CPU node."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Concepts",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Simultaneous Multithreading' (SMT)?",
+    "option_a": "Running 10 apps at once",
+    "option_b": "A technique that permits multiple independent threads of execution to better utilize the resources provided by modern processor architectures",
+    "option_c": "A ways to delete threads",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Intel's Hyper-Threading is a well-known implementation of SMT."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Performance Analysis",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What does 'CPI' (Cycles Per Instruction) measure?",
+    "option_a": "How many seconds one instruction takes",
+    "option_b": "The average number of clock cycles a processor takes to execute an instruction",
+    "option_c": "The size of the instruction",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lower CPI indicates higher efficiency in instruction execution."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Hardware Security",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What characterizes a 'Side-Channel Attack' in computer architecture?",
+    "option_a": "Attacking the side of the server",
+    "option_b": "An attack based on information gained from the physical implementation of a system (e.g. power consumption, timing, electromagnetic leaks)",
+    "option_c": "Deleting hard drives",
+    "option_d": "A ways to name a user",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Side-channel attacks can bypass traditional logical security barriers."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Arithmetic",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Carry Lookahead Adder' designed to improve?",
+    "option_a": "Carrying heavy parts",
+    "option_b": "Speeding up addition by calculating carry signals simultaneously for all bits rather than waiting for them to ripple through",
+    "option_c": "Deleting carry bits",
+    "option_d": "A training dashboard",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lookahead adders significantly reduce the gate delay compared to ripple carry adders."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Memory Storage",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the benefit of 'ECC' (Error Correction Code) memory?",
+    "option_a": "It makes the computer look better",
+    "option_b": "It can detect and fix single-bit memory errors and detect multi-bit errors to prevent system crashes and data corruption",
+    "option_c": "It is cheaper",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ECC is essential for servers and high-reliability computations."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Database",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'In-Order Execution'?",
+    "option_a": "Ordering products",
+    "option_b": "Instructions are fetched, decoded, and executed in the exact sequence they appear in the program",
+    "option_c": "A ways to delete code",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In-order execution is simpler to implement but often results in many pipeline stalls."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Branch Target Buffer' (BTB) used for?",
+    "option_a": "Buffering internet videos",
+    "option_b": "Storing the predicted target addresses of branch instructions to allow fetching from the target address immediately",
+    "option_c": "A ways to delete branches",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The BTB works with branch predictors to minimize the penalty of control hazards."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Performance",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Memory-Level Parallelism' (MLP)?",
+    "option_a": "Using 10 RAM sticks",
+    "option_b": "The ability of a processor to handle multiple outstanding memory requests simultaneously (e.g. through a miss status handling register)",
+    "option_c": "A ways to delete files",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MLP helps hide long memory latencies by overlapping them."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Cache",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Victim Cache'?",
+    "option_a": "A cache for deleted files",
+    "option_b": "A small, fully associative cache that stores blocks recently evicted from the main cache to reduce conflict misses",
+    "option_c": "A training system",
+    "option_d": "A way to name a user",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Victim caches are a cost-effective way to improve the performance of direct-mapped caches."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Storage",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'RAID 5'?",
+    "option_a": "5 redundant hard drives",
+    "option_b": "Block-level striping with distributed parity, offering a balance between performance, capacity, and fault tolerance",
+    "option_c": "Deleting 5 records",
+    "option_d": "A security attack",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RAID 5 can survive the failure of a single drive in the array."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Trace Cache' used for in older Pentium 4 CPUs?",
+    "option_a": "Tracing users",
+    "option_b": "Storing sequences of decoded micro-instructions to avoid the need for decoding every time a branch is taken",
+    "option_c": "A ways to delete code",
+    "option_d": "managing memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Trace cache optimized the performance of complex instruction decoding."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Performance",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What defines the 'Roofline Model' in architecture analysis?",
+    "option_a": "Measuring the roof of a data center",
+    "option_b": "A visual performance model used to provide performance estimates of a given compute kernel running on multi-core, many-core, or accelerator platforms",
+    "option_c": "A ways to delete records",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps determine whether an application is memory-bound or compute-bound."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Networking",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'InfiniBand' used for in supercomputers?",
+    "option_a": "Playing music",
+    "option_b": "A high-throughput, low-latency interconnection network used for both internal system communication and external storage connectivity",
+    "option_c": "A ways to delete files",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "InfiniBand is the dominant interconnect for high-performance computing clusters."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Management",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "Which component is responsible for power management and thermal monitoring in modern CPUs?",
+    "option_a": "ALU",
+    "option_b": "Integrated Microcontroller (System Management Unit)",
+    "option_c": "RAM controller",
+    "option_d": "The case",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Modern CPUs have dedicated controllers to optimize power based on real-time temperature and load."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Hardware Multithreading' (Temporal Multithreading)?",
+    "option_a": "Running two threads at once literally",
+    "option_b": "The ability of a CPU to switch between different thread contexts on a single core to hide stalls",
+    "option_c": "A ways to delete code",
+    "option_d": "A training dashboard",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Temporal multithreading switches when a thread is idle, e.g. waiting for memory."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Pipelining",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Out-of-Order Execution'?",
+    "option_a": "ordering things wrong",
+    "option_b": "A paradigm where a processor executes instructions as soon as their operands are available, instead of in the program's original sequence",
+    "option_c": "A ways to delete records",
+    "option_d": "A security gate",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Out-of-order execution allows the CPU to work ahead while waiting for slow data fetches."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Cache",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Non-blocking Cache'?",
+    "option_a": "A cache that never fills up",
+    "option_b": "A cache that can continue to supply data for hits while it is busy processing earlier misses",
+    "option_c": "A ways to delete cache",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Non-blocking caches are essential for out-of-order execution processors."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Load/Store Architecture'?",
+    "option_a": "Loading stores manually",
+    "option_b": "An instruction set architecture where all memory access is done through explicit load and store instructions between memory and registers",
+    "option_c": "A ways to delete code",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RISC architectures are almost exclusively load/store."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Performance",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What does 'ILP' stand for in computer architecture?",
+    "option_a": "Instruction-Level Parallelism",
+    "option_b": "Internet Logic Protocol",
+    "option_c": "Internal L1 Processing",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "ILP is a measure of how many operations can be performed simultaneously at the instruction level."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Floating Point",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "In IEEE 754, what is a 'NaN' (Not a Number)?",
+    "option_a": "An error in the UI",
+    "option_b": "A symbolic representation in the floating point standard for indefinite or unrepresentable values (e.g. 0/0)",
+    "option_c": "A ways to delete numbers",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NaN allows calculations to continue without crashing while signaling an invalid operation."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Arithmetic",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Wallace Tree' multiplier?",
+    "option_a": "A multiplier made of wood",
+    "option_b": "An efficient hardware implementation of a digital circuit that multiplies two integers using a tree of adders to reduce partial products",
+    "option_c": "A ways to delete bits",
+    "option_d": "A training dashboard",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Wallace trees are much faster than ripple-carry based multipliers for large numbers."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Interconnect",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Mesh Topology' in parallel computing?",
+    "option_a": "A messy network",
+    "option_b": "A grid-like network topology where nodes are connected to their nearest horizontal and vertical neighbors",
+    "option_c": "A ways to delete connections",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Mesh networks are simple to implement on 2D chips for many-core systems (NoCs)."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Concepts",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Weak Consistency' models?",
+    "option_a": "failing often",
+    "option_b": "Models where memory operations do not appear to be performed in the program's order, requiring explicit 'fence' or 'sync' instructions to ensure visibility",
+    "option_c": "A ways to delete files",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Weak consistency allows for aggressive hardware and compiler optimizations."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Write Atomicity'?",
+    "option_a": "Small writes",
+    "option_b": "A property ensuring that a write by one processor becomes visible to all other processors simultaneously (or in a consistent way)",
+    "option_c": "A ways to delete records",
+    "option_d": "managing memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Write atomicity is a key component of strong memory consistency models."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Performance",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What does a 'Branch Predictor's Confidence' indicate?",
+    "option_a": "How brave the CPU is",
+    "option_b": "A metric that estimates how likely a specific branch prediction is to be correct, allowing the CPU to throttle speculation",
+    "option_c": "A ways to delete branches",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Confidence bits help prevent expensive mispredictions in complex branch histories."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Storage",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'NVMe' (Non-Volatile Memory Express)?",
+    "option_a": "A new brand of RAM",
+    "option_b": "An interface specification optimized for accessing non-volatile storage media attached via a PCIe bus",
+    "option_c": "A ways to delete files",
+    "option_d": "A training dashboard",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NVMe significantly reduces overhead compared to legacy SATA interfaces."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Harvard Architecture'?",
+    "option_a": "A school in Boston",
+    "option_b": "A computer architecture with separate storage and signal pathways for instructions and data",
+    "option_c": "A ways to delete data",
+    "option_d": "An old version of RISC",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Harvard architecture allows the CPU to fetch both an instruction and data simultaneously."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What defines 'Von Neumann Bottleneck'?",
+    "option_a": "A literal bottle on the desk",
+    "option_b": "The shared bus between the CPU and memory, which limits the rate of instruction fetch and data transfer",
+    "option_c": "A ways to delete code",
+    "option_d": "managing memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This bottleneck is the primary driver for high-performance cache and complex bus architectures."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Security",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "How does 'Address Space Layout Randomization' (ASLR) work in architecture context?",
+    "option_a": "Randomly deleting files",
+    "option_b": "A security technique that randomly arranges the address space positions of key data areas of a process to prevent exploits like buffer overflows",
+    "option_c": "A ways to rename users",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ASLR makes it difficult for an attacker to predict the location of target code/data in memory."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Performance",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'SPEC' in the context of computer architecture?",
+    "option_a": "A set of glasses",
+    "option_b": "Standard Performance Evaluation Corporation: a non-profit that develops standardized benchmark suites to evaluate computer performance",
+    "option_c": "A ways to delete records",
+    "option_d": "A training dashboard",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SPEC benchmarks are the industry standard for reporting CPU and system performance."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Arithmetic",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Division by Subtraction' method?",
+    "option_a": "Subtracting numbers randomly",
+    "option_b": "An algorithm for binary division that uses repeated subtraction of the divisor from the dividend (e.g. Restoring or Non-Restoring division)",
+    "option_c": "A ways to delete bits",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This iterative process is how hardware dividers are typically implemented."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Storage",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Memory Protection'?",
+    "option_a": "A case for RAM",
+    "option_b": "Hardware features that control memory access rights on a computer, preventing processes from accessing unauthorized memory",
+    "option_c": "A ways to delete files",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Memory protection is critical for multi-user operating systems and overall system security."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Architecture",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What characterizes 'Clock Skew' in digital circuits?",
+    "option_a": "A broken clock",
+    "option_b": "The difference in arrival time of the clock signal at various parts (flip-flops) of a synchronous digital circuit",
+    "option_c": "A ways to delete data",
+    "option_d": "A battery issue",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Clock skew must be carefully managed in high-speed CPU design to avoid synchronization failures."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Management",
+    "question_type": "expert",
+    "timer_seconds": 45,
+    "question_text": "What is 'Dynamic Voltage and Frequency Scaling' (DVFS)?",
+    "option_a": "Changing the clock color",
+    "option_b": "A power management technique where the voltage and frequency of a processor are adjusted in real-time to conserve energy or reduce heat",
+    "option_c": "A ways to delete files",
+    "option_d": "naming variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DVFS is the primary ways modern processors balance performance and power consumption."
+  },
+  {
+    "subject_name": "COA",
+    "level_number": 4,
+    "level_topic": "Expert Concepts",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Dark Silicon'?",
+    "option_a": "Silicon that is painted black",
+    "option_b": "A phenomenon where the majority of an integrated circuit's area cannot be powered simultaneously due to thermal constraints",
+    "option_c": "Broken chips",
+    "option_d": "A ways to name a user",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It forces designers to use specialization (accelerators) rather than just adding more general cores."
+  }
+]

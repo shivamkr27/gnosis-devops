@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which Docker network driver allows a container to share the host's IP address directly?",
+    "option_a": "bridge",
+    "option_b": "host",
+    "option_c": "overlay",
+    "option_d": "macvlan",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In 'host' mode, there is no isolation between host and container networking."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the primary use of the 'overlay' network driver?",
+    "option_a": "To connect two containers on the same host",
+    "option_b": "To enable communication between containers on DIFFERENT Docker hosts (Swarm/K8s)",
+    "option_c": "To hide the container's IP",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Overlay networks create a distributed network across multiple nodes."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Optimization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the benefit of a 'Multi-stage build' in a Dockerfile?",
+    "option_a": "It makes the build process slower",
+    "option_b": "It allows you to use one image for building and another for the final runtime, significantly reducing final image size",
+    "option_c": "It allows you to run multiple containers from one file",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multi-stage builds allow you to leave build tools (like compilers) behind, keeping the final production image small."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Volumes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Bind Mount'?",
+    "option_a": "A volume stored in Docker Hub",
+    "option_b": "Mapping a specific, absolute path on the host machine to a path in the container",
+    "option_c": "A type of network connection",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bind mounts are useful for development, as changes on the host are instantly reflected in the container."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Docker Compose",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In a docker-compose.yml file, what does 'depends_on' do?",
+    "option_a": "It installs dependencies from npm",
+    "option_b": "It defines the startup order for services (e.g., start DB before App)",
+    "option_c": "It links the container to the internet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Note: 'depends_on' doesn't wait for the app inside the container to be 'ready', just for the container to 'start'."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Variables",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the difference between ARG and ENV in a Dockerfile?",
+    "option_a": "There is no difference",
+    "option_b": "ARG is for build-time only; ENV is available at both build-time and runtime inside the container",
+    "option_c": "ENV is for numbers only",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Use ARG for things like version numbers during build; use ENV for app configuration like DB_URL."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Layers",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How does Docker handle image layer caching?",
+    "option_a": "It rebuilds everything every time",
+    "option_b": "If an instruction and its files Haven't changed, Docker reuses the cached layer from a previous build to save time",
+    "option_c": "It only caches the first layer",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is why you should put instructions that change frequently (like COPY code) at the end of the Dockerfile."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Restart Policy",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does 'unless-stopped' restart policy do?",
+    "option_a": "Restarts the container unless it was manually stopped by the user",
+    "option_b": "Stops the container after 1 hour",
+    "option_c": "Only restarts on severe errors",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Unlike 'always', 'unless-stopped' won't restart the container when the Docker daemon reboots if the container was already stopped."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "User",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Why is it a security risk to run Docker containers as 'root'?",
+    "option_a": "Root users use too much memory",
+    "option_b": "If an attacker breaks out of the container, they might gain root access to the host machine's kernel",
+    "option_c": "Root users cannot connect to the internet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'Principle of Least Privilege' dictates running as a non-root user whenever possible."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Docker Compose",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command is used to start a Docker Compose project in the background?",
+    "option_a": "docker-compose start",
+    "option_b": "docker-compose up -d",
+    "option_c": "docker-compose run background",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "'up' creates and starts the containers; '-d' detaches the session."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Registry",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How do you run a local private Docker registry?",
+    "option_a": "By installing a special app on Windows",
+    "option_b": "By running the official 'registry' image as a container (docker run -p 5000:5000 registry:2)",
+    "option_c": "You cannot run a private registry locally",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Docker provides a simple image to self-host your own registry."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Resource Limits",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the difference between '--cpus' and '--cpu-shares'?",
+    "option_a": "--cpus is for Intel, --cpu-shares is for AMD",
+    "option_b": "--cpus sets a hard limit on total CPU usage; --cpu-shares sets a relative weighting compared to other containers",
+    "option_c": "They are the same",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shares use 1024 as the default base weight."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "CLI",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command shows the history of an image's layers?",
+    "option_a": "docker layers [image]",
+    "option_b": "docker history [image]",
+    "option_c": "docker inspect --layers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is useful for debugging image size and seeing how an image was built."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Lifecycle",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does 'docker commit' do?",
+    "option_a": "Saves your code to GitHub",
+    "option_b": "Creates a new image from the current state of a running or stopped container",
+    "option_c": "Updates the Docker engine",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "While useful for debugging, it's generally better to use a Dockerfile for reproducibility."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a bridge network, how can containers communicate with each other by name?",
+    "option_a": "They can't",
+    "option_b": "By using Docker's internal DNS (if they are on a custom-created network)",
+    "option_c": "By editing /etc/hosts manually",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Custom bridge networks provide automatic service discovery."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "CLI",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to copy files between a host and a running container?",
+    "option_a": "docker mv",
+    "option_b": "docker cp",
+    "option_c": "docker send",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Usage: docker cp [host_path] [container_id]:[path] or vice versa."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Advanced Dockerfile",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the purpose of 'SHELL' instruction in a Dockerfile?",
+    "option_a": "To name the container",
+    "option_b": "To override the default shell used for the shell form of inline commands (RUN, CMD, ENTRYPOINT)",
+    "option_c": "To enable SSH access",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Commonly used on Windows to switch from cmd to powershell."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Advanced Dockerfile",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What does the 'STOPSIGNAL' instruction do?",
+    "option_a": "Stops the build if it fails",
+    "option_b": "Sets the system call signal that will be sent to the container to exit (default is SIGTERM)",
+    "option_c": "Tells the coder to stop",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Useful for apps that require a specific signal (like SIGUSR1) to shut down gracefully."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Volumes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the default location for Docker Volumes on Linux?",
+    "option_a": "/etc/docker/volumes",
+    "option_b": "/var/lib/docker/volumes",
+    "option_c": "/home/user/volumes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is where Docker manages data for named volumes."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "CLI",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command allows you to see what has changed in a container's filesystem compared to its image?",
+    "option_a": "docker status",
+    "option_b": "docker diff",
+    "option_c": "docker inspect --fs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It shows Added (A), Deleted (D), or Changed (C) files."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Optimization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Why should you combine multiple RUN commands using '&&' into a single RUN instruction?",
+    "option_a": "To make the Dockerfile shorter",
+    "option_b": "To reduce the number of layers in the image, keeping it smaller and more efficient",
+    "option_c": "To bypass errors",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every RUN instruction creates a new layer; combining them prevents 'dead' data from being saved in intermediate layers."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is an 'Image Scan' in the context of security?",
+    "option_a": "Taking a picture of the image",
+    "option_b": "Analyzing the software packages inside an image for known security vulnerabilities (CVEs)",
+    "option_c": "Speeding up the image build",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tools like Snyk or Trivy scan images for outdated and insecure libraries."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "CLI",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to rename an existing container?",
+    "option_a": "docker rename",
+    "option_b": "docker mv",
+    "option_c": "docker update --name",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Usage: docker rename [old_name] [new_name]."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Events",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How do you listen for real-time events (like container creation or death) from the Docker daemon?",
+    "option_a": "docker listen",
+    "option_b": "docker events",
+    "option_c": "docker watch",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Useful for auditing or building automation tools that react to container changes."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Resource Limits",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Memory Swappiness'?",
+    "option_a": "A high-speed RAM type",
+    "option_b": "A setting that controls how aggressively the kernel swaps container memory to disk",
+    "option_c": "Deleting the RAM",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Setting --memory-swappiness to 0 avoids swapping altogether."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Advanced Dockerfile",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does a 'HEALTHCHECK' instruction do in a Dockerfile?",
+    "option_a": "Provides medical advice for devs",
+    "option_b": "Tells Docker how to test if the container application is actually 'healthy' and functioning correctly",
+    "option_c": "Automatically fixes bugs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If a health check fails repeatedly, the container is marked as unhealthy."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Registry",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What are 'Dangling Images'?",
+    "option_a": "Images hanging in the cloud",
+    "option_b": "Unused images with no name/tag (often displayed as <none>:<none>)",
+    "option_c": "Images that have errors",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "These are usually old layers left behind after building an image with the same name/tag."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "CLI",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Docker Save' and 'Docker Load' used for?",
+    "option_a": "Saving the logs",
+    "option_b": "Exporting an image to a tar archive for manual transfer to another machine without a registry",
+    "option_c": "Saving the state of the PC",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Useful for 'air-gapped' environments with no internet access."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Optimization",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is an 'init' process inside a container?",
+    "option_a": "A process that initializes the RAM",
+    "option_b": "A small manager (like 'tini') that handles zombie processes and signals, often used as the entrypoint",
+    "option_c": "The first user that logs in",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Running with '--init' in Docker run helps solve the 'PID 1' zombie harvesting problem."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Docker Compose",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In Docker Compose, what is 'env_file' used for?",
+    "option_a": "Naming the file",
+    "option_b": "Loading many environment variables from a text file into the container at once",
+    "option_c": "Deleting environment variables",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This keeps secrets and config separate from your orchestration code."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does the 'macvlan' network driver allow you to do?",
+    "option_a": "Assign a MAC address to a container, making it appear as a physical device on your network",
+    "option_b": "Run Docker on a Mac",
+    "option_c": "Translate IP addresses to names",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Macvlan is helpful for legacy apps that expect to be on a specific physical subnet."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Volumes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the difference between a 'Volume' and a 'Bind Mount' in terms of management?",
+    "option_a": "Bind mounts are managed by Docker; Volumes are managed by the user",
+    "option_b": "Volumes are managed by Docker; Bind mounts rely on the host's folder structure",
+    "option_c": "There is no difference",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Docker handles the backup, migration, and storage of volumes automatically."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Security",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Docker Content Trust' (DCT)?",
+    "option_a": "A physical lock for a server",
+    "option_b": "A feature that allows digital signing of images, proving their authenticity and integrity",
+    "option_c": "Trusting everyone on the network",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "By enabling DCT, you ensure that you only pull images that have been signed by a trusted publisher."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Environment",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What happens if you define the same environment variable in both a Dockerfile and 'docker run'?",
+    "option_a": "The Dockerfile value wins",
+    "option_b": "The 'docker run' value overrides the Dockerfile value",
+    "option_c": "Both are ignored",
+    "option_d": "It causes a crash",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Runtime configuration always takes precedence over build-time defaults."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "CLI",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'docker top' used for?",
+    "option_a": "Ranking images by popularity",
+    "option_b": "Displaying the running processes of a specific container",
+    "option_c": "Seeing the top users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps you see what the entrypoint process is actually doing inside."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Storage",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'tmpfs' mount?",
+    "option_a": "A temporary mount in the cloud",
+    "option_b": "Mapping a container path to the host's system memory (RAM) instead of the disk",
+    "option_c": "A mount for text files only",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "tmpfs is fast and secure as the data is wiped when the container stops."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Advanced Dockerfile",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does 'ONBUILD' instruction do?",
+    "option_a": "Starts building immediately",
+    "option_b": "Adds a trigger instruction to an image that will execute later when the image is used as the base for another build",
+    "option_c": "Stops the build",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Useful for creating 'template' images (like a boilerplate base image)."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Docker Compose",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you recreate all containers in a Compose project from scratch?",
+    "option_a": "docker-compose start --new",
+    "option_b": "docker-compose up --force-recreate",
+    "option_c": "docker-compose restart all",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This forces Compose to ignore existing containers even if the config hasn't changed."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'User-defined bridge' better than the 'Default bridge' network?",
+    "option_a": "It is faster for users",
+    "option_b": "It provides automatic DNS resolution by container name and better isolation",
+    "option_c": "It is exactly the same",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The default bridge network requires messy '--link' commands for discovery."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Optimization",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which base image is most famous for being ultra-lightweight (approx 5MB)?",
+    "option_a": "Ubuntu",
+    "option_b": "Alpine Linux",
+    "option_c": "Debian",
+    "option_d": "CentOS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Alpine is the gold standard for minimal, high-performance container images."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "User Management",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How can you run a 'docker run' command as a specific user ID?",
+    "option_a": "--id 1000",
+    "option_b": "--user 1000",
+    "option_c": "-u root:new",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Passing -u (or --user) overrides the value set in the Dockerfile."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "CLI",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'docker wait' command used for?",
+    "option_a": "Pausing the container",
+    "option_b": "Blocking the terminal session until a container stops, and then printing its exit code",
+    "option_c": "Adding a delay to start",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Often used in CI/CD scripts to wait for a database to finish its migration or a test to finish."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Optimization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What happens if you use 'COPY .' in a Dockerfile without a .dockerignore?",
+    "option_a": "It copies nothing",
+    "option_b": "It copies EVERYTHING in the current folder, including node_modules or large local binaries, making the image huge",
+    "option_c": "Docker asks you what to copy",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This can make builds extremely slow and images bloated."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Docker Compose",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "How do you view logs of a specific service in Docker Compose?",
+    "option_a": "docker logs [service_name]",
+    "option_b": "docker-compose logs -f [service_name]",
+    "option_c": "docker show logs [id]",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The -f flag follows the log stream live."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Resource Limits",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'OOM Killer'?",
+    "option_a": "A virus",
+    "option_b": "An OS feature that kills a container (or process) if it exceeds its allotted memory and impacts system stability",
+    "option_c": "A tool to delete logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "You can use '--oom-kill-disable' but it's dangerous for host stability."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What does a 'Port Mapping' of 0.0.0.0:80:80 do?",
+    "option_a": "Nothing",
+    "option_b": "Binds port 80 of the container to port 80 of the host and makes it accessible from any network interface on the host",
+    "option_c": "Hides the port",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Using 127.0.0.1:80:80 would instead only make it accessible from the local host itself."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "CLI",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command displays the system-wide disk usage of Docker (images, containers, volumes)?",
+    "option_a": "docker df",
+    "option_b": "docker system df",
+    "option_c": "docker usage",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps you identify where large amounts of space are being consumed."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Advanced Dockerfile",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Base Image'?",
+    "option_a": "The first image you ever made",
+    "option_b": "The image used as the starting point for your Dockerfile (defined in FROM instruction)",
+    "option_c": "A black and white image",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every Dockerfile build starts on top of a base image."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "Advanced Dockerfile",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the use of 'VOLUME' instruction in a Dockerfile?",
+    "option_a": "To turn up the sound",
+    "option_b": "To inform Docker that a specific directory will be used for persistent data and should have its own mount",
+    "option_c": "To name the container",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Even if the user doesn't map a volume, Docker creates an anonymous volume for that path."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 2,
+    "level_topic": "CLI",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which command is used to pause all processes in a container?",
+    "option_a": "docker stop",
+    "option_b": "docker pause",
+    "option_c": "docker freeze",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It sends a SIGSTOP signal, freezing the container's state in memory."
+  }
+]

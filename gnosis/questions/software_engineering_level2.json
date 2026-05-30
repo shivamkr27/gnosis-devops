@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Testing Levels",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which testing level focuses on testing individual components or pieces of code in isolation?",
+    "option_a": "System Testing",
+    "option_b": "Unit Testing",
+    "option_c": "Acceptance Testing",
+    "option_d": "Integration Testing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unit testing verifies that each small part of the application works correctly on its own."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Integration Testing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Top-Down Integration'?",
+    "option_a": "Testing from the database up to the UI",
+    "option_b": "Testing from the main control module downwards using stubs to simulate lower modules",
+    "option_c": "Testing the hardest parts first",
+    "option_d": "Letting managers test the software",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Top-down starts with high-level logic and uses 'stubs' (placeholders) for components not yet implemented."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "V-Model",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In the V-Model, which phase is directly linked with the 'User Acceptance Testing' (UAT) phase?",
+    "option_a": "Unit Design",
+    "option_b": "High Level Design",
+    "option_c": "Requirements Analysis",
+    "option_d": "System Analysis",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The V-model maps each development phase to a corresponding test phase. Requirements are verified by UAT."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Black Box vs White Box",
+    "question_type": "multi_correct",
+    "timer_seconds": 40,
+    "question_text": "Which of the following are characteristics of 'White-Box' testing?",
+    "option_a": "Knowledge of internal code/logic",
+    "option_b": "Focus on data flow and control flow",
+    "option_c": "Testing based ONLY on functional requirements",
+    "option_d": "Code coverage measurement",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "White-box testing looks inside the 'box' (at the code). Black-box testing ignores internal structure."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Regression Testing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary goal of Regression Testing?",
+    "option_a": "Searching for new features",
+    "option_b": "Verifying that recent changes have not broken existing functionality",
+    "option_c": "Finding the root cause of a crash",
+    "option_d": "Testing for performance regressions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Regression testing ensures that software fixes or additions didn't introduce new bugs in old code."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Testing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which testing technique involves diving the input domain into classes of data from which test cases can be derived?",
+    "option_a": "Equivalence Partitioning",
+    "option_b": "Boundary Value Analysis",
+    "option_c": "Cause-Effect Graphing",
+    "option_d": "Orthogonal Array Testing",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Equivalence Partitioning reduces the number of test cases by grouping inputs that should behave similarly."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Testing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which testing technique focuses on the edges of input ranges, such as 0, 1, 99, and 100 for a range of 1-100?",
+    "option_a": "Equivalence Partitioning",
+    "option_b": "Boundary Value Analysis",
+    "option_c": "Error Guessing",
+    "option_d": "Path Testing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BVA is highly effective since errors most frequently occur at the boundaries of input domains."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Metrics",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does LOC stand for when measuring software size?",
+    "option_a": "Levels of Code",
+    "option_b": "Lines of Code",
+    "option_c": "Logic of Components",
+    "option_d": "Library of Classes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LOC is a traditional but controversial metric for measuring the size of a software project."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Design",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In UML, what does an 'Aggregation' relationship represent between two classes?",
+    "option_a": "A 'is-a' relationship",
+    "option_b": "A 'part-of' relationship where the child can exist independently of the parent",
+    "option_c": "A 'part-of' relationship where the child CANNOT exist without the parent",
+    "option_d": "A data dependency",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Aggregation is a 'weak' whole-part relationship, unlike Composition (which is strong)."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Design",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In UML, what does 'Composition' represent?",
+    "option_a": "A 'is-a' relationship",
+    "option_b": "A whole-part relationship where the child is destroyed when the parent is destroyed",
+    "option_c": "Independent modules",
+    "option_d": "A list of strings",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In composition, the lifetime of the 'part' is strictly managed by the 'whole'."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Agile",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Explicitly in Scrum, who is responsible for removing impediments to the team's progress?",
+    "option_a": "Product Owner",
+    "option_b": "Scrum Master",
+    "option_c": "Development Team",
+    "option_d": "CEO",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Scrum Master is a servant-leader who helps the team stay focused by clearing 'roadblocks'."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Project estimation",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Function Point' analysis used for?",
+    "option_a": "Debugging functions",
+    "option_b": "Measuring the functional size of software by looking at inputs, outputs, queries, and files",
+    "option_c": "Testing math libraries",
+    "option_d": "Measuring CPU usage",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Function points are language-independent and focus on the external user view."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Configuration Management",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is a 'Baseline' in Software Configuration Management?",
+    "option_a": "The bottom border of a window",
+    "option_b": "A formally reviewed and agreed-upon version of a software artifact",
+    "option_c": "Minimum requirements",
+    "option_d": "The first line of code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Baselines serve as the starting point for further development and change control."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Review",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Walkthrough' in the context of software quality?",
+    "option_a": "A guided site visit",
+    "option_b": "An informal meeting where a designer leads team members through a software product to find defects",
+    "option_c": "A tutorial for users",
+    "option_d": "A type of unit test",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Walkthroughs are more informal than 'Inspections' but still help in finding logical errors."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Review",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which formal review process involves a moderator, a scribe, and checklists to find defects?",
+    "option_a": "Walkthrough",
+    "option_b": "Inspection (Fagan inspection)",
+    "option_c": "Peer Desk Check",
+    "option_d": "Ad-hoc Review",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Inspection is the most structured form of technical review."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Metrics",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which metric provides an indication of the complexity of a program by counting decision points?",
+    "option_a": "Size metric",
+    "option_b": "Cyclomatic Complexity (McCabe metric)",
+    "option_c": "Performance metric",
+    "option_d": "Usage metric",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's calculated as V(G) = E - N + 2P where E is edges and N is nodes."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Software Process",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In the Capability Maturity Model (CMM), what is Level 1?",
+    "option_a": "Initial (Ad-hoc and chaotic processes)",
+    "option_b": "Repeatable",
+    "option_c": "Defined",
+    "option_d": "Managed",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Level 1 indicates that success depends solely on individual effort and heroics."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Software Process",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the highest level of maturity in the Capability Maturity Model Integration (CMMI)?",
+    "option_a": "Optimized",
+    "option_b": "Optimizing",
+    "option_c": "Continuous Improvement",
+    "option_d": "Managed",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "At Level 5 (Optimizing), focus is continually on improving process performance."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Documentation",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Who is the primary audience for the SRS (Software Requirements Specification)?",
+    "option_a": "Developers and Clients",
+    "option_b": "Only End users",
+    "option_c": "Only QA",
+    "option_d": "Only Sales",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "It serves as the contract between the customer and the developers."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Design Patterns",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which design pattern ensures a class only has one instance and provides a global point of access to it?",
+    "option_a": "Factory",
+    "option_b": "Observer",
+    "option_c": "Singleton",
+    "option_d": "Strategy",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Singleton is useful for managing global state like a logging service or DB connection."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Requirements",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Requirement Elicitation'?",
+    "option_a": "Deleting requirements",
+    "option_b": "The practice of gathering/discovering requirements from stakeholders",
+    "option_c": "Writing requirements into code",
+    "option_d": "Testing requirements",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Techniques include interviews, surveys, workshops, and observation."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Requirements",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In requirements management, what does 'Traceability' mean?",
+    "option_a": "Drawing requirements",
+    "option_b": "The ability to track a requirement from its origin to its implementation and testing",
+    "option_c": "Measuring the size of a requirement",
+    "option_d": "Hiding requirements from developers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A traceability matrix ensures that every requirement is covered by at least one test case."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Maintenance",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Maintenance that involves enhancing or adding new features requested by users is called:",
+    "option_a": "Adaptive Maintenance",
+    "option_b": "Perfective Maintenance",
+    "option_c": "Corrective Maintenance",
+    "option_d": "Preventive Maintenance",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Perfective maintenance aims to improve the software based on user feedback."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Reliability",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does MTTF stand for?",
+    "option_a": "Mean Time To Failure",
+    "option_b": "Maximum Time To Finish",
+    "option_c": "Median Time To Fix",
+    "option_d": "Main Task Tracking Factor",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "MTTF is used for non-repairable systems, indicating average lifespan."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Modular Design",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which type of cohesion is considered the best (strongest)?",
+    "option_a": "Logical Cohesion",
+    "option_b": "Functional Cohesion",
+    "option_c": "Sequential Cohesion",
+    "option_d": "Temporal Cohesion",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Functional cohesion means every part of the module contributes to a single, well-defined task."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Modular Design",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which type of coupling is considered the worst (tightest)?",
+    "option_a": "Data Coupling",
+    "option_b": "Content Coupling",
+    "option_c": "Control Coupling",
+    "option_d": "Stamp Coupling",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Content coupling occurs when one module modifies the internal data of another."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Quality",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "According to McCall's quality model, 'Usability', 'Integrity', and 'Reliability' are part of:",
+    "option_a": "Product Revision",
+    "option_b": "Product Operation",
+    "option_c": "Product Transition",
+    "option_d": "Quality Control",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Product Operation refers to qualities expected when the software is actually running."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Testing",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Stress Testing'?",
+    "option_a": "Testing under normal conditions",
+    "option_b": "Testing the software beyond its operational limits to see how it fails (break point)",
+    "option_c": "Testing the team's mental health",
+    "option_d": "Testing only the UI",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Stress testing identifies the upper bound of the system's capacity."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Project management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary objective of a 'Feasibility Study'?",
+    "option_a": "To hire developers",
+    "option_b": "To determine if the project is technically and financially viable to pursue",
+    "option_c": "To write code",
+    "option_d": "To market the product",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The study should result in a GO/NO-GO decision relative to the project."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Agile",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Spike' in Agile development?",
+    "option_a": "A sudden increase in user traffic",
+    "option_b": "A time-boxed task focused on research or prototyping to reduce uncertainty",
+    "option_c": "A person who is late",
+    "option_d": "A bug in the database",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Spikes are used to clarify requirements or explore technical solutions."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Prototyping",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Throwaway Prototyping'?",
+    "option_a": "A prototype that is meant to be recycled",
+    "option_b": "A prototype developed quickly to explore requirements and then discarded",
+    "option_c": "A prototype that becomes the final product",
+    "option_d": "A bug in the SDLC",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This contrasts with 'Evolutionary Prototyping', where the code is progressively refined into the product."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Terms",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'Legacy System'?",
+    "option_a": "A brand new system",
+    "option_b": "An old system that is still in use and critical but hard to maintain/upgrade",
+    "option_c": "A system left in a will",
+    "option_d": "A computer for gaming",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Legacy systems often use outdated technology but hold vital business data."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Agile",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Burndown Chart'?",
+    "option_a": "A list of developers to fire",
+    "option_b": "A graphical representation of work left to do versus time",
+    "option_c": "A thermal map of the server room",
+    "option_d": "A chart of bugs found",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps the team visualize if they will complete the sprint backlog on time."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Agile",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In Scrum, which role is not part of the 'Scrum Team' trio?",
+    "option_a": "Product Owner",
+    "option_b": "Project Manager",
+    "option_c": "Scrum Master",
+    "option_d": "Developers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Scrum intentionally avoids a traditional hierarchical Project Manager role."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Metrics",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Halstead complexity' based on?",
+    "option_a": "Decision points",
+    "option_b": "The number of operators and operands in the source code",
+    "option_c": "The size of comments",
+    "option_d": "Execution time",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Halstead metrics attempt to measure software's volume, difficulty, and effort."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Modularity",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Fan-in'?",
+    "option_a": "The number of modules that call a specific module",
+    "option_b": "The number of modules called by a specific module",
+    "option_c": "The size of a module",
+    "option_d": "Fans in the computer",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "High fan-in is generally good as it indicates high reuse."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Modularity",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Fan-out'?",
+    "option_a": "The number of modules calling this module",
+    "option_b": "The number of modules that a specific module calls",
+    "option_c": "The amount of data moving out",
+    "option_d": "A type of design pattern",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Very high fan-out might indicate that a module is too complex and should be split."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Project management",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Estimation by Analogy'?",
+    "option_a": "Randomly guessing",
+    "option_b": "Estimating a new project's cost/effort based on data from a similar previous project",
+    "option_c": "Counting lines of code",
+    "option_d": "Asking the client to estimate",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It relies on historical data and expert judgment."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Review",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the primary role of the 'Scribe' in a formal inspection?",
+    "option_a": "To moderate the meeting",
+    "option_b": "To document all defects and issues raised during the meeting",
+    "option_c": "To write the code",
+    "option_d": "To test the software",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The scribe ensures that all discovered flaws are tracked and addressed later."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Quality",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which ISO standard specifically defines software quality attributes (like portability, reliability)?",
+    "option_a": "ISO 9001",
+    "option_b": "ISO 9126",
+    "option_c": "ISO 27001",
+    "option_d": "ISO 14001",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ISO 9126 (and its successor ISO/IEC 25010) categorizes software qualities."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Quality",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "In Software Engineering, what is the 'Silver Bullet' problem coined by Fred Brooks?",
+    "option_a": "A bug that cannot be killed",
+    "option_b": "The idea that there is no single tool or technique that can provide an order-of-magnitude improvement in productivity",
+    "option_c": "A fast developer",
+    "option_d": "The need for expensive hardware",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Brooks argued that the essential complexity of software is inherently difficult to solve."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Testing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Testing that evaluates the system from the perspective of its intended users in a realistic environment is called:",
+    "option_a": "Operational Testing",
+    "option_b": "Scenario Testing",
+    "option_c": "Alpha testing",
+    "option_d": "Stress testing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Scenario testing uses world-real stories to uncover defects with business processes."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Project monitoring",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Earned Value Management' (EVM)?",
+    "option_a": "Paying developers based on value",
+    "option_b": "A technique that combines schedule, costs, and scope to measure project performance and progress",
+    "option_c": "A way to calculate bonuses",
+    "option_d": "A type of database indexing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "EVM provides early warnings of project performance issues."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Testing",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What does a 'Stub' substitute for in integration testing?",
+    "option_a": "A user",
+    "option_b": "A module being called (lower-level)",
+    "option_c": "A module that calls (higher-level)",
+    "option_d": "A database server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Stubs are 'below' the module being tested."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Terms",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Software is: Programs + Documentation + ______?",
+    "option_a": "Marketing",
+    "option_b": "Data/Configuration",
+    "option_c": "The box",
+    "option_d": "Hardware",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'Data' or configuration part is essential for the system to function correctly."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Processes",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is 'Reverse Engineering'?",
+    "option_a": "Building software from top to bottom",
+    "option_b": "Analyzing a system to create representations of it at a higher level of abstraction",
+    "option_c": "Writing code backwards",
+    "option_d": "Deleting the compiled file",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Often implies recovering design info or source code from binaries."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Processes",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Re-engineering'?",
+    "option_a": "Fixing code bugs",
+    "option_b": "Modification of a software product after it has been reverse engineered",
+    "option_c": "Hiring new engineers",
+    "option_d": "Restarting the project",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's essentially 'Reverse Engineering' followed by 'Forward Engineering'."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Maintainability",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which of these is the most significant cost in the total lifecycle of most software systems?",
+    "option_a": "Development",
+    "option_b": "Maintenance",
+    "option_c": "Requirements Gathering",
+    "option_d": "Packaging",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Approximately 60-80% of total software costs go towards maintaining it after release."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Documentation",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the primary goal of the 'Design phase' in SDLC?",
+    "option_a": "To write code",
+    "option_b": "To transform requirements into a complete technical representation of the system",
+    "option_c": "To find bugs",
+    "option_d": "To train users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Design bridges the 'what' (SRD) to the 'how' (Code)."
+  },
+  {
+    "subject_name": "Software Engineering",
+    "level_number": 2,
+    "level_topic": "Documentation",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A 'Black box' represents a system where:",
+    "option_a": "The logic is secret",
+    "option_b": "Internal workings are hidden and only inputs/outputs are visible",
+    "option_c": "It is broken",
+    "option_d": "The code is written in Python",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Encapsulation and abstraction are key software engineering concepts that use black box reasoning."
+  }
+]

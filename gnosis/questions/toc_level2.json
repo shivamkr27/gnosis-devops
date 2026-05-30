@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Languages",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What extra component does a Pushdown Automaton (PDA) have that a Finite Automaton does not?",
+    "option_a": "A secondary state machine",
+    "option_b": "An infinite stack",
+    "option_c": "A random number generator",
+    "option_d": "A tape that can move left and right",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A PDA uses a stack for memory, which allows it to recognize context-free languages (like nested parentheses) that a Finite Automaton cannot."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Grammars",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "A Context-Free Grammar (CFG) is 'Ambiguous' if:",
+    "option_a": "It exists in two different files",
+    "option_b": "There exists at least one string in its language that has more than one leftmost derivation (or parse tree)",
+    "option_c": "It cannot generate any strings",
+    "option_d": "It has too many non-terminal symbols",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Ambiguity in a grammar means a string can be interpreted in multiple ways, which is undesirable in programming language design."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "CFG Normal Forms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In Chomsky Normal Form (CNF), every production rule must be of the form:",
+    "option_a": "A -> BC or A -> a",
+    "option_b": "A -> BCD",
+    "option_c": "A -> aB",
+    "option_d": "Any length of terminals and non-terminals",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CNF restricts production rules to either exactly two non-terminals or a single terminal."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Automata Hierarchy",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of the following are true about Context-Free Languages?",
+    "option_a": "They are a superset of Regular Languages",
+    "option_b": "They are recognized by Pushdown Automata",
+    "option_c": "The language {a^n b^n | n >= 0} is context-free",
+    "option_d": "The language {a^n b^n c^n | n >= 0} is context-free",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Regular languages are CFGs. {a^n b^n} is CFG because of the stack, but {a^n b^n c^n} requires two stacks (or a Turing machine) and is not context-free."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Pumping Lemma",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "The Pumping Lemma for Context-Free Languages is primarily used to:",
+    "option_a": "Prove that a language is context-free",
+    "option_b": "Prove that a language is NOT context-free",
+    "option_c": "Optimize a compiler",
+    "option_d": "Convert an NFA to a DFA",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Like the Pumping Lemma for regular languages, it's a tool for non-membership proofs (contradiction)."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Grammars",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the result of a 'Derivation' in a grammar?",
+    "option_a": "A set of states",
+    "option_b": "A string of terminal symbols",
+    "option_c": "A new grammar",
+    "option_d": "A regular expression",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Derivations start from the start symbol and replace non-terminals until only terminals remain."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Grammars",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A 'Leftmost Derivation' is one where:",
+    "option_a": "The leftmost terminal is replaced first",
+    "option_b": "The leftmost non-terminal is replaced at each step",
+    "option_c": "The rightmost terminal is replaced first",
+    "option_d": "The machine moves left",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Leftmost and rightmost derivations help analyze the structure of strings in a language."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "PDA",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A PDA accepts a string if it either reaches a final state or:",
+    "option_a": "The tape ends",
+    "option_b": "The stack becomes empty",
+    "option_c": "The machine crashes",
+    "option_d": "The counter reaches zero",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "There are two standard definitions of PDA acceptance: by final state or by empty stack."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Languages",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is the intersection of two Context-Free Languages always a Context-Free Language?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for regular languages",
+    "option_d": "Only if they are deterministic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CFLs are NOT closed under intersection. The intersection of {a^n b^n c^m} and {a^m b^n c^n} results in {a^n b^n c^n}, which is not context-free."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Languages",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is the complement of a Context-Free Language always context-free?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only if the language is finite",
+    "option_d": "Only for NFAs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CFLs are NOT closed under complementation."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "CFG Normal Forms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In Greibach Normal Form (GNF), every production is of the form:",
+    "option_a": "A -> a\u03b1 (where a is a terminal and \u03b1 is a string of non-terminals)",
+    "option_b": "A -> BC",
+    "option_c": "A -> a",
+    "option_d": "A -> B",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "GNF is useful for certain types of parsing algorithms."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "PDA",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Does an \u03b5-move in a PDA consume an input symbol?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only if the stack is empty",
+    "option_d": "Only if it is deterministic",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "\u03b5-moves allow the PDA to manipulate the stack or change state without reading from input."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Grammars",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A 'Unit Production' in a CFG is of the form:",
+    "option_a": "A -> a",
+    "option_b": "A -> B (where A and B are non-terminals)",
+    "option_c": "A -> \u03b5",
+    "option_d": "A -> ab",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unit productions are usually removed during grammar simplification."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Grammars",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Nullable' variable in a CFG?",
+    "option_a": "A variable that cannot derive any string",
+    "option_b": "A variable that can derive the empty string \u03b5",
+    "option_c": "A variable with no productions",
+    "option_d": "The start symbol",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Identifying nullable variables is key to simplifying CFGs."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Chomsky Hierarchy",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Context-free languages belong to which type in the Chomsky hierarchy?",
+    "option_a": "Type-0",
+    "option_b": "Type-1",
+    "option_c": "Type-2",
+    "option_d": "Type-3",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Type-2 grammars generate Context-Free Languages."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Parsing",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the time complexity of the CYK algorithm for parsing a string of length N in a CFG (in CNF)?",
+    "option_a": "O(N)",
+    "option_b": "O(N log N)",
+    "option_c": "O(N^2)",
+    "option_d": "O(N^3)",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "The CYK (Cocke-Younger-Kasami) algorithm uses dynamic programming and has O(N^3) complexity."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "PDA",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Are Deterministic Pushdown Automata (DPDA) and Non-deterministic Pushdown Automata (NPDA) equivalent in power?",
+    "option_a": "Yes",
+    "option_b": "No, NPDAs are strictly more powerful",
+    "option_c": "No, DPDAs are strictly more powerful",
+    "option_d": "They recognize the same set of languages",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unlike Finite Automata, non-determinism adds power to PDAs. NPDAs recognize all CFLs, while DPDAs recognize only deterministic CFLs."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Stack Operation",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In a PDA, what does 'Pop' mean?",
+    "option_a": "Adding an element to the stack",
+    "option_b": "Removing the top element from the stack",
+    "option_c": "Reading the input",
+    "option_d": "Clearing the memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Standard stack operation."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Languages",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which of these is a Context-Free Language?",
+    "option_a": "{a^n b^n c^n | n >= 0}",
+    "option_b": "{ww | w is a string}",
+    "option_c": "Balanced Parentheses (Dyck language)",
+    "option_d": "Prime number of 'a's",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Balanced parentheses can be tracked using a stack."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Grammar Components",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "In a CFG, 'Terminals' are:",
+    "option_a": "Symbols that can be replaced",
+    "option_b": "The basic symbols from which strings in the language are formed (cannot be replaced)",
+    "option_c": "The states of the machine",
+    "option_d": "The input tape",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Terminals are the 'final' symbols of the generated strings."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Grammars",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the 'Start Symbol' in a grammar?",
+    "option_a": "The first symbol of the input alphabet",
+    "option_b": "The designated non-terminal from which all derivations begin",
+    "option_c": "\u03b5",
+    "option_d": "The first terminal in the string",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every derivation must start from the distinguished start symbol."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Parsing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Parse Tree'?",
+    "option_a": "A diagram of the machine states",
+    "option_b": "A hierarchical tree representation of how a string is derived in a grammar",
+    "option_c": "A list of all variables",
+    "option_d": "A way to sort strings",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Parse trees visualize the structure of the string according to the grammar rules."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Languages",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Is the union of two Context-Free Languages always a CFL?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for finite sets",
+    "option_d": "Only for non-deterministic PDAs",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CFLs are closed under union."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Recursive Definitions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which property allows a CFG to generate infinitely many strings?",
+    "option_a": "Finite non-terminals",
+    "option_b": "Recursion (a variable can derive a string containing itself)",
+    "option_c": "Having exactly 5 terminals",
+    "option_d": "Using only Greek letters",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Recursive rules allow the grammar to expand into arbitrarily long strings."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Simplification",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "A 'Useless Variable' in a CFG is one that:",
+    "option_a": "Never derives any string of terminals",
+    "option_b": "Is not reachable from the start symbol",
+    "option_c": "Both A and B",
+    "option_d": "Is the same as a terminal",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Useless variables do not contribute to the language and can be removed."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Grammars",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Every production in a CFG must have what on its left-hand side?",
+    "option_a": "Multiple symbols",
+    "option_b": "Exactly one non-terminal symbol",
+    "option_c": "At least one terminal",
+    "option_d": "The empty string",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'Context-Free' name comes from the fact that variables can be replaced regardless of their surrounding context."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Language Properties",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Is the Kleene Star of a CFL always a CFL?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only for regular languages",
+    "option_d": "Depends on the stack size",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CFLs are closed under the Kleene Star operation."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "PDA Components",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the initial stack symbol of a PDA usually denoted as?",
+    "option_a": "S",
+    "option_b": "Z0",
+    "option_c": "X",
+    "option_d": "0",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Z0 is a convention used to represent the bottom of the stack."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "PDA Transitions",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A PDA transition \u03b4(q, a, X) -> (p, \u03b3) says:",
+    "option_a": "In state q, seeing 'a' on input and X on stack, go to state p and replace X with \u03b3",
+    "option_b": "Delete the stack",
+    "option_c": "Move the head left",
+    "option_d": "Change 'a' to 'p'",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The transition function defines state change and stack manipulation."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Context-Free Languages",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "CFLs are closed under concatenation.",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Only for finite strings",
+    "option_d": "Only if they use the same alphabet",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Joining two CFLs results in another CFL."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Ambiguity",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "An 'Inherently Ambiguous' language is one where:",
+    "option_a": "The programmer is confused",
+    "option_b": "Every possible grammar for that language is ambiguous",
+    "option_c": "The language is empty",
+    "option_d": "No machine can recognize it",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Some languages simply cannot be represented by a non-ambiguous grammar."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Stack Limit",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Does a standard PDA have a limit on its stack size?",
+    "option_a": "Small fixed size",
+    "option_b": "Infinite",
+    "option_c": "Size of the input string",
+    "option_d": "100 elements",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Theoretical automata models assume infinite memory resources (tape, stack, etc.) unless specified otherwise."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Deterministic PDA",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "DPDAs are crucial for:",
+    "option_a": "Writing poetry",
+    "option_b": "Designing efficient compilers and parsers for programming languages",
+    "option_c": "Sorting integers",
+    "option_d": "Image processing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Deterministic CFLs can be parsed efficiently in linear time, which is important for compilers."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Normal Forms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "The process of converting a CFG to CNF involves removing:",
+    "option_a": "\u03b5-productions",
+    "option_b": "Unit productions",
+    "option_c": "Useless symbols",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Successive simplification steps are needed to reach CNF."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Parsing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which parsing approach starts from the terminals and builds up to the start symbol?",
+    "option_a": "Top-down",
+    "option_b": "Bottom-up",
+    "option_c": "Random-walk",
+    "option_d": "Sideways",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bottom-up parsers (like LR parsers) reduce string segments back to variables."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Parsing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which parsing approach starts from the start symbol and tries to generate the target string?",
+    "option_a": "Top-down",
+    "option_b": "Bottom-up",
+    "option_c": "In-order",
+    "option_d": "Post-order",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Top-down parsers (like LL parsers) expand the start symbol using production rules."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Hierarchy",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "A language that is Context-Free is also necessarily:",
+    "option_a": "Regular",
+    "option_b": "Recursively Enumerable",
+    "option_c": "Decidable in linear time",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CFLs are a subset of Decidable (Recursive) languages, which are a subset of RE languages."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Linear Grammars",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "A 'Linear Grammar' has at most ___ non-terminal on the right-hand side of any production.",
+    "option_a": "Two",
+    "option_b": "One",
+    "option_c": "Zero",
+    "option_d": "Five",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Linear grammars are a slightly more restricted form of CFG."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Closure Properties",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "The concatenation of a regular language and a context-free language is:",
+    "option_a": "Always regular",
+    "option_b": "Always context-free",
+    "option_c": "Sometimes context-sensitive",
+    "option_d": "Undecidable",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Since regular languages are also CFLs, and CFLs are closed under concatenation, the result is CFL."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Language Subset",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Are all regular languages context-free?",
+    "option_a": "Yes",
+    "option_b": "No",
+    "option_c": "Only finite regular languages",
+    "option_d": "Only those with 1 state",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Finite automata are just PDAs that never use their stack."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "CFG Components",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "In CFG notations, variables are often represented by:",
+    "option_a": "Lowercase letters",
+    "option_b": "Uppercase letters",
+    "option_c": "Numbers",
+    "option_d": "Greek symbols",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Conventionally, A, B, S are variables; a, b, c are terminals."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Pumping Lemma",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In the CFL pumping lemma, the string 's' is divided into ___ parts.",
+    "option_a": "3 (xyz)",
+    "option_b": "5 (uvxyz)",
+    "option_c": "2 (uv)",
+    "option_d": "4 (uvwx)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The CFL pumping lemma involves 'pumping' two parts of the string (v and x) simultaneously."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Derivation Tree",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "The 'Yield' of a parse tree is:",
+    "option_a": "The root symbol",
+    "option_b": "The concatenation of the leaves from left to right",
+    "option_c": "The height of the tree",
+    "option_d": "The number of non-terminals",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The yield is the actual string generated by the proof tree."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Grammar Types",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "A grammar A -> aA | b is:",
+    "option_a": "Regular",
+    "option_b": "Context-Free",
+    "option_c": "Both A and B",
+    "option_d": "Neither",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "It's a right-linear grammar (Regular) and also follows CFG rules."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Language Complexity",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which of these languages is NOT context-free?",
+    "option_a": "{a^n b^n}",
+    "option_b": "{a^n b^2n}",
+    "option_c": "{a^n b^n c^n}",
+    "option_d": "{a^n b^m}",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "{a^n b^n c^n} cannot be tracked with a single stack. It is context-sensitive."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Hierarchy",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Grammars where rules are 'S -> something' without regard to surrounding symbols are called:",
+    "option_a": "Unrestricted",
+    "option_b": "Context-Free",
+    "option_c": "Context-Sensitive",
+    "option_d": "Isolated",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Direct replacement is context-independent."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "PDA Memory",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "PDAs are recognized as being equivalent to which type of grammar?",
+    "option_a": "Regular",
+    "option_b": "Context-Free",
+    "option_c": "Unrestricted",
+    "option_d": "Type-1",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NPDAs specifically match the class of CFLs."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Terminal Symbols",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "In a parse tree, terminals can only appear at:",
+    "option_a": "The root",
+    "option_b": "Interior nodes",
+    "option_c": "Leaf nodes",
+    "option_d": "The second level",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Interior nodes must be variables which were expanded."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Empty String",
+    "question_type": "medium",
+    "timer_seconds": 20,
+    "question_text": "Can a CFG generate an empty string \u03b5?",
+    "option_a": "Yes, using S -> \u03b5",
+    "option_b": "No, never",
+    "option_c": "Only if it is regular",
+    "option_d": "Only if it has 10 rules",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The production S -> \u03b5 allows the language to contain the empty string."
+  },
+  {
+    "subject_name": "TOC",
+    "level_number": 2,
+    "level_topic": "Substitution",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "CFLs are closed under 'Substitution'.",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Only for finite replacements",
+    "option_d": "Only for single letters",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Replacing terminals with strings from other CFLs maintains context-freedom."
+  }
+]

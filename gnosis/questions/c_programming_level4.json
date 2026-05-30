@@ -1,0 +1,815 @@
+[
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What is the keyword used to define a structured data type in C?",
+    "option_a": "Class",
+    "option_b": "struct",
+    "option_c": "union",
+    "option_d": "object",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Struct is the keyword for creating a user-defined data type that groups different variables."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "How do you access a structure member through a pointer?",
+    "option_a": ".",
+    "option_b": "*",
+    "option_c": "->",
+    "option_d": "&",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "The arrow operator (->) is shorthand for dereferencing a pointer and accessing a member."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What is the primary difference between a struct and a union in terms of memory?",
+    "option_a": "Struct is larger",
+    "option_b": "Union members share the same memory location",
+    "option_c": "Struct is for strings only",
+    "option_d": "Unions are not allowed in C",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In a union, all members start at the same memory address, whereas struct members are sequential."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Which operator is used to determine the memory size of a structure?",
+    "option_a": "countof",
+    "option_b": "sizeof",
+    "option_c": "lengthof",
+    "option_d": "memsize",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "sizeof structure_name returns the total bytes required by that structure."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What is the size of a bit-field declared as `unsigned int x : 1;`?",
+    "option_a": "1 byte",
+    "option_b": "1 bit (conceptually)",
+    "option_c": "4 bytes",
+    "option_d": "Compiler dependent",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bit-fields allow specifying the exact number of bits used by a member."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "To manipulate specific hardware registers, pointers are usually marked as:",
+    "option_a": "const",
+    "option_b": "static",
+    "option_c": "volatile",
+    "option_d": "register",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "volatile prevents the compiler from optimizing out repeated reads/writes to hardware addresses."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Can a structure contain another structure within it?",
+    "option_a": "Yes, nested structures are allowed",
+    "option_b": "No",
+    "option_c": "Only if defined as pointers",
+    "option_d": "Only for recursive structs",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "C supports nesting of structures inside one another."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What does `typedef` do?",
+    "option_a": "Allocates memory",
+    "option_b": "Creates an alias for an existing type",
+    "option_c": "Defines a new variable",
+    "option_d": "Initializes a struct",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "typedef makes code cleaner by providing shorter names for complex types like structs."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Which segment stores global structured variables?",
+    "option_a": "Stack",
+    "option_b": "Data/BSS segment",
+    "option_c": "Heap",
+    "option_d": "Register file",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Global structs behave like global variables and are placed in data or BSS segments."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "If `union U { int x; char y; } u;`, what happens if you set `u.x = 65;` and read `u.y`?",
+    "option_a": "Garbage",
+    "option_b": "65 ('A' in ASCII)",
+    "option_c": "Crash",
+    "option_d": "y is zero",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Unions share memory, so modifying x also affects the bytes seen through y."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is 'Padding' in structures?",
+    "option_a": "Adding spaces to strings",
+    "option_b": "Non-used bytes added by compiler for alignment",
+    "option_c": "Initial zeroing of struct",
+    "option_d": "Buffer protection",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Compilers add padding bytes to ensure members are aligned on word boundaries for efficiency."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Can bit-fields be used with any data type?",
+    "option_a": "No, only integer types (int, signed, unsigned)",
+    "option_b": "Yes, including floats",
+    "option_c": "Only with pointers",
+    "option_d": "Yes, with structs",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Bit-fields must be declared using integral types."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Why do unions save memory?",
+    "option_a": "They compress data",
+    "option_b": "They allocate memory for only the largest member",
+    "option_c": "They use short integers only",
+    "option_d": "They reside in the registers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The size of a union is determined by its largest component."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In `struct { int x : 3; } s;`, what is the maximum value for `s.x`?",
+    "option_a": "3",
+    "option_b": "7 (assuming unsigned)",
+    "option_c": "15",
+    "option_d": "depends on size of int",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "3 bits can store 2^3 colors (0-7 for unsigned)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Self-referential structure'?",
+    "option_a": "A structure that contains a pointer to itself",
+    "option_b": "A structure that inherits from itself",
+    "option_c": "A structure with only one member",
+    "option_d": "An illegal construct in C",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "These are used for Linked Lists and Trees (e.g., struct Node { struct Node *next; })."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Memory alignment helps in:",
+    "option_a": "Faster CPU access to data",
+    "option_b": "Saving disk space",
+    "option_c": "Encapsulation",
+    "option_d": "Recursive calls",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Aligned data can be fetched in fewer bus cycles by most processors."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Are structs passed by value or by reference in C?",
+    "option_a": "By value (entire struct copied) by default",
+    "option_b": "By reference always",
+    "option_c": "Only pointers are passed",
+    "option_d": "Recursive copying occurs",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Passing a struct directly creates a full copy of the entire structure."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Flexible Array Member'?",
+    "option_a": "An array that changes size automatically",
+    "option_b": "An unsized array as the last member of a struct",
+    "option_c": "A dynamic array on stack",
+    "option_d": "A pointer to an array",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Allows structs to have variable-sized data at the end (introduces C99)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Which attribute can be used in GCC to avoid structure padding?",
+    "option_a": "__attribute__((packed))",
+    "option_b": "#pragma nopad",
+    "option_c": "struct_compact",
+    "option_d": "tighten(struct)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "__attribute__((packed)) tells the compiler to use minimum space, ignoring alignment."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Can you take the address of a bit-field member?",
+    "option_a": "No, bit-fields don't have byte-aligned addresses",
+    "option_b": "Yes, using &",
+    "option_c": "Only if size is 8 bits",
+    "option_d": "Only for char bit-fields",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The & operator cannot be used on bit-fields because they may not start on a byte boundary."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "What is the endianness problem in hardware interfacing?",
+    "option_a": "Structure size mismatch",
+    "option_b": "Order of bytes in multi-byte types (Big-Endian vs Little-Endian)",
+    "option_c": "Padding inconsistency",
+    "option_d": "Voltage levels",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Different systems store the most significant byte differently, affecting cross-hardware communication."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "A union containing three members of size 2, 4, and 8 bytes respectively will occupy how many bytes?",
+    "option_a": "14",
+    "option_b": "8",
+    "option_c": "4",
+    "option_d": "16 (due to alignment)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Union size is the size of its largest member; alignment might increase it slightly but 8 is base."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "How do you map a structure to a specific hardware memory address 0x4000?",
+    "option_a": "struct my_reg *r = (struct my_reg *)0x4000;",
+    "option_b": "r = open_reg(0x4000);",
+    "option_c": "Hard-coding in the struct definition",
+    "option_d": "It's impossible in standard C",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Casting an integer literal to a struct pointer is standard for memory-mapped I/O."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "What is the purpose of anonymous unions inside a structure?",
+    "option_a": "Memory security",
+    "option_b": "Directly accessing union members without naming the union",
+    "option_c": "Naming conflicts",
+    "option_d": "To hide data from debugger",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Anonymous unions allow members to be accessed like direct struct members."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Can a struct containing a pointer to itself be initialized?",
+    "option_a": "Yes, by setting the pointer to NULL",
+    "option_b": "No, it causes infinite loop in memory",
+    "option_c": "Only if defined as static",
+    "option_d": "Only in C++",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Initialization works fine; the pointer just stores an address (or NULL)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "Alignment 'offset' is often calculated using which macro?",
+    "option_a": "sizeof",
+    "option_b": "offsetof",
+    "option_c": "ptr_offset",
+    "option_d": "memb_pos",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "offsetof from stddef.h provides the byte offset of a member within a struct."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "hard",
+    "timer_seconds": 60,
+    "question_text": "In bit-fields, what is the effect of an unnamed field with 0 width?",
+    "option_a": "Compiler error",
+    "option_b": "Forces alignment to the next storage unit boundary",
+    "option_c": "Does nothing",
+    "option_d": "Clears the struct",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "An unnamed bit-field with size 0 aligns the next field to a new underlying type boundary."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "What happens if a struct is assigned to another struct of the same type?",
+    "option_a": "Only pointers are copied",
+    "option_b": "Member-wise copy occurs (deep copy for non-pointers)",
+    "option_c": "Error",
+    "option_d": "Only first member is copied",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Assignment of structs performs a bitwise/member-wise copy of everything in the struct."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "Is `sizeof` structure calculated before or after padding?",
+    "option_a": "Before",
+    "option_b": "After (includes padding)",
+    "option_c": "Compiler chooses",
+    "option_d": "Structure size never has padding",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "sizeof returns the total footprint in memory, including all alignment padding."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "In a union, which member gets destroyed when a new one is assigned?",
+    "option_a": "The smallest one",
+    "option_b": "The largest one",
+    "option_c": "None, they are overlapped; previous data is corrupted",
+    "option_d": "C has garbage collection for unions",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Unions do not manage 'active' members; writing to one just overwrites the common memory space."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "What happens to the remaining bits in a byte if bit-fields don't fill it?",
+    "option_a": "Used for the next variable",
+    "option_b": "Padding",
+    "option_c": "Left uninitialized",
+    "option_d": "Cause a crash",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Compilers normally fill remaining bits in a word with padding or leave them unused."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "Can we have an array of bit-fields?",
+    "option_a": "Yes",
+    "option_b": "No, bit-fields don't have standard addresses",
+    "option_c": "Only for single bits",
+    "option_d": "Depends on the CPU",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Standard C forbids arrays of bit-fields because each element wouldn't have a byte-aligned address."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "What is result of `struct S { int a; } s1, s2; s1.a=10; s2=s1; s1.a=20;` what is `s2.a`?",
+    "option_a": "10",
+    "option_b": "20",
+    "option_c": "Garbage",
+    "option_d": "Error",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Struct assignment copies the values; they are independent copies in memory."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "A structure pointer being 0x0 is essentially:",
+    "option_a": "Pointing to the code segment",
+    "option_b": "A NULL pointer",
+    "option_c": "A void struct",
+    "option_d": "Illegal definition",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "0x0 is interpreted as NULL by the C standard for all pointer types."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "Does C guarantee the order of members in a structure in memory?",
+    "option_a": "Yes, in the order they are declared",
+    "option_b": "No, the compiler can reorder for space",
+    "option_c": "Only for unions",
+    "option_d": "Only for packing",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The order of struct members in memory must match their declaration order (ignoring padding)."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "tricky",
+    "timer_seconds": 60,
+    "question_text": "Are local struct variables initialized automatically?",
+    "option_a": "Yes, to zero",
+    "option_b": "No, they contain garbage",
+    "option_c": "Only the pointer is NULL",
+    "option_d": "Only bit-fields are 0",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Automatic (local) structures, like primitive variables, are uninitialized by default."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "Structures provide a way to implement:",
+    "option_a": "Data Encapulation (logical grouping)",
+    "option_b": "Recursive data types (links, trees)",
+    "option_c": "Memory-mapped I/O registers",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Structs are versatile for grouping info, building complex nodes, and mapping hardware."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "The memory overhead of a structure is usually due to:",
+    "option_a": "The struct keyword itself",
+    "option_b": "Alignment padding",
+    "option_c": "Member pointers",
+    "option_d": "Recursive references",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Padding to align members with processor word boundaries increases struct size."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "Unions are primarily used for:",
+    "option_a": "Polymorphism (treating same data as different types)",
+    "option_b": "Memory optimization (mutually exclusive data)",
+    "option_c": "Both A and B",
+    "option_d": "Faster file I/O",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Unions allow data interpretation in multiple ways and save space for items never used together."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "Volatile keyword is critical for hardware because:",
+    "option_a": "Registers can change independently of code (due to hardware events)",
+    "option_b": "It makes the code faster",
+    "option_c": "It prevents memory leaks",
+    "option_d": "Hardware only accepts volatile data",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "volatile tells the compiler to reload the value from memory every time, as the hardware might have updated it."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "What is the advantage of using Bit-fields?",
+    "option_a": "Space optimization for flags (status bits)",
+    "option_b": "Higher precision for floats",
+    "option_c": "Faster arithmetic",
+    "option_d": "Automatic overflow checking",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Bit-fields pack multiple Boolean or small numeric values into a single memory word."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "An 'Embedded C' developer uses structs mostly for:",
+    "option_a": "Object-oriented UI",
+    "option_b": "Mapping Command/Status registers of peripherals",
+    "option_c": "Browser development",
+    "option_d": "SQL queries",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Structs provide a structured way to access fixed hardware memory layouts."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "When a large struct is needed in a function, it is better to pass:",
+    "option_a": "By value",
+    "option_b": "By pointer (address)",
+    "option_c": "Global copy",
+    "option_d": "By copying to heap",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Passing a pointer avoids the overhead of copying every byte of a large structure."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "core_concept",
+    "timer_seconds": 60,
+    "question_text": "Bit-masking is an alternative to what C feature?",
+    "option_a": "Pointers",
+    "option_b": "UML Diagrams",
+    "option_c": "Bit-fields",
+    "option_d": "Recursion",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "One can use bitwise operators (masking) or bit-fields to manipulate specific bits."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "Which operations are valid for structure variables?",
+    "option_a": "Copying to another struct of same type",
+    "option_b": "Passing to a function by value",
+    "option_c": "Comparison with '==' operator",
+    "option_d": "Retrieving address with &",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "C does not allow direct comparison of structs with '=='; you must compare members manually."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "Identify properties of C unions:",
+    "option_a": "Only one member is validly stored at a time",
+    "option_b": "Total size is size of its largest member",
+    "option_c": "Provides type punning (accessing raw bytes differently)",
+    "option_d": "Members are placed at sequential addresses",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Union members start at the SAME address, sequentially is for structures."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "Which keywords are used in creating complex user data types?",
+    "option_a": "struct",
+    "option_b": "union",
+    "option_c": "enum",
+    "option_d": "typedef",
+    "correct_options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "structs, unions, enums, and typedef are the building blocks of C custom types."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "What can happen when mapping a struct to hardware registers?",
+    "option_a": "Padding bytes might shift register positions",
+    "option_b": "Endianness might flip multi-byte data",
+    "option_c": "Hardware might not allow byte-access (alignment)",
+    "option_d": "The struct name is uploaded to the device",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Careful control over alignment and endianness is vital; names are just for the code."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "Which of these describe self-referential structures correctly?",
+    "option_a": "Must use pointers to refer to itself",
+    "option_b": "Basic unit of a Linked List",
+    "option_c": "Can be nested infinitely by value",
+    "option_d": "Used to describe tree hierarchies",
+    "correct_options": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "You cannot nest a struct inside itself by value (infinite size); you must use pointers."
+  },
+  {
+    "subject_name": "C Programming",
+    "level_number": 4,
+    "level_topic": "Structures, Unions, Bit-fields, Hardware Interfacing",
+    "question_type": "multi_correct",
+    "timer_seconds": 60,
+    "question_text": "Ways to initialize a struct variable during declaration:",
+    "option_a": "struct S s = { 10, 20 };",
+    "option_b": "struct S s = { .a = 5 }; (Designated)",
+    "option_c": "struct S s = s_other;",
+    "option_d": "s = calloc(1, size);",
+    "correct_options": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "A, B, and C are declaration-time initializations. D is a runtime assignment."
+  }
+]

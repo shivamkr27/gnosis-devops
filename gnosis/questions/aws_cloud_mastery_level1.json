@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Intro to AWS",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What does AWS stand for?",
+    "option_a": "Advanced Web Services",
+    "option_b": "Amazon Web Services",
+    "option_c": "American Web Systems",
+    "option_d": "Application Web Security",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AWS is the cloud computing platform provided by Amazon."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Global Infrastructure",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is an 'Availability Zone' (AZ)?",
+    "option_a": "A single data center",
+    "option_b": "One or more discrete data centers with redundant power, networking, and connectivity in an AWS Region",
+    "option_c": "A collection of regions",
+    "option_d": "A backup server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AZs are designed to provide high availability and fault tolerance within a Region."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Compute (EC2)",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which AWS service provides resizable virtual servers in the cloud?",
+    "option_a": "S3",
+    "option_b": "EC2",
+    "option_c": "RDS",
+    "option_d": "Lambda",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Elastic Compute Cloud (EC2) is the fundamental core of AWS compute."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Storage (S3)",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the primary storage type of Amazon S3?",
+    "option_a": "Block Storage",
+    "option_b": "Object Storage",
+    "option_c": "File Storage",
+    "option_d": "Archive Storage",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "S3 stores data as objects within buckets."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Identity (IAM)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'IAM' used for in AWS?",
+    "option_a": "Indexing and Memory",
+    "option_b": "Identity and Access Management: managing users and their access to AWS resources",
+    "option_c": "Internal Application Monitoring",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IAM allows you to securely control access to AWS services and resources for your users."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Networking (VPC)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is a 'VPC'?",
+    "option_a": "Virtual Private Center",
+    "option_b": "Virtual Private Cloud: a private network in AWS dedicated to your account",
+    "option_c": "Variable Power Consumption",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A VPC gives you full control over your virtual networking environment."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Database (RDS)",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which AWS service is a managed relational database service?",
+    "option_a": "DynamoDB",
+    "option_b": "RDS",
+    "option_c": "ElastiCache",
+    "option_d": "Redshift",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "RDS (Relational Database Service) supports engines like MySQL, PostgreSQL, and SQL Server."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Compute (Lambda)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the primary benefit of Amazon Lambda?",
+    "option_a": "It's always running",
+    "option_b": "Serverless compute that runs code in response to events without managing servers",
+    "option_c": "It provides storage",
+    "option_d": "It manages databases",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Lambda is a serverless FaaS (Function as a Service) offering."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Content Delivery",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which AWS service is a Content Delivery Network (CDN)?",
+    "option_a": "Route 53",
+    "option_b": "CloudFront",
+    "option_c": "Direct Connect",
+    "option_d": "API Gateway",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CloudFront speeds up distribution of static and dynamic web content."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "DNS",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is Amazon Route 53?",
+    "option_a": "A highway navigation tool",
+    "option_b": "A highly available and scalable Domain Name System (DNS) web service",
+    "option_c": "A database service",
+    "option_d": "A ways to name servers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Route 53 translates domain names into IP addresses."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Storage",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which S3 storage class is best for low-cost, long-term archiving where data is rarely accessed?",
+    "option_a": "S3 Standard",
+    "option_b": "S3 Glacier",
+    "option_c": "S3 Intelligent-Tiering",
+    "option_d": "S3 One Zone-IA",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Glacier is designed for data archiving with retrieval times ranging from minutes to hours."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Billing",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which AWS tool helps you estimate the cost of moving to the cloud?",
+    "option_a": "Cost Explorer",
+    "option_b": "AWS Pricing Calculator",
+    "option_c": "Trusted Advisor",
+    "option_d": "Budgets",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Pricing Calculator lets you estimate costs for your unique use cases."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the 'Shared Responsibility Model' in AWS?",
+    "option_a": "AWS handles everything",
+    "option_b": "AWS is responsible for security OF the cloud; the customer is responsible for security IN the cloud",
+    "option_c": "Customers handle everything",
+    "option_d": "Shared responsibility for software development",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This model defines the boundary between the service provider and the user."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Database (NoSQL)",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which AWS service is a serverless, key-value NoSQL database service?",
+    "option_a": "RDS",
+    "option_b": "DynamoDB",
+    "option_c": "Aurora",
+    "option_d": "Neptune",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DynamoDB offers consistent, single-digit millisecond latency at any scale."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Monitoring",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which AWS service is used for monitoring and observability of metrics and logs?",
+    "option_a": "CloudTrail",
+    "option_b": "CloudWatch",
+    "option_c": "Config",
+    "option_d": "X-Ray",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CloudWatch provides data and actionable insights for AWS resources."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Auditing",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which AWS service records API calls for your account for auditing purposes?",
+    "option_a": "CloudWatch",
+    "option_b": "CloudTrail",
+    "option_c": "Inspector",
+    "option_d": "GuardDuty",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CloudTrail provides a history of AWS API calls for security and compliance."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Support",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What does 'AWS Trusted Advisor' do?",
+    "option_a": "It manages your servers",
+    "option_b": "It provides recommendations in categories like cost optimization, performance, and security",
+    "option_c": "It's a person you can call",
+    "option_d": "It writes your code",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Trusted Advisor checks your environment against AWS best practices."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Compute",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which service allows you to run Docker containers on AWS without managing servers?",
+    "option_a": "EC2",
+    "option_b": "Fargate",
+    "option_c": "S3",
+    "option_d": "VPC",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AWS Fargate is a serverless compute engine for containers that works with both ECS and EKS."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Compute",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the name of the Amazon web-scale container orchestration service?",
+    "option_a": "ECS",
+    "option_b": "EKS",
+    "option_c": "EC2",
+    "option_d": "S3",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Elastic Container Service (ECS) is a highly scalable, high-performance container management service."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Compute",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the Amazon service for running Kubernetes in the cloud?",
+    "option_a": "ECS",
+    "option_b": "EKS",
+    "option_c": "EB",
+    "option_d": "Lambda",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Elastic Kubernetes Service (EKS) makes it easy to deploy, manage, and scale containerized applications using Kubernetes."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Storage",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'EBS' stand for?",
+    "option_a": "Elastic Block Store",
+    "option_b": "External Backup System",
+    "option_c": "Extended Building Service",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "EBS provides persistent block storage volumes for use with EC2 instances."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Load Balancing",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which AWS service automatically distributes incoming application traffic across multiple targets, such as EC2 instances?",
+    "option_a": "Route 53",
+    "option_b": "Elastic Load Balancing (ELB)",
+    "option_c": "Auto Scaling",
+    "option_d": "CloudFront",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ELB scaling ensures high availability by distributing traffic."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "AWS Regions",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is an AWS 'Region'?",
+    "option_a": "A single data center",
+    "option_b": "A physical location in the world where AWS has multiple Availability Zones",
+    "option_c": "A ways to name servers",
+    "option_d": "A collection of countries",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Regions are geographically isolated areas where AWS resources reside."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Auto Scaling",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is the purpose of 'AWS Auto Scaling'?",
+    "option_a": "To delete old servers",
+    "option_b": "To automatically add or remove resources to meet demand",
+    "option_c": "To rename servers",
+    "option_d": "To backup data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Auto Scaling helps maintain application availability and allows you to scale up or down automatically."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Cost Management",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which pricing model allows you to pay less by committing to a consistent amount of usage (e.g. 1 or 3 years)?",
+    "option_a": "On-Demand",
+    "option_b": "Reserved Instances / Savings Plans",
+    "option_c": "Spot Instances",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Reserved Instances and Savings Plans provide significant discounts compared to On-Demand pricing."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Security",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which service provides protection against DDoS attacks?",
+    "option_a": "AWS Shield",
+    "option_b": "AWS WAF",
+    "option_c": "Inspector",
+    "option_d": "KMS",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "AWS Shield is a managed Distributed Denial of Service (DDoS) protection service."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Security",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which service is a web application firewall that helps protect your web applications from common web exploits?",
+    "option_a": "AWS WAF",
+    "option_b": "Shield",
+    "option_c": "IAM",
+    "option_d": "Certificate Manager",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "AWS WAF gives you control over which traffic to allow or block to your web applications."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Data Migration",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which AWS service is a petabyte-scale data transport solution that uses physical devices?",
+    "option_a": "Direct Connect",
+    "option_b": "AWS Snowball",
+    "option_c": "Transfer Family",
+    "option_d": "Storage Gateway",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Snowball is used for large-scale data transfers into or out of AWS."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Computing Models",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the main advantage of 'Serverless' computing?",
+    "option_a": "There are no servers",
+    "option_b": "Developers can focus on code without worrying about server provisioning, management, or scaling",
+    "option_c": "It's always free",
+    "option_d": "It's faster than EC2",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Serverless (like Lambda) abstracts away the underlying infrastructure management."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Storage (EFS)",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'Amazon EFS'?",
+    "option_a": "Elastic File System: a simple, scalable, serverless, set-and-forget file system",
+    "option_b": "Extra Fast Storage",
+    "option_c": "Easy Folder Service",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "EFS provides a managed file system that can be accessed by multiple EC2 instances simultaneously."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Database (Caching)",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which service is a fully managed in-memory data store?",
+    "option_a": "Redshift",
+    "option_b": "ElastiCache",
+    "option_c": "RDS",
+    "option_d": "Neptune",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ElastiCache improves application performance by retrieving data from fast in-memory caches."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Analytics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which AWS service is a fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data?",
+    "option_a": "Athena",
+    "option_b": "Redshift",
+    "option_c": "Glue",
+    "option_d": "Kinesis",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Redshift uses SQL to analyze large amounts of data across your data warehouse and data lake."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Analytics",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which interactive query service makes it easy to analyze data in Amazon S3 using standard SQL?",
+    "option_a": "Redshift",
+    "option_b": "Athena",
+    "option_c": "EMR",
+    "option_d": "QuickSight",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Application Integration",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which service is a fully managed message queuing service (MQS)?",
+    "option_a": "SNS",
+    "option_b": "SQS",
+    "option_c": "SES",
+    "option_d": "SWF",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Simple Queue Service (SQS) allows you to decouple and scale microservices."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Application Integration",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which service is a fully managed pub/sub messaging service?",
+    "option_a": "SQS",
+    "option_b": "SNS",
+    "option_c": "SES",
+    "option_d": "Pinpoint",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Simple Notification Service (SNS) enables fast, highly scalable messaging."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Machine Learning",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which service provides a fully managed service that enables developers to quickly build, train, and deploy machine learning models?",
+    "option_a": "Rekognition",
+    "option_b": "SageMaker",
+    "option_c": "Lex",
+    "option_d": "Polly",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SageMaker takes away the heavy lifting of machine learning."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is the purpose of 'AWS Secrets Manager'?",
+    "option_a": "To hide your files",
+    "option_b": "To rotatable, manage, and retrieve database credentials, API keys, and other secrets throughout their lifecycle",
+    "option_c": "To encrypt your code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Secrets Manager helps you replace hardcoded credentials in your code with an API call."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which service is a managed service that makes it easy for you to create and control the master keys used to encrypt your data?",
+    "option_a": "IAM",
+    "option_b": "AWS KMS (Key Management Service)",
+    "option_c": "CloudHSM",
+    "option_d": "Secrets Manager",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "KMS integrates with most other AWS services to help you protect your data."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Operations",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'AWS Organizations' used for?",
+    "option_a": "To name your departments",
+    "option_b": "To centrally manage and govern your environment as you grow and scale your AWS resources",
+    "option_c": "To backup your account",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Organizations helps with billing, security, and compliance across multiple AWS accounts."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Deployment",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which service provides an easy way to create and manage a collection of related AWS resources, provisioning and updating them in an orderly fashion?",
+    "option_a": "Beanstalk",
+    "option_b": "CloudFormation",
+    "option_c": "OpsWorks",
+    "option_d": "CodeDeploy",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CloudFormation is the primary IaC (Infrastructure as Code) tool on AWS."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Compute",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'AWS Elastic Beanstalk'?",
+    "option_a": "A ways to grow plants",
+    "option_b": "An easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker",
+    "option_c": "A ways to store data",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Beanstalk is a PaaS (Platform as a Service) that automates deployment tasks."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Governance",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which service enables you to assess, audit, and evaluate the configurations of your AWS resources?",
+    "option_a": "AWS Config",
+    "option_b": "CloudTrail",
+    "option_c": "CloudWatch",
+    "option_d": "Inspector",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Config provides a detailed view of the configuration of AWS resources in your account."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which service is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS?",
+    "option_a": "GuardDuty",
+    "option_b": "Amazon Inspector",
+    "option_c": "Shield",
+    "option_d": "Macie",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Inspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which service is a threat detection service that continuously monitors for malicious activity and unauthorized behavior?",
+    "option_a": "Inspector",
+    "option_b": "Amazon GuardDuty",
+    "option_c": "WAF",
+    "option_d": "Shield",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "GuardDuty uses machine learning, anomaly detection, and integrated threat intelligence to identify and prioritize potential threats."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Security",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which service uses machine learning and pattern matching to discover and protect your sensitive data in AWS?",
+    "option_a": "GuardDuty",
+    "option_b": "Amazon Macie",
+    "option_c": "Inspector",
+    "option_d": "KMS",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Macie helps you maintain security and compliance by discovering and protecting sensitive PII data."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Artifacts",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'AWS Artifact'?",
+    "option_a": "A ways to name files",
+    "option_b": "A central resource for compliance-related information that provides on-demand access to AWS\u2019 security and compliance reports",
+    "option_c": "A backup service",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Artifact helps you demonstrate compliance to auditors or regulators."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Hybrid Cloud",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'AWS Outposts'?",
+    "option_a": "A ways to name servers",
+    "option_b": "A fully managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any data center, co-location space, or on-premises facility",
+    "option_c": "A backup server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Outposts provides a truly consistent hybrid experience."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Developer Tools",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "What is 'AWS CodeCommit'?",
+    "option_a": "A fully managed source control service that hosts secure Git-based repositories",
+    "option_b": "A ways to name code",
+    "option_c": "A tool to delete branches",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CodeCommit makes it easy for teams to collaborate on code."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Migration",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which AWS service helps you migrate databases to AWS quickly and securely?",
+    "option_a": "SMS",
+    "option_b": "Database Migration Service (DMS)",
+    "option_c": "Snowball",
+    "option_d": "S3",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DMS can migrate your data to and from most widely used commercial and open-source databases."
+  },
+  {
+    "subject_name": "AWS Cloud Mastery",
+    "level_number": 1,
+    "level_topic": "Cost Management",
+    "question_type": "easy",
+    "timer_seconds": 15,
+    "question_text": "Which AWS tool gives you the ability to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount?",
+    "option_a": "Cost Explorer",
+    "option_b": "AWS Budgets",
+    "option_c": "Pricing Calculator",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Budgets help you stay informed about your AWS spending."
+  }
+]

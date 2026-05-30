@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced TCP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is Google's 'BBR' (Bottleneck Bandwidth and Round-trip propagation time)?",
+    "option_a": "A new physical cable type",
+    "option_b": "A congestion control algorithm that optimizes throughput and latency by modeling the network's bandwidth and RTT directly, instead of relying solely on packet loss",
+    "option_c": "A database partitioning tool",
+    "option_d": "A way to encrypt TCP headers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BBR reacts faster than traditional loss-based congestion control algorithms like CUBIC, especially on modern 'bufferbloat' networks."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Adv. Networking Layer",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In BGP, what is an 'Autonomous System (AS) Confederation' used for?",
+    "option_a": "To merge all ISPs in a country",
+    "option_b": "A technique to reduce the number of internal BGP (iBGP) mesh connections by splitting a large AS into smaller, internal sub-ASs",
+    "option_c": "A way to hide IP addresses from the government",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Confederations make large-scale internal routing manageable and scalable."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "SDN",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'Southbound API' in Software Defined Networking (SDN)?",
+    "option_a": "A protocol for users in the southern hemisphere",
+    "option_b": "The communication interface between the SDN Controller and the physical or virtual networking hardware (e.g., OpenFlow)",
+    "option_c": "The path between the application and the controller",
+    "option_d": "The database storage for logs",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Southbound APIs allow the controller to instruct switches and routers on how to handle traffic flows."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "MPTCP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Multipath TCP' (MPTCP)?",
+    "option_a": "Sending multiple copies of the same packet",
+    "option_b": "An extension to TCP that allows a single data stream to use multiple network paths (e.g., Wi-Fi and 4G) simultaneously to improve throughput and reliability",
+    "option_c": "A way to send data to many people",
+    "option_d": "Routing data across different countries",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MPTCP is commonly used in modern smartphones for seamless transition between network types."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "IPv6 Mechanisms",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How does 'NAT64/DNS64' work in IPv6-only transition?",
+    "option_a": "It converts all IPv4 users to IPv6",
+    "option_b": "DNS64 synthesizes AAAA records for IPv4-only hosts, and NAT64 translates the traffic between the IPv6 client and the IPv4 server",
+    "option_c": "It deletes all IPv4 traffic automatically",
+    "option_d": "It creates a tunnel for all users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NAT64/DNS64 allows IPv6-only networks to access the legacy IPv4 internet transparently."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced BGP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which BGP path attribute is used to influence the path taken by OUTGOING traffic from an Autonomous System?",
+    "option_a": "MED (Multi-Exit Discriminator)",
+    "option_b": "Local Preference",
+    "option_c": "AS-Path",
+    "option_d": "Origin",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Higher local preference values are prioritized for selecting the exit point from an AS."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced BGP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which BGP attribute is used to influence the path taken by INCOMING traffic from an external Autonomous System?",
+    "option_a": "Local Preference",
+    "option_b": "MED (Multi-Exit Discriminator) and AS-Path Prepending",
+    "option_c": "Next Hop",
+    "option_d": "Atomic Aggregate",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MED tells external peers which entrance to prefer; AS-path prepending makes a path look longer/worse."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Wireless Technology",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'MU-MIMO' in modern Wi-Fi (802.11ac wave 2 / 802.11ax)?",
+    "option_a": "Multiple Users, Multiple Input, Multiple Output - allowing a router to communicate with multiple devices simultaneously on the same frequency",
+    "option_b": "Multiple Users, Minimal Output - to save power in small devices",
+    "option_c": "A way to use multiple internet providers at once",
+    "option_d": "None of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "MU-MIMO significantly increases network capacity by allowing parallel data streams to different users."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "SDN",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the role of an 'SDN Controller'?",
+    "option_a": "To plug in the cables",
+    "option_b": "The 'Brain' of the network that provides a centralized, programmatic view of the network for intelligent routing and policy management",
+    "option_c": "A hardware device for cooling the datacenter",
+    "option_d": "A protocol for sending emails",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The SDN controller manages the control plane and programs the data plane of networking devices."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "NFV",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Network Function Virtualization' (NFV)?",
+    "option_a": "Deleting physical firewalls",
+    "option_b": "Replacing dedicated hardware networking appliances (firewalls, load balancers) with software running on standard virtualized servers",
+    "option_c": "Using VR to see the network",
+    "option_d": "Virtualizing only the DNS server",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NFV allows for flexible, scalable, and cost-effective network service deployment."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Protocols",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'DNSSEC' used for?",
+    "option_a": "Making DNS queries faster",
+    "option_b": "Adding digital signatures to DNS records to prevent spoofing and cache poisoning attacks",
+    "option_c": "Enrypting DNS traffic so ISPs can't see it",
+    "option_d": "Linking DNS to a physical address",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DNSSEC provides origin authentication and data integrity for DNS queries."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Transport",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Forward Error Correction' (FEC) commonly used for in high-performance networking?",
+    "option_a": "Asking for resends faster",
+    "option_b": "Including redundant data in packets so the receiver can correct errors without needing a retransmission",
+    "option_c": "Correcting the code before it is written",
+    "option_d": "Encryption",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "FEC is vital for high-latency or extremely fast links where waiting for an ACK/Retransmit is too slow."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Satellite Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the typical round-trip time (RTT) for a signal via a 'GEO' satellite?",
+    "option_a": "10-20 ms",
+    "option_b": "100-150 ms",
+    "option_c": "500-600 ms",
+    "option_d": "1-2 seconds",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Geostationary satellites are ~35,786 km away; light speed limitations create significant latency."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Networking Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'VXLAN' (Virtual Extensible LAN) used for in modern data centers?",
+    "option_a": "A faster version of Ethernet",
+    "option_b": "An encapsulation protocol used to run Layer 2 overlay networks over Layer 3 infrastructure, supporting millions of virtual networks",
+    "option_c": "A network for only virtual machines",
+    "option_d": "A way to compress VLAN tags",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "VXLAN solves the 4096-limit of traditional VLANs and enables cloud-scale virtualization."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced BGP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Route Flap Damping' in BGP?",
+    "option_a": "Deleting routes that don't respond",
+    "option_b": "A mechanism to suppress unstable routes that repeatedly go up and down (flapping) to protect the network from instability",
+    "option_c": "Adding more paths to a flap",
+    "option_d": "A hardware cooling system for routers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Flap damping prevents unstable links from overwhelming the internet's routing tables with constant updates."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Routing",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'ECMP' (Equal-Cost Multi-Path)?",
+    "option_a": "Sending all traffic to the cheapest ISP",
+    "option_b": "A routing strategy where a packet is forwarded along multiple paths of equal cost to load balance traffic and increase throughput",
+    "option_c": "Only routing to paths that have the same speed",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ECMP improves reliability and bandwidth utilization by using multiple available links simultaneously."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced TCP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In modern TCP, what is the 'Tail Loss Probe' (TLP)?",
+    "option_a": "Checking the last bit of a packet",
+    "option_b": "A mechanism to probe for packet loss at the end of a transmission to avoid long retransmission timeouts when few packets are left",
+    "option_c": "A tool to measure network cable length",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TLP helps reduce tail latency by proactively checking if final packets reached the destination."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'OCSP Stapling' in SSL/TLS?",
+    "option_a": "Asking for certificates in a physical office",
+    "option_b": "A method where the server provides a signed proof that its certificate is still valid (not revoked), instead of the client querying the CA directly",
+    "option_c": "Combining multiple certificates together",
+    "option_d": "A way to speed up user logins",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "OCSP stapling improves privacy and speeds up the handshake by reducing external lookups."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Network Modeling",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Bufferbloat'?",
+    "option_a": "Adding more RAM to a router fixes everything",
+    "option_b": "High latency caused by excess buffering of packets in network devices, leading to poor interaction for real-time services",
+    "option_c": "Large buffers in the browser",
+    "option_d": "When the database is too large for the buffer",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bufferbloat occurs when large buffers introduce unnecessary delays instead of helping manage bursts."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Infrastructure",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Anycast DNS' used for by providers like Cloudflare (1.1.1.1)?",
+    "option_a": "Sending DNS queries to a single central server",
+    "option_b": "Using a single IP address to route users' DNS queries to the logically closest server out of many locations globaly",
+    "option_c": "Hiding the DNS information from ISPs",
+    "option_d": "Scaling the length of the domain name",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Anycast provides ultra-low latency and built-in DDoS resistance for global DNS infrastructure."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Network Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the primary used of 'HSTS' (HTTP Strict Transport Security)?",
+    "option_a": "To speed up HTTPS",
+    "option_b": "To force web browsers to interact with a website only via secure HTTPS, preventing downgrade attacks",
+    "option_c": "To encrypt the computer's hard drive",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "HSTS eliminates the window where an attacker could redirect a user from HTTPS to an unencrypted HTTP link."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced BGP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In BGP, what is a 'Route Reflector'?",
+    "option_a": "A mirror in the data center",
+    "option_b": "A router that allows iBGP peers to learn routes without requiring a full-mesh configuration between all internal nodes",
+    "option_c": "A backup for the BGP controller",
+    "option_d": "A tool to reverse the AS path",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Route reflectors drastically simplify the configuration and scalability of internal BGP networks."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Network Optimization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Zero-copy' networking?",
+    "option_a": "Not making any backups",
+    "option_b": "A feature allowing the CPU to avoid copying data between kernel and application memory buffers, significantly boosting performance",
+    "option_c": "Sending data without packets",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Zero-copy is critical for building high-throughput servers and networking software."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Protocols",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'mTLS' (Mutual TLS)?",
+    "option_a": "Encoded TLS for mobile",
+    "option_b": "A security process in which BOTH the client and the server verify each other's digital certificates before establishing a connection",
+    "option_c": "Multiple layers of TLS encryption",
+    "option_d": "A faster way to encrypt data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "mTLS is standard for secure inter-service communication in Zero Trust microservice architectures."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Wireless Deep Dive",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In 5G networks, what is 'Network Slicing'?",
+    "option_a": "Cutting the fiber optic cable into pieces",
+    "option_b": "Creating multiple virtual networks on a single physical 5G infrastructure, each optimized for specific requirements (e.g., IoT, high bandwidth, low latency)",
+    "option_c": "A way to use multiple SIM cards at once",
+    "option_d": "Dividing the frequency by users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Network slicing allows operators to provide guaranteed service levels for different use cases on the same hardware."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Routing",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Link-State Advertisement' (LSA) flooding?",
+    "option_a": "A DDoS towards the router",
+    "option_b": "The process where a router sends its link-state info to all OSPF neighbors, who then pass it on, until every router has the same topology map",
+    "option_c": "Sending many packets at once",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SPF algorithms require that every router in an area has an identical Link State Database (LSDB)."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Satellite Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How does 'LEO' (Low Earth Orbit) satellite constellations like Starlink reduce latency compared to GEO?",
+    "option_a": "By using faster lasers",
+    "option_b": "By being much closer to the Earth surface (~550km vs ~35000km), significantly reducing propagation time",
+    "option_c": "By using IPv6 exclusively",
+    "option_d": "By not using encryption",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LEO satellites offer sub-50ms latency, making them suitable for gaming and real-time calls."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'BGP Flowspec'?",
+    "option_a": "A way to see the speed of BGP",
+    "option_b": "An extension to BGP that allows for distributing traffic filtering rules across the network to mitigate DDoS attacks at the edge",
+    "option_c": "A protocol for counting users",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Flowspec allows ISPs to block malicious traffic patterns centrally across many routers at once."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Network Troubleshooting",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Black Hole Routing'?",
+    "option_a": "Routing data into space",
+    "option_b": "Intentionally dropping traffic to a specific destination IP address to mitigate a DDoS attack targeting that IP",
+    "option_c": "A way to speed up the database",
+    "option_d": "A lost packet",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Black holing is a last-resort DDoS mitigation technique to protect the rest of the network from collateral damage."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Transport",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which of these TCP optimizations is specifically designed to handle 'Packet Reordering' without reducing the congestion window?",
+    "option_a": "Fast Retransmit",
+    "option_b": "SACK (Selective Acknowledgment) and DSACK",
+    "option_c": "Delayed ACKs",
+    "option_d": "Nagel's Algorithm",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "SACK allow the sender to know exactly which packets have been received, avoiding unnecessary retransmissions of out-of-order packets."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Communication Architectures",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Content Centric Networking' (CCN)?",
+    "option_a": "A social media network",
+    "option_b": "A proposed networking architecture that uses content names for routing rather than host IP addresses",
+    "option_c": "A faster version of HTTP",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CCN (or Named Data Networking) is a research paradigm focusing on 'what' is being requested rather than 'where' it is stored."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "SDN",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Flow Table' in an OpenFlow switch?",
+    "option_a": "A table of current users",
+    "option_b": "A list of rules (Match + Action) provided by the SDN controller that tells the switch how to handle incoming packets",
+    "option_c": "A log of all errors",
+    "option_d": "A way to count bytes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Flow tables are the mechanism by which SDN controllers control the data plane hardware."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced BGP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Prefix Hijacking'?",
+    "option_a": "Changing the name of the router",
+    "option_b": "When a malicious network operator announces routes for IP addresses they don't own, causing traffic to be misdirected",
+    "option_c": "A way to get more bandwidth",
+    "option_d": "Deleting the DNS records",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BGP hijacking can allow attackers to intercept, snoop, or blackhole internet traffic."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced DNS",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'DNS Sinkhole'?",
+    "option_a": "A broken DNS server",
+    "option_b": "A DNS server configured to return false (non-routable) IP addresses for known malicious domains, preventing malware from communicating with C2 servers",
+    "option_c": "A way to delete domain names",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Sinkholes are an effective defense mechanism against botnets and malware."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced TCP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'TCP Fast Open' (TFO)?",
+    "option_a": "Opening the connection without a password",
+    "option_b": "Allowing data to be included within the initial SYN packet to reduce the latency of establishing a connection",
+    "option_c": "A way to speed up the computer's startup",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "TFO eliminates one round trip during connection setup, which is huge for small web requests."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Switching",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'VPC Peering' in cloud networking?",
+    "option_a": "Peering at the users through a camera",
+    "option_b": "A direct network connection between two Virtual Private Clouds (VPCs) that allows traffic to flow between them privately using internal IPs",
+    "option_c": "Sharing the same account for two clouds",
+    "option_d": "A way to backup the cloud",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Peering ensures that traffic between cloud environments stays on the provider's private backbone, not the public internet."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Network Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'DNS over HTTPS' (DoH)?",
+    "option_a": "Sending HTML in DNS records",
+    "option_b": "A protocol for performing remote DNS resolution over an encrypted HTTPS connection to improve privacy and security",
+    "option_c": "Hosting web pages on DNS servers",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DoH prevents ISPs or local attackers from snooping on or hijacking DNS queries."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced BGP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'BGP Communities'?",
+    "option_a": "A chat group for network engineers",
+    "option_b": "Tags added to BGP route advertisements that allow for policy-based routing and grouping of routes across Autonomous Systems",
+    "option_c": "A list of ISPs",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Communities allow operators to trigger specific routing behaviors at a distance without complex prefix-list management."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Reliability",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'VRRP' (Virtual Router Redundancy Protocol)?",
+    "option_a": "Using VR to see a router",
+    "option_b": "A protocol that allows multiple routers to share a single Virtual IP, providing instant failover for the default gateway",
+    "option_c": "A way to double the router speed",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "VRRP ensures high availability for the first-hop router in a network segment."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Transport",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In QUIC (HTTP/3), what is 'Connection Migration'?",
+    "option_a": "Moving the server to a new data center",
+    "option_b": "The ability to keep a connection active even if the client's IP address changes (e.g., moving from Wi-Fi to LTE) using a Connection ID",
+    "option_c": "Deleting the old connection",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "UDP-based QUIC uses IDs instead of IP/Port tuples, allowing for seamless travel between networks."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Wireless",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Beamforming' in 5G and Wi-Fi 6?",
+    "option_a": "A physical beam used for construction",
+    "option_b": "A signal processing technique used to focus a wireless signal in a specific direction toward a target device, rather than broadcasting everywhere",
+    "option_c": "A way to see the Wi-Fi waves",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Beamforming increases signal strength and reduces interference by targeting the power where it's needed."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Routing",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'IS-IS' (Intermediate System to Intermediate System)?",
+    "option_a": "A type of internet sensor",
+    "option_b": "A Link State routing protocol primarily used within large ISP backbones, similar to OSPF but running directly on Layer 2",
+    "option_c": "A way to count servers",
+    "option_d": "A security encryption standard",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IS-IS is extremely scalable and robust, making it the preferred choice for many global core networks."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Network Optimization",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Direct Connect' or 'ExpressRoute' in cloud networking?",
+    "option_a": "A high-speed USB cable to the cloud",
+    "option_b": "A dedicated private network connection from a customer's on-premises facility directly into the cloud provider's network, bypassing the public internet",
+    "option_c": "A faster way to login to the cloud",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dedicated connections provide higher security, consistency, and bandwidth for enterprise cloud workloads."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Storage Networking",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'NVMe-over-Fabrics' (NVMe-oF)?",
+    "option_a": "Storing data on physical fabric",
+    "option_b": "A network protocol that allows for accessing low-latency NVMe storage over a high-speed network fabric with nearly local performance",
+    "option_c": "A way to clean the server room",
+    "option_d": "A type of fiber optic connector",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NVMe-oF allows for high-performance scale-out storage architectures."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Security Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is the 'DDoS Scrubbing Center' used for?",
+    "option_a": "Cleaning the servers physically",
+    "option_b": "A centralized facility where massive traffic is redirected during a DDoS attack to separate 'clean' traffic from 'malicious' traffic before forwarding it to the target",
+    "option_c": "A way to delete database logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Scrubbing centers provide at-scale filtering that individual servers cannot handle."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced IP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is '6RD' (IPv6 Rapid Deployment)?",
+    "option_a": "An IPv6 transition mechanism that allows an ISP to rapidly offer IPv6 services to its customers over its existing IPv4 infrastructure",
+    "option_b": "Replacing all hardware with IPv6 units",
+    "option_c": "Deleting IPv4 records",
+    "option_d": "A faster version of IPv6",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "6RD is an evolution of 6to4 that simplifies deployment for large service providers."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Network Congestion",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'Global Synchronization' in TCP networks?",
+    "option_a": "Syncing clocks globally",
+    "option_b": "The state where multiple TCP flows all drop their window sizes at the same time due to a single congestion event, leading to inefficient bandwidth use.",
+    "option_c": "All users using the same router",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Algorithms like RED help prevent global synchronization by dropping packets randomly."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced BGP",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What does a 'BGP Route Object' in an IRR (Internet Routing Registry) provide?",
+    "option_a": "A list of all users in a network",
+    "option_b": "A publicly verifiable record that an AS is authorized to announce a specific IP prefix, helping to prevent hijacking",
+    "option_c": "The cost of a routing path",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "IRRs and RPKI are critical for the security and integrity of global internet routing."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "SDN",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "In SDN, what is 'Northbound API'?",
+    "option_a": "Connecting to the north pole",
+    "option_b": "The interface that allows applications and management software to communicate with the SDN controller to request network services",
+    "option_c": "The path between the database and the controller",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Northbound APIs allow higher-level business logic to program the network automatically."
+  },
+  {
+    "subject_name": "Computer Networks (DCN)",
+    "level_number": 4,
+    "level_topic": "Advanced Switching",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'FabricPath' (or TRILL) designed for?",
+    "option_a": "Building faster cables",
+    "option_b": "Replacing Spanning Tree Protocol (STP) to allow for many parallel active paths in a data center network, improving throughput and resilience",
+    "option_c": "A way to use multiple internet providers",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "FabricPath provides Layer 2 multipathing, which is essential for modern high-bandwidth data center architectures."
+  }
+]

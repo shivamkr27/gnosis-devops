@@ -1,0 +1,803 @@
+[
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals & Async",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "Which module provides support for asynchronous programming in Python?",
+    "option_a": "async",
+    "option_b": "asyncio",
+    "option_c": "threading",
+    "option_d": "multiprocessing",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'asyncio' module is the standard library for writing single-threaded concurrent code using coroutines."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals & Async",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the primary difference between a Thread and a Process in Python?",
+    "option_a": "Threads share memory, Processes do not",
+    "option_b": "Threads are faster to create than processes",
+    "option_c": "Processes are managed by the GIL; threads are not",
+    "option_d": "All of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Threads run in the same memory space. Processes have separate memory spaces and are not restricted by the GIL for CPU-bound tasks."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals & Async",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What does the `__new__` method do in a class?",
+    "option_a": "Initializes the instance",
+    "option_b": "Creates and returns the instance",
+    "option_c": "Destroys the instance",
+    "option_d": "Replaces the instance with a proxy",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "__new__ is the actual constructor called before __init__. It is responsible for creating a new instance of the class."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals & Async",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is a 'metaclass' in Python?",
+    "option_a": "A class for data storage",
+    "option_b": "A class that defines how other classes behave (a class of a class)",
+    "option_c": "A framework for machine learning",
+    "option_d": "A way to define abstract base classes",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Metaclasses determine how classes are created. 'type' is the default metaclass in Python."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals & Async",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is the 'Reference Counting' mechanism in Python?",
+    "option_a": "Counting lines of code",
+    "option_b": "A memory management technique where objects are deleted when their reference count drops to zero",
+    "option_c": "A way to track variable names",
+    "option_d": "A debugging tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "CPython uses reference counting as its primary garbage collection mechanism."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals & Async",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "In `asyncio`, what does `await` do?",
+    "option_a": "Pauses execution of the coroutine until the awaited result is ready, yielding control to the event loop",
+    "option_b": "Stops the entire program for 1 second",
+    "option_c": "Forces a thread swap",
+    "option_d": "Runs the function in a background process",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Await signals to the event loop that the current coroutine is waiting for an I/O operation or another coroutine to finish."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals & Async",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these can bypass the GIL for performance?",
+    "option_a": "Multiprocessing module",
+    "option_b": "Native C extensions using threads",
+    "option_c": "Standard threading module",
+    "option_d": "AsyncIO",
+    "correct_options": [
+      "A",
+      "B"
+    ],
+    "explanation": "Multiprocessing uses separate OS processes. C extensions can release the GIL manually. Standard threads and AsyncIO are bound by the GIL for bytecode execution."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals & Async",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is 'MRO' in Python?",
+    "option_a": "Memory Resource Optimization",
+    "option_b": "Method Resolution Order",
+    "option_c": "Multi-Run Operation",
+    "option_d": "Main Root Object",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "MRO is the order in which Python searches for a method or attribute in a class hierarchy, typically using the C3 Linearization algorithm."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals & Async",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Context Manager' at the expert level?",
+    "option_a": "Any object that implements __enter__ and __exit__ methods",
+    "option_b": "A function that manages environment variables",
+    "option_c": "A way to handle GUI events",
+    "option_d": "A tool to track function calls",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Context managers allow precise setup and teardown logic using the 'with' statement."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals & Async",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is 'monkey patching' in Python?",
+    "option_a": "Writing untidy code",
+    "option_b": "Dynamic replacement of attributes or methods at runtime",
+    "option_c": "A standard way to update packages",
+    "option_d": "Testing code with random values",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Monkey patching involves modifying a module or class after it has already been imported, often used for testing or bug fixes in libraries."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What does `sys._getframe()` do?",
+    "option_a": "Takes a screenshot of the system",
+    "option_b": "Returns a frame object from the internal call stack",
+    "option_c": "Deletes the current execution context",
+    "option_d": "A ways to name a user",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It allows for deep introspection of the call stack, although its use is generally discouraged in production code."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert C-Extensions",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Py_INCREF' used for in the C API?",
+    "option_a": "Increasing CPU speed",
+    "option_b": "Incrementing the reference count for a Python object",
+    "option_c": "A ways to name a variable in C",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Properly managing reference counts is essential when writing C extensions for Python."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Memory",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'interning' in Python?",
+    "option_a": "Hiring interns for coding",
+    "option_b": "A method of storing only one copy of each distinct string value, which must be immutable",
+    "option_c": "Deleting old memory blocks",
+    "option_d": "A ways to name variables",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Interning can save memory and speed up comparisons (string == string becomes address comparison)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Async",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What characterises a 'Future' in asyncio?",
+    "option_a": "Wait for a long time",
+    "option_b": "An object that represents a result that is not yet available, usually the result of an asynchronous operation",
+    "option_c": "A ways to name events",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Futures are low-level objects; most users interact with Task objects instead."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Meta-programming",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is the result of type(type)?",
+    "option_a": "None",
+    "option_b": "<class 'type'>",
+    "option_c": "<class 'object'>",
+    "option_d": "Error",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The type 'type' is its own type (metaclass)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'PyObject'?",
+    "option_a": "A base class in Python",
+    "option_b": "The base C structure used to represent all Python objects in CPython",
+    "option_c": "A ways to delete files",
+    "option_d": "management access",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every object in CPython starts with the fields defined in PyObject (reference count and type pointer)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Packaging",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is a 'Wheel' (.whl) file?",
+    "option_a": "A spare tire",
+    "option_b": "A built-package format that can be installed without running setup.py",
+    "option_c": "A ways to name chips",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Wheels provide faster installation because they don't require compilation at the user's end."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Small Integer Caching' in CPython?",
+    "option_a": "Deleting small numbers",
+    "option_b": "Caching integers between -5 and 256 to save memory and time",
+    "option_c": "A math library",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Commonly used small integers are pre-allocated at startup."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Async",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is an 'Event Loop' in the context of asyncio?",
+    "option_a": "A rotating user base",
+    "option_b": "The central execution mechanism that manages and executes asynchronous tasks and callbacks",
+    "option_c": "A ways to delete loops",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The event loop schedules tasks and handles the transmission of communication."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Optimization",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Profile-guided optimization' (PGO) in CPython compilation?",
+    "option_a": "Optimizing user profiles",
+    "option_b": "A compiler technique that uses performance data gathered while running the program to optimize the final binary",
+    "option_c": "A ways to delete info",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Compiling CPython with PGO can lead to significant speed improvements."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What does `__debug__` resolve to by default in Python?",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "None",
+    "option_d": "Error",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "It is True unless Python is started with optimization flags (-O)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Performance",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is the purpose of 'Cython'?",
+    "option_a": "A version of Python for robots",
+    "option_b": "A superset of Python that compiles to C, providing near-C speeds for Python code",
+    "option_c": "A ways to name files",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cython allows for static type declarations to gain extreme performance boosts."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is the 'Block' in CPython memory allocation?",
+    "option_a": "A unit of memory management (pool > block) that stores actual objects",
+    "option_b": "A ways to stop viruses",
+    "option_c": "A math function",
+    "option_d": "A training system",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "CPython uses a custom allocator (PyMalloc) for small objects (< 512 bytes)."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Async",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Task' in asyncio?",
+    "option_a": "A chore to do",
+    "option_b": "A subclass of Future that wraps a coroutine and participates in the event loop",
+    "option_c": "A ways to name variables",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tasks are how coroutines are run concurrently."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is a 'Descriptive Descriptor'?",
+    "option_a": "Defining only __get__",
+    "option_b": "Defining both __get__ and __set__ (data descriptor)",
+    "option_c": "A ways to delete info",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Data descriptors take precedence over an instance dictionary."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Networking",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "Which module allows for low-level socket operations in Python?",
+    "option_a": "net",
+    "option_b": "socket",
+    "option_c": "tcp",
+    "option_d": "conn",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The socket module provides an interface to the Berkeley sockets API."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Buffer Protocol' in Python?",
+    "option_a": "Managing internet buffers",
+    "option_b": "A C-level API that allows objects to share raw memory directly with other objects",
+    "option_c": "A ways to delete info",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The buffer protocol (memoryview) is essential for high-performance data transfer."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Hardware Interface",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'ctypes' module used for?",
+    "option_a": "Typing letters",
+    "option_b": "Foreign function library for calling C functions in shared libraries/DLLs",
+    "option_c": "A ways to delete files",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ctypes provides C compatible data types and allows calling functions in DLLs."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Constant Folding' in Python's compiler?",
+    "option_a": "Folding paper",
+    "option_b": "Evaluating constant expressions (e.g. 2 + 2) at compile time",
+    "option_c": "A ways to name users",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The peer optimizer (peephole) performs this optimization."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Security",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Hash Randomization' in Python?",
+    "option_a": "Random users",
+    "option_b": "A security feature that adds a random seed to string hashing to prevent Denial of Service (DoS) attacks",
+    "option_c": "A ways to delete registers",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It helps prevent attackers from creating many strings with the same hash value."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is a 'Coroutines-based generator'?",
+    "option_a": "A generator that uses yield from",
+    "option_b": "An object that can be suspended and resumed, often used in async frameworks",
+    "option_c": "A ways to delete files",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Prior to native async/await, generators were heavily used for coroutines."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is the purpose of `sys.setrecursionlimit()`?",
+    "option_a": "To speed up code",
+    "option_b": "To change the maximum depth of the Python interpreter stack",
+    "option_c": "To delete old code",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is useful for very deep recursive algorithms, but can cause crashes if set too high."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What characterizes 'Weak references' to objects?",
+    "option_a": "None of these; Weak references are used to create caches of heavy objects without keeping them alive.",
+    "option_b": "A ways to delete info",
+    "option_c": "A backup tool",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Python's weakref module allows for this behavior."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Taint Analysis' in Python security?",
+    "option_a": "Cleaning air",
+    "option_b": "A security technique that tracks user input (taint) across the program to prevent vulnerabilities like SQL injection",
+    "option_c": "A ways to delete info",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Some tools provide automated taint analysis for Python web frameworks."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Design Patterns",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is the 'Borg' pattern in Python?",
+    "option_a": "A pattern for robots",
+    "option_b": "A way of creating objects that share the same state but are different instances (Monostate pattern)",
+    "option_c": "A ways to delete code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's an alternative to Singleton where state shared via the __dict__ attribute."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is the 'Buffer' in io module?",
+    "option_a": "A ways to manage internet speed",
+    "option_b": "An intermediate storage area for I/O operations (RawIOBase, BufferedIOBase, TextIOBase)",
+    "option_c": "A ways to delete files",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Python's io module provides a class hierarchy for handling stream data."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "How do you detect memory leaks in a Python program?",
+    "option_a": "Using a timer",
+    "option_b": "Using tools like objgraph, tracemalloc, or memory_profiler",
+    "option_c": "Deleting files",
+    "option_d": "A training session",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "tracemalloc is a built-in module for tracking memory allocations."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What characterizes 'Zero-copy' operations in Python?",
+    "option_a": "Copying zero files",
+    "option_b": "Operations that do not require copying data into another memory buffer (e.g. using sendfile or memoryview)",
+    "option_c": "A ways to delete registers",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Zero-copy is essential for high-performance network programming."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Frame' in a Python traceback?",
+    "option_a": "A picture frame",
+    "option_b": "A data structure containing information about a function call (local vars, PC, etc.)",
+    "option_c": "A ways to delete code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tracebacks navigate these frame objects to show the call history."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Internals",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "What is 'Code Object'?",
+    "option_a": "A block of code",
+    "option_b": "A compiled representation of a piece of Python source code (bytecode + metadata)",
+    "option_c": "A ways to name a user",
+    "option_d": "A backup tool",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Code objects are immutable and used by the virtual machine."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What does `__mro_entries__` do?",
+    "option_a": "Entries in a list",
+    "option_b": "An protocol used by some classes (like generics) to influence how they appear in the MRO of subclasses",
+    "option_c": "A ways to delete info",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is part of PEP 560, allowing for more flexible generic types."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'PEP 8'?",
+    "option_a": "A type of soda",
+    "option_b": "The style guide for Python code",
+    "option_c": "A ways to delete code",
+    "option_d": "A training module",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Following PEP 8 ensures consistency and readability across Python projects."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'CPython-specific' behavior?",
+    "option_a": "Behavior found only in the CPython implementation, not guaranteed by the Python language spec",
+    "option_b": "Fast behavior",
+    "option_c": "A ways to delete info",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Wait time during GC or exact ref count timing can be implementation-defined."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "Which module allows you to manipulate the CPython garbage collector directly?",
+    "option_a": "garbage",
+    "option_b": "gc",
+    "option_c": "collect",
+    "option_d": "system_gc",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'gc' module allows for manual control and monitoring of memory collection."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What does `types.SimpleNamespace` do?",
+    "option_a": "A simple name",
+    "option_b": "A class that provides a simple object to which you can add attributes; similar to an empty class instance",
+    "option_c": "A ways to delete info",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It is often more convenient than creating a custom class just for storage."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Duck Typing' security risk?",
+    "option_a": "Typing errors",
+    "option_b": "Accepting any object that 'looks' right might lead to unexpected behavior if methods are subverted",
+    "option_c": "A ways to delete register",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Security-sensitive code should verify types or use protocols (ABCs) to ensure interface compliance."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "How do you achieve parallelism (true multi-core) in Python?",
+    "option_a": "Using threading",
+    "option_b": "Using the multiprocessing module to create separate processes (each with its own GIL)",
+    "option_c": "A ways to delete info",
+    "option_d": "A training system",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Multiprocessing bypasses the GIL by using separate memories and processes."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Abstract Base Class' (ABC)?",
+    "option_a": "A class with no methods",
+    "option_b": "A class that cannot be instantiated and is used to define a common interface for it's subclasses",
+    "option_c": "A basic class",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'abc' module provides infrastructure for defining abstract base classes."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is 'Circular Reference'?",
+    "option_a": "A reference in a circle",
+    "option_b": "When two or more objects refer to each other, creating a cycle that reference counting cannot clear",
+    "option_c": "A software bug in RAM",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The garbage collector's cycle-detector handles these types of memory leaks."
+  },
+  {
+    "subject_name": "Python Programming",
+    "level_number": 4,
+    "level_topic": "Expert Advanced",
+    "question_type": "expert",
+    "timer_seconds": 55,
+    "question_text": "What is the purpose of `__slots__`?",
+    "option_a": "To save memory",
+    "option_b": "To speed up code",
+    "option_c": "To delete info",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Slots prevent the creation of a per-instance dictionary, which saves significant memory."
+  }
+]

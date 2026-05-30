@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "SOLID Principles",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "In SOLID, what does the 'S' stand for?",
+    "option_a": "Simple Logic",
+    "option_b": "Single Responsibility Principle",
+    "option_c": "Static Structure",
+    "option_d": "System Security",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Single Responsibility Principle states that a class should have only one reason to change."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "SOLID Principles",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which SOLID principle states that objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program?",
+    "option_a": "Open-Closed Principle",
+    "option_b": "Liskov Substitution Principle",
+    "option_c": "Interface Segregation Principle",
+    "option_d": "Dependency Inversion Principle",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "LSP ensures that inheritance hierarchy is logically sound and doesn't break polymorphism."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "SOLID Principles",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "The 'O' in SOLID (Open-Closed Principle) suggests that a class should be:",
+    "option_a": "Open for modification, closed for extension",
+    "option_b": "Open for extension, closed for modification",
+    "option_c": "Open for all, closed for none",
+    "option_d": "Open source and closed source",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Software entities should be open for extension (adding new behavior) but closed for modification (changing existing code)."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Object Oriented Concepts",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "What is 'Encapsulation'?",
+    "option_a": "Hiding the internal state and requiring all interaction to be performed through an object's methods",
+    "option_b": "The ability to take many forms",
+    "option_c": "Breaking a problem into smaller functions",
+    "option_d": "Copying code from one class to another",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Encapsulation protects data integrity and reduces coupling."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Object Oriented Concepts",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "Which feature of OOPS allows a class to derive properties and characteristics from another class?",
+    "option_a": "Polymorphism",
+    "option_b": "Abstraction",
+    "option_c": "Encapsulation",
+    "option_d": "Inheritance",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Inheritance promotes code reusability."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which design pattern ensures a class has only one instance and provides a global point of access to it?",
+    "option_a": "Factory Pattern",
+    "option_b": "Singleton Pattern",
+    "option_c": "Observer Pattern",
+    "option_d": "Strategy Pattern",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Singleton is a creational pattern used for shared resources like database connections."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "The pattern used to define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified is:",
+    "option_a": "Adapter Pattern",
+    "option_b": "Observer Pattern",
+    "option_c": "Decorator Pattern",
+    "option_d": "Facade Pattern",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Observer pattern is key to event-driven programming and UI frameworks."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "UML Diagrams",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Which UML diagram shows the static structure of the system, including classes, their attributes and operations?",
+    "option_a": "Sequence Diagram",
+    "option_b": "Class Diagram",
+    "option_c": "State Machine Diagram",
+    "option_d": "Use Case Diagram",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Class diagrams are the backbone of object-oriented modeling."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "UML Diagrams",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Sequence diagrams are primarily used to model:",
+    "option_a": "Object interactions over time",
+    "option_b": "Parallel activities in a workflow",
+    "option_c": "Physical deployment of hardware",
+    "option_d": "Database schema",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Sequence diagrams visualize the call flow between objects."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "UML Diagrams",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "A 'Use Case Diagram' represents:",
+    "option_a": "How data flows through the system",
+    "option_b": "The relationship between actors and their interactions with the system",
+    "option_c": "The internal state of an object",
+    "option_d": "How to deploy the application",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Use case diagrams define the requirements from a user perspective."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Concepts",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the difference between 'Composition' and 'Aggregation'?",
+    "option_a": "Aggregation is a 'part-of' relationship while Composition is not",
+    "option_b": "In Composition, the child cannot exist without the parent (strong ownership)",
+    "option_c": "Composition uses interfaces while Aggregation uses classes",
+    "option_d": "There is no difference",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Composition implies a life-cycle dependency (e.g., Room is part of House)."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which pattern provides a simplified interface to a large body of code, such as a class library?",
+    "option_a": "Proxy Pattern",
+    "option_b": "Facade Pattern",
+    "option_c": "Bridge Pattern",
+    "option_d": "Flyweight Pattern",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Facade masks the complexity of sub-systems."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Dependency Inversion",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "According to the Dependency Inversion Principle, high-level modules should depend on:",
+    "option_a": "Low-level modules",
+    "option_b": "Concrete implementations",
+    "option_c": "Abstractions (Interfaces)",
+    "option_d": "Static methods",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "DIP decouples modules, making them easier to test and replace."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Object Oriented Concepts",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Polymorphism which is resolved at compile-time is known as:",
+    "option_a": "Dynamic Polymorphism",
+    "option_b": "Static Polymorphism (Method Overloading)",
+    "option_c": "Type Casting",
+    "option_d": "Interface Implementation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Method overloading is determined by the compiler based on method signatures."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which design pattern is used to attach new responsibilities to an object dynamically?",
+    "option_a": "Inheritance",
+    "option_b": "Decorator Pattern",
+    "option_c": "Adapter Pattern",
+    "option_d": "Proxy Pattern",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Decorators provide a flexible alternative to subclassing for extending functionality."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "GRASP Patterns",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In GRASP, which pattern says you should assign responsibility to a class that has the information necessary to fulfill it?",
+    "option_a": "Creator",
+    "option_b": "Information Expert",
+    "option_c": "Controller",
+    "option_d": "Low Coupling",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Expert pattern is a basic rule of thumb for assigning responsibilities in OO design."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "The pattern used to convert the interface of a class into another interface that clients expect is:",
+    "option_a": "Adapter Pattern",
+    "option_b": "Bridge Pattern",
+    "option_c": "Composite Pattern",
+    "option_d": "Chain of Responsibility",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Adapter allows incompatible classes to work together."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "SOLID Principles",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "Which principle is violated if a class is forced to implement methods it does not use?",
+    "option_a": "Single Responsibility Principle",
+    "option_b": "Interface Segregation Principle",
+    "option_c": "Liskov Substitution Principle",
+    "option_d": "Dependency Inversion Principle",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ISP suggests splitting large, 'fat' interfaces into smaller, more specific ones."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Object Oriented Concepts",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What does 'Dynamic Binding' refer to?",
+    "option_a": "Connecting to a database at runtime",
+    "option_b": "Resolving a method call at execution time based on the actual type of the object",
+    "option_c": "Allocating memory dynamically",
+    "option_d": "Linking libraries",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dynamic binding is the mechanism that enables method overriding and runtime polymorphism."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "The 'Factory Method' pattern is used for:",
+    "option_a": "Creating objects without specifying the exact class to be created",
+    "option_b": "Optimizing memory usage",
+    "option_c": "Managing database transactions",
+    "option_d": "Implementing complex algorithms",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Factory pattern encapsulates object creation logic."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "expert",
+    "timer_seconds": 50,
+    "question_text": "Which pattern is used to encapsulate a request as an object, thereby allowing us to parameterize clients with different requests?",
+    "option_a": "Command Pattern",
+    "option_b": "State Pattern",
+    "option_c": "Template Pattern",
+    "option_d": "Visitor Pattern",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "The Command pattern is often used to implement undo/redo functionality."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "SOLID Principles",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "If you change a class and that change breaks another class, it's often a sign of violation of:",
+    "option_a": "Single Responsibility Principle",
+    "option_b": "Open-Closed Principle",
+    "option_c": "Coupling and Cohesion problems",
+    "option_d": "All of the above",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Fragile code often stems from a lack of following SOLID principles."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Concepts",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "A 'Self-Associative' relationship in UML is represented by:",
+    "option_a": "A line connecting two different classes",
+    "option_b": "A line from a class back to itself",
+    "option_c": "A dashed line",
+    "option_d": "A rectangular box",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Example: An Employee object having a manager who is also an Employee."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Visibility",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "In UML, '#' symbol represents which visibility?",
+    "option_a": "Public",
+    "option_b": "Private",
+    "option_c": "Protected",
+    "option_d": "Package",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "+ is Public, - is Private, # is Protected, ~ is Package."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Abstraction",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "An 'Abstract Class' is one that:",
+    "option_a": "Cannot be instantiated and is meant to be subclassed",
+    "option_b": "Has no methods",
+    "option_c": "Is only used for database operations",
+    "option_d": "Is a final class",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Abstract classes define a template or contract for specialized child classes."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Interaction Diagrams",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In a Sequence Diagram, a 'Lifeline' represents:",
+    "option_a": "The duration an object is active",
+    "option_b": "A participant in the interaction",
+    "option_c": "A specific method call",
+    "option_d": "A physical machine",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The vertical dashed line (lifeline) represents the existence of an object over time."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Principles",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "The 'Hollywood Principle' (Don't call us, we'll call you) is most closely associated with:",
+    "option_a": "Encapsulation",
+    "option_b": "Inversion of Control (IoC)",
+    "option_c": "Inheritance",
+    "option_d": "Method Overloading",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The framework or a higher-level module defines the flow and calls back to the custom code."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "OO Concepts",
+    "question_type": "easy",
+    "timer_seconds": 25,
+    "question_text": "The ability of an object to take many forms is:",
+    "option_a": "Polymorphism",
+    "option_b": "Encapsulation",
+    "option_c": "Composition",
+    "option_d": "Inheritance",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Example: A 'Shape' variable can hold a 'Circle', 'Square', or 'Triangle' object."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Patterns",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which design pattern allows a group of objects to be treated the same way as a single instance of the object?",
+    "option_a": "Decorator Pattern",
+    "option_b": "Composite Pattern",
+    "option_c": "Facade Pattern",
+    "option_d": "Adapter Pattern",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Composite pattern builds tree structures to represent part-whole hierarchies."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Patterns",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "A 'Proxy' object is used to:",
+    "option_a": "Control access to another object",
+    "option_b": "Sort data",
+    "option_c": "Connect to a printer",
+    "option_d": "Inherit from multiple classes",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Proxies can handle lazy initialization, logging, security checks, etc."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "OO Design",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "High cohesion and low coupling aims for:",
+    "option_a": "Rigid code that never changes",
+    "option_b": "Modular, maintainable, and understandable code",
+    "option_c": "Code that runs faster",
+    "option_d": "Code that uses less memory",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Cohesion is how focused a module is; coupling is how much it depends on others."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "The 'Abstract Factory' pattern differs from 'Factory Method' in that it creates families of related objects.",
+    "option_a": "True",
+    "option_b": "False",
+    "option_c": "Only for C++",
+    "option_d": "Only for web apps",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Abstract Factory is a factory of factories."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "SOLID",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "Is 'Dependency Injection' the same as 'Dependency Inversion Principle'?",
+    "option_a": "Yes",
+    "option_b": "No, DI is a technique to implement DIP",
+    "option_c": "DIP is only about database connections",
+    "option_d": "DI is for Java only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DIP is the goal/rule; DI is one of the methods to achieve that decoupling."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "UML Diagrams",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "An 'Activity Diagram' is most similar to which traditional diagram?",
+    "option_a": "Flowchart",
+    "option_b": "Pie Chart",
+    "option_c": "Bar Chart",
+    "option_d": "ER Diagram",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Activity diagrams model the workflow and logic of a process."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Object States",
+    "question_type": "hard",
+    "timer_seconds": 50,
+    "question_text": "Which UML diagram describes the timeline and behavior of an object as it changes through different modes?",
+    "option_a": "Deployment Diagram",
+    "option_b": "State Machine Diagram",
+    "option_c": "Component Diagram",
+    "option_d": "Package Diagram",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "State machines capture the various conditions an object can be in and how it transitions."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Relationship",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "A solid line with a hollow triangle arrowhead in a UML Class diagram signifies:",
+    "option_a": "Composition",
+    "option_b": "Realization",
+    "option_c": "Generalization (Inheritance)",
+    "option_d": "Dependency",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Standard UML notation for 'is-a' relationship."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Relationship",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "A dashed line with a hollow triangle arrowhead in a UML Class diagram signifies:",
+    "option_a": "Inheritance",
+    "option_b": "Realization (Interface implementation)",
+    "option_c": "Aggregation",
+    "option_d": "Multiplicity",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dashed lines in UML often represent weaker or implementation-level connections."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "The 'Bridge' pattern is primarily used to:",
+    "option_a": "Connect to the internet",
+    "option_b": "Decouple an abstraction from its implementation so the two can vary independently",
+    "option_c": "Sort objects in a list",
+    "option_d": "Serialize data",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bridge is structural pattern that prefers composition over inheritance."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "Which pattern defines the skeleton of an algorithm in an operation, deferring some steps to subclasses?",
+    "option_a": "Strategy Pattern",
+    "option_b": "Template Method Pattern",
+    "option_c": "Builder Pattern",
+    "option_d": "Prototype Pattern",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Template pattern allows subclasses to redefine certain steps of an algorithm without changing the algorithm's structure."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Patterns",
+    "question_type": "hard",
+    "timer_seconds": 55,
+    "question_text": "Which pattern is used to separate the construction of a complex object from its representation?",
+    "option_a": "Builder Pattern",
+    "option_b": "Factory Pattern",
+    "option_c": "Singleton Pattern",
+    "option_d": "Observer Pattern",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Builder pattern is great for creating objects that require many parameters."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "OO Concepts",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "What is 'Multiple Inheritance'?",
+    "option_a": "A class inheriting from multiple superclasses",
+    "option_b": "Multiple classes inheriting from one superclass",
+    "option_c": "Inheriting properties from a grandparent",
+    "option_d": "Inheriting from an interface",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Many languages (like Java) disallow this to avoid the Diamond Problem."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "GRASP",
+    "question_type": "hard",
+    "timer_seconds": 55,
+    "question_text": "The GRASP 'Pure Fabrication' pattern suggests creating a class that doesn't represent a real-world domain concept and to achieve:",
+    "option_a": "Lower performance",
+    "option_b": "High cohesion, low coupling, and reusability",
+    "option_c": "More lines of code",
+    "option_d": "Complexity",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Services like 'Logger' or 'DBConnector' are pure fabrications."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Visibility",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which access modifier allows members to be accessed within the same package and by subclasses in other packages?",
+    "option_a": "Public",
+    "option_b": "Private",
+    "option_c": "Protected",
+    "option_d": "Default",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "This allows fine-grained control in inheritance hierarchies."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "UML",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What does 'Multiplicity' represent in an association?",
+    "option_a": "The color of the line",
+    "option_b": "The number of instances involved in the relationship",
+    "option_c": "The speed of the system",
+    "option_d": "The database index",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Examples include 1..1 (one to one), 0..* (zero to many)."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Object Oriented Design",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "Classes serve as a ___ for objects.",
+    "option_a": "Runtime storage",
+    "option_b": "Blueprint or Template",
+    "option_c": "Method call",
+    "option_d": "Data entry",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Classes define the structure; objects are the actual instances."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "SOLID",
+    "question_type": "medium",
+    "timer_seconds": 40,
+    "question_text": "The Dependency Inversion Principle helps in creating ___ applications.",
+    "option_a": "Loosely-coupled",
+    "option_b": "Tightly-coupled",
+    "option_c": "Monolithic",
+    "option_d": "Web-only",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Loose coupling makes the system flexible and maintainable."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "GRASP",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In GRASP, which pattern focuses on assigning responsibility to an intermediate object that mediates between other components?",
+    "option_a": "Expert",
+    "option_b": "Controller",
+    "option_c": "Creator",
+    "option_d": "Indirection",
+    "correct_options": [
+      "D"
+    ],
+    "explanation": "Indirection supports low coupling by adding an intermediate object between components."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Design Concepts",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What is the primary goal of the 'Interface Segregation Principle'?",
+    "option_a": "To have one large interface for all clients",
+    "option_b": "To ensure that non-related methods are not grouped together in one interface",
+    "option_c": "To hide all methods",
+    "option_d": "To use inheritance more often",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "ISP states that no client should be forced to depend on methods it does not use."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Relationship",
+    "question_type": "easy",
+    "timer_seconds": 30,
+    "question_text": "What does a diamond-shaped arrowhead represent in a UML class diagram?",
+    "option_a": "Inheritance",
+    "option_b": "Association",
+    "option_c": "Aggregation/Composition",
+    "option_d": "Dependency",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Hollow diamond is aggregation, solid diamond is composition."
+  },
+  {
+    "subject_name": "Object Oriented Design (OOAD)",
+    "level_number": 1,
+    "level_topic": "Object Oriented Concepts",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which OOPS concept is also known as 'Data Hiding'?",
+    "option_a": "Polymorphism",
+    "option_b": "Inheritance",
+    "option_c": "Encapsulation",
+    "option_d": "Abstraction",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Encapsulation hides the data details and only exposes safe methods."
+  }
+]

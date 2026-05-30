@@ -1,0 +1,802 @@
+[
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Docker Swarm",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the primary role of a 'Manager Node' in a Docker Swarm?",
+    "option_a": "To run all container workloads",
+    "option_b": "To maintain the cluster state, schedule services, and manage Swarm APIs",
+    "option_c": "To backup the data",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Manager nodes use Raft consensus to synchronize the state of the swarm."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Docker Swarm",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is a 'Service' in the context of Docker Swarm?",
+    "option_a": "A background app",
+    "option_b": "The definition of the tasks to execute on the nodes (e.g., image, ports, replicas)",
+    "option_c": "A network connection",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Services allow you to scale applications by defining the number of running replicas."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Orchestration",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the difference between 'Replicated' and 'Global' service modes in Swarm?",
+    "option_a": "Replicated runs on all nodes; Global runs on specific number",
+    "option_b": "Replicated runs a specific number of tasks; Global runs exactly one task on every node in the swarm",
+    "option_c": "They are the same",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Global mode is useful for monitoring agents or antivirus software that must run everywhere."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Secrets",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How does 'Docker Secret' protect sensitive data in Swarm?",
+    "option_a": "By encrypting the hard drive",
+    "option_b": "By encrypting secrets at rest and in transit, and mounting them into the container's memory (/run/secrets) only when needed",
+    "option_c": "By hiding them from the logs",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Secrets are safer than environment variables as they are never written to disk or shown in 'docker inspect'."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Advanced Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Seccomp Profile' in Docker?",
+    "option_a": "A user profile",
+    "option_b": "A Secure Computing mode profile that restricts the system calls a container can make to the Linux kernel",
+    "option_c": "A way to speed up the container",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Seccomp is a powerful security feature that significantly reduces the kernel's attack surface for a container."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Advanced Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Ingress' network in Docker Swarm?",
+    "option_a": "The internet connection",
+    "option_b": "A special overlay network that facilitates load balancing across all nodes in the swarm for any service port exposed publicly",
+    "option_c": "A private network for admins",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The 'Routing Mesh' uses the ingress network to direct traffic to wherever a service task is running."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Infrastructure as Code",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a Docker 'Stack'?",
+    "option_a": "A pile of images",
+    "option_b": "A collection of services that share dependencies and can be orchestrated together (usually defined in a Compose file)",
+    "option_c": "A way to backup the server",
+    "option_d": "None of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "docker stack deploy allows you to manage multiple related services as a single unit."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Docker Swarm",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command initializes a Docker Swarm on a manager node?",
+    "option_a": "docker swarm start",
+    "option_b": "docker swarm init",
+    "option_c": "docker swarm create",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This generates a join token for other manager and worker nodes."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Advanced Optimization",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'BuildKit' in modern Docker versions?",
+    "option_a": "A tool for kids to build containers",
+    "option_b": "An advanced, high-performance build engine that supports parallelization, secret mounting during build, and better caching",
+    "option_c": "The default logo",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "BuildKit is the modern replacement for the legacy Docker builder, offering massive speed improvements."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Advanced Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What does '--cap-drop ALL' do during 'docker run'?",
+    "option_a": "Drops all user connections",
+    "option_b": "Removes all default Linux kernel capabilities from the container, enforcing the most restrictive environment possible",
+    "option_c": "Deletes the container after use",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "For high security, drop all and then selectively '--cap-add' only what's needed (e.g., NET_ADMIN)."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Docker Context",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is 'Docker Context' used for?",
+    "option_a": "To provide context for the code",
+    "option_b": "To easily manage and switch between different Docker endpoints (e.g., local, remote SSH, cloud clusters) from one CLI",
+    "option_c": "To rename containers",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Contexts consolidate your connection info into easy-to-use profiles."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'containerd' in the Docker ecosystem?",
+    "option_a": "The GUI for Docker",
+    "option_b": "An industry-standard core container runtime used by Docker (and K8s) that manages the complete container lifecycle on a node",
+    "option_c": "The Docker installer",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Docker is now built on top of the smaller, CNCF-maintained 'containerd' runtime."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Orchestration",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Quorum' in a Docker Swarm manager group?",
+    "option_a": "The maximum number of containers",
+    "option_b": "The majority of manager nodes needed to be online (N/2 + 1) to maintain cluster stability and allow new changes",
+    "option_c": "The number of users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Without a quorum, managers cannot make decisions (to prevent split-brain scenarios)."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'User Namespace Mapping' in Docker?",
+    "option_a": "Naming users in the container",
+    "option_b": "A feature that maps the container 'root' user to a non-privileged user on the host, preventing host-level root access if a breakout occurs",
+    "option_c": "Hiding user names",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This effectively 'sandboxes' the root user within the container's own reality."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Advanced Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Routing Mesh' in Docker Swarm?",
+    "option_a": "A net for the fans",
+    "option_b": "The ability of any node in the swarm to accept traffic on a published service port and route it to a node running that service",
+    "option_c": "A map of the internet",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The routing mesh ensures your app stays reachable even as tasks migrate between nodes."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Registry",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which Docker Registry API version is current and most used?",
+    "option_a": "v1",
+    "option_b": "v2",
+    "option_c": "v3",
+    "option_d": "v4",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The Registry V2 API is the standard for pushing and pulling image layers."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "CLI",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which command is used to join a worker node to an existing Swarm?",
+    "option_a": "docker swarm add",
+    "option_b": "docker swarm join --token [token] [manager_ip]",
+    "option_c": "docker node connect",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The token is obtained from the manager using 'docker swarm join-token worker'."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Resources",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Block I/O' (blkio) limit in Docker?",
+    "option_a": "Limiting the number of files",
+    "option_b": "Controlling the read/write speed (weight or IOPS) of a container to prevent disk bandwidth hogging",
+    "option_c": "Stopping a user",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "blkio settings help enforce 'Noisy Neighbor' isolation for disk performance."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "CLI",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "Which command updates an existing service in a Swarm without stopping it (e.g. changing the image)?",
+    "option_a": "docker service update",
+    "option_b": "docker service refresh",
+    "option_c": "docker stack restart",
+    "option_d": "none of the above",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Docker Swarm performs a 'Rolling Update' by default, updating one replica at a time."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Metadata",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the purpose of the 'LABEL' instruction in a Dockerfile?",
+    "option_a": "To name the file",
+    "option_b": "To add metadata to an image (e.g. author, version, description) for easier filtering and organization",
+    "option_c": "To set an environment variable",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Labels are key-value pairs that can be read by 'docker inspect'."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Diagnostics",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How can you view the 'systemd' logs of the Docker daemon itself on Linux?",
+    "option_a": "docker logs daemon",
+    "option_b": "journalctl -u docker",
+    "option_c": "cat /var/log/docker",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Because Docker runs as a system service, its internal errors are found in the system journal."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Orchestration",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Task' in Docker Swarm?",
+    "option_a": "A background work",
+    "option_b": "The smallest unit of orchestration in Swarm; it represents one container instance belonging to a service",
+    "option_c": "A script for the manager",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A service might have 5 tasks, which means 5 containers running the same image."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Network",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'IPAM' (IP Address Management) in Docker custom networks?",
+    "option_a": "Naming the IP address",
+    "option_b": "The mechanism that decides how IP addresses are assigned to containers (e.g. specifying a subnet and gateway)",
+    "option_c": "A tool to delete IPs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Custom IPAM configurations are essential for complex networking requirements."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Advanced Registry",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Garbage Collection' in a Docker Registry?",
+    "option_a": "Deleting empty folders",
+    "option_b": "The process of removing blob layers (data) from storage that are no longer referenced by any image tags",
+    "option_c": "Cleaning the registry UI",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Without garbage collection, registries will grow indefinitely as every 'docker push' of a new version adds data."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Docker CLI",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "Which command is used to drain all tasks from a specific node in a Swarm (e.g. for maintenance)?",
+    "option_a": "docker node stop",
+    "option_b": "docker node update --availability drain [node_name]",
+    "option_c": "docker node remove",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Draining prevents new tasks from being scheduled on that node and moves existing ones elsewhere."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "How do you enable 'Docker Content Trust' in your terminal session?",
+    "option_a": "docker feature trust",
+    "option_b": "export DOCKER_CONTENT_TRUST=1",
+    "option_c": "docker config trust --on",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "After setting this env var, every pull/push must be cryptographically signed."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Resource Limits",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'PIDs Limit' (--pids-limit)?",
+    "option_a": "Limiting the memory weight",
+    "option_b": "Restricting the total number of process IDs a container can create (to prevent Fork Bomb attacks)",
+    "option_c": "Limiting the number of users",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This prevents a single container from exhausting the host's process table."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Optimization",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the benefit of using 'distroless' base images?",
+    "option_a": "They include more software",
+    "option_b": "They contain only the application and its runtime dependencies, containing no shell or package managers (ultra-secure/minimal)",
+    "option_c": "They are easier to use",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Distroless images are much harder to exploit because they lack common tools like 'sh' or 'apt'."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Docker API",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "By default, what type of Unix socket does the Docker CLI use to talk to the local daemon?",
+    "option_a": "/tmp/docker.sock",
+    "option_b": "/var/run/docker.sock",
+    "option_c": "/etc/docker.sock",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Protecting this socket file is paramount; giving a container access to it is equivalent to giving it root on the host."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Orchestration",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In Docker Swarm, what is 'Autoscaling'?",
+    "option_a": "Scaling the code automatically",
+    "option_b": "none of the above",
+    "option_c": "The OS fixing itself",
+    "option_d": "A built-in feature of Swarm to scale based on CPU",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Docker Swarm does NOT have built-in autoscaling based on metrics (unlike Kubernetes); it requires external tools or scripts."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Storage plugins",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is a 'Docker Volume Plugin' (like Portworx or RexRay)?",
+    "option_a": "A tool to listen to music",
+    "option_b": "A driver that allows Docker to use external storage systems (SAN/NAS/Cloud disks) for persistent volumes",
+    "option_c": "A way to backup the server",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Plugins extend Docker's capability to integrate with enterprise hardware."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Architecture",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'libnetwork'?",
+    "option_a": "A library for the web",
+    "option_b": "The open-source library used by Docker to implement all container networking features (drivers, endpoints, sandboxes)",
+    "option_c": "A network for books",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Libnetwork provides a platform-agnostic way to manage networking."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Swarm Security",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'CA Rotation' in a Docker Swarm?",
+    "option_a": "Spinning the server",
+    "option_b": "Updating the Certificate Authority and all node certificates to maintain cluster security over time",
+    "option_c": "Changing the admin password",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Periodic CA rotation is a standard security practice to mitigate long-term credential compromise."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Advanced Dockerfile",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "How do you use 'Secrets' during the Docker Image Build process (BuildKit feature)?",
+    "option_a": "By using ENV",
+    "option_b": "By using the '--mount=type=secret' flag in a RUN instruction",
+    "option_c": "By adding them to the Dockerfile text",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This allows you to pull private dependencies without leaking the token into the image layers."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Networking",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "In command 'docker network inspect', what does 'Containers' section show?",
+    "option_a": "A list of all users",
+    "option_b": "The detailed network config (IP, MAC) for every container currently connected to that specific network",
+    "option_c": "The Docker engine settings",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is perfect for troubleshooting connectivity issues between containers."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "CLI Swarm",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command removes a service from the Swarm?",
+    "option_a": "docker service stop",
+    "option_b": "docker service rm",
+    "option_c": "docker service delete",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This instantly stops and removes all tasks associated with that service."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Modern Docker",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Docker Desktop' vs 'Docker Engine'?",
+    "option_a": "One is for Mac, one is for Windows",
+    "option_b": "Desktop is the GUI + development tools wrapper (includes VM on Win/Mac); Engine is the core daemon/CLI",
+    "option_c": "There is no difference",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Docker Desktop allows Windows/Mac users to run Linux containers via a lightweight VM."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Swarm Config",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Docker Config' object?",
+    "option_a": "A setting in the GUI",
+    "option_b": "A way to store non-sensitive configuration data (like application files) outside of the image and share it with services",
+    "option_c": "The backup for secrets",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Like secrets, configs allow you to decouple application settings from image build."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Advanced Dockerfile",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What does a 'squash' build do?",
+    "option_a": "Compresses the code",
+    "option_b": "Collapses all new image layers into a single layer at the end of the build to reduce metadata overhead and size",
+    "option_c": "Deletes the logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Squashing helps keep final production images clean, though it breaks layer sharing between images."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Logging",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is a 'Logging Driver' in Docker?",
+    "option_a": "A user that writes logs",
+    "option_b": "A plugin that directs container logs to different destinations (json-file, syslog, journald, splunk, etc.)",
+    "option_c": "A screen for logs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Choosing the right driver is vital for centralized log management in production."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Orchestration",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'Placement Constraint' in Docker Swarm?",
+    "option_a": "A rule about where to sit",
+    "option_b": "A rule that limits which nodes a service can be scheduled on (e.g. only on nodes with 'SSD=true' label)",
+    "option_c": "A way to delete nodes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Placement constraints allow you to match application requirements to specific hardware."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "CLI Swarm",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which command lists all nodes participating in the Swarm?",
+    "option_a": "docker swarm ls",
+    "option_b": "docker node ls",
+    "option_c": "docker show nodes",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This shows the status and health of every physical/virtual node in the cluster."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Security",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'AppArmor' in the context of Docker security?",
+    "option_a": "Armor for the computer",
+    "option_b": "A Linux kernel security module that allows the system administrator to restrict program's capabilities with per-program profiles",
+    "option_c": "An antivirus program",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Docker loads a default AppArmor profile that provides a strong baseline security for containers."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Diagnostics",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is 'Docker Events' filter usage?",
+    "option_a": "Filtering out unwanted users",
+    "option_b": "Using '--filter' to watch only specific events (e.g. only 'die' events for a specific image)",
+    "option_c": "Hiding all events",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Filtering allows you to monitor only what's important for your automation logic."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Swarm Networking",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the 'Data Path Port' used in Swarm Overlay networks?",
+    "option_a": "80",
+    "option_b": "UDP 4789 (VXLAN)",
+    "option_c": "TCP 2377",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "VXLAN encapsulated traffic uses UDP 4789 by default for the data plane."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Architecture",
+    "question_type": "expert",
+    "timer_seconds": 60,
+    "question_text": "What is 'runC'?",
+    "option_a": "A command to run things",
+    "option_b": "A low-level CLI tool for spawning and running containers according to the OCI (Open Container Initiative) specification",
+    "option_c": "A way to backup the code",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "runC is the actual tool that 'touches' the Linux kernel to create the container."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Swarm Implementation",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Swarm Mode'?",
+    "option_a": "The mode where you have millions of users",
+    "option_b": "The state where a Docker engine participates in a cluster (either as manager or worker)",
+    "option_c": "A virus mode",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Native Swarm orchestration is built directly into the Docker Engine and just needs to be 'initialized'."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Advanced Volumes",
+    "question_type": "hard",
+    "timer_seconds": 35,
+    "question_text": "What is a 'Shared Volume' (via NFS/SMB)?",
+    "option_a": "A volume that everyone can see",
+    "option_b": "A volume that can be mounted by multiple containers across different physical hosts simultaneously",
+    "option_c": "A backup tool",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Shared storage is a requirement for horizontally scaled stateful applications."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Diagnostics",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which flag in 'docker ps' shows the total file sizes of containers?",
+    "option_a": "-v",
+    "option_b": "-s (or --size)",
+    "option_c": "-f",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This shows the writable layer size vs the virtual (image) size."
+  },
+  {
+    "subject_name": "Docker & Containers",
+    "level_number": 3,
+    "level_topic": "Orchestration",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What characterizes 'Self-healing' in Docker Swarm?",
+    "option_a": "The computer fixing itself with a robot",
+    "option_b": "The manager node automatically restarting or rescheduling tasks if a container or node fails, to maintain the 'Desired State'",
+    "option_c": "The code fixing its own bugs",
+    "option_d": "none of the above",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The orchestrator constantly monitors 'actual state' vs 'desired state' (e.g. 5 replicas)."
+  }
+]

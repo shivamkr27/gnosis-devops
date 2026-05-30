@@ -1,0 +1,804 @@
+[
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming & Graphs",
+    "question_type": "easy",
+    "timer_seconds": 20,
+    "question_text": "What is 'Memoization'?",
+    "option_a": "Learning by memory",
+    "option_b": "An optimization technique used primarily to speed up computer programs by storing the results of expensive function calls",
+    "option_c": "A way to delete code",
+    "option_d": "A styling method",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Memoization is a key component of top-down dynamic programming."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming & Graphs",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Dijkstra's algorithm is used to solve which type of problem?",
+    "option_a": "Sorting an array",
+    "option_b": "Finding the shortest path in a weighted graph (with non-negative weights)",
+    "option_c": "Finding the median of a list",
+    "option_d": "Detecting cycles in a graph",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Dijkstra's uses a greedy approach to find paths from a source to all other vertices."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming & Graphs",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is the difference between BFS and DFS space complexity on a large graph?",
+    "option_a": "BFS uses more memory for its queue; DFS uses memory for its recursion stack",
+    "option_b": "BFS is always more memory efficient",
+    "option_c": "There is no difference",
+    "option_d": "DFS is for trees only",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "BFS can use significant memory if the graph is wide, as it stores nodes at the current depth."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming & Graphs",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is 'Dynamic Programming' (DP)?",
+    "option_a": "A way to write code fast",
+    "option_b": "A method for solving complex problems by breaking them down into simpler subproblems and storing their results to avoid redundant work",
+    "option_c": "A new programming language",
+    "option_d": "An alternative to SQL",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "DP is effective when subproblems overlap."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming & Graphs",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Trie' (Prefix Tree) best for?",
+    "option_a": "Sorting numbers",
+    "option_b": "Storing a set of strings and performing efficient prefix-based lookups (e.g., auto-complete)",
+    "option_c": "Finding the maximum value in a list",
+    "option_d": "Managing database transactions",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Tries have a time complexity for lookups proportional to the string length, regardless of the number of strings stored."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming & Graphs",
+    "question_type": "tricky",
+    "timer_seconds": 30,
+    "question_text": "What is the '0/1 Knapsack Problem'?",
+    "option_a": "Filling a bag with the maximum number of items",
+    "option_b": "Choosing items with given weights and values to maximize total value in a knapsack with limited capacity, without picking items partially",
+    "option_c": "Sorting items by weight",
+    "option_d": "A problem in networking",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This is a classic DP problem that cannot be solved correctly with a simple greedy approach."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming & Graphs",
+    "question_type": "multi_correct",
+    "timer_seconds": 35,
+    "question_text": "Which of these are Minimum Spanning Tree (MST) algorithms?",
+    "option_a": "Prim's Algorithm",
+    "option_b": "Kruskal's Algorithm",
+    "option_c": "Bellman-Ford",
+    "option_d": "Floyd-Warshall",
+    "correct_options": [
+      "A",
+      "B"
+    ],
+    "explanation": "Bellman-Ford and Floyd-Warshall are shortest path algorithms."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming & Graphs",
+    "question_type": "core_concept",
+    "timer_seconds": 30,
+    "question_text": "What is 'Backtracking'?",
+    "option_a": "Undo an operation",
+    "option_b": "A refined brute-force approach that builds candidates for the solution and abandons a candidate ('backtracks') as soon as it determines the candidate cannot lead to a valid solution",
+    "option_c": "Reversing an array",
+    "option_d": "A tool to track users",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Backtracking is used for puzzles like Sudoku, N-Queens, and crosswords."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming & Graphs",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "What is a 'Topological Sort'?",
+    "option_a": "Sorting from top to bottom",
+    "option_b": "A linear ordering of vertices such that for every directed edge 'uv', vertex 'u' comes before 'v' in the ordering",
+    "option_c": "Sorting alphabetically",
+    "option_d": "A way to sort files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Topological sort is only possible in Directed Acyclic Graphs (DAGs), used for dependency resolution."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming & Graphs",
+    "question_type": "hard",
+    "timer_seconds": 30,
+    "question_text": "What is 'Amortized Analysis'?",
+    "option_a": "Calculating the total time of a program",
+    "option_b": "A method for analyzing the average performance of an operation over a sequence of operations, even if a single operation might be expensive",
+    "option_c": "A way to optimize database memory",
+    "option_d": "A security auditing technique",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Example: Resizing a dynamic array (like std::vector) is O(n), but amortized over many pushes, it's O(1)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Graph Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "Which algorithm is most suitable for detecting negative cycles in a directed graph?",
+    "option_a": "Dijkstra's",
+    "option_b": "Bellman-Ford",
+    "option_c": "Prim's",
+    "option_d": "Kruskal's",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Bellman-Ford runs for V-1 iterations; a possible decrease in distance during the V-th iteration signifies a negative cycle."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity of the standard DP solution for the Longest Common Subsequence (LCS) of two strings of length m and n?",
+    "option_a": "O(m+n)",
+    "option_b": "O(mn)",
+    "option_c": "O(min(m,n))",
+    "option_d": "O(m^n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Filling the 2D table of size (m+1)x(n+1) requires quadratic time."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the purpose of 'Path Compression' in a Disjoint Set Union (DSU) data structure?",
+    "option_a": "To sort the elements",
+    "option_b": "To make all nodes in a set point directly to the root, speeding up subsequent 'Find' operations",
+    "option_c": "To delete redundant nodes",
+    "option_d": "To merge sets based on their size",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Path compression ensures that tree height remains very small, leading to near-constant amortized time complexity."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Advanced Data Structures",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "In a 'Segment Tree', what is the time complexity to perform a point update and a range query?",
+    "option_a": "O(log n) for both",
+    "option_b": "O(1) update, O(n) query",
+    "option_c": "O(n) update, O(log n) query",
+    "option_d": "O(n log n) for both",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Segment trees represent the array in a tree structure allowing logarithmic access to ranges."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Graph Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What is the time complexity of Kruskal's algorithm, assuming an efficient Union-Find implementation?",
+    "option_a": "O(E^2)",
+    "option_b": "O(E log E) or O(E log V)",
+    "option_c": "O(V^2)",
+    "option_d": "O(V log V)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "The complexity is dominated by sorting the E edges."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Complexity Classes",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "A problem is in the class 'NP' if:",
+    "option_a": "It can be solved in non-polynomial time",
+    "option_b": "Its solution can be verified in polynomial time",
+    "option_c": "It is Not Polynomial",
+    "option_d": "It can be solved using nested loops only",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "NP (Nondeterministic Polynomial time) means a certificate (solution) can be checked quickly."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "According to the Master Theorem, what is the complexity of T(n) = 2T(n/2) + n?",
+    "option_a": "O(n)",
+    "option_b": "O(n log n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This describes Merge Sort, where a=2, b=2, k=1; Since log_b(a) = k, the result is O(n^k log n)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "Which algorithm finds all-pairs shortest paths in a weighted graph (even with negative edges, but no negative cycles)?",
+    "option_a": "Dijkstra's",
+    "option_b": "Floyd-Warshall",
+    "option_c": "Bellman-Ford",
+    "option_d": "Johnsons Algorithm",
+    "correct_options": [
+      "B",
+      "D"
+    ],
+    "explanation": "Floyd-Warshall is O(V^3). Johnson's is better for sparse graphs."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "String Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity of the KMP (Knuth-Morris-Pratt) pattern matching algorithm for a text of length n and pattern m?",
+    "option_a": "O(n * m)",
+    "option_b": "O(n + m)",
+    "option_c": "O(n^2)",
+    "option_d": "O(m^2)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "KMP avoids redundant comparisons by pre-processing the pattern to find proper prefixes that are also suffixes."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "In DP, what identifies an 'Optimal Substructure'?",
+    "option_a": "The solution to a problem contains within it optimal solutions to its subproblems",
+    "option_b": "The problem has only one subproblem",
+    "option_c": "The problem depends on a pivot",
+    "option_d": "The complexity is O(1)",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "Optimal substructure and overlapping subproblems are the two requirements for applying DP."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Heaps",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What makes a 'Fibonacci Heap' better than a Binary Heap for certain graph algorithms?",
+    "option_a": "Faster deletion always",
+    "option_b": "O(1) amortized time for 'Decrease Key' operations",
+    "option_c": "Easier implementation",
+    "option_d": "O(log n) search time",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "This makes algorithms like Dijkstra and Prim faster for dense graphs."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Search Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In A* Search, what does the 'Heuristic' function h(n) estimate?",
+    "option_a": "The cost from the start node to n",
+    "option_b": "The cost from node n to the goal node",
+    "option_c": "The total path cost",
+    "option_d": "The memory usage",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "A* combines actual cost g(n) and heuristic estimate h(n) to prioritize nodes."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Tree Structures",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is a 'B-Tree' primarily used for?",
+    "option_a": "In-memory caches",
+    "option_b": "File systems and databases to minimize disk reads for large blocks of data",
+    "option_c": "Simple sorting",
+    "option_d": "Expression trees",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "B-Trees are multi-way trees designed to handle large amounts of data efficiently on disk."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Bit Manipulation",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What does 'x & (x - 1)' achieve in bit manipulation?",
+    "option_a": "Doubles x",
+    "option_b": "Sets the rightmost set bit to 0",
+    "option_c": "Inverts all bits",
+    "option_d": "Checks if x is negative",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "If x & (x-1) == 0, it means x is a power of 2."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Geometric Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "The 'Graham Scan' is used to solve which problem?",
+    "option_a": "Fast Fourier Transform",
+    "option_b": "Convex Hull of a set of points",
+    "option_c": "Shortest path in a maze",
+    "option_d": "Sorting large files",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It finds the smallest convex polygon that contains all given points in O(n log n) time."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "How many subproblems are solved in the 'Coin Change' problem (minimum number of coins) given amount 'n' and 'k' denominations?",
+    "option_a": "k^n",
+    "option_b": "n",
+    "option_c": "n * k",
+    "option_d": "log n",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "We solve for each value from 1 to n once."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Advanced Trees",
+    "question_type": "tricky",
+    "timer_seconds": 40,
+    "question_text": "What property is unique to an 'AVL Tree' compared to a red-black tree?",
+    "option_a": "It is a binary search tree",
+    "option_b": "The difference between heights of left and right subtrees of any node is at most 1",
+    "option_c": "Nodes are colored",
+    "option_d": "It can have 3 children",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "AVL trees are more strictly balanced than Red-Black trees, making lookups faster but insertions potentially slower."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity of 'Hopcroft-Karp' algorithm for finding max bipartite matching?",
+    "option_a": "O(V + E)",
+    "option_b": "O(E * sqrt(V))",
+    "option_c": "O(V^3)",
+    "option_d": "O(V * E)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's faster than the standard augmenting path approach (O(VE))."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Graph Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which graph algorithm helps find 'Strongly Connected Components' (SCC)?",
+    "option_a": "Dijkstra's",
+    "option_b": "Kosaraju's Algorithm",
+    "option_c": "Prim's Algorithm",
+    "option_d": "Bellman-Ford",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Kosaraju's uses two DFS passes to find components where every vertex is reachable from every other vertex."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "The 'Ford-Fulkerson' method computes what in a network?",
+    "option_a": "Shortest path",
+    "option_b": "Maximum Flow",
+    "option_c": "Minimum spanning tree",
+    "option_d": "Adjacency matrix",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It finds paths with available residual capacity until no more augmenting paths exist."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Math in DSA",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is the complexity of computing 'n!' recursively?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(n^2)",
+    "option_d": "O(log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "n calls are made (n, n-1, ..., 1)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Hashing",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is 'Cuckoo Hashing'?",
+    "option_a": "A hash function that mimics birds",
+    "option_b": "An open-addressing scheme with two hash functions where keys can move between two locations to resolve collisions",
+    "option_c": "A ways to compress hash tables",
+    "option_d": "A hash map that deletes old items automatically",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It achieves O(1) worst-case lookup time."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "What does a 'P vs NP' question fundamentally ask?",
+    "option_a": "Can deterministic computers do what non-deterministic ones do?",
+    "option_b": "Are complexity classes equal?",
+    "option_c": "Whether every problem whose solution can be quickly verified can also be quickly solved",
+    "option_d": "Is sorting possible in O(n)?",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "It's one of the greatest unsolved problems in computer science."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Sorting",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which sorting algorithm is 'Adaptive', meaning it speeds up if the data is already partially sorted?",
+    "option_a": "Quick Sort",
+    "option_b": "Insertion Sort",
+    "option_c": "Selection Sort",
+    "option_d": "Merge Sort",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Insertion sort is O(n) for sorted data and very fast for 'nearly sorted' data."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Graphs",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a DAG, why is the 'Sink' node important for topological sort?",
+    "option_a": "It has no incoming edges",
+    "option_b": "It has no outgoing edges",
+    "option_c": "It is the root",
+    "option_d": "It has the highest degree",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Every DAG has at least one source (in-degree 0) and at least one sink (out-degree 0)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Advanced Trees",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the main advantage of a 'Splay Tree'?",
+    "option_a": "Always perfectly balanced",
+    "option_b": "Recent accessed items are moved to the root, making repeated access O(1) in practice",
+    "option_c": "It stores hash values instead of keys",
+    "option_d": "It uses no pointers",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Splay trees use 'Splaying' to move a node to the root upon every access, and provide O(log n) amortized performance."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Tree Traversals",
+    "question_type": "medium",
+    "timer_seconds": 25,
+    "question_text": "Which traversal of a Binary Search Tree produces a sorted list?",
+    "option_a": "Pre-order",
+    "option_b": "In-order",
+    "option_c": "Post-order",
+    "option_d": "Level-order",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "In-order visits Left -> Root -> Right, which for a BST is strictly increasing values."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity of inserting a node into a skip list?",
+    "option_a": "O(1)",
+    "option_b": "O(n)",
+    "option_c": "O(log n)",
+    "option_d": "O(sqrt n)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Skip lists use randomization to achieve O(log n) average case performance similar to balanced trees."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Algorithm Types",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which technique avoids recursion by manually managing the stack?",
+    "option_a": "Memoization",
+    "option_b": "Iterative Deepening",
+    "option_c": "Tail Recursion",
+    "option_d": "Static Allocation",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Iterative deepening combines DFS depth limits with BFS level exploration."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity of Prim's algorithm using an Adjacency Matrix?",
+    "option_a": "O(V + E)",
+    "option_b": "O(V^2)",
+    "option_c": "O(E log V)",
+    "option_d": "O(V log V)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "With an adjacency matrix, we iterate through all V vertices to find the minimum cut edge."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Search Algorithms",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a 'Uniform Cost Search', nodes are expanded based on:",
+    "option_a": "Depth",
+    "option_b": "Path cost from the root",
+    "option_c": "Path cost to the goal",
+    "option_d": "Heuristic estimate",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It's essentially Dijkstra's algorithm for searching for a goal state."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Sorting",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the space complexity of Merge Sort?",
+    "option_a": "O(1)",
+    "option_b": "O(log n)",
+    "option_c": "O(n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "Merge sort requires a temporary array of size n to store merged halves."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Dynamic Programming",
+    "question_type": "medium",
+    "timer_seconds": 35,
+    "question_text": "The 'Floyd-Warshall' algorithm uses which strategy?",
+    "option_a": "Greedy",
+    "option_b": "Divide and Conquer",
+    "option_c": "Dynamic Programming",
+    "option_d": "Recurrence",
+    "correct_options": [
+      "C"
+    ],
+    "explanation": "It solves the shortest path subproblems for intermediate vertices."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Hashing",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "In a hash table, what does 'Open Addressing' mean?",
+    "option_a": "Using linked lists inside buckets",
+    "option_b": "Finding another slot in the array itself if a collision occurs",
+    "option_c": "Allowing keys to be public",
+    "option_d": "Automatically resizing the table",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Open addressing probes the array (linear, quadratic, or double hashing)."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Strings",
+    "question_type": "hard",
+    "timer_seconds": 45,
+    "question_text": "What is the complexity of building a 'Suffix Tree' for a string of length n?",
+    "option_a": "O(n^2)",
+    "option_b": "O(n)",
+    "option_c": "O(n log n)",
+    "option_d": "O(2^n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Ukkonen\u2019s algorithm builds it in linear time."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "What is a 'Stable' sort?",
+    "option_a": "A sort that doesn't use much memory",
+    "option_b": "A sort that maintains the relative order of records with equal keys",
+    "option_c": "A sort that works for both floats and integers",
+    "option_d": "A sort that always has O(n log n) time",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Merge sort is stable; Quick sort is usually not."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Tree Structures",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "An 'N-ary' tree is a tree where each node has at most:",
+    "option_a": "2 children",
+    "option_b": "N children",
+    "option_c": "N - 1 children",
+    "option_d": "Unlimited children",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Binary trees are 2-ary trees."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Searching",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity of 'Fibonacci Search'?",
+    "option_a": "O(n)",
+    "option_b": "O(log n)",
+    "option_c": "O(sqrt n)",
+    "option_d": "O(n log n)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "Like binary search, it repeatedly halves the search space but uses Fibonacci numbers to divide the array."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Algorithm Analysis",
+    "question_type": "medium",
+    "timer_seconds": 30,
+    "question_text": "Which complexity class represents problems solvable in polynomial time?",
+    "option_a": "P",
+    "option_b": "NP",
+    "option_c": "EXPTIME",
+    "option_d": "NP-HARD",
+    "correct_options": [
+      "A"
+    ],
+    "explanation": "P stands for Polynomial."
+  },
+  {
+    "subject_name": "Data Structures",
+    "level_number": 3,
+    "level_topic": "Graph Algorithms",
+    "question_type": "hard",
+    "timer_seconds": 40,
+    "question_text": "What is the time complexity of the Floyd-Warshall algorithm?",
+    "option_a": "O(V^2)",
+    "option_b": "O(V^3)",
+    "option_c": "O(V * E)",
+    "option_d": "O(E log V)",
+    "correct_options": [
+      "B"
+    ],
+    "explanation": "It iterates through all vertices as intermediate, starting, and ending points (V^3)."
+  }
+]
