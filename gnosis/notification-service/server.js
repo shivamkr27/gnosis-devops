@@ -4,6 +4,7 @@ const http = require('http');
 const { Server } = require('socket.io');
 const cors = require('cors');
 const { createClient } = require('redis');
+const { createMetrics } = require('../common/metrics');
 
 const app = express();
 const server = http.createServer(app);
@@ -15,15 +16,23 @@ const PORT = process.env.PORT || 3006;
 const REDIS_HOST = process.env.REDIS_HOST || 'redis';
 const REDIS_PORT = Number(process.env.REDIS_PORT || 6379);
 const REDIS_URL = process.env.REDIS_URL || `redis://${REDIS_HOST}:${REDIS_PORT}`;
+const { metricsMiddleware, metricsHandler } = createMetrics('notification_service');
 
 app.use(cors());
 app.use(express.json());
+app.use(metricsMiddleware);
 
 // Request logger
 app.use((req, res, next) => {
   console.log(`[Notification API] ${req.method} ${req.url}`);
   next();
 });
+
+app.get('/health', (req, res) => {
+  res.json({ status: "ok", service: "notification-service" });
+});
+
+app.get('/metrics', metricsHandler);
 
 console.log({
   REDIS_HOST: process.env.REDIS_HOST,
@@ -66,11 +75,6 @@ const startServer = async () => {
     // Load REST routes
     const notificationRoutes = require('./routes/notifications')(redisClient);
     app.use('/notifications', notificationRoutes);
-
-    // Health endpoint
-    app.get('/health', (req, res) => {
-      res.json({ status: "ok", service: "notification-service" });
-    });
 
     server.listen(PORT, () => {
       console.log(`Notification service running on port ${PORT}`);

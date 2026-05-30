@@ -4,7 +4,8 @@ const authenticateToken = (req, res, next) => {
   const skipRoutes = [
     { path: '/auth/login', method: 'POST' },
     { path: '/auth/register', method: 'POST' },
-    { path: '/health', method: 'GET' }
+    { path: '/health', method: 'GET' },
+    { path: '/metrics', method: 'GET' }
   ];
 
   const shouldSkip = skipRoutes.some(

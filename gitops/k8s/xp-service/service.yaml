@@ -5,11 +5,14 @@ metadata:
   namespace: gnosis
   labels:
     app: xp-service
+    project: gnosis
+    monitoring: enabled
 spec:
   type: ClusterIP
   selector:
     app: xp-service
   ports:
-    - port: 3004
+    - name: http
+      port: 3004
       targetPort: 3004
       protocol: TCP

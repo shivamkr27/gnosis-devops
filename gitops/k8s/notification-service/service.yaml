@@ -5,11 +5,14 @@ metadata:
   namespace: gnosis
   labels:
     app: notification-service
+    project: gnosis
+    monitoring: enabled
 spec:
   type: ClusterIP
   selector:
     app: notification-service
   ports:
-    - port: 3006
+    - name: http
+      port: 3006
       targetPort: 3006
       protocol: TCP

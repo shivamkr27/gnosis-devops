@@ -1,7 +1,6 @@
 import axios from "axios";
 
-// Ensure it hits the API gateway on port 3000
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const API_URL = import.meta.env.VITE_API_URL || "/api";
 
 const api = axios.create({
   baseURL: API_URL,

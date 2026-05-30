@@ -5,11 +5,14 @@ metadata:
   namespace: gnosis
   labels:
     app: content-service
+    project: gnosis
+    monitoring: enabled
 spec:
   type: ClusterIP
   selector:
     app: content-service
   ports:
-    - port: 3002
+    - name: http
+      port: 3002
       targetPort: 3002
       protocol: TCP

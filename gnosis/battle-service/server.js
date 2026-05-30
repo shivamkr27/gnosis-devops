@@ -5,6 +5,7 @@ const { Server } = require('socket.io');
 const cors = require('cors');
 const { createClient } = require('redis');
 const setupSocketHandlers = require('./socket/handlers');
+const { createMetrics } = require('../common/metrics');
 
 const app = express();
 const server = http.createServer(app);
@@ -16,9 +17,17 @@ const PORT = process.env.PORT || 3005;
 const REDIS_HOST = process.env.REDIS_HOST || 'redis';
 const REDIS_PORT = Number(process.env.REDIS_PORT || 6379);
 const REDIS_URL = process.env.REDIS_URL || `redis://${REDIS_HOST}:${REDIS_PORT}`;
+const { metricsMiddleware, metricsHandler } = createMetrics('battle_service');
 
 app.use(cors());
 app.use(express.json());
+app.use(metricsMiddleware);
+
+app.get('/health', (req, res) => {
+  res.json({ status: "ok", service: "battle-service" });
+});
+
+app.get('/metrics', metricsHandler);
 
 // Setup Redis
 console.log({
@@ -68,10 +77,6 @@ const startServer = async () => {
     
     // We attach routes at root for health, or /battle for specific. The prompt specifies GET /battle/history and GET /health
     app.use('/battle', battleRoutes);
-    // Add health route to root as well just in case
-    app.get('/health', (req, res) => {
-      res.json({ status: "ok", service: "battle-service" });
-    });
 
     server.listen(PORT, () => {
       console.log(`Battle service running on port ${PORT}`);

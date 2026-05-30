@@ -9,9 +9,11 @@ const https = require('https');
 const authenticateToken = require('./middleware/auth');
 const answerTimingMiddleware = require('./middleware/timing');
 const { createProxyMiddleware } = require('http-proxy-middleware');
+const { createMetrics } = require('../common/metrics');
 
 const app = express();
 const server = http.createServer(app);
+const { metricsMiddleware, metricsHandler } = createMetrics('api_gateway');
 
 // Setup Socket.io Upgrade Proxy
 const battleProxy = createProxyMiddleware({
@@ -50,6 +52,7 @@ const PORT = process.env.PORT || 3000;
 app.set('trust proxy', 1);
 app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors({ origin: '*' }));
+app.use(metricsMiddleware);
 
 // Request logger
 app.use((req, res, next) => {
@@ -75,7 +78,7 @@ const generalLimiter = rateLimit({
   message: { error: "Too many requests" },
   skip: (req) => {
     // Don't rate limit auth routes - they need flexibility
-    return req.path.startsWith('/auth');
+    return req.path.startsWith('/auth') || req.path === '/metrics';
   }
 });
 app.use(generalLimiter);
@@ -95,6 +98,8 @@ app.get('/health', (req, res) => {
     }
   });
 });
+
+app.get('/metrics', metricsHandler);
 
 // Auth middleware - AFTER health
 app.use(authenticateToken);

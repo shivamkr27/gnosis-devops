@@ -5,11 +5,14 @@ metadata:
   namespace: gnosis
   labels:
     app: battle-service
+    project: gnosis
+    monitoring: enabled
 spec:
   type: ClusterIP
   selector:
     app: battle-service
   ports:
-    - port: 3005
+    - name: http
+      port: 3005
       targetPort: 3005
       protocol: TCP

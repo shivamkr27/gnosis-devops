@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const { createClient } = require('redis');
+const { createMetrics } = require('../common/metrics');
 const setupCron = require('./cron/weeklyReset');
 
 const app = express();
@@ -9,14 +10,18 @@ const PORT = process.env.PORT || 3004;
 const REDIS_HOST = process.env.REDIS_HOST || 'redis';
 const REDIS_PORT = Number(process.env.REDIS_PORT || 6379);
 const REDIS_URL = process.env.REDIS_URL || `redis://${REDIS_HOST}:${REDIS_PORT}`;
+const { metricsMiddleware, metricsHandler } = createMetrics('xp_service');
 
 app.use(cors());
 app.use(express.json());
+app.use(metricsMiddleware);
 
 // Health endpoint
 app.get('/health', (req, res) => {
   res.json({ status: "ok", service: "xp-service" });
 });
+
+app.get('/metrics', metricsHandler);
 
 // Setup Redis
 console.log({

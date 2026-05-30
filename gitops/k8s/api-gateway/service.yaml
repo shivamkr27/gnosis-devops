@@ -5,11 +5,14 @@ metadata:
   namespace: gnosis
   labels:
     app: api-gateway
+    project: gnosis
+    monitoring: enabled
 spec:
   type: LoadBalancer
   selector:
     app: api-gateway
   ports:
-    - port: 3000
+    - name: http
+      port: 3000
       targetPort: 3000
       protocol: TCP

@@ -6,11 +6,16 @@ metadata:
 data:
   NODE_ENV: production
   AUTH_SERVICE: http://auth-service:3001
+  AUTH_SERVICE_URL: http://auth-service:3001
   CONTENT_SERVICE: http://content-service:3002
-  PROGRESS_SERVICE: http://progress-service:3003
-  XP_SERVICE: http://xp-service:3004
-  BATTLE_SERVICE: http://battle-service:3005
-  NOTIFICATION_SERVICE: http://notification-service:3006
   CONTENT_SERVICE_URL: http://content-service:3002
-  XP_SERVICE_URL: http://xp-service:3004
+  PROGRESS_SERVICE: http://progress-service:3003
   PROGRESS_SERVICE_URL: http://progress-service:3003
+  XP_SERVICE: http://xp-service:3004
+  XP_SERVICE_URL: http://xp-service:3004
+  BATTLE_SERVICE: http://battle-service:3005
+  BATTLE_SERVICE_URL: http://battle-service:3005
+  NOTIFICATION_SERVICE: http://notification-service:3006
+  NOTIFICATION_SERVICE_URL: http://notification-service:3006
+  VITE_API_URL: /api
+  VITE_SOCKET_URL: ""

@@ -4,7 +4,9 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install
 
-COPY .env ./.env
+ENV VITE_API_URL=/api
+ENV VITE_SOCKET_URL=
+
 COPY index.html ./index.html
 COPY vite.config.js ./vite.config.js
 COPY postcss.config.js ./postcss.config.js

@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const { createMetrics } = require('../common/metrics');
 
 dotenv.config();
 
@@ -9,14 +10,18 @@ const contentRoutes = require('./routes/content');
 
 const app = express();
 const PORT = process.env.PORT || 3002;
+const { metricsMiddleware, metricsHandler } = createMetrics('content_service');
 
 app.use(cors());
 app.use(express.json());
+app.use(metricsMiddleware);
 app.use('/content', contentRoutes);
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', service: 'content-service' });
 });
+
+app.get('/metrics', metricsHandler);
 
 async function start() {
   try {
