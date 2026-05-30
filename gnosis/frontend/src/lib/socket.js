@@ -1,7 +1,8 @@
 import { io } from "socket.io-client";
 import { useSocketStore } from "./store";
 
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL?.trim() || undefined;
+const rawSocketUrl = import.meta.env.VITE_SOCKET_URL?.trim();
+const SOCKET_URL = rawSocketUrl && rawSocketUrl.length > 0 ? rawSocketUrl : undefined;
 
 export function createSocket(user) {
   const token = localStorage.getItem("gnosis_token");
