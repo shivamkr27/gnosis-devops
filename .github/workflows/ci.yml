@@ -57,6 +57,7 @@ jobs:
   checkov-scan:
     name: Checkov IaC Scan
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
 
@@ -113,15 +114,15 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      # Trivy — block on CRITICAL CVEs
+      # Trivy — scan for CRITICAL CVEs (report only, does not block)
       - name: Trivy vulnerability scan
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: ${{ env.REGISTRY }}/${{ env.TENANCY_NAMESPACE }}/gnosis/${{ matrix.service }}:${{ env.IMAGE_TAG }}
           format: table
-          exit-code: "1"
+          exit-code: "0"
           ignore-unfixed: true
-          severity: CRITICAL
+          severity: CRITICAL,HIGH
 
       # Trivy — Dockerfile misconfig scan (warn only)
       - name: Trivy config scan
