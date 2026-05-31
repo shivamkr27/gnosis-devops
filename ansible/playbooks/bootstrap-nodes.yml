@@ -1,0 +1,46 @@
+---
+# ─── Ansible Playbook — Gnosis K8s Node Bootstrap ───────────────────
+# Run this BEFORE terraform apply to prep OCI VM nodes.
+#
+# Usage:
+#   ansible-playbook -i ansible/inventory/hosts.yml \
+#     ansible/playbooks/bootstrap-nodes.yml \
+#     --ask-become-pass
+#
+# What it does:
+#   1. System hardening (disable root login, firewall rules)
+#   2. Install Docker + containerd
+#   3. Install kubectl, helm, k9s
+#   4. Configure kernel params for K8s networking
+#   5. Install node_exporter for Prometheus
+# ─────────────────────────────────────────────────────────────────────
+
+- name: Bootstrap OCI nodes for Gnosis K8s cluster
+  hosts: k8s_nodes
+  become: true
+  vars_files:
+    - ../roles/k8s-node/defaults/main.yml
+
+  pre_tasks:
+    - name: Verify OS is Ubuntu 22.04+
+      assert:
+        that: ansible_distribution == "Ubuntu" and ansible_distribution_major_version | int >= 22
+        fail_msg: "Only Ubuntu 22.04+ is supported"
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+  roles:
+    - k8s-node
+
+  post_tasks:
+    - name: Print node readiness summary
+      debug:
+        msg: |
+          ✅ Node {{ inventory_hostname }} bootstrapped successfully.
+          Docker:     {{ docker_version }}
+          kubectl:    {{ kubectl_version }}
+          Helm:       {{ helm_version }}
+          Node ready for OKE cluster join.

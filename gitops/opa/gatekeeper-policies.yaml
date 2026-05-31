@@ -1,0 +1,282 @@
+# ─── OPA Gatekeeper Policies — Gnosis ───────────────────────────────
+# Policy-as-code: these rules BLOCK non-compliant K8s resources at admission.
+#
+# Deploy (OCI account ke baad):
+#   kubectl apply -f gitops/opa/
+#
+# Order matters: ConstraintTemplate first, then Constraint.
+# ─────────────────────────────────────────────────────────────────────
+
+# ══════════════════════════════════════════════════════════════════════
+# POLICY 1: No privileged containers allowed
+# ══════════════════════════════════════════════════════════════════════
+---
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: gnosis-no-privileged
+  annotations:
+    description: "Blocks privileged containers in the gnosis namespace"
+spec:
+  crd:
+    spec:
+      names:
+        kind: GnosisNoPrivileged
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package gnosisnoPrivileged
+
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          container.securityContext.privileged == true
+          msg := sprintf(
+            "Container '%v' in pod '%v' must not run as privileged.",
+            [container.name, input.review.object.metadata.name]
+          )
+        }
+
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.initContainers[_]
+          container.securityContext.privileged == true
+          msg := sprintf(
+            "InitContainer '%v' must not run as privileged.",
+            [container.name]
+          )
+        }
+---
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: GnosisNoPrivileged
+metadata:
+  name: gnosis-no-privileged
+spec:
+  enforcementAction: deny
+  match:
+    kinds:
+      - apiGroups: ["apps"]
+        kinds: ["Deployment", "StatefulSet", "DaemonSet"]
+    namespaces: ["gnosis"]
+
+# ══════════════════════════════════════════════════════════════════════
+# POLICY 2: All containers must have resource limits
+# ══════════════════════════════════════════════════════════════════════
+---
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: gnosis-require-limits
+  annotations:
+    description: "All containers must define CPU and memory limits"
+spec:
+  crd:
+    spec:
+      names:
+        kind: GnosisRequireLimits
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package gnosisrequirelimits
+
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          not container.resources.limits.cpu
+          msg := sprintf(
+            "Container '%v' must set resources.limits.cpu",
+            [container.name]
+          )
+        }
+
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          not container.resources.limits.memory
+          msg := sprintf(
+            "Container '%v' must set resources.limits.memory",
+            [container.name]
+          )
+        }
+
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          not container.resources.requests.cpu
+          msg := sprintf(
+            "Container '%v' must set resources.requests.cpu",
+            [container.name]
+          )
+        }
+
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          not container.resources.requests.memory
+          msg := sprintf(
+            "Container '%v' must set resources.requests.memory",
+            [container.name]
+          )
+        }
+---
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: GnosisRequireLimits
+metadata:
+  name: gnosis-require-limits
+spec:
+  enforcementAction: deny
+  match:
+    kinds:
+      - apiGroups: ["apps"]
+        kinds: ["Deployment", "StatefulSet"]
+    namespaces: ["gnosis"]
+
+# ══════════════════════════════════════════════════════════════════════
+# POLICY 3: Containers must not run as root (uid 0)
+# ══════════════════════════════════════════════════════════════════════
+---
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: gnosis-no-root
+  annotations:
+    description: "Containers must run as non-root user (uid != 0)"
+spec:
+  crd:
+    spec:
+      names:
+        kind: GnosisNoRoot
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package gnosisnoroot
+
+        violation[{"msg": msg}] {
+          spec := input.review.object.spec
+          not spec.securityContext.runAsNonRoot
+          msg := sprintf(
+            "Pod '%v' must set securityContext.runAsNonRoot: true",
+            [input.review.object.metadata.name]
+          )
+        }
+
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          container.securityContext.runAsUser == 0
+          msg := sprintf(
+            "Container '%v' must not run as root (uid=0)",
+            [container.name]
+          )
+        }
+---
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: GnosisNoRoot
+metadata:
+  name: gnosis-no-root
+spec:
+  enforcementAction: deny
+  match:
+    kinds:
+      - apiGroups: ["apps"]
+        kinds: ["Deployment", "StatefulSet"]
+    namespaces: ["gnosis"]
+
+# ══════════════════════════════════════════════════════════════════════
+# POLICY 4: Required labels on all Deployments
+# Every deployment must have: app, project, monitoring labels
+# ══════════════════════════════════════════════════════════════════════
+---
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: gnosis-required-labels
+  annotations:
+    description: "Deployments must have required labels for monitoring and cost tracking"
+spec:
+  crd:
+    spec:
+      names:
+        kind: GnosisRequiredLabels
+      validation:
+        openAPIV3Schema:
+          type: object
+          properties:
+            requiredLabels:
+              type: array
+              items:
+                type: string
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package gnosisrequiredlabels
+
+        violation[{"msg": msg}] {
+          required := input.parameters.requiredLabels[_]
+          not input.review.object.metadata.labels[required]
+          msg := sprintf(
+            "Deployment '%v' is missing required label: '%v'",
+            [input.review.object.metadata.name, required]
+          )
+        }
+---
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: GnosisRequiredLabels
+metadata:
+  name: gnosis-required-labels
+spec:
+  enforcementAction: warn   # warn first — switch to deny after all services are labeled
+  match:
+    kinds:
+      - apiGroups: ["apps"]
+        kinds: ["Deployment"]
+    namespaces: ["gnosis"]
+  parameters:
+    requiredLabels:
+      - app
+      - project
+      - monitoring
+
+# ══════════════════════════════════════════════════════════════════════
+# POLICY 5: No latest image tag in production
+# ══════════════════════════════════════════════════════════════════════
+---
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: gnosis-no-latest-tag
+  annotations:
+    description: "Images must use a specific tag, not :latest"
+spec:
+  crd:
+    spec:
+      names:
+        kind: GnosisNoLatestTag
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package gnosisnolatesttag
+
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          endswith(container.image, ":latest")
+          msg := sprintf(
+            "Container '%v' uses ':latest' tag — use a specific SHA or version tag",
+            [container.name]
+          )
+        }
+
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          not contains(container.image, ":")
+          msg := sprintf(
+            "Container '%v' has no image tag — specify a tag explicitly",
+            [container.name]
+          )
+        }
+---
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: GnosisNoLatestTag
+metadata:
+  name: gnosis-no-latest-tag
+spec:
+  # Start with warn — switch to deny once CI always pushes SHA tags
+  enforcementAction: warn
+  match:
+    kinds:
+      - apiGroups: ["apps"]
+        kinds: ["Deployment"]
+    namespaces: ["gnosis"]

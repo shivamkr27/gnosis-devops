@@ -1,0 +1,9 @@
+---
+# ─── ansible/roles/k8s-node/defaults/main.yml ───────────────────────
+kubectl_version: "v1.29.0"
+helm_version: "3.14.0"
+node_exporter_version: "1.7.0"
+install_oci_cli: true
+
+# Set these per environment in inventory/hosts.yml
+docker_version: "24.0"

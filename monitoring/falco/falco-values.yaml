@@ -1,0 +1,71 @@
+# ─── monitoring/falco/falco-values.yaml ──────────────────────────────
+# Install:
+#   helm repo add falcosecurity https://falcosecurity.github.io/charts
+#   helm upgrade --install falco falcosecurity/falco \
+#     -n falco --create-namespace \
+#     -f monitoring/falco/falco-values.yaml
+# ─────────────────────────────────────────────────────────────────────
+
+falco:
+  grpc:
+    enabled: true
+  grpc_output:
+    enabled: true
+
+  # Load our custom Gnosis rules on top of default ruleset
+  rules_file:
+    - /etc/falco/falco_rules.yaml
+    - /etc/falco/falco_rules.local.yaml
+    - /etc/falco/gnosis-rules.yaml
+
+  # Only alert on WARNING and above (suppress INFO noise)
+  priority: WARNING
+
+  # Send alerts to Falcosidekick (which routes to Slack)
+  json_output: true
+  json_include_output_property: true
+
+  http_output:
+    enabled: true
+    url: "http://falco-falcosidekick:2801"
+
+  customRules:
+    gnosis-rules.yaml: |
+      # Mounted from monitoring/falco/gnosis-rules.yaml via ConfigMap
+
+# Falcosidekick — routes Falco alerts to Slack
+falcosidekick:
+  enabled: true
+
+  config:
+    slack:
+      webhookurl: ""    # Set via: kubectl create secret → SLACK_WEBHOOK_URL
+      channel: "#security-alerts"
+      username: "Falco | Gnosis Security"
+      icon: ":rotating_light:"
+      minimumpriority: "warning"
+      messageformat: |
+        *[{{ .Priority | upper }}]* {{ .Rule }}
+        > {{ .Output }}
+        *Pod:* {{ index .OutputFields "k8s.pod.name" }}
+        *Namespace:* {{ index .OutputFields "k8s.ns.name" }}
+
+    # Also push to Prometheus metrics (track alert counts)
+    prometheusgateway:
+      hostport: "prometheus-kube-prometheus-prometheus.monitoring.svc.cluster.local:9091"
+      minimumpriority: "warning"
+
+  webui:
+    enabled: true    # Falcosidekick UI at port 2802
+
+# Run as DaemonSet — one Falco pod per node
+daemonset:
+  enabled: true
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "256Mi"
+  limits:
+    cpu: "500m"
+    memory: "512Mi"

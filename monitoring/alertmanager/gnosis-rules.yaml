@@ -1,0 +1,242 @@
+# ─── Prometheus Alert Rules — Gnosis ─────────────────────────────────
+# Deploy: kubectl apply -f monitoring/alertmanager/gnosis-rules.yaml
+# These PrometheusRules are picked up by kube-prometheus-stack operator.
+# ─────────────────────────────────────────────────────────────────────
+
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: gnosis-alerts
+  namespace: monitoring
+  labels:
+    release: kube-prometheus-stack   # must match Prometheus CR label selector
+    app: gnosis
+spec:
+  groups:
+
+    # ── Pod & Container Health ───────────────────────────────────────
+    - name: gnosis.pod.health
+      interval: 30s
+      rules:
+
+        - alert: GnosisPodCrashLooping
+          expr: |
+            rate(kube_pod_container_status_restarts_total{namespace="gnosis"}[5m]) * 60 > 1
+          for: 5m
+          labels:
+            severity: critical
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "Pod {{ $labels.pod }} is crash looping"
+            description: |
+              Container {{ $labels.container }} in pod {{ $labels.pod }} restarting
+              more than once per minute. Immediate action required.
+            runbook: "https://github.com/shivamkr27/gnosis-devops/wiki/runbook-crashloop"
+
+        - alert: GnosisPodNotReady
+          expr: |
+            kube_pod_status_ready{namespace="gnosis", condition="true"} == 0
+          for: 5m
+          labels:
+            severity: warning
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "Pod {{ $labels.pod }} is not ready"
+            description: "Pod {{ $labels.pod }} has been NotReady for 5+ minutes."
+
+        - alert: GnosisDeploymentReplicasMismatch
+          expr: |
+            kube_deployment_spec_replicas{namespace="gnosis"}
+            != kube_deployment_status_available_replicas{namespace="gnosis"}
+          for: 10m
+          labels:
+            severity: warning
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "Deployment {{ $labels.deployment }} has unavailable replicas"
+            description: |
+              Deployment {{ $labels.deployment }} has fewer available replicas
+              than desired for 10+ minutes.
+
+        - alert: GnosisServiceDown
+          expr: |
+            up{namespace="gnosis"} == 0
+          for: 2m
+          labels:
+            severity: critical
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "Gnosis service {{ $labels.job }} is DOWN"
+            description: "Prometheus cannot scrape {{ $labels.job }}. Service may be completely down."
+
+    # ── Resource Usage ───────────────────────────────────────────────
+    - name: gnosis.resources
+      interval: 60s
+      rules:
+
+        - alert: GnosisHighCPU
+          expr: |
+            rate(container_cpu_usage_seconds_total{namespace="gnosis", container!=""}[5m])
+            / on(pod, container)
+            kube_pod_container_resource_limits{namespace="gnosis", resource="cpu"}
+            > 0.85
+          for: 10m
+          labels:
+            severity: warning
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "High CPU in {{ $labels.container }}"
+            description: |
+              Container {{ $labels.container }} using {{ $value | humanizePercentage }}
+              of CPU limit for 10+ minutes. Consider scaling or optimizing.
+
+        - alert: GnosisHighMemory
+          expr: |
+            container_memory_usage_bytes{namespace="gnosis", container!=""}
+            / on(pod, container)
+            kube_pod_container_resource_limits{namespace="gnosis", resource="memory"}
+            > 0.85
+          for: 10m
+          labels:
+            severity: warning
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "High memory in {{ $labels.container }}"
+            description: |
+              Container {{ $labels.container }} using {{ $value | humanizePercentage }}
+              of memory limit. Check for memory leaks.
+
+        - alert: GnosisDiskSpaceLow
+          expr: |
+            kubelet_volume_stats_available_bytes{namespace="gnosis"}
+            / kubelet_volume_stats_capacity_bytes{namespace="gnosis"}
+            < 0.15
+          for: 5m
+          labels:
+            severity: critical
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "PVC disk space low: {{ $labels.persistentvolumeclaim }}"
+            description: |
+              PVC {{ $labels.persistentvolumeclaim }} has less than 15% space remaining.
+              Postgres or Redis data at risk.
+
+    # ── Database ─────────────────────────────────────────────────────
+    - name: gnosis.database
+      interval: 60s
+      rules:
+
+        - alert: GnosisPostgresConnectionsHigh
+          expr: |
+            pg_stat_activity_count{namespace="gnosis", datname="gnosis"} > 80
+          for: 5m
+          labels:
+            severity: warning
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "PostgreSQL connections high ({{ $value }}/100)"
+            description: |
+              Gnosis DB has {{ $value }} active connections.
+              Connection pool exhaustion will cause 500 errors across all services.
+
+        - alert: GnosisRedisMemoryHigh
+          expr: |
+            redis_memory_used_bytes{namespace="gnosis"}
+            / redis_memory_max_bytes{namespace="gnosis"}
+            > 0.80
+          for: 5m
+          labels:
+            severity: warning
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "Redis memory > 80%"
+            description: |
+              Redis is using {{ $value | humanizePercentage }} of max memory.
+              Battle rooms and leaderboard data risk eviction.
+
+    # ── Application HTTP Metrics ──────────────────────────────────────
+    - name: gnosis.application
+      interval: 30s
+      rules:
+
+        - alert: GnosisHighErrorRate
+          expr: |
+            sum by (job) (
+              rate(http_requests_total{namespace="gnosis", status=~"5.."}[5m])
+            )
+            /
+            sum by (job) (
+              rate(http_requests_total{namespace="gnosis"}[5m])
+            )
+            > 0.05
+          for: 5m
+          labels:
+            severity: critical
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "High 5xx error rate in {{ $labels.job }}"
+            description: |
+              {{ $labels.job }} has {{ $value | humanizePercentage }} error rate.
+              Threshold: 5%. Users are seeing errors.
+
+        - alert: GnosisHighLatency
+          expr: |
+            histogram_quantile(0.95,
+              sum by (le, job) (
+                rate(http_request_duration_seconds_bucket{namespace="gnosis"}[5m])
+              )
+            ) > 2
+          for: 10m
+          labels:
+            severity: warning
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "P95 latency > 2s in {{ $labels.job }}"
+            description: |
+              95th percentile response time for {{ $labels.job }} is {{ $value }}s.
+              Users experiencing slow load times.
+
+        - alert: GnosisBattleSocketErrors
+          expr: |
+            rate(socket_io_events_received_total{namespace="gnosis", event="error"}[5m]) > 0.5
+          for: 3m
+          labels:
+            severity: warning
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "Battle service socket.io errors spiking"
+            description: |
+              Socket.io errors > 0.5/s for 3 minutes.
+              Active battle rooms may be disconnecting mid-game.
+
+    # ── HPA Autoscaling ─────────────────────────────────────────────
+    - name: gnosis.autoscaling
+      interval: 60s
+      rules:
+
+        - alert: GnosisHPAAtMaxReplicas
+          expr: |
+            kube_horizontalpodautoscaler_status_current_replicas{namespace="gnosis"}
+            == kube_horizontalpodautoscaler_spec_max_replicas{namespace="gnosis"}
+          for: 15m
+          labels:
+            severity: warning
+            team: devops
+            project: gnosis
+          annotations:
+            summary: "HPA {{ $labels.horizontalpodautoscaler }} at max replicas"
+            description: |
+              {{ $labels.horizontalpodautoscaler }} has been at max replicas for 15min.
+              Increase maxReplicas in deployment config or optimize service performance.

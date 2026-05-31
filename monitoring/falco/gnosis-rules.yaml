@@ -1,0 +1,183 @@
+- ─── Falco Custom Rules — Gnosis ─────────────────────────────────────
+# Runtime security rules for detecting suspicious activity in cluster.
+#
+# Deploy (OCI account ke baad):
+#   helm repo add falcosecurity https://falcosecurity.github.io/charts
+#   helm upgrade --install falco falcosecurity/falco \
+#     -n falco --create-namespace \
+#     --set-file falco.rules_file[0]=monitoring/falco/gnosis-rules.yaml
+#
+# These rules fire → Falco → Falcosidekick → Slack #security-alerts
+# ─────────────────────────────────────────────────────────────────────
+
+- list: gnosis_services
+  items:
+    - api-gateway
+    - auth-service
+    - content-service
+    - progress-service
+    - xp-service
+    - battle-service
+    - notification-service
+    - frontend
+    - kira
+
+- list: allowed_node_binaries
+  items:
+    - node
+    - npm
+    - sh
+    - bash   # only during startup scripts
+
+- list: sensitive_files
+  items:
+    - /etc/shadow
+    - /etc/passwd
+    - /etc/sudoers
+    - /root/.ssh
+    - /proc/sys/kernel
+
+# ── Rule 1: Shell spawned inside a Gnosis container ──────────────────
+# Node.js services should NEVER spawn interactive shells in production.
+# This is a strong signal of container escape or RCE attempt.
+- rule: Shell Spawned in Gnosis Container
+  desc: >
+    A shell was spawned inside a Gnosis microservice container.
+    Node.js apps do not need shells at runtime — this is suspicious.
+  condition: >
+    spawned_process
+    and container
+    and container.label.app in (gnosis_services)
+    and proc.name in (sh, bash, zsh, dash, ash)
+    and not proc.pname in (node, npm, sh)
+    and not proc.cmdline contains "healthcheck"
+  output: >
+    Shell spawned in Gnosis container
+    (user=%user.name container=%container.name image=%container.image.repository
+     cmd=%proc.cmdline parent=%proc.pname pod=%k8s.pod.name ns=%k8s.ns.name)
+  priority: CRITICAL
+  tags: [gnosis, shell, container-escape, T1059]
+
+# ── Rule 2: Unexpected outbound connection from backend service ───────
+# Backend services should only talk to internal cluster IPs.
+# Outbound to external IPs (except content-service → Gemini) = suspicious.
+- rule: Unexpected Outbound Connection from Gnosis Backend
+  desc: >
+    A backend service made an outbound connection to an unexpected external IP.
+    Only content-service is allowed to reach external APIs (Gemini).
+  condition: >
+    outbound
+    and container
+    and container.label.app in (auth-service, progress-service, xp-service,
+                                 battle-service, notification-service, api-gateway)
+    and not fd.sip in (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16)
+    and not fd.sport in (53, 443)
+  output: >
+    Unexpected external connection from backend service
+    (service=%container.label.app dest_ip=%fd.rip dest_port=%fd.rport
+     pod=%k8s.pod.name ns=%k8s.ns.name)
+  priority: WARNING
+  tags: [gnosis, network, exfiltration, T1041]
+
+# ── Rule 3: Sensitive file read inside container ──────────────────────
+- rule: Sensitive File Read in Gnosis Container
+  desc: A process inside a Gnosis container read a sensitive system file.
+  condition: >
+    open_read
+    and container
+    and container.label.app in (gnosis_services)
+    and fd.name in (sensitive_files)
+  output: >
+    Sensitive file read in Gnosis container
+    (file=%fd.name user=%user.name container=%container.name
+     pod=%k8s.pod.name image=%container.image.repository)
+  priority: ERROR
+  tags: [gnosis, filesystem, credential-access, T1552]
+
+# ── Rule 4: Privilege escalation attempt ─────────────────────────────
+- rule: Privilege Escalation in Gnosis Container
+  desc: >
+    A process attempted to run as root or use sudo inside a Gnosis container.
+    All Gnosis containers run as non-root (uid 1000).
+  condition: >
+    spawned_process
+    and container
+    and container.label.app in (gnosis_services)
+    and (proc.name = sudo or user.uid = 0)
+    and not proc.name = node
+  output: >
+    Privilege escalation attempt in Gnosis container
+    (user=%user.name uid=%user.uid cmd=%proc.cmdline
+     pod=%k8s.pod.name container=%container.name)
+  priority: CRITICAL
+  tags: [gnosis, privilege-escalation, T1548]
+
+# ── Rule 5: Crypto mining binary detected ────────────────────────────
+- rule: Crypto Miner Detected in Gnosis Namespace
+  desc: >
+    A known crypto mining binary or process was detected.
+    Common indicator of compromised container.
+  condition: >
+    spawned_process
+    and container
+    and container.label.app in (gnosis_services)
+    and (proc.name in (xmrig, minerd, cgminer, bfgminer, ethminer)
+         or proc.cmdline contains "stratum+tcp"
+         or proc.cmdline contains "pool.minexmr")
+  output: >
+    Crypto miner detected in Gnosis container!
+    (binary=%proc.name pod=%k8s.pod.name image=%container.image.repository)
+  priority: CRITICAL
+  tags: [gnosis, cryptomining, T1496]
+
+# ── Rule 6: kubectl or curl used inside container ────────────────────
+# Attackers often download payloads using curl/wget after initial access.
+- rule: Download Tool Used in Gnosis Container
+  desc: >
+    curl, wget, or kubectl was executed inside a Gnosis service container.
+    Node.js apps use the HTTP client library — not system tools.
+  condition: >
+    spawned_process
+    and container
+    and container.label.app in (gnosis_services)
+    and proc.name in (curl, wget, kubectl, nc, netcat, nmap)
+  output: >
+    Download/recon tool executed in Gnosis container
+    (tool=%proc.name cmd=%proc.cmdline pod=%k8s.pod.name
+     image=%container.image.repository)
+  priority: WARNING
+  tags: [gnosis, lateral-movement, T1105]
+
+# ── Rule 7: DB password accessed from unexpected process ─────────────
+- rule: DB Credentials Accessed Outside Node Process
+  desc: >
+    Environment variables containing DB credentials were accessed
+    by a process that is not node. Possible credential theft.
+  condition: >
+    spawned_process
+    and container
+    and container.label.app in (gnosis_services)
+    and proc.env contains "DB_PASSWORD"
+    and not proc.name = node
+  output: >
+    DB credentials accessed by non-node process
+    (proc=%proc.name cmd=%proc.cmdline pod=%k8s.pod.name)
+  priority: ERROR
+  tags: [gnosis, credential-access, T1552.007]
+
+# ── Rule 8: Write to /tmp (potential payload drop) ───────────────────
+- rule: Suspicious Write to /tmp in Gnosis Container
+  desc: >
+    A process wrote a file to /tmp inside a Gnosis container.
+    Attackers often write payloads to /tmp after initial access.
+  condition: >
+    open_write
+    and container
+    and container.label.app in (gnosis_services)
+    and fd.directory = /tmp
+    and not proc.name in (node, npm)
+  output: >
+    Suspicious file write to /tmp in Gnosis container
+    (file=%fd.name proc=%proc.name pod=%k8s.pod.name)
+  priority: WARNING
+  tags: [gnosis, filesystem, T1036]
