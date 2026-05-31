@@ -62,7 +62,9 @@ resource "oci_containerengine_node_pool" "gnosis" {
     dynamic "placement_configs" {
       for_each = var.private_subnet_ids
       content {
-        availability_domain = data.oci_identity_availability_domains.ads.availability_domains[placement_configs.key].name
+        availability_domain = data.oci_identity_availability_domains.ads.availability_domains[
+          placement_configs.key % length(data.oci_identity_availability_domains.ads.availability_domains)
+        ].name
         subnet_id           = placement_configs.value
       }
     }
@@ -109,7 +111,7 @@ data "oci_core_images" "oke_node_image" {
 
   filter {
     name   = "display_name"
-    values = [".*OKE.*"]
+    values = ["Oracle-Linux-8.*-aarch64-.*"]
     regex  = true
   }
 }

@@ -24,7 +24,7 @@ variable "private_subnet_ids" {
 
 variable "kubernetes_version" {
   type    = string
-  default = "v1.29.1"
+  default = "v1.32.1"
 }
 
 variable "node_shape" {
