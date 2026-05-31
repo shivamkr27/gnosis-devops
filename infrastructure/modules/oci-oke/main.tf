@@ -17,7 +17,7 @@ resource "oci_containerengine_cluster" "gnosis" {
   }
 
   options {
-    service_lb_subnet_ids = var.public_subnet_ids   # LB goes in public subnets
+    service_lb_subnet_ids = [var.public_subnet_ids[0]]
 
     add_ons {
       is_kubernetes_dashboard_enabled = false
