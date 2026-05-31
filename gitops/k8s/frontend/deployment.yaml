@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: AWS_ACCOUNT_ID.dkr.ecr.ap-south-1.amazonaws.com/gnosis/frontend:latest
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/frontend:latest
           ports:
             - containerPort: 80
           resources:

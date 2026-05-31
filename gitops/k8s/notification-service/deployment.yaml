@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: notification-service
-          image: AWS_ACCOUNT_ID.dkr.ecr.ap-south-1.amazonaws.com/gnosis/notification-service:latest
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/notification-service:latest
           ports:
             - containerPort: 3006
           envFrom:

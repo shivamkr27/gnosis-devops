@@ -1,0 +1,16 @@
+tenancy_ocid      = "ocid1.tenancy.oc1..xxxxx"
+user_ocid         = "ocid1.user.oc1..xxxxx"
+fingerprint       = "xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx"
+region            = "ap-mumbai-1"
+compartment_ocid  = "ocid1.tenancy.oc1..xxxxx"
+tenancy_namespace = "xxxxxxxxxx"
+
+private_key = <<-EOK
+-----BEGIN PRIVATE KEY-----
+<paste your OCI API private key here>
+-----END PRIVATE KEY-----
+EOK
+
+# Generate: ssh-keygen -t rsa -b 2048 -f ~/.ssh/gnosis-oke
+# Paste contents of ~/.ssh/gnosis-oke.pub
+ssh_public_key = "ssh-rsa AAAA..."

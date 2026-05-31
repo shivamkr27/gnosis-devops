@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: AWS_ACCOUNT_ID.dkr.ecr.ap-south-1.amazonaws.com/gnosis/api-gateway:latest
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/api-gateway:latest
           ports:
             - containerPort: 3000
           envFrom:

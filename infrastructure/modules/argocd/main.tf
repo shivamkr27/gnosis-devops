@@ -1,6 +1,18 @@
-variable "cluster_endpoint" {}
-variable "cluster_ca_certificate" {}
-variable "cluster_name" {}
+variable "cluster_endpoint" {
+  description = "OKE cluster API endpoint"
+  type        = string
+}
+
+variable "cluster_id" {
+  description = "OKE cluster OCID (used for oci ce generate-token)"
+  type        = string
+}
+
+variable "region" {
+  description = "OCI region"
+  type        = string
+  default     = "ap-mumbai-1"
+}
 
 terraform {
   required_providers {
@@ -8,26 +20,24 @@ terraform {
       source  = "hashicorp/helm"
       version = "~> 2.0"
     }
-    kubectl = {
-      source  = "gavinbunney/kubectl"
-      version = "~> 1.14"
-    }
   }
 }
 
 provider "helm" {
   kubernetes {
-    host                   = var.cluster_endpoint
-    cluster_ca_certificate = base64decode(var.cluster_ca_certificate)
+    host = var.cluster_endpoint
     exec {
       api_version = "client.authentication.k8s.io/v1beta1"
-      command     = "aws"
-      args        = ["eks", "get-token", "--cluster-name", var.cluster_name]
+      command     = "oci"
+      args = [
+        "ce", "cluster", "generate-token",
+        "--cluster-id", var.cluster_id,
+        "--region", var.region
+      ]
     }
   }
 }
 
-# ─── ArgoCD via Helm ────────────────────────────────────────────────
 resource "helm_release" "argocd" {
   name             = "argocd"
   repository       = "https://argoproj.github.io/argo-helm"
@@ -45,35 +55,4 @@ configs:
     server.insecure: true
 EOF
   ]
-}
-
-# ─── Cluster Autoscaler via Helm ─────────────────────────────────────
-resource "helm_release" "cluster_autoscaler" {
-  name       = "cluster-autoscaler"
-  repository = "https://kubernetes.github.io/autoscaler"
-  chart      = "cluster-autoscaler"
-  namespace  = "kube-system"
-
-  set {
-    name  = "autoDiscovery.clusterName"
-    value = var.cluster_name
-  }
-
-  set {
-    name  = "awsRegion"
-    value = "ap-south-1"
-  }
-}
-
-# ─── AWS Load Balancer Controller ────────────────────────────────────
-resource "helm_release" "aws_lbc" {
-  name       = "aws-load-balancer-controller"
-  repository = "https://aws.github.io/eks-charts"
-  chart      = "aws-load-balancer-controller"
-  namespace  = "kube-system"
-
-  set {
-    name  = "clusterName"
-    value = var.cluster_name
-  }
 }

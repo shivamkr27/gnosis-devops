@@ -2,80 +2,91 @@ terraform {
   required_version = ">= 1.5"
 
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
+    oci = {
+      source  = "oracle/oci"
+      version = "~> 6.0"
     }
   }
 
-  # Remote state — S3 + DynamoDB locking
-  # Create these manually once before terraform init:
-  #   aws s3 mb s3://gnosis-terraform-state-<YOUR_ACCOUNT_ID> --region ap-south-1
-  #   aws dynamodb create-table --table-name gnosis-terraform-locks \
-  #     --attribute-definitions AttributeName=LockID,AttributeType=S \
-  #     --key-schema AttributeName=LockID,KeyType=HASH \
-  #     --billing-mode PAY_PER_REQUEST --region ap-south-1
-  backend "s3" {
-    bucket         = "gnosis-terraform-state"   # Change to your bucket name
-    key            = "prod/terraform.tfstate"
-    region         = "ap-south-1"
-    dynamodb_table = "gnosis-terraform-locks"
-    encrypt        = true
+  # Local state for initial setup.
+  # To migrate to OCI Object Storage later, uncomment the s3 backend below
+  # and run: terraform init -migrate-state
+  #
+  # backend "s3" {
+  #   bucket                      = "gnosis-tfstate"
+  #   key                         = "prod/terraform.tfstate"
+  #   region                      = "ap-mumbai-1"
+  #   endpoint                    = "https://bmr6dpc3ujz4.compat.objectstorage.ap-mumbai-1.oraclecloud.com"
+  #   skip_credentials_validation = true
+  #   skip_region_validation      = true
+  #   skip_metadata_api_check     = true
+  #   force_path_style            = true
+  # }
+
+  backend "local" {
+    path = "terraform.tfstate"
   }
 }
 
-provider "aws" {
-  region = var.aws_region
-
-  default_tags {
-    tags = {
-      Project     = var.project
-      Environment = "production"
-      ManagedBy   = "terraform"
-    }
-  }
+provider "oci" {
+  tenancy_ocid = var.tenancy_ocid
+  user_ocid    = var.user_ocid
+  fingerprint  = var.fingerprint
+  private_key  = var.private_key
+  region       = var.region
 }
 
-# ─── VPC ────────────────────────────────────────────────────────────
-module "vpc" {
-  source = "./modules/vpc"
+# ── Virtual Cloud Network ────────────────────────────────────────────
+module "vcn" {
+  source = "./modules/oci-vcn"
 
+  compartment_id       = var.compartment_ocid
   project              = var.project
-  vpc_cidr             = var.vpc_cidr
+  environment          = var.environment
+  vcn_cidr             = var.vcn_cidr
   public_subnet_cidrs  = var.public_subnet_cidrs
   private_subnet_cidrs = var.private_subnet_cidrs
-  availability_zones   = var.availability_zones
 }
 
-# ─── EKS ────────────────────────────────────────────────────────────
-module "eks" {
-  source = "./modules/eks"
+# ── OKE Kubernetes Cluster ───────────────────────────────────────────
+module "oke" {
+  source = "./modules/oci-oke"
 
+  compartment_id     = var.compartment_ocid
   project            = var.project
-  cluster_name       = var.cluster_name
-  vpc_id             = module.vpc.vpc_id
-  private_subnet_ids = module.vpc.private_subnet_ids
-  public_subnet_ids  = module.vpc.public_subnet_ids
-  node_instance_type = var.node_instance_type
-  node_min           = var.node_min
-  node_max           = var.node_max
-  node_desired       = var.node_desired
+  environment        = var.environment
+  vcn_id             = module.vcn.vcn_id
+  public_subnet_ids  = module.vcn.public_subnet_ids
+  private_subnet_ids = module.vcn.private_subnet_ids
+  node_shape         = var.node_shape
+  node_ocpus         = var.node_ocpus
+  node_memory_gb     = var.node_memory_gb
+  node_count         = var.node_count
+  ssh_public_key     = var.ssh_public_key
+
+  depends_on = [module.vcn]
 }
 
-# ─── ECR ────────────────────────────────────────────────────────────
-module "ecr" {
-  source = "./modules/ecr"
+# ── Container Registry (OCIR) ────────────────────────────────────────
+module "registry" {
+  source = "./modules/oci-registry"
 
-  repositories = var.gnosis_services
+  compartment_id    = var.compartment_ocid
+  project           = var.project
+  oci_region        = var.region
+  tenancy_namespace = var.tenancy_namespace
 }
 
-# ─── ArgoCD ─────────────────────────────────────────────────────────
-module "argocd" {
-  source = "./modules/argocd"
-
-  cluster_endpoint       = module.eks.cluster_endpoint
-  cluster_ca_certificate = module.eks.cluster_ca_certificate
-  cluster_name           = module.eks.cluster_name
-
-  depends_on = [module.eks]
-}
+# ── ArgoCD (install after cluster is ready) ──────────────────────────
+# Uncomment after `terraform apply` creates the OKE cluster and you
+# have run the kubeconfig command from outputs.
+#
+# module "argocd" {
+#   source = "./modules/argocd"
+#
+#   cluster_endpoint = module.oke.cluster_endpoint
+#   cluster_id       = module.oke.cluster_id
+#   region           = var.region
+#
+#   depends_on = [module.oke]
+# }

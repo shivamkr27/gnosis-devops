@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: progress-service
-          image: AWS_ACCOUNT_ID.dkr.ecr.ap-south-1.amazonaws.com/gnosis/progress-service:latest
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/progress-service:latest
           ports:
             - containerPort: 3003
           envFrom:
