@@ -19,9 +19,18 @@ spec:
         prometheus.io/port: "3005"
         prometheus.io/path: "/metrics"
     spec:
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
       containers:
         - name: battle-service
-          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/battle-service:latest
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/battle-service:v1.0.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 3005
           envFrom:
@@ -36,6 +45,17 @@ spec:
             limits:
               memory: "512Mi"
               cpu: "500m"
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+            runAsUser: 10001
+            capabilities:
+              drop:
+                - ALL
+          volumeMounts:
+            - name: tmp
+              mountPath: /tmp
           livenessProbe:
             httpGet:
               path: /health
@@ -48,3 +68,6 @@ spec:
               port: 3005
             initialDelaySeconds: 10
             periodSeconds: 5
+      volumes:
+        - name: tmp
+          emptyDir: {}

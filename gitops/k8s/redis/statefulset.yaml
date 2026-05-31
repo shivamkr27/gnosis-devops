@@ -14,15 +14,46 @@ spec:
       labels:
         app: redis
     spec:
-      containers:
-        - name: redis
+      automountServiceAccountToken: false
+      initContainers:
+        - name: fix-data-permissions
           image: redis:7-alpine
-          ports:
-            - containerPort: 6379
-          command: ["redis-server", "--appendonly", "yes"]
+          imagePullPolicy: Always
+          command: ["chown", "-R", "10001:10001", "/data"]
+          securityContext:
+            runAsUser: 0
+            runAsNonRoot: false
+            allowPrivilegeEscalation: false
           volumeMounts:
             - name: redis-data
               mountPath: /data
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: redis
+          image: redis:7-alpine
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 6379
+          command: ["redis-server", "--appendonly", "yes"]
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+            runAsUser: 10001
+            capabilities:
+              drop:
+                - ALL
+          volumeMounts:
+            - name: redis-data
+              mountPath: /data
+            - name: tmp
+              mountPath: /tmp
           resources:
             requests:
               memory: "64Mi"
@@ -30,6 +61,21 @@ spec:
             limits:
               memory: "256Mi"
               cpu: "200m"
+          livenessProbe:
+            exec:
+              command: ["redis-cli", "ping"]
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            failureThreshold: 3
+          readinessProbe:
+            exec:
+              command: ["redis-cli", "ping"]
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 3
+      volumes:
+        - name: tmp
+          emptyDir: {}
   volumeClaimTemplates:
     - metadata:
         name: redis-data
