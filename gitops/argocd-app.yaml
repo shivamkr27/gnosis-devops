@@ -11,6 +11,8 @@ spec:
     repoURL: https://github.com/shivamkr27/gnosis-devops
     targetRevision: main
     path: gitops/k8s
+    directory:
+      recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: gnosis
