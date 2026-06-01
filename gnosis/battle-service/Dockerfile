@@ -1,7 +1,10 @@
 FROM node:18-alpine
+WORKDIR /app/battle-service
+COPY battle-service/package*.json ./
+RUN npm install --production
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
+COPY common ./common
+COPY battle-service/. ./battle-service
+WORKDIR /app/battle-service
 EXPOSE 3005
-CMD ["npm", "start"]
+CMD ["node", "server.js"]

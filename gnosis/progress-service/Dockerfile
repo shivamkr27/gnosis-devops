@@ -1,7 +1,10 @@
 FROM node:18-alpine
+WORKDIR /app/progress-service
+COPY progress-service/package*.json ./
+RUN npm install --production
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
+COPY common ./common
+COPY progress-service/. ./progress-service
+WORKDIR /app/progress-service
 EXPOSE 3003
-CMD ["npm", "start"]
+CMD ["node", "server.js"]

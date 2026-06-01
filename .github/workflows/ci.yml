@@ -109,7 +109,8 @@ jobs:
       - name: Build Docker image (no push yet)
         uses: docker/build-push-action@v5
         with:
-          context: ./gnosis/${{ matrix.service }}
+          context: ./gnosis
+          file: ./gnosis/${{ matrix.service }}/Dockerfile
           push: false
           load: true
           tags: |
@@ -165,7 +166,8 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         uses: docker/build-push-action@v5
         with:
-          context: ./gnosis/${{ matrix.service }}
+          context: ./gnosis
+          file: ./gnosis/${{ matrix.service }}/Dockerfile
           push: true
           tags: |
             ${{ env.REGISTRY }}/${{ env.TENANCY_NAMESPACE }}/gnosis/${{ matrix.service }}:${{ env.IMAGE_TAG }}
