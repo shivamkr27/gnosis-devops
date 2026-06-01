@@ -14,7 +14,7 @@
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:
-  name: gnosis-no-privileged
+  name: gnosisnoprivileged
   annotations:
     description: "Blocks privileged containers in the gnosis namespace"
 spec:
@@ -64,7 +64,7 @@ spec:
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:
-  name: gnosis-require-limits
+  name: gnosisrequirelimits
   annotations:
     description: "All containers must define CPU and memory limits"
 spec:
@@ -132,7 +132,7 @@ spec:
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:
-  name: gnosis-no-root
+  name: gnosisnoroot
   annotations:
     description: "Containers must run as non-root user (uid != 0)"
 spec:
@@ -183,7 +183,7 @@ spec:
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:
-  name: gnosis-required-labels
+  name: gnosisrequiredlabels
   annotations:
     description: "Deployments must have required labels for monitoring and cost tracking"
 spec:
@@ -237,7 +237,7 @@ spec:
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:
-  name: gnosis-no-latest-tag
+  name: gnosisnolatesttag
   annotations:
     description: "Images must use a specific tag, not :latest"
 spec:

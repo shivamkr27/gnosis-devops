@@ -95,6 +95,7 @@ jobs:
           - battle-service
           - notification-service
           - frontend
+          - kira
 
     steps:
       - uses: actions/checkout@v4
