@@ -23,7 +23,7 @@ spec:
         - name: ocir-secret
       containers:
         - name: api-gateway
-          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/api-gateway:13edd53217c98bf3d70659ce525220399389545f
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/api-gateway:6a5ba555df71f6d8efa002c0cb4066b94e0d80bc
           ports:
             - containerPort: 3000
           envFrom:
