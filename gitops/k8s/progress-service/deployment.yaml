@@ -23,7 +23,7 @@ spec:
         - name: ocir-secret
       containers:
         - name: progress-service
-          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/progress-service:0c6b93d485159487b6ac6dec6cbf0fb36307846c
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/progress-service:fdee76dae53830d23a82443cf70a5a8fead6b4b5
           ports:
             - containerPort: 3003
           envFrom:
