@@ -23,7 +23,7 @@ spec:
         - name: ocir-secret
       containers:
         - name: content-service
-          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/content-service:latest
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/content-service:723fa5639d033ba9c488257b348375ed1a6b08fd
           ports:
             - containerPort: 3002
           envFrom:
