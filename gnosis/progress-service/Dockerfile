@@ -1,4 +1,6 @@
 FROM node:18-alpine
+WORKDIR /app
+RUN npm install prom-client --no-save
 WORKDIR /app/progress-service
 COPY progress-service/package*.json ./
 RUN npm install --production
