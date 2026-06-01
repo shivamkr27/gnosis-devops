@@ -16,10 +16,11 @@ spec:
         app: kira
     spec:
       serviceAccountName: kira
+      imagePullSecrets:
+        - name: ocir-secret
       containers:
         - name: kira
           image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/kira:latest
-          imagePullSecrets:
           ports:
             - containerPort: 8501
           env:
