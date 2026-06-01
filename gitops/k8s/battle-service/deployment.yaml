@@ -20,6 +20,8 @@ spec:
         prometheus.io/path: "/metrics"
     spec:
       automountServiceAccountToken: false
+      imagePullSecrets:
+        - name: ocir-secret
       securityContext:
         runAsNonRoot: true
         runAsUser: 10001

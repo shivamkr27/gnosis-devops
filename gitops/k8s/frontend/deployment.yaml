@@ -13,6 +13,8 @@ spec:
       labels:
         app: frontend
     spec:
+      imagePullSecrets:
+        - name: ocir-secret
       containers:
         - name: frontend
           image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/frontend:latest

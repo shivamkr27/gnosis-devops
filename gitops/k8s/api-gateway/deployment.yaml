@@ -19,6 +19,8 @@ spec:
         prometheus.io/port: "3000"
         prometheus.io/path: "/metrics"
     spec:
+      imagePullSecrets:
+        - name: ocir-secret
       containers:
         - name: api-gateway
           image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/api-gateway:latest
