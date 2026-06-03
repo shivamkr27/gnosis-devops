@@ -5,7 +5,7 @@ const db = require('../db');
 
 const router = express.Router();
 
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'ashutoshshankar74@gmail.com';
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'shivamkumarbxr8@gmail.com';
 const SMTP_USER   = process.env.SMTP_USER;
 const SMTP_PASS   = process.env.SMTP_PASS;
 const SITE_URL    = process.env.SITE_URL || 'http://80.225.228.31';
