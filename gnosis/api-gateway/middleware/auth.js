@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 
 const authenticateToken = (req, res, next) => {
   const skipRoutes = [
+    { path: '/', method: 'GET' },
     { path: '/auth/login', method: 'POST' },
     { path: '/auth/register', method: 'POST' },
     { path: '/auth/forgot-password-step1', method: 'POST' },

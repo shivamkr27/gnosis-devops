@@ -7,37 +7,26 @@ const setupCron = require('./cron/weeklyReset');
 
 const app = express();
 const PORT = process.env.PORT || 3004;
-const REDIS_HOST = process.env.REDIS_HOST || 'redis';
-const REDIS_PORT = Number(process.env.REDIS_PORT || 6379);
-const REDIS_URL = process.env.REDIS_URL || `redis://${REDIS_HOST}:${REDIS_PORT}`;
+// Use REDIS_URL directly — K8s injects REDIS_PORT=tcp://IP:PORT (service discovery)
+// which breaks Number() parsing. REDIS_URL from gnosis-secrets is authoritative.
+const REDIS_URL = process.env.REDIS_URL || 'redis://redis:6379';
 const { metricsMiddleware, metricsHandler } = createMetrics('xp_service');
 
 app.use(cors());
 app.use(express.json());
 app.use(metricsMiddleware);
 
-// Health endpoint
 app.get('/health', (req, res) => {
   res.json({ status: "ok", service: "xp-service" });
 });
 
 app.get('/metrics', metricsHandler);
 
-// Setup Redis
-console.log({
-  REDIS_HOST: process.env.REDIS_HOST,
-  REDIS_PORT: process.env.REDIS_PORT,
-  REDIS_URL: process.env.REDIS_URL,
-});
-console.log(`[xp-service] Redis host: ${REDIS_HOST}`);
-console.log(`[xp-service] Redis port: ${REDIS_PORT}`);
 console.log(`[xp-service] Redis URL: ${REDIS_URL}`);
 
 const redisClient = createClient({
   url: REDIS_URL,
   socket: {
-    host: REDIS_HOST,
-    port: REDIS_PORT,
     reconnectStrategy: (retries) => {
       const delay = Math.min(retries * 100, 3000);
       console.log(`[xp-service] Redis reconnect attempt ${retries} in ${delay}ms`);

@@ -13,20 +13,12 @@ const io = new Server(server, {
 });
 
 const PORT = process.env.PORT || 3006;
-const REDIS_HOST = process.env.REDIS_HOST || 'redis';
-const REDIS_PORT = Number(process.env.REDIS_PORT || 6379);
-const REDIS_URL = process.env.REDIS_URL || `redis://${REDIS_HOST}:${REDIS_PORT}`;
+const REDIS_URL = process.env.REDIS_URL || 'redis://redis:6379';
 const { metricsMiddleware, metricsHandler } = createMetrics('notification_service');
 
 app.use(cors());
 app.use(express.json());
 app.use(metricsMiddleware);
-
-// Request logger
-app.use((req, res, next) => {
-  console.log(`[Notification API] ${req.method} ${req.url}`);
-  next();
-});
 
 app.get('/health', (req, res) => {
   res.json({ status: "ok", service: "notification-service" });
@@ -34,20 +26,11 @@ app.get('/health', (req, res) => {
 
 app.get('/metrics', metricsHandler);
 
-console.log({
-  REDIS_HOST: process.env.REDIS_HOST,
-  REDIS_PORT: process.env.REDIS_PORT,
-  REDIS_URL: process.env.REDIS_URL,
-});
-console.log(`[notification-service] Redis host: ${REDIS_HOST}`);
-console.log(`[notification-service] Redis port: ${REDIS_PORT}`);
 console.log(`[notification-service] Redis URL: ${REDIS_URL}`);
 
 const redisClient = createClient({
   url: REDIS_URL,
   socket: {
-    host: REDIS_HOST,
-    port: REDIS_PORT,
     reconnectStrategy: (retries) => {
       const delay = Math.min(retries * 100, 3000);
       console.log(`[notification-service] Redis reconnect attempt ${retries} in ${delay}ms`);
