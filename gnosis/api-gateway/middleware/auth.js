@@ -4,6 +4,8 @@ const authenticateToken = (req, res, next) => {
   const skipRoutes = [
     { path: '/auth/login', method: 'POST' },
     { path: '/auth/register', method: 'POST' },
+    { path: '/auth/forgot-password-step1', method: 'POST' },
+    { path: '/auth/forgot-password-step2', method: 'POST' },
     { path: '/health', method: 'GET' },
     { path: '/metrics', method: 'GET' }
   ];

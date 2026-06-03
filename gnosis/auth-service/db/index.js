@@ -14,7 +14,7 @@ async function initDb() {
     await pool.query('SELECT 1');
     console.log('Connected to PostgreSQL');
 
-    const createStatements = `
+    await pool.query(`
       CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
       CREATE TABLE IF NOT EXISTS users (
@@ -25,6 +25,16 @@ async function initDb() {
         total_xp INT DEFAULT 0,
         streak_count INT DEFAULT 0,
         last_active_date DATE,
+        battle_wins INT DEFAULT 0,
+        battle_losses INT DEFAULT 0,
+        created_at TIMESTAMP DEFAULT NOW()
+      );
+
+      CREATE TABLE IF NOT EXISTS security_questions (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        user_id UUID UNIQUE REFERENCES users(id) ON DELETE CASCADE,
+        question TEXT NOT NULL,
+        answer_hash TEXT NOT NULL,
         created_at TIMESTAMP DEFAULT NOW()
       );
 
@@ -36,16 +46,11 @@ async function initDb() {
         created_at TIMESTAMP DEFAULT NOW(),
         UNIQUE(requester_id, receiver_id)
       );
-    `;
-
-    await pool.query(createStatements);
+    `);
   } catch (error) {
     console.error('PostgreSQL connection or initialization failed:', error);
     throw error;
   }
 }
 
-module.exports = {
-  pool,
-  initDb,
-};
+module.exports = { pool, initDb };
