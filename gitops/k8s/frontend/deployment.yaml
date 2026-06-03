@@ -25,7 +25,7 @@ spec:
           type: RuntimeDefault
       containers:
         - name: frontend
-          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/frontend:05bd95b00e3ea713e1859b7c0a75b527452d305a
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/frontend:47ca5d2b29cfcc4d82c7d5e5d98f7c13d755aac7
           ports:
             - containerPort: 8080
           resources:
