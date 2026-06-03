@@ -15,13 +15,10 @@ spec:
         app: postgres
     spec:
       automountServiceAccountToken: false
-      securityContext:
-        runAsNonRoot: true
-        runAsUser: 999
-        runAsGroup: 999
-        fsGroup: 999
-        seccompProfile:
-          type: RuntimeDefault
+      # securityContext omitted — postgres:15-alpine entrypoint uses su-exec to switch
+      # to the internal postgres user (UID 70). Forcing a non-root UID without an init
+      # container to chown the existing PVC data causes FATAL: wrong ownership.
+      # TODO: add initContainer chown + runAsUser:70 after a scheduled maintenance window.
       containers:
         - name: postgres
           image: postgres:15-alpine
@@ -29,11 +26,6 @@ spec:
             - containerPort: 5432
           securityContext:
             allowPrivilegeEscalation: false
-            runAsNonRoot: true
-            runAsUser: 999
-            capabilities:
-              drop:
-                - ALL
           env:
             - name: POSTGRES_USER
               valueFrom:
