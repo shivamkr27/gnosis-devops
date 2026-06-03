@@ -33,7 +33,8 @@ import streamlit as st
 import requests
 import pandas as pd
 import plotly.graph_objects as go
-import google.generativeai as genai
+from google import genai
+from google.genai import errors, types
 
 # kubernetes client — works both locally and in-cluster
 try:
@@ -91,9 +92,60 @@ PROMETHEUS_URL = os.getenv("PROMETHEUS_URL", "http://prometheus-kube-prometheus-
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 NAMESPACE = os.getenv("GNOSIS_NAMESPACE", "gnosis")
 AUTO_SCAN_INTERVAL = int(os.getenv("AUTO_SCAN_INTERVAL", "30"))  # seconds
+GEMINI_MODEL_CANDIDATES = ("gemini-2.5-flash", "gemini-2.0-flash")
+GEMINI_CLIENT = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
 
-if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
+
+def _gemini_error_message(exc: Exception, model_name: Optional[str] = None) -> str:
+    code = getattr(exc, "code", None)
+    message = getattr(exc, "message", str(exc))
+    lowered = message.lower()
+
+    if code in (401, 403) or "api key" in lowered or "authentication" in lowered or "permission denied" in lowered:
+        return "❌ Gemini authentication failed. Check that GEMINI_API_KEY is set correctly and has Gemini access."
+
+    if code == 429 or "quota" in lowered or "rate limit" in lowered:
+        return "❌ Gemini quota exceeded or rate limited. Retry later or use a different key/project."
+
+    if code in (400, 404) and (model_name is None or "model" in lowered or "not found" in lowered or "unavailable" in lowered):
+        if model_name:
+            return f"⚠️ Gemini model {model_name} is unavailable in this project. Falling back to the next supported model."
+        return "⚠️ Gemini model is unavailable in this project."
+
+    return f"❌ Gemini API error: {message}"
+
+
+def _generate_gemini_diagnosis(context: str) -> str:
+    if GEMINI_CLIENT is None:
+        return "⚠️ GEMINI_API_KEY not set. Add it to your environment or K8s secret."
+
+    last_error: Optional[Exception] = None
+    for model_name in GEMINI_MODEL_CANDIDATES:
+        try:
+            response = GEMINI_CLIENT.models.generate_content(
+                model=model_name,
+                contents=context,
+                config=types.GenerateContentConfig(
+                    temperature=0.2,
+                    max_output_tokens=1500,
+                ),
+            )
+            if getattr(response, "text", None):
+                return response.text
+            return "⚠️ Gemini returned an empty diagnosis."
+        except errors.APIError as exc:
+            last_error = exc
+            code = getattr(exc, "code", None)
+            message = _gemini_error_message(exc, model_name)
+            if model_name != GEMINI_MODEL_CANDIDATES[-1] and code in (400, 404):
+                lowered = message.lower()
+                if "unavailable" in lowered or "not found" in lowered or "model" in lowered:
+                    continue
+            return message
+        except Exception as exc:
+            return f"❌ Unexpected Gemini client error: {exc}"
+
+    return _gemini_error_message(last_error, GEMINI_MODEL_CANDIDATES[-1]) if last_error else "❌ Gemini API error: unknown failure"
 
 # ─── Session state init ──────────────────────────────────────────────
 if "incident_history" not in st.session_state:
@@ -329,9 +381,6 @@ def detect_anomalies(pods: list, metrics: dict) -> list[dict]:
 
 def diagnose_with_kira(incident: str, pods: list, metrics: dict, alerts: list) -> str:
     """Send rich context to Gemini Flash for structured diagnosis."""
-    if not GEMINI_API_KEY:
-        return "⚠️ GEMINI_API_KEY not set. Add it to your environment or K8s secret."
-
     # Summarise metrics into readable form for the LLM
     def fmt_metric(items, key="container", unit=""):
         return [
@@ -397,15 +446,7 @@ Respond ONLY in this exact structure (use the headers exactly):
 [High/Medium/Low with brief reasoning]
 """
 
-    try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
-        response = model.generate_content(
-            context,
-            generation_config={"temperature": 0.2, "max_output_tokens": 1500},
-        )
-        return response.text
-    except Exception as e:
-        return f"❌ Gemini API error: {str(e)}"
+    return _generate_gemini_diagnosis(context)
 
 
 # ─── Charts ──────────────────────────────────────────────────────────
@@ -658,9 +699,12 @@ with col_right:
                 "diagnosis": diagnosis,
             })
 
-            st.markdown('<div class="diagnosis-box">', unsafe_allow_html=True)
-            st.markdown(diagnosis)
-            st.markdown('</div>', unsafe_allow_html=True)
+            if diagnosis.startswith(("❌", "⚠️")):
+                st.error(diagnosis)
+            else:
+                st.markdown('<div class="diagnosis-box">', unsafe_allow_html=True)
+                st.markdown(diagnosis)
+                st.markdown('</div>', unsafe_allow_html=True)
 
             # Export
             report = (
@@ -706,7 +750,8 @@ import subprocess
 import json
 import os
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
+from google.genai import errors, types
 
 # ─── Config ──────────────────────────────────────────────────────────
 st.set_page_config(
@@ -718,9 +763,6 @@ st.set_page_config(
 PROMETHEUS_URL = os.getenv("PROMETHEUS_URL", "http://localhost:9090")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 NAMESPACE = "gnosis"
-
-if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
 
 # ─── Data Fetchers ────────────────────────────────────────────────────
 def get_pod_health():
@@ -786,9 +828,6 @@ def get_prometheus_metrics():
 
 def diagnose_with_kira(incident_description, pod_health, metrics):
     """Send context to Gemini Flash for diagnosis"""
-    if not GEMINI_API_KEY:
-        return "⚠️ GEMINI_API_KEY not set. Please add it to your environment."
-
     context = f"""
 You are Kira, an expert AIOps assistant for Gnosis — a gamified learning platform running on Kubernetes.
 
@@ -821,12 +860,7 @@ Analyze the incident and provide:
 Be specific, actionable, and concise.
 """
 
-    try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
-        response = model.generate_content(context)
-        return response.text
-    except Exception as e:
-        return f"Gemini API error: {str(e)}"
+    return _generate_gemini_diagnosis(context)
 
 
 # ─── UI ───────────────────────────────────────────────────────────────
@@ -906,7 +940,10 @@ with col2:
             diagnosis = diagnose_with_kira(incident, pod_data, metric_data)
 
         st.markdown("### 🔬 Kira's Diagnosis")
-        st.markdown(diagnosis)
+        if diagnosis.startswith(("❌", "⚠️")):
+            st.error(diagnosis)
+        else:
+            st.markdown(diagnosis)
 
         st.download_button(
             "📥 Export Report",

@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kira
+  namespace: kira
+  labels:
+    app: kira
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kira
+  template:
+    metadata:
+      labels:
+        app: kira
+    spec:
+      serviceAccountName: kira
+      imagePullSecrets:
+        - name: ocir-secret
+      containers:
+        - name: kira
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/kira:latest
+          ports:
+            - containerPort: 8501
+          env:
+            - name: GEMINI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: kira-secrets
+                  key: GEMINI_API_KEY
+            - name: PROMETHEUS_URL
+              value: "http://kube-prometheus-stack-prometheus.monitoring.svc.cluster.local:9090"
+            - name: GNOSIS_NAMESPACE
+              value: gnosis
+            - name: AUTO_SCAN_INTERVAL
+              value: "30"
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"

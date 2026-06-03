@@ -210,7 +210,7 @@ jobs:
           REGISTRY="${{ env.REGISTRY }}/${{ env.TENANCY_NAMESPACE }}"
 
           for SERVICE in api-gateway auth-service content-service progress-service \
-                         xp-service battle-service notification-service frontend; do
+                         xp-service battle-service notification-service frontend kira; do
             MANIFEST="gitops/k8s/${SERVICE}/deployment.yaml"
             if [ -f "$MANIFEST" ]; then
               sed -i "s|${REGISTRY}/gnosis/${SERVICE}:.*|${REGISTRY}/gnosis/${SERVICE}:${NEW_TAG}|g" "$MANIFEST"
