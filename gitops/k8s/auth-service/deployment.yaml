@@ -23,7 +23,7 @@ spec:
         - name: ocir-secret
       containers:
         - name: auth-service
-          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/auth-service:d03d6aa3a8ec2dea615a7542dc507bfa689b6383
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/auth-service:6477b17b4da3e574feb128d0c52c095da5b31d8b
           ports:
             - containerPort: 3001
           envFrom:
