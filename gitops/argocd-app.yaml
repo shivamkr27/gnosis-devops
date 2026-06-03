@@ -23,3 +23,14 @@ spec:
     syncOptions:
       - CreateNamespace=true
       - ApplyOutOfSyncOnly=true
+  # Ignore Secret data fields — real values are applied manually via kubectl,
+  # not from this template. This prevents ArgoCD from overwriting live secrets
+  # with placeholder values while still keeping the resource tracked (no prune).
+  ignoreDifferences:
+    - group: ""
+      kind: Secret
+      name: gnosis-secrets
+      namespace: gnosis
+      jqPathExpressions:
+        - '.data'
+        - '.stringData'

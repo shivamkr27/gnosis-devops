@@ -11,6 +11,6 @@ __pycache__/
 .streamlit/
 node_modules/
 
-# Secrets with real values — create manually via kubectl or Sealed Secrets
-# Template: gitops/k8s/secrets.yaml.example
-gitops/k8s/secrets.yaml
+# secrets.yaml is tracked in git as a template (placeholder values only).
+# ArgoCD ignoreDifferences is configured to never overwrite live secret data.
+# To apply real secrets: kubectl create secret generic gnosis-secrets ... -n gnosis
