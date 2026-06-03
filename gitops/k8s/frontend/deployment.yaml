@@ -17,7 +17,7 @@ spec:
         - name: ocir-secret
       containers:
         - name: frontend
-          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/frontend:e6dcac2ced20b28cba9e57198c4089352b64fbed
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/frontend:d03d6aa3a8ec2dea615a7542dc507bfa689b6383
           ports:
             - containerPort: 80
           resources:
