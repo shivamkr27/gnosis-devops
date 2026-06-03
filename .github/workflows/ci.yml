@@ -197,8 +197,11 @@ jobs:
           cache-from: type=gha
 
       # Cosign — sign the pushed image (supply chain security)
+      # continue-on-error: OCIR referrers API support is inconsistent — signing
+      # is best-effort; failures must not block deployment.
       - name: Sign image with Cosign
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        continue-on-error: true
         env:
           COSIGN_EXPERIMENTAL: "true"
         run: |

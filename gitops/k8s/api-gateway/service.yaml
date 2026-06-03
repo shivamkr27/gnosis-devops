@@ -8,7 +8,7 @@ metadata:
     project: gnosis
     monitoring: enabled
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: api-gateway
   ports:
