@@ -20,3 +20,5 @@ data:
   VITE_API_URL: /api
   VITE_SOCKET_URL: ""
   ALLOWED_ORIGINS: "http://80.225.228.31,http://localhost:3000,http://localhost:5173"
+  SITE_URL: "http://80.225.228.31"
+  ADMIN_EMAIL: "ashutoshshankar74@gmail.com"

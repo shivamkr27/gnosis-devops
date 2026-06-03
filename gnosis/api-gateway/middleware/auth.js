@@ -7,13 +7,21 @@ const authenticateToken = (req, res, next) => {
     { path: '/auth/register', method: 'POST' },
     { path: '/auth/forgot-password-step1', method: 'POST' },
     { path: '/auth/forgot-password-step2', method: 'POST' },
+    { path: '/content/reviews', method: 'POST' },
+    { path: '/content/reviews/approved', method: 'GET' },
     { path: '/health', method: 'GET' },
     { path: '/metrics', method: 'GET' }
   ];
 
-  const shouldSkip = skipRoutes.some(
-    r => req.path === r.path && req.method === r.method
-  );
+  // Prefix-based skip for dynamic token paths
+  const skipPrefixes = [
+    { prefix: '/content/reviews/approve/', method: 'GET' },
+    { prefix: '/content/reviews/reject/',  method: 'GET' },
+  ];
+
+  const shouldSkip =
+    skipRoutes.some(r => req.path === r.path && req.method === r.method) ||
+    skipPrefixes.some(r => req.method === r.method && req.path.startsWith(r.prefix));
 
   if (shouldSkip) {
     return next();

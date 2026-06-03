@@ -83,6 +83,19 @@ END
 $$;
     `);
 
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS reviews (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        reviewer_name VARCHAR(100) NOT NULL,
+        review_text TEXT NOT NULL,
+        rating INT DEFAULT 5 CHECK (rating BETWEEN 1 AND 5),
+        status VARCHAR(20) DEFAULT 'pending' CHECK (status IN ('pending','approved','rejected')),
+        approve_token VARCHAR(64) UNIQUE NOT NULL,
+        reject_token  VARCHAR(64) UNIQUE NOT NULL,
+        created_at TIMESTAMP DEFAULT NOW()
+      )
+    `);
+
   } catch(e) {
     console.error('Migration failed or constraint already exists', e);
   } finally {

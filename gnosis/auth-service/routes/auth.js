@@ -129,11 +129,11 @@ router.post('/forgot-password-step1', async (req, res) => {
     );
 
     if (result.rows.length === 0) {
-      // Vague response to avoid user enumeration
       return res.status(404).json({ error: 'no account found with that email, or no security question set' });
     }
 
-    return res.json({ question: result.rows[0].question });
+    // frontend reads res.data.securityQuestion
+    return res.json({ securityQuestion: result.rows[0].question });
   } catch (error) {
     console.error('Forgot step1 error:', error);
     return res.status(500).json({ error: 'internal server error' });
