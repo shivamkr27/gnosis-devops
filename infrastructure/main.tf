@@ -58,24 +58,19 @@ module "oke" {
   vcn_id             = module.vcn.vcn_id
   public_subnet_ids  = module.vcn.public_subnet_ids
   private_subnet_ids = module.vcn.private_subnet_ids
-  node_shape         = var.node_shape
-  node_ocpus         = var.node_ocpus
-  node_memory_gb     = var.node_memory_gb
-  node_count         = var.node_count
-  ssh_public_key     = var.ssh_public_key
-
   depends_on = [module.vcn]
 }
 
 # ── Container Registry (OCIR) ────────────────────────────────────────
-module "registry" {
-  source = "./modules/oci-registry"
-
-  compartment_id    = var.compartment_ocid
-  project           = var.project
-  oci_region        = var.region
-  tenancy_namespace = var.tenancy_namespace
-}
+# Repos are auto-created by CI pipeline on first image push.
+# No need for Terraform to manage them — avoids 409 conflicts.
+# module "registry" {
+#   source = "./modules/oci-registry"
+#   compartment_id    = var.compartment_ocid
+#   project           = var.project
+#   oci_region        = var.region
+#   tenancy_namespace = var.tenancy_namespace
+# }
 
 # ── ArgoCD (install after cluster is ready) ──────────────────────────
 # Uncomment after `terraform apply` creates the OKE cluster and you

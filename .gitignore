@@ -10,3 +10,7 @@
 __pycache__/
 .streamlit/
 node_modules/
+
+# Secrets with real values — create manually via kubectl or Sealed Secrets
+# Template: gitops/k8s/secrets.yaml.example
+gitops/k8s/secrets.yaml

@@ -7,6 +7,8 @@ RUN npm install --production
 WORKDIR /app
 COPY common ./common
 COPY notification-service/. ./notification-service
+RUN chown -R node:node /app
 WORKDIR /app/notification-service
+USER node
 EXPOSE 3006
 CMD ["node", "server.js"]

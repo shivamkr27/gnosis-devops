@@ -19,8 +19,16 @@ spec:
         prometheus.io/port: "3003"
         prometheus.io/path: "/metrics"
     spec:
+      automountServiceAccountToken: false
       imagePullSecrets:
         - name: ocir-secret
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
       containers:
         - name: progress-service
           image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/progress-service:6477b17b4da3e574feb128d0c52c095da5b31d8b
@@ -38,6 +46,17 @@ spec:
             limits:
               memory: "512Mi"
               cpu: "500m"
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+            runAsUser: 10001
+            capabilities:
+              drop:
+                - ALL
+          volumeMounts:
+            - name: tmp
+              mountPath: /tmp
           livenessProbe:
             httpGet:
               path: /health
@@ -50,3 +69,6 @@ spec:
               port: 3003
             initialDelaySeconds: 10
             periodSeconds: 5
+      volumes:
+        - name: tmp
+          emptyDir: {}

@@ -7,6 +7,8 @@ RUN npm install --production
 WORKDIR /app
 COPY common ./common
 COPY xp-service/. ./xp-service
+RUN chown -R node:node /app
 WORKDIR /app/xp-service
+USER node
 EXPOSE 3004
 CMD ["node", "server.js"]

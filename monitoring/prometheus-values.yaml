@@ -1,7 +1,8 @@
 grafana:
   adminPassword: "gnosis-grafana-2025"  # Change before deploy
   persistence:
-    enabled: false  # Disabled for cost saving — re-enable for production
+    enabled: true   # Persists manually-created dashboards across pod restarts
+    size: 1Gi
 
   dashboardProviders:
     dashboardproviders.yaml:
@@ -12,20 +13,22 @@ grafana:
           folder: Gnosis
           type: file
           disableDeletion: false
+          editable: true
           options:
             path: /var/lib/grafana/dashboards/gnosis
 
-  dashboards:
-    gnosis:
-      gnosis-overview:
-        json: |
-          {
-            "title": "Gnosis Overview",
-            "panels": []
-          }
+  # Load gnosis-dashboard.json from monitoring/grafana/ via a ConfigMap.
+  # Apply before Helm install:
+  #   kubectl create configmap gnosis-grafana-dashboards \
+  #     --from-file=gnosis-dashboard.json=monitoring/grafana/gnosis-dashboard.json \
+  #     -n monitoring
+  dashboardsConfigMaps:
+    gnosis: gnosis-grafana-dashboards
 
 prometheus:
   prometheusSpec:
+    # 7d retention is intentional — OCI free-tier OKE has limited PVC storage (5Gi).
+    # Production recommendation: 30d+ with remote_write to OCI Object Storage or Thanos.
     retention: 7d
     storageSpec:
       volumeClaimTemplate:

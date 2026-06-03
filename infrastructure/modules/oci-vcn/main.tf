@@ -98,6 +98,33 @@ resource "oci_core_security_list" "public" {
       max = 443
     }
   }
+  # Kubernetes API server
+  ingress_security_rules {
+    protocol = "6"
+    source   = "0.0.0.0/0"
+    tcp_options {
+      min = 6443
+      max = 6443
+    }
+  }
+  # OKE node registration tunnel
+  ingress_security_rules {
+    protocol = "6"
+    source   = "0.0.0.0/0"
+    tcp_options {
+      min = 12250
+      max = 12250
+    }
+  }
+  # ICMP for path MTU discovery
+  ingress_security_rules {
+    protocol = "1"
+    source   = "0.0.0.0/0"
+    icmp_options {
+      type = 3
+      code = 4
+    }
+  }
 }
 
 # ── Security list: private subnet (nodes) ───────────────────────────

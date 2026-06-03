@@ -19,3 +19,5 @@ data:
   NOTIFICATION_SERVICE_URL: http://notification-service:3006
   VITE_API_URL: /api
   VITE_SOCKET_URL: ""
+  # Replace with your actual domain — comma-separated for multiple origins
+  ALLOWED_ORIGINS: "http://localhost:3000,http://localhost:5173"
