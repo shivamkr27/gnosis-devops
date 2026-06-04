@@ -31,7 +31,7 @@ spec:
           type: RuntimeDefault
       containers:
         - name: notification-service
-          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/notification-service:47ca5d2b29cfcc4d82c7d5e5d98f7c13d755aac7
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/notification-service:ab6456dba83cee6cf9ffbd52e0eed8fc6a063eed
           ports:
             - containerPort: 3006
           envFrom:
