@@ -71,7 +71,7 @@ export default function ParticipantLobby() {
   // Countdown timer logic
   useEffect(() => {
     if (!question || timeLeft <= 0) return;
-    
+
     const timer = setInterval(() => {
       setTimeLeft(prev => {
         if (prev <= 1) {
@@ -84,6 +84,17 @@ export default function ParticipantLobby() {
 
     return () => clearInterval(timer);
   }, [question, timeLeft]);
+
+  // Auto-submit empty answer when timer hits 0 without a selection
+  useEffect(() => {
+    if (timeLeft !== 0 || !question || selected !== null) return;
+    setSelected("__timeout__");
+    socket?.emit("quiz:answer", {
+      roomCode: code,
+      questionId: question.id,
+      selectedOptions: [],
+    });
+  }, [timeLeft, question, selected, socket, code]);
 
   useEffect(() => {
     if (!socket || !user?.id) return undefined;

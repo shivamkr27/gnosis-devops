@@ -504,7 +504,9 @@ export default function BattleLobby() {
                               {is1v1 ? `${resultVerb} "${other?.username || 'Opponent'}"` : `${resultVerb} ${b.subject_name || 'Quiz'}`}
                             </p>
                             <p className="text-[10px] font-black text-[#8a8a8a] uppercase tracking-widest">
-                              {new Date(b.created_at).toLocaleDateString()} • {is1v1 ? '1v1 Battle' : `${b.participants?.length || 0} Players`}
+                              {new Date(b.created_at).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}
+                              {b.subject_name ? ` • ${b.subject_name}` : ''}
+                              {' • '}{is1v1 ? '1v1 Duel' : `Group · ${b.participants?.length || 0} Players`}
                             </p>
                           </div>
                           <div className="text-right">

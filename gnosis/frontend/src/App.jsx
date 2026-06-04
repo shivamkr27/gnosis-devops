@@ -102,9 +102,15 @@ function App() {
           return;
         }
 
-        // Any non-401 error after retry resolves auth deterministically.
-        setUser(null);
-        setAuthStatus("unauthenticated");
+        // Non-401 error (network, 429, timeout) after retries — never force-logout.
+        // If we already have user data keep it; if not, hold in checking so the
+        // user isn't kicked out due to a transient server issue.
+        const existingUser = useAuthStore.getState().user;
+        if (existingUser) {
+          setAuthStatus("authenticated");
+        }
+        // If no user yet, authStatus stays "checking" — ProtectedRoute shows
+        // a spinner rather than redirecting to /auth.
       } finally {
         clearTimeout(timeoutId);
       }
