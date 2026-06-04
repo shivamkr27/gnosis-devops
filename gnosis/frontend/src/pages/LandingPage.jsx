@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useSearchParams } from "react-router-dom";
 import { useAuthStore } from "../lib/store";
 import { motion, AnimatePresence } from "framer-motion";
 import { Zap, Bell, User, Map, Swords, Trophy, Star, X, ChevronRight } from "lucide-react";
@@ -40,13 +40,49 @@ function ReviewCard({ review, size = "normal" }) {
 
 // ── ReviewForm modal ─────────────────────────────────────────────────
 function ReviewFormModal({ onClose }) {
-  const [name, setName]     = useState("");
+  const { token, user } = useAuthStore();
+  const [name, setName]     = useState(user?.username || "");
   const [text, setText]     = useState("");
   const [rating, setRating] = useState(5);
   const [hover, setHover]   = useState(0);
   const [loading, setLoading] = useState(false);
   const [done, setDone]     = useState(false);
   const [error, setError]   = useState("");
+
+  // Not logged in — show gate
+  if (!token) {
+    return (
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4"
+        onClick={e => e.target === e.currentTarget && onClose()}
+      >
+        <motion.div
+          initial={{ opacity: 0, scale: 0.92, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.92, y: 20 }}
+          className="bg-white rounded-2xl shadow-xl max-w-sm w-full p-8 relative text-center"
+        >
+          <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+            <X className="w-5 h-5" />
+          </button>
+          <div className="w-16 h-16 bg-brand-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Star className="w-8 h-8 text-brand-accent" />
+          </div>
+          <h3 className="text-xl font-bold text-brand-text mb-2">Login First</h3>
+          <p className="text-brand-muted text-sm mb-6">
+            Use Gnosis, experience it, then share your review. Only our learners can review!
+          </p>
+          <Link
+            to="/auth"
+            onClick={onClose}
+            className="block w-full py-3 rounded-lg bg-brand-accent text-white font-bold text-sm hover:opacity-90 transition-opacity"
+          >
+            Login / Sign Up
+          </Link>
+        </motion.div>
+      </div>
+    );
+  }
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -135,17 +171,21 @@ function ReviewFormModal({ onClose }) {
               </div>
             </div>
 
-            {/* Name */}
+            {/* Name — pre-filled + locked when logged in */}
             <div className="flex flex-col gap-1.5">
-              <label className="text-sm font-semibold text-brand-text">Your Name</label>
+              <label className="text-sm font-semibold text-brand-text">
+                Your Name {user?.username && <span className="text-xs font-normal text-gray-400">(from your account)</span>}
+              </label>
               <input
                 type="text"
                 value={name}
-                onChange={e => setName(e.target.value)}
+                onChange={e => !user?.username && setName(e.target.value)}
+                readOnly={!!user?.username}
                 placeholder="e.g. Rahul S."
                 maxLength={60}
-                className="border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-brand-text placeholder-gray-400
-                           focus:outline-none focus:ring-2 focus:ring-brand-primary/30 focus:border-brand-primary"
+                className={`border rounded-lg px-4 py-2.5 text-sm text-brand-text placeholder-gray-400
+                           focus:outline-none focus:ring-2 focus:ring-brand-primary/30 focus:border-brand-primary
+                           ${user?.username ? 'bg-gray-50 border-gray-100 cursor-default' : 'border-gray-200'}`}
               />
             </div>
 
@@ -183,12 +223,22 @@ function ReviewFormModal({ onClose }) {
 // ── Main Page ────────────────────────────────────────────────────────
 export default function LandingPage() {
   const { token } = useAuthStore();
+  const [searchParams] = useSearchParams();
+  const reviewMode = searchParams.get("review") === "1";
+
   const [reviews, setReviews]   = useState([]);
   const [current, setCurrent]   = useState(0);
   const [showForm, setShowForm] = useState(false);
   const [direction, setDirection] = useState(1);
 
-  if (token) return <Navigate to="/home" />;
+  // Logged-in user visiting normally → redirect to home
+  // But if ?review=1 → stay here and auto-open review form
+  if (token && !reviewMode) return <Navigate to="/home" />;
+
+  // Auto-open form when ?review=1
+  useEffect(() => {
+    if (reviewMode) setShowForm(true);
+  }, [reviewMode]);
 
   // Fetch approved reviews
   useEffect(() => {

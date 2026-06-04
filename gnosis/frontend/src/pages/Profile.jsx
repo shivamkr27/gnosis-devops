@@ -126,12 +126,20 @@ export default function Profile() {
         <div className="flex items-center justify-between mb-8">
             <h1 className="text-2xl font-black text-[#2F2C28] capitalize">My Profile</h1>
             {(!id || id === user?.id) && (
-              <button
-                onClick={() => { logout(); navigate("/"); }}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-red-500 border border-red-100 hover:bg-red-50 transition-colors"
-              >
-                <LogOut size={16} /> Logout
-              </button>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={() => navigate("/?review=1")}
+                  className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-[#D57B1E] border border-[#F0C090] hover:bg-[#FFF4E5] transition-colors"
+                >
+                  <Star size={15} className="fill-[#D57B1E]" /> Leave a Review
+                </button>
+                <button
+                  onClick={() => { logout(); navigate("/"); }}
+                  className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-red-500 border border-red-100 hover:bg-red-50 transition-colors"
+                >
+                  <LogOut size={16} /> Logout
+                </button>
+              </div>
             )}
         </div>
 
