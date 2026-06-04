@@ -36,7 +36,7 @@ export default function ParticipantLobby() {
   const [selected, setSelected] = useState(null);
   const [answerResult, setAnswerResult] = useState(null);
   const [results, setResults] = useState(null);
-  const [timeLeft, setTimeLeft] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(-1);
   const [waitingForOpponent, setWaitingForOpponent] = useState(false);
   const [opponentTimeLeft, setOpponentTimeLeft] = useState(0);
   const [opponentName, setOpponentName] = useState("");

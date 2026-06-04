@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { Link, Navigate, useSearchParams } from "react-router-dom";
+import { Link, Navigate, useSearchParams, useNavigate } from "react-router-dom";
 import { useAuthStore } from "../lib/store";
 import { motion, AnimatePresence } from "framer-motion";
 import { Zap, Bell, User, Map, Swords, Trophy, Star, X, ChevronRight } from "lucide-react";
@@ -224,6 +224,7 @@ function ReviewFormModal({ onClose }) {
 export default function LandingPage() {
   const { token } = useAuthStore();
   const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
   const reviewMode = searchParams.get("review") === "1";
 
   const [reviews, setReviews]   = useState([]);
@@ -234,6 +235,11 @@ export default function LandingPage() {
   // Logged-in user visiting normally → redirect to home
   // But if ?review=1 → stay here and auto-open review form
   if (token && !reviewMode) return <Navigate to="/home" />;
+
+  const handleCloseForm = () => {
+    setShowForm(false);
+    if (token) navigate("/home");
+  };
 
   // Auto-open form when ?review=1
   useEffect(() => {
@@ -508,7 +514,7 @@ export default function LandingPage() {
 
       {/* Review Form Modal */}
       <AnimatePresence>
-        {showForm && <ReviewFormModal onClose={() => setShowForm(false)} />}
+        {showForm && <ReviewFormModal onClose={handleCloseForm} />}
       </AnimatePresence>
     </div>
   );
