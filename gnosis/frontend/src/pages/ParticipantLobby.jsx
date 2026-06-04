@@ -40,7 +40,27 @@ export default function ParticipantLobby() {
   const [waitingForOpponent, setWaitingForOpponent] = useState(false);
   const [opponentTimeLeft, setOpponentTimeLeft] = useState(0);
   const [opponentName, setOpponentName] = useState("");
+  const [codeCopied, setCodeCopied] = useState(false);
   const opponentTimerRef = useRef(null);
+
+  const copyRoomCode = () => {
+    const text = code;
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(() => { setCodeCopied(true); setTimeout(() => setCodeCopied(false), 2000); });
+    } else {
+      // HTTP fallback
+      const el = document.createElement('textarea');
+      el.value = text;
+      el.style.position = 'fixed';
+      el.style.opacity = '0';
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+      setCodeCopied(true);
+      setTimeout(() => setCodeCopied(false), 2000);
+    }
+  };
 
   const question = questionPayload?.question;
   const options = useMemo(() => {
@@ -92,10 +112,7 @@ export default function ParticipantLobby() {
     socket.on("room:player_joined", ({ players: nextPlayers }) => setPlayers(nextPlayers || []));
     socket.on("room:error", ({ message }) => setError(message));
     socket.on("room:cancelled", ({ message }) => {
-      // Direct notification and redirection
-      alert(message);
-      navigate("/battle", { replace: true });
-      // window.location.reload(); // Force state clearing if necessary
+      navigate("/battle", { replace: true, state: { cancelledMessage: message } });
     });
     socket.on("quiz:error", ({ message }) => setError(message));
     socket.on("quiz:starting", () => {
@@ -180,10 +197,8 @@ export default function ParticipantLobby() {
   };
 
   const cancelRoom = () => {
-    const msg = roomType === '1v1' ? "Terminate this battle?" : "Cancel this session?";
-    if (window.confirm(msg)) {
-      socket?.emit("host:cancel", { roomCode: code });
-    }
+    // Direct cancel — no native dialog
+    socket?.emit("host:cancel", { roomCode: code });
   };
 
   const leaveRoom = () => {
@@ -562,14 +577,12 @@ export default function ParticipantLobby() {
                       <div className="bg-white rounded-2xl p-4 border-2 border-[#A34714]/20 shadow-inner group">
                           <div className="flex items-center justify-center gap-4">
                               <span className="text-4xl font-black text-[#A34714] tracking-widest">{code}</span>
-                              <button 
-                                  onClick={() => {
-                                      navigator.clipboard.writeText(code);
-                                      alert("Room code copied!");
-                                  }}
+                              <button
+                                  onClick={copyRoomCode}
                                   className="p-2 hover:bg-[#FAF7F2] rounded-xl transition-colors text-[#A34714]/40 hover:text-[#A34714]"
+                                  title={codeCopied ? "Copied!" : "Copy code"}
                               >
-                                  <Copy size={20} />
+                                  {codeCopied ? <CheckCircle2 size={20} className="text-green-600" /> : <Copy size={20} />}
                               </button>
                           </div>
                       </div>

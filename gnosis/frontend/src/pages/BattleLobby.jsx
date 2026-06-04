@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Layout from "../components/Layout";
-import { useAuthStore, useAppStore } from "../lib/store";
+import { useAuthStore, useAppStore, useSocketStore } from "../lib/store";
 import api from "../lib/api";
 import { 
   Users, Play, Search, UserPlus, Inbox, RefreshCw, 
@@ -14,6 +14,7 @@ export default function BattleLobby() {
   const navigate = useNavigate();
   const { user } = useAuthStore();
   const { imageMap } = useAppStore();
+  const { socket } = useSocketStore();
   const [friends, setFriends] = useState([]);
   const [loading, setLoading] = useState(true);
   const [roomCode, setRoomCode] = useState("");
@@ -137,12 +138,18 @@ export default function BattleLobby() {
     }
   };
 
-  const sendRequest = async (id) => {
+  const sendRequest = async (id, username) => {
     try {
       await api.post("/auth/friend-request", { receiverId: id });
       setMessage("Request sent!");
       setSearchResults([]);
       setQuery("");
+      // Real-time bell notification to receiver
+      socket?.emit('notification:relay', {
+        toUserId: id,
+        type: 'friend_request',
+        message: `${user?.username} sent you a friend request!`
+      });
     } catch (err) {
       setMessage(err.response?.data?.error || "Failed to send");
     }
@@ -176,7 +183,7 @@ export default function BattleLobby() {
         const levels = subDetailRes.data.levels;
         
         if (!levels || levels.length === 0) {
-            alert("No levels found for this subject.");
+            setMessage("No levels found for this subject.");
             return;
         }
 
@@ -316,7 +323,7 @@ export default function BattleLobby() {
                           <p className="text-[10px] font-black text-[#D4641A] uppercase">{res.total_xp} XP</p>
                         </div>
                         <button 
-                          onClick={() => sendRequest(res.id)}
+                          onClick={() => sendRequest(res.id, res.username)}
                           className="bg-[#1a1a1a] text-white p-2 rounded-lg hover:scale-105 transition-transform"
                         >
                           <UserPlus className="w-4 h-4" />

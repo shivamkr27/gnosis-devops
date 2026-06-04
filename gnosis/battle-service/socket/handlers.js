@@ -63,7 +63,16 @@ module.exports = (io, redisClient) => {
         fromUsername: socket.username,
         subjectId, levelId, subjectName, levelNumber
       });
-      
+
+      // Also push to notification bell
+      io.to(targetSocketId).emit('notification:new', {
+        id: Date.now().toString(),
+        type: 'challenge',
+        message: `${socket.username} challenged you to a battle!`,
+        read: false,
+        source: 'local'
+      });
+
       socket.emit('challenge:sent', { message: 'Challenge sent' });
     });
 
@@ -128,6 +137,22 @@ module.exports = (io, redisClient) => {
         io.to(challengerSocketId).emit('challenge:accepted', { roomCode, subjectName });
       }
       socket.emit('challenge:accepted', { roomCode });
+    });
+
+    // ---- NOTIFICATION RELAY ----
+    // Lets frontend push a notification to another user's bell after REST calls
+    socket.on('notification:relay', async ({ toUserId, type, message }) => {
+      if (!toUserId || !message) return;
+      const targetSocketId = await redisClient.get('gnosis:socket:' + toUserId);
+      if (targetSocketId) {
+        io.to(targetSocketId).emit('notification:new', {
+          id: Date.now().toString(),
+          type: type || 'general',
+          message,
+          read: false,
+          source: 'local'
+        });
+      }
     });
 
     // ---- GROUP QUIZ EVENTS ----

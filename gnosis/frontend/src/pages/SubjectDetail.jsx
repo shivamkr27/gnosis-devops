@@ -96,16 +96,15 @@ export default function SubjectDetail() {
         const token = localStorage.getItem("gnosis_token");
         let currentUser = user;
 
-        if (!currentUser && token) {
-          try {
-            const meRes = await api.get("/auth/me");
-            if (meRes?.data) {
-              setUser(meRes.data);
-              currentUser = meRes.data;
-            }
-          } catch (meErr) {
-            console.warn("/auth/me fallback failed:", meErr);
+        // Always refresh from /auth/me so streak_count is current
+        try {
+          const meRes = await api.get("/auth/me");
+          if (meRes?.data) {
+            setUser(meRes.data);
+            currentUser = meRes.data;
           }
+        } catch (meErr) {
+          if (!currentUser) console.warn("/auth/me failed:", meErr);
         }
 
         const contentRes = await api.get(`/content/subjects/${id}`);
@@ -163,7 +162,6 @@ export default function SubjectDetail() {
     const shouldRetake = window.confirm(
       `Retake Level ${level.level_number}? This will reset this module and everything after it.`,
     );
-
     if (!shouldRetake) return;
 
     try {

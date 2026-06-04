@@ -107,7 +107,7 @@ export default function Profile() {
     },
     { label: "Streak", value: `${profile.streak_count || 0} Days`, icon: <Flame className="text-[#FF5252]" />, sub: "Keep it up!", color: "text-[#FF5252]" },
     { label: "Subjects", value: String(progress.length).padStart(2, '0'), icon: <BookOpen className="text-blue-500" />, sub: "Knowledge Base", color: "text-blue-600" },
-    { label: "Global Rank", value: globalRank ? `#${globalRank}` : "N/A", icon: <Trophy className="text-[#D57B1E]" />, sub: "World Standing", color: "text-[#D57B1E]" },
+    { label: "Global Rank", value: globalRank ? `#${globalRank}` : "—", icon: <Trophy className="text-[#D57B1E]" />, sub: "World Standing", color: "text-[#D57B1E]" },
     { label: "Arena XP", value: eventXp.toLocaleString(), icon: <Swords className="text-purple-500" />, sub: "Group Quiz Glory", color: "text-purple-600" },
   ];
 
@@ -125,9 +125,14 @@ export default function Profile() {
         {/* Header Navigation */}
         <div className="flex items-center justify-between mb-8">
             <h1 className="text-2xl font-black text-[#2F2C28] capitalize">My Profile</h1>
-            <div className="flex items-center gap-4">
-                {/* Redundant stats removed - already in global Layout header */}
-            </div>
+            {(!id || id === user?.id) && (
+              <button
+                onClick={() => { logout(); navigate("/"); }}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-red-500 border border-red-100 hover:bg-red-50 transition-colors"
+              >
+                <LogOut size={16} /> Logout
+              </button>
+            )}
         </div>
 
         {/* Main Content Area */}
