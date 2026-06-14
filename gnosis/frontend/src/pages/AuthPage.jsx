@@ -17,6 +17,7 @@ export default function AuthPage() {
   });
   const [fetchedQuestion, setFetchedQuestion] = useState("");
   const [error, setError] = useState("");
+  const [successMsg, setSuccessMsg] = useState("");
   const [loading, setLoading] = useState(false);
   const submittingRef = useRef(false);
   const navigate = useNavigate();
@@ -38,6 +39,7 @@ export default function AuthPage() {
     submittingRef.current = true;
     
     setError("");
+    setSuccessMsg("");
     setLoading(true);
 
     try {
@@ -80,7 +82,9 @@ export default function AuthPage() {
           securityAnswer: formData.securityAnswer,
           newPassword: formData.newPassword,
         });
-        alert("Password reset successfully! Please log in.");
+        submittingRef.current = false;
+        setSuccessMsg("Password reset successfully! Please log in with your new password.");
+        setError("");
         setView("login");
         setFormData({ ...formData, password: "", securityAnswer: "", newPassword: "" });
       }
@@ -151,6 +155,7 @@ export default function AuthPage() {
                   onClick={() => {
                     setView("login");
                     setError("");
+                    setSuccessMsg("");
                   }}
                 >
                   Log In
@@ -160,6 +165,7 @@ export default function AuthPage() {
                   onClick={() => {
                     setView("signup");
                     setError("");
+                    setSuccessMsg("");
                   }}
                 >
                   Sign Up
@@ -198,6 +204,13 @@ export default function AuthPage() {
                     <div className="mb-8">
                       <h2 className="text-3xl font-extrabold text-[#1a1a1a] mb-2">Security Check</h2>
                       <p className="text-[#6b6b6b] text-base">Answer your security question to reset your password.</p>
+                    </div>
+                  )}
+
+                  {successMsg && (
+                    <div className="bg-[#EAF6EA] border border-[#C3E6C3] text-[#2E7D32] p-3.5 rounded-xl text-sm font-bold mb-6 flex items-center gap-2">
+                      <span>✓</span>
+                      <span>{successMsg}</span>
                     </div>
                   )}
 
@@ -374,8 +387,10 @@ export default function AuthPage() {
                     <div className="mt-6 text-center">
                       <button
                         onClick={() => {
+                          submittingRef.current = false;
                           setView("login");
                           setError("");
+                          setSuccessMsg("");
                         }}
                         className="text-sm font-bold text-[#6b6b6b] hover:text-[#1a1a1a] transition-colors"
                       >

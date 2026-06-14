@@ -77,7 +77,7 @@ const motivationalQuotes = [
 export default function SubjectDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { user, setUser } = useAuthStore();
+  const { user } = useAuthStore();
   const imageMap = useAppStore((state) => state.imageMap);
   const addNotification = useSocketStore((state) => state.addNotification);
 
@@ -93,34 +93,15 @@ export default function SubjectDetail() {
     const fetchDetail = async () => {
       try {
         setLoading(true);
+        setFetchError(false);
 
-        const token = localStorage.getItem("gnosis_token");
-        let currentUser = user;
+        // user is guaranteed non-null here — ProtectedRoute blocks rendering until user is loaded.
+        // Do NOT call /auth/me or setUser here: that creates a Zustand feedback loop.
+        const [contentRes, progRes] = await Promise.all([
+          api.get(`/content/subjects/${id}`),
+          api.get(`/progress/${user.id}/subject/${id}`),
+        ]);
 
-        // Always refresh from /auth/me so streak_count is current
-        try {
-          const meRes = await api.get("/auth/me");
-          if (meRes?.data) {
-            setUser(meRes.data);
-            currentUser = meRes.data;
-          }
-        } catch (meErr) {
-          if (!currentUser) console.warn("/auth/me failed:", meErr);
-        }
-
-        const contentRes = await api.get(`/content/subjects/${id}`);
-
-        if (!currentUser) {
-          const lockedLevels = contentRes.data.levels.map((level) => ({
-            ...level,
-            status: "locked",
-            xp_earned: 0,
-          }));
-          setSubject({ ...contentRes.data, levels: lockedLevels });
-          return;
-        }
-
-        const progRes = await api.get(`/progress/${currentUser.id}/subject/${id}`);
         const mergedLevels = contentRes.data.levels.map((level) => {
           const progressLevel = progRes.data.levels.find((pl) => pl.level_id === level.id);
           return {
