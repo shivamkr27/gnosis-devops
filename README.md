@@ -9,7 +9,7 @@
 | Service | URL |
 |---------|-----|
 | Gnosis App | http://80.225.203.117 |
-| Grafana Dashboards | http://144.24.101.125 (admin / gnosis-grafana-2025) |
+| Grafana Dashboards | http://144.24.101.125 (credentials: see grafana-admin-secret in monitoring namespace) |
 | API Gateway | http://161.118.178.140:3000 |
 
 ---
@@ -248,7 +248,7 @@ helm install kube-prometheus-stack prometheus-community/kube-prometheus-stack \
 ```bash
 # If no LoadBalancer IP:
 kubectl port-forward svc/kube-prometheus-stack-grafana 3000:80 -n monitoring
-# Open http://localhost:3000 — admin / gnosis-grafana-2025
+# Open http://localhost:3000 — use credentials from grafana-admin-secret K8s secret
 ```
 
 ---

@@ -8,15 +8,20 @@ const { createMetrics } = require('../common/metrics');
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server, { 
-  cors: { origin: '*', methods: ['GET','POST'] } 
+
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(',').map(o => o.trim())
+  : ['http://localhost:5173', 'http://localhost:3000'];
+
+const io = new Server(server, {
+  cors: { origin: allowedOrigins, methods: ['GET','POST'] }
 });
 
 const PORT = process.env.PORT || 3006;
 const REDIS_URL = process.env.REDIS_URL || 'redis://redis:6379';
 const { metricsMiddleware, metricsHandler } = createMetrics('notification_service');
 
-app.use(cors());
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 app.use(metricsMiddleware);
 

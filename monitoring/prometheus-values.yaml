@@ -1,5 +1,8 @@
 grafana:
-  adminPassword: "gnosis-grafana-2025"  # Change before deploy
+  admin:
+    existingSecret: "grafana-admin-secret"
+    userKey: admin-user
+    passwordKey: admin-password
   persistence:
     enabled: true   # Persists manually-created dashboards across pod restarts
     size: 1Gi
