@@ -72,6 +72,7 @@ export default function AuthPage() {
           email: formData.email,
         });
         setFetchedQuestion(res.data.securityQuestion);
+        submittingRef.current = false;
         setView("forgot-step2");
       } else if (view === "forgot-step2") {
         await api.post("/auth/forgot-password-step2", {

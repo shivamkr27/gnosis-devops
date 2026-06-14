@@ -140,7 +140,7 @@ export default function SubjectDetail() {
     };
 
     fetchDetail();
-  }, [id, user, setUser]);
+  }, [id, user?.id]);
 
   if (loading) {
     return (
