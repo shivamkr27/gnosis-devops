@@ -14,4 +14,20 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
+// Lazy import to avoid circular dependency between api.js and store.js
+let _logout = null;
+export function registerLogout(fn) {
+  _logout = fn;
+}
+
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      if (_logout) _logout();
+    }
+    return Promise.reject(error);
+  }
+);
+
 export default api;

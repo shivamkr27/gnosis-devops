@@ -83,6 +83,7 @@ export default function SubjectDetail() {
 
   const [subject, setSubject] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [fetchError, setFetchError] = useState(false);
   const [retakingLevelId, setRetakingLevelId] = useState(null);
   const [quote] = useState(
     motivationalQuotes[Math.floor(Math.random() * motivationalQuotes.length)],
@@ -132,6 +133,7 @@ export default function SubjectDetail() {
         setSubject({ ...contentRes.data, levels: mergedLevels });
       } catch (err) {
         console.error("Failed to fetch subject details:", err);
+        setFetchError(true);
       } finally {
         setLoading(false);
       }
@@ -140,10 +142,24 @@ export default function SubjectDetail() {
     fetchDetail();
   }, [id, user, setUser]);
 
-  if (loading || !subject) {
+  if (loading) {
     return (
       <div className="flex justify-center items-center h-screen bg-[#FAF7F2]">
         <div className="w-8 h-8 border-4 border-[#8B2500] border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    );
+  }
+
+  if (fetchError || !subject) {
+    return (
+      <div className="flex flex-col justify-center items-center h-screen bg-[#FAF7F2] gap-4">
+        <p className="text-[#8B2500] font-bold text-lg">Failed to load subject.</p>
+        <button
+          className="px-4 py-2 bg-[#8B2500] text-white rounded-lg font-semibold"
+          onClick={() => navigate(-1)}
+        >
+          Go Back
+        </button>
       </div>
     );
   }

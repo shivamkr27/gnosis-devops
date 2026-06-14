@@ -6,7 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { useAuthStore, useAppStore, useSocketStore } from "./lib/store";
-import api from "./lib/api";
+import api, { registerLogout } from "./lib/api";
 import { createSocket } from "./lib/socket";
 
 import LandingPage from "./pages/LandingPage";
@@ -55,6 +55,10 @@ function App() {
   const { setSocket } = useSocketStore();
   const { setImageMap } = useAppStore();
   const authRetryRef = React.useRef(null);
+
+  useEffect(() => {
+    registerLogout(logout);
+  }, [logout]);
 
   useEffect(() => {
     fetch("/assets/image_map.json")
