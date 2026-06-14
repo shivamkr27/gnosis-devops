@@ -95,7 +95,7 @@ jobs:
             # paths-filter outputs JSON array of matched filter names.
             # Remove meta-filters (infra, code) — they are not buildable services.
             MATRIX=$(echo '${{ steps.filter.outputs.changes }}' | \
-              jq '[.[] | select(. != "infra" and . != "code")]')
+              jq -c '[.[] | select(. != "infra" and . != "code")]')
           fi
 
           echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
