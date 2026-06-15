@@ -134,6 +134,21 @@ const endQuiz = async (io, redisClient, roomCode) => {
     }
   }
 
+  // Fetch per-player answers for review and attach to player objects
+  const playersWithAnswers = await Promise.all(sortedPlayers.map(async (player) => {
+    try {
+      const answersStr = await redisClient.get(`gnosis:battle_answers:${roomCode}:${player.userId}`);
+      return { ...player, answers: answersStr ? JSON.parse(answersStr) : [] };
+    } catch (e) {
+      return { ...player, answers: [] };
+    }
+  }));
+
+  // Clean up answer tracking keys
+  for (const player of players) {
+    redisClient.del(`gnosis:battle_answers:${roomCode}:${player.userId}`).catch(() => {});
+  }
+
   // Save to DB with winner_id, then enforce max 4 battles per player
   try {
     await pool.query(
@@ -146,7 +161,7 @@ const endQuiz = async (io, redisClient, roomCode) => {
         roomData.subject_name || null,
         roomData.level_number ? parseInt(roomData.level_number) : null,
         JSON.stringify(players.map(p => ({ userId: p.userId, username: p.username }))),
-        JSON.stringify(sortedPlayers),
+        JSON.stringify(playersWithAnswers),
         winnerId
       ]
     );

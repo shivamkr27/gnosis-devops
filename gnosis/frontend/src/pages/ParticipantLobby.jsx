@@ -2,9 +2,9 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import Layout from "../components/Layout";
 import { useAuthStore, useAppStore, useSocketStore } from "../lib/store";
-import { 
-  Users, Copy, Trophy, CheckCircle2, Home, RotateCcw, 
-  Settings, HelpCircle, Mic, Zap, Award, MessageSquare 
+import {
+  Users, Copy, Trophy, CheckCircle2, Home, RotateCcw,
+  Settings, HelpCircle, Mic, Zap, Award, MessageSquare, BookOpen
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -42,6 +42,11 @@ export default function ParticipantLobby() {
   const [opponentName, setOpponentName] = useState("");
   const [codeCopied, setCodeCopied] = useState(false);
   const opponentTimerRef = useRef(null);
+
+  // Answer tracking for post-battle review
+  const questionsMapRef = useRef({});
+  const pendingAnswerOptionsRef = useRef({});
+  const battleAnswersRef = useRef([]);
 
   const copyRoomCode = () => {
     const text = code;
@@ -89,6 +94,7 @@ export default function ParticipantLobby() {
   useEffect(() => {
     if (timeLeft !== 0 || !question || selected !== null) return;
     setSelected("__timeout__");
+    pendingAnswerOptionsRef.current[question.id] = [];
     socket?.emit("quiz:answer", {
       roomCode: code,
       questionId: question.id,
@@ -143,8 +149,25 @@ export default function ParticipantLobby() {
       setSelected(null);
       setAnswerResult(null);
       setStarting(false);
+      // Store question for review
+      if (payload.question?.id) {
+        questionsMapRef.current[payload.question.id] = payload.question;
+      }
     });
-    socket.on("quiz:answer_result", (payload) => setAnswerResult(payload));
+    socket.on("quiz:answer_result", (payload) => {
+      setAnswerResult(payload);
+      // Build answer record for review
+      const q = questionsMapRef.current[payload.questionId];
+      if (q) {
+        battleAnswersRef.current.push({
+          question: q,
+          selectedOptions: (pendingAnswerOptionsRef.current[payload.questionId] || []).map(s => String(s).toUpperCase()),
+          correct: payload.correct,
+          correctOptions: (payload.correctOptions || []).map(s => String(s).toUpperCase()),
+          explanation: payload.explanation || ''
+        });
+      }
+    });
     socket.on("quiz:answer_rejected", ({ reason }) => {
       setAnswerResult({ correct: false, xpEarned: 0, explanation: reason });
     });
@@ -220,10 +243,12 @@ export default function ParticipantLobby() {
   const submitAnswer = (optionId) => {
     if (!question || selected || timeLeft <= 0) return;
     setSelected(optionId);
+    const selectedOptions = [optionId];
+    pendingAnswerOptionsRef.current[question.id] = selectedOptions;
     socket?.emit("quiz:answer", {
       roomCode: code,
       questionId: question.id,
-      selectedOptions: [optionId],
+      selectedOptions,
     });
   };
 
@@ -307,20 +332,28 @@ export default function ParticipantLobby() {
               })}
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <button 
-                onClick={() => navigate("/battle")} 
+            <div className="grid grid-cols-2 gap-4 mb-4">
+              <button
+                onClick={() => navigate("/battle")}
                 className="rounded-2xl border-2 border-[#E8DFD1] py-4 font-black text-[#6E675F] hover:bg-[#FAF7F2] transition-colors"
               >
                 RETURN TO ARENA
               </button>
-              <button 
-                onClick={() => navigate("/home")} 
+              <button
+                onClick={() => navigate("/home")}
                 className="rounded-2xl bg-[#8B2500] py-4 font-black text-white shadow-lg shadow-[#8B2500]/20 hover:scale-[1.02] transition-all"
               >
                 CONTINUE JOURNEY
               </button>
             </div>
+            <button
+              onClick={() => navigate('/battle/review/live', {
+                state: { answers: battleAnswersRef.current, subjectName: quizName }
+              })}
+              className="w-full rounded-2xl border-2 border-[#8B2500]/30 py-3 font-black text-sm text-[#8B2500] hover:bg-[#FFF4E5] transition-colors flex items-center justify-center gap-2"
+            >
+              <BookOpen className="w-4 h-4" /> REVIEW MY ANSWERS
+            </button>
           </motion.div>
         </div>
       </Layout>

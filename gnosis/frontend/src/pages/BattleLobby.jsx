@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import Layout from "../components/Layout";
 import { useAuthStore, useAppStore, useSocketStore } from "../lib/store";
 import api from "../lib/api";
-import { 
-  Users, Play, Search, UserPlus, Inbox, RefreshCw, 
+import {
+  Users, Play, Search, UserPlus, Inbox, RefreshCw,
   Swords, Trophy, History, Zap, Shield, Crown,
-  ChevronRight, ArrowRight, UserCircle2
+  ChevronRight, ArrowRight, UserCircle2, BookOpen
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -14,7 +14,7 @@ export default function BattleLobby() {
   const navigate = useNavigate();
   const { user } = useAuthStore();
   const { imageMap } = useAppStore();
-  const { socket } = useSocketStore();
+  const { socket, notifications } = useSocketStore();
   const [friends, setFriends] = useState([]);
   const [loading, setLoading] = useState(true);
   const [roomCode, setRoomCode] = useState("");
@@ -44,6 +44,20 @@ export default function BattleLobby() {
     fetchUserRank();
     fetchBattleStats();
   }, [user.id, user.username]);
+
+  // Poll online status + friends list every 30s
+  useEffect(() => {
+    const interval = setInterval(fetchFriends, 30000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Refresh friends when a notification arrives (e.g. friend request accepted)
+  useEffect(() => {
+    if (notifications.length > 0) {
+      fetchFriends();
+      fetchPendingRequests();
+    }
+  }, [notifications.length]);
 
   const fetchHistory = async () => {
     try {
@@ -517,6 +531,15 @@ export default function BattleLobby() {
                                {labelText}
                              </p>
                           </div>
+                          {is1v1 && (
+                            <button
+                              onClick={(e) => { e.stopPropagation(); navigate(`/battle/review/${b.id}`); }}
+                              className="flex items-center gap-1 px-3 py-1.5 rounded-xl border border-[#E8DFD1] text-[#8B2500] text-[10px] font-black uppercase tracking-wider hover:bg-[#FFF4E5] transition-colors opacity-0 group-hover:opacity-100"
+                              title="Review answers"
+                            >
+                              <BookOpen className="w-3 h-3" /> Review
+                            </button>
+                          )}
                           <ChevronRight className="w-5 h-5 text-[#E8DFD1] group-hover:text-[#8B2500] transition-colors" />
                        </div>
                      );

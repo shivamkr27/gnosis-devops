@@ -37,7 +37,7 @@ export default function Layout({ children }) {
 
   const handleNotificationClick = async (notif) => {
     if (!notif.read) markAsRead(notif.id);
-    if (notif.type === "friend_request") navigate("/friends");
+    if (notif.type === "friend_request") navigate("/battle");
     setShowNotifications(false);
   };
 

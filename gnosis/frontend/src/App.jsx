@@ -23,6 +23,7 @@ import ParticipantLobby from "./pages/ParticipantLobby";
 import ActiveQuiz from "./pages/ActiveQuiz";
 import BattleResults from "./pages/BattleResults";
 import ChallengeSent from "./pages/ChallengeSent";
+import BattleReview from "./pages/BattleReview";
 import LessonComplete from "./pages/LessonComplete";
 import QuizReview from "./pages/QuizReview";
 import ChallengeManager from "./components/ChallengeManager";
@@ -221,6 +222,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <ChallengeSent />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/battle/review/:battleId"
+            element={
+              <ProtectedRoute>
+                <BattleReview />
               </ProtectedRoute>
             }
           />

@@ -426,6 +426,29 @@ module.exports = (io, redisClient) => {
         explanation: currentQuestion.explanation || '', questionId
       });
 
+      // Store answer for post-battle review
+      try {
+        const answerRecord = {
+          questionId: currentQuestion.id,
+          question_text: currentQuestion.question_text,
+          option_a: currentQuestion.option_a,
+          option_b: currentQuestion.option_b,
+          option_c: currentQuestion.option_c,
+          option_d: currentQuestion.option_d,
+          question_type: currentQuestion.question_type,
+          selectedOptions: (selectedOptions || []).map(s => String(s).toUpperCase()),
+          correctOptions: (correctOptions || []).map(s => String(s).toUpperCase()),
+          correct: isCorrect,
+          explanation: currentQuestion.explanation || ''
+        };
+        const prevAnswers = await redisClient.get(`gnosis:battle_answers:${roomCode}:${socket.userId}`);
+        const answersArr = prevAnswers ? JSON.parse(prevAnswers) : [];
+        answersArr.push(answerRecord);
+        await redisClient.set(`gnosis:battle_answers:${roomCode}:${socket.userId}`, JSON.stringify(answersArr), { EX: 3600 });
+      } catch (trackErr) {
+        console.error('[Battle] Failed to track answer for review:', trackErr.message);
+      }
+
       // INDIVIDUAL PROGRESSION: Advance only this player
       const pNextIndex = pCurrentIndex + 1;
       players[playerIndex].currentIndex = pNextIndex;
