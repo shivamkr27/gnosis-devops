@@ -31,7 +31,7 @@ spec:
           type: RuntimeDefault
       containers:
         - name: battle-service
-          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/battle-service:ed24f93a2e7b41b9129ac3e4666ea5a3ceede2ed
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/battle-service:14229e6dfa4d3b43bf8e6e4738285495aa1cbc4c
           imagePullPolicy: Always
           ports:
             - containerPort: 3005
