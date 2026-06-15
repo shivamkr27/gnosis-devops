@@ -70,7 +70,8 @@ module.exports = (io, redisClient) => {
         type: 'challenge',
         message: `${socket.username} challenged you to a battle!`,
         read: false,
-        source: 'local'
+        source: 'local',
+        fromUserId: socket.userId
       });
 
       socket.emit('challenge:sent', { message: 'Challenge sent' });
@@ -141,7 +142,7 @@ module.exports = (io, redisClient) => {
 
     // ---- NOTIFICATION RELAY ----
     // Lets frontend push a notification to another user's bell after REST calls
-    socket.on('notification:relay', async ({ toUserId, type, message }) => {
+    socket.on('notification:relay', async ({ toUserId, type, message, fromUserId }) => {
       if (!toUserId || !message) return;
       const targetSocketId = await redisClient.get('gnosis:socket:' + toUserId);
       if (targetSocketId) {
@@ -150,7 +151,8 @@ module.exports = (io, redisClient) => {
           type: type || 'general',
           message,
           read: false,
-          source: 'local'
+          source: 'local',
+          fromUserId: fromUserId || null
         });
       }
     });

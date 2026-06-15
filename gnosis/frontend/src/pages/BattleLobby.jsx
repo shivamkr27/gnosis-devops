@@ -162,6 +162,7 @@ export default function BattleLobby() {
       socket?.emit('notification:relay', {
         toUserId: id,
         type: 'friend_request',
+        fromUserId: user?.id,
         message: `${user?.username} sent you a friend request!`
       });
     } catch (err) {

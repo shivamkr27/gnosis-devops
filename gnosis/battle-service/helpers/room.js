@@ -172,11 +172,14 @@ const endQuiz = async (io, redisClient, roomCode) => {
         `DELETE FROM battle_history
          WHERE id IN (
            SELECT id FROM battle_history
-           WHERE participants @> $1::jsonb
+           WHERE EXISTS (
+             SELECT 1 FROM jsonb_array_elements(participants) elem
+             WHERE elem->>'userId' = $1
+           )
            ORDER BY created_at DESC
            OFFSET 4
          )`,
-        [JSON.stringify([{ userId: player.userId }])]
+        [String(player.userId)]
       );
     }
   } catch (err) {

@@ -22,13 +22,16 @@ export default function Layout({ children }) {
   const [toastNotification, setToastNotification] = useState(null);
 
   const toastTimerRef = useRef(null);
-  const lastNotificationIdRef = useRef(null);
 
   useEffect(() => {
     if (notifications.length === 0) return;
     const latestNotification = notifications[0];
-    if (!latestNotification || latestNotification.id === lastNotificationIdRef.current) return;
-    lastNotificationIdRef.current = latestNotification.id;
+    if (!latestNotification) return;
+    // ChallengeManager already shows a dedicated popup for challenge notifications
+    if (latestNotification.type === 'challenge') return;
+    const { lastToastNotifId, setLastToastNotifId } = useSocketStore.getState();
+    if (latestNotification.id === lastToastNotifId) return;
+    setLastToastNotifId(latestNotification.id);
     setToastNotification(latestNotification);
     if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
     toastTimerRef.current = setTimeout(() => setToastNotification(null), 3500);
@@ -37,8 +40,24 @@ export default function Layout({ children }) {
 
   const handleNotificationClick = async (notif) => {
     if (!notif.read) markAsRead(notif.id);
-    if (notif.type === "friend_request") navigate("/battle");
+    if (notif.type === "friend_request" || notif.type === "challenge") navigate("/battle");
     setShowNotifications(false);
+  };
+
+  const handleAcceptFriend = async (e, notif) => {
+    e.stopPropagation();
+    try {
+      await api.post("/auth/friend-request/respond", { requesterId: notif.fromUserId, action: "accept" });
+      removeNotification(notif.id);
+    } catch (err) { console.error("Failed to accept friend request", err); }
+  };
+
+  const handleDeclineFriend = async (e, notif) => {
+    e.stopPropagation();
+    try {
+      await api.post("/auth/friend-request/respond", { requesterId: notif.fromUserId, action: "reject" });
+      removeNotification(notif.id);
+    } catch (err) { console.error("Failed to decline friend request", err); }
   };
 
   const handleDeleteNotification = async (e, notif) => {
@@ -137,6 +156,12 @@ export default function Layout({ children }) {
                         <div key={n.id} onClick={() => handleNotificationClick(n)} className={`p-4 border-b border-[#FAF7F2] cursor-pointer hover:bg-[#FAF7F2] transition-colors relative ${!n.read ? 'bg-[#FFF4E5]/30' : ''}`}>
                           <p className="text-sm text-[#1a1a1a] font-medium leading-tight pr-6">{n.message}</p>
                           <span className="text-[10px] text-[#8a8a8a] mt-1 block">Just now</span>
+                          {n.type === 'friend_request' && n.fromUserId && (
+                            <div className="flex gap-2 mt-2" onClick={e => e.stopPropagation()}>
+                              <button onClick={(e) => handleAcceptFriend(e, n)} className="text-[9px] font-black bg-[#8B2500] text-white px-3 py-1 rounded-lg hover:bg-[#5C1800] transition-colors">ACCEPT</button>
+                              <button onClick={(e) => handleDeclineFriend(e, n)} className="text-[9px] font-black bg-[#F5F5F5] text-[#6b6b6b] px-3 py-1 rounded-lg hover:bg-[#E8E8E8] transition-colors">DECLINE</button>
+                            </div>
+                          )}
                           <button onClick={(e) => handleDeleteNotification(e, n)} className="absolute top-4 right-4 p-1 rounded-full text-[#E8DFD1] hover:text-red-500 transition-colors">
                             <X className="w-3 h-3" />
                           </button>

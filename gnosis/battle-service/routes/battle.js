@@ -38,10 +38,13 @@ module.exports = (redisClient) => {
         `SELECT id, room_code, type, subject_name, level_number,
                 participants, results, winner_id, created_at
          FROM battle_history
-         WHERE participants @> $1::jsonb
+         WHERE EXISTS (
+           SELECT 1 FROM jsonb_array_elements(participants) elem
+           WHERE elem->>'userId' = $1
+         )
          ORDER BY created_at DESC
          LIMIT 4`,
-        [JSON.stringify([{ userId }])]
+        [String(userId)]
       );
       res.json(result.rows);
     } catch (err) {

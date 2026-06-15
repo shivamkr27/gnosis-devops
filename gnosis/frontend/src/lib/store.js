@@ -34,8 +34,10 @@ export const useSocketStore = create((set) => ({
   notifications: [],
   unreadCount: 0,
   socket: null,
+  lastToastNotifId: null,
 
   setSocket: (socket) => set({ socket }),
+  setLastToastNotifId: (id) => set({ lastToastNotifId: id }),
 
   setNotifications: (notifs) =>
     set({
