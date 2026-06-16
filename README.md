@@ -8,7 +8,7 @@
 
 | Service | URL |
 |---------|-----|
-| Gnosis App | http://80.225.203.117 |
+| Gnosis App | http://80.225.228.31 |
 | Grafana Dashboards | http://144.24.101.125 (credentials: see grafana-admin-secret in monitoring namespace) |
 | API Gateway | http://161.118.178.140:3000 |
 
