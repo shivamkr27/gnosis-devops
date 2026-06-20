@@ -3,6 +3,15 @@ const crypto = require('crypto');
 const nodemailer = require('nodemailer');
 const db = require('../db');
 
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
+}
+
 const router = express.Router();
 
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'shivamkumarbxr8@gmail.com';
@@ -28,18 +37,20 @@ async function sendReviewEmail(review, approveToken, rejectToken) {
   const approveUrl = `${SITE_URL}/api/content/reviews/approve/${approveToken}`;
   const rejectUrl  = `${SITE_URL}/api/content/reviews/reject/${rejectToken}`;
   const stars = '⭐'.repeat(review.rating);
+  const safeName = escapeHtml(review.reviewer_name);
+  const safeText = escapeHtml(review.review_text);
 
   await transporter.sendMail({
     from: SMTP_USER,
     to: ADMIN_EMAIL,
-    subject: `New GNOSIS Review from ${review.reviewer_name}`,
+    subject: `New GNOSIS Review from ${safeName}`,
     html: `
       <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
         <h2 style="color:#1a1a1a">New Review Submitted</h2>
         <div style="background:#f9f9f9;border-radius:12px;padding:20px;margin:16px 0">
           <p style="font-size:20px;margin:0 0 8px">${stars}</p>
-          <p style="font-size:16px;font-style:italic;color:#333">"${review.review_text}"</p>
-          <p style="color:#666;margin-top:12px">— <strong>${review.reviewer_name}</strong></p>
+          <p style="font-size:16px;font-style:italic;color:#333">"${safeText}"</p>
+          <p style="color:#666;margin-top:12px">— <strong>${safeName}</strong></p>
         </div>
         <div style="display:flex;gap:12px;margin-top:24px">
           <a href="${approveUrl}"
@@ -130,7 +141,7 @@ router.get('/approve/:token', async (req, res) => {
     }
     res.send(`<html><body style="font-family:sans-serif;text-align:center;padding:60px;background:#f0fdf4">
       <h2 style="color:#16a34a">✅ Review Approved!</h2>
-      <p>Review by <strong>${result.rows[0].reviewer_name}</strong> is now live on GNOSIS.</p>
+      <p>Review by <strong>${escapeHtml(result.rows[0].reviewer_name)}</strong> is now live on GNOSIS.</p>
       <a href="${SITE_URL}" style="color:#1a1a1a">← Go to site</a>
     </body></html>`);
   } catch (err) {
@@ -154,7 +165,7 @@ router.get('/reject/:token', async (req, res) => {
     }
     res.send(`<html><body style="font-family:sans-serif;text-align:center;padding:60px;background:#fef2f2">
       <h2 style="color:#dc2626">🗑 Review Removed</h2>
-      <p>Review by <strong>${result.rows[0].reviewer_name}</strong> has been rejected.</p>
+      <p>Review by <strong>${escapeHtml(result.rows[0].reviewer_name)}</strong> has been rejected.</p>
       <a href="${SITE_URL}" style="color:#1a1a1a">← Go to site</a>
     </body></html>`);
   } catch (err) {

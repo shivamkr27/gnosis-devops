@@ -119,21 +119,13 @@ export default function ActiveQuiz() {
       if (!question || result || isSubmitting) return;
       setIsSubmitting(true);
 
-      const timeTakenMs = Date.now() - startTime;
-
       try {
         const res = await api.post(
           `/content/levels/${levelId}/answer`,
           {
             questionId: question.id,
             selectedOptions: finalSelectedOptions,
-            timeTakenMs,
-          },
-          {
-            headers: {
-              "x-question-sent-at": startTime.toString(),
-              "x-timer-seconds": timerSeconds.toString(),
-            },
+            servedToken: question.servedToken,
           },
         );
 

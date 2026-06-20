@@ -1,8 +1,20 @@
 const express = require('express');
 const axios = require('axios');
+const crypto = require('crypto');
 const pool = require('../db/index');
 
 const router = express.Router();
+
+function verifyGatewaySecret(req) {
+  const secret = process.env.INTERNAL_GATEWAY_SECRET;
+  const provided = req.headers['x-gateway-secret'];
+  if (!secret || !provided) return false;
+  try {
+    return crypto.timingSafeEqual(Buffer.from(secret), Buffer.from(provided));
+  } catch {
+    return false;
+  }
+}
 
 const CONTENT_SERVICE_URL = process.env.CONTENT_SERVICE_URL || 'http://localhost:3002';
 const XP_SERVICE_URL = process.env.XP_SERVICE_URL || 'http://localhost:3004';
@@ -195,8 +207,8 @@ router.post('/complete-level', async (req, res) => {
 } = req.body;
   const authUserId = req.headers['x-user-id']; // Provided by auth middleware in api-gateway
 
-  if (!authUserId) {
-    return res.status(401).json({ error: "Unauthorized: Missing user ID" });
+  if (!authUserId || !verifyGatewaySecret(req)) {
+    return res.status(401).json({ error: "Unauthorized" });
   }
 
   if (userId !== authUserId) {
@@ -388,8 +400,8 @@ router.post('/reset-level', async (req, res) => {
   const { userId, subjectId, levelId } = req.body;
   const authUserId = req.headers['x-user-id'];
 
-  if (!authUserId) {
-    return res.status(401).json({ error: "Unauthorized: Missing user ID" });
+  if (!authUserId || !verifyGatewaySecret(req)) {
+    return res.status(401).json({ error: "Unauthorized" });
   }
 
   if (userId !== authUserId) {

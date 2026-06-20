@@ -1,4 +1,6 @@
 const express = require('express');
+const crypto = require('crypto');
+const jwt = require('jsonwebtoken');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const db = require('../db');
 
@@ -88,12 +90,38 @@ router.get('/levels/:levelId', async (req, res) => {
   }
 });
 
+function isInternalServiceRequest(req) {
+  if (req.headers['x-internal-service'] !== 'battle-service') return false;
+  const secret = process.env.INTERNAL_SERVICE_SECRET;
+  const provided = req.headers['x-internal-service-secret'];
+  if (!secret || !provided) return false;
+  try {
+    return crypto.timingSafeEqual(Buffer.from(secret), Buffer.from(provided));
+  } catch {
+    return false;
+  }
+}
+
+function requireAdmin(req, res, next) {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
+  if (!token) {
+    return res.status(401).json({ error: 'unauthorized' });
+  }
+  jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+    if (err || !decoded.isAdmin) {
+      return res.status(403).json({ error: 'forbidden: admin access required' });
+    }
+    next();
+  });
+}
+
 router.get('/levels/:levelId/questions', async (req, res) => {
   const { levelId } = req.params;
-  const isInternal = req.headers['x-internal-service'] === 'battle-service' || req.query.internal === 'true';
+  const isInternal = isInternalServiceRequest(req);
 
   try {
-    const query = isInternal 
+    const query = isInternal
       ? `SELECT id, question_text, option_a, option_b, option_c, option_d, question_type, timer_seconds, correct_options, explanation
          FROM questions
          WHERE level_id = $1
@@ -106,7 +134,15 @@ router.get('/levels/:levelId/questions', async (req, res) => {
          LIMIT 10`;
 
     const result = await db.query(query, [levelId]);
-    res.json(result.rows);
+    const secret = process.env.JWT_SECRET;
+    const now = Date.now();
+    const rows = secret
+      ? result.rows.map((q) => ({
+          ...q,
+          servedToken: jwt.sign({ qid: q.id, at: now }, secret, { expiresIn: '5m' }),
+        }))
+      : result.rows;
+    res.json(rows);
   } catch (error) {
     console.error('GET /content/levels/:levelId/questions error', error);
     res.status(500).json({ error: 'Failed to fetch questions' });
@@ -115,10 +151,23 @@ router.get('/levels/:levelId/questions', async (req, res) => {
 
 router.post('/levels/:levelId/answer', async (req, res) => {
   const { levelId } = req.params;
-  const { questionId, selectedOptions, timeTakenMs } = req.body;
+  const { questionId, selectedOptions, servedToken } = req.body;
 
-  if (!questionId || !Array.isArray(selectedOptions) || typeof timeTakenMs !== 'number') {
-    return res.status(400).json({ error: 'questionId, selectedOptions, and timeTakenMs are required' });
+  if (!questionId || !Array.isArray(selectedOptions)) {
+    return res.status(400).json({ error: 'questionId and selectedOptions are required' });
+  }
+
+  let serverElapsedMs = null;
+  if (servedToken && process.env.JWT_SECRET) {
+    try {
+      const decoded = jwt.verify(servedToken, process.env.JWT_SECRET);
+      if (decoded.qid !== questionId) {
+        return res.status(400).json({ error: 'servedToken does not match questionId' });
+      }
+      serverElapsedMs = Date.now() - decoded.at;
+    } catch {
+      return res.status(400).json({ error: 'invalid or expired servedToken' });
+    }
   }
 
   try {
@@ -143,10 +192,12 @@ router.post('/levels/:levelId/answer', async (req, res) => {
     let xpEarned = 0;
     if (correct) {
       xpEarned = questionType === 'multi_correct' ? 15 : 10;
-      if (timeTakenMs < 5000) {
-        xpEarned += 5;
-      } else if (timeTakenMs <= 8000) {
-        xpEarned += 2;
+      if (serverElapsedMs !== null) {
+        if (serverElapsedMs < 5000) {
+          xpEarned += 5;
+        } else if (serverElapsedMs <= 8000) {
+          xpEarned += 2;
+        }
       }
     }
 
@@ -163,7 +214,7 @@ router.post('/levels/:levelId/answer', async (req, res) => {
   }
 });
 
-router.post('/admin/subjects', async (req, res) => {
+router.post('/admin/subjects', requireAdmin, async (req, res) => {
   const { name, description, order_index } = req.body;
 
   if (!name || typeof order_index !== 'number') {
@@ -185,7 +236,7 @@ router.post('/admin/subjects', async (req, res) => {
   }
 });
 
-router.post('/admin/levels', async (req, res) => {
+router.post('/admin/levels', requireAdmin, async (req, res) => {
   const { subject_id, level_number, topic, xp_reward } = req.body;
 
   if (!subject_id || typeof level_number !== 'number' || !topic) {
@@ -207,7 +258,7 @@ router.post('/admin/levels', async (req, res) => {
   }
 });
 
-router.post('/admin/questions/bulk', async (req, res) => {
+router.post('/admin/questions/bulk', requireAdmin, async (req, res) => {
   const { questions } = req.body;
 
   if (!Array.isArray(questions) || !questions.length) {

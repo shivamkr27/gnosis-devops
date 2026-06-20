@@ -1,8 +1,17 @@
 const cron = require('node-cron');
 const pool = require('../db/index');
 
+const LOCK_KEY = 'gnosis:lock:weekly-reset';
+const LOCK_TTL_SECONDS = 300;
+
 module.exports = (redisClient) => {
   cron.schedule('0 0 * * 1', async () => {
+    const acquired = await redisClient.set(LOCK_KEY, '1', { NX: true, EX: LOCK_TTL_SECONDS });
+    if (!acquired) {
+      console.log('[weeklyReset] Lock held by another replica — skipping');
+      return;
+    }
+
     console.log('Starting weekly leaderboard reset...');
     try {
       // Step 1: Delete Redis key
@@ -28,6 +37,8 @@ module.exports = (redisClient) => {
       console.log('Weekly leaderboard reset done');
     } catch (err) {
       console.error('Error during weekly leaderboard reset:', err);
+    } finally {
+      await redisClient.del(LOCK_KEY);
     }
   });
 };

@@ -44,6 +44,7 @@ const authenticateToken = (req, res, next) => {
     // Add headers to forward request
     req.headers['x-user-id'] = decoded.userId;
     req.headers['x-username'] = decoded.username;
+    req.headers['x-gateway-secret'] = process.env.INTERNAL_GATEWAY_SECRET;
     next();
   });
 };

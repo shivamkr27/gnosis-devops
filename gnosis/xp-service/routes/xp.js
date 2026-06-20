@@ -1,10 +1,26 @@
 const express = require('express');
+const crypto = require('crypto');
 const router = express.Router();
 const pool = require('../db/index');
+
+function verifyGatewaySecret(req) {
+  const secret = process.env.INTERNAL_GATEWAY_SECRET;
+  const provided = req.headers['x-gateway-secret'];
+  if (!secret || !provided) return false;
+  try {
+    return crypto.timingSafeEqual(Buffer.from(secret), Buffer.from(provided));
+  } catch {
+    return false;
+  }
+}
 
 module.exports = (redisClient) => {
   // POST /xp/award
   router.post('/award', async (req, res) => {
+    if (!verifyGatewaySecret(req)) {
+      return res.status(401).json({ error: 'Unauthorized' });
+    }
+
     const { userId, username, amount, source, scope, roomId } = req.body;
 
     try {

@@ -3,6 +3,7 @@ const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
 const cors = require('cors');
+const jwt = require('jsonwebtoken');
 const { createClient } = require('redis');
 const setupSocketHandlers = require('./socket/handlers');
 const { createMetrics } = require('../common/metrics');
@@ -62,6 +63,22 @@ const startServer = async () => {
     // The db/index.js will print 'Connected to PostgreSQL'
     require('./db/index');
     
+    // JWT authentication middleware for all Socket.io connections
+    io.use((socket, next) => {
+      const token = socket.handshake.auth?.token;
+      if (!token) {
+        return next(new Error('unauthorized: missing token'));
+      }
+      jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+        if (err) {
+          return next(new Error('unauthorized: invalid token'));
+        }
+        socket.userId = decoded.userId;
+        socket.username = decoded.username;
+        next();
+      });
+    });
+
     // Setup Socket IO handlers
     setupSocketHandlers(io, redisClient);
 

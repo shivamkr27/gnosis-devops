@@ -5,19 +5,17 @@ module.exports = (io, redisClient) => {
   io.on('connection', (socket) => {
     console.log(`[Socket] New connection: ${socket.id}`);
     
-    // User identifies themselves after connecting
-    socket.on('user:identify', async ({ userId, username }) => {
+    // user:identify: userId is authoritative from JWT (set in io.use middleware).
+    // We only use the event to trigger the Redis registration, ignoring client userId.
+    socket.on('user:identify', async () => {
+      const { userId, username } = socket; // from verified JWT
       console.log(`[Socket] User identify: ${username} (${userId})`);
-      socket.userId = userId;
-      socket.username = username;
-      // Store socket mapping in Redis
       await redisClient.set('gnosis:socket:' + userId, socket.id, { EX: 3600 });
-      // Also mark as online for notification service
       await redisClient.set('gnosis:online:' + userId, '1', { EX: 30 });
     });
 
-    socket.on('user:heartbeat', async ({ userId }) => {
-      // Refresh online status and socket mapping
+    socket.on('user:heartbeat', async () => {
+      const { userId } = socket; // from verified JWT
       await redisClient.set('gnosis:online:' + userId, '1', { EX: 30 });
       if (socket.id) {
         await redisClient.set('gnosis:socket:' + userId, socket.id, { EX: 3600 });
@@ -93,13 +91,17 @@ module.exports = (io, redisClient) => {
       let questions = [];
       try {
         // FETCH 10 RANDOM QUESTIONS FROM INTERNAL POOL
-        const res = await axios.get(`http://content-service:3002/content/levels/${levelId}/questions?internal=true`);
+        const internalHeaders = {
+          'x-internal-service': 'battle-service',
+          'x-internal-service-secret': process.env.INTERNAL_SERVICE_SECRET
+        };
+        const res = await axios.get(`http://content-service:3002/content/levels/${levelId}/questions`, { headers: internalHeaders });
         questions = res.data;
-        
+
         if (!questions || questions.length === 0) {
            const subRes = await axios.get(`http://content-service:3002/content/subjects/${subjectId}`);
            const firstLevelId = subRes.data.levels[0].id;
-           const fallbackRes = await axios.get(`http://content-service:3002/content/levels/${firstLevelId}/questions?internal=true`);
+           const fallbackRes = await axios.get(`http://content-service:3002/content/levels/${firstLevelId}/questions`, { headers: internalHeaders });
            questions = fallbackRes.data;
         }
         // Take only 10
@@ -158,9 +160,10 @@ module.exports = (io, redisClient) => {
     });
 
     // ---- GROUP QUIZ EVENTS ----
-    socket.on('group:create', async ({ hostId, hostUsername, quizName, questions }) => {
+    socket.on('group:create', async ({ quizName, questions }) => {
+      const { userId: hostId, username: hostUsername } = socket; // from verified JWT
       const roomCode = await generateRoomCode(redisClient);
-      
+
       await redisClient.hSet('gnosis:room:' + roomCode, {
         type: 'group',
         host_id: hostId,
@@ -179,11 +182,10 @@ module.exports = (io, redisClient) => {
       socket.emit('group:created', { roomCode, quizName });
     });
 
-    socket.on('room:host_join', async ({ roomCode, userId, username }) => {
+    socket.on('room:host_join', async ({ roomCode }) => {
+        const { userId, username } = socket; // from verified JWT
         socket.join(roomCode);
         socket.roomCode = roomCode;
-        socket.userId = userId;
-        socket.username = username;
 
         // Ensure host socket is updated in Redis room data if reconnected
         await redisClient.hSet('gnosis:room:' + roomCode, 'host_socket', socket.id);
@@ -242,7 +244,8 @@ module.exports = (io, redisClient) => {
         }
     });
 
-    socket.on('room:join', async ({ roomCode, userId, username }) => {
+    socket.on('room:join', async ({ roomCode }) => {
+      const { userId, username } = socket; // from verified JWT
       const roomData = await redisClient.hGetAll('gnosis:room:' + roomCode);
       if (!roomData || !roomData.type) {
         socket.emit('room:error', { message: 'Room not found' });
@@ -271,8 +274,6 @@ module.exports = (io, redisClient) => {
 
       socket.join(roomCode);
       socket.roomCode = roomCode;
-      socket.userId = userId;
-      socket.username = username;
 
       const hostSocketId = roomData.host_socket;
       if (hostSocketId && hostSocketId !== socket.id) {

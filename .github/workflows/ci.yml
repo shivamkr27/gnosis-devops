@@ -167,23 +167,42 @@ jobs:
     runs-on: ubuntu-latest
     needs: detect-changes
     if: needs.detect-changes.outputs.infra-changed == 'true' || github.event_name == 'workflow_dispatch'
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
 
-      - name: Checkov — Terraform
+      - name: Checkov — Terraform (blocks on CRITICAL)
         uses: bridgecrewio/checkov-action@master
         with:
           directory: infrastructure/
           framework: terraform
-          soft_fail: true
+          check: CRITICAL
+          soft_fail: false
 
-      - name: Checkov — K8s manifests
+      - name: Checkov — Terraform (non-critical advisory)
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: infrastructure/
+          framework: terraform
+          skip_check: CRITICAL
+          soft_fail: true
+        continue-on-error: true
+
+      - name: Checkov — K8s manifests (blocks on CRITICAL)
         uses: bridgecrewio/checkov-action@master
         with:
           directory: gitops/k8s/
           framework: kubernetes
+          check: CRITICAL
+          soft_fail: false
+
+      - name: Checkov — K8s manifests (non-critical advisory)
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: gitops/k8s/
+          framework: kubernetes
+          skip_check: CRITICAL
           soft_fail: true
+        continue-on-error: true
 
   # ── Build + Trivy + Push — ONLY changed services ──────────────────────
   # Matrix is dynamically set from detect-changes output.
@@ -235,22 +254,41 @@ jobs:
           cache-from: type=gha,scope=${{ matrix.service }}
           cache-to: type=gha,mode=max,scope=${{ matrix.service }}
 
-      - name: Trivy — image vulnerability scan
+      - name: Trivy — image vulnerability scan (CRITICAL blocks, HIGH advisory)
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ${{ env.REGISTRY }}/${{ env.TENANCY_NAMESPACE }}/gnosis/${{ matrix.service }}:${{ env.IMAGE_TAG }}
+          format: table
+          exit-code: "1"
+          ignore-unfixed: true
+          severity: CRITICAL
+
+      - name: Trivy — image vulnerability scan (HIGH advisory)
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: ${{ env.REGISTRY }}/${{ env.TENANCY_NAMESPACE }}/gnosis/${{ matrix.service }}:${{ env.IMAGE_TAG }}
           format: table
           exit-code: "0"
           ignore-unfixed: true
-          severity: CRITICAL,HIGH
+          severity: HIGH
+        continue-on-error: true
 
-      - name: Trivy — Dockerfile misconfig scan
+      - name: Trivy — Dockerfile misconfig scan (CRITICAL blocks)
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: config
+          scan-ref: ./gnosis/${{ matrix.service }}
+          exit-code: "1"
+          severity: CRITICAL
+
+      - name: Trivy — Dockerfile misconfig scan (HIGH advisory)
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: config
           scan-ref: ./gnosis/${{ matrix.service }}
           exit-code: "0"
-          severity: HIGH,CRITICAL
+          severity: HIGH
+        continue-on-error: true
 
       - name: Generate SBOM (Syft)
         uses: anchore/sbom-action@v0

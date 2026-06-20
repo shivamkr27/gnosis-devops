@@ -73,7 +73,7 @@ router.post('/login', async (req, res) => {
   try {
     const result = await pool.query(
       `SELECT id, username, email, password_hash, total_xp, streak_count,
-              battle_wins, battle_losses
+              battle_wins, battle_losses, is_admin
        FROM users WHERE email = $1`,
       [email]
     );
@@ -89,7 +89,7 @@ router.post('/login', async (req, res) => {
     }
 
     const token = jwt.sign(
-      { userId: user.id, username: user.username },
+      { userId: user.id, username: user.username, isAdmin: user.is_admin === true },
       process.env.JWT_SECRET,
       { expiresIn: '7d' }
     );

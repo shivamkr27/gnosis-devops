@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS users (
   total_xp INT DEFAULT 0,
   streak_count INT DEFAULT 0,
   last_active_date DATE,
+  is_admin BOOLEAN DEFAULT FALSE,
   created_at TIMESTAMP DEFAULT NOW()
 );
 
