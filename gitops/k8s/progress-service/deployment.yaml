@@ -31,7 +31,7 @@ spec:
           type: RuntimeDefault
       containers:
         - name: progress-service
-          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/progress-service:ed24f93a2e7b41b9129ac3e4666ea5a3ceede2ed
+          image: ap-mumbai-1.ocir.io/bmr6dpc3ujz4/gnosis/progress-service:03df4c5f2520defe95abcbc71f041ce6865ee747
           ports:
             - containerPort: 3003
           envFrom:
