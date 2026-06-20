@@ -1,5 +1,6 @@
 FROM --platform=linux/amd64 node:22-alpine AS build
 WORKDIR /app
+RUN apk upgrade --no-cache
 COPY frontend/package.json ./
 RUN npm install
 ENV VITE_API_URL=/api
@@ -12,7 +13,8 @@ COPY frontend/public ./public
 COPY frontend/src ./src
 RUN npm run build
 
-FROM nginx:alpine
+FROM nginx:1.27-alpine
+RUN apk upgrade --no-cache
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY frontend/nginx.conf /etc/nginx/conf.d/default.conf
 RUN chown -R nginx:nginx /usr/share/nginx/html /etc/nginx/conf.d
