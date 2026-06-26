@@ -27,6 +27,7 @@ async function initDb() {
         last_active_date DATE,
         battle_wins INT DEFAULT 0,
         battle_losses INT DEFAULT 0,
+        is_admin BOOLEAN DEFAULT FALSE,
         created_at TIMESTAMP DEFAULT NOW()
       );
 
@@ -37,6 +38,9 @@ async function initDb() {
         answer_hash TEXT NOT NULL,
         created_at TIMESTAMP DEFAULT NOW()
       );
+
+      -- Migration: add is_admin if missing (safe for existing DBs)
+      ALTER TABLE users ADD COLUMN IF NOT EXISTS is_admin BOOLEAN DEFAULT FALSE;
 
       CREATE TABLE IF NOT EXISTS friendships (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
