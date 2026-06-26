@@ -45,6 +45,7 @@ services:
       - BATTLE_SERVICE=http://battle-service:3005
       - NOTIFICATION_SERVICE=http://notification-service:3006
       - ALLOWED_ORIGINS=http://localhost:5173,http://localhost:3000,http://80.225.228.31,http://80.225.228.31:8080
+      
     depends_on:
       - auth-service
       - content-service
