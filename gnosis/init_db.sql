@@ -8,7 +8,17 @@ CREATE TABLE IF NOT EXISTS users (
   total_xp INT DEFAULT 0,
   streak_count INT DEFAULT 0,
   last_active_date DATE,
+  battle_wins INT DEFAULT 0,
+  battle_losses INT DEFAULT 0,
   is_admin BOOLEAN DEFAULT FALSE,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS security_questions (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID UNIQUE REFERENCES users(id) ON DELETE CASCADE,
+  question TEXT NOT NULL,
+  answer_hash TEXT NOT NULL,
   created_at TIMESTAMP DEFAULT NOW()
 );
 

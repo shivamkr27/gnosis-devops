@@ -39,8 +39,10 @@ async function initDb() {
         created_at TIMESTAMP DEFAULT NOW()
       );
 
-      -- Migration: add is_admin if missing (safe for existing DBs)
+      -- Migration: add missing columns if missing (safe for existing DBs)
       ALTER TABLE users ADD COLUMN IF NOT EXISTS is_admin BOOLEAN DEFAULT FALSE;
+      ALTER TABLE users ADD COLUMN IF NOT EXISTS battle_wins INT DEFAULT 0;
+      ALTER TABLE users ADD COLUMN IF NOT EXISTS battle_losses INT DEFAULT 0;
 
       CREATE TABLE IF NOT EXISTS friendships (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
