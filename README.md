@@ -14,6 +14,7 @@
 
 ---
 
+
 ## What is Gnosis?
 
 Gnosis is a gamified quiz/battle platform for BTech students where they can:
